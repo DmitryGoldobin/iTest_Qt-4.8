@@ -253,7 +253,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
         <translation>английский язык</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="849"/>
+        <location filename="../main_window.cpp" line="854"/>
         <source>Slovak</source>
         <translation>словацкий язык</translation>
     </message>
@@ -433,7 +433,7 @@ If this is the case, try again omitting these.</source>
         <translation>Выберите предпочтительный язык</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="874"/>
+        <location filename="../main_window.cpp" line="879"/>
         <source>You need to restart iTest for the changes to apply.</source>
         <translation>Необходимо перезапустить iTest для принятия изменений.</translation>
     </message>
@@ -2006,7 +2006,7 @@ number of copies each time you start the server.</source>
     <message>
         <location filename="../print_engine.cpp" line="296"/>
         <source>out of</source>
-        <translation>из</translation>
+        <translation type="obsolete">из</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="308"/>
@@ -2458,7 +2458,7 @@ although it is recommended to give them an hour.</source>
         <translation>Вы уверены, что хотите удалить журнал сессии &quot;%1 - %2&quot;?</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="854"/>
+        <location filename="../main_window.cpp" line="849"/>
         <source>Russian</source>
         <translation>русский язык</translation>
     </message>
@@ -2521,6 +2521,11 @@ although it is recommended to give them an hour.</source>
         <location filename="../env_vars.cpp" line="12"/>
         <source>http://itest.sourceforge.net/documentation/1.1/en/</source>
         <translation>http://itest.sourceforge.net/documentation/1.1/en/</translation>
+    </message>
+    <message>
+        <location filename="../main_window.cpp" line="859"/>
+        <source>Turkish</source>
+        <translation>турецкий язык</translation>
     </message>
 </context>
 <context>
