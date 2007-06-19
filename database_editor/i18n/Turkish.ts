@@ -35,7 +35,7 @@
     <message>
         <location filename="../about_widget.cpp" line="20"/>
         <source>The programme is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</source>
-        <translation>Bu program TİCARİ AMAÇLARA VEYA ÖZEL BİR AMACA UYGUNLUK KONUSU DA DAHİL OLMAK ÜZERE HİÇBİR GARANTİ VERMEMEKTEDİR.</translation>
+        <translation>Çeviren: &lt;span style=&quot;font-style:italic;&quot;&gt;Serdar Soytetir&lt;/span&gt;&lt;br&gt;&lt;br&gt;Bu program TİCARİ AMAÇLARA VEYA ÖZEL BİR AMACA UYGUNLUK KONUSU DA DAHİL OLMAK ÜZERE HİÇBİR GARANTİ VERMEMEKTEDİR.</translation>
     </message>
     <message>
         <location filename="../about_widget.cpp" line="26"/>
