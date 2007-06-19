@@ -2241,7 +2241,8 @@ Tüm eski sorular güncellenecek.</translation>
         <location filename="../server.cpp" line="216"/>
         <source>Students will need at least one minute for the exam,
 although it is recommended to give them an hour.</source>
-        <translation></translation>
+        <translation>Öğrencilere sınav için en az bir dakika verin,
+aslında sınav için bir saat tavsiye edilir.</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="220"/>
