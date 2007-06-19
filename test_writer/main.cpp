@@ -1,7 +1,7 @@
 /******************************************************************************
  *                                    iTest                                   *
  * -------------------------------------------------------------------------- *
- * Version:      1.1.0                                                        *
+ * Version:      1.1.1                                                        *
  * Qt version:   4.2.2                                                        *
  * -------------------------------------------------------------------------- *
  * iTest is a Qt application consisting of a Database Editor and a Test       *
@@ -374,6 +374,9 @@ void MainWindow::errorInvalidData()
 }
 
 // ---------------------------- version changelog: -----------------------------
+/* version 1.1.1 - a bug-fix release with some new features
+                 - added Turkish translation
+*/
 /* version 1.1.0 - a major update
                  - added Russian translation
                  - added the ability to hide question names

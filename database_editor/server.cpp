@@ -655,7 +655,7 @@ bool MainWindow::addOfflineClient(QString file_name)
         return true;
     }
     QTextStream rfile(&file);
-    rfile.setCodec("CP 1250");
+    rfile.setCodec("UTF-8");
     
     if (rfile.readLine() != "[TEST_NAME]") return false;
     if (rfile.readLine() != current_db_testname) return false;
@@ -714,7 +714,7 @@ void MainWindow::exportTest()
 		return;
 	}
 	QTextStream sfile(&file);
-	sfile.setCodec("CP 1250");
+	sfile.setCodec("UTF-8");
 	for (int i = 0; i < current_db_test.count(); ++i) {
         QDataStream in(current_db_test.at(i));
         in.setVersion(QDataStream::Qt_4_2);
@@ -759,7 +759,7 @@ Text
 		return;
 	}
 	QTextStream sfile(&file);
-	sfile.setCodec("CP 1250");
+	sfile.setCodec("UTF-8");
 	setProgress(0); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	sfile << "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1250\"><title>" << endl;
 	sfile << tr("iTest Server Log") << " - " << testname << " - ";

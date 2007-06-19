@@ -184,7 +184,7 @@ void MainWindow::loadFile(QString file_name)
         return;
     }
     QTextStream rfile(&file);
-    rfile.setCodec("CP 1250");
+    rfile.setCodec("UTF-8");
     
     progress.setValue(1); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     qApp->processEvents();

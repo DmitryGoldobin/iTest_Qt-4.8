@@ -292,9 +292,9 @@ bool MainWindow::printStudentResults(Student * student, QPrinter * printer, QStr
 		out << "</p>" << endl;
 	}
 	out << "<p class=\"default_text\" align=\"right\">" << endl;
-	out << "<b>" << tr("Total score:") << "</b> " << student->score();
-	out << " " << tr("out of") << " " << student->results()->count() << endl;
-	out << "</p></body></html>" << endl;
+	out << "<b>" << tr("Total score:") << "</b> ";
+	out << tr("%1 out of %2").arg(student->score()).arg(student->results()->count());
+	out << endl << "</p></body></html>" << endl;
 	doc.setHtml(html); printer->setDocName(header); doc.print(printer);
 	return true;
 }
