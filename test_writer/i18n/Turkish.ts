@@ -50,7 +50,7 @@
     <message>
         <location filename="" line="317"/>
         <source>Qt provides single-source portability across MS Windows, Mac OS X, Linux and all major commercial Unix variants. Qt is also available for embedded devices as Qtopia Core.</source>
-        <translation>Qt Ms Windows, Mac OS X ve ana ticari Linux dağıtımlarında tek kaynak taşınabilirliği sağlar. Qt aynı zamanda Qtopia Core olarak gömülü sistemler için de kullanılabilir.</translation>
+        <translation>Qt MS Windows, Mac OS X ve ana ticari Linux dağıtımlarında tek kaynak taşınabilirliği sağlar. Qt aynı zamanda Qtopia Core olarak gömülü sistemler için de kullanılabilir.</translation>
     </message>
     <message>
         <location filename="" line="317"/>
