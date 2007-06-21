@@ -872,7 +872,7 @@ void MainWindow::langChanged()
 
 void MainWindow::about()
 {
-    AboutWidget * itest_about = new AboutWidget(ver, QString("4.2.2"), QString("2007"));
+    AboutWidget * itest_about = new AboutWidget(ver, QString("4.3.0"), QString("2007"));
     itest_about->setWindowFlags(Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/ | Qt::WindowStaysOnTopHint);
 	itest_about->show();
 }

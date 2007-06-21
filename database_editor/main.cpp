@@ -2,7 +2,7 @@
  *                                    iTest                                   *
  * -------------------------------------------------------------------------- *
  * Version:      1.1.1                                                        *
- * Qt version:   4.2.2                                                        *
+ * Qt version:   4.3.0                                                        *
  * -------------------------------------------------------------------------- *
  * iTest is a Qt application consisting of a Database Editor and a Test       *
  * Writer designed for easy computerised examination.                         *
@@ -51,6 +51,7 @@ int main(int argc, char *argv[])
                      versions of iTest
                    - older versions of iTest cannot open the new UTF-8 databases
                      from iTest 1.1.1
+                 - upgraded from Qt 4.2.2 to Qt 4.3.0
                  - printing: support for the & sign
 */
 /* version 1.1.0 - a major update

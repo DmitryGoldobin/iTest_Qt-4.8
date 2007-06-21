@@ -2,7 +2,7 @@
  *                                    iTest                                   *
  * -------------------------------------------------------------------------- *
  * Version:      1.1.1                                                        *
- * Qt version:   4.2.2                                                        *
+ * Qt version:   4.3.0                                                        *
  * -------------------------------------------------------------------------- *
  * iTest is a Qt application consisting of a Database Editor and a Test       *
  * Writer designed for easy computerised examination.                         *
@@ -288,7 +288,7 @@ void MainWindow::disableInputTypeSelection()
 
 void MainWindow::about()
 {
-    AboutWidget * itest_about = new AboutWidget(ver, QString("4.2.2"), QString("2007"));
+    AboutWidget * itest_about = new AboutWidget(ver, QString("4.3.0"), QString("2007"));
     itest_about->setWindowFlags(Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/ | Qt::WindowStaysOnTopHint);
 	itest_about->show();
 }
@@ -389,6 +389,7 @@ void MainWindow::errorInvalidData()
                      versions of iTest
                    - older versions of iTest cannot open the new UTF-8 databases
                      from iTest 1.1.1
+                 - upgraded from Qt 4.2.2 to Qt 4.3.0
 */
 /* version 1.1.0 - a major update
                  - added Russian translation
