@@ -358,7 +358,9 @@ int main(int argc, char *argv[])
 	QString lang = settings.value("lang").toString();
 	if (lang.isEmpty()) {
 		lang = QLocale::languageToString(QLocale::system().language());
+		settings.setValue("lang", lang);
 	}
+	if (lang == "C") { lang = "English"; settings.setValue("lang", lang); }
 	if (lang != "English") {
 		QTranslator * translator = new QTranslator;
 		translator->load(QString(":/i18n/%1.qm").arg(lang));
@@ -379,6 +381,8 @@ void MainWindow::errorInvalidData()
 // ---------------------------- version changelog: -----------------------------
 /* version 1.1.1 - a bug-fix release with some new features
                  - added Turkish translation
+                 - if available, translation to the system language loaded by
+                   default
                  - NEW ENCODING: UTF-8 - adds support for more languages and
                    special characters
                    - iTest 1.1.1 can still open old CP 1250 databases from older
