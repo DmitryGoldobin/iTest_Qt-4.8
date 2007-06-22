@@ -17,8 +17,8 @@ You now have two options:
 	iTest source code and type:
 		./build.nut
 
-	2. Compile manually
-	-------------------
+	2. Compiling manually
+	---------------------
 	Regardless of your platform, type in the following
 	commands (it is assumed that you have already changed
 	directory to that of the iTest source code):
