@@ -2530,7 +2530,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../database.cpp" line="505"/>
         <source>Error opening database.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка при открывание вазы данных.</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="14"/>
@@ -2550,17 +2550,17 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3310"/>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Детали</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3341"/>
         <source>Pass mark details</source>
-        <translation type="unfinished"></translation>
+        <translation>Детали о оценке прохождения</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="428"/>
         <source>Total</source>
-        <translation type="unfinished"></translation>
+        <translation>Целиком</translation>
     </message>
 </context>
 <context>
