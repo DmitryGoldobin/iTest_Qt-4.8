@@ -144,12 +144,12 @@
         <translation>Test verileri yükleniyor...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="37"/>
+        <location filename="../database.cpp" line="38"/>
         <source>iTest version notice</source>
         <translation>iTest sürüm bildirimi</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="35"/>
+        <location filename="../database.cpp" line="36"/>
         <source>There is a newer version of iTest available.
 Nonetheless, this version is able to open the database file you selected,
 but you are most probably missing a whole bunch of cool new features.</source>
@@ -158,79 +158,79 @@ Bu sürüm seçtiğiniz veritabanını açabilir,
 fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="37"/>
+        <location filename="../database.cpp" line="38"/>
         <source>You need a newer version of iTest to open this database file.</source>
         <translation>Bu veritabanını açmak için iTest uygulamasının daha yeni bir sürümüne ihtiyacınız var.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="178"/>
+        <location filename="../database.cpp" line="191"/>
         <source>Reading database file...</source>
         <translation>Veritabanı dosyası okunuyor...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="192"/>
+        <location filename="../database.cpp" line="205"/>
         <source>Open database</source>
         <translation>Veritabanı aç</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="192"/>
+        <location filename="../database.cpp" line="205"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>%1 dosyası okunamadı:
 %2.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="214"/>
+        <location filename="../database.cpp" line="227"/>
         <source>Generating test...</source>
         <translation>Test oluşturuluyor...</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>Finish the exam</source>
         <translation>Sınavı bitir</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>Are you sure you want to finish? Once you click Finish there is no going back.</source>
         <translation>Bitirmek istediğinizen emin misiniz? Bir kez Bitir&apos;e tıklarsanız geri dönemeyeceksiniz.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>&amp;Finish</source>
         <translation>&amp;Bitir</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>&amp;Cancel</source>
         <translation>&amp;İptal</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="314"/>
+        <location filename="../main.cpp" line="323"/>
         <source>Your name, please.</source>
         <translation>Lütfen adınızı girin.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="314"/>
+        <location filename="../main.cpp" line="323"/>
         <source>You cannot proceed unless you give us your name.</source>
         <translation>Adınızı vermeden işleme devam edemezsiniz.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="350"/>
+        <location filename="../main.cpp" line="359"/>
         <source>Exam finished</source>
         <translation>Sınav bitti</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="350"/>
+        <location filename="../main.cpp" line="359"/>
         <source>You have run out of time. Your answers are being sent.</source>
         <translation>Zamanınız bitti. Yanıtlarınız gönderiliyor.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="378"/>
+        <location filename="../main.cpp" line="387"/>
         <source>iTest - Load test data</source>
         <translation>iTest - Test verilerini yükle</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="378"/>
+        <location filename="../main.cpp" line="387"/>
         <source>Invalid data received. There might be something wrong with the server.</source>
         <translation>Geçersiz veri alındı. Sunucu tarafında yanlış giden birşeyler olabilir.</translation>
     </message>

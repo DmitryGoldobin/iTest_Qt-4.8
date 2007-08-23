@@ -143,12 +143,12 @@
         <translation>Загрузка данных теста...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="37"/>
+        <location filename="../database.cpp" line="38"/>
         <source>iTest version notice</source>
         <translation>Информация о версии iTest</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="35"/>
+        <location filename="../database.cpp" line="36"/>
         <source>There is a newer version of iTest available.
 Nonetheless, this version is able to open the database file you selected,
 but you are most probably missing a whole bunch of cool new features.</source>
@@ -157,79 +157,79 @@ but you are most probably missing a whole bunch of cool new features.</source>
 но Вы можете пропустить большое количество новых возможностей.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="37"/>
+        <location filename="../database.cpp" line="38"/>
         <source>You need a newer version of iTest to open this database file.</source>
         <translation>Чтобы открыть этот файл базы данных, Вам требуется более новая версия iTest.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="178"/>
+        <location filename="../database.cpp" line="191"/>
         <source>Reading database file...</source>
         <translation>Чтение файла базы данных...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="192"/>
+        <location filename="../database.cpp" line="205"/>
         <source>Open database</source>
         <translation>Открыть базу данных</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="192"/>
+        <location filename="../database.cpp" line="205"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Невозможно прочитать файл %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="214"/>
+        <location filename="../database.cpp" line="227"/>
         <source>Generating test...</source>
         <translation>Создание теста...</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>Finish the exam</source>
         <translation>Закончить экзамен</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>Are you sure you want to finish? Once you click Finish there is no going back.</source>
         <translation>Вы уверены, что хотите закончить? Данное действие нельзя отменить.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>&amp;Finish</source>
         <translation>&amp;Закончить</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Отмена</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="314"/>
+        <location filename="../main.cpp" line="323"/>
         <source>Your name, please.</source>
         <translation>Ваше имя.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="314"/>
+        <location filename="../main.cpp" line="323"/>
         <source>You cannot proceed unless you give us your name.</source>
         <translation>Вы не можете продолжить, пока не укажете своё имя.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="350"/>
+        <location filename="../main.cpp" line="359"/>
         <source>Exam finished</source>
         <translation>Экзамен закончен</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="350"/>
+        <location filename="../main.cpp" line="359"/>
         <source>You have run out of time. Your answers are being sent.</source>
         <translation>Вы исчерпали запас времени. Ваши ответы были отправлены.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="378"/>
+        <location filename="../main.cpp" line="387"/>
         <source>iTest - Load test data</source>
         <translation>iTest - Загрузить данные теста</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="378"/>
+        <location filename="../main.cpp" line="387"/>
         <source>Invalid data received. There might be something wrong with the server.</source>
         <translation>Получены неправильные данные. Возможны сбои в работе сервера.</translation>
     </message>

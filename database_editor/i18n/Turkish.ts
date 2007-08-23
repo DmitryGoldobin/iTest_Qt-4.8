@@ -89,7 +89,7 @@
         <translation>İşlem başlatılmadan önce değişiklikler kaydedilsin mi?</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2858"/>
+        <location filename="../ui_main_window_v2.cpp" line="2863"/>
         <source>&amp;Save</source>
         <translation>&amp;Kaydet</translation>
     </message>
@@ -109,7 +109,7 @@
         <translation>Yeni veritabanı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3190"/>
+        <location filename="../ui_main_window_v2.cpp" line="3199"/>
         <source>Database name:</source>
         <translation>Veritabanı adı:</translation>
     </message>
@@ -139,14 +139,14 @@
         <translation>başlıksız.itdb</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="899"/>
+        <location filename="../server.cpp" line="900"/>
         <source>Cannot write file %1:
 %2.</source>
         <translation>%1 dosyasına yazılamadı:
 %2.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2847"/>
+        <location filename="../ui_main_window_v2.cpp" line="2852"/>
         <source>iTest - Database Editor</source>
         <translation>iTest - Veritabanı Düzenleyici</translation>
     </message>
@@ -156,7 +156,7 @@
         <translation>%1[*] - iTest - Veritabanı Düzenleyici</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="466"/>
+        <location filename="../main_window.cpp" line="473"/>
         <source>Ready</source>
         <translation>Hazır</translation>
     </message>
@@ -179,12 +179,12 @@ Bu bilgisayarın arşivi yüklenecek.
 </translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="200"/>
+        <location filename="../questions.cpp" line="201"/>
         <source>&amp;Change</source>
         <translation>&amp;Değiştir</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="200"/>
+        <location filename="../questions.cpp" line="201"/>
         <source>Do &amp;not change</source>
         <translation>Değiştir&amp;me</translation>
     </message>
@@ -209,7 +209,7 @@ Bu bilgisayarın arşivi yüklenecek.
         <translation>iTest veritabanları (*.itdb);;Tüm dosyalar (*.*)</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="795"/>
+        <location filename="../server.cpp" line="796"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>%1 dosyası okunamadı:
@@ -305,1462 +305,1462 @@ Lütfen özel karakterleri kullanmayın.
 Eğer kullandıysanız o karakterleri çıkarın.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2970"/>
+        <location filename="../ui_main_window_v2.cpp" line="2975"/>
         <source>Apply any changes you have made to the question</source>
         <translation>Soru üzerinde yaptığınız tüm değişiklikleri uygulayın</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2975"/>
+        <location filename="../ui_main_window_v2.cpp" line="2980"/>
         <source>Discard any changes you have made to the question</source>
         <translation>Soru üzerinde yaptığınız tüm değişiklikleri yok sayın</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="345"/>
+        <location filename="../main_window.cpp" line="352"/>
         <source>Apply any changes you have made to the flags</source>
         <translation>Bayraklar üzerinde yaptığınız tüm değişiklikleri uygulayın</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="347"/>
+        <location filename="../main_window.cpp" line="354"/>
         <source>Discard any changes you have made to the flags</source>
         <translation>Bayraklar üzerinde yaptığınız tüm değişiklikleri yok sayın</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2875"/>
+        <location filename="../ui_main_window_v2.cpp" line="2880"/>
         <source>Quit iTest</source>
         <translation>iTest Uygulamasından Çık</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3091"/>
+        <location filename="../ui_main_window_v2.cpp" line="3100"/>
         <source>iTest</source>
         <translation>iTest</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="623"/>
+        <location filename="../main_window.cpp" line="635"/>
         <source>Failed to check for updates.</source>
         <translation>Güncelleme kontrolü başarısız oldu.</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="623"/>
+        <location filename="../main_window.cpp" line="635"/>
         <source>&amp;Try again</source>
         <translation>&amp;Yeniden dene</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="639"/>
+        <location filename="../main_window.cpp" line="651"/>
         <source>Your iTest is up-to-date.</source>
         <translation>iTest uygulamanız güncel.</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="643"/>
+        <location filename="../main_window.cpp" line="655"/>
         <source>iTest %1 is available now.</source>
         <translation>iTest&apos;in %1 sürümü var.</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="698"/>
+        <location filename="../main_window.cpp" line="710"/>
         <source>%1 - Overall statistics - iTest</source>
         <translation>%1 - Tüm istatistikler - iTest</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="708"/>
+        <location filename="../main_window.cpp" line="720"/>
         <source>Adjust all</source>
         <translation>Tümünü ayarla</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="712"/>
+        <location filename="../main_window.cpp" line="724"/>
         <source>Close</source>
         <translation>Kapat</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="724"/>
+        <location filename="../main_window.cpp" line="736"/>
         <source>&lt;b&gt;%1 questions with statistics found&lt;/b&gt;</source>
         <translation>&lt;b&gt;%1 soru ve bu soruların istatistikleri bulundu&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3379"/>
+        <location filename="../ui_main_window_v2.cpp" line="3388"/>
         <source>Question name</source>
         <translation>Soru adı</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="730"/>
+        <location filename="../main_window.cpp" line="742"/>
         <source>Difficulty</source>
         <translation>Zorluk derecesi</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="732"/>
+        <location filename="../main_window.cpp" line="744"/>
         <source>Calculated difficulty</source>
         <translation>Planlanan zorluk derecesi</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="734"/>
+        <location filename="../main_window.cpp" line="746"/>
         <source>Number of correct answers</source>
         <translation>Doğru yanıtların sayısı</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="736"/>
+        <location filename="../main_window.cpp" line="748"/>
         <source>Number of incorrect answers</source>
         <translation>Yanlış yanıtların sayısı</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="793"/>
+        <location filename="../main_window.cpp" line="805"/>
         <source>Adjust difficulty</source>
         <translation>Zorluk derecesini ayarla</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="776"/>
+        <location filename="../server.cpp" line="777"/>
         <source>Unknown</source>
         <translation>Bilinmeyen</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3131"/>
+        <location filename="../ui_main_window_v2.cpp" line="3140"/>
         <source>Easy</source>
         <translation>Kolay</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3132"/>
+        <location filename="../ui_main_window_v2.cpp" line="3141"/>
         <source>Medium</source>
         <translation>Orta Düzey</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3133"/>
+        <location filename="../ui_main_window_v2.cpp" line="3142"/>
         <source>Difficult</source>
         <translation>Zor</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="876"/>
+        <location filename="../main_window.cpp" line="888"/>
         <source>Change language - iTest</source>
         <translation>Dili değiştir - iTest</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="880"/>
+        <location filename="../main_window.cpp" line="892"/>
         <source>Select your preferred language</source>
         <translation>Tercih ettiğiniz dili seçin</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="904"/>
+        <location filename="../main_window.cpp" line="916"/>
         <source>You need to restart iTest for the changes to apply.</source>
         <translation>Değişiklikleri uygulamak için iTest&apos;i yeniden başlatmalısınız.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3083"/>
+        <location filename="../ui_main_window_v2.cpp" line="3092"/>
         <source>Select a database you have used recently, create a new one or open another database.</source>
         <translation>Son kullandığınız veritabanını seçin, yeni bir veritabanı oluşturun ya da başka bir veritabanı açın.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3084"/>
+        <location filename="../ui_main_window_v2.cpp" line="3093"/>
         <source>Recent databases</source>
         <translation>Son kullanılan veritabanları</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3085"/>
+        <location filename="../ui_main_window_v2.cpp" line="3094"/>
         <source>Create a new database</source>
         <translation>Yeni bir veritabanı oluştur</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3086"/>
+        <location filename="../ui_main_window_v2.cpp" line="3095"/>
         <source>New</source>
         <translation>Yeni</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3087"/>
+        <location filename="../ui_main_window_v2.cpp" line="3096"/>
         <source>Open another database</source>
         <translation>Başka bir veritabanı aç</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3088"/>
+        <location filename="../ui_main_window_v2.cpp" line="3097"/>
         <source>Open other...</source>
         <translation>Başka aç...</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3089"/>
+        <location filename="../ui_main_window_v2.cpp" line="3098"/>
         <source>Open the selected database from the list above</source>
         <translation>Yukarıdaki listeden seçilen veritabanını aç</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3090"/>
+        <location filename="../ui_main_window_v2.cpp" line="3099"/>
         <source>Open selected</source>
         <translation>Seçileni aç</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3093"/>
+        <location filename="../ui_main_window_v2.cpp" line="3102"/>
         <source>List of questions</source>
         <translation>Soru listesi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3094"/>
+        <location filename="../ui_main_window_v2.cpp" line="3103"/>
         <source>Select the flag to filter the list below</source>
         <translation>Aşağıdaki listeyi süzmek için bir bayrak seçin</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3095"/>
+        <location filename="../ui_main_window_v2.cpp" line="3104"/>
         <source>Show all questions</source>
         <translation>Tüm soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3096"/>
+        <location filename="../ui_main_window_v2.cpp" line="3105"/>
         <source>All</source>
         <translation>Tümü</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3097"/>
+        <location filename="../ui_main_window_v2.cpp" line="3106"/>
         <source>Show easy questions only</source>
         <translation>Sadece kolay soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3099"/>
+        <location filename="../ui_main_window_v2.cpp" line="3108"/>
         <source>Show questions with medium difficulty only</source>
         <translation>Sadece orta düzey soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3101"/>
+        <location filename="../ui_main_window_v2.cpp" line="3110"/>
         <source>Show difficult questions only</source>
         <translation>Sadece zor soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3103"/>
+        <location filename="../ui_main_window_v2.cpp" line="3112"/>
         <source>Show questions with the selected flag only</source>
         <translation>Sadece seçilen bayrağı taşıyan soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3105"/>
+        <location filename="../ui_main_window_v2.cpp" line="3114"/>
         <source>Select a question to edit</source>
         <translation>Düzenlemek için bir soru seçin</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3106"/>
+        <location filename="../ui_main_window_v2.cpp" line="3115"/>
         <source>Add a question</source>
         <translation>Bir soru ekle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3108"/>
+        <location filename="../ui_main_window_v2.cpp" line="3117"/>
         <source>Duplicate the selected question</source>
         <translation>Seçilen soruyu aynısı var olarak işaretle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3110"/>
+        <location filename="../ui_main_window_v2.cpp" line="3119"/>
         <source>Delete the selected question</source>
         <translation>Seçilen soruyu sil</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3112"/>
+        <location filename="../ui_main_window_v2.cpp" line="3121"/>
         <source>Move the selected question up</source>
         <translation>Seçilen soruyu yukarı taşı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3114"/>
+        <location filename="../ui_main_window_v2.cpp" line="3123"/>
         <source>Move the selected question down</source>
         <translation>Seçilen soruyu aşağı taşı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3418"/>
+        <location filename="../ui_main_window_v2.cpp" line="3427"/>
         <source>Search:</source>
         <translation>Ara:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3419"/>
+        <location filename="../ui_main_window_v2.cpp" line="3428"/>
         <source>Type a keyword to filter the list below</source>
         <translation>Aşağıdaki listeyi süzmek için bir anahtar sözcük yazın</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3118"/>
+        <location filename="../ui_main_window_v2.cpp" line="3127"/>
         <source>Selected question</source>
         <translation>Seçilen soru</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3119"/>
+        <location filename="../ui_main_window_v2.cpp" line="3128"/>
         <source>Question name:</source>
         <translation>Sorunun adı:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3120"/>
+        <location filename="../ui_main_window_v2.cpp" line="3129"/>
         <source>Name of the selected question</source>
         <translation>Seçilen sorunun adı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3121"/>
+        <location filename="../ui_main_window_v2.cpp" line="3130"/>
         <source>Answers:</source>
         <translation>Yanıtlar:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3122"/>
+        <location filename="../ui_main_window_v2.cpp" line="3131"/>
         <source>Correct:</source>
         <translation>Doğru:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3123"/>
+        <location filename="../ui_main_window_v2.cpp" line="3132"/>
         <source>Flag:</source>
         <translation>Bayrak:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3124"/>
+        <location filename="../ui_main_window_v2.cpp" line="3133"/>
         <source>Flag of the selected question</source>
         <translation>Seçilen sorunun taşıdığı bayrak</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3129"/>
+        <location filename="../ui_main_window_v2.cpp" line="3138"/>
         <source>Difficulty:</source>
         <translation>Zorluk derecesi:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3134"/>
+        <location filename="../ui_main_window_v2.cpp" line="3143"/>
         <source>Difficulty of the selected question</source>
         <translation>Seçilen sorunun zorluk derecesi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3135"/>
+        <location filename="../ui_main_window_v2.cpp" line="3144"/>
         <source>a)</source>
         <translation>а)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3136"/>
+        <location filename="../ui_main_window_v2.cpp" line="3145"/>
         <source>b)</source>
         <translation>b)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3149"/>
+        <location filename="../ui_main_window_v2.cpp" line="3158"/>
         <source>A checked checkbox indicates a correct answer</source>
         <translation>İşaretlenmiş kutucuk bir doğru yanıtı gösterir</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3139"/>
+        <location filename="../ui_main_window_v2.cpp" line="3148"/>
         <source>Answer a) of the selected question</source>
         <translation>Seçilen sorunun a) şıkkı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3142"/>
+        <location filename="../ui_main_window_v2.cpp" line="3151"/>
         <source>c)</source>
         <translation>c)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3143"/>
+        <location filename="../ui_main_window_v2.cpp" line="3152"/>
         <source>Answer b) of the selected question</source>
         <translation>Seçilen sorunun b) şıkkı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3146"/>
+        <location filename="../ui_main_window_v2.cpp" line="3155"/>
         <source>Answer c) of the selected question</source>
         <translation>Seçilen sorunun c) şıkkı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3147"/>
+        <location filename="../ui_main_window_v2.cpp" line="3156"/>
         <source>d)</source>
         <translation>d)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3148"/>
+        <location filename="../ui_main_window_v2.cpp" line="3157"/>
         <source>Answer d) of the selected question</source>
         <translation>Seçilen sorunun d) şıkkı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3151"/>
+        <location filename="../ui_main_window_v2.cpp" line="3160"/>
         <source>Question:</source>
         <translation>Soru:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3202"/>
+        <location filename="../ui_main_window_v2.cpp" line="3211"/>
         <source>Undo</source>
         <translation>Geri</translation>
     </message>
     <message encoding="UTF-8">
-        <location filename="../ui_main_window_v2.cpp" line="3203"/>
+        <location filename="../ui_main_window_v2.cpp" line="3212"/>
         <source>◄</source>
         <translation>◄</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3204"/>
+        <location filename="../ui_main_window_v2.cpp" line="3213"/>
         <source>Redo</source>
         <translation>İleri</translation>
     </message>
     <message encoding="UTF-8">
-        <location filename="../ui_main_window_v2.cpp" line="3205"/>
+        <location filename="../ui_main_window_v2.cpp" line="3214"/>
         <source>►</source>
         <translation>►</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3206"/>
+        <location filename="../ui_main_window_v2.cpp" line="3215"/>
         <source>Choose a font</source>
         <translation>Bir yazıtipi seç</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3220"/>
+        <location filename="../ui_main_window_v2.cpp" line="3229"/>
         <source>Select text size</source>
         <translation>Metin boyutunu seç</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3210"/>
+        <location filename="../ui_main_window_v2.cpp" line="3219"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3211"/>
+        <location filename="../ui_main_window_v2.cpp" line="3220"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3212"/>
+        <location filename="../ui_main_window_v2.cpp" line="3221"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3213"/>
+        <location filename="../ui_main_window_v2.cpp" line="3222"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3214"/>
+        <location filename="../ui_main_window_v2.cpp" line="3223"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3215"/>
+        <location filename="../ui_main_window_v2.cpp" line="3224"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3216"/>
+        <location filename="../ui_main_window_v2.cpp" line="3225"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3217"/>
+        <location filename="../ui_main_window_v2.cpp" line="3226"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3218"/>
+        <location filename="../ui_main_window_v2.cpp" line="3227"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3221"/>
+        <location filename="../ui_main_window_v2.cpp" line="3230"/>
         <source>Bold</source>
         <translation>Kalın</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3222"/>
+        <location filename="../ui_main_window_v2.cpp" line="3231"/>
         <source>B</source>
         <translation>K</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3223"/>
+        <location filename="../ui_main_window_v2.cpp" line="3232"/>
         <source>Italic</source>
         <translation>Yatık</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3224"/>
+        <location filename="../ui_main_window_v2.cpp" line="3233"/>
         <source>I</source>
         <translation>Y</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3225"/>
+        <location filename="../ui_main_window_v2.cpp" line="3234"/>
         <source>Underlined</source>
         <translation>Altı çizgili</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3226"/>
+        <location filename="../ui_main_window_v2.cpp" line="3235"/>
         <source>U</source>
         <translation>A</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3227"/>
+        <location filename="../ui_main_window_v2.cpp" line="3236"/>
         <source>Text colour</source>
         <translation>Metin rengi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3229"/>
+        <location filename="../ui_main_window_v2.cpp" line="3238"/>
         <source>Align left</source>
         <translation>Sola yasla</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3230"/>
+        <location filename="../ui_main_window_v2.cpp" line="3239"/>
         <source>L</source>
         <translation>L</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3231"/>
+        <location filename="../ui_main_window_v2.cpp" line="3240"/>
         <source>Align centre</source>
         <translation>Ortala</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3232"/>
+        <location filename="../ui_main_window_v2.cpp" line="3241"/>
         <source>C</source>
         <translation>C</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3233"/>
+        <location filename="../ui_main_window_v2.cpp" line="3242"/>
         <source>Align right</source>
         <translation>Sağa yasla</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3234"/>
+        <location filename="../ui_main_window_v2.cpp" line="3243"/>
         <source>R</source>
         <translation>R</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3235"/>
+        <location filename="../ui_main_window_v2.cpp" line="3244"/>
         <source>Justify</source>
         <translation>İki yana yasla</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3236"/>
+        <location filename="../ui_main_window_v2.cpp" line="3245"/>
         <source>J</source>
         <translation>J</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3187"/>
+        <location filename="../ui_main_window_v2.cpp" line="3196"/>
         <source>Text of the selected question</source>
         <translation>Seçilen sorunun metni</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3188"/>
+        <location filename="../ui_main_window_v2.cpp" line="3197"/>
         <source>Statistics:</source>
         <translation>İstatistikler:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3189"/>
+        <location filename="../ui_main_window_v2.cpp" line="3198"/>
         <source>Database information</source>
         <translation>Veritabanı bilgileri</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3191"/>
+        <location filename="../ui_main_window_v2.cpp" line="3200"/>
         <source>Database name</source>
         <translation>Veritabanının adı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3192"/>
+        <location filename="../ui_main_window_v2.cpp" line="3201"/>
         <source>Date:</source>
         <translation>Tarihi:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3193"/>
+        <location filename="../ui_main_window_v2.cpp" line="3202"/>
         <source>Database date</source>
         <translation>Veritabanının tarihi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3194"/>
+        <location filename="../ui_main_window_v2.cpp" line="3203"/>
         <source>yyyy.MM.dd - hh:mm</source>
         <translation>yyyy.MM.dd - hh:mm</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3196"/>
+        <location filename="../ui_main_window_v2.cpp" line="3205"/>
         <source>Use last save date</source>
         <translation>Son kaydetme tarihini kullan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3197"/>
+        <location filename="../ui_main_window_v2.cpp" line="3206"/>
         <source>Show or hide the database information below</source>
         <translation>Aşağıdaki veritabanı bilgilerini göster ya da gizle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3198"/>
+        <location filename="../ui_main_window_v2.cpp" line="3207"/>
         <source>Show database information</source>
         <translation>Veritabanı bilgilerini göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3199"/>
+        <location filename="../ui_main_window_v2.cpp" line="3208"/>
         <source>Close the open database</source>
         <translation>Açık veritabanını kapat</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3201"/>
+        <location filename="../ui_main_window_v2.cpp" line="3210"/>
         <source>Use this field for your comments, notes, reminders...</source>
         <translation>Bu alanı yorumlarınız, notlarınız, hatırlatıcılarınız vs. için kullanın...</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3259"/>
+        <location filename="../ui_main_window_v2.cpp" line="3268"/>
         <source>Flag name:</source>
         <translation>Bayrak adı:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3260"/>
+        <location filename="../ui_main_window_v2.cpp" line="3269"/>
         <source>Enabled:</source>
         <translation>Etkin:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3280"/>
+        <location filename="../ui_main_window_v2.cpp" line="3289"/>
         <source>Number of questions with this flag: 0</source>
         <translation>Bu bayrağı taşıyan soruların sayısı: 0</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3281"/>
+        <location filename="../ui_main_window_v2.cpp" line="3290"/>
         <source>Advanced</source>
         <translation>Gelişmiş</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3282"/>
+        <location filename="../ui_main_window_v2.cpp" line="3291"/>
         <source>&lt;b&gt;Available:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Kullanılabilir Durumdakiler:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3285"/>
+        <location filename="../ui_main_window_v2.cpp" line="3294"/>
         <source>&lt;b&gt;Used:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Kullanılan:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3298"/>
+        <location filename="../ui_main_window_v2.cpp" line="3307"/>
         <source>Select:</source>
         <translation>Seç:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3299"/>
+        <location filename="../ui_main_window_v2.cpp" line="3308"/>
         <source>Flags</source>
         <translation>Bayraklar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3300"/>
+        <location filename="../ui_main_window_v2.cpp" line="3309"/>
         <source>Questions</source>
         <translation>Sorular</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3302"/>
+        <location filename="../ui_main_window_v2.cpp" line="3311"/>
         <source>Set a custom test name</source>
         <translation>Özel bir test adı belirt</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3303"/>
+        <location filename="../ui_main_window_v2.cpp" line="3312"/>
         <source>Time for the whole test</source>
         <translation>Tüm test için verilen süre</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3314"/>
+        <location filename="../ui_main_window_v2.cpp" line="3323"/>
         <source>HH:mm</source>
         <translation>HH:mm</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3305"/>
+        <location filename="../ui_main_window_v2.cpp" line="3314"/>
         <source>Time for:</source>
         <translation>Bunun için süre:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3306"/>
+        <location filename="../ui_main_window_v2.cpp" line="3315"/>
         <source>Pass mark:</source>
         <translation>Geçme notu:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3307"/>
+        <location filename="../ui_main_window_v2.cpp" line="3316"/>
         <source>Number of questions:</source>
         <translation>Soruların sayısı:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3308"/>
+        <location filename="../ui_main_window_v2.cpp" line="3317"/>
         <source>Specify the minimum number of correct answers to pass the exam</source>
         <translation>Sınavı geçmek için verilecek en az doğru yanıt sayısını belirtin</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3309"/>
+        <location filename="../ui_main_window_v2.cpp" line="3318"/>
         <source>one question</source>
         <translation>bir soru</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3310"/>
+        <location filename="../ui_main_window_v2.cpp" line="3319"/>
         <source>Specify the number of questions</source>
         <translation>Soru sayısını belirtin</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3311"/>
+        <location filename="../ui_main_window_v2.cpp" line="3320"/>
         <source>Use the maximum number of questions possible</source>
         <translation>Mümkün olan en fazla soru sayısını kullan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3312"/>
+        <location filename="../ui_main_window_v2.cpp" line="3321"/>
         <source>Maximum</source>
         <translation>En fazla</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3313"/>
+        <location filename="../ui_main_window_v2.cpp" line="3322"/>
         <source>Time for one question (multiplied by the number of questions)</source>
         <translation>Bir soru için verilen süre (soru sayısı ile çarpılır)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3315"/>
+        <location filename="../ui_main_window_v2.cpp" line="3324"/>
         <source>Proceed to testing mode using this computer as a server</source>
         <translation>Test kipini başlatmak için bu bilgisayarı sunucu olarak kullan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3316"/>
+        <location filename="../ui_main_window_v2.cpp" line="3325"/>
         <source>Start server</source>
         <translation>Sunucuyu başlat</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3317"/>
+        <location filename="../ui_main_window_v2.cpp" line="3326"/>
         <source>the whole test</source>
         <translation>testin tamamı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3318"/>
+        <location filename="../ui_main_window_v2.cpp" line="3327"/>
         <source>Test name:</source>
         <translation>Testin adı:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3319"/>
+        <location filename="../ui_main_window_v2.cpp" line="3328"/>
         <source>Enable setting a custom test name (if unchecked, database name will be used)</source>
         <translation>Özel bir test adı belirtmeyi etkinleştir (eğer seçilmezse veritabanı adı kullanılacak)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3320"/>
+        <location filename="../ui_main_window_v2.cpp" line="3329"/>
         <source>Custom</source>
         <translation>Özel</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3324"/>
+        <location filename="../ui_main_window_v2.cpp" line="3333"/>
         <source>Server information</source>
         <translation>Sunucu bilgileri</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3325"/>
+        <location filename="../ui_main_window_v2.cpp" line="3334"/>
         <source>The server is running on port *****. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
         <translation>Sunucu  ***** portunda çalışıyor. Şimdi herbir istemci bilgisayarda Test Hazırlayıcıyı çalıştırabilirsiniz. Test sırasında Veritabanı Düzenleyiciden çıkmayın!</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3326"/>
+        <location filename="../ui_main_window_v2.cpp" line="3335"/>
         <source>List of clients</source>
         <translation>İstemcilerin listesi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3327"/>
+        <location filename="../ui_main_window_v2.cpp" line="3336"/>
         <source>Select a client to get more information</source>
         <translation>Daha fazla bilgi edinmek için bir istemci seçin</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3328"/>
+        <location filename="../ui_main_window_v2.cpp" line="3337"/>
         <source>Selected client</source>
         <translation>Seçilen istemci</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3347"/>
+        <location filename="../ui_main_window_v2.cpp" line="3356"/>
         <source>The selected client&apos;s exam results</source>
         <translation>Seçilen istemcinin sınav sonuçları</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3383"/>
+        <location filename="../ui_main_window_v2.cpp" line="3392"/>
         <source>Answered correctly</source>
         <translation>Doğru şekilde yanıtlanan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3387"/>
+        <location filename="../ui_main_window_v2.cpp" line="3396"/>
         <source>Answer</source>
         <translation>Yanıt</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3391"/>
+        <location filename="../ui_main_window_v2.cpp" line="3400"/>
         <source>Correct answer</source>
         <translation>Doğru yanıt</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3394"/>
+        <location filename="../ui_main_window_v2.cpp" line="3403"/>
         <source>&lt;b&gt;Total score:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Toplam puan:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3349"/>
+        <location filename="../ui_main_window_v2.cpp" line="3358"/>
         <source>The selected client&apos;s total score</source>
         <translation>Seçilen istemcinin toplam puanı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3396"/>
+        <location filename="../ui_main_window_v2.cpp" line="3405"/>
         <source>Not ready yet</source>
         <translation>Henüz hazır değil</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3397"/>
+        <location filename="../ui_main_window_v2.cpp" line="3406"/>
         <source>&lt;b&gt;Results:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Sonuçlar:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3352"/>
+        <location filename="../ui_main_window_v2.cpp" line="3361"/>
         <source>&lt;b&gt;Status:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Durum:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3353"/>
+        <location filename="../ui_main_window_v2.cpp" line="3362"/>
         <source>The selected client&apos;s status</source>
         <translation>Seçilen istemcinin durumu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3354"/>
+        <location filename="../ui_main_window_v2.cpp" line="3363"/>
         <source>Disconnected</source>
         <translation>Bağlantı koptu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3398"/>
+        <location filename="../ui_main_window_v2.cpp" line="3407"/>
         <source>&lt;b&gt;Name:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Adı:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3356"/>
+        <location filename="../ui_main_window_v2.cpp" line="3365"/>
         <source>The selected client&apos;s name</source>
         <translation>Seçilen istemcinin adı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3400"/>
+        <location filename="../ui_main_window_v2.cpp" line="3409"/>
         <source>Not identified yet</source>
         <translation>Henüz tanınamadı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3416"/>
+        <location filename="../ui_main_window_v2.cpp" line="3425"/>
         <source>Server log</source>
         <translation>Sunucu günlük kayıtları</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3360"/>
+        <location filename="../ui_main_window_v2.cpp" line="3369"/>
         <source>Selected session</source>
         <translation>Seçilen oturum</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3361"/>
+        <location filename="../ui_main_window_v2.cpp" line="3370"/>
         <source>&lt;b&gt;Session name:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Oturum adı:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3362"/>
+        <location filename="../ui_main_window_v2.cpp" line="3371"/>
         <source>Name of the selected session</source>
         <translation>Seçilen oturumun adı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3363"/>
+        <location filename="../ui_main_window_v2.cpp" line="3372"/>
         <source>&lt;b&gt;Date and time:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Gün ve saat:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3364"/>
+        <location filename="../ui_main_window_v2.cpp" line="3373"/>
         <source>Date and time of the selected session</source>
         <translation>Seçilen oturumun günü ve saati</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3365"/>
+        <location filename="../ui_main_window_v2.cpp" line="3374"/>
         <source>Bad</source>
         <translation>Kötü</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3366"/>
+        <location filename="../ui_main_window_v2.cpp" line="3375"/>
         <source>Good</source>
         <translation>İyi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3367"/>
+        <location filename="../ui_main_window_v2.cpp" line="3376"/>
         <source>Average result of the selected session</source>
         <translation>Seçilen oturumun ortalama sonucu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3368"/>
+        <location filename="../ui_main_window_v2.cpp" line="3377"/>
         <source>&lt;b&gt;Pass mark:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Geçme notu:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3369"/>
+        <location filename="../ui_main_window_v2.cpp" line="3378"/>
         <source>The minimum number of correct answers to pass this exam</source>
         <translation>Bu sınavı geçmek için gereken en az doğru yanıt sayısı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3371"/>
+        <location filename="../ui_main_window_v2.cpp" line="3380"/>
         <source>&lt;b&gt;Average:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Ortalama:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3372"/>
+        <location filename="../ui_main_window_v2.cpp" line="3381"/>
         <source>List of students</source>
         <translation>Öğrencilerin listesi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3373"/>
+        <location filename="../ui_main_window_v2.cpp" line="3382"/>
         <source>Select a student to get more information</source>
         <translation>Daha fazla bilgi almak için bir öğrenci seçin</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3374"/>
+        <location filename="../ui_main_window_v2.cpp" line="3383"/>
         <source>Selected student</source>
         <translation>Seçilen öğrenci</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3393"/>
+        <location filename="../ui_main_window_v2.cpp" line="3402"/>
         <source>The selected student&apos;s exam results</source>
         <translation>Seçilen öğrencinin sınav sonuçları</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3395"/>
+        <location filename="../ui_main_window_v2.cpp" line="3404"/>
         <source>The selected student&apos;s total score</source>
         <translation>Seçilen öğrencinin toplam puanı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3399"/>
+        <location filename="../ui_main_window_v2.cpp" line="3408"/>
         <source>The selected student&apos;s name</source>
         <translation>Seçilen öğrencinin adı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3417"/>
+        <location filename="../ui_main_window_v2.cpp" line="3426"/>
         <source>List of sessions</source>
         <translation>Oturum listesi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3421"/>
+        <location filename="../ui_main_window_v2.cpp" line="3430"/>
         <source>Double click a session to view</source>
         <translation>Bir oturumu görmek için üzerine çift tıklayın</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3422"/>
+        <location filename="../ui_main_window_v2.cpp" line="3431"/>
         <source>&lt;b&gt;Archived sessions:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Arşivlenmiş oturumlar:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3426"/>
+        <location filename="../ui_main_window_v2.cpp" line="3435"/>
         <source>&amp;Question</source>
         <translation>&amp;Soru</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3429"/>
+        <location filename="../ui_main_window_v2.cpp" line="3438"/>
         <source>&amp;Sort questions</source>
         <translation>S&amp;oruları sırala</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3430"/>
+        <location filename="../ui_main_window_v2.cpp" line="3439"/>
         <source>&amp;Filter the list of questions</source>
         <translation>Soru listesini sü&amp;z</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3428"/>
+        <location filename="../ui_main_window_v2.cpp" line="3437"/>
         <source>&amp;Database</source>
         <translation>&amp;Veritabanı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3425"/>
+        <location filename="../ui_main_window_v2.cpp" line="3434"/>
         <source>&amp;View</source>
         <translation>&amp;Görünüm</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3431"/>
+        <location filename="../ui_main_window_v2.cpp" line="3440"/>
         <source>&amp;File</source>
         <translation>&amp;Dosya</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3423"/>
+        <location filename="../ui_main_window_v2.cpp" line="3432"/>
         <source>&amp;Help</source>
         <translation>&amp;Yardım</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3427"/>
+        <location filename="../ui_main_window_v2.cpp" line="3436"/>
         <source>&amp;Server</source>
         <translation>&amp;Sunucu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3424"/>
+        <location filename="../ui_main_window_v2.cpp" line="3433"/>
         <source>Sessio&amp;n</source>
         <translation>&amp;Oturum</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2848"/>
+        <location filename="../ui_main_window_v2.cpp" line="2853"/>
         <source>&amp;New</source>
         <translation>&amp;Yeni</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2852"/>
+        <location filename="../ui_main_window_v2.cpp" line="2857"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+Y</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2853"/>
+        <location filename="../ui_main_window_v2.cpp" line="2858"/>
         <source>&amp;Open</source>
         <translation>&amp;Aç</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2856"/>
+        <location filename="../ui_main_window_v2.cpp" line="2861"/>
         <source>Open a database</source>
         <translation>Bir veritabanı aç</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2857"/>
+        <location filename="../ui_main_window_v2.cpp" line="2862"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2861"/>
+        <location filename="../ui_main_window_v2.cpp" line="2866"/>
         <source>Save the open database</source>
         <translation>Açık veritabanını kaydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2862"/>
+        <location filename="../ui_main_window_v2.cpp" line="2867"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2863"/>
+        <location filename="../ui_main_window_v2.cpp" line="2868"/>
         <source>Save &amp;as</source>
         <translation>Farklı ka&amp;ydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2865"/>
+        <location filename="../ui_main_window_v2.cpp" line="2870"/>
         <source>Save as</source>
         <translation>Farklı kaydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2866"/>
+        <location filename="../ui_main_window_v2.cpp" line="2871"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2867"/>
+        <location filename="../ui_main_window_v2.cpp" line="2872"/>
         <source>&amp;Close</source>
         <translation>&amp;Kapat</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2871"/>
+        <location filename="../ui_main_window_v2.cpp" line="2876"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2872"/>
+        <location filename="../ui_main_window_v2.cpp" line="2877"/>
         <source>&amp;Quit</source>
         <translation>&amp;Çık</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2876"/>
+        <location filename="../ui_main_window_v2.cpp" line="2881"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Ç</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2877"/>
+        <location filename="../ui_main_window_v2.cpp" line="2882"/>
         <source>&amp;Flags</source>
         <translation>&amp;Bayraklar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2881"/>
+        <location filename="../ui_main_window_v2.cpp" line="2886"/>
         <source>Edit flags</source>
         <translation>Bayrakları düzenle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2882"/>
+        <location filename="../ui_main_window_v2.cpp" line="2887"/>
         <source>&amp;Server mode</source>
         <translation>&amp;Sunucu kipi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2883"/>
+        <location filename="../ui_main_window_v2.cpp" line="2888"/>
         <source>Server mode</source>
         <translation>Sunucu kipi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2886"/>
+        <location filename="../ui_main_window_v2.cpp" line="2891"/>
         <source>Edit test settings and start the server</source>
         <translation>Test ayarlarını düzenle ve sunucuyu başlat</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2887"/>
+        <location filename="../ui_main_window_v2.cpp" line="2892"/>
         <source>&amp;About</source>
         <translation>&amp;Hakkında</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2890"/>
+        <location filename="../ui_main_window_v2.cpp" line="2895"/>
         <source>About iTest</source>
         <translation>iTest Hakkında</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2891"/>
+        <location filename="../ui_main_window_v2.cpp" line="2896"/>
         <source>From &amp;A to Z</source>
         <translation>&amp;A dan Z ye</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2893"/>
+        <location filename="../ui_main_window_v2.cpp" line="2898"/>
         <source>Sort questions from A to Z</source>
         <translation>Soruları A dan Z ye sırala</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2894"/>
+        <location filename="../ui_main_window_v2.cpp" line="2899"/>
         <source>Ctrl+Alt+Up</source>
         <translation>Ctrl+Alt+Up</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2895"/>
+        <location filename="../ui_main_window_v2.cpp" line="2900"/>
         <source>From &amp;Z to A</source>
         <translation>&amp;Z den A ya</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2897"/>
+        <location filename="../ui_main_window_v2.cpp" line="2902"/>
         <source>Sort questions from Z to A</source>
         <translation>Soruları Z den A ya sırala</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2898"/>
+        <location filename="../ui_main_window_v2.cpp" line="2903"/>
         <source>Ctrl+Alt+Down</source>
         <translation>Ctrl+Alt+Down</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2899"/>
+        <location filename="../ui_main_window_v2.cpp" line="2904"/>
         <source>Show &amp;all questions</source>
         <translation>&amp;Tüm soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2904"/>
+        <location filename="../ui_main_window_v2.cpp" line="2909"/>
         <source>Show &amp;easy questions only</source>
         <translation>Sadece &amp;kolay soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2908"/>
+        <location filename="../ui_main_window_v2.cpp" line="2913"/>
         <source>Show questions with &amp;medium difficulty only</source>
         <translation>Sadece &amp;orta düzey soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2911"/>
+        <location filename="../ui_main_window_v2.cpp" line="2916"/>
         <source>Show &amp;difficult questions only</source>
         <translation>Sadece &amp;zor soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2915"/>
+        <location filename="../ui_main_window_v2.cpp" line="2920"/>
         <source>Show database &amp;information</source>
         <translation>Veritabanı bilgilerini g&amp;öster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2918"/>
+        <location filename="../ui_main_window_v2.cpp" line="2923"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+Ö</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2919"/>
+        <location filename="../ui_main_window_v2.cpp" line="2924"/>
         <source>Show questions with the selected &amp;flag only</source>
         <translation>Sadece seçilen &amp;bayrağı taşıyan soruları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2922"/>
+        <location filename="../ui_main_window_v2.cpp" line="2927"/>
         <source>Move &amp;up</source>
         <translation>Y&amp;ukarı taşı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2923"/>
+        <location filename="../ui_main_window_v2.cpp" line="2928"/>
         <source>Move up</source>
         <translation>Yukarı taşı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2927"/>
+        <location filename="../ui_main_window_v2.cpp" line="2932"/>
         <source>Ctrl+Up</source>
         <translation>Ctrl+Up</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2928"/>
+        <location filename="../ui_main_window_v2.cpp" line="2933"/>
         <source>Move do&amp;wn</source>
         <translation>A&amp;şağı taşı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2932"/>
+        <location filename="../ui_main_window_v2.cpp" line="2937"/>
         <source>Ctrl+Down</source>
         <translation>Ctrl+Down</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2933"/>
+        <location filename="../ui_main_window_v2.cpp" line="2938"/>
         <source>Co&amp;mments</source>
         <translation>&amp;Yorumlar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2934"/>
+        <location filename="../ui_main_window_v2.cpp" line="2939"/>
         <source>Comments</source>
         <translation>Yorumlar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2937"/>
+        <location filename="../ui_main_window_v2.cpp" line="2942"/>
         <source>Edit comments</source>
         <translation>Yorumları düzenle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2938"/>
+        <location filename="../ui_main_window_v2.cpp" line="2943"/>
         <source>&amp;Use last save date</source>
         <translation>&amp;Son kaydetme tarihini kullan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2941"/>
+        <location filename="../ui_main_window_v2.cpp" line="2946"/>
         <source>&amp;Add</source>
         <translation>&amp;Ekle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2942"/>
+        <location filename="../ui_main_window_v2.cpp" line="2947"/>
         <source>Add</source>
         <translation>Ekle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2946"/>
+        <location filename="../ui_main_window_v2.cpp" line="2951"/>
         <source>Ctrl+Alt+A</source>
         <translation>Ctrl+Alt+E</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2947"/>
+        <location filename="../ui_main_window_v2.cpp" line="2952"/>
         <source>Dupli&amp;cate</source>
         <translation>&amp;Aynısı olarak işaretle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2951"/>
+        <location filename="../ui_main_window_v2.cpp" line="2956"/>
         <source>Ctrl+Alt+C</source>
         <translation>Ctrl+Alt+A</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2952"/>
+        <location filename="../ui_main_window_v2.cpp" line="2957"/>
         <source>&amp;Delete</source>
         <translation>&amp;Sil</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2956"/>
+        <location filename="../ui_main_window_v2.cpp" line="2961"/>
         <source>Ctrl+Alt+D</source>
         <translation>Ctrl+Alt+S</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2957"/>
+        <location filename="../ui_main_window_v2.cpp" line="2962"/>
         <source>Move to &amp;top</source>
         <translation>En &amp;üste taşı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2960"/>
+        <location filename="../ui_main_window_v2.cpp" line="2965"/>
         <source>Move the selected question to the top</source>
         <translation>Seçilen soruyu en üste taşı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2961"/>
+        <location filename="../ui_main_window_v2.cpp" line="2966"/>
         <source>Ctrl+Shift+Up</source>
         <translation>Ctrl+Shift+Up</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2962"/>
+        <location filename="../ui_main_window_v2.cpp" line="2967"/>
         <source>Move to &amp;bottom</source>
         <translation>En al&amp;ta taşı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2965"/>
+        <location filename="../ui_main_window_v2.cpp" line="2970"/>
         <source>Move the selected question to the bottom</source>
         <translation>Seçilen soruyu en alta taşı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2966"/>
+        <location filename="../ui_main_window_v2.cpp" line="2971"/>
         <source>Ctrl+Shift+Down</source>
         <translation>Ctrl+Shift+Down</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2967"/>
+        <location filename="../ui_main_window_v2.cpp" line="2972"/>
         <source>Appl&amp;y changes</source>
         <translation>Değişiklikleri &amp;uygula</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2971"/>
+        <location filename="../ui_main_window_v2.cpp" line="2976"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2972"/>
+        <location filename="../ui_main_window_v2.cpp" line="2977"/>
         <source>Di&amp;scard changes</source>
         <translation>Değişiklikleri &amp;yok say</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2976"/>
+        <location filename="../ui_main_window_v2.cpp" line="2981"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2977"/>
+        <location filename="../ui_main_window_v2.cpp" line="2982"/>
         <source>&amp;Questions</source>
         <translation>&amp;Sorular</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2981"/>
+        <location filename="../ui_main_window_v2.cpp" line="2986"/>
         <source>Edit questions</source>
         <translation>Soruları düzenle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2982"/>
+        <location filename="../ui_main_window_v2.cpp" line="2987"/>
         <source>&amp;Add off-line client</source>
         <translation>&amp;Çevrimdışı istemci ekle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2985"/>
+        <location filename="../ui_main_window_v2.cpp" line="2990"/>
         <source>Add off-line client</source>
         <translation>Çevrimdışı istemci ekle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2986"/>
+        <location filename="../ui_main_window_v2.cpp" line="2991"/>
         <source>Stop se&amp;rver</source>
         <translation>&amp;Sunucuyu durdur</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2989"/>
+        <location filename="../ui_main_window_v2.cpp" line="2994"/>
         <source>Stop the server and return to test settings</source>
         <translation>Sunucuyu durdur ve test ayarlarına dön</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2990"/>
+        <location filename="../ui_main_window_v2.cpp" line="2995"/>
         <source>S&amp;tart server</source>
         <translation>Sunucuyu &amp;başlat</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2994"/>
+        <location filename="../ui_main_window_v2.cpp" line="2999"/>
         <source>Export &amp;log</source>
         <translation>Kayıt &amp;günlüğünü dışarı aktar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2997"/>
+        <location filename="../ui_main_window_v2.cpp" line="3002"/>
         <source>Export server log</source>
         <translation>Sunucunun kayıt günlüğünü dışarı aktar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2998"/>
+        <location filename="../ui_main_window_v2.cpp" line="3003"/>
         <source>Save sessio&amp;n</source>
         <translation>Oturumu &amp;kaydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2999"/>
+        <location filename="../ui_main_window_v2.cpp" line="3004"/>
         <source>Save session</source>
         <translation>Oturumu kaydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3002"/>
+        <location filename="../ui_main_window_v2.cpp" line="3007"/>
         <source>Save the current session for later viewing</source>
         <translation>Daha sonra bakabilmek için şimdiki oturumu kaydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3003"/>
+        <location filename="../ui_main_window_v2.cpp" line="3008"/>
         <source>&amp;QuickPrint</source>
         <translation>&amp;Hızlı Yazdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3005"/>
+        <location filename="../ui_main_window_v2.cpp" line="3010"/>
         <source>Print the selected client&apos;s results using the current printer settings</source>
         <translation>Geçerli yazıcı ayarlarını kullanarak seçilen istemcinin sonuçlarını yazdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3006"/>
+        <location filename="../ui_main_window_v2.cpp" line="3011"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3007"/>
+        <location filename="../ui_main_window_v2.cpp" line="3012"/>
         <source>&amp;Print</source>
         <translation>&amp;Yazdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3009"/>
+        <location filename="../ui_main_window_v2.cpp" line="3014"/>
         <source>Print the selected client&apos;s results</source>
         <translation>Seçilen istemcinin sonuçlarını yazdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3010"/>
+        <location filename="../ui_main_window_v2.cpp" line="3015"/>
         <source>Ctrl+Shift+P</source>
         <translation>Ctrl+Shift+P</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3011"/>
+        <location filename="../ui_main_window_v2.cpp" line="3016"/>
         <source>&amp;Export test</source>
         <translation>&amp;Testi dışarı aktar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3014"/>
+        <location filename="../ui_main_window_v2.cpp" line="3019"/>
         <source>Export off-line test session</source>
         <translation>Çevrimdışı test oturumunu dışarı aktar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3015"/>
+        <location filename="../ui_main_window_v2.cpp" line="3020"/>
         <source>Add off-line client&amp;s</source>
         <translation>Çevrimdışı istemci e&amp;kle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3017"/>
+        <location filename="../ui_main_window_v2.cpp" line="3022"/>
         <source>Add off-line clients</source>
         <translation>Çevrimdışı istemci ekle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3018"/>
+        <location filename="../ui_main_window_v2.cpp" line="3023"/>
         <source>Save&amp;d sessions</source>
         <translation>K&amp;aydedilmiş oturumlar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3021"/>
+        <location filename="../ui_main_window_v2.cpp" line="3026"/>
         <source>View saved test sessions</source>
         <translation>Kaydedilmiş test oturumlarını göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3022"/>
+        <location filename="../ui_main_window_v2.cpp" line="3027"/>
         <source>Delete &amp;log</source>
         <translation>Günlüğü &amp;sil</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3025"/>
+        <location filename="../ui_main_window_v2.cpp" line="3030"/>
         <source>Delete the log for the selected session</source>
         <translation>Seçilen oturumun kayıt günlüğünü sil</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3026"/>
+        <location filename="../ui_main_window_v2.cpp" line="3031"/>
         <source>&amp;Archive session</source>
         <translation>&amp;Oturumu arşivle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3027"/>
+        <location filename="../ui_main_window_v2.cpp" line="3032"/>
         <source>Archive session</source>
         <translation>Oturumu arşivle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3030"/>
+        <location filename="../ui_main_window_v2.cpp" line="3035"/>
         <source>Archive the selected session</source>
         <translation>Seçilen oturumu arşivle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3031"/>
+        <location filename="../ui_main_window_v2.cpp" line="3036"/>
         <source>Documentation</source>
         <translation>Dökümanlar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3034"/>
+        <location filename="../ui_main_window_v2.cpp" line="3039"/>
         <source>View online documentation</source>
         <translation>Çevrimiçi dökümanları göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3035"/>
+        <location filename="../ui_main_window_v2.cpp" line="3040"/>
         <source>Check for updates</source>
         <translation>Güncellemeleri kontrol et</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3038"/>
+        <location filename="../ui_main_window_v2.cpp" line="3043"/>
         <source>Check if there is a new version available online</source>
         <translation>Yeni sürüm olup olmadığını çevirimiçi olarak kontrol et</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3039"/>
+        <location filename="../ui_main_window_v2.cpp" line="3044"/>
         <source>Print &amp;all</source>
         <translation>&amp;Tümünü yazdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3041"/>
+        <location filename="../ui_main_window_v2.cpp" line="3046"/>
         <source>Print the results of all students</source>
         <translation>Tüm öğrencilerin sonuçlarını yazdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3042"/>
+        <location filename="../ui_main_window_v2.cpp" line="3047"/>
         <source>Print session &amp;summary</source>
         <translation>Oturum özetini y&amp;azdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3044"/>
+        <location filename="../ui_main_window_v2.cpp" line="3049"/>
         <source>Print session summary</source>
         <translation>Oturum özetini yazdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3046"/>
+        <location filename="../ui_main_window_v2.cpp" line="3051"/>
         <source>Print a summary and statistics for the selected session</source>
         <translation>Seçilen oturumun istatistiklerini ve özetini yazdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3047"/>
+        <location filename="../ui_main_window_v2.cpp" line="3052"/>
         <source>Overall statistics</source>
         <translation>Tüm istatistikler</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3050"/>
+        <location filename="../ui_main_window_v2.cpp" line="3055"/>
         <source>Show overall statistics about the difficulty of questions</source>
         <translation>Soruların zorluk derecesi ile ilgili tüm istatistikleri yazdır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3051"/>
+        <location filename="../ui_main_window_v2.cpp" line="3056"/>
         <source>Change language</source>
         <translation>Dili değiştir</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3054"/>
+        <location filename="../ui_main_window_v2.cpp" line="3059"/>
         <source>Change the language of the iTest interface</source>
         <translation>iTest arayüzünün dilini değiştir</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3055"/>
+        <location filename="../ui_main_window_v2.cpp" line="3060"/>
         <source>&amp;Restore session</source>
         <translation>&amp;Oturumu yeniden yükle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3058"/>
+        <location filename="../ui_main_window_v2.cpp" line="3063"/>
         <source>Restore the selected session from the archive</source>
         <translation>Seçilen oturumu arşivden yeniden yükle</translation>
     </message>
@@ -2138,54 +2138,54 @@ Lütfen başka bir isim seçin:</translation>
         <translation>Silmek için önce bir soru seçin.</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="99"/>
+        <location filename="../questions.cpp" line="100"/>
         <source>Duplicate question</source>
         <translation>Soruyu aynısı var olarak işaretle</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="99"/>
+        <location filename="../questions.cpp" line="100"/>
         <source>Select a question to be duplicated first.</source>
         <translation>Aynısı var olarak işaretlemek için önce bir soru seçin.</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="130"/>
+        <location filename="../questions.cpp" line="131"/>
         <source>unavailable</source>
         <translation>kullanılamaz</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="127"/>
+        <location filename="../questions.cpp" line="128"/>
         <source>easy</source>
         <translation>kolay</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="128"/>
+        <location filename="../questions.cpp" line="129"/>
         <source>medium</source>
         <translation>orta düzey</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="129"/>
+        <location filename="../questions.cpp" line="130"/>
         <source>difficult</source>
         <translation>zor</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="132"/>
+        <location filename="../questions.cpp" line="133"/>
         <source>Statistics: number of &lt;b&gt;correct&lt;/b&gt; answers: &lt;b&gt;%1&lt;/b&gt;; number of &lt;b&gt;incorrect&lt;/b&gt; answers: &lt;b&gt;%2&lt;/b&gt;; difficulty: &lt;b&gt;%3&lt;/b&gt;; &lt;a href=&quot;adjust.difficulty&quot;&gt;adjust difficulty&lt;/a&gt;</source>
         <translation>İstatistikler: &lt;b&gt;doğru&lt;/b&gt; yanıt sayısı: &lt;b&gt;%1&lt;/b&gt;; &lt;b&gt;yanlış&lt;/b&gt; yanıt sayısı: &lt;b&gt;%2&lt;/b&gt;; zorluk derecesi: &lt;b&gt;%3&lt;/b&gt;; &lt;a href=&quot;adjust.difficulty&quot;&gt;zorluk derecesini ayarla&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="186"/>
+        <location filename="../questions.cpp" line="187"/>
         <source>Apply changes</source>
         <translation>Değişiklikleri uygula</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="186"/>
+        <location filename="../questions.cpp" line="187"/>
         <source>A question with this name already exists.
 Please choose a different name.</source>
         <translation>Bu ismi taşıyan bir soru zaten var.
 Lütfen başka bir isim seçin.</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="190"/>
+        <location filename="../questions.cpp" line="191"/>
         <source>This new name has been used before.
 %1 occurrences of a question with this name found in the saved sessions.
 Changing the name to this one will cause that this question will be used
@@ -2199,7 +2199,7 @@ Eğer bu ismi değiştirirseniz eskisi yerine artık bu isim kullanılacak.
 İsmi değiştirmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="200"/>
+        <location filename="../questions.cpp" line="201"/>
         <source>Are you sure you want to change the name of the question?
 %1 occurrences of this question found in the saved sessions.
 All occurrences will be updated.</source>
@@ -2208,234 +2208,234 @@ Kaydedilmiş oturumlarda %1 adet aynı ismi taşıyan soru bulundu.
 Tüm eski sorular güncellenecek.</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="237"/>
+        <location filename="../questions.cpp" line="238"/>
         <source>Data saved</source>
         <translation>Veri kaydedildi</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="244"/>
+        <location filename="../questions.cpp" line="245"/>
         <source>Data discarded</source>
         <translation>Veri kaydedilmedi</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="202"/>
+        <location filename="../server.cpp" line="203"/>
         <source>maximum (%1)</source>
         <translation>en yüksek (%1)</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="303"/>
+        <location filename="../server.cpp" line="304"/>
         <source>It is necessary to save any changes you have made to the database before proceeding.</source>
         <translation>İşlemi başlatmadan önce veritabanında yaptığınız tüm değişiklikleri kaydetmeniz gerekiyor.</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="312"/>
+        <location filename="../server.cpp" line="313"/>
         <source>Invalid test name.</source>
         <translation>Geçersiz test adı.</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="314"/>
+        <location filename="../server.cpp" line="315"/>
         <source>Invalid exam time.</source>
         <translation>Geçersiz sınav süresi.</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="316"/>
+        <location filename="../server.cpp" line="317"/>
         <source>Students will need at least one minute for the exam,
 although it is recommended to give them an hour.</source>
         <translation>Öğrencilere sınav için en az bir dakika verin,
 aslında sınav için bir saat tavsiye edilir.</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="320"/>
+        <location filename="../server.cpp" line="321"/>
         <source>Unable to start the server: %1.</source>
         <translation>Sunucu başlatılamadı: %1.</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="328"/>
+        <location filename="../server.cpp" line="329"/>
         <source>You have not configured the printer yet. Would you like to configure it now?</source>
         <translation>Henüz yazıcıyı yapılandırmadınız. Şimdi yapılandırmak ister misiniz?</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="328"/>
+        <location filename="../server.cpp" line="329"/>
         <source>Con&amp;figure</source>
         <translation>&amp;Yapılandır</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="337"/>
+        <location filename="../server.cpp" line="338"/>
         <source>%1Current printer configuration:%2Would you like to review the configuration?%3</source>
         <translation>%1 Geçerli yazıcı yapılandırması:%2Yapılandırmayı gözden geçirmek ister misiniz?%3</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="337"/>
+        <location filename="../server.cpp" line="338"/>
         <source>&amp;Review configuration</source>
         <translation>&amp;Yapılandırmayı gözden geçir</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="337"/>
+        <location filename="../server.cpp" line="338"/>
         <source>&amp;Continue</source>
         <translation>&amp;Devam Et</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="344"/>
+        <location filename="../server.cpp" line="345"/>
         <source>Unable to start the server: Invalid printer configuration.</source>
         <translation>Sunucu başlatılamadı: Geçersiz yazıcı yapılandırması.</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="390"/>
+        <location filename="../server.cpp" line="391"/>
         <source>Unable to start the server: Invalid server settings.</source>
         <translation>Sunucu başlatılamadı: Geçersiz sunucu ayarları.</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="462"/>
+        <location filename="../server.cpp" line="463"/>
         <source>The server is running on port &lt;b&gt;%1&lt;/b&gt;. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
         <translation>Sunucu &lt;b&gt;%1&lt;/b&gt; portunda çalışmıyor. İstemci makinelerin herbirinde Test Hazırlayıcıyı çalıştırın. Test sırasında veritabanı Düzenleyiciden çıkmayın!</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="470"/>
+        <location filename="../server.cpp" line="471"/>
         <source>iTest - Stop server</source>
         <translation>iTest - Sunucuyu durdur</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="470"/>
+        <location filename="../server.cpp" line="471"/>
         <source>Are you sure you want to stop the server?</source>
         <translation>Sunucuyu durdurmak istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="470"/>
+        <location filename="../server.cpp" line="471"/>
         <source>&amp;Stop</source>
         <translation>&amp;Durdur</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="539"/>
+        <location filename="../server.cpp" line="540"/>
         <source>%1 &gt; Client #%2 connected</source>
         <translation>%1 &gt; İstemci #%2 bağlı</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="563"/>
+        <location filename="../server.cpp" line="564"/>
         <source>%1 &gt; Client #%2 identified as %3</source>
         <translation>%1 &gt; İstemci #%2 %3 olarak tanımlı</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="574"/>
+        <location filename="../server.cpp" line="575"/>
         <source>%1 &gt; Client #%2 (%3) finished the exam</source>
         <translation>%1 &gt; İstemci #%2 (%3) sınavı bitirdi</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="582"/>
+        <location filename="../server.cpp" line="583"/>
         <source>%1 &gt; Client #%2 (%3) submitted results</source>
         <translation>%1 &gt; İstemci #%2 (%3) sonuçları gönderdi</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="590"/>
+        <location filename="../server.cpp" line="591"/>
         <source>%1 &gt; Client #%2 (%3) &gt; failed to print the client&apos;s results</source>
         <translation>%1 &gt; İstemci #%2 (%3) &gt; istemcinin sonuçları yazdırılamadı</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="595"/>
+        <location filename="../server.cpp" line="596"/>
         <source>%1 &gt; Client #%2 (%3) &gt; results printed successfully</source>
         <translation>%1 &gt; İstemci #%2 (%3) &gt; istemcinin sonuçları başarılı bir şekilde yazdırıldı</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="607"/>
+        <location filename="../server.cpp" line="608"/>
         <source>%1 &gt; Client #%2 (%3) disconnected</source>
         <translation>%1 &gt; İstemcinin #%2 (%3) bağlantısı koptu</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="609"/>
+        <location filename="../server.cpp" line="610"/>
         <source>%1 &gt; Client #%2 disconnected</source>
         <translation>%1 &gt; İstemcinin #%2 bağlantısı koptu</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="657"/>
+        <location filename="../server.cpp" line="658"/>
         <source>yes</source>
         <translation>evet</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="657"/>
+        <location filename="../server.cpp" line="658"/>
         <source>no</source>
         <translation>hayır</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="683"/>
+        <location filename="../server.cpp" line="684"/>
         <source>None</source>
         <translation>Hiçbiri</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="764"/>
+        <location filename="../server.cpp" line="765"/>
         <source>Performing a host name lookup</source>
         <translation>Makine adı aranıyor</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="766"/>
+        <location filename="../server.cpp" line="767"/>
         <source>Connecting</source>
         <translation>Bağlanıyor</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="768"/>
+        <location filename="../server.cpp" line="769"/>
         <source>Connected</source>
         <translation>Bağlandı</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="770"/>
+        <location filename="../server.cpp" line="771"/>
         <source>Bound to an address and port</source>
         <translation>Bir adres ve port sınırı </translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="772"/>
+        <location filename="../server.cpp" line="773"/>
         <source>Closing</source>
         <translation>Kapatılıyor</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="774"/>
+        <location filename="../server.cpp" line="775"/>
         <source>Listening</source>
         <translation>Dinleniyor</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="782"/>
+        <location filename="../server.cpp" line="783"/>
         <source>iTest off-line client logs (*.itcl);;All files (*.*)</source>
         <translation>iTest çevrimdışı istemci günlükleri (*.itcl);;Tüm dosyalar (*.*)</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="785"/>
+        <location filename="../server.cpp" line="786"/>
         <source>Failed to add off-line client. Either this file contains client data of a different test session or it contains invalid data.</source>
         <translation>Çevrimdışı istemci eklenemedi. Bu dosya ya geçersiz bilgiler içeriyor ya da başka bir oturumun istemci verilerini bulunduruyor.</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="812"/>
+        <location filename="../server.cpp" line="813"/>
         <source>%1 &gt; Client #%2 (%3) added</source>
         <translation>%1 &gt; İstemci #%2 (%3) eklendi</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="835"/>
+        <location filename="../server.cpp" line="836"/>
         <source>No iTest client logs found in the folder you selected.</source>
         <translation>Seçtiğiniz dizinde iTest istemci günlüğü bulunamadı.</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="838"/>
+        <location filename="../server.cpp" line="839"/>
         <source>%1 &gt; Failed to add off-line client</source>
         <translation>%1 &gt; Çevrimdışı istemci ekleme işlemi başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="854"/>
+        <location filename="../server.cpp" line="855"/>
         <source>Export test</source>
         <translation>Testi dışarı aktar</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="849"/>
+        <location filename="../server.cpp" line="850"/>
         <source>iTest off-line test sessions (*.itos)</source>
         <translation>iTest çevrimdışı test oturumları (*.itos)</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="869"/>
+        <location filename="../server.cpp" line="870"/>
         <source>Test exported</source>
         <translation>Test dışarı aktarıldı</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="894"/>
+        <location filename="../server.cpp" line="895"/>
         <source>iTest Server logs (*.html)</source>
         <translation>iTest Sunucu kayıt günlükleri (*.html)</translation>
     </message>
     <message>
-        <location filename="../server.cpp" line="906"/>
+        <location filename="../server.cpp" line="907"/>
         <source>iTest Server Log</source>
         <translation>iTest Sunucu Kayıt Günlüğü</translation>
     </message>
@@ -2475,42 +2475,42 @@ aslında sınav için bir saat tavsiye edilir.</translation>
         <translation>Bayrak %1:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3067"/>
+        <location filename="../ui_main_window_v2.cpp" line="3072"/>
         <source>Save a copy</source>
         <translation>Bir kopya kaydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3071"/>
+        <location filename="../ui_main_window_v2.cpp" line="3076"/>
         <source>Save a backup</source>
         <translation>Bir yedek kaydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3059"/>
+        <location filename="../ui_main_window_v2.cpp" line="3064"/>
         <source>Copy to archive</source>
         <translation>Arşive kopyala</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3062"/>
+        <location filename="../ui_main_window_v2.cpp" line="3067"/>
         <source>Copy the selected session to the archive</source>
         <translation>Seçilen oturumu arşive kaydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3063"/>
+        <location filename="../ui_main_window_v2.cpp" line="3068"/>
         <source>Copy from archive</source>
         <translation>Arşivden kopyala</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3066"/>
+        <location filename="../ui_main_window_v2.cpp" line="3071"/>
         <source>Copy the selected session from the archive</source>
         <translation>Seçilen oturumu arşivden kopyala</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3070"/>
+        <location filename="../ui_main_window_v2.cpp" line="3075"/>
         <source>Save a copy of the database</source>
         <translation>Veritabanının bir kopyasını kaydet</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3074"/>
+        <location filename="../ui_main_window_v2.cpp" line="3079"/>
         <source>Save a backup copy of the database with all the archived sessions</source>
         <translation>Veritabanını arşivlenmiş tüm oturumlarla birlikte yedekle</translation>
     </message>
@@ -2535,22 +2535,22 @@ aslında sınav için bir saat tavsiye edilir.</translation>
         <translation>http://itest.sourceforge.net/documentation/%1/en/</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3408"/>
+        <location filename="../ui_main_window_v2.cpp" line="3417"/>
         <source>Flag name</source>
         <translation>Bayrak adı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3412"/>
+        <location filename="../ui_main_window_v2.cpp" line="3421"/>
         <source>Pass mark</source>
         <translation>Geçme notu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3370"/>
+        <location filename="../ui_main_window_v2.cpp" line="3379"/>
         <source>Details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3414"/>
+        <location filename="../ui_main_window_v2.cpp" line="3423"/>
         <source>Pass mark details</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2560,71 +2560,81 @@ aslında sınav için bir saat tavsiye edilir.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3128"/>
+        <location filename="../ui_main_window_v2.cpp" line="3137"/>
         <source>Search</source>
         <translation>Ara</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3077"/>
+        <location filename="../ui_main_window_v2.cpp" line="3082"/>
         <source>Show hidden questions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3078"/>
+        <location filename="../ui_main_window_v2.cpp" line="3083"/>
         <source>&amp;Hide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3081"/>
+        <location filename="../ui_main_window_v2.cpp" line="3086"/>
         <source>Hide the selected question</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3082"/>
+        <location filename="../ui_main_window_v2.cpp" line="3087"/>
         <source>Ctrl+Alt+H</source>
         <translation>Ctrl+Alt+H</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3125"/>
+        <location filename="../ui_main_window_v2.cpp" line="3134"/>
         <source>Group:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3126"/>
+        <location filename="../ui_main_window_v2.cpp" line="3135"/>
         <source>Group of the selected question</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3127"/>
+        <location filename="../ui_main_window_v2.cpp" line="3136"/>
         <source>Search the database for other questions in this group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3321"/>
+        <location filename="../ui_main_window_v2.cpp" line="3330"/>
         <source>Groups:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3322"/>
+        <location filename="../ui_main_window_v2.cpp" line="3331"/>
         <source>Allow one question per group to appear in one test only, i.e. choose one of the group randomly</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3323"/>
+        <location filename="../ui_main_window_v2.cpp" line="3332"/>
         <source>Allow one question per group only</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="158"/>
+        <location filename="../questions.cpp" line="159"/>
         <source>This group is used by one or more questions with a different flag.
 Please choose a different group.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="166"/>
+        <location filename="../questions.cpp" line="167"/>
         <source>It is strongly advised against changing the flag of a question.
 Consider duplicating the question and hiding the original instead.
 Proceed only if you know what you are doing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3088"/>
+        <source>Run Test Writer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3091"/>
+        <source>Run Test Writer on this computer</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

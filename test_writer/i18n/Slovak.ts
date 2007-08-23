@@ -73,7 +73,7 @@
         <translation>Pripravený</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="192"/>
+        <location filename="../database.cpp" line="205"/>
         <source>Open database</source>
         <translation>Otvoriť databázu</translation>
     </message>
@@ -83,19 +83,19 @@
         <translation>Otvoriť databázový súbor</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="192"/>
+        <location filename="../database.cpp" line="205"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Nemôžem čítať súbor %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="37"/>
+        <location filename="../database.cpp" line="38"/>
         <source>iTest version notice</source>
         <translation>Upozornenie o verzii iTest</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="37"/>
+        <location filename="../database.cpp" line="38"/>
         <source>You need a newer version of iTest to open this database file.</source>
         <translation>Na otvorenie tohto databázového súboru potrebujete novšiu verziu programu iTest.</translation>
     </message>
@@ -175,7 +175,7 @@
         <translation type="obsolete">%1 z %2</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="35"/>
+        <location filename="../database.cpp" line="36"/>
         <source>There is a newer version of iTest available.
 Nonetheless, this version is able to open the database file you selected,
 but you are most probably missing a whole bunch of cool new features.</source>
@@ -234,62 +234,62 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
         <translation>Načítavam testové dáta...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="178"/>
+        <location filename="../database.cpp" line="191"/>
         <source>Reading database file...</source>
         <translation>Čítam databázový súbor...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="214"/>
+        <location filename="../database.cpp" line="227"/>
         <source>Generating test...</source>
         <translation>Generujem test...</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>Finish the exam</source>
         <translation>Ukončiť skúšku</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>Are you sure you want to finish? Once you click Finish there is no going back.</source>
         <translation>Naozaj chcete skončiť? Po kliknutí na &quot;Koniec&quot; sa už nedá vrátiť späť.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>&amp;Finish</source>
         <translation>&amp;Koniec</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="220"/>
+        <location filename="../main.cpp" line="228"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Zrušiť</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="314"/>
+        <location filename="../main.cpp" line="323"/>
         <source>Your name, please.</source>
         <translation>Vaše meno, prosím.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="314"/>
+        <location filename="../main.cpp" line="323"/>
         <source>You cannot proceed unless you give us your name.</source>
         <translation>Nemôžete pokračovať, kým neuvediete svoje meno.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="350"/>
+        <location filename="../main.cpp" line="359"/>
         <source>Exam finished</source>
         <translation>Skúška ukončená</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="350"/>
+        <location filename="../main.cpp" line="359"/>
         <source>You have run out of time. Your answers are being sent.</source>
         <translation>Váš čas vypršal. Vaše odpovede sa posielajú.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="378"/>
+        <location filename="../main.cpp" line="387"/>
         <source>iTest - Load test data</source>
         <translation>iTest - Načítať testové dáta</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="378"/>
+        <location filename="../main.cpp" line="387"/>
         <source>Invalid data received. There might be something wrong with the server.</source>
         <translation>Prijaté neplatné dáta. Možno niečo nie je v poriadku so serverom.</translation>
     </message>
