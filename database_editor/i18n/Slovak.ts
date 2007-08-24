@@ -61,22 +61,22 @@
 <context>
     <name>Client</name>
     <message>
-        <location filename="../client.cpp" line="285"/>
+        <location filename="../client.cpp" line="291"/>
         <source>iTest - Database Editor</source>
         <translation>iTest - Editor databáz</translation>
     </message>
     <message>
-        <location filename="../client.cpp" line="275"/>
+        <location filename="../client.cpp" line="281"/>
         <source>The host was not found. Please check the host name and port settings.</source>
         <translation>Hostiteľ nenájdený. Prosím skontrolujte meno hostiteľa a nastavenie portu.</translation>
     </message>
     <message>
-        <location filename="../client.cpp" line="282"/>
+        <location filename="../client.cpp" line="288"/>
         <source>The connection was refused by the peer. Make sure the iTest server is running, and check that the host name and port settings are correct.</source>
         <translation>Spojenie odmietnuté peerom. Uistite sa, že server iTest beží, a že meno hostiteľa a nastavenie portu sú správne.</translation>
     </message>
     <message>
-        <location filename="../client.cpp" line="287"/>
+        <location filename="../client.cpp" line="293"/>
         <source>The following error occurred: %1.</source>
         <translation>Vyskytla sa nasledujúca chyba: %1.</translation>
     </message>
@@ -99,7 +99,7 @@
         <translation>&amp;Zahodiť</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="171"/>
+        <location filename="../session_viewer.cpp" line="214"/>
         <source>Cancel</source>
         <translation>Zrušiť</translation>
     </message>
@@ -161,7 +161,7 @@
         <translation>Databáza uložená</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="515"/>
+        <location filename="../database.cpp" line="540"/>
         <source>Open database</source>
         <translation>Otvoriť databázu</translation>
     </message>
@@ -193,17 +193,17 @@
         <translation>Na otvorenie tohto databázového súboru potrebujete novšiu verziu programu iTest.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="505"/>
+        <location filename="../database.cpp" line="524"/>
         <source>Database open</source>
         <translation>Databáza otvorená</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="530"/>
+        <location filename="../database.cpp" line="555"/>
         <source>Close database</source>
         <translation>Zatvoriť databázu</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="537"/>
+        <location filename="../database.cpp" line="562"/>
         <source>Database closed</source>
         <translation>Databáza zatvorená</translation>
     </message>
@@ -1914,82 +1914,82 @@ a nastavte počet kópií pri každom spustení serveru.</translation>
         <translation>Tlačiť klientove výsledky</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="345"/>
+        <location filename="../print_engine.cpp" line="344"/>
         <source>Print student&apos;s results</source>
         <translation>Tlačiť študentove výsledky</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="360"/>
+        <location filename="../print_engine.cpp" line="358"/>
         <source>%1 &gt; Client #%2 (%3) &gt; failed to print the client&apos;s results (Server Print call)</source>
         <translation>%1 &gt; Klient #%2 (%3) &gt; nepodarilo sa vytlačiť klientove výsledky (obyčajná tlač)</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="365"/>
+        <location filename="../print_engine.cpp" line="363"/>
         <source>Failed to print the results</source>
         <translation>Nepodarilo sa vytlačiť výsledky</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="369"/>
+        <location filename="../print_engine.cpp" line="367"/>
         <source>%1 &gt; Client #%2 (%3) &gt; results printed successfully (Server Print call)</source>
         <translation>%1 &gt; Klient #%2 (%3) &gt; výsledky úspešne vytlačené (obyčajná tlač)</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="374"/>
+        <location filename="../print_engine.cpp" line="372"/>
         <source>Results printed successfully</source>
         <translation>Výsledky úspešne vytlačené</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="416"/>
+        <location filename="../print_engine.cpp" line="414"/>
         <source>Summary printed successfully</source>
         <translation>Prehľad úspešne vytlačený</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="418"/>
+        <location filename="../print_engine.cpp" line="416"/>
         <source>Failed to print the summary</source>
         <translation>Nepodarilo sa vytlačiť prehľad</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="401"/>
+        <location filename="../print_engine.cpp" line="399"/>
         <source>%1 results printed successfully; %2 failed</source>
         <translation>%1 výsledky úspešne vytlačené; %2 neúspešné</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="429"/>
+        <location filename="../print_engine.cpp" line="427"/>
         <source>Session statistics and summary</source>
         <translation>Prehľad a štatistika sedenia</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="452"/>
+        <location filename="../print_engine.cpp" line="450"/>
         <source>Average:</source>
         <translation>Priemer:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="460"/>
+        <location filename="../print_engine.cpp" line="458"/>
         <source>Students:</source>
         <translation>Študenti:</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="142"/>
+        <location filename="../session_viewer.cpp" line="185"/>
         <source>%1 out of %2 (%3)</source>
         <translation>%1 z %2 (%3)</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="142"/>
+        <location filename="../session_viewer.cpp" line="185"/>
         <source>PASSED</source>
         <translation>UROBIL(A)</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="142"/>
+        <location filename="../session_viewer.cpp" line="185"/>
         <source>FAILED</source>
         <translation>NEUROBIL(A)</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="468"/>
+        <location filename="../print_engine.cpp" line="466"/>
         <source>NOT AVAILABLE</source>
         <translation>NEDOSTUPNÉ</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="478"/>
+        <location filename="../print_engine.cpp" line="476"/>
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
@@ -2310,17 +2310,17 @@ ale doporučuje sa im dať hodinu času.</translation>
         <translation>iTest záznam serveru</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="144"/>
+        <location filename="../session_viewer.cpp" line="187"/>
         <source>%1 out of %2</source>
         <translation>%1 z %2</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="171"/>
+        <location filename="../session_viewer.cpp" line="214"/>
         <source>Delete log</source>
         <translation>Odstrániť záznam</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="171"/>
+        <location filename="../session_viewer.cpp" line="214"/>
         <source>Are you sure you want to delete the log for session &quot;%1 - %2&quot;?</source>
         <translation>Naozaj chcete odstrániť záznam sedenia &quot;%1 - %2&quot;?</translation>
     </message>
@@ -2374,7 +2374,7 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
         <translation>&amp;Zobraziť</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="503"/>
+        <location filename="../database.cpp" line="522"/>
         <source>%1[*] - iTest - Database Editor</source>
         <translation>%1[*] - iTest - Editor databáz</translation>
     </message>
@@ -2530,7 +2530,7 @@ Všetky budú aktualizované.</translation>
         <translation>turečtina</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="518"/>
+        <location filename="../database.cpp" line="543"/>
         <source>Error opening database.</source>
         <translation>Pri otváraní databázy sa vyskytla chyba.</translation>
     </message>
@@ -2560,7 +2560,7 @@ Všetky budú aktualizované.</translation>
         <translation>Detaily o dostatočnej</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="443"/>
+        <location filename="../print_engine.cpp" line="441"/>
         <source>Total</source>
         <translation>Celkom</translation>
     </message>
@@ -2631,7 +2631,7 @@ Prosím zvoľte inú skupinu.</translation>
         <source>It is strongly advised against changing the flag of a question.
 Consider duplicating the question and hiding the original instead.
 Proceed only if you know what you are doing.</source>
-        <translation>Neodporúča sa meniť vlajku otázky. Zvážte duplikovanie otázky
+        <translation type="obsolete">Neodporúča sa meniť vlajku otázky. Zvážte duplikovanie otázky
 a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</translation>
     </message>
     <message>
@@ -2648,7 +2648,7 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../student.cpp" line="14"/>
+        <location filename="../student.cpp" line="15"/>
         <source>Unknown</source>
         <translation>Neznámy</translation>
     </message>

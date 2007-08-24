@@ -98,7 +98,7 @@
         <translation>Hiçbiri</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="718"/>
+        <location filename="../ui_main_window.cpp" line="725"/>
         <source>iTest - Test Writer</source>
         <translation>iTest - Test Hazırlayıcı</translation>
     </message>
@@ -163,309 +163,309 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
         <translation>Bu veritabanını açmak için iTest uygulamasının daha yeni bir sürümüne ihtiyacınız var.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="191"/>
+        <location filename="../database.cpp" line="198"/>
         <source>Reading database file...</source>
         <translation>Veritabanı dosyası okunuyor...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="205"/>
+        <location filename="../database.cpp" line="212"/>
         <source>Open database</source>
         <translation>Veritabanı aç</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="205"/>
+        <location filename="../database.cpp" line="212"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>%1 dosyası okunamadı:
 %2.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="227"/>
+        <location filename="../database.cpp" line="234"/>
         <source>Generating test...</source>
         <translation>Test oluşturuluyor...</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="228"/>
+        <location filename="../main.cpp" line="231"/>
         <source>Finish the exam</source>
         <translation>Sınavı bitir</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="228"/>
+        <location filename="../main.cpp" line="231"/>
         <source>Are you sure you want to finish? Once you click Finish there is no going back.</source>
         <translation>Bitirmek istediğinizen emin misiniz? Bir kez Bitir&apos;e tıklarsanız geri dönemeyeceksiniz.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="228"/>
+        <location filename="../main.cpp" line="231"/>
         <source>&amp;Finish</source>
         <translation>&amp;Bitir</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="228"/>
+        <location filename="../main.cpp" line="231"/>
         <source>&amp;Cancel</source>
         <translation>&amp;İptal</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="323"/>
+        <location filename="../main.cpp" line="326"/>
         <source>Your name, please.</source>
         <translation>Lütfen adınızı girin.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="323"/>
+        <location filename="../main.cpp" line="326"/>
         <source>You cannot proceed unless you give us your name.</source>
         <translation>Adınızı vermeden işleme devam edemezsiniz.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="359"/>
+        <location filename="../main.cpp" line="395"/>
         <source>Exam finished</source>
         <translation>Sınav bitti</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="359"/>
+        <location filename="../main.cpp" line="395"/>
         <source>You have run out of time. Your answers are being sent.</source>
         <translation>Zamanınız bitti. Yanıtlarınız gönderiliyor.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="387"/>
+        <location filename="../main.cpp" line="423"/>
         <source>iTest - Load test data</source>
         <translation>iTest - Test verilerini yükle</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="387"/>
+        <location filename="../main.cpp" line="423"/>
         <source>Invalid data received. There might be something wrong with the server.</source>
         <translation>Geçersiz veri alındı. Sunucu tarafında yanlış giden birşeyler olabilir.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="719"/>
+        <location filename="../ui_main_window.cpp" line="726"/>
         <source>Connect to an iTest server</source>
         <translation>Bir iTest sunucusuna bağlan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="720"/>
+        <location filename="../ui_main_window.cpp" line="727"/>
         <source>&lt;b&gt;Server name&lt;/b&gt;</source>
         <translation>&lt;b&gt;Sunucu adı&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="721"/>
+        <location filename="../ui_main_window.cpp" line="728"/>
         <source>&lt;b&gt;Server port&lt;/b&gt;</source>
         <translation>&lt;b&gt;Sunucu portu&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="722"/>
+        <location filename="../ui_main_window.cpp" line="729"/>
         <source>Connect</source>
         <translation>Bağlan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="723"/>
+        <location filename="../ui_main_window.cpp" line="730"/>
         <source>Use an iTest database file</source>
         <translation>Bir iTest veritabanı dosyası kullan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="724"/>
+        <location filename="../ui_main_window.cpp" line="731"/>
         <source>&lt;b&gt;Database file path&lt;/b&gt;</source>
         <translation>&lt;b&gt;Veritabanı dosyasının yolu&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="731"/>
+        <location filename="../ui_main_window.cpp" line="738"/>
         <source>Browse</source>
         <translation>Gözat</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="726"/>
+        <location filename="../ui_main_window.cpp" line="733"/>
         <source>Load</source>
         <translation>Yükle</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="727"/>
+        <location filename="../ui_main_window.cpp" line="734"/>
         <source>&lt;b&gt;Save answers to&lt;/b&gt;</source>
         <translation>&lt;b&gt;Yanıtları buraya kaydet&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="728"/>
+        <location filename="../ui_main_window.cpp" line="735"/>
         <source>If connected to an iTest server, results will be sent automatically. You only need this file if there is no network available or in case of connection breakdown.</source>
         <translation>Eğer bir iTest sunucusuna bağlıysanız, sonuçlar sonuçlar otomatik olarak gönderilecektir. Eğer ağ bağlantınız yoksa ya da bağlantınız koptuysa sadece bu dosyaya ihtiyacınız var demektir.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="729"/>
+        <location filename="../ui_main_window.cpp" line="736"/>
         <source>$HOME/TestName-Date-SurnameName.itcl, where $HOME is the directory of the current user&apos;s profile on Windows and the home directory on Unix/Linux/Mac OS</source>
         <translation>$HOME/TestAdı-Tarihi-SoyadınızAdınız.itcl, $HOME - Windows&apos;da geçerli kullanıcının profilinin saklandığı dizindir. Unix/Linux/Mac OS sistemlerinde ise ev dizininizdir.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="730"/>
+        <location filename="../ui_main_window.cpp" line="737"/>
         <source>Use default</source>
         <translation>Öntanımlı kullan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="732"/>
+        <location filename="../ui_main_window.cpp" line="739"/>
         <source>&lt;b&gt;Other settings&lt;/b&gt;</source>
         <translation>&lt;b&gt;Diğer ayarlar&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="733"/>
+        <location filename="../ui_main_window.cpp" line="740"/>
         <source>Hide question names, show numbers instead</source>
         <translation>Soru isimlerini gizle, soru numaralarını göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="734"/>
+        <location filename="../ui_main_window.cpp" line="741"/>
         <source>&lt;b&gt;Test information&lt;/b&gt;</source>
         <translation>&lt;b&gt;Test bilgileri&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="745"/>
+        <location filename="../ui_main_window.cpp" line="752"/>
         <source>Test name</source>
         <translation>Test Adı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="749"/>
+        <location filename="../ui_main_window.cpp" line="756"/>
         <source>Database date</source>
         <translation>Veritabanı tarihi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="753"/>
+        <location filename="../ui_main_window.cpp" line="760"/>
         <source>Test date</source>
         <translation>Test tarihi</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="757"/>
+        <location filename="../ui_main_window.cpp" line="764"/>
         <source>Test time</source>
         <translation>Test saati</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="761"/>
+        <location filename="../ui_main_window.cpp" line="768"/>
         <source>Number of questions</source>
         <translation>Soru sayısı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="765"/>
+        <location filename="../ui_main_window.cpp" line="772"/>
         <source>Number of flags</source>
         <translation>Bayrak sayısı</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="769"/>
+        <location filename="../ui_main_window.cpp" line="776"/>
         <source>Flag names</source>
         <translation>Bayrak isimleri</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="773"/>
+        <location filename="../ui_main_window.cpp" line="784"/>
         <source>Comments</source>
         <translation>Yorumlar</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="739"/>
+        <location filename="../ui_main_window.cpp" line="746"/>
         <source>Data</source>
         <translation>Veri</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="791"/>
+        <location filename="../ui_main_window.cpp" line="803"/>
         <source>Quit</source>
         <translation>Çık</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="776"/>
+        <location filename="../ui_main_window.cpp" line="787"/>
         <source>About</source>
         <translation>Hakkında</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="777"/>
+        <location filename="../ui_main_window.cpp" line="788"/>
         <source>Ready</source>
         <translation>Hazır</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="778"/>
+        <location filename="../ui_main_window.cpp" line="789"/>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Welcome!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Hoş Geldiniz!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="779"/>
+        <location filename="../ui_main_window.cpp" line="790"/>
         <source>Your name:</source>
         <translation>Adınız:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="780"/>
+        <location filename="../ui_main_window.cpp" line="791"/>
         <source>When you are ready to begin the examination, click the Start button below.</source>
         <translation>Sınava başlamaya hazır olduğunuzda, aşağıdaki Başla düğmesine tıklayın.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="781"/>
+        <location filename="../ui_main_window.cpp" line="792"/>
         <source>Start</source>
         <translation>Başla</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="783"/>
+        <location filename="../ui_main_window.cpp" line="794"/>
         <source>b)</source>
         <translation>b)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="786"/>
+        <location filename="../ui_main_window.cpp" line="797"/>
         <source>Show remaining time</source>
         <translation>Kalan zamanı göster</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="787"/>
+        <location filename="../ui_main_window.cpp" line="798"/>
         <source>minute(s)</source>
         <translation>dakika</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="788"/>
+        <location filename="../ui_main_window.cpp" line="799"/>
         <source>Last question</source>
         <translation>Son soru</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="789"/>
+        <location filename="../ui_main_window.cpp" line="800"/>
         <source>Next question</source>
         <translation>Sonraki soru</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="790"/>
+        <location filename="../ui_main_window.cpp" line="801"/>
         <source>Finish</source>
         <translation>Bitir</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="784"/>
+        <location filename="../ui_main_window.cpp" line="795"/>
         <source>c)</source>
         <translation>c)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="782"/>
+        <location filename="../ui_main_window.cpp" line="793"/>
         <source>a)</source>
         <translation>а)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="785"/>
+        <location filename="../ui_main_window.cpp" line="796"/>
         <source>d)</source>
         <translation>d)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="796"/>
+        <location filename="../ui_main_window.cpp" line="808"/>
         <source>Question</source>
         <translation>Soru</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="800"/>
+        <location filename="../ui_main_window.cpp" line="812"/>
         <source>Answered correctly</source>
         <translation>Doğru yanıtlanan</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="804"/>
+        <location filename="../ui_main_window.cpp" line="816"/>
         <source>Answer</source>
         <translation>Yanıt</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="808"/>
+        <location filename="../ui_main_window.cpp" line="820"/>
         <source>Correct answer</source>
         <translation>Doğru yanıt</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="810"/>
+        <location filename="../ui_main_window.cpp" line="822"/>
         <source>&lt;b&gt;Results:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Sonuçlar:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="811"/>
+        <location filename="../ui_main_window.cpp" line="823"/>
         <source>&lt;b&gt;Score:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Puan:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window.cpp" line="812"/>
+        <location filename="../ui_main_window.cpp" line="824"/>
         <source>&lt;b&gt;Name:&lt;/b&gt;</source>
         <translation>&lt;b&gt;İsim:&lt;/b&gt;</translation>
     </message>
@@ -488,6 +488,21 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
         <location filename="../client.cpp" line="211"/>
         <source>FAILED</source>
         <translation>BAŞARISIZ</translation>
+    </message>
+    <message>
+        <location filename="../database.cpp" line="168"/>
+        <source>Total</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window.cpp" line="780"/>
+        <source>Pass mark</source>
+        <translation>Geçme notu</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window.cpp" line="802"/>
+        <source>New test</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

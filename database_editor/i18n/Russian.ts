@@ -61,22 +61,22 @@
 <context>
     <name>Client</name>
     <message>
-        <location filename="../client.cpp" line="285"/>
+        <location filename="../client.cpp" line="291"/>
         <source>iTest - Database Editor</source>
         <translation>iTest - Редактор баз данных</translation>
     </message>
     <message>
-        <location filename="../client.cpp" line="275"/>
+        <location filename="../client.cpp" line="281"/>
         <source>The host was not found. Please check the host name and port settings.</source>
         <translation>Удалённый узел не найден. Пожалуйста, проверьте имя узла и настройки соединения.</translation>
     </message>
     <message>
-        <location filename="../client.cpp" line="282"/>
+        <location filename="../client.cpp" line="288"/>
         <source>The connection was refused by the peer. Make sure the iTest server is running, and check that the host name and port settings are correct.</source>
         <translation>Соединение прервано. Убедитесь, что сервер iTest запущен, и проверьте правильность настроек соединения.</translation>
     </message>
     <message>
-        <location filename="../client.cpp" line="287"/>
+        <location filename="../client.cpp" line="293"/>
         <source>The following error occurred: %1.</source>
         <translation>Ошибка: %1.</translation>
     </message>
@@ -99,7 +99,7 @@
         <translation>&amp;Отменить</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="171"/>
+        <location filename="../session_viewer.cpp" line="214"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
@@ -151,7 +151,7 @@
         <translation>iTest - Редактор баз данных</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="503"/>
+        <location filename="../database.cpp" line="522"/>
         <source>%1[*] - iTest - Database Editor</source>
         <translation>%1[*] - iTest - Редактор баз данных</translation>
     </message>
@@ -192,7 +192,7 @@ This computer&apos;s archive will be updated.</source>
         <translation>База данных сохранена</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="515"/>
+        <location filename="../database.cpp" line="540"/>
         <source>Open database</source>
         <translation>Открыть базу данных</translation>
     </message>
@@ -233,17 +233,17 @@ but you are most probably missing a whole bunch of cool new features.</source>
         <translation>Чтобы открыть этот файл базы данных, Вам требуется более новая версия iTest.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="505"/>
+        <location filename="../database.cpp" line="524"/>
         <source>Database open</source>
         <translation>База данных открыта</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="530"/>
+        <location filename="../database.cpp" line="555"/>
         <source>Close database</source>
         <translation>Закрыть базу данных</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="537"/>
+        <location filename="../database.cpp" line="562"/>
         <source>Database closed</source>
         <translation>База данных закрыта</translation>
     </message>
@@ -2024,82 +2024,82 @@ number of copies each time you start the server.</source>
         <translation>Вывести результаты клиента на печать</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="345"/>
+        <location filename="../print_engine.cpp" line="344"/>
         <source>Print student&apos;s results</source>
         <translation>Вывести результаты студента на печать</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="360"/>
+        <location filename="../print_engine.cpp" line="358"/>
         <source>%1 &gt; Client #%2 (%3) &gt; failed to print the client&apos;s results (Server Print call)</source>
         <translation>%1 &gt; Клиент №%2 (%3) &gt; невозможно вывести результаты клиента на печать (запрос сервера на печать)</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="365"/>
+        <location filename="../print_engine.cpp" line="363"/>
         <source>Failed to print the results</source>
         <translation>Невозможно вывести результаты на печать</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="369"/>
+        <location filename="../print_engine.cpp" line="367"/>
         <source>%1 &gt; Client #%2 (%3) &gt; results printed successfully (Server Print call)</source>
         <translation>%1 &gt; Клиент №%2 (%3) &gt; результаты успешно выведены на печать (запрос сервера на печать)</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="374"/>
+        <location filename="../print_engine.cpp" line="372"/>
         <source>Results printed successfully</source>
         <translation>Результаты успешно выведены на печать</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="416"/>
+        <location filename="../print_engine.cpp" line="414"/>
         <source>Summary printed successfully</source>
         <translation>Отчёт успешно выведен на печать</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="418"/>
+        <location filename="../print_engine.cpp" line="416"/>
         <source>Failed to print the summary</source>
         <translation>Невозможно вывести отчёт на печать</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="401"/>
+        <location filename="../print_engine.cpp" line="399"/>
         <source>%1 results printed successfully; %2 failed</source>
         <translation>%1 результатов успешно выведены на печать; %2 не выведены</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="429"/>
+        <location filename="../print_engine.cpp" line="427"/>
         <source>Session statistics and summary</source>
         <translation>Статистика и отчёт по сессии</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="452"/>
+        <location filename="../print_engine.cpp" line="450"/>
         <source>Average:</source>
         <translation>Средний результат:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="460"/>
+        <location filename="../print_engine.cpp" line="458"/>
         <source>Students:</source>
         <translation>Студенты:</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="142"/>
+        <location filename="../session_viewer.cpp" line="185"/>
         <source>%1 out of %2 (%3)</source>
         <translation>%1 из %2 (%3)</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="142"/>
+        <location filename="../session_viewer.cpp" line="185"/>
         <source>PASSED</source>
         <translation>ПРОШЁЛ</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="142"/>
+        <location filename="../session_viewer.cpp" line="185"/>
         <source>FAILED</source>
         <translation>НЕ ПРОШЁЛ</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="468"/>
+        <location filename="../print_engine.cpp" line="466"/>
         <source>NOT AVAILABLE</source>
         <translation>НЕТ ИНФОРМАЦИИ</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="478"/>
+        <location filename="../print_engine.cpp" line="476"/>
         <source>N/A</source>
         <translation>НЕТ ИНФОРМАЦИИ</translation>
     </message>
@@ -2443,17 +2443,17 @@ although it is recommended to give them an hour.</source>
         <translation>Журнал сервера iTest</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="144"/>
+        <location filename="../session_viewer.cpp" line="187"/>
         <source>%1 out of %2</source>
         <translation>%1 из %2</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="171"/>
+        <location filename="../session_viewer.cpp" line="214"/>
         <source>Delete log</source>
         <translation>Удалить журнал</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="171"/>
+        <location filename="../session_viewer.cpp" line="214"/>
         <source>Are you sure you want to delete the log for session &quot;%1 - %2&quot;?</source>
         <translation>Вы уверены, что хотите удалить журнал сессии &quot;%1 - %2&quot;?</translation>
     </message>
@@ -2528,7 +2528,7 @@ although it is recommended to give them an hour.</source>
         <translation>турецкий язык</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="518"/>
+        <location filename="../database.cpp" line="543"/>
         <source>Error opening database.</source>
         <translation>Ошибка при открывание вазы данных.</translation>
     </message>
@@ -2558,7 +2558,7 @@ although it is recommended to give them an hour.</source>
         <translation>Детали о оценке прохождения</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="443"/>
+        <location filename="../print_engine.cpp" line="441"/>
         <source>Total</source>
         <translation>Целиком</translation>
     </message>
@@ -2625,13 +2625,6 @@ Please choose a different group.</source>
 Пожалуйста выберете другую группу.</translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="167"/>
-        <source>It is strongly advised against changing the flag of a question.
-Consider duplicating the question and hiding the original instead.
-Proceed only if you know what you are doing.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../ui_main_window_v2.cpp" line="3088"/>
         <source>Run Test Writer</source>
         <translation>Спустить программу для написания тестов</translation>
@@ -2645,7 +2638,7 @@ Proceed only if you know what you are doing.</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../student.cpp" line="14"/>
+        <location filename="../student.cpp" line="15"/>
         <source>Unknown</source>
         <translation>Неизвестно</translation>
     </message>

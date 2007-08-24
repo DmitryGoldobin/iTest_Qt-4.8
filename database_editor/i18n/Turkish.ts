@@ -61,22 +61,22 @@
 <context>
     <name>Client</name>
     <message>
-        <location filename="../client.cpp" line="285"/>
+        <location filename="../client.cpp" line="291"/>
         <source>iTest - Database Editor</source>
         <translation>iTest - Veritabanı Düzenleyici</translation>
     </message>
     <message>
-        <location filename="../client.cpp" line="275"/>
+        <location filename="../client.cpp" line="281"/>
         <source>The host was not found. Please check the host name and port settings.</source>
         <translation>Makine bulunamadı. Lütfen makine adını ve port ayarlarını kotrol edin.</translation>
     </message>
     <message>
-        <location filename="../client.cpp" line="282"/>
+        <location filename="../client.cpp" line="288"/>
         <source>The connection was refused by the peer. Make sure the iTest server is running, and check that the host name and port settings are correct.</source>
         <translation>Bağlantı reddedildi. iTest sunucusunun çalıştığından emin olun ve makine adı ve port ayarlarını kontrol edin.</translation>
     </message>
     <message>
-        <location filename="../client.cpp" line="287"/>
+        <location filename="../client.cpp" line="293"/>
         <source>The following error occurred: %1.</source>
         <translation>Bir hata oluştu: %1.</translation>
     </message>
@@ -99,7 +99,7 @@
         <translation>&amp;Vazgeç</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="171"/>
+        <location filename="../session_viewer.cpp" line="214"/>
         <source>Cancel</source>
         <translation>İptal</translation>
     </message>
@@ -151,7 +151,7 @@
         <translation>iTest - Veritabanı Düzenleyici</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="503"/>
+        <location filename="../database.cpp" line="522"/>
         <source>%1[*] - iTest - Database Editor</source>
         <translation>%1[*] - iTest - Veritabanı Düzenleyici</translation>
     </message>
@@ -194,7 +194,7 @@ Bu bilgisayarın arşivi yüklenecek.
         <translation>Veritabanı kaydedildi</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="515"/>
+        <location filename="../database.cpp" line="540"/>
         <source>Open database</source>
         <translation>Veritabanı aç</translation>
     </message>
@@ -235,17 +235,17 @@ büyük olasılıkla bir çok yeni özelliği kaçırmış olacaksınız.</trans
         <translation>Bu veritabanını açabilmek için iTest&apos;in daha yeni bir sürümüne ihtiyacınız var.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="505"/>
+        <location filename="../database.cpp" line="524"/>
         <source>Database open</source>
         <translation>Veritabanı aç</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="530"/>
+        <location filename="../database.cpp" line="555"/>
         <source>Close database</source>
         <translation>Veritabanını kapat</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="537"/>
+        <location filename="../database.cpp" line="562"/>
         <source>Database closed</source>
         <translation>Veritabanı kapatıldı</translation>
     </message>
@@ -2021,82 +2021,82 @@ sunucuyu her başlattığınızda kopya sayısını ayarlayın.</translation>
         <translation>İstemcinin sonuçlarını yazdır</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="345"/>
+        <location filename="../print_engine.cpp" line="344"/>
         <source>Print student&apos;s results</source>
         <translation>Öğrencinin sonuçlarını yazdır</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="360"/>
+        <location filename="../print_engine.cpp" line="358"/>
         <source>%1 &gt; Client #%2 (%3) &gt; failed to print the client&apos;s results (Server Print call)</source>
         <translation>%1 &gt; İstemci #%2 (%3) &gt; istemcinin sonuçları yazdırılamadı (Sunucu Yazdır isteği)</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="365"/>
+        <location filename="../print_engine.cpp" line="363"/>
         <source>Failed to print the results</source>
         <translation>Sonuç yadırma işlemi başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="369"/>
+        <location filename="../print_engine.cpp" line="367"/>
         <source>%1 &gt; Client #%2 (%3) &gt; results printed successfully (Server Print call)</source>
         <translation>%1 &gt; İstemci #%2 (%3) &gt; sonuçlar başarılı bir şelikde yazdırıldı (Sunucu Yazdır isteği)</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="374"/>
+        <location filename="../print_engine.cpp" line="372"/>
         <source>Results printed successfully</source>
         <translation>Sonuçlar başarılı bir şekilde yazdırıldı</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="416"/>
+        <location filename="../print_engine.cpp" line="414"/>
         <source>Summary printed successfully</source>
         <translation>Özet başarıyla yazdırıldı</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="418"/>
+        <location filename="../print_engine.cpp" line="416"/>
         <source>Failed to print the summary</source>
         <translation>Özet yazdırma işlemi başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="401"/>
+        <location filename="../print_engine.cpp" line="399"/>
         <source>%1 results printed successfully; %2 failed</source>
         <translation>%1 sonuç başarılı şekilde yazdırıldı, %2 başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="429"/>
+        <location filename="../print_engine.cpp" line="427"/>
         <source>Session statistics and summary</source>
         <translation>Oturum istatistikleri ve özet</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="452"/>
+        <location filename="../print_engine.cpp" line="450"/>
         <source>Average:</source>
         <translation>Ortalama:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="460"/>
+        <location filename="../print_engine.cpp" line="458"/>
         <source>Students:</source>
         <translation>Öğrenciler:</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="142"/>
+        <location filename="../session_viewer.cpp" line="185"/>
         <source>%1 out of %2 (%3)</source>
         <translation>%2 yanıtın %1 tanesi (%3)</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="142"/>
+        <location filename="../session_viewer.cpp" line="185"/>
         <source>PASSED</source>
         <translation>GEÇTİ</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="142"/>
+        <location filename="../session_viewer.cpp" line="185"/>
         <source>FAILED</source>
         <translation>BAŞARISIZ</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="468"/>
+        <location filename="../print_engine.cpp" line="466"/>
         <source>NOT AVAILABLE</source>
         <translation>KULLANILAMAZ</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="478"/>
+        <location filename="../print_engine.cpp" line="476"/>
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
@@ -2440,17 +2440,17 @@ aslında sınav için bir saat tavsiye edilir.</translation>
         <translation>iTest Sunucu Kayıt Günlüğü</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="144"/>
+        <location filename="../session_viewer.cpp" line="187"/>
         <source>%1 out of %2</source>
         <translation>%2 yanıtın %1 tanesi</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="171"/>
+        <location filename="../session_viewer.cpp" line="214"/>
         <source>Delete log</source>
         <translation>Günlüğü sil</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="171"/>
+        <location filename="../session_viewer.cpp" line="214"/>
         <source>Are you sure you want to delete the log for session &quot;%1 - %2&quot;?</source>
         <translation>&quot;%1 - %2&quot; oturumları için günlük kayıtlarını silmek istediğinizden emin misiniz?</translation>
     </message>
@@ -2525,7 +2525,7 @@ aslında sınav için bir saat tavsiye edilir.</translation>
         <translation>Türkçe</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="518"/>
+        <location filename="../database.cpp" line="543"/>
         <source>Error opening database.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2555,7 +2555,7 @@ aslında sınav için bir saat tavsiye edilir.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="443"/>
+        <location filename="../print_engine.cpp" line="441"/>
         <source>Total</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2621,13 +2621,6 @@ Please choose a different group.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../questions.cpp" line="167"/>
-        <source>It is strongly advised against changing the flag of a question.
-Consider duplicating the question and hiding the original instead.
-Proceed only if you know what you are doing.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../ui_main_window_v2.cpp" line="3088"/>
         <source>Run Test Writer</source>
         <translation type="unfinished"></translation>
@@ -2641,7 +2634,7 @@ Proceed only if you know what you are doing.</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../student.cpp" line="14"/>
+        <location filename="../student.cpp" line="15"/>
         <source>Unknown</source>
         <translation>Bilinmeyen</translation>
     </message>
