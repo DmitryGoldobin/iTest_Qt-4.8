@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="1.1">
+<!DOCTYPE TS><TS version="1.1" language="tr_TR">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -2527,7 +2528,7 @@ aslında sınav için bir saat tavsiye edilir.</translation>
     <message>
         <location filename="../database.cpp" line="543"/>
         <source>Error opening database.</source>
-        <translation type="unfinished"></translation>
+        <translation>Veritabanı açılırken hata oluştu.</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="14"/>
@@ -2547,17 +2548,17 @@ aslında sınav için bir saat tavsiye edilir.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3379"/>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayrıntılar</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3423"/>
         <source>Pass mark details</source>
-        <translation type="unfinished"></translation>
+        <translation>Geçme notu ayrıntıları</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="441"/>
         <source>Total</source>
-        <translation type="unfinished"></translation>
+        <translation>Toplam</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3137"/>
@@ -2567,17 +2568,17 @@ aslında sınav için bir saat tavsiye edilir.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3082"/>
         <source>Show hidden questions</source>
-        <translation type="unfinished"></translation>
+        <translation>Gizli soruları göster</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3083"/>
         <source>&amp;Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Gizle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3086"/>
         <source>Hide the selected question</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen soruyu gizle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3087"/>
@@ -2587,48 +2588,49 @@ aslında sınav için bir saat tavsiye edilir.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3134"/>
         <source>Group:</source>
-        <translation type="unfinished"></translation>
+        <translation>Grup:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3135"/>
         <source>Group of the selected question</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sorunun grubu</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3136"/>
         <source>Search the database for other questions in this group</source>
-        <translation type="unfinished"></translation>
+        <translation>Veritabanındaki bu gruba ait diğer soruları ara</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3330"/>
         <source>Groups:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gruplar:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3331"/>
         <source>Allow one question per group to appear in one test only, i.e. choose one of the group randomly</source>
-        <translation type="unfinished"></translation>
+        <translation>Test içersinde yer alması için her gruptan bir soruya izin ver, her bir gruptan rastgele bir soru seç</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3332"/>
         <source>Allow one question per group only</source>
-        <translation type="unfinished"></translation>
+        <translation>Her grup için bir soruya izin ver</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="159"/>
         <source>This group is used by one or more questions with a different flag.
 Please choose a different group.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu grup içerisinde birbirinden faklı bayraklar taşıyan bir ya da daha fazla soru var.
+Lütfen başka bir grup seçin.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3088"/>
         <source>Run Test Writer</source>
-        <translation type="unfinished"></translation>
+        <translation>Test Düzenleyiciyi Çalıştır</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3091"/>
         <source>Run Test Writer on this computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Test Düzenleyiciyi bu bilgisayarda çalıştır</translation>
     </message>
 </context>
 <context>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="1.1">
+<!DOCTYPE TS><TS version="1.1" language="tr_TR">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -492,7 +493,7 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
     <message>
         <location filename="../database.cpp" line="168"/>
         <source>Total</source>
-        <translation type="unfinished"></translation>
+        <translation>Toplam</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="780"/>
@@ -502,7 +503,7 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
     <message>
         <location filename="../ui_main_window.cpp" line="802"/>
         <source>New test</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeni test</translation>
     </message>
 </context>
 </TS>
