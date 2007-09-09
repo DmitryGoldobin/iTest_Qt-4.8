@@ -3,6 +3,7 @@
 void MainWindow::setupSessionViewer()
 {
 	VSSCSGroupBox->setEnabled(false); enableVSSTools();
+	btnDetails->setEnabled(false);
 	QObject::connect(mainStackedWidget, SIGNAL(currentChanged(int)), this, SLOT(enableVSSTools()));
 	QObject::connect(VSSSplitter, SIGNAL(splitterMoved(int, int)), this, SLOT(updateVSSGeometry()));
 	QObject::connect(VSSLSListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem *)), this, SLOT(setCurrentSession(QListWidgetItem *)));
@@ -16,6 +17,8 @@ void MainWindow::setupSessionViewer()
 	QObject::connect(actionPrint_all, SIGNAL(triggered()), this, SLOT(printAll()));
 	QObject::connect(actionPrint_session_summary, SIGNAL(triggered()), this, SLOT(printSessionSummary()));
 	QObject::connect(VSSLSSearchLineEdit, SIGNAL(textChanged(const QString &)), this, SLOT(searchVSSLS(const QString &)));
+	QObject::connect(VSSSearchDetailsLineEdit, SIGNAL(textChanged(const QString &)), this, SLOT(searchPassMarkDetails(const QString &)));
+	QObject::connect(btnDetails, SIGNAL(released()), this, SLOT(showPassMarkDetails()));
 	VSSLSListWidget->setSortingEnabled(true);
 	VSSLASListWidget->setSortingEnabled(true);
 	hideArchive();
@@ -23,7 +26,7 @@ void MainWindow::setupSessionViewer()
 
 void MainWindow::openArchive()
 {
-	QString buffer; ArchivedSession * archived_session;
+	QString buffer; QStringList bufferlist; ArchivedSession * archived_session; bool rearchive;
 	QSettings archive(QSettings::IniFormat, QSettings::UserScope, "Michal Tomlein", "iTest");
 	QStringList dbs = archive.value("databases").toStringList();
 	if (!dbs.contains(current_db_name)) { return; }
@@ -36,6 +39,60 @@ void MainWindow::openArchive()
 		QListWidgetItem * item = new QListWidgetItem (QString("%1 - %2").arg(archived_session->dateTimeToString()).arg(archived_session->name()));
 		VSSLASListWidget->insertItem(0, item);
 		item->setData(Qt::UserRole, archived_session->dateTime());
+		rearchive = false;
+		buffer = archive.value(QString("%1/%2/PassMark").arg(current_db_name).arg(sns.at(i))).toString();
+		if (!buffer.isEmpty()) {
+			archived_session->loadPassMark(buffer);
+		} else { rearchive = true; }
+		buffer = archive.value(QString("%1/%2/StudentsPassed").arg(current_db_name).arg(sns.at(i))).toString();
+		if (buffer.length() == archived_session->numStudents()) {
+			for (int i = 0; i < archived_session->numStudents(); ++i) {
+				archived_session->student(i)->setPassed(buffer.at(i) == '+');
+			}
+		} else {
+			for (int i = 0; i < archived_session->numStudents(); ++i) {
+				archived_session->student(i)->setPassed(archived_session->passMark().check(archived_session->student(i)->results(), &current_db_questions));
+			}
+			rearchive = true;
+		}
+		buffer = archive.value(QString("%1/%2/QAFlags").arg(current_db_name).arg(sns.at(i))).toString();
+		int numres = 0; int x = 0;
+		for (int s = 0; s < archived_session->numStudents(); ++s) {
+			numres += archived_session->student(s)->results()->count();
+		}
+		bufferlist = buffer.split(";");
+		if (bufferlist.count() == numres) {
+			for (int s = 0; s < archived_session->numStudents(); ++s) {
+				QMapIterator<QString, QuestionAnswer> qa(*(archived_session->student(s)->results())); QuestionAnswer qans;
+				while (qa.hasNext()) { qa.next();
+					qans = qa.value();
+					qans.setFlag(bufferlist.at(x).toInt());
+					archived_session->student(s)->results()->insert(qa.key(), qans);
+					x++;
+				}
+			}
+		} else {
+			QuestionItem * item;
+			for (int s = 0; s < archived_session->numStudents(); ++s) {
+				QMapIterator<QString, QuestionAnswer> qa(*(archived_session->student(s)->results())); QuestionAnswer qans;
+				while (qa.hasNext()) { qa.next();
+					item = NULL; qans = qa.value();
+					QMapIterator<QListWidgetItem *, QuestionItem *> q(current_db_questions);
+					while (q.hasNext()) { q.next();
+						if (q.value()->name() == qa.key()) { item = q.value(); break; }
+					}
+					if (item == NULL) {
+						qans.setFlag(-1);
+						archived_session->student(s)->results()->insert(qa.key(), qans);
+					} else {
+						qans.setFlag(item->flag());
+						archived_session->student(s)->results()->insert(qa.key(), qans);
+					}
+				}
+			}
+			rearchive = true;
+		}
+		if (rearchive) { archived_session->archive(); }
 	}
 	hideArchive();
 }
@@ -55,6 +112,11 @@ void MainWindow::searchVSSLS(const QString & keyword)
 	}
 }
 
+void MainWindow::searchPassMarkDetails(const QString & keyword)
+{
+	searchTableWidgetItems(keyword, VSSPassMarkTableWidget, VSSSearchDetailsLineEdit);
+}
+
 void MainWindow::setCurrentSession(QListWidgetItem * item)
 {
 	if (item == NULL) { return; }
@@ -69,7 +131,7 @@ void MainWindow::setCurrentSession(QListWidgetItem * item)
 	VSSCSGroupBox->setEnabled(true);
 	VSSNameLabel->setText(session->name());
 	VSSDateTimeLabel->setText(session->dateTimeToString());
-	VSSPassMarkLabel->setText(QString("%1").arg(session->passMark()));
+	VSSPassMarkLabel->setText(QString("%1").arg(session->passMark().passMark()));
 	VSSOverallResultsProgressBar->setMaximum(session->numQuestions());
 	VSSOverallResultsProgressBar->setValue(session->numCorrect());
 	current_db_students.clear();
@@ -84,13 +146,35 @@ void MainWindow::setCurrentSession(QListWidgetItem * item)
 	for (int i = 0; i < session->numStudents(); ++i) {
 		QListWidgetItem * item = new QListWidgetItem (session->student(i)->name(), VSSLCListWidget);
 		current_db_students.insert(item, session->student(i));
-		if (current_db_session->passMark() <= session->student(i)->score()) {
+		if (session->student(i)->passed()) {
             item->setBackground(QBrush::QBrush(QColor::QColor(197, 255, 120)));
             item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
         } else {
             item->setBackground(QBrush::QBrush(QColor::QColor(204, 163, 0)));
             item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
         }
+	}
+	if (session->passMark().count() > 0) {
+		btnDetails->setEnabled(true); QTableWidgetItem * item;
+		VSSPassMarkTableWidget->clear();
+		VSSPassMarkTableWidget->verticalHeader()->hide();
+		VSSPassMarkTableWidget->setHorizontalHeaderLabels(QStringList() << tr("Flag name") << tr("Pass mark"));
+		VSSPassMarkTableWidget->setRowCount(session->passMark().count());
+		for (int i = 0; i < session->passMark().count(); ++i) {
+			if (session->passMark().condition(i) < 0 || session->passMark().condition(i) >= 20) { continue; }
+		    item = new QTableWidgetItem(QString("%1 - %2").arg(session->passMark().condition(i)).arg(current_db_f[session->passMark().condition(i)]));
+		    item->setBackground(QBrush::QBrush(backgroundColourForFlag(session->passMark().condition(i))));
+		    item->setForeground(QBrush::QBrush(foregroundColourForFlag(session->passMark().condition(i))));
+		    VSSPassMarkTableWidget->setItem(i, 0, item);
+		    item = new QTableWidgetItem(QString("%1").arg(session->passMark().value(i)));
+		    VSSPassMarkTableWidget->setItem(i, 1, item);
+		    VSSPassMarkTableWidget->setRowHeight(i, 16);
+		}
+		searchPassMarkDetails(VSSSearchDetailsLineEdit->text());
+		showPassMarkDetails();
+	} else {
+		btnDetails->setEnabled(false);
+		VSSStackedWidget->setCurrentIndex(0);
 	}
 	VSSClientsGroupBox->setEnabled(true); VSSLogGroupBox->setEnabled(true);
 	togglePrintEnabled(); enableVSSTools();
@@ -101,11 +185,12 @@ void MainWindow::setCurrentStudent()
 {
 	if (VSSLCListWidget->currentIndex().isValid()) {
 		VSSSelectedClientGroupBox->setEnabled(true); clearVSSSC(); togglePrintEnabled();
+		VSSStackedWidget->setCurrentIndex(0); updateGeometry();
 		Student * student = current_db_students.value(VSSLCListWidget->currentItem());
 		VSSSCNameLabel->setText(student->name());
 		if (student->isReady()) {
             if (current_db_session != NULL) {
-                VSSSCScoreLabel->setText(tr("%1 out of %2 (%3)").arg(student->score()).arg(student->results()->count()).arg(current_db_session->passMark() <= student->score() ? tr("PASSED") : tr("FAILED")));
+                VSSSCScoreLabel->setText(tr("%1 out of %2 (%3)").arg(student->score()).arg(student->results()->count()).arg(student->passed() ? tr("PASSED") : tr("FAILED")));
             } else {
                 VSSSCScoreLabel->setText(tr("%1 out of %2").arg(student->score()).arg(student->results()->count()));
             }
@@ -114,6 +199,20 @@ void MainWindow::setCurrentStudent()
 	} else {
 		VSSSelectedClientGroupBox->setEnabled(false); clearVSSSC(); togglePrintEnabled();
 	}
+}
+
+void MainWindow::updatePMDTWGeometry()
+{
+	VSSPassMarkTableWidget->resizeColumnsToContents();
+	VSSPassMarkTableWidget->setColumnWidth(0, VSSPassMarkTableWidget->width() - 25 - VSSPassMarkTableWidget->columnWidth(1));
+}
+
+void MainWindow::showPassMarkDetails()
+{
+	VSSStackedWidget->setCurrentIndex(1);
+	VSSLCListWidget->clearSelection();
+	VSSLCListWidget->setCurrentRow(-1);
+	updateGeometry();
 }
 
 void MainWindow::deleteLog()
@@ -329,7 +428,8 @@ void MainWindow::enableVSSTools()
 {
     switch (mainStackedWidget->currentIndex()) {
         case 5:
-            actionExport_log->setEnabled(true);
+        	menuSession->setEnabled(false);
+        	actionExport_log->setEnabled(true);
             actionDelete_log->setEnabled(false);
             actionArchive_session->setEnabled(false);
             actionRestore_session->setEnabled(false);
@@ -337,6 +437,7 @@ void MainWindow::enableVSSTools()
             actionCopy_from_archive->setEnabled(false);
             break;
         case 6:
+        	menuSession->setEnabled(true);
             if (VSSCSGroupBox->isEnabled()) {
                 if (VSSSLListWidget->count() > 0) {
                     actionExport_log->setEnabled(true);
@@ -373,6 +474,7 @@ void MainWindow::enableVSSTools()
             }
             break;
         default:
+        	menuSession->setEnabled(false);
             actionExport_log->setEnabled(false);
             actionDelete_log->setEnabled(false);
             actionArchive_session->setEnabled(false);

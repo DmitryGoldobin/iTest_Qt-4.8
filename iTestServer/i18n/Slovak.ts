@@ -25,7 +25,7 @@
     <message>
         <location filename="../about_widget.cpp" line="13"/>
         <source>iTest is a Qt application consisting of a Database Editor and a Test Writer designed for easy computerised examination.</source>
-        <translation>iTest je Qt program pozostávajúci z Editoru databáz a Testového klienta dizajnovaných pre jednoduché skúšanie pomocou počítača.</translation>
+        <translation type="obsolete">iTest je Qt program pozostávajúci z Editoru databáz a Testového klienta dizajnovaných pre jednoduché skúšanie pomocou počítača.</translation>
     </message>
     <message>
         <location filename="../about_widget.cpp" line="16"/>
@@ -38,24 +38,29 @@
         <translation>Tento program je poskytovaný TAK AKO JE s ABSOLÚTNE ŽIADNOU ZÁRUKOU AKÉHOKOĽVEK DRUHU.</translation>
     </message>
     <message>
-        <location filename="../about_widget.cpp" line="26"/>
+        <location filename="../about_widget.cpp" line="31"/>
         <source>This programme uses Qt Open Source Edition version %1.</source>
         <translation>Tento program používa Qt Open Source Edition vo verzii %1.</translation>
     </message>
     <message>
-        <location filename="../about_widget.cpp" line="28"/>
+        <location filename="../about_widget.cpp" line="33"/>
         <source>Qt is a C++ toolkit for cross-platform application development.</source>
         <translation>Qt je sada nástrojov na multiplatformový vývoj aplikácií v jazyku C++.</translation>
     </message>
     <message>
-        <location filename="../about_widget.cpp" line="30"/>
+        <location filename="../about_widget.cpp" line="35"/>
         <source>Qt provides single-source portability across MS Windows, Mac OS X, Linux and all major commercial Unix variants. Qt is also available for embedded devices as Qtopia Core.</source>
         <translation>Qt umožňuje použitie jedného zdrojového kódu v systémoch MS Windows, Mac OS X, Linux a vo všetkých hlavných komerčných unixových variantách. Qt je tiež dostupné pre embedded zariadenia ako Qtopia Core.</translation>
     </message>
     <message>
-        <location filename="../about_widget.cpp" line="32"/>
+        <location filename="../about_widget.cpp" line="37"/>
         <source>Qt is a Trolltech product. See &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt; for more information.</source>
         <translation>Qt je produkt spoločnosti Trolltech. Pozrite si &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt; pre viac informácií.</translation>
+    </message>
+    <message>
+        <location filename="../about_widget.cpp" line="13"/>
+        <source>iTest is a Qt application consisting of a Server and a Client designed for easy computerised examination.</source>
+        <translation>iTest je Qt program pozostávajúci zo serverového a klientského programu dizajnovaných pre jednoduché skúšanie pomocou počítača.</translation>
     </message>
 </context>
 <context>
@@ -63,7 +68,7 @@
     <message>
         <location filename="../client.cpp" line="291"/>
         <source>iTest - Database Editor</source>
-        <translation>iTest - Editor databáz</translation>
+        <translation type="obsolete">iTest - Editor databáz</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="281"/>
@@ -80,6 +85,11 @@
         <source>The following error occurred: %1.</source>
         <translation>Vyskytla sa nasledujúca chyba: %1.</translation>
     </message>
+    <message>
+        <location filename="../client.cpp" line="291"/>
+        <source>iTestServer</source>
+        <translation>iTestServer</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -89,7 +99,7 @@
         <translation>Uložiť zmeny pred pokračovaním?</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2863"/>
+        <location filename="../ui_main_window_v2.cpp" line="2861"/>
         <source>&amp;Save</source>
         <translation>&amp;Uložiť</translation>
     </message>
@@ -99,7 +109,7 @@
         <translation>&amp;Zahodiť</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="214"/>
+        <location filename="../session_viewer.cpp" line="222"/>
         <source>Cancel</source>
         <translation>Zrušiť</translation>
     </message>
@@ -109,7 +119,7 @@
         <translation>Nová databáza</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3199"/>
+        <location filename="../ui_main_window_v2.cpp" line="3203"/>
         <source>Database name:</source>
         <translation>Meno databázy:</translation>
     </message>
@@ -146,7 +156,7 @@
 %2.</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="473"/>
+        <location filename="../main_window.cpp" line="474"/>
         <source>Ready</source>
         <translation>Pripravený</translation>
     </message>
@@ -161,7 +171,7 @@
         <translation>Databáza uložená</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="540"/>
+        <location filename="../database.cpp" line="534"/>
         <source>Open database</source>
         <translation>Otvoriť databázu</translation>
     </message>
@@ -198,12 +208,12 @@
         <translation>Databáza otvorená</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="555"/>
+        <location filename="../database.cpp" line="549"/>
         <source>Close database</source>
         <translation>Zatvoriť databázu</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="562"/>
+        <location filename="../database.cpp" line="556"/>
         <source>Database closed</source>
         <translation>Databáza zatvorená</translation>
     </message>
@@ -253,102 +263,102 @@ Prosím nepoužívajte žiadne špeciálne znaky.
 Ak ste ich použili, skúste operáciu znova bez nich.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2975"/>
+        <location filename="../ui_main_window_v2.cpp" line="2973"/>
         <source>Apply any changes you have made to the question</source>
         <translation>Uložiť akékoľvek zmeny v tejto otázke</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2980"/>
+        <location filename="../ui_main_window_v2.cpp" line="2978"/>
         <source>Discard any changes you have made to the question</source>
         <translation>Zahodiť akékoľvek zmeny v tejto otázke</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="352"/>
+        <location filename="../main_window.cpp" line="353"/>
         <source>Apply any changes you have made to the flags</source>
         <translation>Uložiť akékoľvek zmeny vo vlajkách</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="354"/>
+        <location filename="../main_window.cpp" line="355"/>
         <source>Discard any changes you have made to the flags</source>
         <translation>Zahodiť akékoľvek zmeny vo vlajkách</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2880"/>
+        <location filename="../ui_main_window_v2.cpp" line="2878"/>
         <source>Quit iTest</source>
         <translation>Ukončiť iTest</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3100"/>
+        <location filename="../ui_main_window_v2.cpp" line="3098"/>
         <source>iTest</source>
         <translation>iTest</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="635"/>
+        <location filename="../main_window.cpp" line="636"/>
         <source>Failed to check for updates.</source>
         <translation>Nepodarilo sa skontrolovať aktualizácie.</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="635"/>
+        <location filename="../main_window.cpp" line="636"/>
         <source>&amp;Try again</source>
         <translation>&amp;Skúsiť znovu</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="651"/>
+        <location filename="../main_window.cpp" line="652"/>
         <source>Your iTest is up-to-date.</source>
         <translation>Táto verzia programu iTest je aktuálna.</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="655"/>
+        <location filename="../main_window.cpp" line="656"/>
         <source>iTest %1 is available now.</source>
         <translation>iTest vo verzii %1 je teraz dostupný.</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="710"/>
+        <location filename="../main_window.cpp" line="711"/>
         <source>%1 - Overall statistics - iTest</source>
         <translation>%1 - Celková štatistika - iTest</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="720"/>
+        <location filename="../main_window.cpp" line="721"/>
         <source>Adjust all</source>
         <translation>Upraviť všetky</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="724"/>
+        <location filename="../main_window.cpp" line="725"/>
         <source>Close</source>
         <translation>Zatvoriť</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="736"/>
+        <location filename="../main_window.cpp" line="737"/>
         <source>&lt;b&gt;%1 questions with statistics found&lt;/b&gt;</source>
         <translation>&lt;b&gt;Bolo nájdených %1 otázok so štatistikami&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3388"/>
+        <location filename="../ui_main_window_v2.cpp" line="3392"/>
         <source>Question name</source>
         <translation>Meno otázky</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="742"/>
+        <location filename="../main_window.cpp" line="743"/>
         <source>Difficulty</source>
         <translation>Obtiažnosť</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="744"/>
+        <location filename="../main_window.cpp" line="745"/>
         <source>Calculated difficulty</source>
         <translation>Vypočítaná obtiažnosť</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="746"/>
+        <location filename="../main_window.cpp" line="747"/>
         <source>Number of correct answers</source>
         <translation>Počet správnych odpovedí</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="748"/>
+        <location filename="../main_window.cpp" line="749"/>
         <source>Number of incorrect answers</source>
         <translation>Počet nesprávnych odpovedí</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="805"/>
+        <location filename="../main_window.cpp" line="806"/>
         <source>Adjust difficulty</source>
         <translation>Upraviť obtiažnosť</translation>
     </message>
@@ -358,1297 +368,1297 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <translation>Neznámy</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3140"/>
+        <location filename="../ui_main_window_v2.cpp" line="3138"/>
         <source>Easy</source>
         <translation>Jednoduchá</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3141"/>
+        <location filename="../ui_main_window_v2.cpp" line="3139"/>
         <source>Medium</source>
         <translation>Stredne ťažká</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3142"/>
+        <location filename="../ui_main_window_v2.cpp" line="3140"/>
         <source>Difficult</source>
         <translation>Obtiažna</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2852"/>
         <source>iTest - Database Editor</source>
-        <translation>iTest - Editor databáz</translation>
+        <translation type="obsolete">iTest - Editor databáz</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3092"/>
+        <location filename="../ui_main_window_v2.cpp" line="3090"/>
         <source>Select a database you have used recently, create a new one or open another database.</source>
         <translation>Vyberte nedávno použitú databázu, vytvorte novú alebo otvorte inú.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3093"/>
+        <location filename="../ui_main_window_v2.cpp" line="3091"/>
         <source>Recent databases</source>
         <translation>Nedávne databázy</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3094"/>
+        <location filename="../ui_main_window_v2.cpp" line="3092"/>
         <source>Create a new database</source>
         <translation>Vytvoriť novú databázu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3095"/>
+        <location filename="../ui_main_window_v2.cpp" line="3093"/>
         <source>New</source>
         <translation>Nový</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3096"/>
+        <location filename="../ui_main_window_v2.cpp" line="3094"/>
         <source>Open another database</source>
         <translation>Otvoriť inú databázu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3097"/>
+        <location filename="../ui_main_window_v2.cpp" line="3095"/>
         <source>Open other...</source>
         <translation>Otvoriť inú...</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3098"/>
+        <location filename="../ui_main_window_v2.cpp" line="3096"/>
         <source>Open the selected database from the list above</source>
         <translation>Otvoriť vybranú databázu zo zoznamu hore</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3099"/>
+        <location filename="../ui_main_window_v2.cpp" line="3097"/>
         <source>Open selected</source>
         <translation>Otvoriť vybranú</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3102"/>
+        <location filename="../ui_main_window_v2.cpp" line="3100"/>
         <source>List of questions</source>
         <translation>Zoznam otázok</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3103"/>
+        <location filename="../ui_main_window_v2.cpp" line="3101"/>
         <source>Select the flag to filter the list below</source>
         <translation>Vyberte vlajku na filtrovanie zoznamu dole</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3104"/>
+        <location filename="../ui_main_window_v2.cpp" line="3102"/>
         <source>Show all questions</source>
         <translation>Zobraziť všetky otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3105"/>
+        <location filename="../ui_main_window_v2.cpp" line="3103"/>
         <source>All</source>
         <translation>Všetky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3106"/>
+        <location filename="../ui_main_window_v2.cpp" line="3104"/>
         <source>Show easy questions only</source>
         <translation>Zobraziť len jednoduché otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3108"/>
+        <location filename="../ui_main_window_v2.cpp" line="3106"/>
         <source>Show questions with medium difficulty only</source>
         <translation>Zobraziť len stredne ťažké otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3110"/>
+        <location filename="../ui_main_window_v2.cpp" line="3108"/>
         <source>Show difficult questions only</source>
         <translation>Zobraziť len obtiažne otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3112"/>
+        <location filename="../ui_main_window_v2.cpp" line="3110"/>
         <source>Show questions with the selected flag only</source>
         <translation>Zobraziť len otázky s vybranou vlajkou</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3114"/>
+        <location filename="../ui_main_window_v2.cpp" line="3112"/>
         <source>Select a question to edit</source>
         <translation>Vyberte otázku, ktorú chcete upraviť</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3115"/>
+        <location filename="../ui_main_window_v2.cpp" line="3113"/>
         <source>Add a question</source>
         <translation>Pridať otázku</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3117"/>
+        <location filename="../ui_main_window_v2.cpp" line="3115"/>
         <source>Duplicate the selected question</source>
         <translation>Duplikovať vybranú otázku</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3119"/>
+        <location filename="../ui_main_window_v2.cpp" line="3117"/>
         <source>Delete the selected question</source>
         <translation>Odstrániť vybranú otázku</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3121"/>
+        <location filename="../ui_main_window_v2.cpp" line="3119"/>
         <source>Move the selected question up</source>
         <translation>Posunúť vybranú otázku hore</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3123"/>
+        <location filename="../ui_main_window_v2.cpp" line="3121"/>
         <source>Move the selected question down</source>
         <translation>Posunúť vybranú otázku dole</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3427"/>
+        <location filename="../ui_main_window_v2.cpp" line="3431"/>
         <source>Search:</source>
         <translation>Hľadať:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3428"/>
+        <location filename="../ui_main_window_v2.cpp" line="3432"/>
         <source>Type a keyword to filter the list below</source>
         <translation>Napíšte kľúčové slovo na filtrovanie zoznamu dole</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3127"/>
+        <location filename="../ui_main_window_v2.cpp" line="3125"/>
         <source>Selected question</source>
         <translation>Vybraná otázka</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3128"/>
+        <location filename="../ui_main_window_v2.cpp" line="3126"/>
         <source>Question name:</source>
         <translation>Meno otázky:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3129"/>
+        <location filename="../ui_main_window_v2.cpp" line="3127"/>
         <source>Name of the selected question</source>
         <translation>Meno vybranej otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3130"/>
+        <location filename="../ui_main_window_v2.cpp" line="3128"/>
         <source>Answers:</source>
         <translation>Odpovede:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3131"/>
+        <location filename="../ui_main_window_v2.cpp" line="3129"/>
         <source>Correct:</source>
         <translation>Správna:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3132"/>
+        <location filename="../ui_main_window_v2.cpp" line="3130"/>
         <source>Flag:</source>
         <translation>Vlajka:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3133"/>
+        <location filename="../ui_main_window_v2.cpp" line="3131"/>
         <source>Flag of the selected question</source>
         <translation>Vlajka vybranej otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3138"/>
+        <location filename="../ui_main_window_v2.cpp" line="3136"/>
         <source>Difficulty:</source>
         <translation>Obtiažnosť:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3143"/>
+        <location filename="../ui_main_window_v2.cpp" line="3141"/>
         <source>Difficulty of the selected question</source>
         <translation>Obtiažnosť vybranej otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3144"/>
+        <location filename="../ui_main_window_v2.cpp" line="3142"/>
         <source>a)</source>
         <translation>a)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3145"/>
+        <location filename="../ui_main_window_v2.cpp" line="3143"/>
         <source>b)</source>
         <translation>b)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3158"/>
+        <location filename="../ui_main_window_v2.cpp" line="3156"/>
         <source>A checked checkbox indicates a correct answer</source>
         <translation>Zaškrtnuté políčko značí správnu odpoveď</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3148"/>
+        <location filename="../ui_main_window_v2.cpp" line="3146"/>
         <source>Answer a) of the selected question</source>
         <translation>Odpoveď a) vybranej otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3151"/>
+        <location filename="../ui_main_window_v2.cpp" line="3149"/>
         <source>c)</source>
         <translation>c)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3152"/>
+        <location filename="../ui_main_window_v2.cpp" line="3150"/>
         <source>Answer b) of the selected question</source>
         <translation>Odpoveď b) vybranej otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3155"/>
+        <location filename="../ui_main_window_v2.cpp" line="3153"/>
         <source>Answer c) of the selected question</source>
         <translation>Odpoveď c) vybranej otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3156"/>
+        <location filename="../ui_main_window_v2.cpp" line="3154"/>
         <source>d)</source>
         <translation>d)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3157"/>
+        <location filename="../ui_main_window_v2.cpp" line="3155"/>
         <source>Answer d) of the selected question</source>
         <translation>Odpoveď d) vybranej otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3160"/>
+        <location filename="../ui_main_window_v2.cpp" line="3158"/>
         <source>Question:</source>
         <translation>Otázka:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3211"/>
+        <location filename="../ui_main_window_v2.cpp" line="3215"/>
         <source>Undo</source>
         <translation>Späť</translation>
     </message>
     <message encoding="UTF-8">
-        <location filename="../ui_main_window_v2.cpp" line="3212"/>
+        <location filename="../ui_main_window_v2.cpp" line="3216"/>
         <source>◄</source>
         <translation>◄</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3213"/>
+        <location filename="../ui_main_window_v2.cpp" line="3217"/>
         <source>Redo</source>
         <translation>Znovu</translation>
     </message>
     <message encoding="UTF-8">
-        <location filename="../ui_main_window_v2.cpp" line="3214"/>
+        <location filename="../ui_main_window_v2.cpp" line="3218"/>
         <source>►</source>
         <translation>►</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3215"/>
+        <location filename="../ui_main_window_v2.cpp" line="3219"/>
         <source>Choose a font</source>
         <translation>Vybrať písmo</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3229"/>
+        <location filename="../ui_main_window_v2.cpp" line="3233"/>
         <source>Select text size</source>
         <translation>Vybrať veľkosť písma</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3219"/>
+        <location filename="../ui_main_window_v2.cpp" line="3223"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3220"/>
+        <location filename="../ui_main_window_v2.cpp" line="3224"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3221"/>
+        <location filename="../ui_main_window_v2.cpp" line="3225"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3222"/>
+        <location filename="../ui_main_window_v2.cpp" line="3226"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3223"/>
+        <location filename="../ui_main_window_v2.cpp" line="3227"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3224"/>
+        <location filename="../ui_main_window_v2.cpp" line="3228"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3225"/>
+        <location filename="../ui_main_window_v2.cpp" line="3229"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3226"/>
+        <location filename="../ui_main_window_v2.cpp" line="3230"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3227"/>
+        <location filename="../ui_main_window_v2.cpp" line="3231"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3230"/>
+        <location filename="../ui_main_window_v2.cpp" line="3234"/>
         <source>Bold</source>
         <translation>Tučné</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3231"/>
+        <location filename="../ui_main_window_v2.cpp" line="3235"/>
         <source>B</source>
         <translation>B</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3232"/>
+        <location filename="../ui_main_window_v2.cpp" line="3236"/>
         <source>Italic</source>
         <translation>Kurzíva</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3233"/>
+        <location filename="../ui_main_window_v2.cpp" line="3237"/>
         <source>I</source>
         <translation>I</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3234"/>
+        <location filename="../ui_main_window_v2.cpp" line="3238"/>
         <source>Underlined</source>
         <translation>Podčiarknuté</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3235"/>
+        <location filename="../ui_main_window_v2.cpp" line="3239"/>
         <source>U</source>
         <translation>U</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3236"/>
+        <location filename="../ui_main_window_v2.cpp" line="3240"/>
         <source>Text colour</source>
         <translation>Farba písma</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3238"/>
+        <location filename="../ui_main_window_v2.cpp" line="3242"/>
         <source>Align left</source>
         <translation>Zarovnať vľavo</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3239"/>
+        <location filename="../ui_main_window_v2.cpp" line="3243"/>
         <source>L</source>
         <translation>L</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3240"/>
+        <location filename="../ui_main_window_v2.cpp" line="3244"/>
         <source>Align centre</source>
         <translation>Zarovnať na stred</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3241"/>
+        <location filename="../ui_main_window_v2.cpp" line="3245"/>
         <source>C</source>
         <translation>C</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3242"/>
+        <location filename="../ui_main_window_v2.cpp" line="3246"/>
         <source>Align right</source>
         <translation>Zarovnať vpravo</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3243"/>
+        <location filename="../ui_main_window_v2.cpp" line="3247"/>
         <source>R</source>
         <translation>R</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3244"/>
+        <location filename="../ui_main_window_v2.cpp" line="3248"/>
         <source>Justify</source>
         <translation>Do bloku</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3245"/>
+        <location filename="../ui_main_window_v2.cpp" line="3249"/>
         <source>J</source>
         <translation>J</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3196"/>
+        <location filename="../ui_main_window_v2.cpp" line="3200"/>
         <source>Text of the selected question</source>
         <translation>Text vybranej otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3197"/>
+        <location filename="../ui_main_window_v2.cpp" line="3201"/>
         <source>Statistics:</source>
         <translation>Štatistika:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3198"/>
+        <location filename="../ui_main_window_v2.cpp" line="3202"/>
         <source>Database information</source>
         <translation>Informácie o databáze</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3200"/>
+        <location filename="../ui_main_window_v2.cpp" line="3204"/>
         <source>Database name</source>
         <translation>Meno databázy</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3201"/>
+        <location filename="../ui_main_window_v2.cpp" line="3205"/>
         <source>Date:</source>
         <translation>Dátum:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3202"/>
+        <location filename="../ui_main_window_v2.cpp" line="3206"/>
         <source>Database date</source>
         <translation>Dátum</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3203"/>
+        <location filename="../ui_main_window_v2.cpp" line="3207"/>
         <source>yyyy.MM.dd - hh:mm</source>
         <translation>yyyy.MM.dd - hh:mm</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3205"/>
+        <location filename="../ui_main_window_v2.cpp" line="3209"/>
         <source>Use last save date</source>
         <translation>Použiť dátum posledného uloženia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3206"/>
+        <location filename="../ui_main_window_v2.cpp" line="3210"/>
         <source>Show or hide the database information below</source>
         <translation>Zobraziť alebo skryť informácie o databáze</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3207"/>
+        <location filename="../ui_main_window_v2.cpp" line="3211"/>
         <source>Show database information</source>
         <translation>Zobraziť informácie o databáze</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3208"/>
+        <location filename="../ui_main_window_v2.cpp" line="3212"/>
         <source>Close the open database</source>
         <translation>Zatvoriť otvorenú databázu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3210"/>
+        <location filename="../ui_main_window_v2.cpp" line="3214"/>
         <source>Use this field for your comments, notes, reminders...</source>
         <translation>Toto pole môžete použiť na svoje komentáre, poznámky a pripomienky...</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3268"/>
+        <location filename="../ui_main_window_v2.cpp" line="3272"/>
         <source>Flag name:</source>
         <translation>Meno vlajky:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3269"/>
+        <location filename="../ui_main_window_v2.cpp" line="3273"/>
         <source>Enabled:</source>
         <translation>Povolená:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3289"/>
+        <location filename="../ui_main_window_v2.cpp" line="3293"/>
         <source>Number of questions with this flag: 0</source>
         <translation>Počet otázok s touto vlajkou: 0</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3290"/>
+        <location filename="../ui_main_window_v2.cpp" line="3294"/>
         <source>Advanced</source>
         <translation>Pokročilé</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3291"/>
+        <location filename="../ui_main_window_v2.cpp" line="3295"/>
         <source>&lt;b&gt;Available:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Dostupné:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3294"/>
+        <location filename="../ui_main_window_v2.cpp" line="3298"/>
         <source>&lt;b&gt;Used:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Použité:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3307"/>
+        <location filename="../ui_main_window_v2.cpp" line="3311"/>
         <source>Select:</source>
         <translation>Vybrať:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3308"/>
+        <location filename="../ui_main_window_v2.cpp" line="3312"/>
         <source>Flags</source>
         <translation>Vlajky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3309"/>
+        <location filename="../ui_main_window_v2.cpp" line="3313"/>
         <source>Questions</source>
         <translation>Otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3311"/>
+        <location filename="../ui_main_window_v2.cpp" line="3315"/>
         <source>Set a custom test name</source>
         <translation>Použiť vlastné meno testu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3312"/>
+        <location filename="../ui_main_window_v2.cpp" line="3316"/>
         <source>Time for the whole test</source>
         <translation>Čas na celý test</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3323"/>
+        <location filename="../ui_main_window_v2.cpp" line="3327"/>
         <source>HH:mm</source>
         <translation>HH:mm</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3314"/>
+        <location filename="../ui_main_window_v2.cpp" line="3318"/>
         <source>Time for:</source>
         <translation>Čas na:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3315"/>
+        <location filename="../ui_main_window_v2.cpp" line="3319"/>
         <source>Pass mark:</source>
         <translation>Dostatočná:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3316"/>
+        <location filename="../ui_main_window_v2.cpp" line="3320"/>
         <source>Number of questions:</source>
         <translation>Počet otázok:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3317"/>
+        <location filename="../ui_main_window_v2.cpp" line="3321"/>
         <source>Specify the minimum number of correct answers to pass the exam</source>
         <translation>Špecifikujte minimálny počet správnych odpovedí na urobenie skúšky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3318"/>
+        <location filename="../ui_main_window_v2.cpp" line="3322"/>
         <source>one question</source>
         <translation>jednu otázku</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3319"/>
+        <location filename="../ui_main_window_v2.cpp" line="3323"/>
         <source>Specify the number of questions</source>
         <translation>Špecifikujte počet otázok</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3320"/>
+        <location filename="../ui_main_window_v2.cpp" line="3324"/>
         <source>Use the maximum number of questions possible</source>
         <translation>Použiť maximálny možný počet otázok</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3321"/>
+        <location filename="../ui_main_window_v2.cpp" line="3325"/>
         <source>Maximum</source>
         <translation>Maximum</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3322"/>
+        <location filename="../ui_main_window_v2.cpp" line="3326"/>
         <source>Time for one question (multiplied by the number of questions)</source>
         <translation>Čas na jednu otázku (násobí sa počtom otázok)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3324"/>
+        <location filename="../ui_main_window_v2.cpp" line="3328"/>
         <source>Proceed to testing mode using this computer as a server</source>
         <translation>Pokračovať do testovacieho módu používajúc tento počítač ako server</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3325"/>
+        <location filename="../ui_main_window_v2.cpp" line="3329"/>
         <source>Start server</source>
         <translation>Spustiť server</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3326"/>
+        <location filename="../ui_main_window_v2.cpp" line="3330"/>
         <source>the whole test</source>
         <translation>celý test</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3327"/>
+        <location filename="../ui_main_window_v2.cpp" line="3331"/>
         <source>Test name:</source>
         <translation>Meno testu:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3328"/>
+        <location filename="../ui_main_window_v2.cpp" line="3332"/>
         <source>Enable setting a custom test name (if unchecked, database name will be used)</source>
         <translation>Povoliť nastavenie vlastného mena testu (ak nezaškrtnuté, bude použité meno databázy)</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3329"/>
+        <location filename="../ui_main_window_v2.cpp" line="3333"/>
         <source>Custom</source>
         <translation>Vlastné</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3333"/>
+        <location filename="../ui_main_window_v2.cpp" line="3337"/>
         <source>Server information</source>
         <translation>Informácie o serveri</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3334"/>
         <source>The server is running on port *****. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation>Server beží na porte *****. Teraz môžete spustiť Testového klienta na každom klientskom PC. Nevypínajte Editor databáz počas testovania!</translation>
+        <translation type="obsolete">Server beží na porte *****. Teraz môžete spustiť Testového klienta na každom klientskom PC. Nevypínajte Editor databáz počas testovania!</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3335"/>
+        <location filename="../ui_main_window_v2.cpp" line="3339"/>
         <source>List of clients</source>
         <translation>Zoznam klientov</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3336"/>
+        <location filename="../ui_main_window_v2.cpp" line="3340"/>
         <source>Select a client to get more information</source>
         <translation>Vyberte klienta pre zobrazenie viacerých informácií</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3337"/>
+        <location filename="../ui_main_window_v2.cpp" line="3341"/>
         <source>Selected client</source>
         <translation>Vybraný klient</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3356"/>
+        <location filename="../ui_main_window_v2.cpp" line="3360"/>
         <source>The selected client&apos;s exam results</source>
         <translation>Výsledky skúšky vybraného klienta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3392"/>
+        <location filename="../ui_main_window_v2.cpp" line="3396"/>
         <source>Answered correctly</source>
         <translation>Zodpovedané správne</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3396"/>
+        <location filename="../ui_main_window_v2.cpp" line="3400"/>
         <source>Answer</source>
         <translation>Odpoveď</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3400"/>
+        <location filename="../ui_main_window_v2.cpp" line="3404"/>
         <source>Correct answer</source>
         <translation>Správna odpoveď</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3403"/>
+        <location filename="../ui_main_window_v2.cpp" line="3407"/>
         <source>&lt;b&gt;Total score:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Celkové skóre:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3358"/>
+        <location filename="../ui_main_window_v2.cpp" line="3362"/>
         <source>The selected client&apos;s total score</source>
         <translation>Celkové skóre vybraného klienta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3405"/>
+        <location filename="../ui_main_window_v2.cpp" line="3409"/>
         <source>Not ready yet</source>
         <translation>Zatiaľ neznáme</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3406"/>
+        <location filename="../ui_main_window_v2.cpp" line="3410"/>
         <source>&lt;b&gt;Results:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Výsledky:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3361"/>
+        <location filename="../ui_main_window_v2.cpp" line="3365"/>
         <source>&lt;b&gt;Status:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Status:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3362"/>
+        <location filename="../ui_main_window_v2.cpp" line="3366"/>
         <source>The selected client&apos;s status</source>
         <translation>Status vybraného klienta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3363"/>
+        <location filename="../ui_main_window_v2.cpp" line="3367"/>
         <source>Disconnected</source>
         <translation>Odpojený</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3407"/>
+        <location filename="../ui_main_window_v2.cpp" line="3411"/>
         <source>&lt;b&gt;Name:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Meno:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3365"/>
+        <location filename="../ui_main_window_v2.cpp" line="3369"/>
         <source>The selected client&apos;s name</source>
         <translation>Meno vybraného klienta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3409"/>
+        <location filename="../ui_main_window_v2.cpp" line="3413"/>
         <source>Not identified yet</source>
         <translation>Zatiaľ neidentifikovaný</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3425"/>
+        <location filename="../ui_main_window_v2.cpp" line="3429"/>
         <source>Server log</source>
         <translation>Záznam serveru</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3369"/>
+        <location filename="../ui_main_window_v2.cpp" line="3373"/>
         <source>Selected session</source>
         <translation>Vybrané sedenie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3370"/>
+        <location filename="../ui_main_window_v2.cpp" line="3374"/>
         <source>&lt;b&gt;Session name:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Meno sedenia:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3371"/>
+        <location filename="../ui_main_window_v2.cpp" line="3375"/>
         <source>Name of the selected session</source>
         <translation>Meno vybraného sedenia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3372"/>
+        <location filename="../ui_main_window_v2.cpp" line="3376"/>
         <source>&lt;b&gt;Date and time:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Dátum a čas:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3373"/>
+        <location filename="../ui_main_window_v2.cpp" line="3377"/>
         <source>Date and time of the selected session</source>
         <translation>Dátum a čas vybraného sedenia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3374"/>
+        <location filename="../ui_main_window_v2.cpp" line="3378"/>
         <source>Bad</source>
         <translation>Zlý</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3375"/>
+        <location filename="../ui_main_window_v2.cpp" line="3379"/>
         <source>Good</source>
         <translation>Dobrý</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3376"/>
+        <location filename="../ui_main_window_v2.cpp" line="3380"/>
         <source>Average result of the selected session</source>
         <translation>Priemerný výsledok vybraného sedenia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3377"/>
+        <location filename="../ui_main_window_v2.cpp" line="3381"/>
         <source>&lt;b&gt;Pass mark:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Dostatočná:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3378"/>
+        <location filename="../ui_main_window_v2.cpp" line="3382"/>
         <source>The minimum number of correct answers to pass this exam</source>
         <translation>Minimálny počet správnych odpovedí na urobenie skúšky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3380"/>
+        <location filename="../ui_main_window_v2.cpp" line="3384"/>
         <source>&lt;b&gt;Average:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Priemer:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3381"/>
+        <location filename="../ui_main_window_v2.cpp" line="3385"/>
         <source>List of students</source>
         <translation>Zoznam študentov</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3382"/>
+        <location filename="../ui_main_window_v2.cpp" line="3386"/>
         <source>Select a student to get more information</source>
         <translation>Vyberte študenta pre zobrazenie viacerých informácií</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3383"/>
+        <location filename="../ui_main_window_v2.cpp" line="3387"/>
         <source>Selected student</source>
         <translation>Vybraný študent</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3402"/>
+        <location filename="../ui_main_window_v2.cpp" line="3406"/>
         <source>The selected student&apos;s exam results</source>
         <translation>Výsledky skúšky vybraného študenta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3404"/>
+        <location filename="../ui_main_window_v2.cpp" line="3408"/>
         <source>The selected student&apos;s total score</source>
         <translation>Celkové skóre vybraného študenta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3408"/>
+        <location filename="../ui_main_window_v2.cpp" line="3412"/>
         <source>The selected student&apos;s name</source>
         <translation>Meno vybraného študenta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3430"/>
+        <location filename="../ui_main_window_v2.cpp" line="3434"/>
         <source>Double click a session to view</source>
         <translation>Dvakrát kliknite na sedenie, ktoré chcete zobraziť</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3435"/>
+        <location filename="../ui_main_window_v2.cpp" line="3439"/>
         <source>&amp;Question</source>
         <translation>&amp;Otázka</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3438"/>
+        <location filename="../ui_main_window_v2.cpp" line="3442"/>
         <source>&amp;Sort questions</source>
         <translation>&amp;Usporiadať otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3439"/>
+        <location filename="../ui_main_window_v2.cpp" line="3443"/>
         <source>&amp;Filter the list of questions</source>
         <translation>&amp;Filtrovať zoznam otázok</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3432"/>
+        <location filename="../ui_main_window_v2.cpp" line="3436"/>
         <source>&amp;Help</source>
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3440"/>
+        <location filename="../ui_main_window_v2.cpp" line="3444"/>
         <source>&amp;File</source>
         <translation>&amp;Súbor</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3437"/>
+        <location filename="../ui_main_window_v2.cpp" line="3441"/>
         <source>&amp;Database</source>
         <translation>&amp;Databáza</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3433"/>
+        <location filename="../ui_main_window_v2.cpp" line="3437"/>
         <source>Sessio&amp;n</source>
         <translation>Sede&amp;nie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3436"/>
+        <location filename="../ui_main_window_v2.cpp" line="3440"/>
         <source>&amp;Server</source>
         <translation>&amp;Server</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2853"/>
+        <location filename="../ui_main_window_v2.cpp" line="2851"/>
         <source>&amp;New</source>
         <translation>&amp;Nový</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2857"/>
+        <location filename="../ui_main_window_v2.cpp" line="2855"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2858"/>
+        <location filename="../ui_main_window_v2.cpp" line="2856"/>
         <source>&amp;Open</source>
         <translation>&amp;Otvoriť</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2861"/>
+        <location filename="../ui_main_window_v2.cpp" line="2859"/>
         <source>Open a database</source>
         <translation>Otvoriť databázu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2862"/>
+        <location filename="../ui_main_window_v2.cpp" line="2860"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2866"/>
+        <location filename="../ui_main_window_v2.cpp" line="2864"/>
         <source>Save the open database</source>
         <translation>Uložiť otvorenú databázu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2867"/>
+        <location filename="../ui_main_window_v2.cpp" line="2865"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2868"/>
+        <location filename="../ui_main_window_v2.cpp" line="2866"/>
         <source>Save &amp;as</source>
         <translation>Uložiť &amp;ako</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2870"/>
+        <location filename="../ui_main_window_v2.cpp" line="2868"/>
         <source>Save as</source>
         <translation>Uložiť ako</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2871"/>
+        <location filename="../ui_main_window_v2.cpp" line="2869"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2872"/>
+        <location filename="../ui_main_window_v2.cpp" line="2870"/>
         <source>&amp;Close</source>
         <translation>&amp;Zatvoriť</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2876"/>
+        <location filename="../ui_main_window_v2.cpp" line="2874"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2877"/>
+        <location filename="../ui_main_window_v2.cpp" line="2875"/>
         <source>&amp;Quit</source>
         <translation>&amp;Koniec</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2881"/>
+        <location filename="../ui_main_window_v2.cpp" line="2879"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2882"/>
+        <location filename="../ui_main_window_v2.cpp" line="2880"/>
         <source>&amp;Flags</source>
         <translation>&amp;Vlajky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2886"/>
+        <location filename="../ui_main_window_v2.cpp" line="2884"/>
         <source>Edit flags</source>
         <translation>Upraviť vlajky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2887"/>
+        <location filename="../ui_main_window_v2.cpp" line="2885"/>
         <source>&amp;Server mode</source>
         <translation>&amp;Serverový režim</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2888"/>
+        <location filename="../ui_main_window_v2.cpp" line="2886"/>
         <source>Server mode</source>
         <translation>Serverový režim</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2891"/>
+        <location filename="../ui_main_window_v2.cpp" line="2889"/>
         <source>Edit test settings and start the server</source>
         <translation>Upraviť nastavenia testu a spustiť server</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2892"/>
+        <location filename="../ui_main_window_v2.cpp" line="2890"/>
         <source>&amp;About</source>
         <translation>&amp;O programe</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2895"/>
+        <location filename="../ui_main_window_v2.cpp" line="2893"/>
         <source>About iTest</source>
         <translation>O programe iTest</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2896"/>
+        <location filename="../ui_main_window_v2.cpp" line="2894"/>
         <source>From &amp;A to Z</source>
         <translation>Od &amp;A po Z</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2898"/>
+        <location filename="../ui_main_window_v2.cpp" line="2896"/>
         <source>Sort questions from A to Z</source>
         <translation>Usporiadať otázky od A po Z</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2899"/>
+        <location filename="../ui_main_window_v2.cpp" line="2897"/>
         <source>Ctrl+Alt+Up</source>
         <translation>Ctrl+Alt+Up</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2900"/>
+        <location filename="../ui_main_window_v2.cpp" line="2898"/>
         <source>From &amp;Z to A</source>
         <translation>Od &amp;Z po A</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2902"/>
+        <location filename="../ui_main_window_v2.cpp" line="2900"/>
         <source>Sort questions from Z to A</source>
         <translation>Usporiadať otázky od Z po A</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2903"/>
+        <location filename="../ui_main_window_v2.cpp" line="2901"/>
         <source>Ctrl+Alt+Down</source>
         <translation>Ctrl+Alt+Down</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2904"/>
+        <location filename="../ui_main_window_v2.cpp" line="2902"/>
         <source>Show &amp;all questions</source>
         <translation>Zobr&amp;aziť všetky otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2909"/>
+        <location filename="../ui_main_window_v2.cpp" line="2907"/>
         <source>Show &amp;easy questions only</source>
         <translation>Zobraziť len &amp;jednoduché otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2913"/>
+        <location filename="../ui_main_window_v2.cpp" line="2911"/>
         <source>Show questions with &amp;medium difficulty only</source>
         <translation>Zobraziť len &amp;stredne ťažké otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2916"/>
+        <location filename="../ui_main_window_v2.cpp" line="2914"/>
         <source>Show &amp;difficult questions only</source>
         <translation>Zobraziť len &amp;obtiažne otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2920"/>
+        <location filename="../ui_main_window_v2.cpp" line="2918"/>
         <source>Show database &amp;information</source>
         <translation>Zobraziť &amp;informácie o databáze</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2923"/>
+        <location filename="../ui_main_window_v2.cpp" line="2921"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2924"/>
+        <location filename="../ui_main_window_v2.cpp" line="2922"/>
         <source>Show questions with the selected &amp;flag only</source>
         <translation>Zobraziť len otázky s vybranou &amp;vlajkou</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2927"/>
+        <location filename="../ui_main_window_v2.cpp" line="2925"/>
         <source>Move &amp;up</source>
         <translation>Posunúť &amp;hore</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2928"/>
+        <location filename="../ui_main_window_v2.cpp" line="2926"/>
         <source>Move up</source>
         <translation>Posunúť hore</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2932"/>
+        <location filename="../ui_main_window_v2.cpp" line="2930"/>
         <source>Ctrl+Up</source>
         <translation>Ctrl+Up</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2933"/>
+        <location filename="../ui_main_window_v2.cpp" line="2931"/>
         <source>Move do&amp;wn</source>
         <translation>Posunúť &amp;dole</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2937"/>
+        <location filename="../ui_main_window_v2.cpp" line="2935"/>
         <source>Ctrl+Down</source>
         <translation>Ctrl+Down</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2938"/>
+        <location filename="../ui_main_window_v2.cpp" line="2936"/>
         <source>Co&amp;mments</source>
         <translation>Pozná&amp;mky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2939"/>
+        <location filename="../ui_main_window_v2.cpp" line="2937"/>
         <source>Comments</source>
         <translation>Poznámky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2942"/>
+        <location filename="../ui_main_window_v2.cpp" line="2940"/>
         <source>Edit comments</source>
         <translation>Upraviť poznámky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2943"/>
+        <location filename="../ui_main_window_v2.cpp" line="2941"/>
         <source>&amp;Use last save date</source>
         <translation>Použiť dátum posledného &amp;uloženia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2946"/>
+        <location filename="../ui_main_window_v2.cpp" line="2944"/>
         <source>&amp;Add</source>
         <translation>Prid&amp;ať</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2947"/>
+        <location filename="../ui_main_window_v2.cpp" line="2945"/>
         <source>Add</source>
         <translation>Pridať</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2951"/>
+        <location filename="../ui_main_window_v2.cpp" line="2949"/>
         <source>Ctrl+Alt+A</source>
         <translation>Ctrl+Alt+A</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2952"/>
+        <location filename="../ui_main_window_v2.cpp" line="2950"/>
         <source>Dupli&amp;cate</source>
         <translation>Dupliko&amp;vať</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2956"/>
+        <location filename="../ui_main_window_v2.cpp" line="2954"/>
         <source>Ctrl+Alt+C</source>
         <translation>Ctrl+Alt+C</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2957"/>
+        <location filename="../ui_main_window_v2.cpp" line="2955"/>
         <source>&amp;Delete</source>
         <translation>&amp;Odstrániť</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2961"/>
+        <location filename="../ui_main_window_v2.cpp" line="2959"/>
         <source>Ctrl+Alt+D</source>
         <translation>Ctrl+Alt+D</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2962"/>
+        <location filename="../ui_main_window_v2.cpp" line="2960"/>
         <source>Move to &amp;top</source>
         <translation>Posunúť na &amp;začiatok</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2965"/>
+        <location filename="../ui_main_window_v2.cpp" line="2963"/>
         <source>Move the selected question to the top</source>
         <translation>Posunúť vybranú otázku na začiatok</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2966"/>
+        <location filename="../ui_main_window_v2.cpp" line="2964"/>
         <source>Ctrl+Shift+Up</source>
         <translation>Ctrl+Shift+Up</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2967"/>
+        <location filename="../ui_main_window_v2.cpp" line="2965"/>
         <source>Move to &amp;bottom</source>
         <translation>Posunúť na &amp;koniec</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2970"/>
+        <location filename="../ui_main_window_v2.cpp" line="2968"/>
         <source>Move the selected question to the bottom</source>
         <translation>Posunúť vybranú otázku na koniec</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2971"/>
+        <location filename="../ui_main_window_v2.cpp" line="2969"/>
         <source>Ctrl+Shift+Down</source>
         <translation>Ctrl+Shift+Down</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2972"/>
+        <location filename="../ui_main_window_v2.cpp" line="2970"/>
         <source>Appl&amp;y changes</source>
         <translation>&amp;Použiť zmeny</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2976"/>
+        <location filename="../ui_main_window_v2.cpp" line="2974"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2977"/>
+        <location filename="../ui_main_window_v2.cpp" line="2975"/>
         <source>Di&amp;scard changes</source>
         <translation>Zahodiť z&amp;meny</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2981"/>
+        <location filename="../ui_main_window_v2.cpp" line="2979"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2982"/>
+        <location filename="../ui_main_window_v2.cpp" line="2980"/>
         <source>&amp;Questions</source>
         <translation>&amp;Otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2986"/>
+        <location filename="../ui_main_window_v2.cpp" line="2984"/>
         <source>Edit questions</source>
         <translation>Upraviť otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2987"/>
+        <location filename="../ui_main_window_v2.cpp" line="2985"/>
         <source>&amp;Add off-line client</source>
         <translation>&amp;Pridať off-line klienta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2990"/>
+        <location filename="../ui_main_window_v2.cpp" line="2988"/>
         <source>Add off-line client</source>
         <translation>Pridať off-line klienta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2991"/>
+        <location filename="../ui_main_window_v2.cpp" line="2989"/>
         <source>Stop se&amp;rver</source>
         <translation>&amp;Zastaviť server</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2994"/>
+        <location filename="../ui_main_window_v2.cpp" line="2992"/>
         <source>Stop the server and return to test settings</source>
         <translation>Zastaviť server a vrátiť sa k nastaveniam testu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2995"/>
+        <location filename="../ui_main_window_v2.cpp" line="2993"/>
         <source>S&amp;tart server</source>
         <translation>&amp;Spustiť server</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="2999"/>
+        <location filename="../ui_main_window_v2.cpp" line="2997"/>
         <source>Export &amp;log</source>
         <translation>E&amp;xportovať záznam</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3002"/>
+        <location filename="../ui_main_window_v2.cpp" line="3000"/>
         <source>Export server log</source>
         <translation>Exportovať záznam serveru</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3003"/>
+        <location filename="../ui_main_window_v2.cpp" line="3001"/>
         <source>Save sessio&amp;n</source>
         <translation>Uložiť sede&amp;nie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3004"/>
+        <location filename="../ui_main_window_v2.cpp" line="3002"/>
         <source>Save session</source>
         <translation>Uložiť sedenie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3007"/>
+        <location filename="../ui_main_window_v2.cpp" line="3005"/>
         <source>Save the current session for later viewing</source>
         <translation>Uložiť aktuálne sedenie pre neskoršie prezeranie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3008"/>
+        <location filename="../ui_main_window_v2.cpp" line="3006"/>
         <source>&amp;QuickPrint</source>
         <translation>&amp;Rýchla tlač</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3010"/>
+        <location filename="../ui_main_window_v2.cpp" line="3008"/>
         <source>Print the selected client&apos;s results using the current printer settings</source>
         <translation>Vytlačiť výsledky vybraného klienta s použitím aktuálnych nastavení tlačiarne</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3011"/>
+        <location filename="../ui_main_window_v2.cpp" line="3009"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3012"/>
+        <location filename="../ui_main_window_v2.cpp" line="3010"/>
         <source>&amp;Print</source>
         <translation>&amp;Tlačiť</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3014"/>
+        <location filename="../ui_main_window_v2.cpp" line="3012"/>
         <source>Print the selected client&apos;s results</source>
         <translation>Vytlačiť výsledky vybraného klienta</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3015"/>
+        <location filename="../ui_main_window_v2.cpp" line="3013"/>
         <source>Ctrl+Shift+P</source>
         <translation>Ctrl+Shift+P</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3016"/>
+        <location filename="../ui_main_window_v2.cpp" line="3014"/>
         <source>&amp;Export test</source>
         <translation>&amp;Exportovať test</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3019"/>
+        <location filename="../ui_main_window_v2.cpp" line="3017"/>
         <source>Export off-line test session</source>
         <translation>Exportovať off-line testové sedenie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3020"/>
+        <location filename="../ui_main_window_v2.cpp" line="3018"/>
         <source>Add off-line client&amp;s</source>
         <translation>Pridať off-line kliento&amp;v</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3022"/>
+        <location filename="../ui_main_window_v2.cpp" line="3020"/>
         <source>Add off-line clients</source>
         <translation>Pridať off-line klientov</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3023"/>
+        <location filename="../ui_main_window_v2.cpp" line="3021"/>
         <source>Save&amp;d sessions</source>
         <translation>Uložené se&amp;denia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3026"/>
+        <location filename="../ui_main_window_v2.cpp" line="3024"/>
         <source>View saved test sessions</source>
         <translation>Prezrieť si uložené testové sedenia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3027"/>
+        <location filename="../ui_main_window_v2.cpp" line="3025"/>
         <source>Delete &amp;log</source>
         <translation>Odstrániť &amp;záznam</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3030"/>
+        <location filename="../ui_main_window_v2.cpp" line="3028"/>
         <source>Delete the log for the selected session</source>
         <translation>Odstrániť záznam vybraného sedenia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3036"/>
+        <location filename="../ui_main_window_v2.cpp" line="3034"/>
         <source>Documentation</source>
         <translation>Dokumentácia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3039"/>
+        <location filename="../ui_main_window_v2.cpp" line="3037"/>
         <source>View online documentation</source>
         <translation>Zobraziť online dokumentáciu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3040"/>
+        <location filename="../ui_main_window_v2.cpp" line="3038"/>
         <source>Check for updates</source>
         <translation>Skontrolovať aktualizácie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3043"/>
+        <location filename="../ui_main_window_v2.cpp" line="3041"/>
         <source>Check if there is a new version available online</source>
         <translation>Skontrolovať, či na internete nie je dostupná nová verzia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3044"/>
+        <location filename="../ui_main_window_v2.cpp" line="3042"/>
         <source>Print &amp;all</source>
         <translation>Tlačiť &amp;všetko</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3046"/>
+        <location filename="../ui_main_window_v2.cpp" line="3044"/>
         <source>Print the results of all students</source>
         <translation>Vytlačiť výsledky všetkých študentov</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3047"/>
+        <location filename="../ui_main_window_v2.cpp" line="3045"/>
         <source>Print session &amp;summary</source>
         <translation>Tlačiť prehľad &amp;sedenia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3049"/>
+        <location filename="../ui_main_window_v2.cpp" line="3047"/>
         <source>Print session summary</source>
         <translation>Tlačiť prehľad sedenia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3051"/>
+        <location filename="../ui_main_window_v2.cpp" line="3049"/>
         <source>Print a summary and statistics for the selected session</source>
         <translation>Vytlačiť prehľad a štatistiky vybraného sedenia</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3052"/>
+        <location filename="../ui_main_window_v2.cpp" line="3050"/>
         <source>Overall statistics</source>
         <translation>Celková štatistika</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3055"/>
+        <location filename="../ui_main_window_v2.cpp" line="3053"/>
         <source>Show overall statistics about the difficulty of questions</source>
         <translation>Zobraziť celkovú štatistiku obtiažnosti otázok</translation>
     </message>
@@ -1969,17 +1979,17 @@ a nastavte počet kópií pri každom spustení serveru.</translation>
         <translation>Študenti:</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="185"/>
+        <location filename="../session_viewer.cpp" line="193"/>
         <source>%1 out of %2 (%3)</source>
         <translation>%1 z %2 (%3)</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="185"/>
+        <location filename="../session_viewer.cpp" line="193"/>
         <source>PASSED</source>
         <translation>UROBIL(A)</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="185"/>
+        <location filename="../session_viewer.cpp" line="193"/>
         <source>FAILED</source>
         <translation>NEUROBIL(A)</translation>
     </message>
@@ -2157,12 +2167,12 @@ ale doporučuje sa im dať hodinu času.</translation>
     <message>
         <location filename="../server.cpp" line="463"/>
         <source>The server is running on port &lt;b&gt;%1&lt;/b&gt;. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation>Server beží na porte &lt;b&gt;%1&lt;/b&gt;. Teraz môžete spustiť Testového klienta na každom klientskom PC. Nevypínajte Editor databáz počas testovania!</translation>
+        <translation type="obsolete">Server beží na porte &lt;b&gt;%1&lt;/b&gt;. Teraz môžete spustiť Testového klienta na každom klientskom PC. Nevypínajte Editor databáz počas testovania!</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="471"/>
         <source>iTest - Stop server</source>
-        <translation>iTest - Zastaviť server</translation>
+        <translation type="obsolete">iTest - Zastaviť server</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="471"/>
@@ -2310,27 +2320,27 @@ ale doporučuje sa im dať hodinu času.</translation>
         <translation>iTest záznam serveru</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="187"/>
+        <location filename="../session_viewer.cpp" line="195"/>
         <source>%1 out of %2</source>
         <translation>%1 z %2</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="214"/>
+        <location filename="../session_viewer.cpp" line="222"/>
         <source>Delete log</source>
         <translation>Odstrániť záznam</translation>
     </message>
     <message>
-        <location filename="../session_viewer.cpp" line="214"/>
+        <location filename="../session_viewer.cpp" line="222"/>
         <source>Are you sure you want to delete the log for session &quot;%1 - %2&quot;?</source>
         <translation>Naozaj chcete odstrániť záznam sedenia &quot;%1 - %2&quot;?</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="888"/>
+        <location filename="../main_window.cpp" line="889"/>
         <source>Change language - iTest</source>
         <translation>Zmeniť jazyk - iTest</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="892"/>
+        <location filename="../main_window.cpp" line="893"/>
         <source>Select your preferred language</source>
         <translation>Vyberte váš jazyk</translation>
     </message>
@@ -2345,17 +2355,17 @@ ale doporučuje sa im dať hodinu času.</translation>
         <translation>slovenčina</translation>
     </message>
     <message>
-        <location filename="../main_window.cpp" line="916"/>
+        <location filename="../main_window.cpp" line="917"/>
         <source>You need to restart iTest for the changes to apply.</source>
         <translation>Aby sa zmeny prejavili, je potrebné reštartovať iTest.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3056"/>
+        <location filename="../ui_main_window_v2.cpp" line="3054"/>
         <source>Change language</source>
         <translation>Zmeniť jazyk</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3059"/>
+        <location filename="../ui_main_window_v2.cpp" line="3057"/>
         <source>Change the language of the iTest interface</source>
         <translation>Zmeniť jazyk prostredia iTest</translation>
     </message>
@@ -2369,37 +2379,37 @@ Napriek tomu však táto verzia vie otvoriť vybraný databázový súbor,
 ale pravdepodobne prichádzate o množstvo nových možností.</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3434"/>
+        <location filename="../ui_main_window_v2.cpp" line="3438"/>
         <source>&amp;View</source>
         <translation>&amp;Zobraziť</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="522"/>
         <source>%1[*] - iTest - Database Editor</source>
-        <translation>%1[*] - iTest - Editor databáz</translation>
+        <translation type="obsolete">%1[*] - iTest - Editor databáz</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3031"/>
+        <location filename="../ui_main_window_v2.cpp" line="3029"/>
         <source>&amp;Archive session</source>
         <translation>&amp;Archivovať sedenie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3032"/>
+        <location filename="../ui_main_window_v2.cpp" line="3030"/>
         <source>Archive session</source>
         <translation>Archivovať sedenie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3035"/>
+        <location filename="../ui_main_window_v2.cpp" line="3033"/>
         <source>Archive the selected session</source>
         <translation>Archivovať vybrané sedenie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3060"/>
+        <location filename="../ui_main_window_v2.cpp" line="3058"/>
         <source>&amp;Restore session</source>
         <translation>&amp;Obnoviť sedenie</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3063"/>
+        <location filename="../ui_main_window_v2.cpp" line="3061"/>
         <source>Restore the selected session from the archive</source>
         <translation>Obnoviť vybrané sedenie z archívu</translation>
     </message>
@@ -2421,12 +2431,12 @@ Archív na tomto počítači bude aktualizovaný.</translation>
         <translation>&amp;Zmeniť</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3426"/>
+        <location filename="../ui_main_window_v2.cpp" line="3430"/>
         <source>List of sessions</source>
         <translation>Zoznam sedení</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3431"/>
+        <location filename="../ui_main_window_v2.cpp" line="3435"/>
         <source>&lt;b&gt;Archived sessions:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Archivované sedenia:&lt;/b&gt;</translation>
     </message>
@@ -2480,42 +2490,42 @@ Všetky budú aktualizované.</translation>
         <translation>Vlajka %1: </translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3072"/>
+        <location filename="../ui_main_window_v2.cpp" line="3070"/>
         <source>Save a copy</source>
         <translation>Uložiť kópiu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3076"/>
+        <location filename="../ui_main_window_v2.cpp" line="3074"/>
         <source>Save a backup</source>
         <translation>Uložiť zálohu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3064"/>
+        <location filename="../ui_main_window_v2.cpp" line="3062"/>
         <source>Copy to archive</source>
         <translation>Kopírovať do archívu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3067"/>
+        <location filename="../ui_main_window_v2.cpp" line="3065"/>
         <source>Copy the selected session to the archive</source>
         <translation>Kopírovať vybrané sedenie do archívu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3068"/>
+        <location filename="../ui_main_window_v2.cpp" line="3066"/>
         <source>Copy from archive</source>
         <translation>Kopírovať z archívu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3071"/>
+        <location filename="../ui_main_window_v2.cpp" line="3069"/>
         <source>Copy the selected session from the archive</source>
         <translation>Kopírovať vybrané sedenie z archívu</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3075"/>
+        <location filename="../ui_main_window_v2.cpp" line="3073"/>
         <source>Save a copy of the database</source>
         <translation>Uložiť kópiu databázy</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3079"/>
+        <location filename="../ui_main_window_v2.cpp" line="3077"/>
         <source>Save a backup copy of the database with all the archived sessions</source>
         <translation>Uložiť záložnú kópiu databázy so všetkými archivovanými sedeniami</translation>
     </message>
@@ -2530,7 +2540,7 @@ Všetky budú aktualizované.</translation>
         <translation>turečtina</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="543"/>
+        <location filename="../database.cpp" line="537"/>
         <source>Error opening database.</source>
         <translation>Pri otváraní databázy sa vyskytla chyba.</translation>
     </message>
@@ -2540,22 +2550,22 @@ Všetky budú aktualizované.</translation>
         <translation>http://itest.sourceforge.net/documentation/%1/sk/</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3417"/>
+        <location filename="../ui_main_window_v2.cpp" line="3421"/>
         <source>Flag name</source>
         <translation>Meno vlajky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3421"/>
+        <location filename="../ui_main_window_v2.cpp" line="3425"/>
         <source>Pass mark</source>
         <translation>Dostatočná</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3379"/>
+        <location filename="../ui_main_window_v2.cpp" line="3383"/>
         <source>Details</source>
         <translation>Detaily</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3423"/>
+        <location filename="../ui_main_window_v2.cpp" line="3427"/>
         <source>Pass mark details</source>
         <translation>Detaily o dostatočnej</translation>
     </message>
@@ -2565,57 +2575,57 @@ Všetky budú aktualizované.</translation>
         <translation>Celkom</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3137"/>
+        <location filename="../ui_main_window_v2.cpp" line="3135"/>
         <source>Search</source>
         <translation>Hľadať</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3082"/>
+        <location filename="../ui_main_window_v2.cpp" line="3080"/>
         <source>Show hidden questions</source>
         <translation>Zobraziť skryté otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3083"/>
+        <location filename="../ui_main_window_v2.cpp" line="3081"/>
         <source>&amp;Hide</source>
         <translation>&amp;Skryť</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3086"/>
+        <location filename="../ui_main_window_v2.cpp" line="3084"/>
         <source>Hide the selected question</source>
         <translation>Skryť vybranú otázku</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3087"/>
+        <location filename="../ui_main_window_v2.cpp" line="3085"/>
         <source>Ctrl+Alt+H</source>
         <translation>Ctrl+Alt+H</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3134"/>
+        <location filename="../ui_main_window_v2.cpp" line="3132"/>
         <source>Group:</source>
         <translation>Skupina:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3135"/>
+        <location filename="../ui_main_window_v2.cpp" line="3133"/>
         <source>Group of the selected question</source>
         <translation>Skupina vybranej otázky</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3136"/>
+        <location filename="../ui_main_window_v2.cpp" line="3134"/>
         <source>Search the database for other questions in this group</source>
         <translation>Vyhľadať v databáze iné otázky v tejto skupine</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3330"/>
+        <location filename="../ui_main_window_v2.cpp" line="3334"/>
         <source>Groups:</source>
         <translation>Skupiny:</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3331"/>
+        <location filename="../ui_main_window_v2.cpp" line="3335"/>
         <source>Allow one question per group to appear in one test only, i.e. choose one of the group randomly</source>
         <translation>Povoliť v jednom teste iba jednu otázku na skupinu, tzn. náhodne vybrať jednu zo skupiny</translation>
     </message>
     <message>
-        <location filename="../ui_main_window_v2.cpp" line="3332"/>
+        <location filename="../ui_main_window_v2.cpp" line="3336"/>
         <source>Allow one question per group only</source>
         <translation>Povoliť iba jednu otázku na skupinu</translation>
     </message>
@@ -2637,12 +2647,92 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3088"/>
         <source>Run Test Writer</source>
-        <translation>Spustiť Testového klienta</translation>
+        <translation type="obsolete">Spustiť Testového klienta</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3091"/>
         <source>Run Test Writer on this computer</source>
-        <translation>Spustiť na tomto počítači Testového klienta</translation>
+        <translation type="obsolete">Spustiť na tomto počítači Testového klienta</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="2850"/>
+        <source>iTestServer</source>
+        <translation>iTestServer</translation>
+    </message>
+    <message>
+        <location filename="../database.cpp" line="522"/>
+        <source>%1[*] - iTestServer</source>
+        <translation>%1[*] - iTestServer</translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="20"/>
+        <source>Portuguese</source>
+        <translation>portugalčina</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3338"/>
+        <source>The server is running on port *****. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</source>
+        <translation>Server beží na porte *****. Teraz môžete spustiť iTestClient na každom klientskom PC. Nevypínajte iTestServer počas testovania!</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3086"/>
+        <source>Run iTestClient</source>
+        <translation>Spustiť iTestClient</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3089"/>
+        <source>Run iTestClient on this computer</source>
+        <translation>Spustiť na tomto počítači iTestClient</translation>
+    </message>
+    <message>
+        <location filename="../server.cpp" line="463"/>
+        <source>The server is running on port &lt;b&gt;%1&lt;/b&gt;. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</source>
+        <translation>Server beží na porte &lt;b&gt;%1&lt;/b&gt;. Teraz môžete spustiť iTestClient na každom klientskom PC. Nevypínajte iTestServer počas testovania!</translation>
+    </message>
+    <message>
+        <location filename="../server.cpp" line="471"/>
+        <source>iTestServer - Stop server</source>
+        <translation>iTestServer - Zastaviť server</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3174"/>
+        <source>22</source>
+        <translation>22</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3175"/>
+        <source>24</source>
+        <translation>24</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3176"/>
+        <source>26</source>
+        <translation>26</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3177"/>
+        <source>28</source>
+        <translation>28</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3178"/>
+        <source>30</source>
+        <translation>30</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3179"/>
+        <source>36</source>
+        <translation>36</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3180"/>
+        <source>48</source>
+        <translation>48</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="3181"/>
+        <source>96</source>
+        <translation>96</translation>
     </message>
 </context>
 <context>

@@ -24,47 +24,51 @@ void MainWindow::loadTest(QString input)
      QString db_date; QString db_comments; int db_qnum; bool db_fxxe[20];
      QString db_f[20]; QString q_file_name; QString db_ulsd; QString test_date;
      QuestionItem * item; QStringList answers; int test_qnum; QString test_time;
+     QString db_use_groups = "false";
      // ------------------------------------------------------------------------
-     db_buffer = in.readLine();
-     if (db_buffer != "[ITEST_VERSION]")
+     if (in.readLine() != "[ITEST_VERSION]")
      { errorInvalidData(); return; }
      version = in.readLine().toFloat();
-     db_buffer = in.readLine();
-     if (db_buffer != "[ITEST_DB_VERSION]")
+     if (in.readLine() != "[ITEST_DB_VERSION]")
      { errorInvalidData(); return; }
      db_version = in.readLine().toFloat();
-     if ((version > f_ver) && (db_version == f_db_ver))
+     if ((version > f_ver) && (db_version == f_itos_ver))
      { QMessageBox::information(this, tr("iTest version notice"), tr("There is a newer version of iTest available.\nNonetheless, this version is able to open the database file you selected,\nbut you are most probably missing a whole bunch of cool new features.")); }
-     if ((version > f_ver) && (db_version > f_db_ver))
+     if ((version > f_ver) && (db_version > f_itos_ver))
      { QMessageBox::critical(this, tr("iTest version notice"), tr("You need a newer version of iTest to open this database file.")); return; }
-     if (version == 1.0) { errorInvalidData(); return; }
+     if (db_version == 1.0) { errorInvalidData(); return; }
      
-     db_buffer = in.readLine(); if (db_buffer != "[DB_NAME]") { errorInvalidData(); return; }
+     if (in.readLine() != "[DB_NAME]") { errorInvalidData(); return; }
      // Database name
      db_name = in.readLine();
-     db_buffer = in.readLine(); if (db_buffer != "[DB_DATE]") { errorInvalidData(); return; }
+     if (in.readLine() != "[DB_DATE]") { errorInvalidData(); return; }
      // Database date
      db_date = in.readLine();
-     db_buffer = in.readLine(); if (db_buffer != "[DB_DATE_ULSD]") { errorInvalidData(); return; }
+     if (in.readLine() != "[DB_DATE_ULSD]") { errorInvalidData(); return; }
      // Use last save date
      db_ulsd = in.readLine();
-     db_buffer = in.readLine(); if (db_buffer != "[TEST_DATE]") { errorInvalidData(); return; }
+     if (db_version >= 1.2) {
+    	 if (in.readLine() != "[TEST_GRPS]") { errorInvalidData(); return; }
+    	 // Use groups
+    	 db_use_groups = in.readLine();
+     }
+     if (in.readLine() != "[TEST_DATE]") { errorInvalidData(); return; }
      // Test date
      test_date = in.readLine();
-     db_buffer = in.readLine(); if (db_buffer != "[TEST_TIME]") { errorInvalidData(); return; }
+     if (in.readLine() != "[TEST_TIME]") { errorInvalidData(); return; }
      // Test time
      test_time = in.readLine();
-     db_buffer = in.readLine(); if (db_buffer != "[TEST_QNUM]") { errorInvalidData(); return; }
+     if (in.readLine() != "[TEST_QNUM]") { errorInvalidData(); return; }
      // Test qnum
      test_qnum = in.readLine().toInt();
-     db_buffer = in.readLine(); if (db_buffer != "[DB_COMMENTS]") { errorInvalidData(); return; }
+     if (in.readLine() != "[DB_COMMENTS]") { errorInvalidData(); return; }
      // Database comments
      db_comments = in.readLine();
-     db_buffer = in.readLine(); if (db_buffer != "[DB_QNUM]") { errorInvalidData(); return; }
+     if (in.readLine() != "[DB_QNUM]") { errorInvalidData(); return; }
      // Question number
      db_qnum = in.readLine().toInt();
      progress.setMaximum(db_qnum);
-     db_buffer = in.readLine(); if (db_buffer != "[DB_FLAGS]") { errorInvalidData(); return; }
+     if (in.readLine() != "[DB_FLAGS]") { errorInvalidData(); return; }
      // fxxe
      db_buffer = in.readLine();
      for (int i = 0; i < 20; ++i) {
@@ -73,52 +77,68 @@ void MainWindow::loadTest(QString input)
      }
      // flags
      for (int i = 0; i < 20; ++i) {
-         db_buffer = in.readLine(); if (db_buffer != QString("[DB_F%1]").arg(i)) { errorInvalidData(); return; }
+         if (in.readLine() != QString("[DB_F%1]").arg(i)) { errorInvalidData(); return; }
          db_f[i] = in.readLine();
      }
      // End of flags
-     db_buffer = in.readLine(); if (db_buffer != "[DB_FLAGS_END]") { errorInvalidData(); return; }
+     if (in.readLine() != "[DB_FLAGS_END]") { errorInvalidData(); return; }
+     // Pass mark
+     if (db_version >= 1.2) {
+    	 if (in.readLine() != "[PASSMARK]") { errorInvalidData(); return; }
+    	 current_test_passmark.setPassMark(in.readLine().toInt());
+    	 int pm_count = in.readLine().toInt(); int pm_c;
+    	 for (int i = 0; i < pm_count; ++i) {
+    		 pm_c = in.readLine().toInt();
+    		 current_test_passmark.addCondition(pm_c, in.readLine().toInt());
+    	 }
+     }
      // Questions
      for (int i = 0; i < db_qnum; ++i) {
          answers.clear();
          // Question name
-         db_buffer = in.readLine(); if (db_buffer != "[Q_NAME]") { errorInvalidData(); return; }
+         if (in.readLine() != "[Q_NAME]") { errorInvalidData(); return; }
          item = new QuestionItem (in.readLine());
          // Flag
-         db_buffer = in.readLine(); if (db_buffer != "[Q_FLAG]") { errorInvalidData(); return; }
+         if (in.readLine() != "[Q_FLAG]") { errorInvalidData(); return; }
          item->setFlag(in.readLine().toInt());
+         if (db_version >= 1.2) {
+         	// Group
+         	if (in.readLine() != "[Q_GRP]") { errorInvalidData(); return; }
+         	item->setGroup(in.readLine());
+         }
          // Difficulty
-         db_buffer = in.readLine(); if (db_buffer != "[Q_DIFFICULTY]") { errorInvalidData(); return; }
+         if (db_version >= 1.2) { if (in.readLine() != "[Q_DIF]") { errorInvalidData(); return; } }
+         else { if (in.readLine() != "[Q_DIFFICULTY]") { errorInvalidData(); return; } }
          item->setDifficulty(in.readLine().toInt());
          // Question text
-         db_buffer = in.readLine(); if (db_buffer != "[Q_TEXT]") { errorInvalidData(); return; }
+         if (in.readLine() != "[Q_TEXT]") { errorInvalidData(); return; }
          item->setText(in.readLine());
          // Answer A
-         db_buffer = in.readLine(); if (db_buffer != "[Q_ANSA]") { errorInvalidData(); return; }
+         if (in.readLine() != "[Q_ANSA]") { errorInvalidData(); return; }
          answers << in.readLine();
-         //db_buffer = in.readLine(); if (db_buffer != "[Q_ANSA_C]") { errorInvalidData(); return; }
+         //if (in.readLine() != "[Q_ANSA_C]") { errorInvalidData(); return; }
          //answers << in.readLine();
          answers << "false";
          // Answer B
-         db_buffer = in.readLine(); if (db_buffer != "[Q_ANSB]") { errorInvalidData(); return; }
+         if (in.readLine() != "[Q_ANSB]") { errorInvalidData(); return; }
          answers << in.readLine();
-         //db_buffer = in.readLine(); if (db_buffer != "[Q_ANSB_C]") { errorInvalidData(); return; }
+         //if (in.readLine() != "[Q_ANSB_C]") { errorInvalidData(); return; }
          //answers << in.readLine();
          answers << "false";
          // Answer C
-         db_buffer = in.readLine(); if (db_buffer != "[Q_ANSC]") { errorInvalidData(); return; }
+         if (in.readLine() != "[Q_ANSC]") { errorInvalidData(); return; }
          answers << in.readLine();
-         //db_buffer = in.readLine(); if (db_buffer != "[Q_ANSC_C]") { errorInvalidData(); return; }
+         //if (in.readLine() != "[Q_ANSC_C]") { errorInvalidData(); return; }
          //answers << in.readLine();
          answers << "false";
          // Answer D
-         db_buffer = in.readLine(); if (db_buffer != "[Q_ANSD]") { errorInvalidData(); return; }
+         if (in.readLine() != "[Q_ANSD]") { errorInvalidData(); return; }
          answers << in.readLine();
-         //db_buffer = in.readLine(); if (db_buffer != "[Q_ANSD_C]") { errorInvalidData(); return; }
+         //if (in.readLine() != "[Q_ANSD_C]") { errorInvalidData(); return; }
          //answers << in.readLine();
          answers << "false";
          // End
-         db_buffer = in.readLine(); if (db_buffer != "[Q_END]") { errorInvalidData(); return; }
+         if (in.readLine() != "[Q_END]") { errorInvalidData(); return; }
          // Add map entry
          item->setAnswers(answers);
          current_db_questions << item;
@@ -138,15 +158,23 @@ void MainWindow::loadTest(QString input)
      current_test_time_remaining = 0;
      current_test_time_remaining += (QTime::fromString(test_time, "hh:mm").hour() * 60);
      current_test_time_remaining += QTime::fromString(test_time, "hh:mm").minute();
+     current_test_use_groups = (db_use_groups == "true");
      // Display info
      ITW_test_name->setText(current_db_name);
      ITW_test_date->setText(current_db_date);
      ITW_test_timestamp->setText(current_test_date);
      ITW_test_time->setText(test_time);
      ITW_test_qnum->setText(QString("%1 of total %2").arg(current_test_qnum).arg(db_qnum));
+     QString pm_str = tr("Total");
+     pm_str.append(QString(": %1;").arg(current_test_passmark.passMark()));
+     for (int i = 0; i < current_test_passmark.count(); ++i) {
+    	 if (current_test_passmark.condition(i) < 0 && current_test_passmark.condition(i) >= 20) { continue; }
+      	 pm_str.append(QString(" %1: %2;").arg(current_db_f[current_test_passmark.condition(i)]).arg(current_test_passmark.value(i)));
+     }
+     ITW_test_passmark->setText(pm_str);
      ITW_test_comments->setHtml(current_db_comments);
-     infoTableWidget->setColumnWidth(0, infoTableWidget->geometry().width() - infoTableWidget->verticalHeader()->length());
-     infoTableWidget->setRowHeight(7, 200);
+     infoTableWidget->setColumnWidth(0, infoTableWidget->geometry().width() - infoTableWidget->verticalHeader()->width() - 25);
+     infoTableWidget->setRowHeight(8, 200);
      infoTableWidget->setEnabled(true);
 	 
      progress.setValue(db_qnum);
@@ -205,31 +233,128 @@ void MainWindow::randomlySelectQuestions()
     QProgressDialog progress(this);
     progress.setLabelText(tr("Generating test..."));
     progress.setMinimum(0);
-    progress.setMaximum(current_test_qnum);
     progress.setMinimumDuration(0);
     progress.setWindowModality(Qt::WindowModal);
     
-    int rand; QList<int> randlist; QStringList flags;
-    for (int i = 0; i < current_test_qnum; ++i) {
-        do {
-            rand = (qrand() + client_number) % current_db_questions.size();
-        } while (randlist.contains(rand));
-        randlist << rand;
-        QListWidgetItem * q_item = new QListWidgetItem;
-        if (hideQuestionNamesCheckBox->isChecked()) {
-            q_item->setText(QString("%1").arg(LQListWidget->count() + 1));
-        } else {
-            q_item->setText(current_db_questions.at(rand)->name());
-        }
-        q_item->setData(Qt::UserRole, current_db_questions.at(rand)->name());
-        LQListWidget->addItem(q_item);
-        current_test_questions.insert(q_item, current_db_questions.at(rand));
-        if ((current_db_questions.at(rand)->flag() >= 0) && (current_db_questions.at(rand)->flag() < 20)) {
-        if (!flags.contains(current_db_f[current_db_questions.at(rand)->flag()]))
-        { flags << current_db_f[current_db_questions.at(rand)->flag()]; } }
-        progress.setValue(i); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        qApp->processEvents();
+    QStringList flags; QList<QString> groups;
+    if (current_test_passmark.count() <= 0) {
+    	progress.setMaximum(current_test_qnum);
+    	int rand; QList<int> randlist;
+    	for (int i = 0; i < current_test_qnum; ++i) {
+    		random_0:
+    		do {
+    			rand = (qrand() + client_number) % current_db_questions.size();
+    		} while (randlist.contains(rand));
+    		if (current_test_use_groups) {
+    		    if (!current_db_questions.at(rand)->group().isEmpty()) {
+    		    	if (groups.contains(current_db_questions.at(rand)->group())) { goto random_0; }
+    		    	else { groups << current_db_questions.at(rand)->group(); }
+    		    }
+    		}
+    		randlist << rand;
+    		QListWidgetItem * q_item = new QListWidgetItem;
+    		if (hideQuestionNamesCheckBox->isChecked()) {
+    			q_item->setText(QString("%1").arg(LQListWidget->count() + 1));
+    		} else {
+    			q_item->setText(current_db_questions.at(rand)->name());
+    		}
+    		q_item->setData(Qt::UserRole, current_db_questions.at(rand)->name());
+    		LQListWidget->addItem(q_item);
+    		current_test_questions.insert(q_item, current_db_questions.at(rand));
+    		if ((current_db_questions.at(rand)->flag() >= 0) && (current_db_questions.at(rand)->flag() < 20)) {
+    			if (!flags.contains(current_db_f[current_db_questions.at(rand)->flag()]))
+    			{ flags << current_db_f[current_db_questions.at(rand)->flag()]; } }
+    		progress.setValue(i + 1); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    		qApp->processEvents();
+    	}
+    	ITW_test_fnum->setText(QString("%1").arg(flags.count()));
+    	ITW_test_flags->setText(flags.join(", "));
+    } else {
+    	progress.setMaximum(current_db_questions.size() + current_test_passmark.count());
+    	QList<QuestionItem *> qflist[current_test_passmark.count()];
+    	QList<QuestionItem *> unusedqlist; int x;
+    	for (int i = 0; i < current_db_questions.size(); ++i) {
+    		if (current_test_passmark.conditionIndex(current_db_questions.at(i)->flag()) != -1) {
+    			qflist[current_test_passmark.conditionIndex(current_db_questions.at(i)->flag())] << current_db_questions.at(i);
+    		} else {
+    			unusedqlist << current_db_questions.at(i);
+    		}
+    		progress.setValue(i + 1); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    		qApp->processEvents();
+    	}
+    	for (int c = 0; c < current_test_passmark.count(); ++c) {
+    		int rand; QList<int> randlist;
+    		x = current_test_passmark.conditionIndex(current_test_passmark.condition(c));
+    		for (int i = 0; i < current_test_passmark.value(c); ++i) {
+    			random_1:
+    			do {
+    			    rand = (qrand() + client_number) % qflist[x].size();
+    			} while (randlist.contains(rand));
+    			if (current_test_use_groups) {
+    			    if (!qflist[x].at(rand)->group().isEmpty()) {
+    			    	if (groups.contains(qflist[x].at(rand)->group())) { goto random_1; }
+    			    	else { groups << qflist[x].at(rand)->group(); }
+    			    }
+    			}
+    			randlist << rand;
+    			QListWidgetItem * q_item = new QListWidgetItem;
+    			if (hideQuestionNamesCheckBox->isChecked()) {
+    				q_item->setText(QString("%1").arg(LQListWidget->count() + 1));
+    			} else {
+    				q_item->setText(qflist[x].at(rand)->name());
+    			}
+    			q_item->setData(Qt::UserRole, qflist[x].at(rand)->name());
+    			LQListWidget->addItem(q_item);
+    			current_test_questions.insert(q_item, qflist[x].at(rand));
+    			if ((qflist[x].at(rand)->flag() >= 0) && (qflist[x].at(rand)->flag() < 20)) {
+    				if (!flags.contains(current_db_f[qflist[x].at(rand)->flag()]))
+    				{ flags << current_db_f[qflist[x].at(rand)->flag()]; } }
+    			qApp->processEvents();
+    		}
+    		for (int i = 0; i < qflist[x].size(); ++i) {
+    			if (!randlist.contains(i)) { unusedqlist << qflist[x].at(i); }
+    		}
+    		progress.setValue(c + current_db_questions.size() + 1); // PROGRESS >>>>
+    		qApp->processEvents();
+    	}
+    	int rand; QList<int> randlist;
+    	int y = current_test_qnum - current_test_questions.size();
+    	int z = current_db_questions.size() + current_test_passmark.count();
+    	for (int i = 0; i < y; ++i) {
+    		random_2:
+    	    do {
+    	    	rand = (qrand() + client_number) % unusedqlist.size();
+    	    } while (randlist.contains(rand));
+    	    if (current_test_use_groups) {
+    	    	if (!unusedqlist.at(rand)->group().isEmpty()) {
+    	    		if (groups.contains(unusedqlist.at(rand)->group())) { goto random_2; }
+    	        	else { groups << unusedqlist.at(rand)->group(); }
+    	        }
+    	    }
+    	    randlist << rand;
+    	    QListWidgetItem * q_item = new QListWidgetItem;
+    	    if (hideQuestionNamesCheckBox->isChecked()) {
+    	    	q_item->setText(QString("%1").arg(LQListWidget->count() + 1));
+    	    } else {
+    	    	q_item->setText(unusedqlist.at(rand)->name());
+    	    }
+    	    q_item->setData(Qt::UserRole, unusedqlist.at(rand)->name());
+    	    LQListWidget->addItem(q_item);
+    	    current_test_questions.insert(q_item, unusedqlist.at(rand));
+    	    if ((unusedqlist.at(rand)->flag() >= 0) && (unusedqlist.at(rand)->flag() < 20)) {
+    	    	if (!flags.contains(current_db_f[unusedqlist.at(rand)->flag()]))
+    	    	{ flags << current_db_f[unusedqlist.at(rand)->flag()]; } }
+    	    progress.setValue(i + z + 1); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    	    qApp->processEvents();
+    	}
     }
+    
     ITW_test_fnum->setText(QString("%1").arg(flags.count()));
     ITW_test_flags->setText(flags.join(", "));
+    
+    if (qApp->arguments().count() > 2) {
+        if (qApp->arguments().at(1) == "-port") {
+        		getReady();
+        }
+    }
 }

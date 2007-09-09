@@ -7,28 +7,13 @@
 #include <QButtonGroup>
 #include <QTcpSocket>
 #include <QProgressDialog>
-#include <QTextStream>
 #include <QHeaderView>
 #include <QTimer>
 #include <QTime>
 #include <QSettings>
 #include <QTranslator>
 
-#include "question_item.h"
-
-class QuestionAnswer
-{
-public:
-    QuestionAnswer();
-    QuestionAnswer(QuestionItem::Answer, QuestionItem::Answer);
-    void setAnswered(QuestionItem::Answer); QuestionItem::Answer answered();
-    void setCorrectAnswer(QuestionItem::Answer); QuestionItem::Answer correctAnswer();
-    bool isAnsweredCorrectly();
-
-private:
-    QuestionItem::Answer qa_answered;
-    QuestionItem::Answer qa_correct_answer;
-};
+#include "pass_mark.h"
 
 class MainWindow : public QMainWindow, private Ui::MainWindow
 {
@@ -63,6 +48,7 @@ private slots:
     void finish(); void sendResults(); void saveResults();
     void loadResults(QMap<QString, QuestionAnswer> *, QTableWidget *);
     void readResults(QString);
+    void newTest();
     // QUESTION-RELATED
     void setCurrentQuestion();
     void nextQuestion(); void lastQuestion();
@@ -83,9 +69,13 @@ private:
     bool current_test_results_sent;
     QString current_test_date;
     QString current_test_time_finished;
+    PassMark current_test_passmark;
+    bool current_test_use_groups;
+    bool current_connection_local;
     // FLAGS
     bool current_db_fe[20]; QString current_db_f[20];
     // UI-RELATED
+    QTimer timer;
     void closeEvent(QCloseEvent*);
     QButtonGroup * rbtngrpInputType;
     QProgressDialog * progress_dialog;
@@ -106,7 +96,8 @@ private:
     QTableWidgetItem * ITW_test_qnum;
     QTableWidgetItem * ITW_test_fnum;
     QTableWidgetItem * ITW_test_flags;
+    QTableWidgetItem * ITW_test_passmark;
     QTextBrowser * ITW_test_comments;
     // ITEST & DB VERSION
-    QString ver; float f_ver; QString db_ver; float f_db_ver;
+    QString ver; float f_ver; QString itos_ver; float f_itos_ver;
 };

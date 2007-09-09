@@ -25,7 +25,7 @@
     <message>
         <location filename="../about_widget.cpp" line="13"/>
         <source>iTest is a Qt application consisting of a Database Editor and a Test Writer designed for easy computerised examination.</source>
-        <translation>iTest je Qt program pozostávajúci z Editoru databáz a Testového klienta dizajnovaných pre jednoduché skúšanie pomocou počítača.</translation>
+        <translation type="obsolete">iTest je Qt program pozostávajúci z Editoru databáz a Testového klienta dizajnovaných pre jednoduché skúšanie pomocou počítača.</translation>
     </message>
     <message>
         <location filename="../about_widget.cpp" line="16"/>
@@ -56,6 +56,11 @@
         <location filename="../about_widget.cpp" line="32"/>
         <source>Qt is a Trolltech product. See &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt; for more information.</source>
         <translation>Qt je produkt spoločnosti Trolltech. Pozrite si &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt; pre viac informácií.</translation>
+    </message>
+    <message>
+        <location filename="../about_widget.cpp" line="13"/>
+        <source>iTest is a Qt application consisting of a Server and a Client designed for easy computerised examination.</source>
+        <translation>iTest je Qt program pozostávajúci zo serverového a klientského programu dizajnovaných pre jednoduché skúšanie pomocou počítača.</translation>
     </message>
 </context>
 <context>
@@ -196,7 +201,7 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
     <message>
         <location filename="../ui_main_window.cpp" line="725"/>
         <source>iTest - Test Writer</source>
-        <translation>iTest - Testový klient</translation>
+        <translation type="obsolete">iTest - Testový klient</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="265"/>
@@ -286,7 +291,7 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
     <message>
         <location filename="../main.cpp" line="423"/>
         <source>iTest - Load test data</source>
-        <translation>iTest - Načítať testové dáta</translation>
+        <translation type="obsolete">iTest - Načítať testové dáta</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="423"/>
@@ -502,6 +507,16 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
         <location filename="../ui_main_window.cpp" line="802"/>
         <source>New test</source>
         <translation>Nový test</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window.cpp" line="725"/>
+        <source>iTestClient</source>
+        <translation>iTestClient</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="423"/>
+        <source>iTestClient - Load test data</source>
+        <translation>iTestClient - Načítať testové dáta</translation>
     </message>
 </context>
 </TS>

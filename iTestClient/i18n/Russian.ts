@@ -25,7 +25,7 @@
     <message>
         <location filename="../about_widget.cpp" line="13"/>
         <source>iTest is a Qt application consisting of a Database Editor and a Test Writer designed for easy computerised examination.</source>
-        <translation>iTest является приложением, использующим библиотеку Qt, состоящим из редактора баз данных и программы для написания тестов, и разработанным для упрощения проведения компьютеризованных экзаменов.</translation>
+        <translation type="obsolete">iTest является приложением, использующим библиотеку Qt, состоящим из редактора баз данных и программы для написания тестов, и разработанным для упрощения проведения компьютеризованных экзаменов.</translation>
     </message>
     <message>
         <location filename="../about_widget.cpp" line="16"/>
@@ -56,6 +56,11 @@
         <location filename="../about_widget.cpp" line="32"/>
         <source>Qt is a Trolltech product. See &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt; for more information.</source>
         <translation>Qt является продуктом компании Trolltech. Для дополнительной информации обращайтесь на &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt;.</translation>
+    </message>
+    <message>
+        <location filename="../about_widget.cpp" line="13"/>
+        <source>iTest is a Qt application consisting of a Server and a Client designed for easy computerised examination.</source>
+        <translation>iTest является приложением, использующим библиотеку Qt, состоящим из редактора баз данных и программы для написания тестов, и разработанным для упрощения проведения компьютеризованных экзаменов.</translation>
     </message>
 </context>
 <context>
@@ -100,7 +105,7 @@
     <message>
         <location filename="../ui_main_window.cpp" line="725"/>
         <source>iTest - Test Writer</source>
-        <translation>iTest - Написание теста</translation>
+        <translation type="obsolete">iTest - Написание теста</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="265"/>
@@ -226,7 +231,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../main.cpp" line="423"/>
         <source>iTest - Load test data</source>
-        <translation>iTest - Загрузить данные теста</translation>
+        <translation type="obsolete">iTest - Загрузить данные теста</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="423"/>
@@ -502,6 +507,16 @@ but you are most probably missing a whole bunch of cool new features.</source>
         <location filename="../ui_main_window.cpp" line="802"/>
         <source>New test</source>
         <translation>Новый тест</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window.cpp" line="725"/>
+        <source>iTestClient</source>
+        <translation>iTestClient</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="423"/>
+        <source>iTestClient - Load test data</source>
+        <translation>iTestClient - Загрузить данные теста</translation>
     </message>
 </context>
 </TS>

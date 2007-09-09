@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="tr_TR">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -26,7 +25,7 @@
     <message>
         <location filename="../about_widget.cpp" line="13"/>
         <source>iTest is a Qt application consisting of a Database Editor and a Test Writer designed for easy computerised examination.</source>
-        <translation>iTest bilgisayar destekli sınav yapabilmek amacıyla oluşturulan, Veritabanı Düzenleyici ve Test Hazırlayıcı uygulamalardan oluşan bir Qt uygulamasıdır.</translation>
+        <translation type="obsolete">iTest bilgisayar destekli sınav yapabilmek amacıyla oluşturulan, Veritabanı Düzenleyici ve Test Hazırlayıcı uygulamalardan oluşan bir Qt uygulamasıdır.</translation>
     </message>
     <message>
         <location filename="../about_widget.cpp" line="16"/>
@@ -57,6 +56,11 @@
         <location filename="../about_widget.cpp" line="32"/>
         <source>Qt is a Trolltech product. See &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt; for more information.</source>
         <translation>Qt br Trolltech ürünüdür. Lütfen daha fazla bilgi için &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt; adresine bakın.</translation>
+    </message>
+    <message>
+        <location filename="../about_widget.cpp" line="13"/>
+        <source>iTest is a Qt application consisting of a Server and a Client designed for easy computerised examination.</source>
+        <translation>iTest bilgisayar destekli sınav yapabilmek amacıyla oluşturulan, Veritabanı Düzenleyici ve Test Hazırlayıcı uygulamalardan oluşan bir Qt uygulamasıdır.</translation>
     </message>
 </context>
 <context>
@@ -101,7 +105,7 @@
     <message>
         <location filename="../ui_main_window.cpp" line="725"/>
         <source>iTest - Test Writer</source>
-        <translation>iTest - Test Hazırlayıcı</translation>
+        <translation type="obsolete">iTest - Test Hazırlayıcı</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="265"/>
@@ -228,7 +232,7 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
     <message>
         <location filename="../main.cpp" line="423"/>
         <source>iTest - Load test data</source>
-        <translation>iTest - Test verilerini yükle</translation>
+        <translation type="obsolete">iTest - Test verilerini yükle</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="423"/>
@@ -504,6 +508,16 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
         <location filename="../ui_main_window.cpp" line="802"/>
         <source>New test</source>
         <translation>Yeni test</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window.cpp" line="725"/>
+        <source>iTestClient</source>
+        <translation>iTestClient</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="423"/>
+        <source>iTestClient - Load test data</source>
+        <translation>iTestClient - Test verilerini yükle</translation>
     </message>
 </context>
 </TS>

@@ -1,8 +1,8 @@
 /******************************************************************************
  *                                    iTest                                   *
  * -------------------------------------------------------------------------- *
- * Version:      1.1.1                                                        *
- * Qt version:   4.3.0                                                        *
+ * Version:      1.2.0                                                        *
+ * Qt version:   4.3.1                                                        *
  * -------------------------------------------------------------------------- *
  * iTest is a Qt application consisting of a Database Editor and a Test       *
  * Writer designed for easy computerised examination.                         *
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	if (lang == "C") { lang = "English"; settings.setValue("lang", lang); }
 	if (lang != "English") {
 		QTranslator * translator = new QTranslator;
-		translator->load(QString(":/i18n/%1.qm").arg(lang));
+		translator->load(QString(":/i18n/%1.qm").arg(lang.replace(" ", "_")));
 		app.installTranslator(translator);
 	}
 
@@ -41,6 +41,33 @@ int main(int argc, char *argv[])
 }
 
 // ---------------------------- version changelog: -----------------------------
+/* version 1.2.0 - a major update
+                 - renamed to iTestServer
+                 - added Portuguese translation
+                 - added the ability to set a pass mark for each flag separately
+                   - this required some changes in the saved sessions view and
+                     in printing
+                 - added the ability to group similar questions in order to be
+                   able to tell the client to choose one question of the group
+                   at most (useful when knowing the answer for one question
+                   would suffice to guess the answers for other questions)
+                 - server setup (advanced): double clicking adds/removes items
+                 - improved the "overall statistics" dialogue; question names
+                   now coloured according to their flag
+                 - improved the "change language" dialogue
+                 - improved the comments editor (undo/redo)
+                 - changed flag 1 colour to light green
+                 - row height now calculated correctly in the "overall
+				   statistics" dialogue
+				 - fixed the "adjust difficulty" button - now the icon in the
+				   list of questions changes when difficulty changed
+				 - cleaned up the menus, improved their behaviour
+				 - code clean-up
+				 - new database format - older versions of iTest cannot open the
+				   new itdb 1.2 files, iTest 1.2 can still open older databases
+                 - upgraded from Qt 4.3.0 to Qt 4.3.1
+				 - and more...
+*/
 /* version 1.1.1 - a bug-fix release with some new features
                  - added Turkish translation
                  - if available, translation to the system language loaded by

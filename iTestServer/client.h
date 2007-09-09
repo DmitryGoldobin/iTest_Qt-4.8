@@ -18,14 +18,16 @@ class QuestionAnswer
 {
 public:
     QuestionAnswer();
-    QuestionAnswer(QuestionItem::Answer, QuestionItem::Answer);
+    QuestionAnswer(int, QuestionItem::Answer, QuestionItem::Answer);
     void setAnswered(QuestionItem::Answer); QuestionItem::Answer answered();
     void setCorrectAnswer(QuestionItem::Answer); QuestionItem::Answer correctAnswer();
     bool isAnsweredCorrectly();
+    void setFlag(int); int flag();
 
 private:
     QuestionItem::Answer qa_answered;
     QuestionItem::Answer qa_correct_answer;
+    int qa_flag;
 };
 
 class Client : public QObject
@@ -51,6 +53,7 @@ public slots:
     void setReady(bool); bool isReady();
     void setResults(QMap<QString, QuestionAnswer> *);
     QMap<QString, QuestionAnswer> * results();
+    void setPassed(bool); bool passed();
     void loadResults(QString);
     void readClientFeedback();
     bool isIdentified();
@@ -69,6 +72,7 @@ private:
     int c_score;
     bool c_ready;
     QMap<QString, QuestionAnswer> * c_results;
+    bool c_passed;
     quint64 c_blocksize;
     bool c_identified;
     MainWindow * c_parent;

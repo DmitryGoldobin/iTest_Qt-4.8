@@ -21,6 +21,7 @@ public slots:
     void restore(QString);
     void removeFromArchive();
     Status status(); void setStatus(Status);
+    QString sessionArchiveData();
 
 private:
     MainWindow * as_parent;

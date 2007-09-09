@@ -118,9 +118,11 @@ uint Session::numQuestions() { return s_qnum; }
 
 uint Session::numCorrect() { return s_cqnum; }
 
-void Session::setPassMark(int passmark) { s_passmark = passmark; }
+void Session::setPassMark(PassMark passmark) { s_passmark = passmark; }
 
-int Session::passMark() { return s_passmark; }
+PassMark Session::passMark() { return s_passmark; }
+
+void Session::loadPassMark(QString str) { s_passmark.loadData(str); }
 
 QString Session::sessionData()
 {
@@ -131,7 +133,7 @@ QString Session::sessionData()
 	// S_DATETIME
 	out.append(dateTimeToString());
 	// S_PASSMARK
-	out.append(QString("\n%1").arg(s_passmark));
+	out.append(QString("\n%1").arg(s_passmark.data()));
 	// S_SNUM
 	out.append(QString("\n%1").arg(s_students.count()));
 	// S_NUMLOGENTRIES
@@ -147,7 +149,7 @@ QString Session::sessionData()
 
 bool Session::mostPassed()
 {
-	return (s_cqnum >= (s_passmark * s_students.count()));
+	return (s_cqnum >= (s_passmark.passMark() * s_students.count()));
 }
 
 bool Session::isArchived() { return s_archived; }

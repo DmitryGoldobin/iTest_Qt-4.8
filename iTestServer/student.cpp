@@ -7,6 +7,7 @@ Student::Student()
     s_score = 0;
     s_ready = false;
     s_results = new QMap<QString, QuestionAnswer>;
+    s_passed = true;
 }
 
 Student::Student(int number)
@@ -16,6 +17,7 @@ Student::Student(int number)
     s_score = 0;
     s_ready = false;
     s_results = new QMap<QString, QuestionAnswer>;
+    s_passed = true;
 }
 
 Student::Student(QString name)
@@ -25,6 +27,7 @@ Student::Student(QString name)
     s_score = 0;
     s_ready = false;
     s_results = new QMap<QString, QuestionAnswer>;
+    s_passed = true;
 }
 
 Student::Student(int number, QString name)
@@ -34,6 +37,7 @@ Student::Student(int number, QString name)
     s_score = 0;
     s_ready = false;
     s_results = new QMap<QString, QuestionAnswer>;
+    s_passed = true;
 }
 
 Student::Student(Client * client)
@@ -43,6 +47,7 @@ Student::Student(Client * client)
     s_score = client->score();
     s_ready = client->isReady();
     s_results = new QMap<QString, QuestionAnswer> (*(client->results()));
+    s_passed = client->passed();
 }
 
 Student::Student(Student * student)
@@ -52,6 +57,7 @@ Student::Student(Student * student)
     s_score = student->score();
     s_ready = student->isReady();
     s_results = new QMap<QString, QuestionAnswer> (*(student->results()));
+    s_passed = student->passed();
 }
 
 Student::~Student()
@@ -83,6 +89,10 @@ void Student::setResults(QMap<QString, QuestionAnswer> * results)
 
 QMap<QString, QuestionAnswer> * Student::results() { return s_results; }
 
+void Student::setPassed(bool passed) { s_passed = passed; }
+
+bool Student::passed() { return s_passed; }
+
 /*bool Student::loadStudentData(QString input)
 {
 	QTextStream in(&input); QString buffer;
@@ -106,6 +116,34 @@ QMap<QString, QuestionAnswer> * Student::results() { return s_results; }
 }*/
 
 QString Student::studentData()
+{
+	QString out;
+	out.append("[STUDENT]\n");
+	// S_NAME
+	out.append(s_name);
+	// S_READY
+	out.append(s_ready ? "\ntrue" : "\nfalse");
+	// S_PASSED
+	out.append(s_passed ? "\ntrue" : "\nfalse");
+	// S_NUMBER
+	out.append(QString("\n%1\n").arg(s_number));
+	// S_SCORE
+	out.append(QString("%1\n").arg(s_score));
+	// S_NUMRESULTS
+	out.append(QString("%1").arg(s_results->count()));
+	// S_RESULTS
+	QMapIterator<QString, QuestionAnswer> i(*s_results); QuestionAnswer qans;
+	while (i.hasNext()) { i.next();
+		qans = i.value();
+		out.append(QString("\n%1").arg(i.key()));
+		out.append(QString("\n%1").arg(qans.flag()));
+		out.append(QString("\n%1").arg(qans.answered()));
+		out.append(QString("\n%1").arg(qans.correctAnswer()));
+	}
+	return out;
+}
+
+QString Student::studentArchiveData()
 {
 	QString out;
 	out.append("[STUDENT]\n");

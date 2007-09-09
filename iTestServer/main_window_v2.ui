@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle" >
-   <string>iTest - Database Editor</string>
+   <string>iTestServer</string>
   </property>
   <property name="windowIcon" >
    <iconset resource="resources.qrc" >:/images/images/itest.png</iconset>
@@ -788,6 +788,43 @@
                 </spacer>
                </item>
                <item>
+                <widget class="QLabel" name="SQGroupLabel" >
+                 <property name="text" >
+                  <string>Group:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="SQGroupLineEdit" >
+                 <property name="statusTip" >
+                  <string>Group of the selected question</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="tbtnSearchByGroup" >
+                 <property name="statusTip" >
+                  <string>Search the database for other questions in this group</string>
+                 </property>
+                 <property name="text" >
+                  <string>Search</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer>
+                 <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" >
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
                 <widget class="QLabel" name="SQDifficultyLabel" >
                  <property name="text" >
                   <string>Difficulty:</string>
@@ -1037,6 +1074,9 @@
                  </item>
                  <item>
                   <widget class="QToolButton" name="tbtnUndo" >
+                   <property name="enabled" >
+                    <bool>false</bool>
+                   </property>
                    <property name="minimumSize" >
                     <size>
                      <width>18</width>
@@ -1059,6 +1099,9 @@
                  </item>
                  <item>
                   <widget class="QToolButton" name="tbtnRedo" >
+                   <property name="enabled" >
+                    <bool>false</bool>
+                   </property>
                    <property name="minimumSize" >
                     <size>
                      <width>18</width>
@@ -1114,18 +1157,8 @@
                     <string>Select text size</string>
                    </property>
                    <property name="currentIndex" >
-                    <number>4</number>
+                    <number>2</number>
                    </property>
-                   <item>
-                    <property name="text" >
-                     <string>8</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text" >
-                     <string>9</string>
-                    </property>
-                   </item>
                    <item>
                     <property name="text" >
                      <string>10</string>
@@ -1159,6 +1192,46 @@
                    <item>
                     <property name="text" >
                      <string>20</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>22</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>24</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>26</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>28</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>30</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>36</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>48</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>96</string>
                     </property>
                    </item>
                   </widget>
@@ -1690,15 +1763,69 @@
           <number>0</number>
          </property>
          <item>
+          <widget class="QToolButton" name="ECtbtnUndo" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>18</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="maximumSize" >
+            <size>
+             <width>18</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="statusTip" >
+            <string>Undo</string>
+           </property>
+           <property name="text" >
+            <string>◄</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="ECtbtnRedo" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>18</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="maximumSize" >
+            <size>
+             <width>18</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="statusTip" >
+            <string>Redo</string>
+           </property>
+           <property name="text" >
+            <string>►</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_5" >
+           <property name="orientation" >
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
           <widget class="QFontComboBox" name="ECfontComboBox" >
            <property name="minimumSize" >
             <size>
              <width>0</width>
-             <height>26</height>
+             <height>18</height>
             </size>
-           </property>
-           <property name="toolTip" >
-            <string>Choose a font</string>
            </property>
            <property name="statusTip" >
             <string>Choose a font</string>
@@ -1710,11 +1837,11 @@
            <property name="minimumSize" >
             <size>
              <width>0</width>
-             <height>26</height>
+             <height>18</height>
             </size>
            </property>
            <property name="toolTip" >
-            <string>Select text size</string>
+            <string/>
            </property>
            <property name="statusTip" >
             <string>Select text size</string>
@@ -1770,7 +1897,7 @@
           </widget>
          </item>
          <item>
-          <widget class="Line" name="line_1" >
+          <widget class="Line" name="line_3" >
            <property name="orientation" >
             <enum>Qt::Vertical</enum>
            </property>
@@ -1780,33 +1907,21 @@
           <widget class="QToolButton" name="ECtbtnBold" >
            <property name="minimumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
            </property>
            <property name="maximumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
-           </property>
-           <property name="toolTip" >
-            <string>Bold</string>
            </property>
            <property name="statusTip" >
             <string>Bold</string>
            </property>
            <property name="text" >
-            <string/>
-           </property>
-           <property name="icon" >
-            <iconset resource="resources.qrc" >:/images/images/textbold.png</iconset>
-           </property>
-           <property name="iconSize" >
-            <size>
-             <width>22</width>
-             <height>22</height>
-            </size>
+            <string>B</string>
            </property>
            <property name="checkable" >
             <bool>true</bool>
@@ -1817,33 +1932,21 @@
           <widget class="QToolButton" name="ECtbtnItalic" >
            <property name="minimumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
            </property>
            <property name="maximumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
-           </property>
-           <property name="toolTip" >
-            <string>Italic</string>
            </property>
            <property name="statusTip" >
             <string>Italic</string>
            </property>
            <property name="text" >
-            <string/>
-           </property>
-           <property name="icon" >
-            <iconset resource="resources.qrc" >:/images/images/textitalic.png</iconset>
-           </property>
-           <property name="iconSize" >
-            <size>
-             <width>22</width>
-             <height>22</height>
-            </size>
+            <string>I</string>
            </property>
            <property name="checkable" >
             <bool>true</bool>
@@ -1854,33 +1957,21 @@
           <widget class="QToolButton" name="ECtbtnUnderlined" >
            <property name="minimumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
            </property>
            <property name="maximumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
-           </property>
-           <property name="toolTip" >
-            <string>Underlined</string>
            </property>
            <property name="statusTip" >
             <string>Underlined</string>
            </property>
            <property name="text" >
-            <string/>
-           </property>
-           <property name="icon" >
-            <iconset resource="resources.qrc" >:/images/images/textunder.png</iconset>
-           </property>
-           <property name="iconSize" >
-            <size>
-             <width>22</width>
-             <height>22</height>
-            </size>
+            <string>U</string>
            </property>
            <property name="checkable" >
             <bool>true</bool>
@@ -1891,18 +1982,15 @@
           <widget class="QToolButton" name="ECtbtnColour" >
            <property name="minimumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
            </property>
            <property name="maximumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
-           </property>
-           <property name="toolTip" >
-            <string>Text colour</string>
            </property>
            <property name="statusTip" >
             <string>Text colour</string>
@@ -1910,19 +1998,13 @@
            <property name="text" >
             <string/>
            </property>
-           <property name="iconSize" >
-            <size>
-             <width>22</width>
-             <height>22</height>
-            </size>
-           </property>
            <property name="checkable" >
             <bool>false</bool>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="Line" name="line_3" >
+          <widget class="Line" name="line_6" >
            <property name="orientation" >
             <enum>Qt::Vertical</enum>
            </property>
@@ -1932,33 +2014,21 @@
           <widget class="QToolButton" name="ECtbtnAlignLeft" >
            <property name="minimumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
            </property>
            <property name="maximumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
-           </property>
-           <property name="toolTip" >
-            <string>Align left</string>
            </property>
            <property name="statusTip" >
             <string>Align left</string>
            </property>
            <property name="text" >
-            <string/>
-           </property>
-           <property name="icon" >
-            <iconset resource="resources.qrc" >:/images/images/textleft.png</iconset>
-           </property>
-           <property name="iconSize" >
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
+            <string>L</string>
            </property>
            <property name="checkable" >
             <bool>true</bool>
@@ -1972,33 +2042,21 @@
           <widget class="QToolButton" name="ECtbtnAlignCentre" >
            <property name="minimumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
            </property>
            <property name="maximumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
-           </property>
-           <property name="toolTip" >
-            <string>Align centre</string>
            </property>
            <property name="statusTip" >
             <string>Align centre</string>
            </property>
            <property name="text" >
-            <string/>
-           </property>
-           <property name="icon" >
-            <iconset resource="resources.qrc" >:/images/images/textcenter.png</iconset>
-           </property>
-           <property name="iconSize" >
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
+            <string>C</string>
            </property>
            <property name="checkable" >
             <bool>true</bool>
@@ -2012,33 +2070,21 @@
           <widget class="QToolButton" name="ECtbtnAlignRight" >
            <property name="minimumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
            </property>
            <property name="maximumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
-           </property>
-           <property name="toolTip" >
-            <string>Align right</string>
            </property>
            <property name="statusTip" >
             <string>Align right</string>
            </property>
            <property name="text" >
-            <string/>
-           </property>
-           <property name="icon" >
-            <iconset resource="resources.qrc" >:/images/images/textright.png</iconset>
-           </property>
-           <property name="iconSize" >
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
+            <string>R</string>
            </property>
            <property name="checkable" >
             <bool>true</bool>
@@ -2052,33 +2098,21 @@
           <widget class="QToolButton" name="ECtbtnAlignJustify" >
            <property name="minimumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
            </property>
            <property name="maximumSize" >
             <size>
-             <width>26</width>
-             <height>26</height>
+             <width>18</width>
+             <height>18</height>
             </size>
-           </property>
-           <property name="toolTip" >
-            <string>Justify</string>
            </property>
            <property name="statusTip" >
             <string>Justify</string>
            </property>
            <property name="text" >
-            <string/>
-           </property>
-           <property name="icon" >
-            <iconset resource="resources.qrc" >:/images/images/textjustify.png</iconset>
-           </property>
-           <property name="iconSize" >
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
+            <string>J</string>
            </property>
            <property name="checkable" >
             <bool>true</bool>
@@ -4160,7 +4194,7 @@
             <x>0</x>
             <y>10</y>
             <width>701</width>
-            <height>341</height>
+            <height>311</height>
            </rect>
           </property>
           <layout class="QGridLayout" >
@@ -4378,7 +4412,21 @@
                 </layout>
                </item>
                <item>
-                <widget class="QListWidget" name="TSIncludeListWidget" />
+                <widget class="QTableWidget" name="TSIncludeTableWidget" >
+                 <property name="showGrid" >
+                  <bool>false</bool>
+                 </property>
+                 <column>
+                  <property name="text" >
+                   <string>Flag name</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text" >
+                   <string>Pass mark</string>
+                  </property>
+                 </column>
+                </widget>
                </item>
               </layout>
              </item>
@@ -4449,13 +4497,13 @@
          <property name="minimumSize" >
           <size>
            <width>0</width>
-           <height>130</height>
+           <height>150</height>
           </size>
          </property>
          <property name="maximumSize" >
           <size>
            <width>16777215</width>
-           <height>130</height>
+           <height>150</height>
           </size>
          </property>
          <property name="title" >
@@ -4480,10 +4528,10 @@
          <widget class="QWidget" name="TSCommonSettingsGridLayout" >
           <property name="geometry" >
            <rect>
-            <x>10</x>
+            <x>130</x>
             <y>0</y>
-            <width>691</width>
-            <height>135</height>
+            <width>577</width>
+            <height>148</height>
            </rect>
           </property>
           <layout class="QGridLayout" >
@@ -4505,7 +4553,7 @@
            <property name="verticalSpacing" >
             <number>6</number>
            </property>
-           <item row="2" column="2" >
+           <item row="3" column="2" >
             <widget class="QTimeEdit" name="TSTestTimeEdit" >
              <property name="statusTip" >
               <string>Time for the whole test</string>
@@ -4515,7 +4563,7 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="0" >
+           <item row="3" column="0" >
             <widget class="QLabel" name="label_testtime" >
              <property name="text" >
               <string>Time for:</string>
@@ -4525,7 +4573,7 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="3" >
+           <item row="2" column="3" >
             <widget class="QLabel" name="label_passmark" >
              <property name="minimumSize" >
               <size>
@@ -4541,7 +4589,7 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="0" >
+           <item row="2" column="0" >
             <widget class="QLabel" name="label_qnum" >
              <property name="text" >
               <string>Number of questions:</string>
@@ -4551,7 +4599,7 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="4" >
+           <item row="2" column="4" >
             <widget class="QSpinBox" name="TSPassMarkSpinBox" >
              <property name="minimumSize" >
               <size>
@@ -4570,7 +4618,7 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="5" >
+           <item row="2" column="5" >
             <spacer>
              <property name="orientation" >
               <enum>Qt::Horizontal</enum>
@@ -4583,14 +4631,14 @@
              </property>
             </spacer>
            </item>
-           <item row="3" column="1" >
+           <item row="4" column="1" >
             <widget class="QRadioButton" name="rbtnQuestionTime" >
              <property name="text" >
               <string>one question</string>
              </property>
             </widget>
            </item>
-           <item row="1" column="2" >
+           <item row="2" column="2" >
             <widget class="QSpinBox" name="TSQnumSpinBox" >
              <property name="minimumSize" >
               <size>
@@ -4609,7 +4657,7 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="1" >
+           <item row="2" column="1" >
             <widget class="QCheckBox" name="TSMaxQnumCheckBox" >
              <property name="statusTip" >
               <string>Use the maximum number of questions possible</string>
@@ -4619,7 +4667,7 @@
              </property>
             </widget>
            </item>
-           <item row="3" column="2" >
+           <item row="4" column="2" >
             <widget class="QTimeEdit" name="TSQuestionTimeEdit" >
              <property name="enabled" >
               <bool>false</bool>
@@ -4632,7 +4680,7 @@
              </property>
             </widget>
            </item>
-           <item row="3" column="6" >
+           <item row="4" column="6" >
             <widget class="QPushButton" name="btnStartServer" >
              <property name="statusTip" >
               <string>Proceed to testing mode using this computer as a server</string>
@@ -4645,7 +4693,7 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="1" >
+           <item row="3" column="1" >
             <widget class="QRadioButton" name="rbtnTestTime" >
              <property name="text" >
               <string>the whole test</string>
@@ -4675,7 +4723,33 @@
              </property>
             </widget>
            </item>
+           <item row="1" column="0" >
+            <widget class="QLabel" name="label_allow_groups" >
+             <property name="text" >
+              <string>Groups:</string>
+             </property>
+             <property name="alignment" >
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
           </layout>
+         </widget>
+         <widget class="QCheckBox" name="TSGroupsCheckBox" >
+          <property name="geometry" >
+           <rect>
+            <x>0</x>
+            <y>120</y>
+            <width>239</width>
+            <height>18</height>
+           </rect>
+          </property>
+          <property name="statusTip" >
+           <string>Allow one question per group to appear in one test only, i.e. choose one of the group randomly</string>
+          </property>
+          <property name="text" >
+           <string>Allow one question per group only</string>
+          </property>
          </widget>
         </widget>
        </item>
@@ -4753,7 +4827,7 @@
            <item row="0" column="0" >
             <widget class="QLabel" name="SMIPortLabel" >
              <property name="text" >
-              <string>The server is running on port *****. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</string>
+              <string>The server is running on port *****. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</string>
              </property>
             </widget>
            </item>
@@ -5164,8 +5238,8 @@
              <rect>
               <x>0</x>
               <y>10</y>
-              <width>605</width>
-              <height>70</height>
+              <width>583</width>
+              <height>75</height>
              </rect>
             </property>
             <layout class="QGridLayout" >
@@ -5467,6 +5541,36 @@
                 </layout>
                </item>
                <item>
+                <layout class="QHBoxLayout" >
+                 <item>
+                  <widget class="QPushButton" name="btnDetails" >
+                   <property name="sizePolicy" >
+                    <sizepolicy vsizetype="Preferred" hsizetype="Minimum" >
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text" >
+                    <string>Details</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer>
+                   <property name="orientation" >
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" >
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item>
                 <spacer>
                  <property name="orientation" >
                   <enum>Qt::Vertical</enum>
@@ -5566,6 +5670,12 @@
                <property name="enabled" >
                 <bool>false</bool>
                </property>
+               <property name="minimumSize" >
+                <size>
+                 <width>200</width>
+                 <height>0</height>
+                </size>
+               </property>
                <property name="maximumSize" >
                 <size>
                  <width>200</width>
@@ -5615,157 +5725,267 @@
               </widget>
              </item>
              <item>
-              <widget class="QGroupBox" name="VSSSelectedClientGroupBox" >
-               <property name="enabled" >
-                <bool>false</bool>
+              <widget class="QStackedWidget" name="VSSStackedWidget" >
+               <property name="currentIndex" >
+                <number>0</number>
                </property>
-               <property name="title" >
-                <string>Selected student</string>
-               </property>
-               <widget class="QWidget" name="VSSSelectedClientGridLayout" >
-                <property name="geometry" >
-                 <rect>
-                  <x>10</x>
-                  <y>10</y>
-                  <width>371</width>
-                  <height>243</height>
-                 </rect>
-                </property>
-                <layout class="QGridLayout" >
-                 <property name="leftMargin" >
-                  <number>10</number>
+               <widget class="QWidget" name="selectedStudentPage" >
+                <widget class="QGroupBox" name="VSSSelectedClientGroupBox" >
+                 <property name="enabled" >
+                  <bool>false</bool>
                  </property>
-                 <property name="topMargin" >
-                  <number>10</number>
+                 <property name="geometry" >
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>333</width>
+                   <height>271</height>
+                  </rect>
                  </property>
-                 <property name="rightMargin" >
-                  <number>10</number>
+                 <property name="title" >
+                  <string>Selected student</string>
                  </property>
-                 <property name="bottomMargin" >
-                  <number>10</number>
-                 </property>
-                 <property name="horizontalSpacing" >
-                  <number>6</number>
-                 </property>
-                 <property name="verticalSpacing" >
-                  <number>6</number>
-                 </property>
-                 <item row="4" column="0" >
-                  <widget class="QTableWidget" name="VSSSCResultsTableWidget" >
-                   <property name="statusTip" >
-                    <string>The selected student's exam results</string>
-                   </property>
-                   <column>
-                    <property name="text" >
-                     <string>Question name</string>
-                    </property>
-                   </column>
-                   <column>
-                    <property name="text" >
-                     <string>Answered correctly</string>
-                    </property>
-                   </column>
-                   <column>
-                    <property name="text" >
-                     <string>Answer</string>
-                    </property>
-                   </column>
-                   <column>
-                    <property name="text" >
-                     <string>Correct answer</string>
-                    </property>
-                   </column>
-                  </widget>
-                 </item>
-                 <item row="2" column="0" >
-                  <layout class="QHBoxLayout" >
-                   <property name="spacing" >
-                    <number>6</number>
-                   </property>
+                 <widget class="QWidget" name="VSSSelectedClientGridLayout" >
+                  <property name="geometry" >
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>371</width>
+                    <height>243</height>
+                   </rect>
+                  </property>
+                  <layout class="QGridLayout" >
                    <property name="leftMargin" >
-                    <number>0</number>
+                    <number>10</number>
                    </property>
                    <property name="topMargin" >
-                    <number>0</number>
+                    <number>10</number>
                    </property>
                    <property name="rightMargin" >
-                    <number>0</number>
+                    <number>10</number>
                    </property>
                    <property name="bottomMargin" >
-                    <number>0</number>
+                    <number>10</number>
                    </property>
-                   <item>
-                    <widget class="QLabel" name="VSSSC_label_2" >
+                   <property name="horizontalSpacing" >
+                    <number>6</number>
+                   </property>
+                   <property name="verticalSpacing" >
+                    <number>6</number>
+                   </property>
+                   <item row="4" column="0" >
+                    <widget class="QTableWidget" name="VSSSCResultsTableWidget" >
+                     <property name="statusTip" >
+                      <string>The selected student's exam results</string>
+                     </property>
+                     <column>
+                      <property name="text" >
+                       <string>Question name</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text" >
+                       <string>Answered correctly</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text" >
+                       <string>Answer</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text" >
+                       <string>Correct answer</string>
+                      </property>
+                     </column>
+                    </widget>
+                   </item>
+                   <item row="2" column="0" >
+                    <layout class="QHBoxLayout" >
+                     <property name="spacing" >
+                      <number>6</number>
+                     </property>
+                     <property name="leftMargin" >
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin" >
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin" >
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin" >
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="VSSSC_label_2" >
+                       <property name="text" >
+                        <string>&lt;b>Total score:&lt;/b></string>
+                       </property>
+                       <property name="textFormat" >
+                        <enum>Qt::RichText</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="VSSSCScoreLabel" >
+                       <property name="statusTip" >
+                        <string>The selected student's total score</string>
+                       </property>
+                       <property name="text" >
+                        <string>Not ready yet</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item row="3" column="0" >
+                    <widget class="QLabel" name="VSSSC_label_3" >
                      <property name="text" >
-                      <string>&lt;b>Total score:&lt;/b></string>
+                      <string>&lt;b>Results:&lt;/b></string>
                      </property>
                      <property name="textFormat" >
                       <enum>Qt::RichText</enum>
                      </property>
                     </widget>
                    </item>
-                   <item>
-                    <widget class="QLabel" name="VSSSCScoreLabel" >
-                     <property name="statusTip" >
-                      <string>The selected student's total score</string>
+                   <item row="0" column="0" >
+                    <layout class="QHBoxLayout" >
+                     <property name="spacing" >
+                      <number>6</number>
                      </property>
-                     <property name="text" >
-                      <string>Not ready yet</string>
+                     <property name="leftMargin" >
+                      <number>0</number>
                      </property>
-                    </widget>
+                     <property name="topMargin" >
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin" >
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin" >
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="VSSSC_label_1" >
+                       <property name="text" >
+                        <string>&lt;b>Name:&lt;/b></string>
+                       </property>
+                       <property name="textFormat" >
+                        <enum>Qt::RichText</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="VSSSCNameLabel" >
+                       <property name="statusTip" >
+                        <string>The selected student's name</string>
+                       </property>
+                       <property name="text" >
+                        <string>Not identified yet</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
                    </item>
                   </layout>
-                 </item>
-                 <item row="3" column="0" >
-                  <widget class="QLabel" name="VSSSC_label_3" >
-                   <property name="text" >
-                    <string>&lt;b>Results:&lt;/b></string>
-                   </property>
-                   <property name="textFormat" >
-                    <enum>Qt::RichText</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="0" >
-                  <layout class="QHBoxLayout" >
+                 </widget>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="PassMarkDetailsPage" >
+                <widget class="QGroupBox" name="VSSPassMarkDetailsGroupBox" >
+                 <property name="geometry" >
+                  <rect>
+                   <x>0</x>
+                   <y>10</y>
+                   <width>311</width>
+                   <height>261</height>
+                  </rect>
+                 </property>
+                 <property name="title" >
+                  <string>Pass mark details</string>
+                 </property>
+                 <widget class="QWidget" name="VSSPassMarkDetailsGridLayout" >
+                  <property name="geometry" >
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>258</width>
+                    <height>242</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" >
                    <property name="spacing" >
                     <number>6</number>
                    </property>
                    <property name="leftMargin" >
-                    <number>0</number>
+                    <number>10</number>
                    </property>
                    <property name="topMargin" >
-                    <number>0</number>
+                    <number>10</number>
                    </property>
                    <property name="rightMargin" >
-                    <number>0</number>
+                    <number>10</number>
                    </property>
                    <property name="bottomMargin" >
-                    <number>0</number>
+                    <number>10</number>
                    </property>
                    <item>
-                    <widget class="QLabel" name="VSSSC_label_1" >
-                     <property name="text" >
-                      <string>&lt;b>Name:&lt;/b></string>
+                    <layout class="QHBoxLayout" >
+                     <property name="spacing" >
+                      <number>6</number>
                      </property>
-                     <property name="textFormat" >
-                      <enum>Qt::RichText</enum>
+                     <property name="leftMargin" >
+                      <number>0</number>
                      </property>
-                    </widget>
+                     <property name="topMargin" >
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin" >
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin" >
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_search_details" >
+                       <property name="text" >
+                        <string>Search:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="VSSSearchDetailsLineEdit" >
+                       <property name="statusTip" >
+                        <string>Type a keyword to filter the list below</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
                    </item>
                    <item>
-                    <widget class="QLabel" name="VSSSCNameLabel" >
+                    <widget class="QTableWidget" name="VSSPassMarkTableWidget" >
                      <property name="statusTip" >
-                      <string>The selected student's name</string>
+                      <string>Pass mark details</string>
                      </property>
-                     <property name="text" >
-                      <string>Not identified yet</string>
+                     <property name="showGrid" >
+                      <bool>false</bool>
                      </property>
+                     <column>
+                      <property name="text" >
+                       <string>Flag name</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text" >
+                       <string>Pass mark</string>
+                      </property>
+                     </column>
                     </widget>
                    </item>
                   </layout>
-                 </item>
-                </layout>
+                 </widget>
+                </widget>
                </widget>
               </widget>
              </item>
@@ -5946,7 +6166,7 @@
      <x>0</x>
      <y>0</y>
      <width>860</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHelp" >
@@ -5992,6 +6212,42 @@
     <property name="title" >
      <string>&amp;Question</string>
     </property>
+    <addaction name="actionAdd" />
+    <addaction name="actionDuplicate" />
+    <addaction name="actionDelete" />
+    <addaction name="actionHide" />
+    <addaction name="separator" />
+    <addaction name="actionMove_to_top" />
+    <addaction name="actionMove_up" />
+    <addaction name="actionMove_down" />
+    <addaction name="actionMove_to_bottom" />
+    <addaction name="separator" />
+    <addaction name="actionApply" />
+    <addaction name="actionDiscard" />
+   </widget>
+   <widget class="QMenu" name="menuServer" >
+    <property name="title" >
+     <string>&amp;Server</string>
+    </property>
+    <addaction name="actionStart_server" />
+    <addaction name="actionStop_server" />
+    <addaction name="separator" />
+    <addaction name="actionRun_Test_Writer" />
+    <addaction name="separator" />
+    <addaction name="actionExport_test" />
+    <addaction name="actionAdd_offline_client" />
+    <addaction name="actionAdd_offline_clients" />
+    <addaction name="actionExport_log" />
+    <addaction name="separator" />
+    <addaction name="actionQuickPrint" />
+    <addaction name="actionPrint" />
+    <addaction name="separator" />
+    <addaction name="actionSave_session" />
+   </widget>
+   <widget class="QMenu" name="menuDatabase" >
+    <property name="title" >
+     <string>&amp;Database</string>
+    </property>
     <widget class="QMenu" name="menuSort_questions" >
      <property name="title" >
       <string>&amp;Sort questions</string>
@@ -6012,42 +6268,10 @@
      <addaction name="actionShow_difficult" />
      <addaction name="actionShow_flag" />
     </widget>
-    <addaction name="actionAdd" />
-    <addaction name="actionDuplicate" />
-    <addaction name="actionDelete" />
-    <addaction name="separator" />
-    <addaction name="actionMove_to_top" />
-    <addaction name="actionMove_up" />
-    <addaction name="actionMove_down" />
-    <addaction name="actionMove_to_bottom" />
-    <addaction name="separator" />
+    <addaction name="actionShow_hidden" />
     <addaction name="menuSort_questions" />
     <addaction name="menuFilter_LQ" />
     <addaction name="separator" />
-    <addaction name="actionApply" />
-    <addaction name="actionDiscard" />
-   </widget>
-   <widget class="QMenu" name="menuServer" >
-    <property name="title" >
-     <string>&amp;Server</string>
-    </property>
-    <addaction name="actionStart_server" />
-    <addaction name="actionStop_server" />
-    <addaction name="separator" />
-    <addaction name="actionExport_test" />
-    <addaction name="actionAdd_offline_client" />
-    <addaction name="actionAdd_offline_clients" />
-    <addaction name="actionExport_log" />
-    <addaction name="separator" />
-    <addaction name="actionQuickPrint" />
-    <addaction name="actionPrint" />
-    <addaction name="separator" />
-    <addaction name="actionSave_session" />
-   </widget>
-   <widget class="QMenu" name="menuDatabase" >
-    <property name="title" >
-     <string>&amp;Database</string>
-    </property>
     <addaction name="actionOverall_statistics" />
     <addaction name="separator" />
     <addaction name="actionUse_last_save_date" />
@@ -7079,6 +7303,57 @@
     <string>Save a backup copy of the database with all the archived sessions</string>
    </property>
   </action>
+  <action name="actionShow_hidden" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Show hidden questions</string>
+   </property>
+   <property name="statusTip" >
+    <string>Show hidden questions</string>
+   </property>
+   <property name="whatsThis" >
+    <string>Show hidden questions</string>
+   </property>
+  </action>
+  <action name="actionHide" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>&amp;Hide</string>
+   </property>
+   <property name="toolTip" >
+    <string>Hide the selected question</string>
+   </property>
+   <property name="statusTip" >
+    <string>Hide the selected question</string>
+   </property>
+   <property name="whatsThis" >
+    <string>Hide the selected question</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Alt+H</string>
+   </property>
+  </action>
+  <action name="actionRun_Test_Writer" >
+   <property name="icon" >
+    <iconset resource="resources.qrc" >:/images/images/itestwri32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Run iTestClient</string>
+   </property>
+   <property name="toolTip" >
+    <string>Run iTestClient on this computer</string>
+   </property>
+   <property name="statusTip" >
+    <string>Run iTestClient on this computer</string>
+   </property>
+   <property name="whatsThis" >
+    <string>Run iTestClient on this computer</string>
+   </property>
+  </action>
  </widget>
  <resources>
   <include location="resources.qrc" />
@@ -7225,6 +7500,70 @@
     <hint type="destinationlabel" >
      <x>76</x>
      <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ECTextEdit</sender>
+   <signal>undoAvailable(bool)</signal>
+   <receiver>ECtbtnUndo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>310</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>25</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ECTextEdit</sender>
+   <signal>redoAvailable(bool)</signal>
+   <receiver>ECtbtnRedo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>310</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>49</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ECtbtnUndo</sender>
+   <signal>released()</signal>
+   <receiver>ECTextEdit</receiver>
+   <slot>undo()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>25</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>310</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ECtbtnRedo</sender>
+   <signal>released()</signal>
+   <receiver>ECTextEdit</receiver>
+   <slot>redo()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>49</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>310</x>
+     <y>360</y>
     </hint>
    </hints>
   </connection>

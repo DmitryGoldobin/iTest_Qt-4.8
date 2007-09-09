@@ -1,8 +1,8 @@
 /******************************************************************************
  *                                    iTest                                   *
  * -------------------------------------------------------------------------- *
- * Version:      1.1.1                                                        *
- * Qt version:   4.3.0                                                        *
+ * Version:      1.2.0                                                        *
+ * Qt version:   4.3.1                                                        *
  * -------------------------------------------------------------------------- *
  * iTest is a Qt application consisting of a Database Editor and a Test       *
  * Writer designed for easy computerised examination.                         *
@@ -33,7 +33,10 @@ MainWindow::MainWindow()
     tcpSocket = new QTcpSocket(this);
     current_test_results = new QMap<QString, QuestionAnswer>;
     progress_dialog = NULL;
+    current_test_use_groups = false;
+    current_connection_local = false;
 
+    QObject::connect(&timer, SIGNAL(timeout()), this, SLOT(updateTime()));
     QObject::connect(tbtnQuit, SIGNAL(released()), this, SLOT(close()));
     QObject::connect(tbtnAbout, SIGNAL(released()), this, SLOT(about()));
     QObject::connect(tbtnGetReady, SIGNAL(released()), this, SLOT(getReady()));
@@ -58,6 +61,7 @@ MainWindow::MainWindow()
     QObject::connect(btnNext, SIGNAL(released()), this, SLOT(nextQuestion()));
     QObject::connect(btnLast, SIGNAL(released()), this, SLOT(lastQuestion()));
     QObject::connect(btnFinish, SIGNAL(released()), this, SLOT(finish()));
+    QObject::connect(btnNewTest, SIGNAL(released()), this, SLOT(newTest()));
     QObject::connect(btnQuit, SIGNAL(released()), this, SLOT(close()));
 
     rbtngrpInputType = new QButtonGroup (this);
@@ -72,7 +76,7 @@ MainWindow::MainWindow()
     rbtngrpAnswer->addButton(rbtnAnswerD);
     QObject::connect(rbtngrpAnswer, SIGNAL(buttonReleased(QAbstractButton *)), this, SLOT(setQuestionAnswered(QAbstractButton *)));
 
-    for (int i = 0; i < 7; ++i) {infoTableWidget->setItem(i, 0, new QTableWidgetItem);}
+    for (int i = 0; i < 8; ++i) {infoTableWidget->setItem(i, 0, new QTableWidgetItem);}
     ITW_test_name = infoTableWidget->item(0, 0);
     ITW_test_date = infoTableWidget->item(1, 0);
     ITW_test_timestamp = infoTableWidget->item(2, 0);
@@ -80,11 +84,18 @@ MainWindow::MainWindow()
     ITW_test_qnum = infoTableWidget->item(4, 0);
     ITW_test_fnum = infoTableWidget->item(5, 0);
     ITW_test_flags = infoTableWidget->item(6, 0);
+    ITW_test_passmark = infoTableWidget->item(7, 0);
     ITW_test_comments = new QTextBrowser (infoTableWidget);
-    infoTableWidget->setCellWidget(7, 0, ITW_test_comments);
+    infoTableWidget->setCellWidget(8, 0, ITW_test_comments);
     
     // Check app args ----------------------------------------------------------
-    if (qApp->arguments().count() > 1) {
+    if (qApp->arguments().count() > 2) {
+    	if (qApp->arguments().at(1) == "-port") {
+    		serverNameLineEdit->setText("Localhost");
+    		serverPortLineEdit->setText(qApp->arguments().at(2));
+    		connectSocket();
+        }
+    } else if (qApp->arguments().count() > 1) {
         QFileInfo file_info (qApp->arguments().at(1));
         if (file_info.exists()) {
             rbtnFromFile->setChecked(true);
@@ -125,12 +136,13 @@ void MainWindow::setQuestionAnswered(QAbstractButton * rbtn)
         if ((rbtn == rbtnAnswerA) || (rbtn == rbtnAnswerB) || (rbtn == rbtnAnswerC) || (rbtn == rbtnAnswerD)) {
             LQListWidget->currentItem()->setBackground(QBrush::QBrush(QColor::QColor(197, 255, 120)));
             LQListWidget->currentItem()->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
-            progressBar->setValue(0);
+            int progress = 0;
             for (int i = 0; i < LQListWidget->count(); ++i) {
                 if (current_test_questions.value(LQListWidget->item(i))->answered() != QuestionItem::None) {
-                    progressBar->setValue(progressBar->value()+1);
+                    progress++;
                 }
             }
+            progressBar->setValue(progress);
         }
      }
 }
@@ -233,7 +245,8 @@ void MainWindow::closeEvent(QCloseEvent *event)
 {
     if ((mainStackedWidget->currentIndex() == 0) || (mainStackedWidget->currentIndex() == 3)) {
 	   event->accept();
-    } else {event->ignore();}
+    } else if (current_connection_local) { event->accept(); }
+    else { event->ignore(); }
 }
 
 void MainWindow::enableConnectButton()
@@ -288,7 +301,7 @@ void MainWindow::disableInputTypeSelection()
 
 void MainWindow::about()
 {
-    AboutWidget * itest_about = new AboutWidget(ver, QString("4.3.0"), QString("2007"));
+    AboutWidget * itest_about = new AboutWidget(ver, QString("4.3.1"), QString("2007"));
     itest_about->setWindowFlags(Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/ | Qt::WindowStaysOnTopHint);
 	itest_about->show();
 }
@@ -321,7 +334,7 @@ void MainWindow::start()
         remainingTimeLcdNumber->display(current_test_time_remaining);
         remainingTimeProgressBar->setMaximum(current_test_time_remaining);
         remainingTimeProgressBar->setValue(current_test_time_remaining);
-        QTimer::singleShot(60000, this, SLOT(updateTime()));
+        timer.start(60000);
         QByteArray client_name;
         QDataStream out(&client_name, QIODevice::WriteOnly);
         out.setVersion(QDataStream::Qt_4_2);
@@ -333,10 +346,43 @@ void MainWindow::start()
     }
 }
 
+void MainWindow::newTest()
+{
+	current_db_questions.clear();
+	current_test_qnum = 0;
+	current_test_questions.clear();
+	current_test_results->clear();
+	current_test_time_remaining = 0;
+	current_test_score = 0;
+	current_test_results_sent = false;
+	current_test_passmark.clear();
+	current_test_use_groups = false;
+	test_loaded = false;
+	timer.stop();
+	LQListWidget->clear();
+	nameLineEdit->clear();
+	scoreLabel->clear();
+	resultsTableWidget->setRowCount(0);
+	mainStackedWidget->setCurrentIndex(0);
+	for (int i = 0; i < 20; ++i) { current_db_fe[i] = false; current_db_f[i].clear(); }
+	if (rbtnNetwork->isChecked()) {
+		tcpSocket->disconnectFromHost();
+		current_connection_local = false;
+		blocksize = 0;
+		client_number = 0;
+		num_entries = 0;
+		current_entry = 0;
+		connectSocket();
+	} else {
+		current_connection_local = true;
+		loadFile();
+	}
+}
+
 void MainWindow::updateTime()
 {
     if (current_test_time_remaining > 1) {
-        QTimer::singleShot(60000, this, SLOT(updateTime()));
+        timer.start(60000);
         current_test_time_remaining--;
         remainingTimeLcdNumber->display(current_test_time_remaining);
         remainingTimeProgressBar->setValue(current_test_time_remaining);
@@ -363,7 +409,7 @@ int main(int argc, char *argv[])
 	if (lang == "C") { lang = "English"; settings.setValue("lang", lang); }
 	if (lang != "English") {
 		QTranslator * translator = new QTranslator;
-		translator->load(QString(":/i18n/%1.qm").arg(lang));
+		translator->load(QString(":/i18n/%1.qm").arg(lang.replace(" ", "_")));
 		app.installTranslator(translator);
 	}
 
@@ -374,11 +420,18 @@ int main(int argc, char *argv[])
 
 void MainWindow::errorInvalidData()
 {
-     QMessageBox::critical(this, tr("iTest - Load test data"), tr("Invalid data received. There might be something wrong with the server."));
+     QMessageBox::critical(this, tr("iTestClient - Load test data"), tr("Invalid data received. There might be something wrong with the server."));
      enableInputTypeSelection();
 }
 
 // ---------------------------- version changelog: -----------------------------
+/* version 1.2.0 - a major update
+                 - renamed to iTestClient
+                 - added Portuguese translation
+                 - added the ability to start a new test
+                 - more advanced test generation, support for groups added
+				 - upgraded from Qt 4.3.0 to Qt 4.3.1
+*/
 /* version 1.1.1 - a bug-fix release with some new features
                  - added Turkish translation
                  - if available, translation to the system language loaded by

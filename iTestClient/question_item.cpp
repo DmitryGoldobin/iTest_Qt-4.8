@@ -4,6 +4,7 @@ QuestionItem::QuestionItem()
 {
      q_name = "";
      q_flag = -1;
+     q_group = "";
      q_difficulty = 0;
      q_text = "";
      q_answers << "" << "false" << "" << "false" << "" << "false" << "" << "false";
@@ -14,18 +15,20 @@ QuestionItem::QuestionItem(QString name)
 {
      q_name = name;
      q_flag = -1;
+     q_group = "";
      q_difficulty = 0;
      q_text = "";
      q_answers << "" << "false" << "" << "false" << "" << "false" << "" << "false";
      q_answer = None;
 }
 
-QuestionItem::QuestionItem(QString name, int flag, int difficulty, QString text, QStringList answers)
+QuestionItem::QuestionItem(QString name, int flag, QString group, int difficulty, QString text, QStringList answers)
 {
      q_name = name;
      q_flag = flag;
+     q_group = group;
      q_difficulty = difficulty;
-     q_text = text;
+     setText(text);
      q_answers = answers;
      q_answer = None;
 }
@@ -33,6 +36,8 @@ QuestionItem::QuestionItem(QString name, int flag, int difficulty, QString text,
 QString QuestionItem::name() { return q_name; }
 
 int QuestionItem::flag() { return q_flag; }
+
+QString QuestionItem::group() { return q_group; }
 
 int QuestionItem::difficulty() { return q_difficulty; }
 
@@ -72,9 +77,31 @@ void QuestionItem::setName(QString name) { q_name = name; }
 
 void QuestionItem::setFlag(int flag) { q_flag = flag; }
 
+void QuestionItem::setGroup(QString group) { q_group = group; }
+
 void QuestionItem::setDifficulty(int difficulty) { q_difficulty = difficulty; }
 
-void QuestionItem::setText(QString text) { q_text = text; }
+void QuestionItem::setText(QString text)
+{
+	QTextDocument doc; doc.setHtml(text); QString final = text; QString lastgood; QTextDocument testdoc;
+	QStringList before; QString after = "font-size:10pt;";
+	before << "font-size:8.25pt;" << "font-size:8pt;" << "font-size:9pt;";
+	for (int b = 0; b < before.count(); ++b) {
+		int skip = 0; int c = text.count(before.at(b), Qt::CaseInsensitive);
+		for (int i = 0; i < c; ++i) {
+			lastgood = final;
+			if (final.contains(before.at(b), Qt::CaseInsensitive)) {
+				final.replace(final.indexOf(before.at(b), skip), before.at(b).count(), after);
+				testdoc.setHtml(final);
+				if (doc.toPlainText() != testdoc.toPlainText()) {
+					skip = final.indexOf(before.at(b), skip) + 10;
+					final = lastgood;
+				}
+			}
+		}
+	}
+	q_text = final;
+}
 
 void QuestionItem::setAnsA(QString ans) { q_answers.replace(0, ans); }
 

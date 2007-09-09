@@ -17,18 +17,18 @@ You now have two options:
 	iTest source code and type:
 		./build.nut
 
-	2. Compiling manually
-	---------------------
+	2. Compile manually
+	-------------------
 	Regardless of your platform, type in the following
 	commands (it is assumed that you have already changed
 	directory to that of the iTest source code):
-		cd database_editor
+		cd iTestServer
 		qmake -config release
-		lrelease iTest.pro
+		lrelease iTestServer.pro
 		cd ..
-		cd test_writer
+		cd iTestClient
 		qmake -config release
-		lrelease iTestWri.pro
+		lrelease iTestClient.pro
 		cd ..
 		qmake -config release
 		make
@@ -36,7 +36,8 @@ You now have two options:
 	mingw32-make or nmake)
 
 When all is done, you may run the programme:
-Linux/Unix: ./iTest
-Mac OS X: open iTest.app
-Windows: iTest
-For the Test Writer, merely replace "iTest" with "iTestWri".
+Linux/Unix: ./iTestServer
+Mac OS X: open iTestServer.app
+Windows: iTestServer
+For the Test Writer, merely replace "iTestServer" with
+"iTestClient".

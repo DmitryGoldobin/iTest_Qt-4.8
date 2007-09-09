@@ -4,12 +4,13 @@
 #include <QFile>
 #include <QInputDialog>
 #include <QFileDialog>
-#include <QTextStream>
 #include <QMessageBox>
 #include <QAction>
 #include <QDir>
+#include <QSet>
 #include <QList>
 #include <QListWidgetItem>
+#include <QTableWidgetItem>
 #include <QStatusBar>
 #include <QProgressBar>
 #include <QTimer>
@@ -28,6 +29,7 @@
 #include <QHeaderView>
 #include <QTranslator>
 #include <QQueue>
+#include <QProcess>
 
 #include <QtAlgorithms>
 
@@ -44,10 +46,12 @@ private slots:
     void quit(); void about(); void addRecent(QString);
     void loadSettings(); void saveSettings();
     void updateGeometry(); void updateVSSGeometry();
+    void updateTSTWGeometry(); void updatePMDTWGeometry();
     void onInfoDisplayChange(bool); void setPage(QAction *);
     bool saveChangesBeforeProceeding(QString, bool);
     void setProgress(int); void setNullProgress();
     uint searchListWidgetItems(QString, QListWidget *, QLineEdit *);
+    uint searchTableWidgetItems(QString, QTableWidget *, QLineEdit *);
     void checkForUpdates(); void httpRequestFinished(bool);
     void openDocumentation();
     void statsWidgetClosed();
@@ -76,6 +80,8 @@ private slots:
     void setFlags(); void loadFlags(); void applyFlags(); void discardFlags();
     void setFlagLineEditPalettes(); void updateFlags(QAbstractButton *);
     void updateFlagQnums(); void checkForUnflaggedQuestions();
+    QColor backgroundColourForFlag(int);
+    QColor foregroundColourForFlag(int, bool = false);
     // CLEAR & REMOVE & SUBSTITUTE
     void clearAll(); void clearSQ(); void clearSQNoFlags(); void clearDBI();
     void clearCurrentValues(); QString removeLineBreaks(QString);
@@ -86,13 +92,16 @@ private slots:
     void addQuestion(); void deleteQuestion(); void duplicateQuestion();
     void applyQuestionChanges(); void discardQuestionChanges();
     void setQuestionItemColour(QListWidgetItem *, int);
+    void setQuestionItemIcon(QListWidgetItem *, int);
+    QIcon iconForDifficulty(int);
     void sortQuestionsAscending(); void sortQuestionsDescending();
     void sortQuestions(Qt::SortOrder);
+    void hideQuestion(); void hideQuestion(QListWidgetItem *, QuestionItem *);
     void moveUp(); void moveDown(); void moveToTop(); void moveToBottom();
     void moveQuestion(int); void adjustQuestionDifficulty();
     void filterLQ(QAbstractButton *); void filterLQFlagChanged();
     void filterLQAction(QAction *); void filterLQSearch();
-    void updateTestQnum();
+    void updateTestQnum(); void searchByGroup();
     uint numOccurrences(QString); uint replaceAllOccurrences(QString, QString);
     // SERVER-RELATED
     void setupServer(); void reloadAvailableItems(); void setMaximumQuestions();
@@ -110,6 +119,7 @@ private slots:
     void addOfflineClients();
     void updateLC(Client *); void sendCorrectAnswers(Client *);
     void exportTest(); void exportLog();
+    void runTestWriter();
     // PRINTER-RELATED
     bool loadPrinterSettings(); void savePrinterSettings();
     bool printerConfiguration(QString &); bool configurePrinter(bool);
@@ -126,12 +136,13 @@ private slots:
     void deleteLog(); void archiveSession(); void restoreSession();
     void copyToArchive(); void copyFromArchive();
     void searchVSSLS(const QString &); void clearVSSSC();
-    void openArchive();
+    void searchPassMarkDetails(const QString &);
+    void openArchive(); void showPassMarkDetails();
     // ERROR MESSAGES
     void errorInvalidDBFile(QString, QString);
-    void errorInvalidTempFileFormat(QString, QString);
-    void errorRWTempFile(QString, QString, QString, QFile&);
-    void errorInvalidTempFileFormat_SpecialChars(QString, QString);
+    //void errorInvalidTempFileFormat(QString, QString);
+    //void errorRWTempFile(QString, QString, QString, QFile&);
+    //void errorInvalidTempFileFormat_SpecialChars(QString, QString);
     // TEXTEDIT-RELATED
     void setupTextEdits();
     void textBold(); void textUnderline(); void textItalic();
@@ -155,6 +166,7 @@ private:
     QMap<int, int> current_db_flagentries;
     Session * current_db_session;
     QQueue<ArchivedSession *> current_db_queued_sessions;
+    PassMark current_db_passmark;
     // FLAGS
     bool current_db_fe[20]; QString current_db_f[20];
     // UI-RELATED
@@ -199,7 +211,7 @@ private:
 	QMap<QAbstractButton *, int> stats_lwmap;
 	QButtonGroup * btngrpStatsAdjust;
 	// LANG
-	QButtonGroup * rbtngrpLang;
+	QComboBox * langComboBox;
 	// FLAG-WIDGETS
 	QLineEdit * EFFlagLineEdit[20];
 	QCheckBox * EFFlagCheckBox[20];
@@ -207,9 +219,13 @@ private:
 	// PALETTES
 	QPalette search_active_palette; QPalette search_noresults_palette;
 	// ITEST & DB VERSION & ENVIRONMENT VARIABLES
-	QString ver; float f_ver; QString db_ver; float f_db_ver;
+	QString ver; float f_ver;
+	QString itdb_ver; float f_itdb_ver;
+	QString itos_ver; float f_itos_ver;
 	QString itest_url; QString docs_url;
 	QMap<QString, QString> itest_i18n;
+	// EXCEPTIONS
+	class xInvalidDBFile {};
 	// FRIENDS
 	friend class Client;
 	friend class Session;

@@ -220,6 +220,7 @@ bool MainWindow::printStudentResults(Student * student, QPrinter * printer, QStr
 	out << header << endl << "</title><style type=\"text/css\">" << endl;
 	out << ".heading { font-family: sans-serif; font-size: medium; font-weight: bold; color: black; }" << endl;
 	out << ".default_text { font-family: sans-serif; font-size: 7pt; color: black; }" << endl;
+	out << ".bold_text { font-family: sans-serif; font-size: 7pt; color: black; font-weight: bold; }" << endl;
 	out << ".correct_qname { font-family: sans-serif; font-size: 7pt; font-weight: bold; color: rgb(69, 110, 14); }" << endl;
 	out << ".incorrect_qname { font-family: sans-serif; font-size: 7pt; font-weight: bold; color: rgb(204, 109, 0); }" << endl;
 	out << ".question { font-family: sans-serif; font-size: 7pt; color: black; }" << endl;
@@ -238,12 +239,23 @@ bool MainWindow::printStudentResults(Student * student, QPrinter * printer, QStr
 			out << "<div class=\"incorrect_qname\">" << endl;
 		}
 		item = NULL;
-		for (int n = 0; n < LQListWidget->count(); ++n) {
+		/*for (int n = 0; n < LQListWidget->count(); ++n) {
 			if (LQListWidget->item(n)->text() == i.key()) {
 				item = current_db_questions.value(LQListWidget->item(n)); break;
 			}
+		}*/
+		QMapIterator<QListWidgetItem *, QuestionItem *> q(current_db_questions);
+		while (q.hasNext()) { q.next();
+			if (q.value()->name() == i.key()) { item = q.value(); break; }
 		}
 		if (item != NULL) {
+			if (item->flag() >= 0 && item->flag() < 20) {
+				out << "<div class=\"bold_text\">";
+				out << substituteHtmlTags(current_db_f[item->flag()]) << ": </div>";
+			}
+			if (!item->group().isEmpty()) {
+				out << "[" << substituteHtmlTags(item->group()) << "] ";
+			}
 			out << substituteHtmlTags(item->name()) << endl << "</div>" << endl;
 			out << "<div class=\"question\">" << endl;
 			qdoc.setHtml(item->text());
@@ -294,6 +306,7 @@ bool MainWindow::printStudentResults(Student * student, QPrinter * printer, QStr
 	out << "<p class=\"default_text\" align=\"right\">" << endl;
 	out << "<b>" << tr("Total score:") << "</b> ";
 	out << tr("%1 out of %2").arg(student->score()).arg(student->results()->count());
+	out << QString(" (%3)").arg(student->passed() ? tr("PASSED") : tr("FAILED"));
 	out << endl << "</p></body></html>" << endl;
 	doc.setHtml(html); printer->setDocName(header); doc.print(printer);
 	return true;
@@ -422,9 +435,18 @@ bool MainWindow::printSessionSummary(Session * session, QPrinter * printer)
 	out << ".student_failed { font-family: sans-serif; font-size: small; font-weight: bold; color: rgb(204, 109, 0); }" << endl;
 	out << "</style></head><body>" << endl;
 	out << "<p class=\"heading\" align=\"center\">" << endl << header << endl << "</p>" << endl;
-	out << "<p>\n<div class=\"bold_text\">" << endl << tr("Pass mark:") << " ";
-	out << session->passMark() << endl << "</div><br>" << endl;
-	out << "<table border=\"0\" width=\"100%\"><tr><td width=\"60%\"><div class=\"bold_text\">" << endl;
+	out << "<p>\n<div class=\"bold_text\">" << endl << tr("Pass mark:");
+	out << "</div><br><table border=\"0\" width=\"100%\">" << endl;
+	out << "<tr><td width=\"40%\"><div class=\"bold_text\">" << endl;
+	out << tr("Total") << endl << "</div></td><td><div class=\"bold_text\">";
+	out << session->passMark().passMark() << endl << "</div></td></tr>" << endl;
+	for (int i = 0; i < session->passMark().count(); ++i) {
+		out << "<tr><td width=\"40%\"><div class=\"default_text\">" << endl;
+		out << current_db_f[session->passMark().condition(i)] << endl;
+		out << "</div></td><td><div class=\"default_text\">" << endl;
+		out << session->passMark().value(i) << endl << "</div></td></tr>" << endl;
+	}
+	out << "</table><br><table border=\"0\" width=\"100%\"><tr><td width=\"60%\"><div class=\"bold_text\">" << endl;
 	out << tr("Average:") << endl;
 	out << "</div></td><td><div align=\"right\">" << endl;
 	out << "<table border=\"2\" width=\"100%\" height=\"20\"><tr><td bgcolor=\"";
@@ -435,18 +457,18 @@ bool MainWindow::printSessionSummary(Session * session, QPrinter * printer)
 	out << "</div></td></tr></table><br><div class=\"bold_text\">" << endl;
 	out << tr("Students:") << endl << "</div><br>" << endl;
 	for (int i = 0; i < session->numStudents(); ++i) {
-		out << "<table border=\"0\" width=\"100%\"><tr><td width=\"40%\"><div class=\"" << (session->passMark() <= session->student(i)->score() ? "student_passed" : "student_failed") << "\">" << endl;
+		out << "<table border=\"0\" width=\"100%\"><tr><td width=\"40%\"><div class=\"" << (session->student(i)->passed() ? "student_passed" : "student_failed") << "\">" << endl;
 		out << substituteHtmlTags(session->student(i)->name()) << endl;
 		out << "</div></td><td width=\"20%\"><div class=\"default_text\">" << endl;
 		if (session->student(i)->isReady()) {
-            out << tr("%1 out of %2 (%3)").arg(session->student(i)->score()).arg(session->student(i)->results()->count()).arg(session->passMark() <= session->student(i)->score() ? tr("PASSED") : tr("FAILED")) << endl;
+            out << tr("%1 out of %2 (%3)").arg(session->student(i)->score()).arg(session->student(i)->results()->count()).arg(session->student(i)->passed() ? tr("PASSED") : tr("FAILED")) << endl;
         } else {
             out << tr("NOT AVAILABLE") << endl;
         }
 		out << "</div></td><td><div align=\"right\">" << endl;
 		if (session->student(i)->isReady()) {
             out << "<table border=\"2\" width=\"100%\" height=\"20\"><tr><td bgcolor=\"";
-			out << (session->passMark() <= session->student(i)->score() ? "yellowgreen" : "#FF9419");
+			out << (session->student(i)->passed() ? "yellowgreen" : "#FF9419");
 			out << "\" width=\"" << int(100 * session->student(i)->score() / session->student(i)->results()->count()) << "%\"></td>" << endl;
             out << (int(100 * session->student(i)->score() / session->student(i)->results()->count()) >= 100 ? "</tr>" : "<td></td></tr>") << "</table></div></td><td width=\"5%\" align=\"right\"><div class=\"default_text\">" << endl;
             out << int(100 * session->student(i)->score() / session->student(i)->results()->count()) << "%" << endl;

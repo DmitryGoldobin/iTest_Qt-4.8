@@ -8,6 +8,7 @@ void Client::commonClientSetup(MainWindow * parent)
     c_blocksize = 1;
     c_parent = parent;
     c_test_sent = false;
+    c_passed = true;
     
     QObject::connect(c_socket, SIGNAL(disconnected()), this, SLOT(socketDisconnected()));
 }
@@ -124,6 +125,10 @@ void Client::setResults(QMap<QString, QuestionAnswer> * results)
 
 QMap<QString, QuestionAnswer> * Client::results() { return c_results; }
 
+void Client::setPassed(bool passed) { c_passed = passed; }
+
+bool Client::passed() { return c_passed; }
+
 void Client::loadResults(QString input)
 {
     QTextStream in(&input); QString buffer; QuestionItem * item;
@@ -134,11 +139,8 @@ void Client::loadResults(QString input)
         if (in.readLine() != "[Q_NAME]") { return; }
         buffer = in.readLine();
         QMapIterator<QListWidgetItem *, QuestionItem *> i(c_parent->current_db_questions);
-        while (i.hasNext()) {
-            i.next();
-            if (i.value()->name() == buffer) {
-                item = i.value(); break;
-            }
+        while (i.hasNext()) { i.next();
+            if (i.value()->name() == buffer) { item = i.value(); break; }
         }
         if (item == NULL) { in.readLine(); in.readLine(); continue; }
         if (in.readLine() != "[Q_ANSWERED]") { return; }
@@ -157,27 +159,27 @@ void Client::loadResults(QString input)
             case QuestionItem::C:
             case QuestionItem::D:
                 if (!item->hasCorrectAnswer()) {
-                    QuestionAnswer qans (QuestionItem::None, ans);
+                    QuestionAnswer qans(item->flag(), QuestionItem::None, ans);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
                 } else if (item->isAnsACorrect()) {
-                    QuestionAnswer qans (QuestionItem::A, ans);
+                    QuestionAnswer qans(item->flag(), QuestionItem::A, ans);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
                 } else if (item->isAnsBCorrect()) {
-                    QuestionAnswer qans (QuestionItem::B, ans);
+                    QuestionAnswer qans(item->flag(), QuestionItem::B, ans);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
                 } else if (item->isAnsCCorrect()) {
-                    QuestionAnswer qans (QuestionItem::C, ans);
+                    QuestionAnswer qans(item->flag(), QuestionItem::C, ans);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
                 } else if (item->isAnsDCorrect()) {
-                    QuestionAnswer qans (QuestionItem::D, ans);
+                    QuestionAnswer qans(item->flag(), QuestionItem::D, ans);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
@@ -185,27 +187,27 @@ void Client::loadResults(QString input)
                 break;
             default:
                 if (!item->hasCorrectAnswer()) {
-                    QuestionAnswer qans (QuestionItem::None, QuestionItem::None);
+                    QuestionAnswer qans(item->flag(), QuestionItem::None, QuestionItem::None);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
                 } else if (item->isAnsACorrect()) {
-                    QuestionAnswer qans (QuestionItem::A, QuestionItem::None);
+                    QuestionAnswer qans(item->flag(), QuestionItem::A, QuestionItem::None);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
                 } else if (item->isAnsBCorrect()) {
-                    QuestionAnswer qans (QuestionItem::B, QuestionItem::None);
+                    QuestionAnswer qans(item->flag(), QuestionItem::B, QuestionItem::None);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
                 } else if (item->isAnsCCorrect()) {
-                    QuestionAnswer qans (QuestionItem::C, QuestionItem::None);
+                    QuestionAnswer qans(item->flag(), QuestionItem::C, QuestionItem::None);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
                 } else if (item->isAnsDCorrect()) {
-                    QuestionAnswer qans (QuestionItem::D, QuestionItem::None);
+                    QuestionAnswer qans(item->flag(), QuestionItem::D, QuestionItem::None);
                     c_results->insert(item->name(), qans);
                     if (qans.isAnsweredCorrectly()) { c_score++; item->addCorrectAns(); }
                     else { item->addIncorrectAns(); }
@@ -214,6 +216,7 @@ void Client::loadResults(QString input)
         }
     } while (!in.atEnd());
     
+    c_passed = c_parent->current_db_passmark.check(c_results, &c_parent->current_db_questions);
     c_ready = true;
     emit resultsLoaded(this);
 }
@@ -273,19 +276,19 @@ void Client::displayError(QAbstractSocket::SocketError socketError)
         case QAbstractSocket::RemoteHostClosedError:
             break;
         case QAbstractSocket::HostNotFoundError:
-            QMessageBox::information(c_parent, tr("iTest - Database Editor"),
+            QMessageBox::information(c_parent, tr("iTestServer"),
                                      tr("The host was not found. Please check the "
                                         "host name and port settings."));
             break;
         case QAbstractSocket::ConnectionRefusedError:
-            QMessageBox::information(c_parent, tr("iTest - Database Editor"),
+            QMessageBox::information(c_parent, tr("iTestServer"),
                                      tr("The connection was refused by the peer. "
                                         "Make sure the iTest server is running, "
                                         "and check that the host name and port "
                                         "settings are correct."));
             break;
         default:
-            QMessageBox::information(c_parent, tr("iTest - Database Editor"),
+            QMessageBox::information(c_parent, tr("iTestServer"),
                                      tr("The following error occurred: %1.")
                                      .arg(c_socket->errorString()));
     }
@@ -295,12 +298,14 @@ QuestionAnswer::QuestionAnswer()
 {
     qa_answered = QuestionItem::None;
     qa_correct_answer = QuestionItem::None;
+    qa_flag = -1;
 }
 
-QuestionAnswer::QuestionAnswer(QuestionItem::Answer correct, QuestionItem::Answer ans)
+QuestionAnswer::QuestionAnswer(int flag, QuestionItem::Answer correct, QuestionItem::Answer ans)
 {
     qa_answered = ans;
     qa_correct_answer = correct;
+    qa_flag = flag;
 }
 
 void QuestionAnswer::setAnswered(QuestionItem::Answer ans) { qa_answered = ans; }
@@ -316,3 +321,7 @@ bool QuestionAnswer::isAnsweredCorrectly()
     if (qa_answered == qa_correct_answer) { return true; }
     return false;
 }
+
+void QuestionAnswer::setFlag(int flag) { qa_flag = flag; }
+
+int QuestionAnswer::flag() { return qa_flag; }

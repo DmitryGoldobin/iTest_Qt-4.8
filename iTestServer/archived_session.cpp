@@ -48,11 +48,21 @@ void ArchivedSession::archive()
 	sns << session_title;
 	archive.setValue(QString("%1/sessions").arg(as_parent->current_db_name), sns);
 	QString data; QTextStream out(&data);
-	out << sessionData() << endl;
+	QString students_passed; QStringList qa_flaglist;
+	out << sessionArchiveData() << endl;
 	for (int s = 0; s < numStudents(); ++s) {
-		out << student(s)->studentData() << endl;
+		out << student(s)->studentArchiveData() << endl;
+		students_passed.append(student(s)->passed() ? "+" : "-");
+		QMapIterator<QString, QuestionAnswer> i(*(student(s)->results())); QuestionAnswer qans;
+		while (i.hasNext()) { i.next();
+			qans = i.value(); qa_flaglist << QString("%1").arg(qans.flag());
+		}
 	}
 	archive.setValue(QString("%1/%2").arg(as_parent->current_db_name).arg(session_title), data);
+	archive.setValue(QString("%1/%2/PassMark").arg(as_parent->current_db_name).arg(session_title), s_passmark.data());
+	archive.setValue(QString("%1/%2/StudentsPassed").arg(as_parent->current_db_name).arg(session_title), students_passed);
+	QString qa_flags = qa_flaglist.join(";");
+	archive.setValue(QString("%1/%2/QAFlags").arg(as_parent->current_db_name).arg(session_title), qa_flags);
 }
 
 void ArchivedSession::removeFromArchive()
@@ -104,12 +114,35 @@ void ArchivedSession::restore(QString input)
 			buffer = in.readLine();
 			ans = (QuestionItem::Answer)in.readLine().toInt();
 			c_ans = (QuestionItem::Answer)in.readLine().toInt();
-			QuestionAnswer qans (c_ans, ans);
+			QuestionAnswer qans(-1, c_ans, ans);
 			results->insert(buffer, qans);
 		}
 		student->setResults(results);
 		addStudent(student);
 	}
+}
+
+QString ArchivedSession::sessionArchiveData()
+{
+	QString out;
+	out.append("[SESSION]\n");
+	// S_NAME
+	out.append(QString("%1\n").arg(s_name));
+	// S_DATETIME
+	out.append(dateTimeToString());
+	// S_PASSMARK
+	out.append(QString("\n%1").arg(s_passmark.passMark()));
+	// S_SNUM
+	out.append(QString("\n%1").arg(s_students.count()));
+	// S_NUMLOGENTRIES
+	out.append(QString("\n%1").arg(s_log.count()));
+	// S_LOGENTRIES
+	LogEntry log_entry;
+	for (int i = 0; i < s_log.count(); ++i) {
+		log_entry = s_log.at(i);
+		out.append(QString("\n%1").arg(log_entry.entryData()));
+	}
+	return out;
 }
 
 ArchivedSession::Status ArchivedSession::status() { return as_status; }

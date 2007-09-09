@@ -1,4 +1,4 @@
-#include "main_window.h"
+#include "question_item.h"
 
 QuestionAnswer::QuestionAnswer()
 {

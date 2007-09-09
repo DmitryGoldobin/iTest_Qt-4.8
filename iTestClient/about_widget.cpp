@@ -10,7 +10,7 @@ AboutWidget::AboutWidget(QString ver, QString qtver, QString year)
     about.append(tr("Version"));
     about.append(QString(" %1</span></p><p></p>").arg(ver));
 	about.append("<p style=\"font-family: sans-serif; font-size:8pt;\">");
-    about.append(tr("iTest is a Qt application consisting of a Database Editor and a Test Writer designed for easy computerised examination."));
+    about.append(tr("iTest is a Qt application consisting of a Server and a Client designed for easy computerised examination."));
     about.append("</p><p></p>");
 	about.append("<p style=\"font-family: sans-serif; font-size:8pt;\">");
     about.append(tr("This programme is distributed under the terms of the GPL v2."));
@@ -19,6 +19,11 @@ AboutWidget::AboutWidget(QString ver, QString qtver, QString year)
 	about.append("<p></p><p style=\"font-family: sans-serif; font-size:8pt;\">");
 	about.append(tr("The programme is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."));
 	about.append("</p>");
+#ifdef Q_WS_MAC
+	about.remove("font-family: sans-serif;");
+	about.replace("font-size:12pt;", "font-size:14pt;");
+	about.replace("font-size:8pt;", "font-size:10pt;");
+#endif
     aboutTextBrowser->setHtml(about);
 	QString aboutQt = "<p style=\"font-family: sans-serif; font-style:italic;\"><span style=\"font-size:12pt;\">";
     aboutQt.append(tr("About Qt"));
@@ -31,6 +36,11 @@ AboutWidget::AboutWidget(QString ver, QString qtver, QString year)
 	aboutQt.append("</p><p></p><p style=\"font-family: sans-serif; font-size:8pt;\">");
 	aboutQt.append(tr("Qt is a Trolltech product. See <span style=\"font-style:italic;\">http://www.trolltech.com/qt/</span> for more information."));
 	aboutQt.append("</p>");
+#ifdef Q_WS_MAC
+	aboutQt.remove("font-family: sans-serif;");
+	aboutQt.replace("font-size:12pt;", "font-size:14pt;");
+	aboutQt.replace("font-size:8pt;", "font-size:10pt;");
+#endif
     aboutQtTextBrowser->setHtml(aboutQt);
 }
 

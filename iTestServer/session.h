@@ -6,7 +6,7 @@
 #include <QDateTime>
 #include <QColor>
 
-#include "student.h"
+#include "pass_mark.h"
 
 class LogEntry
 {
@@ -43,7 +43,7 @@ public slots:
     int numLogEntries(); LogEntry logEntry(int); void deleteLog();
     void addStudent(Student *); int numStudents(); Student * student(int);
     uint numQuestions(); uint numCorrect();
-    void setPassMark(int); int passMark();
+    void setPassMark(PassMark); PassMark passMark(); void loadPassMark(QString);
     QString sessionData();
     bool mostPassed(); bool isArchived();
     void destruct();
@@ -55,8 +55,8 @@ private:
     uint s_cqnum;
     QList<LogEntry> s_log;
     QList<Student *> s_students;
-    int s_passmark;
     bool s_archived;
+    PassMark s_passmark;
 
     friend class ArchivedSession;
 };

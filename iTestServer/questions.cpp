@@ -7,9 +7,13 @@ void MainWindow::addQuestion()
     if (allright) {q_name = QInputDialog::getText(this, tr("Add question"), tr("Question name:"), QLineEdit::Normal, tr("### New question"), &ok);
     } else {q_name = QInputDialog::getText(this, tr("Add question"), tr("A question with this name already exists.\nPlease choose a different name:"), QLineEdit::Normal, tr("### Another question"), &ok);}
     if (!ok || q_name.isEmpty()) { return; }
-    for (int i = 0; i < LQListWidget->count(); ++i) {
+    /*for (int i = 0; i < LQListWidget->count(); ++i) {
         if (LQListWidget->item(i)->text() == q_name)
             { allright = false; goto addQuestion_start; }
+    }*/
+    QMapIterator<QListWidgetItem *, QuestionItem *> q(current_db_questions);
+    while (q.hasNext()) { q.next();
+    	if (q.value()->name() == q_name) { allright = false; goto addQuestion_start; break; }
     }
     QuestionItem * item = new QuestionItem (q_name);
     QListWidgetItem * q_item = new QListWidgetItem (q_name);
@@ -27,7 +31,7 @@ void MainWindow::addQuestion()
 
 void MainWindow::deleteQuestion()
 {
-     if (LQListWidget->currentIndex().isValid()) {
+    if (LQListWidget->currentIndex().isValid()) {
         switch (QMessageBox::information(this, tr("Delete question"), tr("Are you sure you want to delete question \"%1\"?").arg(LQListWidget->currentItem()->text()), tr("&Delete"), tr("Cancel"), 0, 1)) {
             case 0: // Delete
                 break;
@@ -40,12 +44,12 @@ void MainWindow::deleteQuestion()
         delete LQListWidget->currentItem();
         setCurrentQuestion();
         setDatabaseModified();
-     } else {QMessageBox::information(this, tr("Delete question"), tr("Select a question to be deleted first."));}
+    } else {QMessageBox::information(this, tr("Delete question"), tr("Select a question to be deleted first."));}
 }
 
 void MainWindow::duplicateQuestion()
 {
-     if (LQListWidget->currentIndex().isValid()) {
+    if (LQListWidget->currentIndex().isValid()) {
         QString q_name = current_db_question;
         QuestionItem * item = current_db_questions.value(LQListWidget->currentItem());
         QStringList bufferlist = q_name.split(" ");
@@ -67,43 +71,42 @@ void MainWindow::duplicateQuestion()
         } else {new_q_name = QInputDialog::getText(this, tr("Duplicate question"), tr("A question with this name already exists.\nPlease choose a different name:"), QLineEdit::Normal, QString("%1 [%2]").arg(q_name).arg(copynum), &ok);}
         if (ok && !new_q_name.isEmpty())
         {   
-             for (int i = 0; i < LQListWidget->count(); ++i) {
+             /*for (int i = 0; i < LQListWidget->count(); ++i) {
                  if (LQListWidget->item(i)->text() == new_q_name)
                      { allright = false; copynum++; goto addQuestion_start; }
+             }*/
+             QMapIterator<QListWidgetItem *, QuestionItem *> q(current_db_questions);
+             while (q.hasNext()) { q.next();
+             	if (q.value()->name() == new_q_name) { allright = false; copynum++; goto addQuestion_start; break; }
              }
              QuestionItem * new_item = new QuestionItem (new_q_name, 
                                                     item->flag(), 
+                                                    item->group(),
                                                     item->difficulty(), 
                                                     item->text(), 
                                                     item->answers(),
                                                     item->incorrectAnsCount(),
-                                                    item->correctAnsCount());
-             QListWidgetItem * new_q_item = new QListWidgetItem (new_q_name);
+                                                    item->correctAnsCount(),
+                                                    item->isHidden());
+             QListWidgetItem * new_q_item = new QListWidgetItem (new_item->group().isEmpty() ? new_q_name : QString("[%1] %2").arg(new_item->group()).arg(new_q_name));
              current_db_questions.insert(new_q_item, new_item);
-             switch (new_item->difficulty()) {
-                case 0:
-                    new_q_item->setIcon(QIcon(QString::fromUtf8(":/images/images/easy.png"))); break;
-                case 1:
-                    new_q_item->setIcon(QIcon(QString::fromUtf8(":/images/images/medium.png"))); break;
-                case 2:
-                    new_q_item->setIcon(QIcon(QString::fromUtf8(":/images/images/difficult.png"))); break;
-                default:
-                    new_q_item->setIcon(QIcon(QString::fromUtf8(":/images/images/easy.png"))); break;
-             }
+             setQuestionItemIcon(new_q_item, new_item->difficulty());
              setQuestionItemColour(new_q_item, new_item->flag());
+             hideQuestion(new_q_item, new_item);
              LQListWidget->insertItem(LQListWidget->currentRow()+1, new_q_item);
              LQListWidget->setCurrentRow(LQListWidget->currentRow()+1);
              setDatabaseModified();
         }
-     } else {QMessageBox::information(this, tr("Duplicate question"), tr("Select a question to be duplicated first."));}
+    } else {QMessageBox::information(this, tr("Duplicate question"), tr("Select a question to be duplicated first."));}
 }
 
 void MainWindow::setCurrentQuestion()
 {
-     if (LQListWidget->currentIndex().isValid()) {
+    if (LQListWidget->currentIndex().isValid()) {
         enableSQ(); clearSQNoFlags(); enableLQTools();
         QuestionItem * item = current_db_questions.value(LQListWidget->currentItem());
         SQQuestionNameLineEdit->setText(item->name());
+        SQGroupLineEdit->setText(item->group());
         SQFlagComboBox->setCurrentIndex(current_db_flagentries.value(item->flag()));
         LQFlagComboBox->setCurrentIndex(current_db_flagentries.value(item->flag()));
         SQDifficultyComboBox->setCurrentIndex(item->difficulty());
@@ -130,25 +133,62 @@ void MainWindow::setCurrentQuestion()
             SQStatisticsLabel->setText(tr("Statistics: number of <b>correct</b> answers: <b>%1</b>; number of <b>incorrect</b> answers: <b>%2</b>; difficulty: <b>%3</b>; <a href=\"adjust.difficulty\">adjust difficulty</a>").arg(item->correctAnsCount()).arg(item->incorrectAnsCount()).arg(dif));
             SQStatisticsLabel->setVisible(true);
         }
+        actionHide->setChecked(item->isHidden());
         current_db_question = item->name();
-     } else {
-        disableSQ(); clearSQNoFlags(); disableLQTools();
-     }
+    } else {
+    	disableSQ(); clearSQNoFlags(); disableLQTools();
+    }
 }
 
 void MainWindow::applyQuestionChanges()
 {
-     // CHECK NAME
-     QString q_name = SQQuestionNameLineEdit->text();
-     if (current_db_question != q_name) {
+	if (!LQListWidget->currentIndex().isValid()) { return; }
+	QListWidgetItem * q_item = LQListWidget->currentItem();
+	QuestionItem * item = current_db_questions.value(q_item);
+	// CHECK GROUP
+	QString q_group = removeLineBreaks(SQGroupLineEdit->text());
+	int q_flag;
+	if (SQFlagComboBox->count() != 0) {
+		q_flag = SQFlagComboBox->itemData(SQFlagComboBox->currentIndex()).toInt();
+	} else { q_flag = -1; }
+	if (!q_group.isEmpty()) {
+		QMapIterator<QListWidgetItem *, QuestionItem *> q(current_db_questions);
+		while (q.hasNext()) { q.next();
+			if (q.value()->group() == q_group) {
+				if (q.value()->flag() != q_flag) {
+	   	 			QMessageBox::information(this, tr("Apply changes"), tr("This group is used by one or more questions with a different flag.\nPlease choose a different group."));
+	   	 			return;
+	   	 		}
+	   	 	}
+		}
+	}
+	// CHECK FLAG
+	/*if (item->flag() != q_flag && item->flag() != -1) {
+		switch (QMessageBox::information(this, tr("iTestServer"), tr("It is strongly advised against changing the flag of a question.\nConsider duplicating the question and hiding the original instead.\nProceed only if you know what you are doing."), tr("&Change"), tr("Do &not change"), 0, 1)) {
+			case 0: // Change
+				break;
+			case 1: // Do not change
+				q_flag = item->flag();
+				SQFlagComboBox->setCurrentIndex(current_db_flagentries.value(item->flag()));
+				break;
+		}
+	}*/
+	// CHECK NAME
+    QString q_name = removeLineBreaks(SQQuestionNameLineEdit->text());
+    if (current_db_question != q_name) {
         int n = 0;
-        for (int i = 0; i < LQListWidget->count(); ++i) {
+        /*for (int i = 0; i < LQListWidget->count(); ++i) {
           if (LQListWidget->item(i)->text() == q_name) { n++; }
-        }; if (n > 0) { QMessageBox::critical(this, tr("Apply changes"), tr("A question with this name already exists.\nPlease choose a different name.")); return; }
+        }*/
+        QMapIterator<QListWidgetItem *, QuestionItem *> q(current_db_questions);
+        while (q.hasNext()) { q.next();
+        	if (q.value()->name() == q_name) { n++; }
+        }
+        if (n > 0) { QMessageBox::critical(this, tr("Apply changes"), tr("A question with this name already exists.\nPlease choose a different name.")); return; }
 		uint num_old = numOccurrences(current_db_question);
 		uint num_new = numOccurrences(q_name);
 		if (num_new != 0) {
-			switch (QMessageBox::information(this, tr("iTest - Database Editor"), tr("This new name has been used before.\n%1 occurrences of a question with this name found in the saved sessions.\nChanging the name to this one will cause that this question will be used\ninstead of the no longer existent old one.\n%2 occurrences of the old name will also be updated.\nAre you sure you want to change the name?").arg(num_new).arg(num_old), tr("&Change"), tr("Do &not change"), 0, 1)) {
+			switch (QMessageBox::information(this, tr("iTestServer"), tr("This new name has been used before.\n%1 occurrences of a question with this name found in the saved sessions.\nChanging the name to this one will cause that this question will be used\ninstead of the no longer existent old one.\n%2 occurrences of the old name will also be updated.\nAre you sure you want to change the name?").arg(num_new).arg(num_old), tr("&Change"), tr("Do &not change"), 0, 1)) {
 				case 0: // Change
 					replaceAllOccurrences(current_db_question, q_name);
 					break;
@@ -158,7 +198,7 @@ void MainWindow::applyQuestionChanges()
 					break;
 			}
 		} else if (num_old != 0) {
-			switch (QMessageBox::information(this, tr("iTest - Database Editor"), tr("Are you sure you want to change the name of the question?\n%1 occurrences of this question found in the saved sessions.\nAll occurrences will be updated.").arg(num_old), tr("&Change"), tr("Do &not change"), 0, 1)) {
+			switch (QMessageBox::information(this, tr("iTestServer"), tr("Are you sure you want to change the name of the question?\n%1 occurrences of this question found in the saved sessions.\nAll occurrences will be updated.").arg(num_old), tr("&Change"), tr("Do &not change"), 0, 1)) {
 				case 0: // Change
 					replaceAllOccurrences(current_db_question, q_name);
 					break;
@@ -168,119 +208,92 @@ void MainWindow::applyQuestionChanges()
 					break;
 			}
 		}
-     }
-     // SAVE VALUES
-     QListWidgetItem * q_item = LQListWidget->currentItem();
-     QuestionItem * item = current_db_questions.value(q_item);
-     item->setName(q_name);
-     if (SQFlagComboBox->count() != 0) {
-        item->setFlag(SQFlagComboBox->itemData(SQFlagComboBox->currentIndex()).toInt());
-     } else { item->setFlag(-1); }
-     item->setDifficulty(SQDifficultyComboBox->currentIndex());
-     item->setText(removeLineBreaks(SQQuestionTextEdit->toHtml()));
-     // ansa
-     item->setAnsA(SQAnswerALineEdit->text());
-     item->setAnsACorrect(SQCorrectACheckBox->isChecked());
-     // ansb
-     item->setAnsB(SQAnswerBLineEdit->text());
-     item->setAnsBCorrect(SQCorrectBCheckBox->isChecked());
-     // ansc
-     item->setAnsC(SQAnswerCLineEdit->text());
-     item->setAnsCCorrect(SQCorrectCCheckBox->isChecked());
-     // ansd
-     item->setAnsD(SQAnswerDLineEdit->text());
-     item->setAnsDCorrect(SQCorrectDCheckBox->isChecked());
-     // APPLY
-     current_db_question = q_name;
-     q_item->setText(q_name);
-     switch (item->difficulty()) {
-            case 0:
-                q_item->setIcon(QIcon(QString::fromUtf8(":/images/images/easy.png"))); break;
-            case 1:
-                q_item->setIcon(QIcon(QString::fromUtf8(":/images/images/medium.png"))); break;
-            case 2:
-                q_item->setIcon(QIcon(QString::fromUtf8(":/images/images/difficult.png"))); break;
-            default:
-                q_item->setIcon(QIcon(QString::fromUtf8(":/images/images/easy.png"))); break;
-     }
-     setQuestionItemColour(q_item, item->flag());
-     statusBar()->showMessage(tr("Data saved"), 10000);
-     setDatabaseModified();
+    }
+    // SAVE VALUES
+    item->setName(q_name);
+    item->setGroup(q_group);
+    item->setFlag(q_flag);
+    item->setDifficulty(SQDifficultyComboBox->currentIndex());
+    item->setText(removeLineBreaks(SQQuestionTextEdit->toHtml()));
+    // ansa
+    item->setAnsA(removeLineBreaks(SQAnswerALineEdit->text()));
+    item->setAnsACorrect(SQCorrectACheckBox->isChecked());
+    // ansb
+    item->setAnsB(removeLineBreaks(SQAnswerBLineEdit->text()));
+    item->setAnsBCorrect(SQCorrectBCheckBox->isChecked());
+    // ansc
+    item->setAnsC(removeLineBreaks(SQAnswerCLineEdit->text()));
+    item->setAnsCCorrect(SQCorrectCCheckBox->isChecked());
+    // ansd
+    item->setAnsD(removeLineBreaks(SQAnswerDLineEdit->text()));
+    item->setAnsDCorrect(SQCorrectDCheckBox->isChecked());
+    // hidden
+    item->setHidden(actionHide->isChecked());
+    // APPLY
+    current_db_question = q_name;
+    q_item->setText(item->group().isEmpty() ? q_name : QString("[%1] %2").arg(item->group()).arg(q_name));
+    setQuestionItemIcon(q_item, item->difficulty());
+    setQuestionItemColour(q_item, item->flag());
+    hideQuestion(q_item, item);
+    statusBar()->showMessage(tr("Data saved"), 10000);
+    setDatabaseModified();
 }
 
 void MainWindow::discardQuestionChanges()
 {
-     setCurrentQuestion();
-     statusBar()->showMessage(tr("Data discarded"), 10000);
+    setCurrentQuestion();
+    statusBar()->showMessage(tr("Data discarded"), 10000);
+}
+
+void MainWindow::hideQuestion()
+{
+	if (!LQListWidget->currentIndex().isValid()) { return; }
+	QuestionItem * item = NULL; item = current_db_questions.value(LQListWidget->currentItem());
+	if (item == NULL) { return; }
+	item->setHidden(actionHide->isChecked());
+	hideQuestion(LQListWidget->currentItem(), item);
+	setDatabaseModified();
+}
+
+void MainWindow::hideQuestion(QListWidgetItem * q_item, QuestionItem * item)
+{
+	q_item->setHidden(item->isHidden() && !actionShow_hidden->isChecked());
+	q_item->setForeground(QBrush::QBrush(foregroundColourForFlag(item->flag(), item->isHidden())));
+	if (item->isHidden()) {
+		QFont font; font.setBold(true);
+		q_item->setFont(font);
+	} else {
+		QFont font;
+		q_item->setFont(font);
+	}
+}
+
+void MainWindow::setQuestionItemIcon(QListWidgetItem * q_item, int q_difficulty_i)
+{
+	q_item->setIcon(iconForDifficulty(q_difficulty_i));
+}
+
+QIcon MainWindow::iconForDifficulty(int q_difficulty_i)
+{
+	switch (q_difficulty_i) {
+		case 0: return QIcon(QString::fromUtf8(":/images/images/easy.png")); break;
+		case 1: return QIcon(QString::fromUtf8(":/images/images/medium.png")); break;
+		case 2: return QIcon(QString::fromUtf8(":/images/images/difficult.png")); break;
+		default: return QIcon(QString::fromUtf8(":/images/images/easy.png")); break;
+	}
+	return QIcon(QString::fromUtf8(":/images/images/easy.png"));
 }
 
 void MainWindow::setQuestionItemColour(QListWidgetItem * q_item, int q_flag_i)
 {
-     switch (q_flag_i) {
-        case 0: // 0: 255 255 255 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(255, 255, 255)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 1: // 1: 197 255 120 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(197, 255, 120)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 2: // 2: 92 163 0 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(92, 163, 0)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 3: // 3: 69 110 14 - 255 255 255
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(69, 110, 14)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255))); break;
-        case 4: // 4: 17 120 122 - 255 255 255
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(17, 120, 122)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255))); break;
-        case 5: // 5: 0 163 136 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(0, 163, 136)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 6: // 6: 0 147 163 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(0, 147, 163)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 7: // 7: 0 125 163 - 255 255 255
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(0, 125, 163)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255))); break;
-        case 8: // 8: 0 84 163 - 255 255 255
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(0, 84, 163)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255))); break;
-        case 9: // 9: 40 76 110 - 255 255 255
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(40, 76, 110)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255))); break;
-        case 10: // 10: 0 11 163 - 255 255 255
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(0, 11, 163)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255))); break;
-        case 11: // 11: 139 0 163 - 255 255 255
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(139, 0, 163)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255))); break;
-        case 12: // 12: 163 0 79 - 255 255 255
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(163, 0, 79)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255))); break;
-        case 13: // 13: 163 0 0 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(163, 0, 0)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 14: // 14: 255 0 0 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(255, 0, 0)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 15: // 15: 204 109 0 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(204, 109, 0)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 16: // 16: 204 163 0 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(204, 163, 0)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 17: // 17: 201 204 0 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(201, 204, 0)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 18: // 18: 255 251 0 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(255, 251, 0)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        case 19: // 19: 221 255 0 - 0 0 0
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(221, 255, 0)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-        default:
-             q_item->setBackground(QBrush::QBrush(QColor::QColor(255, 255, 255)));
-             q_item->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0))); break;
-     }
+	q_item->setBackground(QBrush::QBrush(backgroundColourForFlag(q_flag_i)));
+	q_item->setForeground(QBrush::QBrush(foregroundColourForFlag(q_flag_i)));
+}
+
+void MainWindow::searchByGroup() {
+	if (SQGroupLineEdit->text().isEmpty()) { return; }
+	LQSearchLineEdit->setText(QString("[%1]").arg(SQGroupLineEdit->text()));
+	filterLQSearch();
 }
 
 void MainWindow::filterLQSearch() { filterLQ(rbtngrpFilterLQ->checkedButton()); }
@@ -307,8 +320,8 @@ void MainWindow::filterLQAction(QAction * act)
 
 void MainWindow::filterLQ(QAbstractButton * rbtn)
 {
-    QuestionItem * item;
-    if (LQSearchLineEdit->text().isEmpty()) {
+    QuestionItem * item; QString keyword = LQSearchLineEdit->text();
+    if (keyword.isEmpty()) {
         LQSearchLineEdit->setPalette(qApp->palette());
     } else {
         LQSearchLineEdit->setPalette(search_active_palette);
@@ -316,58 +329,59 @@ void MainWindow::filterLQ(QAbstractButton * rbtn)
     int n = 0;
     if (rbtn == LQAllRadioButton) {
         for (int i = 0; i < LQListWidget->count(); ++i) {
-            if (!LQSearchLineEdit->text().isEmpty()) {
-                if (LQListWidget->item(i)->text().contains(LQSearchLineEdit->text(), Qt::CaseInsensitive)) {
-                    LQListWidget->item(i)->setHidden(false); n++;
+        	item = current_db_questions.value(LQListWidget->item(i));
+            if (!keyword.isEmpty()) {
+                if (LQListWidget->item(i)->text().contains(keyword, Qt::CaseInsensitive)) {
+                    LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); n++;
                 } else { LQListWidget->item(i)->setHidden(true); }
-            } else { LQListWidget->item(i)->setHidden(false); }
+            } else { LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); }
         }
     } else if (rbtn == LQEasyRadioButton) {
         for (int i = 0; i < LQListWidget->count(); ++i) {
             item = current_db_questions.value(LQListWidget->item(i));
             if (item->difficulty() <= 0) {
-                if (!LQSearchLineEdit->text().isEmpty()) {
-                    if (LQListWidget->item(i)->text().contains(LQSearchLineEdit->text(), Qt::CaseInsensitive)) {
-                        LQListWidget->item(i)->setHidden(false); n++;
+                if (!keyword.isEmpty()) {
+                    if (LQListWidget->item(i)->text().contains(keyword, Qt::CaseInsensitive)) {
+                        LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); n++;
                     } else { LQListWidget->item(i)->setHidden(true); }
-                } else { LQListWidget->item(i)->setHidden(false); }
+                } else { LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); }
             } else { LQListWidget->item(i)->setHidden(true); }
         }
     } else if (rbtn == LQMediumRadioButton) {
         for (int i = 0; i < LQListWidget->count(); ++i) {
             item = current_db_questions.value(LQListWidget->item(i));
             if (item->difficulty() == 1) {
-                if (!LQSearchLineEdit->text().isEmpty()) {
-                    if (LQListWidget->item(i)->text().contains(LQSearchLineEdit->text(), Qt::CaseInsensitive)) {
-                        LQListWidget->item(i)->setHidden(false); n++;
+                if (!keyword.isEmpty()) {
+                    if (LQListWidget->item(i)->text().contains(keyword, Qt::CaseInsensitive)) {
+                        LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); n++;
                     } else { LQListWidget->item(i)->setHidden(true); }
-                } else { LQListWidget->item(i)->setHidden(false); }
+                } else { LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); }
             } else { LQListWidget->item(i)->setHidden(true); }
         }
     } else if (rbtn == LQDifficultRadioButton) {
         for (int i = 0; i < LQListWidget->count(); ++i) {
             item = current_db_questions.value(LQListWidget->item(i));
             if (item->difficulty() == 2) {
-                if (!LQSearchLineEdit->text().isEmpty()) {
-                    if (LQListWidget->item(i)->text().contains(LQSearchLineEdit->text(), Qt::CaseInsensitive)) {
-                        LQListWidget->item(i)->setHidden(false); n++;
+                if (!keyword.isEmpty()) {
+                    if (LQListWidget->item(i)->text().contains(keyword, Qt::CaseInsensitive)) {
+                        LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); n++;
                     } else { LQListWidget->item(i)->setHidden(true); }
-                } else { LQListWidget->item(i)->setHidden(false); }
+                } else { LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); }
             } else { LQListWidget->item(i)->setHidden(true); }
         }
     } else if (rbtn == LQFlagRadioButton) {
         for (int i = 0; i < LQListWidget->count(); ++i) {
             item = current_db_questions.value(LQListWidget->item(i));
             if (current_db_flagentries.value(item->flag()) == LQFlagComboBox->currentIndex()) {
-                if (!LQSearchLineEdit->text().isEmpty()) {
-                    if (LQListWidget->item(i)->text().contains(LQSearchLineEdit->text(), Qt::CaseInsensitive)) {
-                        LQListWidget->item(i)->setHidden(false); n++;
+                if (!keyword.isEmpty()) {
+                    if (LQListWidget->item(i)->text().contains(keyword, Qt::CaseInsensitive)) {
+                        LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); n++;
                     } else { LQListWidget->item(i)->setHidden(true); }
-                } else { LQListWidget->item(i)->setHidden(false); }
+                } else { LQListWidget->item(i)->setHidden(item->isHidden() && !actionShow_hidden->isChecked()); }
             } else { LQListWidget->item(i)->setHidden(true); }
         }
     }
-    if ((!LQSearchLineEdit->text().isEmpty()) && LQListWidget->count() != 0 && n == 0) {
+    if ((!keyword.isEmpty()) && LQListWidget->count() != 0 && n == 0) {
         LQSearchLineEdit->setPalette(search_noresults_palette);
     }
 }
@@ -462,6 +476,7 @@ void MainWindow::adjustQuestionDifficulty()
 	if (rdif >= 0 && rdif <= 2) {
 		item->setDifficulty(rdif);
 		SQDifficultyComboBox->setCurrentIndex(rdif);
+		setQuestionItemIcon(LQListWidget->currentItem(), item->difficulty());
 		setDatabaseModified();
 	}
 }

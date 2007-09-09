@@ -7,7 +7,7 @@ void MainWindow::errorInvalidDBFile(QString parentFunction, QString fileName)
 	this->setEnabled(true);
 }
 
-void MainWindow::errorInvalidTempFileFormat(QString parentFunction, QString fileName)
+/*void MainWindow::errorInvalidTempFileFormat(QString parentFunction, QString fileName)
 {
     QMessageBox::critical(this, parentFunction, tr("Invalid format of temporary file %1").arg(fileName));
 }
@@ -20,7 +20,7 @@ void MainWindow::errorRWTempFile(QString parentFunction, QString rw, QString q_f
 void MainWindow::errorInvalidTempFileFormat_SpecialChars(QString parentFunction, QString fileName)
 {
     QMessageBox::critical(this, parentFunction, tr("Invalid format of temporary file %1\nPlease do not use any special characters.\nIf this is the case, try again omitting these.").arg(fileName));
-}
+}*/
 
 void MainWindow::setProgress(int progress)
 {
@@ -67,6 +67,7 @@ void MainWindow::clearSQ()
 void MainWindow::clearSQNoFlags()
 {
     SQQuestionNameLineEdit->clear();
+    SQGroupLineEdit->clear();
     SQDifficultyComboBox->setCurrentIndex(0);
     SQQuestionTextEdit->clear();
     SQAnswerALineEdit->clear();
@@ -100,7 +101,7 @@ void MainWindow::enableAll()
     actionEdit_comments->setEnabled(true);
     actionSaved_sessions->setEnabled(true);
     actionShow_DBI->setEnabled(true);
-	actionOverall_statistics->setEnabled(true);
+//	actionOverall_statistics->setEnabled(true);
 
     DBIDatabaseNameLineEdit->setEnabled(true);
 //  DBIDateEdit->setEnabled(true);
@@ -110,34 +111,44 @@ void MainWindow::enableAll()
     LQSearchLineEdit->setEnabled(true);
     btnAdd->setEnabled(true);
     actionAdd->setEnabled(true);
-    actionUse_last_save_date->setEnabled(true);
-    actionFrom_A_to_Z->setEnabled(true);
-    actionFrom_Z_to_A->setEnabled(true);
-    actionShow_all->setEnabled(true);
-    actionShow_easy->setEnabled(true);
-    actionShow_medium->setEnabled(true);
-    actionShow_difficult->setEnabled(true);
-    actionShow_flag->setEnabled(true);
+//  actionUse_last_save_date->setEnabled(true);
+//  actionFrom_A_to_Z->setEnabled(true);
+//  actionFrom_Z_to_A->setEnabled(true);
+//  actionShow_all->setEnabled(true);
+//  actionShow_easy->setEnabled(true);
+//  actionShow_medium->setEnabled(true);
+//  actionShow_difficult->setEnabled(true);
+//  actionShow_flag->setEnabled(true);
+    
+    menuDatabase->setEnabled(true);
+    menuQuestion->setEnabled(true);
+    menuServer->setEnabled(true);
+    menuSession->setEnabled(true);
+    
 //  enableSQ();
 //  enableLQTools();
 }
 
 void MainWindow::enableEQTools()
 {
-    actionAdd->setEnabled(true);
-    actionFrom_A_to_Z->setEnabled(true);
-    actionFrom_Z_to_A->setEnabled(true);
-    actionShow_all->setEnabled(true);
-    actionShow_easy->setEnabled(true);
-    actionShow_medium->setEnabled(true);
-    actionShow_difficult->setEnabled(true);
-    actionShow_flag->setEnabled(true);
+    menuQuestion->setEnabled(true);
+	actionAdd->setEnabled(true);
+//  actionFrom_A_to_Z->setEnabled(true);
+//  actionFrom_Z_to_A->setEnabled(true);
+    menuSort_questions->setEnabled(true);
+//  actionShow_all->setEnabled(true);
+//  actionShow_easy->setEnabled(true);
+//  actionShow_medium->setEnabled(true);
+//  actionShow_difficult->setEnabled(true);
+//  actionShow_flag->setEnabled(true);
+    menuFilter_LQ->setEnabled(true);
     if (LQListWidget->currentIndex().isValid()) {enableLQTools(); enableSQ();}
 }
 
 void MainWindow::enableSQ()
 {
 /*  SQQuestionNameLineEdit->setEnabled(true);
+    SQGroupLineEdit->setEnabled(true);
     SQFlagComboBox->setEnabled(true);
     SQDifficultyComboBox->setEnabled(true);
     SQQuestionTextEdit->setEnabled(true);
@@ -181,7 +192,7 @@ void MainWindow::disableAll()
     actionEdit_comments->setEnabled(false);
     actionSaved_sessions->setEnabled(false);
     actionShow_DBI->setEnabled(false);
-	actionOverall_statistics->setEnabled(false);
+//	actionOverall_statistics->setEnabled(false);
 
     DBIDatabaseNameLineEdit->setEnabled(false);
 	DBIDateEdit->setEnabled(false);
@@ -191,34 +202,44 @@ void MainWindow::disableAll()
 	LQSearchLineEdit->setEnabled(false);
 	btnAdd->setEnabled(false);
 	actionAdd->setEnabled(false);
-	actionUse_last_save_date->setEnabled(false);
-	actionFrom_A_to_Z->setEnabled(false);
-    actionFrom_Z_to_A->setEnabled(false);
-    actionShow_all->setEnabled(false);
-    actionShow_easy->setEnabled(false);
-    actionShow_medium->setEnabled(false);
-    actionShow_difficult->setEnabled(false);
-    actionShow_flag->setEnabled(false);
+//	actionUse_last_save_date->setEnabled(false);
+//	actionFrom_A_to_Z->setEnabled(false);
+//  actionFrom_Z_to_A->setEnabled(false);
+//  actionShow_all->setEnabled(false);
+//  actionShow_easy->setEnabled(false);
+//  actionShow_medium->setEnabled(false);
+//  actionShow_difficult->setEnabled(false);
+//  actionShow_flag->setEnabled(false);
+	
+	menuDatabase->setEnabled(false);
+	menuQuestion->setEnabled(false);
+	menuServer->setEnabled(false);
+	menuSession->setEnabled(false);
+	
 	disableSQ();
 	disableLQTools();
 }
 
 void MainWindow::disableEQTools()
 {
-    actionAdd->setEnabled(false);
-    actionFrom_A_to_Z->setEnabled(false);
-    actionFrom_Z_to_A->setEnabled(false);
-    actionShow_all->setEnabled(false);
-    actionShow_easy->setEnabled(false);
-    actionShow_medium->setEnabled(false);
-    actionShow_difficult->setEnabled(false);
-    actionShow_flag->setEnabled(false);
+    menuQuestion->setEnabled(false);
+	actionAdd->setEnabled(false);
+//  actionFrom_A_to_Z->setEnabled(false);
+//  actionFrom_Z_to_A->setEnabled(false);
+    menuSort_questions->setEnabled(false);
+//  actionShow_all->setEnabled(false);
+//  actionShow_easy->setEnabled(false);
+//  actionShow_medium->setEnabled(false);
+//  actionShow_difficult->setEnabled(false);
+//  actionShow_flag->setEnabled(false);
+    menuFilter_LQ->setEnabled(false);
     disableLQTools(); disableSQ();
 }
 
 void MainWindow::disableSQ()
 {
 /*	SQQuestionNameLineEdit->setEnabled(false);
+    SQGroupLineEdit->setEnabled(false);
 	SQFlagComboBox->setEnabled(false);
 	SQDifficultyComboBox->setEnabled(false);
 	SQQuestionTextEdit->setEnabled(false);
@@ -261,6 +282,7 @@ void MainWindow::enableLQTools()
 	btnDelete->setEnabled(true);
 	actionDuplicate->setEnabled(true);
 	btnDuplicate->setEnabled(true);
+	actionHide->setEnabled(true);
 }
 
 void MainWindow::disableLQTools()
@@ -275,6 +297,7 @@ void MainWindow::disableLQTools()
 	btnDelete->setEnabled(false);
 	actionDuplicate->setEnabled(false);
 	btnDuplicate->setEnabled(false);
+	actionHide->setEnabled(false);
 }
 
 void MainWindow::clearAll()
@@ -303,6 +326,16 @@ MainWindow::MainWindow()
 	http = new QHttp(this);
 	http_buffer = new QBuffer(this);
 	default_printer = NULL;
+#ifdef Q_WS_MAC
+	this->setUnifiedTitleAndToolBarOnMac(true);
+	//this->setAttribute(Qt::WA_MacBrushedMetal);
+	DBIGroupBox->setMinimumSize(649, 60);
+	DBIGroupBox->setMaximumSize(16777215, 60);
+	VSSCSGroupBox->setMinimumSize(0, 80);
+	VSSCSGroupBox->setMaximumSize(16777215, 80);
+	SMInfoGroupBox->setMinimumSize(0, 60);
+	SMInfoGroupBox->setMaximumSize(16777215, 60);
+#endif
 	progressBar = new QProgressBar(this);
 	progressBar->setTextVisible(false);
     progressBar->resize(QSize(30, 10));
@@ -369,6 +402,8 @@ MainWindow::MainWindow()
     QObject::connect(btnMoveDown, SIGNAL(released()), this, SLOT(moveDown()));
     QObject::connect(actionMove_to_top, SIGNAL(triggered()), this, SLOT(moveToTop()));
     QObject::connect(actionMove_to_bottom, SIGNAL(triggered()), this, SLOT(moveToBottom()));
+    QObject::connect(actionHide, SIGNAL(triggered()), this, SLOT(hideQuestion()));
+    QObject::connect(actionShow_hidden, SIGNAL(triggered()), this, SLOT(filterLQSearch()));
     
     rbtngrpFilterLQ = new QButtonGroup (this);
     rbtngrpFilterLQ->addButton(LQAllRadioButton);
@@ -388,6 +423,7 @@ MainWindow::MainWindow()
     QObject::connect(actgrpFilterLQ, SIGNAL(triggered(QAction *)), this, SLOT(filterLQAction(QAction *)));
     QObject::connect(LQFlagComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(filterLQFlagChanged()));
     QObject::connect(LQSearchLineEdit, SIGNAL(textEdited(const QString &)), this, SLOT(filterLQSearch()));
+    QObject::connect(tbtnSearchByGroup, SIGNAL(released()), this, SLOT(searchByGroup()));
     
     actgrpPage = new QActionGroup (this);
     actgrpPage->addAction(actionEdit_questions);
@@ -398,8 +434,8 @@ MainWindow::MainWindow()
     
     QObject::connect(actgrpPage, SIGNAL(triggered(QAction *)), this, SLOT(setPage(QAction *)));
     
-    QObject::connect(btnApply, SIGNAL(released()), this, SLOT(setDatabaseModified()));
-    QObject::connect(actionApply, SIGNAL(triggered()), this, SLOT(setDatabaseModified()));
+    //QObject::connect(btnApply, SIGNAL(released()), this, SLOT(setDatabaseModified()));
+    //QObject::connect(actionApply, SIGNAL(triggered()), this, SLOT(setDatabaseModified()));
     QObject::connect(actionUse_last_save_date, SIGNAL(triggered()), this, SLOT(setDatabaseModified()));
     QObject::connect(DBIUseLastSaveDateCheckBox, SIGNAL(released()), this, SLOT(setDatabaseModified()));
     QObject::connect(ECTextEdit, SIGNAL(textChanged()), this, SLOT(setDatabaseModified()));
@@ -467,6 +503,7 @@ void MainWindow::loadSettings()
     this->move(settings.value("editor/pos", this->pos()).toPoint());
     this->resize(settings.value("editor/size", this->size()).toSize());
     onInfoDisplayChange(settings.value("editor/showDBI", false).toBool());
+    actionShow_hidden->setChecked(settings.value("editor/showHidden", false).toBool());
 }
 
 void MainWindow::saveSettings()
@@ -479,6 +516,7 @@ void MainWindow::saveSettings()
     settings.setValue("editor/pos", this->pos());
     settings.setValue("editor/size", this->size());
     settings.setValue("editor/showDBI", showInfoCheckBox->isChecked());
+    settings.setValue("editor/showHidden", actionShow_hidden->isChecked());
 }
 
 void MainWindow::addRecent(QString name)
@@ -522,39 +560,45 @@ void MainWindow::onInfoDisplayChange(bool show)
 void MainWindow::updateGeometry()
 {
 #ifdef Q_WS_MAC
-    int h = toolBar->height() + statusbar->height();
+    int h = statusbar->height(); int i = 20;
 #else
-    int h = menubar->height() + toolBar->height() + statusbar->height();
+    int h = menubar->height() + toolBar->height() + statusbar->height(); int i = 10;
 #endif
     mainStackedWidget->setGeometry(0, 0, this->geometry().width(), this->geometry().height()-h);
 	welcomeGridLayout->setGeometry(0, 0, this->geometry().width(), this->geometry().height()-h);
 	mainGridLayout->setGeometry(0, 0, this->geometry().width(), this->geometry().height()-h);
-	LQGridLayout->setGeometry(0, 10, LQGroupBox->geometry().width(), LQGroupBox->geometry().height()-10);
-	SQGridLayout->setGeometry(0, 10, SQGroupBox->geometry().width(), SQGroupBox->geometry().height()-10);
-	DBIHorizontalLayout->setGeometry(0, 10, DBIGroupBox->geometry().width(), DBIGroupBox->geometry().height()-10);
+	LQGridLayout->setGeometry(0, i, LQGroupBox->geometry().width(), LQGroupBox->geometry().height()-i);
+	SQGridLayout->setGeometry(0, i, SQGroupBox->geometry().width(), SQGroupBox->geometry().height()-i);
+	DBIHorizontalLayout->setGeometry(0, i, DBIGroupBox->geometry().width(), DBIGroupBox->geometry().height()-i);
 	editCommentsGridLayout->setGeometry(0, 0, this->geometry().width(), this->geometry().height()-h);
 	editFlagsGridLayout->setGeometry(0, 0, this->geometry().width(), this->geometry().height()-h);
 	testSettingsGridLayout->setGeometry(0, 0, this->geometry().width(), this->geometry().height()-h);
-	TSAdvancedSetupGridLayout->setGeometry(0, 10, TSAdvancedSetupGroupBox->geometry().width(), TSAdvancedSetupGroupBox->geometry().height()-10);
+	TSAdvancedSetupGridLayout->setGeometry(0, i, TSAdvancedSetupGroupBox->geometry().width(), TSAdvancedSetupGroupBox->geometry().height()-i);
 	TSCommonSettingsGridLayout->setGeometry(0, 0, TSCommonSettingsGroupBox->geometry().width(), TSCommonSettingsGroupBox->geometry().height());
 	serverModeGridLayout->setGeometry(0, 0, this->geometry().width(), this->geometry().height()-h);
-	SMInfoGridLayout->setGeometry(0, 10, SMInfoGroupBox->geometry().width(), SMInfoGroupBox->geometry().height()-10);
-	SMClientsGridLayout->setGeometry(0, 10, SMClientsGroupBox->geometry().width(), SMClientsGroupBox->geometry().height()-10);
-	SMSelectedClientGridLayout->setGeometry(0, 10, SMSelectedClientGroupBox->geometry().width(), SMSelectedClientGroupBox->geometry().height()-10);
-	SMLogGridLayout->setGeometry(0, 10, SMLogGroupBox->geometry().width(), SMLogGroupBox->geometry().height()-10);
+	SMInfoGridLayout->setGeometry(0, i, SMInfoGroupBox->geometry().width(), SMInfoGroupBox->geometry().height()-i);
+	SMClientsGridLayout->setGeometry(0, i, SMClientsGroupBox->geometry().width(), SMClientsGroupBox->geometry().height()-i);
+	SMSelectedClientGridLayout->setGeometry(0, i, SMSelectedClientGroupBox->geometry().width(), SMSelectedClientGroupBox->geometry().height()-i);
+	SMLogGridLayout->setGeometry(0, i, SMLogGroupBox->geometry().width(), SMLogGroupBox->geometry().height()-i);
 	savedSessionsGridLayout->setGeometry(0, 0, this->geometry().width(), this->geometry().height()-h);
-	VSSLSGridLayout->setGeometry(0, 10, VSSLSGroupBox->geometry().width(), VSSLSGroupBox->geometry().height()-10);
-	VSSCSGridLayout->setGeometry(0, 10, VSSCSGroupBox->geometry().width(), VSSCSGroupBox->geometry().height()-10);
-	VSSClientsGridLayout->setGeometry(0, 10, VSSClientsGroupBox->geometry().width(), VSSClientsGroupBox->geometry().height()-10);
-	VSSSelectedClientGridLayout->setGeometry(0, 10, VSSSelectedClientGroupBox->geometry().width(), VSSSelectedClientGroupBox->geometry().height()-10);
-	VSSLogGridLayout->setGeometry(0, 10, VSSLogGroupBox->geometry().width(), VSSLogGroupBox->geometry().height()-10);
+	VSSLSGridLayout->setGeometry(0, i, VSSLSGroupBox->geometry().width(), VSSLSGroupBox->geometry().height()-i);
+	VSSCSGridLayout->setGeometry(0, i, VSSCSGroupBox->geometry().width(), VSSCSGroupBox->geometry().height()-i);
+	updateVSSGeometry(); updateTSTWGeometry(); updatePMDTWGeometry();
 }
 
 void MainWindow::updateVSSGeometry()
 {
-	VSSClientsGridLayout->setGeometry(0, 10, VSSClientsGroupBox->geometry().width(), VSSClientsGroupBox->geometry().height()-10);
-	VSSSelectedClientGridLayout->setGeometry(0, 10, VSSSelectedClientGroupBox->geometry().width(), VSSSelectedClientGroupBox->geometry().height()-10);
-	VSSLogGridLayout->setGeometry(0, 10, VSSLogGroupBox->geometry().width(), VSSLogGroupBox->geometry().height()-10);
+#ifdef Q_WS_MAC
+    int i = 20;
+#else
+    int i = 10;
+#endif
+	VSSClientsGridLayout->setGeometry(0, i, VSSClientsGroupBox->geometry().width(), VSSClientsGroupBox->geometry().height()-i);
+	VSSSelectedClientGroupBox->setGeometry(0, 0, VSSStackedWidget->geometry().width(), VSSStackedWidget->geometry().height());
+	VSSSelectedClientGridLayout->setGeometry(0, i, VSSSelectedClientGroupBox->geometry().width(), VSSSelectedClientGroupBox->geometry().height()-i);
+	VSSPassMarkDetailsGroupBox->setGeometry(0, 0, VSSStackedWidget->geometry().width(), VSSStackedWidget->geometry().height());
+	VSSPassMarkDetailsGridLayout->setGeometry(0, i, VSSPassMarkDetailsGroupBox->geometry().width(), VSSPassMarkDetailsGroupBox->geometry().height()-i);
+	VSSLogGridLayout->setGeometry(0, i, VSSLogGroupBox->geometry().width(), VSSLogGroupBox->geometry().height()-i);
 }
 
 void MainWindow::closeEvent(QCloseEvent *event)
@@ -619,7 +663,7 @@ void MainWindow::httpRequestFinished(bool error)
 
 void MainWindow::openDocumentation()
 {
-    QDesktopServices ds; ds.openUrl(docs_url);
+    QDesktopServices::openUrl(docs_url);
 }
 
 uint MainWindow::searchListWidgetItems(QString keyword, QListWidget * lw, QLineEdit * le)
@@ -636,6 +680,25 @@ uint MainWindow::searchListWidgetItems(QString keyword, QListWidget * lw, QLineE
 		} else { lw->item(i)->setHidden(true); }
 	}
 	if ((!keyword.isEmpty()) && lw->count() != 0 && n == 0) {
+		le->setPalette(search_noresults_palette);
+	}
+	return n;
+}
+
+uint MainWindow::searchTableWidgetItems(QString keyword, QTableWidget * tw, QLineEdit * le)
+{
+	if (keyword.isEmpty()) {
+		le->setPalette(qApp->palette());
+	} else {
+		le->setPalette(search_active_palette);
+	}
+	uint n = 0;
+	for (int i = 0; i < tw->rowCount(); ++i) {
+		if (tw->item(i, 0)->text().contains(keyword, Qt::CaseInsensitive)) {
+			tw->showRow(i); n++;
+		} else { tw->hideRow(i); }
+	}
+	if ((!keyword.isEmpty()) && tw->rowCount() != 0 && n == 0) {
 		le->setPalette(search_noresults_palette);
 	}
 	return n;
@@ -694,7 +757,9 @@ void MainWindow::overallStatistics()
 	for (int i = 0; i < LQListWidget->count(); ++i) {
 		q_item = current_db_questions.value(LQListWidget->item(i));
 		if (q_item->recommendedDifficulty() == -1) { continue; }
-		tw_item = new QTableWidgetItem(q_item->name());
+		tw_item = new QTableWidgetItem(q_item->group().isEmpty() ? q_item->name() : QString("[%1] %2").arg(q_item->group()).arg(q_item->name()));
+		tw_item->setBackground(QBrush::QBrush(backgroundColourForFlag(q_item->flag())));
+		tw_item->setForeground(QBrush::QBrush(foregroundColourForFlag(q_item->flag())));
 		tw_item->setFont(font);
 		stats_tw->setItem(row, 0, tw_item);
 		tw_item = new QTableWidgetItem;
@@ -753,7 +818,7 @@ void MainWindow::overallStatistics()
 		}
 		row++;
 	}
-	stats_tw->resizeRowsToContents(); stats_tw->resizeColumnsToContents();
+	stats_tw->resizeColumnsToContents(); stats_tw->resizeRowsToContents();
 	stats_widget->resize(stats_tw->columnWidth(0) + stats_tw->columnWidth(1) + stats_tw->columnWidth(2) + stats_tw->columnWidth(3) + stats_tw->columnWidth(4) + stats_tw->columnWidth(5) + 40, 400);
 	stats_widget->show();
 }
@@ -807,16 +872,7 @@ void MainWindow::statsAdjust(QAbstractButton * btn)
 		if (i == -1) { return; }
 		QListWidgetItem * lw_item = LQListWidget->item(i);
 		if (lw_item == NULL) { return; }
-		switch (rdif) {
-			case 0:
-				lw_item->setIcon(QIcon(QString::fromUtf8(":/images/images/easy.png"))); break;
-			case 1:
-				lw_item->setIcon(QIcon(QString::fromUtf8(":/images/images/medium.png"))); break;
-			case 2:
-				lw_item->setIcon(QIcon(QString::fromUtf8(":/images/images/difficult.png"))); break;
-			default:
-				lw_item->setIcon(QIcon(QString::fromUtf8(":/images/images/easy.png"))); break;
-		}
+		setQuestionItemIcon(lw_item, rdif);
 	}
 }
 
@@ -838,41 +894,38 @@ void MainWindow::changeLanguage()
 	QLabel * lang_label = new QLabel(lang_widget);
 	lang_label->setText(tr("Select your preferred language"));
 	lang_glayout->addWidget(lang_label, 0, 0);
-	rbtngrpLang = new QButtonGroup(lang_widget);
-	QRadioButton * lang_rbtn;
+	langComboBox = new QComboBox(lang_widget);
 	QStringList langs(itest_i18n.values()); langs.sort();
 	for (int i = 0; i < langs.count(); ++i) {
-		lang_rbtn = new QRadioButton(tr(QByteArray().append(langs.at(i)).constData()), lang_widget);
-		if (langs.at(i) == "English") { lang_rbtn->setChecked(true); }
-		else { lang_rbtn->setChecked(false); }
-		rbtngrpLang->addButton(lang_rbtn);
-		lang_glayout->addWidget(lang_rbtn, i + 1, 0);
+		langComboBox->addItem(tr(QByteArray().append(langs.at(i)).constData()), lang_widget);
+		if (langs.at(i) == "English") { langComboBox->setCurrentIndex(i); }
 	}
-	QDialogButtonBox * lang_buttonbox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+	lang_glayout->addWidget(langComboBox, 1, 0);
+	QDialogButtonBox * lang_buttonbox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, Qt::Horizontal, lang_widget);
 	QObject::connect(lang_buttonbox, SIGNAL(accepted()), this, SLOT(langChanged()));
 	QObject::connect(lang_buttonbox, SIGNAL(rejected()), lang_widget, SLOT(close()));
-	lang_glayout->addWidget(lang_buttonbox, langs.count() + 1, 0);
+	lang_glayout->addWidget(lang_buttonbox, 2, 0);
 	lang_widget->show();
 }
 
 void MainWindow::langChanged()
 {
-	if (rbtngrpLang == NULL) { return; }
-	QString lang = itest_i18n.value(rbtngrpLang->checkedButton()->text(), rbtngrpLang->checkedButton()->text());
+	if (langComboBox == NULL) { return; }
+	QString lang = itest_i18n.value(langComboBox->currentText(), langComboBox->currentText());
 	QSettings settings("Michal Tomlein", "iTest");
 	QString current_lang = settings.value("lang", "English").toString();
 	if (current_lang != lang) {
 		settings.setValue("lang", lang);
 		QMessageBox::information(this, tr("iTest"), tr("You need to restart iTest for the changes to apply."));
 	}
-	if (rbtngrpLang->parent() == NULL) { return; }
-	QWidget * lang_widget = (QWidget *)rbtngrpLang->parent();
+	if (langComboBox->parent() == NULL) { return; }
+	QWidget * lang_widget = (QWidget *)langComboBox->parent();
 	lang_widget->close();
 }
 
 void MainWindow::about()
 {
-    AboutWidget * itest_about = new AboutWidget(ver, QString("4.3.0"), QString("2007"));
+    AboutWidget * itest_about = new AboutWidget(ver, QString("4.3.1"), QString("2007"));
     itest_about->setWindowFlags(Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/ | Qt::WindowStaysOnTopHint);
 	itest_about->show();
 }

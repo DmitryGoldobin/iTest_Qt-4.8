@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle" >
-   <string>iTest - Test Writer</string>
+   <string>iTestClient</string>
   </property>
   <property name="windowIcon" >
    <iconset resource="resources.qrc" >:/images/images/itestwri.png</iconset>
@@ -461,6 +461,11 @@
            </row>
            <row>
             <property name="text" >
+             <string>Pass mark</string>
+            </property>
+           </row>
+           <row>
+            <property name="text" >
              <string>Comments</string>
             </property>
            </row>
@@ -712,13 +717,13 @@
         <widget class="QFrame" name="welcomeFrame" >
          <property name="minimumSize" >
           <size>
-           <width>471</width>
+           <width>501</width>
            <height>204</height>
           </size>
          </property>
          <property name="maximumSize" >
           <size>
-           <width>471</width>
+           <width>501</width>
            <height>204</height>
           </size>
          </property>
@@ -733,7 +738,7 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>471</width>
+            <width>501</width>
             <height>203</height>
            </rect>
           </property>
@@ -1509,6 +1514,22 @@
          <property name="bottomMargin" >
           <number>0</number>
          </property>
+         <item>
+          <widget class="QPushButton" name="btnNewTest" >
+           <property name="text" >
+            <string>New test</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="resources.qrc" >:/images/images/reload.png</iconset>
+           </property>
+           <property name="iconSize" >
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
          <item>
           <spacer>
            <property name="orientation" >

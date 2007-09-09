@@ -23,7 +23,9 @@ public slots:
     void setReady(bool); bool isReady();
     void setResults(QMap<QString, QuestionAnswer> *);
     QMap<QString, QuestionAnswer> * results();
-    /*bool loadStudentData(QString);*/ QString studentData();
+    void setPassed(bool); bool passed();
+    /*bool loadStudentData(QString);*/
+    QString studentData(); QString studentArchiveData();
     bool wasAsked(QString); uint replaceOccurrences(QString, QString);
 
 private:
@@ -32,6 +34,7 @@ private:
     bool s_ready;
     QMap<QString, QuestionAnswer> * s_results;
     int s_number;
+    bool s_passed;
 };
 
 #endif // STUDENT_H

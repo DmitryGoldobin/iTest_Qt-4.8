@@ -32,30 +32,24 @@
         <file>images/itest32.png</file>
         <file>images/itestserver32.png</file>
         <file>images/itestwri.png</file>
+        <file>images/itestwri32.png</file>
         <file>images/locale.png</file>
         <file>images/log.png</file>
         <file>images/medium.png</file>
         <file>images/player_play.png</file>
         <file>images/player_stop.png</file>
+        <file>images/print_folder.png</file>
         <file>images/qt4.png</file>
         <file>images/quit.png</file>
         <file>images/reload.png</file>
         <file>images/restore.png</file>
+        <file>images/save_all.png</file>
+        <file>images/savebackup.png</file>
         <file>images/savedsessions32.png</file>
         <file>images/sort_ascending.png</file>
         <file>images/sort_descending.png</file>
         <file>images/statistics.png</file>
-        <file>images/textbold.png</file>
-        <file>images/textcenter.png</file>
-        <file>images/textitalic.png</file>
-        <file>images/textjustify.png</file>
-        <file>images/textleft.png</file>
-        <file>images/textright.png</file>
-        <file>images/textunder.png</file>
         <file>images/top.png</file>
         <file>images/up.png</file>
-        <file>images/save_all.png</file>
-        <file>images/print_folder.png</file>
-        <file>images/savebackup.png</file>
     </qresource>
 </RCC>

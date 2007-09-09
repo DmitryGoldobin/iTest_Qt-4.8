@@ -8,9 +8,9 @@ void MainWindow::connectSocket()
     test_loaded = false;
     num_entries = 0;
     current_entry = 0;
+    current_connection_local = (serverNameLineEdit->text() == "Localhost" || serverNameLineEdit->text() == "localhost");
     tcpSocket->abort();
-    tcpSocket->connectToHost(serverNameLineEdit->text(),
-                             serverPortLineEdit->text().toInt());
+    tcpSocket->connectToHost(serverNameLineEdit->text(), serverPortLineEdit->text().toInt());
     if (progress_dialog != NULL) delete progress_dialog;
     progress_dialog = new QProgressDialog (this);
     progress_dialog->setLabelText(tr("Retrieving test data..."));
@@ -208,7 +208,7 @@ void MainWindow::saveResults()
         }
     }
     loadResults(current_test_results, resultsTableWidget);
-    scoreLabel->setText(tr("%1 out of %2").arg(current_test_score).arg(LQListWidget->count()));
+    scoreLabel->setText(tr("%1 out of %2 (%3)").arg(current_test_score).arg(LQListWidget->count()).arg(current_test_passmark.check(current_test_results, &current_test_questions) ? tr("PASSED") : tr("FAILED")));
 }
 
 void MainWindow::loadResults(QMap<QString, QuestionAnswer> * results, QTableWidget * tw)
@@ -260,19 +260,19 @@ void MainWindow::displayError(QAbstractSocket::SocketError socketError)
         case QAbstractSocket::RemoteHostClosedError:
             break;
         case QAbstractSocket::HostNotFoundError:
-            QMessageBox::information(this, tr("iTest - Test Writer"),
+            QMessageBox::information(this, tr("iTestClient"),
                                      tr("The host was not found. Please check the "
                                         "host name and port settings."));
             break;
         case QAbstractSocket::ConnectionRefusedError:
-            QMessageBox::information(this, tr("iTest - Test Writer"),
+            QMessageBox::information(this, tr("iTestClient"),
                                      tr("The connection was refused by the peer. "
                                         "Make sure the iTest server is running, "
                                          "and check that the host name and port "
                                         "settings are correct."));
             break;
         default:
-            QMessageBox::information(this, tr("iTest - Test Writer"),
+            QMessageBox::information(this, tr("iTestClient"),
                                      tr("The following error occurred: %1.")
                                      .arg(tcpSocket->errorString()));
     }
