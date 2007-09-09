@@ -31,6 +31,7 @@ SOURCES      += main.cpp \
                 pass_mark.cpp
 QT           += network
 win32 {
+DESTDIR       = ../
 RC_FILE       = itest.rc
 OBJECTS_DIR   = .objects.win32/
 MOC_DIR       = .moc.win32/
@@ -68,7 +69,6 @@ QMAKE_CXX     = apg++
 }
 }
 }
-DESTDIR       = ../
 TRANSLATIONS += i18n/Slovak.ts \
                 i18n/Russian.ts \
                 i18n/Turkish.ts \
