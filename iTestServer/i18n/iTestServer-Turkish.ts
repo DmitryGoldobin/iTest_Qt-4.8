@@ -2733,137 +2733,137 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../main_window.cpp" line="896"/>
         <source>%1 - Print questions - iTest</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - Soruları yazdır - iTest</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="922"/>
         <source>&lt;b&gt;Do not print:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Yazdırma:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="951"/>
         <source>&lt;b&gt;Print:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Yazdır:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="970"/>
         <source>&amp;Add all</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tümünü ekle</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="983"/>
         <source>Print statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>İstatistikleri yazdır</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="986"/>
         <source>Print formatted questions</source>
-        <translation type="unfinished"></translation>
+        <translation>Biçimlendirilmiş soruları yazdır</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="989"/>
         <source>Print a test (do not highlight the correct answers)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bir testi yazdır (doğru yanıtları vurgulama)</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="994"/>
         <source>Print graphics</source>
-        <translation type="unfinished"></translation>
+        <translation>Grafikleri yazdır</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3194"/>
         <source>Attachments (SVG):</source>
-        <translation type="unfinished"></translation>
+        <translation>Eklentiler (SVG):</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3195"/>
         <source>Add SVG</source>
-        <translation type="unfinished"></translation>
+        <translation>SVG Ekle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3196"/>
         <source>Add an attachment</source>
-        <translation type="unfinished"></translation>
+        <translation>Bir eklenti ekle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3198"/>
         <source>Remove SVG</source>
-        <translation type="unfinished"></translation>
+        <translation>SVG Sil</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3199"/>
         <source>Remove the selected attachment</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen eklentiyi sil</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3200"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Sil</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3201"/>
         <source>Edit SVG</source>
-        <translation type="unfinished"></translation>
+        <translation>SVG Düzenle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3202"/>
         <source>Edit the selected attachment</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen eklentiyi düzenle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3203"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Düzenle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3204"/>
         <source>Export SVG</source>
-        <translation type="unfinished"></translation>
+        <translation>SVG Dışarı Aktar</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3205"/>
         <source>Export the selected attachment</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen eklentileri dışarı aktar</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3206"/>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Dışarı aktar</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3207"/>
         <source>Attachments of the selected question</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sorunun eklentileri</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3453"/>
         <source>Attachments</source>
-        <translation type="unfinished"></translation>
+        <translation>Eklentiler</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3069"/>
         <source>Print questions</source>
-        <translation type="unfinished"></translation>
+        <translation>Soruları yazdır</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3072"/>
         <source>Select questions to print</source>
-        <translation type="unfinished"></translation>
+        <translation>Yazdırmak için soruları seçin</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="684"/>
         <source>A</source>
-        <translation type="unfinished"></translation>
+        <translation>A</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="687"/>
         <source>D</source>
-        <translation type="unfinished"></translation>
+        <translation>D</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="566"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>İsim:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="654"/>
@@ -2888,52 +2888,52 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../questions.cpp" line="621"/>
         <source>Scalable Vector Graphics (*.svg);;All files (*.*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeniden Boyutlandırılabilir Vektörel Grafikler (*.svg);;Tüm dosyalar (*.*)</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="601"/>
         <source>Attachment name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Eklenti adı:</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="571"/>
         <source>Unable to parse file %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 dosyası ayrıştırılamadı.</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="580"/>
         <source>Are you sure you want to remove attachment &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; eklentisini silmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="580"/>
         <source>&amp;Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sil</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="597"/>
         <source>%1 - Edit SVG - iTest</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - SVG Düzenle - iTest</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="606"/>
         <source>Change SVG:</source>
-        <translation type="unfinished"></translation>
+        <translation>SVG Değiştir:</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="608"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Gözat</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="633"/>
         <source>Change SVG</source>
-        <translation type="unfinished"></translation>
+        <translation>SVG Değiştir</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="647"/>
         <source>Scalable Vector Graphics (*.svg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeniden Boyutlandırılabilir Vektörel Grafikler (*.svg)</translation>
     </message>
 </context>
 <context>
