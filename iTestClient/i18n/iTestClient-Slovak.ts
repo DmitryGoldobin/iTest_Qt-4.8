@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="sk_SK">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -387,12 +386,12 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
     <message>
         <location filename="../ui_main_window.cpp" line="761"/>
         <source>Number of flags</source>
-        <translation>Počet vlajok</translation>
+        <translation>Počet kategórií</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="765"/>
         <source>Flag names</source>
-        <translation>Mená vlajok</translation>
+        <translation>Mená kategórií</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="735"/>
@@ -522,22 +521,27 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
     <message>
         <location filename="../client.cpp" line="264"/>
         <source>A</source>
-        <translation>A</translation>
+        <translation type="obsolete">A</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="265"/>
         <source>B</source>
-        <translation>B</translation>
+        <translation type="obsolete">B</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="266"/>
         <source>C</source>
-        <translation>C</translation>
+        <translation type="obsolete">C</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="267"/>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="obsolete">D</translation>
+    </message>
+    <message>
+        <location filename="../database.cpp" line="197"/>
+        <source>%1 of total %2</source>
+        <translation>%1 z %2</translation>
     </message>
 </context>
 </TS>

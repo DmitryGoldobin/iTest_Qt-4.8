@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -36,7 +35,7 @@
     <message>
         <location filename="../about_widget.cpp" line="38"/>
         <source>The programme is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</source>
-        <translation>перевод: &lt;span style=&quot;font-style:italic;&quot;&gt;Константин Макшин&lt;/span&gt;&lt;br&gt;&lt;br&gt;Данная программа предоставляется &quot;как есть&quot; без каких-либо гарантий.</translation>
+        <translation>перевод: &lt;span style=&quot;font-style:italic;&quot;&gt;Константин Макшин, Евгений Бурмистров&lt;/span&gt;&lt;br&gt;&lt;br&gt;Данная программа предоставляется &quot;как есть&quot; без каких-либо гарантий.</translation>
     </message>
     <message>
         <location filename="../about_widget.cpp" line="49"/>
@@ -61,7 +60,7 @@
     <message>
         <location filename="../about_widget.cpp" line="31"/>
         <source>iTest is a Qt application consisting of a Server and a Client designed for easy computerised examination.</source>
-        <translation>iTest является приложением, использующим библиотеку Qt, состоящим из редактора баз данных и программы для написания тестов, и разработанным для упрощения проведения компьютеризованных экзаменов.</translation>
+        <translation>iTest является приложением, использующим библиотеку Qt, состоящим из редактора баз данных(с функциями Сервера) и программы для написания тестов(Клиента), и разработанным для упрощения проведения компьютеризованных экзаменов.</translation>
     </message>
 </context>
 <context>
@@ -141,7 +140,7 @@
     <message>
         <location filename="../database.cpp" line="29"/>
         <source>iTest off-line client log (*.itcl)</source>
-        <translation>Журналы клиентов iTest (*.itcl)</translation>
+        <translation>Журналы off-line клиентов iTest (*.itcl)</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="35"/>
@@ -187,12 +186,12 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../database.cpp" line="262"/>
         <source>Generating test...</source>
-        <translation>Создание теста...</translation>
+        <translation>Формирование вопросов теста...</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="266"/>
         <source>Finish the exam</source>
-        <translation>Закончить экзамен</translation>
+        <translation>Закончить тестирование</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="266"/>
@@ -222,7 +221,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../main_window.cpp" line="426"/>
         <source>Exam finished</source>
-        <translation>Экзамен закончен</translation>
+        <translation>Тестирвание завершено</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="426"/>
@@ -287,7 +286,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="724"/>
         <source>If connected to an iTest server, results will be sent automatically. You only need this file if there is no network available or in case of connection breakdown.</source>
-        <translation>При наличии подключения к серверу iTest результаты будут отправлены автоматически. Данный файл необходим в случаях отсутствия сети либо неполадках в её работе.</translation>
+        <translation>При наличии подключения к серверу iTest результаты будут отправлены автоматически. Данный файл необходим в случаях отсутствия сети либо при неполадках в её работе.</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="725"/>
@@ -342,12 +341,12 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="761"/>
         <source>Number of flags</source>
-        <translation>Количество параметров</translation>
+        <translation>Количество категорий</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="765"/>
         <source>Flag names</source>
-        <translation>Названия параметров</translation>
+        <translation>Названия категорий</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="773"/>
@@ -387,7 +386,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="780"/>
         <source>When you are ready to begin the examination, click the Start button below.</source>
-        <translation>Нажмите кнопку начала экзамена, когда будете готовы.</translation>
+        <translation>Нажмите кнопку &quot;Начать&quot;, когда будете готовы.</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="781"/>
@@ -422,7 +421,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="790"/>
         <source>Finish</source>
-        <translation>Закончить</translation>
+        <translation>Завершить</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="784"/>
@@ -447,17 +446,17 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="803"/>
         <source>Answered correctly</source>
-        <translation>Правильных ответов</translation>
+        <translation>Верно</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="807"/>
         <source>Answer</source>
-        <translation>Ответ</translation>
+        <translation>Отвечено</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="811"/>
         <source>Correct answer</source>
-        <translation>Правильный ответ</translation>
+        <translation>Правильно</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="794"/>
@@ -477,7 +476,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../database.cpp" line="24"/>
         <source>iTest off-line test sessions (*.itos);;All files (*.*)</source>
-        <translation>Сессии тестов iTest (*.itos);;Все файлы (*.*)</translation>
+        <translation>Off-line сессии тестов iTest (*.itos);;Все файлы (*.*)</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="230"/>
@@ -497,7 +496,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../database.cpp" line="198"/>
         <source>Total</source>
-        <translation>Целиком</translation>
+        <translation>Если получено верных ответов</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="769"/>
@@ -522,22 +521,27 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../client.cpp" line="264"/>
         <source>A</source>
-        <translation>А</translation>
+        <translation type="obsolete">А</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="265"/>
         <source>B</source>
-        <translation>Б</translation>
+        <translation type="obsolete">Б</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="266"/>
         <source>C</source>
-        <translation>В</translation>
+        <translation type="obsolete">В</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="267"/>
         <source>D</source>
-        <translation>Г</translation>
+        <translation type="obsolete">Г</translation>
+    </message>
+    <message>
+        <location filename="../database.cpp" line="197"/>
+        <source>%1 of total %2</source>
+        <translation>%1 из %2</translation>
     </message>
 </context>
 </TS>
