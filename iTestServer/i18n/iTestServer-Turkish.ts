@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="tr_TR">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -2952,17 +2953,17 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3323"/>
         <source>Use a custom server port (if unchecked, a random port will be chosen)</source>
-        <translation type="unfinished"></translation>
+        <translation>Özelleştirilmiş bir sunucu portu kullan (eğer seçim kaldırılırsa rastgele bir port seçilecek)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3325"/>
         <source>Specify a custom server port</source>
-        <translation type="unfinished"></translation>
+        <translation>Özel bir sunucu portu belirt</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3393"/>
         <source>Show details</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayrıntıları göster</translation>
     </message>
 </context>
 <context>

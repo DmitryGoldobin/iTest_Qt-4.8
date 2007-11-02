@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="tr_TR">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -547,7 +548,7 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
     <message>
         <location filename="../ui_main_window.cpp" line="728"/>
         <source>Do not show correct answers at the end of the test</source>
-        <translation type="unfinished"></translation>
+        <translation>Testin sonunda doğru yanıtları gösterme</translation>
     </message>
 </context>
 </TS>
