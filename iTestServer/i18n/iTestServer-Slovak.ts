@@ -2977,6 +2977,11 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <source>Show details</source>
         <translation>Zobraziť detaily</translation>
     </message>
+    <message>
+        <location filename="../env_vars.cpp" line="40"/>
+        <source>Spanish</source>
+        <translation>španielčina</translation>
+    </message>
 </context>
 <context>
     <name>QObject</name>

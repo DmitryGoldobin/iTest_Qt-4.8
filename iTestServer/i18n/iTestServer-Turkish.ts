@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="tr_TR">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -2964,6 +2963,11 @@ Lütfen başka bir grup seçin.</translation>
         <location filename="../ui_main_window_v2.cpp" line="3393"/>
         <source>Show details</source>
         <translation>Ayrıntıları göster</translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="40"/>
+        <source>Spanish</source>
+        <translation>İspanyolca</translation>
     </message>
 </context>
 <context>
