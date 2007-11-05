@@ -541,7 +541,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     <message>
         <location filename="../ui_main_window.cpp" line="728"/>
         <source>Do not show correct answers at the end of the test</source>
-        <translation type="unfinished"></translation>
+        <translation>Não mostrar as respostas correctas no fim do teste</translation>
     </message>
 </context>
 </TS>

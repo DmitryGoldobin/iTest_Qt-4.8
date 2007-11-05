@@ -2920,17 +2920,22 @@ Por favor escolha outro grupo.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3323"/>
         <source>Use a custom server port (if unchecked, a random port will be chosen)</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar uma porta personalizada para o servidor (se não for seleccionada, uma porta será escolhida ao acaso)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3325"/>
         <source>Specify a custom server port</source>
-        <translation type="unfinished"></translation>
+        <translation>Especificar uma porta personalizada para o servidor</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3393"/>
         <source>Show details</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar detalhes</translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="40"/>
+        <source>Spanish</source>
+        <translation>Espanhol</translation>
     </message>
 </context>
 <context>
