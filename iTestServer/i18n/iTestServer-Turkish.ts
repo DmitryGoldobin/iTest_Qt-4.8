@@ -1685,7 +1685,7 @@ Eğer kullandıysanız o karakterleri çıkarın.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2994"/>
         <source>Delete &amp;log</source>
-        <translation>Günlüğü &amp;sil</translation>
+        <translation type="obsolete">Günlüğü &amp;sil</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2997"/>
@@ -2968,6 +2968,11 @@ Lütfen başka bir grup seçin.</translation>
         <location filename="../env_vars.cpp" line="40"/>
         <source>Spanish</source>
         <translation>İspanyolca</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="2994"/>
+        <source>&amp;Delete log</source>
+        <translation>Günlüğü &amp;sil</translation>
     </message>
 </context>
 <context>

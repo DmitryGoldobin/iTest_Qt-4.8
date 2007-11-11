@@ -36,7 +36,9 @@ You now have two options:
 	mingw32-make or nmake)
 
 When all is done, you may run the programme:
-Linux/Unix: ./iTestServer
+Linux/Unix:
+cd bin
+./iTestServer
 Mac OS X: open iTestServer.app
 Windows: iTestServer
 For the Test Writer, merely replace "iTestServer" with

@@ -546,7 +546,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="728"/>
         <source>Do not show correct answers at the end of the test</source>
-        <translation type="unfinished"></translation>
+        <translation>Не показывать правильные ответы в конце тестирования</translation>
     </message>
 </context>
 </TS>

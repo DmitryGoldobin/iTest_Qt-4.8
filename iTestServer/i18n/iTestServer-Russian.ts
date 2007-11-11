@@ -1458,7 +1458,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2905"/>
         <source>Co&amp;mments</source>
-        <translation>&amp;Комментарии</translation>
+        <translation>Ко&amp;мментарии</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2906"/>
@@ -1528,7 +1528,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2934"/>
         <source>Move to &amp;bottom</source>
-        <translation>Сделать п&amp;оследним</translation>
+        <translation>Сделать пос&amp;ледним</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2937"/>
@@ -1683,7 +1683,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2994"/>
         <source>Delete &amp;log</source>
-        <translation>&amp;Удалить журнал</translation>
+        <translation type="obsolete">&amp;Удалить журнал</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2997"/>
@@ -2945,17 +2945,27 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3323"/>
         <source>Use a custom server port (if unchecked, a random port will be chosen)</source>
-        <translation type="unfinished"></translation>
+        <translation>Задействовать пользователькие настройки порта (если снято - порт выбирается случайно)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3325"/>
         <source>Specify a custom server port</source>
-        <translation type="unfinished"></translation>
+        <translation>Установите пользовательский порт</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3393"/>
         <source>Show details</source>
-        <translation type="unfinished"></translation>
+        <translation>Показать детали</translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="40"/>
+        <source>Spanish</source>
+        <translation>Испанский язык</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="2994"/>
+        <source>&amp;Delete log</source>
+        <translation>&amp;Удалить журнал</translation>
     </message>
 </context>
 <context>

@@ -1238,7 +1238,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3445"/>
         <source>Sessio&amp;n</source>
-        <translation>&amp;Sessão</translation>
+        <translation>Sessã&amp;o</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3446"/>
@@ -1288,7 +1288,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2825"/>
         <source>&amp;Open</source>
-        <translation>A&amp;brir</translation>
+        <translation>&amp;Abrir</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2828"/>
@@ -1598,7 +1598,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2958"/>
         <source>Stop se&amp;rver</source>
-        <translation>Parar s&amp;ervidor</translation>
+        <translation>&amp;Parar servidor</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2961"/>
@@ -1613,7 +1613,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2966"/>
         <source>Export &amp;log</source>
-        <translation>Exportar reg&amp;isto</translation>
+        <translation>E&amp;xportar registo</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2969"/>
@@ -1638,7 +1638,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2975"/>
         <source>&amp;QuickPrint</source>
-        <translation>I&amp;mpressão rápida</translation>
+        <translation>Impressão &amp;rápida</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2977"/>
@@ -1698,7 +1698,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2994"/>
         <source>Delete &amp;log</source>
-        <translation>Apagar &amp;Registo</translation>
+        <translation type="obsolete">Apagar &amp;Registo</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2997"/>
@@ -1708,7 +1708,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2998"/>
         <source>&amp;Archive session</source>
-        <translation>Arquivar s&amp;essão</translation>
+        <translation>&amp;Arquivar sessão</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2999"/>
@@ -2936,6 +2936,11 @@ Por favor escolha outro grupo.</translation>
         <location filename="../env_vars.cpp" line="40"/>
         <source>Spanish</source>
         <translation>Espanhol</translation>
+    </message>
+    <message>
+        <location filename="../ui_main_window_v2.cpp" line="2994"/>
+        <source>&amp;Delete log</source>
+        <translation>A&amp;pagar registo</translation>
     </message>
 </context>
 <context>
