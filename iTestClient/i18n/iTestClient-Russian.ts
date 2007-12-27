@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -191,7 +192,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../main_window.cpp" line="286"/>
         <source>Finish the exam</source>
-        <translation>Закончить тестирование</translation>
+        <translation>Закончить экзамен</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="286"/>
@@ -221,7 +222,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../main_window.cpp" line="447"/>
         <source>Exam finished</source>
-        <translation>Тестирвание завершено</translation>
+        <translation>Экзамен завершён</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="447"/>
@@ -341,12 +342,12 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="760"/>
         <source>Number of flags</source>
-        <translation>Количество категорий</translation>
+        <translation>Количество параметров</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="764"/>
         <source>Flag names</source>
-        <translation>Названия категорий</translation>
+        <translation>Названия параметров</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="772"/>
@@ -446,17 +447,17 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="802"/>
         <source>Answered correctly</source>
-        <translation>Верно</translation>
+        <translation>Правильных ответов</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="806"/>
         <source>Answer</source>
-        <translation>Отвечено</translation>
+        <translation>Ответ</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="810"/>
         <source>Correct answer</source>
-        <translation>Правильно</translation>
+        <translation>Правильный ответ</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="793"/>
@@ -496,7 +497,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../database.cpp" line="189"/>
         <source>Total</source>
-        <translation>Если получено верных ответов</translation>
+        <translation>Итог</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="768"/>
@@ -516,7 +517,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../main_window.cpp" line="453"/>
         <source>iTestClient - Load test data</source>
-        <translation>iTestClient - Загрузить данные теста</translation>
+        <translation>iTestClient - Загрузка данных теста</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="264"/>

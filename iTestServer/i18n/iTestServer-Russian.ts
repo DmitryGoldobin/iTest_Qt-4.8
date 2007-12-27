@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -60,7 +61,7 @@
     <message>
         <location filename="../about_widget.cpp" line="31"/>
         <source>iTest is a Qt application consisting of a Server and a Client designed for easy computerised examination.</source>
-        <translation>iTest является приложением, использующим библиотеку Qt, состоящим из редактора баз данных и программы для написания тестов, и разработанным для упрощения проведения компьютеризованных экзаменов.</translation>
+        <translation>iTest является приложением, использующим библиотеку Qt, состоящим из сервера и клиента, и разработанным для упрощения проведения компьютеризованных экзаменов.</translation>
     </message>
 </context>
 <context>
@@ -78,7 +79,7 @@
     <message>
         <location filename="../client.cpp" line="242"/>
         <source>The connection was refused by the peer. Make sure the iTest server is running, and check that the host name and port settings are correct.</source>
-        <translation>Соединение прервано. Убедитесь, что сервер iTestServer запущен, и проверьте правильность настроек соединения.</translation>
+        <translation>Соединение прервано. Убедитесь, что сервер iTest запущен, и проверьте правильность настроек соединения.</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="247"/>
@@ -114,7 +115,7 @@
     <message>
         <location filename="../database.cpp" line="27"/>
         <source>&amp;Discard</source>
-        <translation>&amp;Отменить</translation>
+        <translation>&amp;Не сохранять</translation>
     </message>
     <message>
         <location filename="../session_viewer.cpp" line="234"/>
@@ -268,27 +269,27 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../env_vars.cpp" line="35"/>
         <source>English</source>
-        <translation>Английский язык</translation>
+        <translation>Английский</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="36"/>
         <source>Slovak</source>
-        <translation>Словацкий язык</translation>
+        <translation>Словацкий</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="106"/>
         <source>Flags saved</source>
-        <translation>Категории сохранены</translation>
+        <translation>Параметры сохранены</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="112"/>
         <source>Flags discarded</source>
-        <translation>Категории отменены</translation>
+        <translation>Параметры отменены</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="132"/>
         <source>Number of questions with this flag: </source>
-        <translation>Количество вопросов в этой категории: </translation>
+        <translation>Количество вопросов с этим параметром: </translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="25"/>
@@ -333,12 +334,12 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../main_window.cpp" line="364"/>
         <source>Apply any changes you have made to the flags</source>
-        <translation>Применить изменения категорий</translation>
+        <translation>Применить изменения параметров</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="367"/>
         <source>Discard any changes you have made to the flags</source>
-        <translation>Отменить изменения категорий</translation>
+        <translation>Отменить изменения параметров</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2847"/>
@@ -458,12 +459,12 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3082"/>
         <source>Select a database you have used recently, create a new one or open another database.</source>
-        <translation>Выберите недавно использованную базу данных, создайте новую или откройте другую базу данных.</translation>
+        <translation>Выберите недавно использовавшуюся базу данных, создайте новую или откройте другую базу данных.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3081"/>
         <source>Recent databases</source>
-        <translation>Недавно использованные</translation>
+        <translation>Недавно использовавшиеся</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3083"/>
@@ -473,7 +474,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3084"/>
         <source>New</source>
-        <translation>Новая</translation>
+        <translation>Новый</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3085"/>
@@ -503,17 +504,17 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3112"/>
         <source>Select the flag to filter the list below</source>
-        <translation>Выберите категорию фильтрации списка</translation>
+        <translation>Выберите параметр для фильтрации списка</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3102"/>
         <source>Show all questions</source>
-        <translation>Показывать все вопросы</translation>
+        <translation>Показать все вопросы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3103"/>
         <source>All</source>
-        <translation>Всё</translation>
+        <translation>Все</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3104"/>
@@ -533,7 +534,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3110"/>
         <source>Show questions with the selected flag only</source>
-        <translation>Показывать только вопросы выбранной категории</translation>
+        <translation>Показывать только вопросы с выбранным параметром</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3115"/>
@@ -603,12 +604,12 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3129"/>
         <source>Flag:</source>
-        <translation>Категория:</translation>
+        <translation>Параметр:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3130"/>
         <source>Flag of the selected question</source>
-        <translation>Категория выбранного вопроса</translation>
+        <translation>Параметр выбранного вопроса</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3135"/>
@@ -693,12 +694,12 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3221"/>
         <source>Choose a font</source>
-        <translation>Выберите шрифт</translation>
+        <translation>Выбрать шрифт</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3235"/>
         <source>Select text size</source>
-        <translation>Укажите размер шрифта</translation>
+        <translation>Выбрать размер шрифта</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3225"/>
@@ -883,7 +884,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3275"/>
         <source>Flag name:</source>
-        <translation>Имя категории:</translation>
+        <translation>Имя параметра:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3276"/>
@@ -893,7 +894,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3296"/>
         <source>Number of questions with this flag: 0</source>
-        <translation>Количество вопросов этой категории: 0</translation>
+        <translation>Количество вопросов с этим параметром: 0</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3297"/>
@@ -918,7 +919,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3299"/>
         <source>Flags</source>
-        <translation>Категории</translation>
+        <translation>Параметры</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3300"/>
@@ -928,7 +929,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3321"/>
         <source>Set a custom test name</source>
-        <translation>Установка названия теста</translation>
+        <translation>Выбрать название теста</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3337"/>
@@ -958,7 +959,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3334"/>
         <source>Specify the minimum number of correct answers to pass the exam</source>
-        <translation>Минимальное количество правильных ответов для прохождения экзамена</translation>
+        <translation>Указать минимальное количество правильных ответов для прохождения экзамена</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3339"/>
@@ -968,7 +969,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3332"/>
         <source>Specify the number of questions</source>
-        <translation>Количество вопросов</translation>
+        <translation>Указать количество вопросов</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3330"/>
@@ -1048,17 +1049,17 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3417"/>
         <source>Answered correctly</source>
-        <translation>Верно</translation>
+        <translation>Правильных ответов</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3421"/>
         <source>Answer</source>
-        <translation>Отвечено</translation>
+        <translation>Ответ</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3425"/>
         <source>Correct answer</source>
-        <translation>Правильно</translation>
+        <translation>Правильный ответ</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3405"/>
@@ -1333,12 +1334,12 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2849"/>
         <source>&amp;Flags</source>
-        <translation>&amp;Категории</translation>
+        <translation>&amp;Параметры</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2853"/>
         <source>Edit flags</source>
-        <translation>Редактировать категории вопросов</translation>
+        <translation>Редактировать параметры</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2854"/>
@@ -1353,7 +1354,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2858"/>
         <source>Edit test settings and start the server</source>
-        <translation>Редактировать настройки сервера и запустить сервер</translation>
+        <translation>Редактировать настройки теста и запустить сервер</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2859"/>
@@ -1398,27 +1399,27 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2871"/>
         <source>Show &amp;all questions</source>
-        <translation>Показывать &amp;все вопросы</translation>
+        <translation>Показать &amp;все вопросы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2876"/>
         <source>Show &amp;easy questions only</source>
-        <translation>Показывать только &amp;простые вопросы</translation>
+        <translation>Показать только &amp;простые вопросы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2880"/>
         <source>Show questions with &amp;medium difficulty only</source>
-        <translation>Показывать только вопросы с&amp;редней сложности</translation>
+        <translation>Показать только вопросы с&amp;редней сложности</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2883"/>
         <source>Show &amp;difficult questions only</source>
-        <translation>Показывать только &amp;сложные вопросы</translation>
+        <translation>Показать только &amp;сложные вопросы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2887"/>
         <source>Show database &amp;information</source>
-        <translation>Показывать &amp;информацию о базе данных</translation>
+        <translation>Показать &amp;информацию о базе данных</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2890"/>
@@ -1428,7 +1429,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2891"/>
         <source>Show questions with the selected &amp;flag only</source>
-        <translation>Показывать только вопросы выбранной &amp;категории</translation>
+        <translation>Показать только вопросы с выбранным &amp;параметром</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2894"/>
@@ -1573,12 +1574,12 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2954"/>
         <source>&amp;Add off-line client</source>
-        <translation>Добавить результаты off-line &amp;клиента</translation>
+        <translation>Добавить off-line &amp;клиента</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2957"/>
         <source>Add off-line client</source>
-        <translation>Добавить результаты off-line клиента</translation>
+        <translation>Добавить off-line клиента</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2958"/>
@@ -1668,7 +1669,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2989"/>
         <source>Add off-line clients</source>
-        <translation>Добавить результаты off-line клиентов (DIR)</translation>
+        <translation>Добавить результаты off-line клиентов</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2990"/>
@@ -1839,12 +1840,12 @@ number of copies each time you start the server.</source>
     <message>
         <location filename="../print_engine.cpp" line="85"/>
         <source>Portrait</source>
-        <translation>Вертикальная</translation>
+        <translation>Книжная</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="86"/>
         <source>Landscape</source>
-        <translation>Горизонтальная</translation>
+        <translation>Альбомная</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="90"/>
@@ -2014,7 +2015,7 @@ number of copies each time you start the server.</source>
     <message>
         <location filename="../print_engine.cpp" line="309"/>
         <source>Correct answer:</source>
-        <translation>Правильно:</translation>
+        <translation>Правильный ответ:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="323"/>
@@ -2202,7 +2203,8 @@ Please choose a different name:</source>
         <location filename="../questions.cpp" line="199"/>
         <source>A question with this name already exists.
 Please choose a different name.</source>
-        <translation>Вопрос с таким названием уже существует.Пожалуйста, выберите другое название.</translation>
+        <translation>Вопрос с таким названием уже существует.
+Пожалуйста, выберите другое название.</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="203"/>
@@ -2343,7 +2345,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="588"/>
         <source>%1 &gt; Client #%2 (%3) submitted results</source>
-        <translation>%1 &gt; Клиент №%2 (%3) результаты получены</translation>
+        <translation>%1 &gt; Клиент №%2 (%3) предоставил результаты</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="596"/>
@@ -2418,7 +2420,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="791"/>
         <source>Failed to add off-line client. Either this file contains client data of a different test session or it contains invalid data.</source>
-        <translation>Невозможно добавить клиента вне сети. Либо данный файл содержит данные клиента другой сессии, либо он содержит неправильные данные.</translation>
+        <translation>Невозможно добавить off-line клиента. Либо данный файл содержит данные клиента другой сессии, либо он содержит неправильные данные.</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="818"/>
@@ -2433,7 +2435,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="844"/>
         <source>%1 &gt; Failed to add off-line client</source>
-        <translation>%1 &gt; Невозможно добавить клиента все сети</translation>
+        <translation>%1 &gt; Невозможно добавить off-line клиента</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="860"/>
@@ -2443,7 +2445,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="855"/>
         <source>iTest off-line test sessions (*.itos)</source>
-        <translation>Сессии Off-line тестирования iTest(*.itos)</translation>
+        <translation>Сессии off-line тестирования iTest (*.itos)</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="875"/>
@@ -2478,22 +2480,22 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../env_vars.cpp" line="37"/>
         <source>Russian</source>
-        <translation>Русский язык</translation>
+        <translation>Русский</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="64"/>
         <source>Type a name for flag %1</source>
-        <translation>Введите название категории %1</translation>
+        <translation>Введите название параметра %1</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="65"/>
         <source>Check or uncheck this checkbox to enable or disable flag %1</source>
-        <translation>Установите или снимите этот переключатель для установки или снятия категории %1</translation>
+        <translation>Установите или снимите этот переключатель для установки или снятия параметра %1</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="66"/>
         <source>Flag %1:</source>
-        <translation>Категория %1:</translation>
+        <translation>Параметр %1:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3039"/>
@@ -2543,12 +2545,12 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../env_vars.cpp" line="38"/>
         <source>Turkish</source>
-        <translation>Турецкий язык</translation>
+        <translation>Турецкий</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="571"/>
         <source>Error opening database.</source>
-        <translation>Ошибка при открывание базы данных.</translation>
+        <translation>Ошибка при открытии базы данных.</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="33"/>
@@ -2558,7 +2560,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3435"/>
         <source>Flag name</source>
-        <translation>Имя категории</translation>
+        <translation>Имя параметра</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3439"/>
@@ -2568,17 +2570,17 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3394"/>
         <source>Details</source>
-        <translation>Детали</translation>
+        <translation>Подробнее</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3441"/>
         <source>Pass mark details</source>
-        <translation>Детали оценки прохождения</translation>
+        <translation>Подробная информация об оценке прохождения</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="457"/>
         <source>Total</source>
-        <translation>Итого</translation>
+        <translation>Итог</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3134"/>
@@ -2588,7 +2590,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3049"/>
         <source>Show hidden questions</source>
-        <translation>Показывать скрытые вопросы</translation>
+        <translation>Показать скрытые вопросы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3050"/>
@@ -2639,8 +2641,8 @@ although it is recommended to give them an hour.</source>
         <location filename="../questions.cpp" line="174"/>
         <source>This group is used by one or more questions with a different flag.
 Please choose a different group.</source>
-        <translation>В этой группе используется один или более вопросов другой категории.
-Пожалуйста выберете другую группу.</translation>
+        <translation>В этой группе содержится один или более вопросов с другим параметром.
+Пожалуйста, выберете другую группу.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3088"/>
@@ -2665,7 +2667,7 @@ Please choose a different group.</source>
     <message>
         <location filename="../env_vars.cpp" line="39"/>
         <source>Portuguese</source>
-        <translation>Португальский язык</translation>
+        <translation>Португальский</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3345"/>
@@ -2760,12 +2762,12 @@ Please choose a different group.</source>
     <message>
         <location filename="../main_window.cpp" line="971"/>
         <source>Print formatted questions</source>
-        <translation>Печать сформированных вопросы</translation>
+        <translation>Печать сформатированных вопросов</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="974"/>
         <source>Print a test (do not highlight the correct answers)</source>
-        <translation>Печать теста (не выделять правильные вопросы)</translation>
+        <translation>Печать теста (не выделять правильные ответы)</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="979"/>
@@ -2775,7 +2777,7 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3184"/>
         <source>Attachments (SVG):</source>
-        <translation>Приложение (SVG):</translation>
+        <translation>Приложения (SVG):</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3185"/>
@@ -2790,7 +2792,7 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3188"/>
         <source>Remove SVG</source>
-        <translation>Удалить приложение</translation>
+        <translation>Удалить SVG</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3189"/>
@@ -2825,7 +2827,7 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3195"/>
         <source>Export the selected attachment</source>
-        <translation>Экспортировать выделенного приложения</translation>
+        <translation>Экспортировать выделенное приложение</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3196"/>
@@ -2890,7 +2892,7 @@ Please choose a different group.</source>
     <message>
         <location filename="../questions.cpp" line="561"/>
         <source>Unable to parse file %1.</source>
-        <translation>Невозможно проанализировать файл %1.</translation>
+        <translation>Невозможно обработать файл %1.</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="570"/>
@@ -2955,12 +2957,12 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3393"/>
         <source>Show details</source>
-        <translation>Показать детали</translation>
+        <translation>Показать подробности</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="40"/>
         <source>Spanish</source>
-        <translation>Испанский язык</translation>
+        <translation>Испанский</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2994"/>
