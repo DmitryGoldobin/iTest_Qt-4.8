@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -342,12 +341,12 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="760"/>
         <source>Number of flags</source>
-        <translation>Количество параметров</translation>
+        <translation>Количество категорий</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="764"/>
         <source>Flag names</source>
-        <translation>Названия параметров</translation>
+        <translation>Названия категорий</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="772"/>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -279,17 +278,17 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../flags.cpp" line="106"/>
         <source>Flags saved</source>
-        <translation>Параметры сохранены</translation>
+        <translation>Категории сохранены</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="112"/>
         <source>Flags discarded</source>
-        <translation>Параметры отменены</translation>
+        <translation>Категории отменены</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="132"/>
         <source>Number of questions with this flag: </source>
-        <translation>Количество вопросов с этим параметром: </translation>
+        <translation>Количество вопросов в этой категории: </translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="25"/>
@@ -334,12 +333,12 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../main_window.cpp" line="364"/>
         <source>Apply any changes you have made to the flags</source>
-        <translation>Применить изменения параметров</translation>
+        <translation>Применить изменения категорий</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="367"/>
         <source>Discard any changes you have made to the flags</source>
-        <translation>Отменить изменения параметров</translation>
+        <translation>Отменить изменения категорий</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2847"/>
@@ -504,7 +503,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3112"/>
         <source>Select the flag to filter the list below</source>
-        <translation>Выберите параметр для фильтрации списка</translation>
+        <translation>Выберите категорию для фильтрации списка</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3102"/>
@@ -534,7 +533,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3110"/>
         <source>Show questions with the selected flag only</source>
-        <translation>Показывать только вопросы с выбранным параметром</translation>
+        <translation>Показывать только вопросы выбранной категории</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3115"/>
@@ -604,12 +603,12 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3129"/>
         <source>Flag:</source>
-        <translation>Параметр:</translation>
+        <translation>Категория:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3130"/>
         <source>Flag of the selected question</source>
-        <translation>Параметр выбранного вопроса</translation>
+        <translation>Категория выбранного вопроса</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3135"/>
@@ -884,7 +883,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3275"/>
         <source>Flag name:</source>
-        <translation>Имя параметра:</translation>
+        <translation>Имя категории:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3276"/>
@@ -894,7 +893,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3296"/>
         <source>Number of questions with this flag: 0</source>
-        <translation>Количество вопросов с этим параметром: 0</translation>
+        <translation>Количество вопросов этой категории: 0</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3297"/>
@@ -919,7 +918,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3299"/>
         <source>Flags</source>
-        <translation>Параметры</translation>
+        <translation>Категории</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3300"/>
@@ -1334,12 +1333,12 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2849"/>
         <source>&amp;Flags</source>
-        <translation>&amp;Параметры</translation>
+        <translation>&amp;Категории</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2853"/>
         <source>Edit flags</source>
-        <translation>Редактировать параметры</translation>
+        <translation>Редактировать категории</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2854"/>
@@ -1429,7 +1428,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2891"/>
         <source>Show questions with the selected &amp;flag only</source>
-        <translation>Показать только вопросы с выбранным &amp;параметром</translation>
+        <translation>Показывать только вопросы выбранной &amp;категории</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="2894"/>
@@ -2485,17 +2484,17 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../flags.cpp" line="64"/>
         <source>Type a name for flag %1</source>
-        <translation>Введите название параметра %1</translation>
+        <translation>Введите название категории %1</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="65"/>
         <source>Check or uncheck this checkbox to enable or disable flag %1</source>
-        <translation>Установите или снимите этот переключатель для установки или снятия параметра %1</translation>
+        <translation>Установите или снимите этот переключатель для установки или снятия категории %1</translation>
     </message>
     <message>
         <location filename="../flags.cpp" line="66"/>
         <source>Flag %1:</source>
-        <translation>Параметр %1:</translation>
+        <translation>Категория %1:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3039"/>
@@ -2560,7 +2559,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3435"/>
         <source>Flag name</source>
-        <translation>Имя параметра</translation>
+        <translation>Имя категории</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3439"/>
@@ -2641,7 +2640,7 @@ although it is recommended to give them an hour.</source>
         <location filename="../questions.cpp" line="174"/>
         <source>This group is used by one or more questions with a different flag.
 Please choose a different group.</source>
-        <translation>В этой группе содержится один или более вопросов с другим параметром.
+        <translation>В этой группе содержится один или более вопросов другой категории.
 Пожалуйста, выберете другую группу.</translation>
     </message>
     <message>
