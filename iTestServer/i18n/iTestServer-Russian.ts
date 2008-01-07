@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -883,7 +884,7 @@ If this is the case, try again omitting these.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3275"/>
         <source>Flag name:</source>
-        <translation>Имя категории:</translation>
+        <translation>Название категории:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3276"/>
@@ -2559,7 +2560,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3435"/>
         <source>Flag name</source>
-        <translation>Имя категории</translation>
+        <translation>Название категории</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3439"/>
