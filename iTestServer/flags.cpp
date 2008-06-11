@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2007 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -63,6 +63,9 @@ void MainWindow::setupFlagsPage()
     for (int i = 0; i < 20; ++i) {
         EFFlagLineEdit[i]->setStatusTip(tr("Type a name for flag %1").arg(i + 1));
         EFFlagCheckBox[i]->setStatusTip(tr("Check or uncheck this checkbox to enable or disable flag %1").arg(i + 1));
+#ifdef Q_WS_X11
+        EFFlagCheckBox[i]->setMaximumSize(22, 22);
+#endif
         fl[i]->setText(tr("Flag %1:").arg(i + 1));
         QObject::connect(EFFlagCheckBox[i], SIGNAL(toggled(bool)), EFFlagLineEdit[i], SLOT(setEnabled(bool)));
     }
