@@ -79,7 +79,7 @@
     <message>
         <location filename="../answersedit.cpp" line="33"/>
         <source>Remove this answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu yanıtı sil</translation>
     </message>
 </context>
 <context>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../answersedit.cpp" line="56"/>
         <source>Add answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Yanıt ekle</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="61"/>
@@ -102,22 +102,22 @@
     <message>
         <location filename="../answersedit.cpp" line="64"/>
         <source>Single choice</source>
-        <translation type="unfinished"></translation>
+        <translation>Tek seçenek</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="65"/>
         <source>Single choice questions allow selecting one answer only, even if the question has more correct answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Tek şık seçilebilen sorular sadece bir yanıt işaretlenmesine izin verir, sorunun birden fazla doğru yanıtı olsa bile</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="73"/>
         <source>Multiple choice</source>
-        <translation type="unfinished"></translation>
+        <translation>Çok seçenek</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="74"/>
         <source>Multiple choice questions allow selecting more answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Çok şık seçilebilen sorular birden fazla yanıt seçmenize izin verir</translation>
     </message>
 </context>
 <context>
@@ -183,7 +183,7 @@
     <message>
         <location filename="../env_vars.cpp" line="42"/>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>İtalyanca</translation>
     </message>
 </context>
 <context>
@@ -3077,127 +3077,127 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4523"/>
         <source>Add class</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıf ekle</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="166"/>
         <source>Class name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıf adı:</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="166"/>
         <source>Class %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıf %1</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="170"/>
         <source>A class with this name already exists. Please choose a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu ismi taşıyan bir sınıf var. Lütfen başka bir isim seçin.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4534"/>
         <source>Delete class</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıfı sil</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="185"/>
         <source>Are you sure you want to delete class &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; isimli sınıfı silmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4545"/>
         <source>Add student</source>
-        <translation type="unfinished"></translation>
+        <translation>Öğrenci ekle</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="205"/>
         <source>Student name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Öğrenci adı:</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="205"/>
         <source>Student %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Öğrenci %1</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="209"/>
         <source>A student with the name &quot;%1&quot; already exists in the selected class. Would you like to choose a different name?</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıf içerisinde &quot;%1&quot; isimli bir öğrenci var. Başka bir isim seçmek ister misiniz?</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="209"/>
         <source>&amp;Use this name anyway</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu &amp;ismi kullan</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="209"/>
         <source>&amp;Choose a different name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Başka bir isim seç</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4556"/>
         <source>Delete student</source>
-        <translation type="unfinished"></translation>
+        <translation>Öğrenciyi sil</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="226"/>
         <source>Are you sure you want to delete student &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; isimli öğrenciyi silmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4578"/>
         <source>Delete session</source>
-        <translation type="unfinished"></translation>
+        <translation>Oturumu sil</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="291"/>
         <source>Are you sure you want to delete session &quot;%1&quot; from this class? The session will not be deleted from the database.</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıfa ait &quot;%1&quot; oturumunu silmek istediğinizden emin misiniz? Oturum veritabanından silinmeyecek.</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="353"/>
         <source>Session not found. This session might have been archived on a different computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Oturum bulunamadı. Bu oturum başka bir bilgisayara arşivlenmiş olabilir.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5369"/>
         <source>List of classes</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıf listesi</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5378"/>
         <source>Double click a class to view</source>
-        <translation type="unfinished"></translation>
+        <translation>Bir sınıfı görüntülemek için üzerine çift tıklayın</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5381"/>
         <source>Selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıf</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5382"/>
         <source>&lt;b&gt;Class name:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Sınıf adı:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5388"/>
         <source>&lt;b&gt;First year:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;İlk yıl:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5394"/>
         <source>&lt;b&gt;Last year:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Son yıl:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5400"/>
         <source>&lt;b&gt;Number of students:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Öğrenci sayısı:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5403"/>
         <source>Number of students in the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıftaki öğrenci sayısı</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5406"/>
@@ -3207,7 +3207,7 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5407"/>
         <source>&lt;b&gt;Class average:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Sınıf ortalaması:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5444"/>
@@ -3217,12 +3217,12 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5441"/>
         <source>The selected student&apos;s average</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen öğrencinin ortalaması</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5451"/>
         <source>List of results of the selected student</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen öğrencinin sonuçlarının listesi</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5446"/>
@@ -3232,12 +3232,12 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5447"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>İsim</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5448"/>
         <source>Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Sonuçlar</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5456"/>
@@ -3247,62 +3247,62 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5459"/>
         <source>Add selected session</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıfı ekle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5462"/>
         <source>Remove the selected session from the list of results</source>
-        <translation type="unfinished"></translation>
+        <translation>Sonuçlar listesinden seçilen oturumu kaldır</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5488"/>
         <source>&amp;Class</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sınıf</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4507"/>
         <source>&amp;Classes</source>
-        <translation type="unfinished"></translation>
+        <translation>Sını&amp;flar</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4520"/>
         <source>Edit classes</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıfları düzenle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4531"/>
         <source>Create a new class</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeni bir sınıf oluştur</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4542"/>
         <source>Delete the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıfı sil</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4553"/>
         <source>Add a new student to the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıfa yeni bir öğrenci ekle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4564"/>
         <source>Delete the selected student from the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıftaki seçilen öğrenciyi bu sınıftan sil</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4567"/>
         <source>Add session</source>
-        <translation type="unfinished"></translation>
+        <translation>Oturum ekle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4575"/>
         <source>Add a session to the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıfa bir oturum ekle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4586"/>
         <source>Delete the selected session from the selected class (the session will not be deleted from the database)</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıftan seçilen oturumu sil (bu oturum veritabanından silinmeyecek)</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="300"/>
@@ -3317,22 +3317,22 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5385"/>
         <source>Name of the selected class (if you change this name, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıfın adı (eğer bu ismi değiştirirseniz sağdaki Uygula düğmesine basmayı unutmayın)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5391"/>
         <source>The first year of the selected class (if you change this year, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıfın yılı (eğer bu yılı değiştirirseniz sağdaki Uygula düğmesine basmayı unutmayın)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5397"/>
         <source>The last year of the selected class (if you change this year, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation> Seçilen sınıfın son yılı (eğer bu yılı değiştirirseniz sağdaki Uygula düğmesine basmayı unutmayın)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5430"/>
         <source>Name of the selected student (if you change this name, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen öğrencinin adı (eğer bu ismi değiştirirseniz sağdaki Uygula düğmesine basmayı unutmayın)</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="575"/>
@@ -3342,157 +3342,157 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../class_viewer.cpp" line="414"/>
         <source>Remove session</source>
-        <translation type="unfinished"></translation>
+        <translation>Oturumu sil</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="414"/>
         <source>Are you sure you want to remove session &quot;%1&quot; from the table of results of the selected student? The session will not be deleted from the database.</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen öğrencinin sonuçlar tablosundan &quot;%1&quot; isimli oturumu silmek istediğinizden emin misiniz? Bu oturum veritabanından silinmeyecek.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4906"/>
         <source>Explanation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Açıklama:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4589"/>
         <source>Print class summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıf özetini yazdır</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4597"/>
         <source>Print a summary for the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sınıf için bir özet yazdır</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="644"/>
         <source>Print statistics for the selected student</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen öğrenci için bir özet yazdır</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1017"/>
         <source>Statistics for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 için istatistikler</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="650"/>
         <source>Statistics printed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>İstatistikler başarılı bir şekilde yazdırıldı</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="802"/>
         <source>Class statistics and summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıf istatistikleri ve özeti</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="817"/>
         <source>Class average:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıf ortalaması:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1025"/>
         <source>Test sessions attended:</source>
-        <translation type="unfinished"></translation>
+        <translation>Katıldığı test oturumları:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1026"/>
         <source>Under the name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu isimle:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1027"/>
         <source>With a score of:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu puanla:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4909"/>
         <source>A brief explanation of the selected question</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen sorunun kısa açıklaması</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5362"/>
         <source>Scoring system</source>
-        <translation type="unfinished"></translation>
+        <translation>Puanlama sistemi</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5071"/>
         <source>Allow giving points for partially correct answers (this affects multiple choice questions only)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kısmen doğru yanıtlardan puan almaya izin ver (Bu sadece çok şık işaretlenebilen soruları etkiler)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5074"/>
         <source>Allow partially correct answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Kısmen doğru yanıtlara izin ver</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5075"/>
         <source>Separate settings for each difficulty level</source>
-        <translation type="unfinished"></translation>
+        <translation>Her zorluk düzeyi için ayrı ayarlar</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5115"/>
         <source>Specify the amount of points given for a correct answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Bir doğru yanıt için verilecek puan miktarını belirtin</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5118"/>
         <source>Incorrect answer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Yanlış yanıt:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5121"/>
         <source>Specify the amount of points taken for an incorrect answer</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5124"/>
         <source>Missing answer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Boş yanıt:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5127"/>
         <source>Specify the amount of points taken for each missing answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Her yanlış yanıt için kesilecek puan miktarını belirtin</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5206"/>
         <source>Specify the minimum number of correct answers (with score above 0) to pass the test</source>
-        <translation type="unfinished"></translation>
+        <translation>Testi geçmek için gereken en az doğru yanıt sayısını belirtin (0 üzerindeki puanlarla)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5323"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation>Puan</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5346"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Değer</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5350"/>
         <source>Partially correct answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Kısmen doğru yanıtlar</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5358"/>
         <source>Incorrect answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Yanlış yanıtlar</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5359"/>
         <source>Missing answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Boş yanıtlar</translation>
     </message>
     <message>
         <location filename="../session_viewer.cpp" line="219"/>
         <source>allowed</source>
-        <translation type="unfinished"></translation>
+        <translation>izin verilen</translation>
     </message>
     <message>
         <location filename="../session_viewer.cpp" line="219"/>
         <source>disallowed</source>
-        <translation type="unfinished"></translation>
+        <translation>izin verilmeyen</translation>
     </message>
 </context>
 <context>
@@ -3580,12 +3580,12 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../print_engine.cpp" line="145"/>
         <source>Randomise question order in each printout</source>
-        <translation type="unfinished"></translation>
+        <translation>Her çıktı alındığında soruları rastgele sırala</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="150"/>
         <source>Number of different printouts:</source>
-        <translation type="unfinished"></translation>
+        <translation>Alınan farklı çıktıların sayısı:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="164"/>
@@ -3595,12 +3595,12 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../print_engine.cpp" line="187"/>
         <source>%1 hidden questions listed</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 gizli soru listelendi</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="187"/>
         <source>%1 hidden questions not listed</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 gizli soru listelenmedi</translation>
     </message>
 </context>
 <context>
@@ -3674,7 +3674,7 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_session_wizard.cpp" line="104"/>
         <source>Add session - iTestServer</source>
-        <translation type="unfinished"></translation>
+        <translation>Oturum Ekle - iTestServer</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="105"/>
@@ -3684,12 +3684,12 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_session_wizard.cpp" line="106"/>
         <source>&lt;b&gt;Class:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Sınıf:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="107"/>
         <source>Match</source>
-        <translation type="unfinished"></translation>
+        <translation>Eşle</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="112"/>
@@ -3699,12 +3699,12 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_session_wizard.cpp" line="116"/>
         <source>Class</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınıf</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="118"/>
         <source>Split</source>
-        <translation type="unfinished"></translation>
+        <translation>Böl</translation>
     </message>
 </context>
 <context>
