@@ -42,11 +42,16 @@ class AnswerEdit : public QWidget
 public:
     AnswerEdit(int, AnswersEdit *);
 
+public slots:
+    void setVisible(bool);
+    bool isVisible();
+
 private:
     QLineEdit * ans_text;
     QCheckBox * ans_correct;
     MTToolButton * ans_remove;
     QLabel * ans_label;
+    bool ans_visible;
     friend class AnswersEdit;
 };
 

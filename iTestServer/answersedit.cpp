@@ -21,6 +21,7 @@
 
 AnswerEdit::AnswerEdit(int i, AnswersEdit * parent):
 QWidget(parent) {
+    ans_visible = this->QWidget::isVisible();
     QHBoxLayout * hlayout = new QHBoxLayout(this);
     hlayout->setContentsMargins(0, 0, 0, 0); hlayout->setSpacing(6);
     ans_text = new QLineEdit(this);
@@ -40,6 +41,14 @@ QWidget(parent) {
     hlayout->addWidget(ans_text);
     hlayout->addWidget(ans_correct);
 }
+
+void AnswerEdit::setVisible(bool visible)
+{
+    ans_visible = visible;
+    this->QWidget::setVisible(visible);
+}
+
+bool AnswerEdit::isVisible() { return ans_visible; }
 
 AnswersEdit::AnswersEdit(QWidget * parent):
 QWidget(parent) {

@@ -56,7 +56,7 @@ void QuestionWidget::init(QuestionItem * item, bool highlight_correct_answers)
                     for (int i = 0; i < item->numAnswers(); ++i) {
                         QLabel * lbl = new QLabel(this);
                         lbl->setWordWrap(true);
-                        if (i <= item->numAnswers() / 2) { vlayout1->addWidget(lbl); }
+                        if (item->numAnswers() % 2 == 0 ? i < item->numAnswers() / 2 : i <= item->numAnswers() / 2) { vlayout1->addWidget(lbl); }
                         else { vlayout2->addWidget(lbl); }
                         qw_lbl_answers << lbl;
                     }

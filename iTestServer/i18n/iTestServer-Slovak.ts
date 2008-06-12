@@ -102,7 +102,7 @@
     <message>
         <location filename="../answersedit.cpp" line="64"/>
         <source>Single choice</source>
-        <translation>Alternatívna</translation>
+        <translation>Alternatívne</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="65"/>
@@ -112,7 +112,7 @@
     <message>
         <location filename="../answersedit.cpp" line="73"/>
         <source>Multiple choice</source>
-        <translation>Selektívna</translation>
+        <translation>Selektívne</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="74"/>
