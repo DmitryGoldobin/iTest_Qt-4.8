@@ -17,7 +17,7 @@
  Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 ********************************************************************/
 
-#include "about_widget.h"
+#include "../shared/about_widget.h"
 #include "main_window.h"
 
 MainWindow::MainWindow()
