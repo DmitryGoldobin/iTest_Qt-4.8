@@ -3242,7 +3242,7 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5456"/>
         <source>Add the selected session from the list of sessions on the left to the list of results above</source>
-        <translation type="unfinished"></translation>
+        <translation>Yukarıdaki sonuçlar listesine soldaki oturumlar listesindeki oturumlardan seçilen oturumu ekle</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5459"/>
@@ -3442,7 +3442,7 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5121"/>
         <source>Specify the amount of points taken for an incorrect answer</source>
-        <translation></translation>
+        <translation>Bir yanlış yanıt için kesilecek puan miktarını belirtin</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5124"/>
