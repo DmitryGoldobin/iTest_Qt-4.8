@@ -74,7 +74,7 @@
     <message>
         <location filename="../answersedit.cpp" line="33"/>
         <source>Remove this answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi questa risposta</translation>
     </message>
 </context>
 <context>
@@ -82,7 +82,7 @@
     <message>
         <location filename="../answersedit.cpp" line="56"/>
         <source>Add answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi risposta</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="61"/>
@@ -97,22 +97,22 @@
     <message>
         <location filename="../answersedit.cpp" line="64"/>
         <source>Single choice</source>
-        <translation type="unfinished"></translation>
+        <translation>Scelta singola</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="65"/>
         <source>Single choice questions allow selecting one answer only, even if the question has more correct answers</source>
-        <translation type="unfinished"></translation>
+        <translation>La scelta singola ti permette si selezionare una solo risposta, anche se la domanda ha più risposte corrette</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="73"/>
         <source>Multiple choice</source>
-        <translation type="unfinished"></translation>
+        <translation>Scelta multipla</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="74"/>
         <source>Multiple choice questions allow selecting more answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Scelta multipla consente di selezionare più risposte</translation>
     </message>
 </context>
 <context>
@@ -199,32 +199,32 @@
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4523"/>
         <source>Add class</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi classe</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="166"/>
         <source>Class name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome classe:</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="166"/>
         <source>Class %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Classe %1</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="170"/>
         <source>A class with this name already exists. Please choose a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esiste già una classe con questo nome. Selezionare un nome differente.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4534"/>
         <source>Delete class</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella classe</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="185"/>
         <source>Are you sure you want to delete class &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Sei sicuro di voler cancellare la classe &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3928"/>
@@ -234,47 +234,47 @@
     <message>
         <location filename="../session_viewer.cpp" line="258"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4545"/>
         <source>Add student</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi studente</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="205"/>
         <source>Student name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome studente:</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="205"/>
         <source>Student %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Studente %1</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="209"/>
         <source>A student with the name &quot;%1&quot; already exists in the selected class. Would you like to choose a different name?</source>
-        <translation type="unfinished"></translation>
+        <translation>Uno studente col nome &quot;%1&quot; esiste già nella classe selezionata. Vuoi scegliere un nome differente?</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="209"/>
         <source>&amp;Use this name anyway</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Usa lo stesso il nome</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="209"/>
         <source>&amp;Choose a different name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Scegli un nome differente</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4556"/>
         <source>Delete student</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella Studente</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="226"/>
         <source>Are you sure you want to delete student &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Sei sicuro di voler cancellare lo studente &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5467"/>
@@ -284,12 +284,12 @@
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4578"/>
         <source>Delete session</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella sessione</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="291"/>
         <source>Are you sure you want to delete session &quot;%1&quot; from this class? The session will not be deleted from the database.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sei sicuro di voler cancellare la sessione &quot;%1&quot; da questa classe? La sessione non verrà cancellata dal database.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3583"/>
@@ -299,7 +299,7 @@
     <message>
         <location filename="../class_viewer.cpp" line="353"/>
         <source>Session not found. This session might have been archived on a different computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessione non trovata. Questa sessione potrebbe essere stata archiviata in un computer differente.</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="25"/>
@@ -355,7 +355,8 @@
         <location filename="../server.cpp" line="929"/>
         <source>Cannot write file %1:
 %2.</source>
-        <translation>Impossibile scrivere il file %1:%2.</translation>
+        <translation>Impossibile scrivere il file %1:
+%2.</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="599"/>
@@ -393,7 +394,11 @@
 If you do so, any archived sessions associated to this database
 on other computers will not load, unless you change it back.
 This computer&apos;s archive will be updated.</source>
-        <translation>Sei sicuro di voler cambiare il nome del Database?Se lo farai ogni precendete sessione salvata non potrà essere apertasu nessun altro computer fino a che non ripristinerai il nome precedente.L&apos;Archivio su questo Computer verrà aggiornato.</translation>
+        <translation>Sei sicuro di voler cambiare il nome del Database?
+Se lo farai ogni precendete sessione salvata non potrà
+essere apertasu nessun altro computer fino a che non
+ripristinerai il nome precedente.
+L&apos;Archivio su questo Computer verrà aggiornato.</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="209"/>
@@ -429,7 +434,8 @@ This computer&apos;s archive will be updated.</source>
         <location filename="../server.cpp" line="825"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Impossibile leggere il file %1:%2.</translation>
+        <translation>Impossibile leggere il file %1:
+%2.</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="339"/>
@@ -441,7 +447,9 @@ This computer&apos;s archive will be updated.</source>
         <source>There is a newer version of iTest available.
 Nonetheless, this version is able to open the database file you selected,
 but you are most probably missing a whole bunch of cool new features.</source>
-        <translation>E&apos; Disponibile una versione aggiornata di iTest.In ogni modo questa versione aprirà il file che hai selezionato,ma perderai in ongi caso una serie di succulente novità.</translation>
+        <translation>E&apos; Disponibile una versione aggiornata di iTest.
+In ogni modo questa versione aprirà il file che hai selezionato,
+ma perderai in ongi caso una serie di succulente novità.</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="339"/>
@@ -1326,7 +1334,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5151"/>
         <source>Groups:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gruppi:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5154"/>
@@ -1641,42 +1649,42 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5369"/>
         <source>List of classes</source>
-        <translation type="unfinished"></translation>
+        <translation>Lista delle classi</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5378"/>
         <source>Double click a class to view</source>
-        <translation type="unfinished"></translation>
+        <translation>Doppio click su una classe per visualizzarla</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5381"/>
         <source>Selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Classe selezionata</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5382"/>
         <source>&lt;b&gt;Class name:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Nome classe:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5388"/>
         <source>&lt;b&gt;First year:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Primo anno:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5394"/>
         <source>&lt;b&gt;Last year:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Ultimo anno:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5400"/>
         <source>&lt;b&gt;Number of students:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Numero degli studenti:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5403"/>
         <source>Number of students in the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Numero degli studenti nella classe selezionata</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5406"/>
@@ -1686,7 +1694,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5407"/>
         <source>&lt;b&gt;Class average:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Media classe:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5444"/>
@@ -1696,12 +1704,12 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5441"/>
         <source>The selected student&apos;s average</source>
-        <translation type="unfinished"></translation>
+        <translation>Media studente selezionato</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5451"/>
         <source>List of results of the selected student</source>
-        <translation type="unfinished"></translation>
+        <translation>Lista dei risultati dello studente selezionato</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5446"/>
@@ -1721,17 +1729,17 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5456"/>
         <source>Add the selected session from the list of sessions on the left to the list of results above</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi la sessione selezionata dalla lista delle sessioni sulla sinistra alla lista dei risultati soprastanti</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5459"/>
         <source>Add selected session</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi sessione selezionata</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5462"/>
         <source>Remove the selected session from the list of results</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi la sessione selezionata dalla lista dei risultati</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5478"/>
@@ -1786,7 +1794,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5488"/>
         <source>&amp;Class</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Classe</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="3584"/>
@@ -2361,47 +2369,47 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4507"/>
         <source>&amp;Classes</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Classi</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4520"/>
         <source>Edit classes</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifica classi</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4531"/>
         <source>Create a new class</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea una nuova classe</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4542"/>
         <source>Delete the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella la classe selezionata</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4553"/>
         <source>Add a new student to the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi un nuovo studente alla classe selezionata</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4564"/>
         <source>Delete the selected student from the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella lo studente dalla classe selezionata</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4567"/>
         <source>Add session</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi sessione</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4575"/>
         <source>Add a session to the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi una sessione alla classe selezionata</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4586"/>
         <source>Delete the selected session from the selected class (the session will not be deleted from the database)</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella la sessione selezionata dalla classe selezionata (la sessione non sarà cancellata dal database)</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="329"/>
@@ -2449,7 +2457,10 @@ but you are most probably missing a whole bunch of cool new features.</source>
 as these operating systems handle the number of copies internally.&lt;br&gt;
 To print more copies, click &apos;Review configuration&apos; and set the&lt;br&gt;
 number of copies each time you start the server.</source>
-        <translation>Nota: Su Windows e Mac OS X, il numero è sempre 1&lt;br&gt;perchè questi OS controllano il numer o di copie internamente.&lt;br&gt;Per stampare pià copie, schiaccia &apos;Controlla Configurazione&apos; e imposta&lt;br&gt;il numero di copie ogni volta che avvii il server.</translation>
+        <translation>Nota: Su Windows e Mac OS X, il numero è sempre 1&lt;br&gt;
+perchè questi OS controllano il numer o di copie internamente.&lt;br&gt;
+Per stampare pià copie, schiaccia &apos;Controlla Configurazione&apos; e imposta&lt;br&gt;
+il numero di copie ogni volta che avvii il server.</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="346"/>
@@ -2790,7 +2801,8 @@ number of copies each time you start the server.</source>
         <location filename="../questions.cpp" line="85"/>
         <source>A question with this name already exists.
 Please choose a different name:</source>
-        <translation>Esiste già una domanda con questo nome.scegli un nome differente:</translation>
+        <translation>Esiste già una domanda con questo nome.
+Scegli un nome differente:</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="27"/>
@@ -2845,7 +2857,7 @@ Please choose a different name:</source>
     <message>
         <location filename="../questions.cpp" line="141"/>
         <source>Statistics: number of &lt;b&gt;correct&lt;/b&gt; answers: &lt;b&gt;%1&lt;/b&gt;; number of &lt;b&gt;incorrect&lt;/b&gt; answers: &lt;b&gt;%2&lt;/b&gt;; difficulty: &lt;b&gt;%3&lt;/b&gt;; &lt;a href=&quot;adjust.difficulty&quot;&gt;adjust difficulty&lt;/a&gt;</source>
-        <translation>Statistiche: numero &lt;b&gt;risposte&lt;/b&gt; corrette: &lt;b&gt;%1&lt;/b&gt;; numero&lt;b&gt;risposte&lt;/b&gt; errate: &lt;b&gt;%2&lt;/b&gt;; difficoltà: &lt;b&gt;%3&lt;/b&gt;; &lt;a href=&quot;adjust.difficulty&quot;&gt;calibra difficoltà&lt;/a&gt;</translation>
+        <translation>Statistiche: numero &lt;b&gt;risposte&lt;/b&gt; corrette: &lt;b&gt;%1&lt;/b&gt;; numero &lt;b&gt;risposte&lt;/b&gt; errate: &lt;b&gt;%2&lt;/b&gt;; difficoltà: &lt;b&gt;%3&lt;/b&gt;; &lt;a href=&quot;adjust.difficulty&quot;&gt;calibra difficoltà&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5435"/>
@@ -2856,13 +2868,15 @@ Please choose a different name:</source>
         <location filename="../questions.cpp" line="170"/>
         <source>This group is used by one or more questions with a different flag.
 Please choose a different group.</source>
-        <translation>Questo Gruppo è usato da una o più domande con marcatore differente.Scegliere un Gruppo differente.</translation>
+        <translation>Questo Gruppo è usato da una o più domande con marcatore differente.
+Scegliere un Gruppo differente.</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="195"/>
         <source>A question with this name already exists.
 Please choose a different name.</source>
-        <translation>Esiste già una domanda con questo nome.Scegliere un nome differente.</translation>
+        <translation>Esiste già una domanda con questo nome.
+Scegliere un nome differente.</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="199"/>
@@ -2872,14 +2886,19 @@ Changing the name to this one will cause that this question will be used
 instead of the no longer existent old one.
 %2 occurrences of the old name will also be updated.
 Are you sure you want to change the name?</source>
-        <translation>Questo nome è già stato usato.sono stati trovati %1 eventi nell&apos;archivio delle sessioni salvate.Cambiando il nome si causerà il cambiamento della domanda usata in precendenza.%2 eventi verranno aggiornati.Sei sicuro di voler cambiare il nome?</translation>
+        <translation>Questo nome è già stato usato.
+Sono stati trovati %1 eventi nell&apos;archivio delle sessioni salvate.
+Cambiando il nome si causerà il cambiamento della domanda usata in precendenza.
+%2 eventi verranno aggiornati. Sei sicuro di voler cambiare il nome?</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="209"/>
         <source>Are you sure you want to change the name of the question?
 %1 occurrences of this question found in the saved sessions.
 All occurrences will be updated.</source>
-        <translation>Sei sicuro di voler cambiare nome alla domanda?sono stati trovati %1 eventi nell&apos;archivio delle sessioni salvate.Tutti gli eventi verranno aggiornati.</translation>
+        <translation>Sei sicuro di voler cambiare nome alla domanda?
+Sono stati trovati %1 eventi nell&apos;archivio delle sessioni salvate.
+Tutti gli eventi verranno aggiornati.</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="246"/>
@@ -2960,7 +2979,8 @@ All occurrences will be updated.</source>
         <location filename="../server.cpp" line="329"/>
         <source>Students will need at least one minute for the exam,
 although it is recommended to give them an hour.</source>
-        <translation>Gli studenti necessitano almeno di un minuto per l&apos;esame,è tuttavia consigliato concedere almeno 1 ora.</translation>
+        <translation>Gli studenti necessitano almeno di un minuto per l&apos;esame,
+è tuttavia consigliato concedere almeno 1 ora.</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="333"/>
@@ -3175,22 +3195,22 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5385"/>
         <source>Name of the selected class (if you change this name, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome della classe selezionata (qualora si cambiasse il nome, non dimenticare di fare click su Applica)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5391"/>
         <source>The first year of the selected class (if you change this year, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Il primo anno della classe selezionata (qualora si cambiasse l&apos;anno, non dimenticare di fare click su Applica)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5397"/>
         <source>The last year of the selected class (if you change this year, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;ultimo anno della classe selezionata (qualora si modifichi l&apos;anno, non dimenticare di fare click su Applica)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5430"/>
         <source>Name of the selected student (if you change this name, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome dello studente selezionato (qualora si modifichi il nome, non dimenticare di fare click su Applica)</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="575"/>
@@ -3200,157 +3220,157 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../class_viewer.cpp" line="414"/>
         <source>Remove session</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi sessione</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="414"/>
         <source>Are you sure you want to remove session &quot;%1&quot; from the table of results of the selected student? The session will not be deleted from the database.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sei sicuro di voler rimuovere la sessione &quot;%1&quot; dalla tavola dei risultati dello studente selezionato? Questa sessione non verrà cancellata dal database.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4906"/>
         <source>Explanation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Spiegazione:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4589"/>
         <source>Print class summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Stampa riepilogo classe</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4597"/>
         <source>Print a summary for the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Stampa un riepilogo per la classe selezionata</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="644"/>
         <source>Print statistics for the selected student</source>
-        <translation type="unfinished"></translation>
+        <translation>Stampa statistiche per lo studente selezionato</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1017"/>
         <source>Statistics for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Statistiche per %1</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="650"/>
         <source>Statistics printed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Statistiche stampate con successo</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="802"/>
         <source>Class statistics and summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Riepilogo e statistiche classe</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="817"/>
         <source>Class average:</source>
-        <translation type="unfinished"></translation>
+        <translation>Media classe:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1025"/>
         <source>Test sessions attended:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessione test svolte:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1026"/>
         <source>Under the name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sotto il nome:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1027"/>
         <source>With a score of:</source>
-        <translation type="unfinished"></translation>
+        <translation>Con un punteggio di:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4909"/>
         <source>A brief explanation of the selected question</source>
-        <translation type="unfinished"></translation>
+        <translation>Una breve spiegazione della domanda selezionata</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5362"/>
         <source>Scoring system</source>
-        <translation type="unfinished"></translation>
+        <translation>Sistema di punteggio</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5071"/>
         <source>Allow giving points for partially correct answers (this affects multiple choice questions only)</source>
-        <translation type="unfinished"></translation>
+        <translation>Abilita assegnazione punti per risposte parzialmente corrette (influisce solo sulle domande a riposta multipla)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5074"/>
         <source>Allow partially correct answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Abilita risposte parzialmente corrette</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5075"/>
         <source>Separate settings for each difficulty level</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni separate per ciascun livello di difficoltà</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5115"/>
         <source>Specify the amount of points given for a correct answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Specificare il numero di punti assegnati per una risposta corretta</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5118"/>
         <source>Incorrect answer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Risposta sbagliata:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5121"/>
         <source>Specify the amount of points taken for an incorrect answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Specificare il numero di punti tolti per una risposta sbagliata</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5124"/>
         <source>Missing answer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Risposta mancante:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5127"/>
         <source>Specify the amount of points taken for each missing answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Specificare il numero di punti tolti per ciascuna risposta mancante</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5206"/>
         <source>Specify the minimum number of correct answers (with score above 0) to pass the test</source>
-        <translation type="unfinished"></translation>
+        <translation>Specificare il numero di risposte corrette per passare il test (con punteggio superiore a 0)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5323"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation>Punteggio</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5346"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Valore</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5350"/>
         <source>Partially correct answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Risposte parzialmente corrette</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5358"/>
         <source>Incorrect answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Risposte sbagliate</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5359"/>
         <source>Missing answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Risposte mancanti</translation>
     </message>
     <message>
         <location filename="../session_viewer.cpp" line="219"/>
         <source>allowed</source>
-        <translation type="unfinished"></translation>
+        <translation>permesse</translation>
     </message>
     <message>
         <location filename="../session_viewer.cpp" line="219"/>
         <source>disallowed</source>
-        <translation type="unfinished"></translation>
+        <translation>non permesse</translation>
     </message>
 </context>
 <context>
@@ -3438,12 +3458,12 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../print_engine.cpp" line="145"/>
         <source>Randomise question order in each printout</source>
-        <translation type="unfinished"></translation>
+        <translation>Stampa in ordine casuale le domande su ciascun foglio</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="150"/>
         <source>Number of different printouts:</source>
-        <translation type="unfinished"></translation>
+        <translation>Numero dei fogli differenti:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="164"/>
@@ -3453,12 +3473,12 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../print_engine.cpp" line="187"/>
         <source>%1 hidden questions listed</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 domande nascoste visualizzate</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="187"/>
         <source>%1 hidden questions not listed</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 domande nascoste non visualizzate</translation>
     </message>
 </context>
 <context>
@@ -3532,7 +3552,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_session_wizard.cpp" line="104"/>
         <source>Add session - iTestServer</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi sessione - iTestServer</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="105"/>
@@ -3542,12 +3562,12 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_session_wizard.cpp" line="106"/>
         <source>&lt;b&gt;Class:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Classe:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="107"/>
         <source>Match</source>
-        <translation type="unfinished"></translation>
+        <translation>Corrisponde</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="112"/>
@@ -3557,12 +3577,12 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../ui_session_wizard.cpp" line="116"/>
         <source>Class</source>
-        <translation type="unfinished"></translation>
+        <translation>Classe</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="118"/>
         <source>Split</source>
-        <translation type="unfinished"></translation>
+        <translation>Dividi</translation>
     </message>
 </context>
 <context>
