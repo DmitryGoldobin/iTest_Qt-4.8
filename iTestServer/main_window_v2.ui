@@ -368,22 +368,10 @@
           <item>
            <widget class="QGroupBox" name="LQGroupBox" >
             <property name="sizePolicy" >
-             <sizepolicy vsizetype="MinimumExpanding" hsizetype="Preferred" >
+             <sizepolicy vsizetype="MinimumExpanding" hsizetype="Maximum" >
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="minimumSize" >
-             <size>
-              <width>250</width>
-              <height>379</height>
-             </size>
-            </property>
-            <property name="maximumSize" >
-             <size>
-              <width>250</width>
-              <height>16777215</height>
-             </size>
             </property>
             <property name="title" >
              <string>List of questions</string>
@@ -391,6 +379,9 @@
             <layout class="QVBoxLayout" >
              <item>
               <layout class="QHBoxLayout" >
+               <property name="spacing" >
+                <number>6</number>
+               </property>
                <item>
                 <widget class="QRadioButton" name="LQAllRadioButton" >
                  <property name="statusTip" >
@@ -495,6 +486,9 @@
              </item>
              <item>
               <layout class="QHBoxLayout" >
+               <property name="spacing" >
+                <number>6</number>
+               </property>
                <item>
                 <widget class="QLabel" name="label_search" >
                  <property name="text" >
@@ -521,15 +515,21 @@
              <item>
               <layout class="QHBoxLayout" >
                <property name="spacing" >
-                <number>3</number>
+                <number>6</number>
                </property>
                <item>
-                <widget class="QPushButton" name="btnAdd" >
+                <widget class="QToolButton" name="tbtnAddQuestion" >
+                 <property name="enabled" >
+                  <bool>false</bool>
+                 </property>
+                 <property name="sizePolicy" >
+                  <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
                  <property name="statusTip" >
                   <string>Add a question</string>
-                 </property>
-                 <property name="text" >
-                  <string/>
                  </property>
                  <property name="icon" >
                   <iconset resource="resources.qrc" >
@@ -544,15 +544,18 @@
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="btnDuplicate" >
+                <widget class="QToolButton" name="tbtnDuplicateQuestion" >
                  <property name="enabled" >
                   <bool>false</bool>
                  </property>
+                 <property name="sizePolicy" >
+                  <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
                  <property name="statusTip" >
                   <string>Duplicate the selected question</string>
-                 </property>
-                 <property name="text" >
-                  <string/>
                  </property>
                  <property name="icon" >
                   <iconset resource="resources.qrc" >
@@ -567,15 +570,18 @@
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="btnDelete" >
+                <widget class="QToolButton" name="tbtnDeleteQuestion" >
                  <property name="enabled" >
                   <bool>false</bool>
                  </property>
+                 <property name="sizePolicy" >
+                  <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
                  <property name="statusTip" >
                   <string>Delete the selected question</string>
-                 </property>
-                 <property name="text" >
-                  <string/>
                  </property>
                  <property name="icon" >
                   <iconset resource="resources.qrc" >
@@ -590,12 +596,15 @@
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="btnMoveUp" >
+                <widget class="QToolButton" name="tbtnMoveUp" >
+                 <property name="sizePolicy" >
+                  <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
                  <property name="statusTip" >
                   <string>Move the selected question up</string>
-                 </property>
-                 <property name="text" >
-                  <string/>
                  </property>
                  <property name="icon" >
                   <iconset resource="resources.qrc" >
@@ -610,12 +619,15 @@
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="btnMoveDown" >
+                <widget class="QToolButton" name="tbtnMoveDown" >
+                 <property name="sizePolicy" >
+                  <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
                  <property name="statusTip" >
                   <string>Move the selected question down</string>
-                 </property>
-                 <property name="text" >
-                  <string/>
                  </property>
                  <property name="icon" >
                   <iconset resource="resources.qrc" >
@@ -4458,22 +4470,12 @@
            <item>
             <widget class="QLabel" name="SMIPortLabel" >
              <property name="text" >
-              <string>The server is running on port *****. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</string>
+              <string>The server is running on port &lt;b>%1&lt;/b>. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</string>
+             </property>
+             <property name="wordWrap" >
+              <bool>true</bool>
              </property>
             </widget>
-           </item>
-           <item>
-            <spacer>
-             <property name="orientation" >
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0" >
-              <size>
-               <width>40</width>
-               <height>10</height>
-              </size>
-             </property>
-            </spacer>
            </item>
           </layout>
          </widget>
@@ -7558,8 +7560,8 @@
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel" >
-     <x>243</x>
-     <y>210</y>
+     <x>293</x>
+     <y>229</y>
     </hint>
     <hint type="destinationlabel" >
      <x>115</x>

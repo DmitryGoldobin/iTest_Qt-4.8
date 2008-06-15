@@ -154,7 +154,7 @@ private slots:
     bool printSessionSummary(Session *, QPrinter *);
     void printQuestions(PrintQuestionsDialogue *); void printClassSummary();
     bool printClassSummary(Class *, QPrinter *);
-    QString htmlForQuestion(QuestionItem *, QTextDocument &, bool = false, bool = true, bool = true, bool = false);
+    QString htmlForQuestion(QuestionItem *, int, QTextDocument &, bool = false, bool = true, bool = true, bool = false);
     QString htmlForClassMember(ClassMember *);
     // SESSIONVIEWER-RELATED
     void setupSessionViewer(); void setCurrentSession(QListWidgetItem *);

@@ -114,7 +114,6 @@ void MainWindow::setAllEnabled(bool enabled)
     LQListWidget->setEnabled(enabled);
     LQFlagComboBox->setEnabled(enabled);
     LQSearchLineEdit->setEnabled(enabled);
-    btnAdd->setEnabled(enabled);
     actionAdd->setEnabled(enabled);
 //  actionUse_last_save_date->setEnabled(enabled);
 //  actionFrom_A_to_Z->setEnabled(enabled);
@@ -200,14 +199,10 @@ void MainWindow::setLQToolsEnabled(bool enabled)
 {
 	actionMove_up->setEnabled(enabled);
 	actionMove_down->setEnabled(enabled);
-	btnMoveUp->setEnabled(enabled);
-	btnMoveDown->setEnabled(enabled);
 	actionMove_to_top->setEnabled(enabled);
 	actionMove_to_bottom->setEnabled(enabled);
 	actionDelete->setEnabled(enabled);
-	btnDelete->setEnabled(enabled);
 	actionDuplicate->setEnabled(enabled);
-	btnDuplicate->setEnabled(enabled);
 	actionHide->setEnabled(enabled);
 }
 
@@ -334,11 +329,11 @@ MainWindow::MainWindow()
     // Initialize variables ----------------------------------------------------
     varinit();
 	// Connect slots -----------------------------------------------------------
-    QObject::connect(btnAdd, SIGNAL(released()), this, SLOT(addQuestion()));
+    tbtnAddQuestion->setDefaultAction(actionAdd);
+    tbtnDuplicateQuestion->setDefaultAction(actionDuplicate);
+    tbtnDeleteQuestion->setDefaultAction(actionDelete);
     QObject::connect(actionAdd, SIGNAL(triggered()), this, SLOT(addQuestion()));
-    QObject::connect(btnDelete, SIGNAL(released()), this, SLOT(deleteQuestion()));
     QObject::connect(actionDelete, SIGNAL(triggered()), this, SLOT(deleteQuestion()));
-    QObject::connect(btnDuplicate, SIGNAL(released()), this, SLOT(duplicateQuestion()));
     QObject::connect(actionDuplicate, SIGNAL(triggered()), this, SLOT(duplicateQuestion()));
     QObject::connect(btnApply, SIGNAL(released()), this, SLOT(applyQuestionChanges()));
     QObject::connect(actionApply, SIGNAL(triggered()), this, SLOT(applyQuestionChanges()));
@@ -380,23 +375,23 @@ MainWindow::MainWindow()
     QObject::connect(SQSVGListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem *)), this, SLOT(previewSvg(QListWidgetItem *)));
     QObject::connect(SQSVGListWidget, SIGNAL(currentTextChanged(QString)), this, SLOT(currentSvgChanged()));
 
+    tbtnMoveUp->setDefaultAction(actionMove_up);
+    tbtnMoveDown->setDefaultAction(actionMove_down);
     QObject::connect(actionMove_up, SIGNAL(triggered()), this, SLOT(moveUp()));
     QObject::connect(actionMove_down, SIGNAL(triggered()), this, SLOT(moveDown()));
-    QObject::connect(btnMoveUp, SIGNAL(released()), this, SLOT(moveUp()));
-    QObject::connect(btnMoveDown, SIGNAL(released()), this, SLOT(moveDown()));
     QObject::connect(actionMove_to_top, SIGNAL(triggered()), this, SLOT(moveToTop()));
     QObject::connect(actionMove_to_bottom, SIGNAL(triggered()), this, SLOT(moveToBottom()));
     QObject::connect(actionHide, SIGNAL(triggered()), this, SLOT(hideQuestion()));
     QObject::connect(actionShow_hidden, SIGNAL(triggered()), this, SLOT(filterLQSearch()));
 
-    rbtngrpFilterLQ = new QButtonGroup (this);
+    rbtngrpFilterLQ = new QButtonGroup(this);
     rbtngrpFilterLQ->addButton(LQAllRadioButton);
     rbtngrpFilterLQ->addButton(LQEasyRadioButton);
     rbtngrpFilterLQ->addButton(LQMediumRadioButton);
     rbtngrpFilterLQ->addButton(LQDifficultRadioButton);
     rbtngrpFilterLQ->addButton(LQFlagRadioButton);
 
-    actgrpFilterLQ = new QActionGroup (this);
+    actgrpFilterLQ = new QActionGroup(this);
     actgrpFilterLQ->addAction(actionShow_all);
     actgrpFilterLQ->addAction(actionShow_easy);
     actgrpFilterLQ->addAction(actionShow_medium);
@@ -409,7 +404,7 @@ MainWindow::MainWindow()
     QObject::connect(LQSearchLineEdit, SIGNAL(textEdited(const QString &)), this, SLOT(filterLQSearch()));
     QObject::connect(tbtnSearchByGroup, SIGNAL(released()), this, SLOT(searchByGroup()));
 
-    actgrpPage = new QActionGroup (this);
+    actgrpPage = new QActionGroup(this);
     actgrpPage->addAction(actionEdit_questions);
     actgrpPage->addAction(actionEdit_comments);
     actgrpPage->addAction(actionEdit_flags);

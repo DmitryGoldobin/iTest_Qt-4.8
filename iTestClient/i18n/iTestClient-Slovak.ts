@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="sk_SK">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -616,7 +615,7 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
 <context>
     <name>QuestionWidget</name>
     <message>
-        <location filename="../question_widget.cpp" line="74"/>
+        <location filename="../question_widget.cpp" line="75"/>
         <source>%1 out of %2</source>
         <translation>%1 z %2</translation>
     </message>

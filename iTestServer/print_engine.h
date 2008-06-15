@@ -40,6 +40,7 @@ public:
     bool printStatistics() { return printTest() ? false : printq_advanced_statistics->isChecked(); };
     bool printFormatting() { return printTest() ? true : printq_advanced_formatting->isChecked(); };
     bool printTest() { return printq_advanced_test->isChecked(); };
+    bool printKey() { return printTest() ? printq_advanced_key->isChecked() : false; };
     bool printGraphics() { return printq_advanced_graphics->isChecked(); };
     bool randomise() { return printq_advanced_randomise->isChecked(); };
     int numPrintouts() { return randomise() ? printq_advanced_numprintouts->value() : 1; };
@@ -64,6 +65,7 @@ private:
 	QCheckBox * printq_advanced_statistics;
 	QCheckBox * printq_advanced_formatting;
 	QCheckBox * printq_advanced_test;
+    QCheckBox * printq_advanced_key;
 	QCheckBox * printq_advanced_graphics;
     QCheckBox * printq_advanced_randomise;
     QSpinBox * printq_advanced_numprintouts;

@@ -68,6 +68,7 @@ QWidget(parent, Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/)
 	            printq_hlayout1_1->addWidget(printq_search_excluded);
 	        printq_vlayout1->addLayout(printq_hlayout1_1);
 	            printq_excludelist = new MTListWidget(this);
+                printq_excludelist->setDragDropMode(QAbstractItemView::InternalMove);
 	            QObject::connect(printq_excludelist, SIGNAL(itemDoubleClicked(QListWidgetItem *)), this, SLOT(addQuestionToPrint()));
                 QObject::connect(printq_search_excluded, SIGNAL(textChanged(QLineEdit *, const QString &)), printq_excludelist, SLOT(filterItems(QLineEdit *, const QString &)));
 	        printq_vlayout1->addWidget(printq_excludelist);
@@ -99,6 +100,7 @@ QWidget(parent, Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/)
 	            printq_hlayout1_2->addWidget(printq_search_included);
 	        printq_vlayout3->addLayout(printq_hlayout1_2);
 	            printq_includelist = new MTListWidget(this);
+                printq_includelist->setDragDropMode(QAbstractItemView::InternalMove);
 	            QObject::connect(printq_includelist, SIGNAL(itemDoubleClicked(QListWidgetItem *)), this, SLOT(removeQuestionToPrint()));
 	            QObject::connect(printq_includelist, SIGNAL(currentIndexAvailabilityChanged(bool)), printq_remove, SLOT(setEnabled(bool)));
                 QObject::connect(printq_search_included, SIGNAL(textChanged(QLineEdit *, const QString &)), printq_includelist, SLOT(filterItems(QLineEdit *, const QString &)));
@@ -136,22 +138,27 @@ QWidget(parent, Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/)
 	        QObject::connect(printq_advanced_test, SIGNAL(toggled(bool)), printq_advanced_statistics, SLOT(setDisabled(bool)));
 	        QObject::connect(printq_advanced_test, SIGNAL(toggled(bool)), printq_advanced_formatting, SLOT(setDisabled(bool)));
 	    printq_advanced->addWidget(printq_advanced_test, 3, 0, 1, 2);
+            printq_advanced_key = new QCheckBox(tr("Print a key to the test (a separate printout with correct answers)"), this);
+	        printq_advanced_key->setChecked(false);
+            printq_advanced_key->setEnabled(false);
+            QObject::connect(printq_advanced_test, SIGNAL(toggled(bool)), printq_advanced_key, SLOT(setEnabled(bool)));
+	    printq_advanced->addWidget(printq_advanced_key, 4, 0, 1, 2);
             printq_advanced_usegroups = new QCheckBox(tr("Allow one question per group only"), this);
 	        printq_advanced_usegroups->setChecked(false);
             printq_advanced_usegroups->setEnabled(false);
             QObject::connect(printq_advanced_test, SIGNAL(toggled(bool)), printq_advanced_usegroups, SLOT(setEnabled(bool)));
             QObject::connect(printq_advanced_usegroups, SIGNAL(toggled(bool)), this, SLOT(updateTestQnum()));
-	    printq_advanced->addWidget(printq_advanced_usegroups, 4, 0, 1, 2);
+	    printq_advanced->addWidget(printq_advanced_usegroups, 5, 0, 1, 2);
             printq_advanced_randomise = new QCheckBox(tr("Randomise question order in each printout"), this);
 	        printq_advanced_randomise->setChecked(false);
             QObject::connect(printq_advanced_randomise, SIGNAL(toggled(bool)), this, SLOT(resetDefaultValues()));
-	    printq_advanced->addWidget(printq_advanced_randomise, 5, 0, 1, 2);
+	    printq_advanced->addWidget(printq_advanced_randomise, 6, 0, 1, 2);
             QLabel * printq_label_numprintouts = new QLabel(this);
             printq_label_numprintouts->setText(tr("Number of different printouts:"));
             printq_label_numprintouts->setAlignment(Qt::AlignVCenter | Qt::AlignRight);
             printq_label_numprintouts->setEnabled(false);
             QObject::connect(printq_advanced_randomise, SIGNAL(toggled(bool)), printq_label_numprintouts, SLOT(setEnabled(bool)));
-        printq_advanced->addWidget(printq_label_numprintouts, 6, 0, 1, 1);
+        printq_advanced->addWidget(printq_label_numprintouts, 7, 0, 1, 1);
             printq_advanced_numprintouts = new QSpinBox(this);
             printq_advanced_numprintouts->setMinimum(1);
             printq_advanced_numprintouts->setMaximum(9999);
@@ -159,13 +166,13 @@ QWidget(parent, Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/)
             printq_advanced_numprintouts->setMaximumSize(printq_advanced_numprintouts->sizeHint());
             printq_advanced_numprintouts->setEnabled(false);
             QObject::connect(printq_advanced_randomise, SIGNAL(toggled(bool)), printq_advanced_numprintouts, SLOT(setEnabled(bool)));
-        printq_advanced->addWidget(printq_advanced_numprintouts, 6, 1, 1, 1);
+        printq_advanced->addWidget(printq_advanced_numprintouts, 7, 1, 1, 1);
             QLabel * printq_label_numquestions = new QLabel(this);
             printq_label_numquestions->setText(tr("Number of questions:"));
             printq_label_numquestions->setAlignment(Qt::AlignVCenter | Qt::AlignRight);
             printq_label_numquestions->setEnabled(false);
             QObject::connect(printq_advanced_randomise, SIGNAL(toggled(bool)), printq_label_numquestions, SLOT(setEnabled(bool)));
-        printq_advanced->addWidget(printq_label_numquestions, 7, 0, 1, 1);
+        printq_advanced->addWidget(printq_label_numquestions, 8, 0, 1, 1);
             printq_advanced_numquestions = new MTSpinBox(this);
             printq_advanced_numquestions->setMinimum(0);
             printq_advanced_numquestions->setMaximum(9999);
@@ -175,7 +182,7 @@ QWidget(parent, Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/)
             QObject::connect(printq_advanced_randomise, SIGNAL(toggled(bool)), printq_advanced_numquestions, SLOT(setEnabled(bool)));
             QObject::connect(printq_advanced_randomise, SIGNAL(toggled(bool)), printq_advanced_numquestions, SLOT(setMaximumValue()));
             QObject::connect(printq_advanced_numquestions, SIGNAL(valueChanged(int)), this, SLOT(togglePrintEnabled()));
-        printq_advanced->addWidget(printq_advanced_numquestions, 7, 1, 1, 1);
+        printq_advanced->addWidget(printq_advanced_numquestions, 8, 1, 1, 1);
         printq_advanced->gridLayout()->setColumnStretch(2, 1);
 	printq_glayout->addWidget(printq_advanced, 3, 0);
 	printq_glayout->setMargin(6); printq_glayout->setSpacing(6);
@@ -184,7 +191,7 @@ QWidget(parent, Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/)
         if (printq_parent->current_db_questions.value(printq_parent->LQListWidget->item(i))->isHidden()) { num_hidden++; }
     }
     printq_label_hidden->setText(printq_parent->actionShow_hidden->isChecked() ?
-        tr("%1 hidden questions listed").arg(num_hidden) : tr("%1 hidden questions not listed").arg(num_hidden));
+        tr("%n hidden question(s) listed", "", num_hidden) : tr("%n hidden question(s) not listed", "", num_hidden));
 	QListWidgetItem * item;
 	for (int i = 0; i < 20; ++i) {
 		if (printq_parent->current_db_fe[i]) {
@@ -262,6 +269,7 @@ void PrintQuestionsDialogue::resetDefaultValues()
         printq_advanced_statistics->setChecked(false);
         printq_advanced_formatting->setChecked(true);
     } else {
+        printq_advanced_key->setChecked(false);
         printq_advanced_usegroups->setChecked(false);
     }
     if (!randomise()) {
@@ -868,6 +876,13 @@ void MainWindow::printQuestions(PrintQuestionsDialogue * printq_widget)
 			}
 		}
     }
+    QFileInfo file_info; bool print_to_file = false; int len = 1; bool native_format = false;
+    if (!printer->outputFileName().isEmpty() && numprintouts > 1) {
+        file_info.setFile(printer->outputFileName());
+        print_to_file = true;
+        len = QString("%1").arg(numprintouts).length();
+        native_format = printer->outputFormat() == QPrinter::NativeFormat;
+    }
     for (int i = 0; i < numprintouts; ++i) {
         QList<int> randlist;
         if (randomise) { randlist = Question::randomise(questions, PassMark(), use_groups, numquestions, i); }
@@ -875,27 +890,67 @@ void MainWindow::printQuestions(PrintQuestionsDialogue * printq_widget)
         QTextDocument doc; QString html; QTextStream out(&html);
         out << "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><title>" << endl;
         out << tr("Questions") << endl << "</title><style type=\"text/css\">" << endl;
-        out << ".heading { font-family: sans-serif; font-size: medium; font-weight: bold; color: black; }" << endl;
+        out << ".heading { font-family: sans-serif; font-size: small; font-weight: bold; color: black; }" << endl;
         out << ".default_text { font-family: sans-serif; font-size: small; color: black; }" << endl;
         out << ".bold_text { font-family: sans-serif; font-size: small; font-weight: bold; color: black; }" << endl;
         out << ".answer { font-family: sans-serif; font-size: small; font-style: italic; color: black; }" << endl;
         out << ".correct { font-weight: bold; }" << endl;
         out << "</style></head><body>" << endl;
-        for (int i = 0; i < randlist.count(); ++i) {
-            out << htmlForQuestion((QuestionItem *)questions.at(randlist.at(i)), doc, test, formatted, print_statistics, print_graphics);
+        for (int r = 0; r < randlist.count(); ++r) {
+            out << htmlForQuestion((QuestionItem *)questions.at(randlist.at(r)), test ? randlist.at(r) + 1 : 0, doc, test, formatted, print_statistics, print_graphics);
         }
         out << "</body></html>" << endl;
+        if (print_to_file) {
+            printer->setOutputFileName(file_info.dir().absoluteFilePath(file_info.baseName() + QString("_%1.").arg(i + 1, len, 10, QChar('0')) + file_info.completeSuffix()));
+            if (native_format) { printer->setOutputFormat(QPrinter::NativeFormat); }
+        }
         doc.setHtml(html); printer->setDocName(tr("Questions")); doc.print(printer);
+    }
+    if (printq_widget->printKey()) {
+        QTextDocument doc; QString html; QTextStream out(&html);
+        out << "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><title>" << endl;
+        out << tr("Key") << endl << "</title><style type=\"text/css\">" << endl;
+        out << ".default_text { font-family: sans-serif; font-size: small; color: black; }" << endl;
+        out << ".bold_text { font-family: sans-serif; font-size: small; font-weight: bold; color: black; }" << endl;
+        out << "</style></head><body>" << endl;
+        out << "<table border=\"0\" width=\"100%\">" << endl;
+        out << "<tr><td class=\"bold_text\">" << endl;
+        out << tr("Question:") << "</td><td class=\"bold_text\">" << endl;
+        out << tr("Correct answers:") << "</td></tr>" << endl;
+        Question * item = NULL;
+        for (int i = 0; i < questions.count(); ++i) {
+            item = questions.at(i);
+            out << "<tr><td class=\"default_text\">" << endl;
+            out << "(" << i + 1 << ") ";
+            if (item->flag() >= 0 && item->flag() < 20) {
+                out << Qt::escape(current_db_f[item->flag()]) << ": ";
+            }
+            if (!item->group().isEmpty()) {
+                out << "[" << Qt::escape(item->group()) << "] ";
+            }
+            out << Qt::escape(item->name()) << endl;
+            out << "</td><td class=\"default_text\">" << endl;
+            out << Question::answerToString(item->correctAnswer());
+            out << "</td></tr>" << endl;
+        }
+        out << "</table>" << endl;
+        out << "</body></html>" << endl;
+        if (print_to_file) {
+            printer->setOutputFileName(file_info.dir().absoluteFilePath(file_info.baseName() + QString("_%1.").arg(tr("key")) + file_info.completeSuffix()));
+            if (native_format) { printer->setOutputFormat(QPrinter::NativeFormat); }
+        }
+        doc.setHtml(html); printer->setDocName(tr("Key")); doc.print(printer);
     }
 	delete printer;
 	return;
 }
 
-QString MainWindow::htmlForQuestion(QuestionItem * item, QTextDocument & doc, bool test, bool formatted, bool print_statistics, bool print_graphics)
+QString MainWindow::htmlForQuestion(QuestionItem * item, int n, QTextDocument & doc, bool test, bool formatted, bool print_statistics, bool print_graphics)
 {
     if (item == NULL) { return ""; }
 	QString html; QTextStream out(&html);
 	out << "<div class=\"heading\" align=\"center\">" << endl;
+    if (n != 0) { out << "(" << n << ") "; }
 	if (item->flag() >= 0 && item->flag() < 20) {
 		out << Qt::escape(current_db_f[item->flag()]) << ": ";
 	}
