@@ -3375,7 +3375,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../print_engine.cpp" line="942"/>
         <source>Key</source>
-        <translation type="unfinished"></translation>
+        <translation>Soluzioni</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="919"/>
@@ -3385,7 +3385,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../print_engine.cpp" line="939"/>
         <source>key</source>
-        <translation type="unfinished"></translation>
+        <translation>soluzioni</translation>
     </message>
 </context>
 <context>
@@ -3498,22 +3498,22 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../print_engine.cpp" line="141"/>
         <source>Print a key to the test (a separate printout with correct answers)</source>
-        <translation type="unfinished"></translation>
+        <translation>Stampa soluzioni test (un foglio separato con le risposte corrette)</translation>
     </message>
     <message numerus="yes">
         <location filename="../print_engine.cpp" line="194"/>
         <source>%n hidden question(s) listed</source>
         <translation>
-            <numerusform>%n domande nascoste visualizzate</numerusform>
-            <numerusform>%n domande nascoste visualizzate</numerusform>
+            <numerusform>%n domanda nascosta mostrata</numerusform>
+            <numerusform>%n domande nascoste mostrate</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../print_engine.cpp" line="194"/>
         <source>%n hidden question(s) not listed</source>
         <translation>
-            <numerusform>%n domande nascoste non visualizzate</numerusform>
-            <numerusform>%n domande nascoste non visualizzate</numerusform>
+            <numerusform>%n domanda nascosta non mostrata</numerusform>
+            <numerusform>%n domande nascoste non mostrate</numerusform>
         </translation>
     </message>
 </context>
