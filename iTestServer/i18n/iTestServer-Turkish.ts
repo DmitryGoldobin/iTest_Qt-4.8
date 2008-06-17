@@ -3497,7 +3497,7 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../print_engine.cpp" line="942"/>
         <source>Key</source>
-        <translation type="unfinished"></translation>
+        <translation>Anahtar</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="919"/>
@@ -3507,7 +3507,7 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../print_engine.cpp" line="939"/>
         <source>key</source>
-        <translation type="unfinished"></translation>
+        <translation>anahtar</translation>
     </message>
 </context>
 <context>
@@ -3620,22 +3620,22 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../print_engine.cpp" line="141"/>
         <source>Print a key to the test (a separate printout with correct answers)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bir testi yazdır (doğru yanıtlarla ayrı ayrı çıktı al)</translation>
     </message>
     <message numerus="yes">
         <location filename="../print_engine.cpp" line="194"/>
         <source>%n hidden question(s) listed</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
             <numerusform>%n gizli soru listelendi</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../print_engine.cpp" line="194"/>
         <source>%n hidden question(s) not listed</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
             <numerusform>%n gizli soru listelenmedi</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
