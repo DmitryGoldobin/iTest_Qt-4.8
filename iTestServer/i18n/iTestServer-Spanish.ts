@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="es_AR">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -2372,7 +2371,7 @@ el número de copias cada vez que inicie el servidor.</translation>
         <translation>Total</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1075"/>
+        <location filename="../print_engine.cpp" line="1079"/>
         <source>Average:</source>
         <translation>Promedio:</translation>
     </message>
@@ -2898,27 +2897,27 @@ aunque es recomendable de otorgarles una hora.</translation>
         <translation>Seleccionar preguntas a imprimir</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="964"/>
+        <location filename="../print_engine.cpp" line="968"/>
         <source>Name:</source>
         <translation>Nombre:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1039"/>
+        <location filename="../print_engine.cpp" line="1043"/>
         <source>Number of correct answers:</source>
         <translation>Número de respuestas correctas:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1042"/>
+        <location filename="../print_engine.cpp" line="1046"/>
         <source>Number of incorrect answers:</source>
         <translation>Número de respuestas incorrectas:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1045"/>
+        <location filename="../print_engine.cpp" line="1049"/>
         <source>Calculated difficulty:</source>
         <translation>Dificultad calculada:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1051"/>
+        <location filename="../print_engine.cpp" line="1055"/>
         <source>Unavailable</source>
         <translation>No disponible</translation>
     </message>
@@ -3283,7 +3282,7 @@ aunque es recomendable de otorgarles una hora.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1072"/>
+        <location filename="../print_engine.cpp" line="1076"/>
         <source>Statistics for %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3303,17 +3302,17 @@ aunque es recomendable de otorgarles una hora.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1084"/>
         <source>Test sessions attended:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1081"/>
+        <location filename="../print_engine.cpp" line="1085"/>
         <source>Under the name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1082"/>
+        <location filename="../print_engine.cpp" line="1086"/>
         <source>With a score of:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3408,17 +3407,12 @@ aunque es recomendable de otorgarles una hora.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="942"/>
+        <location filename="../print_engine.cpp" line="946"/>
         <source>Key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="919"/>
-        <source>Correct answers:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../print_engine.cpp" line="939"/>
+        <location filename="../print_engine.cpp" line="943"/>
         <source>key</source>
         <translation type="unfinished"></translation>
     </message>

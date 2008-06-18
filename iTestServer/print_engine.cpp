@@ -876,17 +876,17 @@ void MainWindow::printQuestions(PrintQuestionsDialogue * printq_widget)
 			}
 		}
     }
-    QFileInfo file_info; bool print_to_file = false; int len = 1; bool native_format = false;
-    if (!printer->outputFileName().isEmpty() && numprintouts > 1) {
+    QFileInfo file_info; bool print_to_file = false; bool native_format = false;
+    int len = QString("%1").arg(numprintouts).length();
+    if (!printer->outputFileName().isEmpty() && (numprintouts > 1 || printq_widget->printKey())) {
         file_info.setFile(printer->outputFileName());
         print_to_file = true;
-        len = QString("%1").arg(numprintouts).length();
         native_format = printer->outputFormat() == QPrinter::NativeFormat;
     }
+    QList<int> randlist[numprintouts]; QString timestamp = QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm");
     for (int i = 0; i < numprintouts; ++i) {
-        QList<int> randlist;
-        if (randomise) { randlist = Question::randomise(questions, PassMark(), use_groups, numquestions, i); }
-        else { for (int i = 0; i < questions.count(); ++i) { randlist << i; } }
+        if (randomise) { randlist[i] = Question::randomise(questions, PassMark(), use_groups, numquestions, i); }
+        else { for (int q = 0; q < questions.count(); ++q) { randlist[i] << q; } }
         QTextDocument doc; QString html; QTextStream out(&html);
         out << "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><title>" << endl;
         out << tr("Questions") << endl << "</title><style type=\"text/css\">" << endl;
@@ -896,8 +896,9 @@ void MainWindow::printQuestions(PrintQuestionsDialogue * printq_widget)
         out << ".answer { font-family: sans-serif; font-size: small; font-style: italic; color: black; }" << endl;
         out << ".correct { font-weight: bold; }" << endl;
         out << "</style></head><body>" << endl;
-        for (int r = 0; r < randlist.count(); ++r) {
-            out << htmlForQuestion((QuestionItem *)questions.at(randlist.at(r)), test ? randlist.at(r) + 1 : 0, doc, test, formatted, print_statistics, print_graphics);
+        if (test) { out << QString("<div class=\"heading\" align=\"center\">%1#%2</div><hr noshade=\"noshade\" size=\"1\">").arg(timestamp).arg(i + 1, len, 10, QChar('0')) << endl; }
+        for (int r = 0; r < randlist[i].count(); ++r) {
+            out << htmlForQuestion((QuestionItem *)questions.at(randlist[i].at(r)), test ? r + 1 : 0, doc, test, formatted, print_statistics, print_graphics);
         }
         out << "</body></html>" << endl;
         if (print_to_file) {
@@ -910,30 +911,33 @@ void MainWindow::printQuestions(PrintQuestionsDialogue * printq_widget)
         QTextDocument doc; QString html; QTextStream out(&html);
         out << "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><title>" << endl;
         out << tr("Key") << endl << "</title><style type=\"text/css\">" << endl;
+        out << ".heading { font-family: sans-serif; font-size: small; font-weight: bold; color: black; }" << endl;
         out << ".default_text { font-family: sans-serif; font-size: small; color: black; }" << endl;
         out << ".bold_text { font-family: sans-serif; font-size: small; font-weight: bold; color: black; }" << endl;
+        out << ".odd_col { background-color: lightgrey; }" << endl;
+        out << "table { border-style: solid; border-color: lightgrey; }" << endl;
         out << "</style></head><body>" << endl;
-        out << "<table border=\"0\" width=\"100%\">" << endl;
-        out << "<tr><td class=\"bold_text\">" << endl;
-        out << tr("Question:") << "</td><td class=\"bold_text\">" << endl;
-        out << tr("Correct answers:") << "</td></tr>" << endl;
-        Question * item = NULL;
-        for (int i = 0; i < questions.count(); ++i) {
-            item = questions.at(i);
-            out << "<tr><td class=\"default_text\">" << endl;
-            out << "(" << i + 1 << ") ";
-            if (item->flag() >= 0 && item->flag() < 20) {
-                out << Qt::escape(current_db_f[item->flag()]) << ": ";
+        out << QString("<div class=\"heading\" align=\"center\">%1</div><hr noshade=\"noshade\" size=\"1\">").arg(timestamp) << endl;
+        int cols = 12;
+        int n = numprintouts / cols; if (numprintouts % cols > 0) { n++; }
+        for (int t = 0; t < n; ++t) {
+            out << "<table border=\"1\" width=\"100%\" cellspacing=\"0\" cellpadding=\"1\">" << endl;
+            out << "<tr><th></th>" << endl;
+            for (int i = t * cols; i < qMin(numprintouts, (t + 1) * cols); ++i) {
+                out << QString("<th class=\"bold_text%1\" align=\"left\">#%2</th>").arg(i % 2 == 0 && numprintouts > 1 ? " odd_col" : "").arg(i + 1, len, 10, QChar('0')) << endl;
             }
-            if (!item->group().isEmpty()) {
-                out << "[" << Qt::escape(item->group()) << "] ";
+            out << "</tr>" << endl;
+            for (int i = 0; i < numquestions; ++i) {
+                out << "<tr><td class=\"bold_text\">(" << i + 1 << ")</td>";
+                for (int j = t * cols; j < qMin(numprintouts, (t + 1) * cols); ++j) {
+                    out << QString("<td class=\"default_text%1\">").arg(j % 2 == 0 && numprintouts > 1 ? " odd_col" : "");
+                    out << Question::answerToString(questions.at(randlist[j].at(i))->correctAnswer());
+                    out << "</td>" << endl;
+                }
+                out << "</tr>" << endl;
             }
-            out << Qt::escape(item->name()) << endl;
-            out << "</td><td class=\"default_text\">" << endl;
-            out << Question::answerToString(item->correctAnswer());
-            out << "</td></tr>" << endl;
+            out << "</table><br>" << endl;
         }
-        out << "</table>" << endl;
         out << "</body></html>" << endl;
         if (print_to_file) {
             printer->setOutputFileName(file_info.dir().absoluteFilePath(file_info.baseName() + QString("_%1.").arg(tr("key")) + file_info.completeSuffix()));
@@ -1053,7 +1057,7 @@ QString MainWindow::htmlForQuestion(QuestionItem * item, int n, QTextDocument & 
 	        out << "</div></td></tr></table>" << endl;
 	    }
 	}
-	out << "</p><hr noshade=\"noshade\" size=\"2\">" << endl;
+	out << "</p><hr noshade=\"noshade\" size=\"1\">" << endl;
 	return html;
 }
 

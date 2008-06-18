@@ -2181,7 +2181,7 @@ number of copies each time you start the server.</source>
         <translation>Статистика и отчёт по сессии</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1075"/>
+        <location filename="../print_engine.cpp" line="1079"/>
         <source>Average:</source>
         <translation>Средний результат:</translation>
     </message>
@@ -2948,27 +2948,27 @@ Please choose a different group.</source>
         <translation>Выбрать вопросы для печати</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="964"/>
+        <location filename="../print_engine.cpp" line="968"/>
         <source>Name:</source>
         <translation>Имя:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1039"/>
+        <location filename="../print_engine.cpp" line="1043"/>
         <source>Number of correct answers:</source>
         <translation>Количество правильных ответов:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1042"/>
+        <location filename="../print_engine.cpp" line="1046"/>
         <source>Number of incorrect answers:</source>
         <translation>Количество неправильных ответов:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1045"/>
+        <location filename="../print_engine.cpp" line="1049"/>
         <source>Calculated difficulty:</source>
         <translation>Вычисленная сложность:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1051"/>
+        <location filename="../print_engine.cpp" line="1055"/>
         <source>Unavailable</source>
         <translation>Недоступно</translation>
     </message>
@@ -3363,7 +3363,7 @@ Please choose a different group.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1072"/>
+        <location filename="../print_engine.cpp" line="1076"/>
         <source>Statistics for %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3383,17 +3383,17 @@ Please choose a different group.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1084"/>
         <source>Test sessions attended:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1081"/>
+        <location filename="../print_engine.cpp" line="1085"/>
         <source>Under the name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1082"/>
+        <location filename="../print_engine.cpp" line="1086"/>
         <source>With a score of:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3488,17 +3488,12 @@ Please choose a different group.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="942"/>
+        <location filename="../print_engine.cpp" line="946"/>
         <source>Key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="919"/>
-        <source>Correct answers:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../print_engine.cpp" line="939"/>
+        <location filename="../print_engine.cpp" line="943"/>
         <source>key</source>
         <translation type="unfinished"></translation>
     </message>

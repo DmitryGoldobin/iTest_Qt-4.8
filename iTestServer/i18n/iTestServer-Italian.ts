@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="it_IT">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -2738,7 +2737,7 @@ il numero di copie ogni volta che avvii il server.</translation>
         <translation>Totale</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1075"/>
+        <location filename="../print_engine.cpp" line="1079"/>
         <source>Average:</source>
         <translation>Medio:</translation>
     </message>
@@ -2763,27 +2762,27 @@ il numero di copie ogni volta che avvii il server.</translation>
         <translation>N/D</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="964"/>
+        <location filename="../print_engine.cpp" line="968"/>
         <source>Name:</source>
         <translation>Nome:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1039"/>
+        <location filename="../print_engine.cpp" line="1043"/>
         <source>Number of correct answers:</source>
         <translation>Numero di Risposte Corrette:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1042"/>
+        <location filename="../print_engine.cpp" line="1046"/>
         <source>Number of incorrect answers:</source>
         <translation>Numero di Risposte Sbagliate:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1045"/>
+        <location filename="../print_engine.cpp" line="1049"/>
         <source>Calculated difficulty:</source>
         <translation>Difficoltà Calcolata:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1051"/>
+        <location filename="../print_engine.cpp" line="1055"/>
         <source>Unavailable</source>
         <translation>Non Disponibile</translation>
     </message>
@@ -3248,7 +3247,7 @@ although it is recommended to give them an hour.</source>
         <translation>Stampa statistiche per lo studente selezionato</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1072"/>
+        <location filename="../print_engine.cpp" line="1076"/>
         <source>Statistics for %1</source>
         <translation>Statistiche per %1</translation>
     </message>
@@ -3268,17 +3267,17 @@ although it is recommended to give them an hour.</source>
         <translation>Media classe:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1084"/>
         <source>Test sessions attended:</source>
         <translation>Sessione test svolte:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1081"/>
+        <location filename="../print_engine.cpp" line="1085"/>
         <source>Under the name:</source>
         <translation>Sotto il nome:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1082"/>
+        <location filename="../print_engine.cpp" line="1086"/>
         <source>With a score of:</source>
         <translation>Con un punteggio di:</translation>
     </message>
@@ -3373,17 +3372,17 @@ although it is recommended to give them an hour.</source>
         <translation>non permesse</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="942"/>
+        <location filename="../print_engine.cpp" line="946"/>
         <source>Key</source>
         <translation>Soluzioni</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="919"/>
         <source>Correct answers:</source>
-        <translation>Risposte Corrette:</translation>
+        <translation type="obsolete">Risposte Corrette:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="939"/>
+        <location filename="../print_engine.cpp" line="943"/>
         <source>key</source>
         <translation>soluzioni</translation>
     </message>

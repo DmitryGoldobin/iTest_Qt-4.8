@@ -2071,7 +2071,7 @@ a nastavte počet kópií pri každom spustení servera.</translation>
         <translation>Prehľad a štatistika sedenia</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1075"/>
+        <location filename="../print_engine.cpp" line="1079"/>
         <source>Average:</source>
         <translation>Priemer:</translation>
     </message>
@@ -2967,27 +2967,27 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <translation type="obsolete">D</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="964"/>
+        <location filename="../print_engine.cpp" line="968"/>
         <source>Name:</source>
         <translation>Meno:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1039"/>
+        <location filename="../print_engine.cpp" line="1043"/>
         <source>Number of correct answers:</source>
         <translation>Počet správnych odpovedí:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1042"/>
+        <location filename="../print_engine.cpp" line="1046"/>
         <source>Number of incorrect answers:</source>
         <translation>Počet nesprávnych odpovedí:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1045"/>
+        <location filename="../print_engine.cpp" line="1049"/>
         <source>Calculated difficulty:</source>
         <translation>Vypočítaná obtiažnosť:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1051"/>
+        <location filename="../print_engine.cpp" line="1055"/>
         <source>Unavailable</source>
         <translation>Nedostupné</translation>
     </message>
@@ -3382,7 +3382,7 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <translation>Vytlačiť štatistiku o vybranom študentovi</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1072"/>
+        <location filename="../print_engine.cpp" line="1076"/>
         <source>Statistics for %1</source>
         <translation>Štatistika: %1</translation>
     </message>
@@ -3402,17 +3402,17 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <translation>Priemer triedy:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1084"/>
         <source>Test sessions attended:</source>
         <translation>Navštívené sedenia:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1081"/>
+        <location filename="../print_engine.cpp" line="1085"/>
         <source>Under the name:</source>
         <translation>Pod menom:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1082"/>
+        <location filename="../print_engine.cpp" line="1086"/>
         <source>With a score of:</source>
         <translation>S dosiahnutým skóre:</translation>
     </message>
@@ -3507,17 +3507,17 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <translation>zakázané</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="942"/>
+        <location filename="../print_engine.cpp" line="946"/>
         <source>Key</source>
         <translation>Kľúč</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="919"/>
         <source>Correct answers:</source>
-        <translation>Správne odpovede:</translation>
+        <translation type="obsolete">Správne odpovede:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="939"/>
+        <location filename="../print_engine.cpp" line="943"/>
         <source>key</source>
         <translation>kluc</translation>
     </message>

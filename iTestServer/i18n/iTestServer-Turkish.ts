@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="tr_TR">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -2179,7 +2178,7 @@ sunucuyu her başlattığınızda kopya sayısını ayarlayın.</translation>
         <translation>Oturum istatistikleri ve özet</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1075"/>
+        <location filename="../print_engine.cpp" line="1079"/>
         <source>Average:</source>
         <translation>Ortalama:</translation>
     </message>
@@ -2955,27 +2954,27 @@ Lütfen başka bir grup seçin.</translation>
         <translation type="obsolete">D</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="964"/>
+        <location filename="../print_engine.cpp" line="968"/>
         <source>Name:</source>
         <translation>İsim:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1039"/>
+        <location filename="../print_engine.cpp" line="1043"/>
         <source>Number of correct answers:</source>
         <translation>Doğru yanıtların sayısı:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1042"/>
+        <location filename="../print_engine.cpp" line="1046"/>
         <source>Number of incorrect answers:</source>
         <translation>Yanlış yanıtların sayısı:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1045"/>
+        <location filename="../print_engine.cpp" line="1049"/>
         <source>Calculated difficulty:</source>
         <translation>Planlanan zorluk derecesi:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1051"/>
+        <location filename="../print_engine.cpp" line="1055"/>
         <source>Unavailable</source>
         <translation>Kullanılamaz</translation>
     </message>
@@ -3370,7 +3369,7 @@ Lütfen başka bir grup seçin.</translation>
         <translation>Seçilen öğrenci için bir özet yazdır</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1072"/>
+        <location filename="../print_engine.cpp" line="1076"/>
         <source>Statistics for %1</source>
         <translation>%1 için istatistikler</translation>
     </message>
@@ -3390,17 +3389,17 @@ Lütfen başka bir grup seçin.</translation>
         <translation>Sınıf ortalaması:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1084"/>
         <source>Test sessions attended:</source>
         <translation>Katıldığı test oturumları:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1081"/>
+        <location filename="../print_engine.cpp" line="1085"/>
         <source>Under the name:</source>
         <translation>Bu isimle:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1082"/>
+        <location filename="../print_engine.cpp" line="1086"/>
         <source>With a score of:</source>
         <translation>Bu puanla:</translation>
     </message>
@@ -3495,17 +3494,17 @@ Lütfen başka bir grup seçin.</translation>
         <translation>izin verilmeyen</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="942"/>
+        <location filename="../print_engine.cpp" line="946"/>
         <source>Key</source>
         <translation>Anahtar</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="919"/>
         <source>Correct answers:</source>
-        <translation>Doğru yanıtlar:</translation>
+        <translation type="obsolete">Doğru yanıtlar:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="939"/>
+        <location filename="../print_engine.cpp" line="943"/>
         <source>key</source>
         <translation>anahtar</translation>
     </message>
