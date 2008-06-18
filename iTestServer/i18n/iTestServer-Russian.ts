@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -68,7 +69,7 @@
     <message>
         <location filename="../answersedit.cpp" line="28"/>
         <source>Answer %1 of the selected question</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответ %1 выбранного вопроса</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="30"/>
@@ -78,7 +79,7 @@
     <message>
         <location filename="../answersedit.cpp" line="34"/>
         <source>Remove this answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить этот ответ</translation>
     </message>
 </context>
 <context>
@@ -86,7 +87,7 @@
     <message>
         <location filename="../answersedit.cpp" line="65"/>
         <source>Add answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить ответ</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="70"/>
@@ -101,22 +102,22 @@
     <message>
         <location filename="../answersedit.cpp" line="73"/>
         <source>Single choice</source>
-        <translation type="unfinished"></translation>
+        <translation>Единственный выбор</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="74"/>
         <source>Single choice questions allow selecting one answer only, even if the question has more correct answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Вопросы с единственным выбором позволяют выбирать только один ответ даже при наличии нескольких правильных вариантов</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="82"/>
         <source>Multiple choice</source>
-        <translation type="unfinished"></translation>
+        <translation>Множественный выбор</translation>
     </message>
     <message>
         <location filename="../answersedit.cpp" line="83"/>
         <source>Multiple choice questions allow selecting more answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Вопросы с множественным выбором позволяют выбирать несколько ответов</translation>
     </message>
 </context>
 <context>
@@ -182,7 +183,7 @@
     <message>
         <location filename="../env_vars.cpp" line="42"/>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>Итальянский</translation>
     </message>
 </context>
 <context>
@@ -3070,127 +3071,127 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4533"/>
         <source>Add class</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить класс</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="166"/>
         <source>Class name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Название класса:</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="166"/>
         <source>Class %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Класс %1</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="170"/>
         <source>A class with this name already exists. Please choose a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Класс с этим названием уже существует. Пожалуйста, выберите другое название.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4544"/>
         <source>Delete class</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить класс</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="185"/>
         <source>Are you sure you want to delete class &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы уверены, что хотите удалить класс &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4555"/>
         <source>Add student</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить студента</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="205"/>
         <source>Student name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя студента:</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="205"/>
         <source>Student %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Студент %1</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="209"/>
         <source>A student with the name &quot;%1&quot; already exists in the selected class. Would you like to choose a different name?</source>
-        <translation type="unfinished"></translation>
+        <translation>Студент с именем &quot;%1&quot; уже присутствует в выбранном классе. Хотите выбрать другое имя?</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="209"/>
         <source>&amp;Use this name anyway</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Использовать это имя</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="209"/>
         <source>&amp;Choose a different name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Выбрать другое имя</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4566"/>
         <source>Delete student</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить студента</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="226"/>
         <source>Are you sure you want to delete student &quot;%1&quot;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы уверены, что хотите удалить студента &quot;%1&quot;?</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4588"/>
         <source>Delete session</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить сессию</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="292"/>
         <source>Are you sure you want to delete session &quot;%1&quot; from this class? The session will not be deleted from the database.</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы уверены, что хотите удалить сессию &quot;%1&quot; из этого класса? Сессия не будет удалена из базы данных.</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="355"/>
         <source>Session not found. This session might have been archived on a different computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Сессия не найдена. Эта сессия могла быть заархивирована на другом компьютере.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5374"/>
         <source>List of classes</source>
-        <translation type="unfinished"></translation>
+        <translation>Список классов</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5383"/>
         <source>Double click a class to view</source>
-        <translation type="unfinished"></translation>
+        <translation>Дважды щёлкните на классе для просмотра</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5386"/>
         <source>Selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбранный класс</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5387"/>
         <source>&lt;b&gt;Class name:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Название класса:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5393"/>
         <source>&lt;b&gt;First year:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Первый год:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5399"/>
         <source>&lt;b&gt;Last year:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Последний год:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5405"/>
         <source>&lt;b&gt;Number of students:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Количество студентов:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5408"/>
         <source>Number of students in the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество студентов в выбранном классе</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5411"/>
@@ -3200,7 +3201,7 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5412"/>
         <source>&lt;b&gt;Class average:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Средний балл:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5449"/>
@@ -3210,12 +3211,12 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5446"/>
         <source>The selected student&apos;s average</source>
-        <translation type="unfinished"></translation>
+        <translation>Средний балл выбранного студента</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5456"/>
         <source>List of results of the selected student</source>
-        <translation type="unfinished"></translation>
+        <translation>Список результатов выбранного студента</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5451"/>
@@ -3225,77 +3226,77 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5452"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5453"/>
         <source>Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Результаты</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5461"/>
         <source>Add the selected session from the list of sessions on the left to the list of results above</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить выбранную сессию из списка сессий слева в список результатов сверху</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5464"/>
         <source>Add selected session</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить выбранную сессию</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5467"/>
         <source>Remove the selected session from the list of results</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить выбранную сессию из списка результатов</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5493"/>
         <source>&amp;Class</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Класс</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4517"/>
         <source>&amp;Classes</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Классы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4530"/>
         <source>Edit classes</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать классы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4541"/>
         <source>Create a new class</source>
-        <translation type="unfinished"></translation>
+        <translation>Создать новый класс</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4552"/>
         <source>Delete the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить выбранный класс</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4563"/>
         <source>Add a new student to the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить нового студента в выбранный класс</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4574"/>
         <source>Delete the selected student from the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить выбранного студента из выбранного класса</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4577"/>
         <source>Add session</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить сессию</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4585"/>
         <source>Add a session to the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить сессию в выбранный класс</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4596"/>
         <source>Delete the selected session from the selected class (the session will not be deleted from the database)</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить выбранную сессию из выбранного класса (сессия не будет удалена из базы данных)</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="295"/>
@@ -3310,22 +3311,22 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5390"/>
         <source>Name of the selected class (if you change this name, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Название выбранного класса (после изменения не забудьте нажать на кнопку &quot;Применить&quot; справа)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5396"/>
         <source>The first year of the selected class (if you change this year, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Первый год выбранного класса (после изменения не забудьте нажать на кнопку &quot;Применить&quot; справа)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5402"/>
         <source>The last year of the selected class (if you change this year, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Последний год выбранного класса (после изменения не забудьте нажать на кнопку &quot;Применить&quot; справа)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5435"/>
         <source>Name of the selected student (if you change this name, do not forget to click the Apply button on the right)</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя выбранного студента (после изменения не забудьте нажать на кнопку &quot;Применить&quot; справа)</translation>
     </message>
     <message>
         <location filename="../questions.cpp" line="575"/>
@@ -3335,167 +3336,167 @@ Please choose a different group.</source>
     <message>
         <location filename="../class_viewer.cpp" line="417"/>
         <source>Remove session</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить сессию</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="417"/>
         <source>Are you sure you want to remove session &quot;%1&quot; from the table of results of the selected student? The session will not be deleted from the database.</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы уверены, что хотите удалить сессию &quot;%1&quot; из таблицы результатов выбранного студента? Сессия не будет удалена из базы данных.</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4911"/>
         <source>Explanation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Объяснение:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4599"/>
         <source>Print class summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Напечатать итоги класса</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4607"/>
         <source>Print a summary for the selected class</source>
-        <translation type="unfinished"></translation>
+        <translation>Вывести на печать итоги выбранного класса</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="652"/>
         <source>Print statistics for the selected student</source>
-        <translation type="unfinished"></translation>
+        <translation>Вывести на печать статистику выбранного студента</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1076"/>
         <source>Statistics for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Статистика - %1</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="658"/>
         <source>Statistics printed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Статистика была успешно выведена на печать</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="810"/>
         <source>Class statistics and summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Статистика и итоги класса</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="825"/>
         <source>Class average:</source>
-        <translation type="unfinished"></translation>
+        <translation>Средний балл класса:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1084"/>
         <source>Test sessions attended:</source>
-        <translation type="unfinished"></translation>
+        <translation>Посещено тестовых сессий:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1085"/>
         <source>Under the name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Под именем:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1086"/>
         <source>With a score of:</source>
-        <translation type="unfinished"></translation>
+        <translation>С результатом:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="4914"/>
         <source>A brief explanation of the selected question</source>
-        <translation type="unfinished"></translation>
+        <translation>Краткое объяснение выбранного вопроса</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5367"/>
         <source>Scoring system</source>
-        <translation type="unfinished"></translation>
+        <translation>Система ведения счёта</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5076"/>
         <source>Allow giving points for partially correct answers (this affects multiple choice questions only)</source>
-        <translation type="unfinished"></translation>
+        <translation>Начислять баллы за частично правильные ответы (только для вопросов с множественным выбором)</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5079"/>
         <source>Allow partially correct answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Учитывать частично правильные ответы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5080"/>
         <source>Separate settings for each difficulty level</source>
-        <translation type="unfinished"></translation>
+        <translation>Различные настройки для каждого уровня сложности</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5120"/>
         <source>Specify the amount of points given for a correct answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество начисляемых баллов за частично правильный ответ</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5123"/>
         <source>Incorrect answer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Неправильный ответ:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5126"/>
         <source>Specify the amount of points taken for an incorrect answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество вычитаемых баллов за неправильный ответ</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5129"/>
         <source>Missing answer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Пропущенный ответ:</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5132"/>
         <source>Specify the amount of points taken for each missing answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество вычитаемых баллов за пропущенный ответ</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5211"/>
         <source>Specify the minimum number of correct answers (with score above 0) to pass the test</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимальное количество правильных ответов (с начисляемыми баллами больше нуля), необходимое для успешного прохождения теста</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5328"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation>Баллы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5351"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5355"/>
         <source>Partially correct answers</source>
-        <translation type="unfinished"></translation>
+        <translation>Частично правильные ответы</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5363"/>
         <source>Incorrect answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Неправильный ответ</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5364"/>
         <source>Missing answer</source>
-        <translation type="unfinished"></translation>
+        <translation>Пропущенный ответ</translation>
     </message>
     <message>
         <location filename="../session_viewer.cpp" line="225"/>
         <source>allowed</source>
-        <translation type="unfinished"></translation>
+        <translation>разрешены</translation>
     </message>
     <message>
         <location filename="../session_viewer.cpp" line="225"/>
         <source>disallowed</source>
-        <translation type="unfinished"></translation>
+        <translation>запрещены</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="946"/>
         <source>Key</source>
-        <translation type="unfinished"></translation>
+        <translation>Параметр</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="943"/>
         <source>key</source>
-        <translation type="unfinished"></translation>
+        <translation>параметр</translation>
     </message>
 </context>
 <context>
@@ -3583,12 +3584,12 @@ Please choose a different group.</source>
     <message>
         <location filename="../print_engine.cpp" line="152"/>
         <source>Randomise question order in each printout</source>
-        <translation type="unfinished"></translation>
+        <translation>Менять порядок вопросов в каждой распечатке</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="157"/>
         <source>Number of different printouts:</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество различных распечаток:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="171"/>
@@ -3598,24 +3599,24 @@ Please choose a different group.</source>
     <message>
         <location filename="../print_engine.cpp" line="141"/>
         <source>Print a key to the test (a separate printout with correct answers)</source>
-        <translation type="unfinished"></translation>
+        <translation>Распечатать лист с правильными ответами</translation>
     </message>
     <message numerus="yes">
         <location filename="../print_engine.cpp" line="194"/>
         <source>%n hidden question(s) listed</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>выведен %n скрытый вопрос</numerusform>
+            <numerusform>выведено %n скрытых вопроса</numerusform>
+            <numerusform>выведено %n скрытых вопросов</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../print_engine.cpp" line="194"/>
         <source>%n hidden question(s) not listed</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>пропущен %n скрытый вопрос</numerusform>
+            <numerusform>пропущено %n скрытых вопроса</numerusform>
+            <numerusform>пропущено %n скрытых вопросов</numerusform>
         </translation>
     </message>
 </context>
@@ -3654,27 +3655,27 @@ Please choose a different group.</source>
     <message>
         <location filename="../../shared/question.cpp" line="180"/>
         <source>e)</source>
-        <translation type="unfinished"></translation>
+        <translation>д)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="181"/>
         <source>f)</source>
-        <translation type="unfinished"></translation>
+        <translation>е)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="182"/>
         <source>g)</source>
-        <translation type="unfinished"></translation>
+        <translation>ж)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="183"/>
         <source>h)</source>
-        <translation type="unfinished"></translation>
+        <translation>з)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="184"/>
         <source>i)</source>
-        <translation type="unfinished"></translation>
+        <translation>и)</translation>
     </message>
 </context>
 <context>
@@ -3690,7 +3691,7 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_session_wizard.cpp" line="104"/>
         <source>Add session - iTestServer</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление сессии - iTestServer</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="105"/>
@@ -3700,12 +3701,12 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_session_wizard.cpp" line="106"/>
         <source>&lt;b&gt;Class:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Класс:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="107"/>
         <source>Match</source>
-        <translation type="unfinished"></translation>
+        <translation>Сопоставить</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="112"/>
@@ -3715,12 +3716,12 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_session_wizard.cpp" line="116"/>
         <source>Class</source>
-        <translation type="unfinished"></translation>
+        <translation>Класс</translation>
     </message>
     <message>
         <location filename="../ui_session_wizard.cpp" line="118"/>
         <source>Split</source>
-        <translation type="unfinished"></translation>
+        <translation>Отменить сопоставление</translation>
     </message>
 </context>
 <context>

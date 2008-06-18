@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -584,27 +585,27 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../../shared/question.cpp" line="180"/>
         <source>e)</source>
-        <translation type="unfinished"></translation>
+        <translation>д)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="181"/>
         <source>f)</source>
-        <translation type="unfinished"></translation>
+        <translation>е)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="182"/>
         <source>g)</source>
-        <translation type="unfinished"></translation>
+        <translation>ж)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="183"/>
         <source>h)</source>
-        <translation type="unfinished"></translation>
+        <translation>з)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="184"/>
         <source>i)</source>
-        <translation type="unfinished"></translation>
+        <translation>и)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="186"/>
