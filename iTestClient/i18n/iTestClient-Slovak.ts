@@ -78,7 +78,7 @@
         <translation>Pripravený</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Open database</source>
         <translation>Otvoriť databázu</translation>
     </message>
@@ -88,7 +88,7 @@
         <translation>Otvoriť databázový súbor</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Nemôžem čítať súbor %1:
@@ -239,12 +239,12 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
         <translation>Načítavam testové dáta...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="230"/>
+        <location filename="../database.cpp" line="231"/>
         <source>Reading database file...</source>
         <translation>Čítam databázový súbor...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="266"/>
+        <location filename="../database.cpp" line="267"/>
         <source>Generating test...</source>
         <translation>Generujem test...</translation>
     </message>
@@ -494,7 +494,7 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
         <translation>NEUROBIL(A)</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="202"/>
+        <location filename="../database.cpp" line="203"/>
         <source>Total</source>
         <translation>Celkom</translation>
     </message>
@@ -539,7 +539,7 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
         <translation type="obsolete">D</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="201"/>
+        <location filename="../database.cpp" line="202"/>
         <source>%1 of total %2</source>
         <translation>%1 z %2</translation>
     </message>
@@ -615,7 +615,7 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
 <context>
     <name>QuestionWidget</name>
     <message>
-        <location filename="../question_widget.cpp" line="75"/>
+        <location filename="../question_widget.cpp" line="76"/>
         <source>%1 out of %2</source>
         <translation>%1 z %2</translation>
     </message>

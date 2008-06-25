@@ -99,9 +99,14 @@ QWidget(parent, Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/)
 	                ExtendedLineEdit * printq_search_included = new ExtendedLineEdit(this);
 	            printq_hlayout1_2->addWidget(printq_search_included);
 	        printq_vlayout3->addLayout(printq_hlayout1_2);
-	            printq_includelist = new MTListWidget(this);
-                printq_includelist->setDragDropMode(QAbstractItemView::InternalMove);
-	            QObject::connect(printq_includelist, SIGNAL(itemDoubleClicked(QListWidgetItem *)), this, SLOT(removeQuestionToPrint()));
+	            printq_includelist = new MTTableWidget(this);
+                printq_includelist->setShowGrid(false);
+                printq_includelist->setColumnCount(2);
+                printq_includelist->verticalHeader()->hide();
+                printq_includelist->horizontalHeader()->hide();
+                printq_includelist->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
+                printq_includelist->horizontalHeader()->setResizeMode(1, QHeaderView::ResizeToContents);
+	            QObject::connect(printq_includelist, SIGNAL(itemDoubleClicked(QTableWidgetItem *)), this, SLOT(removeQuestionToPrint()));
 	            QObject::connect(printq_includelist, SIGNAL(currentIndexAvailabilityChanged(bool)), printq_remove, SLOT(setEnabled(bool)));
                 QObject::connect(printq_search_included, SIGNAL(textChanged(QLineEdit *, const QString &)), printq_includelist, SLOT(filterItems(QLineEdit *, const QString &)));
 	        printq_vlayout3->addWidget(printq_includelist);
@@ -192,14 +197,7 @@ QWidget(parent, Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/)
     }
     printq_label_hidden->setText(printq_parent->actionShow_hidden->isChecked() ?
         tr("%n hidden question(s) listed", "", num_hidden) : tr("%n hidden question(s) not listed", "", num_hidden));
-	QListWidgetItem * item;
-	for (int i = 0; i < 20; ++i) {
-		if (printq_parent->current_db_fe[i]) {
-			item = new QListWidgetItem(QString("%1 - %2").arg(i+1).arg(printq_parent->current_db_f[i]), printq_excludelist);
-			item->setData(Qt::UserRole, i);
-			printq_parent->setQuestionItemColour(item, i);
-		}
-	}
+	togglePrintSelection(printq_rbtn_flags);
     updateTestQnum();
 	this->show();
 }
@@ -207,21 +205,27 @@ QWidget(parent, Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/)
 void PrintQuestionsDialogue::togglePrintSelection(QAbstractButton * rbtn)
 {
 	if (rbtn->text() == tr("Flags")) {
-		printq_excludelist->clear();
-		printq_includelist->clear();
-		printq_btn_print->setEnabled(false);
+        printq_excludelist->clear();
+		printq_includelist->clearContents();
+        printq_includelist->setRowCount(0);
+        printq_includelist->setColumnCount(2);
+        printq_includelist->setHorizontalHeaderLabels(QStringList() << tr("Flag name") << tr("Number of questions"));
+        printq_includelist->horizontalHeader()->setResizeMode(1, QHeaderView::ResizeToContents);
+        printq_includelist->horizontalHeader()->show();
 		QListWidgetItem * item;
 		for (int i = 0; i < 20; ++i) {
 			if (printq_parent->current_db_fe[i]) {
 				item = new QListWidgetItem(QString("%1 - %2").arg(i+1).arg(printq_parent->current_db_f[i]), printq_excludelist);
 				item->setData(Qt::UserRole, i);
-				printq_parent->setQuestionItemColour(item, i);
+				MainWindow::setQuestionItemColour(item, i);
 			}
 		}
 	} else if (rbtn->text() == tr("Questions")) {
 		printq_excludelist->clear();
-		printq_includelist->clear();
-		printq_btn_print->setEnabled(false);
+		printq_includelist->clearContents();
+        printq_includelist->setRowCount(0);
+        printq_includelist->setColumnCount(1);
+        printq_includelist->horizontalHeader()->hide();
 		QListWidgetItem * item;
 		for (int i = 0; i < printq_parent->LQListWidget->count(); ++i) {
 			if (!printq_parent->current_db_questions.value(printq_parent->LQListWidget->item(i))->isHidden() || printq_parent->actionShow_hidden->isChecked()) {
@@ -237,15 +241,36 @@ void PrintQuestionsDialogue::togglePrintSelection(QAbstractButton * rbtn)
 void PrintQuestionsDialogue::addQuestionToPrint()
 {
     if (printq_excludelist->currentIndex().isValid()) {
-        printq_includelist->addItem(printq_excludelist->takeItem(printq_excludelist->currentRow()));
+        addQuestionToPrint(printq_excludelist->currentRow());
         updateTestQnum();
+    }
+}
+
+void PrintQuestionsDialogue::addQuestionToPrint(int row)
+{
+    printq_includelist->setRowCount(printq_includelist->rowCount() + 1);
+    QTableWidgetItem * item = MainWindow::toTableItem(printq_excludelist->takeItem(row), true);
+    printq_includelist->setItem(printq_includelist->rowCount() - 1, 0, item);
+    if (rbtngrpPrintqSelect->checkedButton()->text() == tr("Flags")) {
+    	int max = printq_parent->qnumForFlag(item->data(Qt::UserRole).toInt(), useGroups());
+        MTSpinBox * spb_qnum = new MTSpinBox(this);
+        printq_includelist->setCellWidget(printq_includelist->rowCount() - 1, 1, spb_qnum);
+        spb_qnum->setMaximum(max);
+        spb_qnum->setMaximumValue();
+        spb_qnum->setFixedHeight(20);
+        spb_qnum->setEnabled(randomise());
+        QObject::connect(spb_qnum, SIGNAL(valueChanged(int)), this, SLOT(updateTestQnum()));
+        printq_includelist->setRowHeight(printq_includelist->rowCount() - 1, 20);
+    } else {
+    	printq_includelist->setRowHeight(printq_includelist->rowCount() - 1, 16);
     }
 }
 
 void PrintQuestionsDialogue::removeQuestionToPrint()
 {
-    if (printq_includelist->currentIndex().isValid()) {
-        printq_excludelist->addItem(printq_includelist->takeItem(printq_includelist->currentRow()));
+    if (printq_includelist->currentRow() >= 0) {
+        printq_excludelist->addItem(MainWindow::toListItem(printq_includelist->item(printq_includelist->currentRow(), 0)));
+        printq_includelist->removeRow(printq_includelist->currentRow());
         updateTestQnum();
     }
 }
@@ -253,9 +278,9 @@ void PrintQuestionsDialogue::removeQuestionToPrint()
 void PrintQuestionsDialogue::addAllQuestionsToPrint()
 {
 	for (int i = 0; i < printq_excludelist->count();) {
-		printq_includelist->addItem(printq_excludelist->takeItem(i));
-		updateTestQnum();
+		addQuestionToPrint(i);
 	}
+    updateTestQnum();
 }
 
 void PrintQuestionsDialogue::togglePrintEnabled()
@@ -274,6 +299,12 @@ void PrintQuestionsDialogue::resetDefaultValues()
     }
     if (!randomise()) {
         printq_advanced_numprintouts->setValue(1);
+    }
+    if (rbtngrpPrintqSelect->checkedButton()->text() == tr("Flags")) {
+        for (int i = 0; i < printq_includelist->rowCount(); ++i) {
+            printq_includelist->cellWidget(i, 1)->setEnabled(randomise());
+            if (!randomise()) { ((MTSpinBox *)printq_includelist->cellWidget(i, 1))->setMaximumValue(); }
+        }
     }
 }
 
@@ -859,9 +890,13 @@ void MainWindow::printQuestions(PrintQuestionsDialogue * printq_widget)
     int numprintouts = printq_widget->numPrintouts();
     bool use_groups = printq_widget->useGroups();
     int numquestions = printq_widget->numQuestions();
-    QList<int> used_items;
-	for (int i = 0; i < printq_widget->includeListWidget()->count(); ++i) {
-		used_items << printq_widget->includeListWidget()->item(i)->data(Qt::UserRole).toInt();
+    QList<int> used_items; PassMark passmark; int pm_v = 0;
+	for (int i = 0; i < printq_widget->includeTableWidget()->rowCount(); ++i) {
+		used_items << printq_widget->includeTableWidget()->item(i, 0)->data(Qt::UserRole).toInt();
+        pm_v = ((QSpinBox *)printq_widget->includeTableWidget()->cellWidget(i, 1))->value();
+        if (flags_selected && pm_v > 0) {
+            passmark.addCondition(printq_widget->includeTableWidget()->item(i, 0)->data(Qt::UserRole).toInt(), 0, pm_v);
+        }
 	}
     QList<Question *> questions;
     for (int i = 0; i < LQListWidget->count(); ++i) {
@@ -885,7 +920,7 @@ void MainWindow::printQuestions(PrintQuestionsDialogue * printq_widget)
     }
     QList<int> randlist[numprintouts]; QString timestamp = QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm");
     for (int i = 0; i < numprintouts; ++i) {
-        if (randomise) { randlist[i] = Question::randomise(questions, PassMark(), use_groups, numquestions, i); }
+        if (randomise) { randlist[i] = Question::randomise(questions, passmark, use_groups, numquestions, i); }
         else { for (int q = 0; q < questions.count(); ++q) { randlist[i] << q; } }
         QTextDocument doc; QString html; QTextStream out(&html);
         out << "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><title>" << endl;

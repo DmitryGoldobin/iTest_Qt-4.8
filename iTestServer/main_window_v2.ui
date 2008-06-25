@@ -3642,6 +3642,11 @@
                  </column>
                  <column>
                   <property name="text" >
+                   <string>Number of questions</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text" >
                    <string>Pass mark</string>
                   </property>
                  </column>
@@ -5427,7 +5432,7 @@
            <item>
             <layout class="QHBoxLayout" >
              <item>
-              <widget class="QToolButton" name="tbtnAdd_class" >
+              <widget class="MTToolButton" name="tbtnAdd_class" >
                <property name="iconSize" >
                 <size>
                  <width>16</width>
@@ -5683,7 +5688,7 @@
            <item>
             <layout class="QHBoxLayout" >
              <item>
-              <widget class="QToolButton" name="tbtnAdd_student" >
+              <widget class="MTToolButton" name="tbtnAdd_student" >
                <property name="iconSize" >
                 <size>
                  <width>16</width>
@@ -5953,7 +5958,7 @@
            <item>
             <layout class="QHBoxLayout" >
              <item>
-              <widget class="QToolButton" name="tbtnAdd_session" >
+              <widget class="MTToolButton" name="tbtnAdd_session" >
                <property name="iconSize" >
                 <size>
                  <width>16</width>

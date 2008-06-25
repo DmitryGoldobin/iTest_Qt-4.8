@@ -328,6 +328,8 @@ MainWindow::MainWindow()
 	EFButtonBox->button(QDialogButtonBox::Discard)->setIcon(QIcon(QString::fromUtf8(":/images/images/button_cancel.png")));
     // Initialize variables ----------------------------------------------------
     varinit();
+    current_db_session = NULL;
+    current_db_class = NULL;
 	// Connect slots -----------------------------------------------------------
     tbtnAddQuestion->setDefaultAction(actionAdd);
     tbtnDuplicateQuestion->setDefaultAction(actionDuplicate);
@@ -713,8 +715,8 @@ void MainWindow::overallStatistics()
 		stats_tw->setItem(row, 4, tw_item);
 		tw_item = new QTableWidgetItem;
 		QPushButton * stats_btn_adjust = new QPushButton(tr("Adjust difficulty"), stats_tw);
+        stats_tw->setCellWidget(row, 5, stats_btn_adjust);
 		stats_btn_adjust->setEnabled(false);
-		stats_tw->setCellWidget(row, 5, stats_btn_adjust);
 		stats_qmap.insert(stats_btn_adjust, q_item);
 		stats_twmap.insert(stats_btn_adjust, row);
 		stats_lwmap.insert(stats_btn_adjust, i);

@@ -167,24 +167,24 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation>É necessária uma versão mais recente do iTest para abrir este ficheiro de base de dados.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="230"/>
+        <location filename="../database.cpp" line="231"/>
         <source>Reading database file...</source>
         <translation>Lendo ficheiro de base de dados...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Open database</source>
         <translation>Abrir base de dados</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Não foi possível ler o ficheiro %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="266"/>
+        <location filename="../database.cpp" line="267"/>
         <source>Generating test...</source>
         <translation>A gerar o teste...</translation>
     </message>
@@ -489,7 +489,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation>REPROVADO</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="202"/>
+        <location filename="../database.cpp" line="203"/>
         <source>Total</source>
         <translation>Total</translation>
     </message>
@@ -534,7 +534,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation type="obsolete">D</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="201"/>
+        <location filename="../database.cpp" line="202"/>
         <source>%1 of total %2</source>
         <translation>%1 em %2</translation>
     </message>
@@ -610,7 +610,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
 <context>
     <name>QuestionWidget</name>
     <message>
-        <location filename="../question_widget.cpp" line="75"/>
+        <location filename="../question_widget.cpp" line="76"/>
         <source>%1 out of %2</source>
         <translation>%1 em %2</translation>
     </message>

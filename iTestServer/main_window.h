@@ -100,6 +100,7 @@ private slots:
     void setFlags(); void loadFlags(); void applyFlags(); void discardFlags();
     void setFlagLineEditPalettes(); void updateFlags(QAbstractButton *);
     void updateFlagQnums(); void checkForUnflaggedQuestions();
+    int qnumForFlag(int, bool = false);
     static QColor backgroundColourForFlag(int);
     static QColor foregroundColourForFlag(int, bool = false);
     // CLEAR
@@ -128,10 +129,12 @@ private slots:
     void currentSvgChanged();
     // SERVER-RELATED
     void setupServer(); void reloadAvailableItems();
-    void updateTestQnum(); void updateTestQnum(bool, bool, bool, QSpinBox *, QListWidget * = NULL);
+    void updateTestQnum(); void updateTestQnum(bool, bool, bool, QSpinBox *, QTableWidget *);
     void updateTestTime(); int numIdentifiedClients(); void toggleStartServerEnabled();
     void toggleSaveSessionEnabled(); void resetScoringSystemValues(bool);
-    void addToList(); void removeFromList(); void toggleAddRemoveEnabled();
+    static QTableWidgetItem * toTableItem(QListWidgetItem *, bool = false);
+    static QListWidgetItem * toListItem(QTableWidgetItem *);
+    void addToList(); void removeFromList();
     void startServer(); void stopServer(); void addClient();
     void setCurrentClient(); void setClientStatus(QAbstractSocket::SocketState);
     void clientIdentified(Client *); void clientFinished(Client *);

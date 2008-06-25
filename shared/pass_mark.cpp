@@ -34,10 +34,11 @@ int PassMark::passMark()
 	return pm_mark;
 }
 	
-void PassMark::addCondition(int condition, int value)
+void PassMark::addCondition(int condition, int value, int qnum)
 {
 	pm_conditions << condition;
 	pm_values << value;
+    pm_qnums << qnum;
 }
 
 int PassMark::count()
@@ -58,6 +59,11 @@ int PassMark::value(int i)
 int PassMark::conditionIndex(int i)
 {
 	return pm_conditions.indexOf(i);
+}
+
+int PassMark::qnum(int i)
+{
+    return pm_qnums.at(i);
 }
 
 /*bool PassMark::move(int a, int b)
@@ -128,6 +134,20 @@ bool PassMark::check(QList<QuestionItem *> questions)
 
 #ifdef ITESTSERVER
 QString PassMark::data()
+{
+	QString out;
+	out.append("[PASSMARK]\n");
+	out.append(QString("%1\n").arg(pm_mark));
+	out.append(QString("%1").arg(pm_conditions.count()));
+	for (int i = 0; i < pm_conditions.count(); ++i) {
+		out.append(QString("\n%1").arg(pm_conditions.at(i)));
+		out.append(QString("\n%1").arg(pm_values.at(i)));
+        out.append(QString("\n%1").arg(pm_qnums.at(i)));
+	}
+	return out;
+}
+
+QString PassMark::archiveData()
 {
 	QString out;
 	out.append("[PASSMARK]\n");

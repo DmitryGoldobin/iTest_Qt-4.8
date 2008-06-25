@@ -40,6 +40,7 @@ void MainWindow::setupSessionViewer()
 	SVLSListWidget->setSortingEnabled(true);
 	SVLASListWidget->setSortingEnabled(true);
     SVPassMarkTableWidget->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
+    SVPassMarkTableWidget->horizontalHeader()->setResizeMode(1, QHeaderView::ResizeToContents);
     SVPassMarkTableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
     SVScoringSystemTableWidget->horizontalHeader()->setResizeMode(QHeaderView::ResizeToContents);
     SVScoringSystemTableWidget->verticalHeader()->setResizeMode(QHeaderView::ResizeToContents);
@@ -206,7 +207,7 @@ void MainWindow::setCurrentSession(QListWidgetItem * item)
 		SVPassMarkTableWidget->setRowCount(session->passMark().count());
 		for (int i = 0; i < session->passMark().count(); ++i) {
 			if (session->passMark().condition(i) < 0 || session->passMark().condition(i) >= 20) { continue; }
-		    item = new QTableWidgetItem(QString("%1 - %2").arg(session->passMark().condition(i)).arg(current_db_f[session->passMark().condition(i)]));
+		    item = new QTableWidgetItem(QString("%1 - %2").arg(session->passMark().condition(i) + 1).arg(current_db_f[session->passMark().condition(i)]));
 		    item->setBackground(QBrush::QBrush(backgroundColourForFlag(session->passMark().condition(i))));
 		    item->setForeground(QBrush::QBrush(foregroundColourForFlag(session->passMark().condition(i))));
 		    SVPassMarkTableWidget->setItem(i, 0, item);

@@ -479,10 +479,11 @@ void MainWindow::openDB(QString openDBName, bool useCP1250)
 			if (db_version >= 1.2) {
 				if (rfile.readLine() != "[PASSMARK]") { throw xInvalidDBFile(); }
 				PassMark pm(rfile.readLine().toInt());
-				int pm_count = rfile.readLine().toInt(); int pm_c;
+				int pm_count = rfile.readLine().toInt(); int pm_c, pm_v;
 				for (int i = 0; i < pm_count; ++i) {
 					pm_c = rfile.readLine().toInt();
-					pm.addCondition(pm_c, rfile.readLine().toInt());
+                    pm_v = rfile.readLine().toInt();
+					pm.addCondition(pm_c, pm_v, pm_v);
 				}
 				session->setPassMark(pm);
 			} else {

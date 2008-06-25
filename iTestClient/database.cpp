@@ -113,10 +113,11 @@ void MainWindow::loadTest(QString input)
     if (db_version >= 1.2) {
         if (in.readLine() != "[PASSMARK]") { errorInvalidData(); return; }
         current_test_passmark.setPassMark(in.readLine().toInt());
-        int pm_count = in.readLine().toInt(); int pm_c;
+        int pm_count = in.readLine().toInt(); int pm_c, pm_v;
         for (int i = 0; i < pm_count; ++i) {
             pm_c = in.readLine().toInt();
-            current_test_passmark.addCondition(pm_c, in.readLine().toInt());
+            pm_v = in.readLine().toInt();
+            current_test_passmark.addCondition(pm_c, pm_v, db_version >= 1.35 ? in.readLine().toInt() : pm_v);
         }
     }
     // Questions

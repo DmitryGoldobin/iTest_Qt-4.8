@@ -177,29 +177,29 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <translation>Necesita una nueva versión de iTest para abrir este archivo de base de datos.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="202"/>
+        <location filename="../database.cpp" line="203"/>
         <source>Total</source>
         <translation>Total</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="230"/>
+        <location filename="../database.cpp" line="231"/>
         <source>Reading database file...</source>
         <translation>Leyendo el archivo de base de datos...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Open database</source>
         <translation>Abrir base de datos</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>No se puede leer el archivo %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="266"/>
+        <location filename="../database.cpp" line="267"/>
         <source>Generating test...</source>
         <translation>Generando exámen...</translation>
     </message>
@@ -499,7 +499,7 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <translation>&lt;b&gt;Nombre:&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="201"/>
+        <location filename="../database.cpp" line="202"/>
         <source>%1 of total %2</source>
         <translation>%1 del total %2</translation>
     </message>
@@ -575,7 +575,7 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
 <context>
     <name>QuestionWidget</name>
     <message>
-        <location filename="../question_widget.cpp" line="75"/>
+        <location filename="../question_widget.cpp" line="76"/>
         <source>%1 out of %2</source>
         <translation>%1 de %2</translation>
     </message>

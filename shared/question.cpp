@@ -347,10 +347,10 @@ QList<int> Question::randomise(QList<Question *> questions, PassMark passmark, b
     	}
         int y = qnum;
     	for (int c = 0; c < passmark.count(); ++c) {
-            y -= passmark.value(c);
+            y -= passmark.qnum(c);
     		int rand; QList<int> randlist;
     		x = passmark.conditionIndex(passmark.condition(c));
-    		for (int i = 0; i < passmark.value(c); ++i) {
+    		for (int i = 0; i < passmark.qnum(c); ++i) {
     			random_1:
     			do {
     			    rand = (qrand() + id) % qflist[x].size();

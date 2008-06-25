@@ -21,27 +21,24 @@
 
 void MainWindow::setupClassViewer()
 {
-    tbtnAdd_class->setDefaultAction(actionAdd_class);
+    tbtnAdd_class->setAction(actionAdd_class, true);
     tbtnAdd_class->setText(tr("Add"));
     tbtnAdd_class->setIconSize(QSize::QSize(16, 16));
     tbtnDelete_class->setAction(actionDelete_class, true);
     tbtnDelete_class->setText(tr("Delete"));
     tbtnDelete_class->setIconSize(QSize::QSize(16, 16));
-    actionDelete_class->setEnabled(false);
-    tbtnAdd_student->setDefaultAction(actionAdd_student);
+    tbtnAdd_student->setAction(actionAdd_student, true);
     tbtnAdd_student->setText(tr("Add"));
     tbtnAdd_student->setIconSize(QSize::QSize(16, 16));
     tbtnDelete_student->setAction(actionDelete_student, true);
     tbtnDelete_student->setText(tr("Delete"));
     tbtnDelete_student->setIconSize(QSize::QSize(16, 16));
-    actionDelete_student->setEnabled(false);
-    tbtnAdd_session->setDefaultAction(actionAdd_session);
+    tbtnAdd_session->setAction(actionAdd_session, true);
     tbtnAdd_session->setText(tr("Add"));
     tbtnAdd_session->setIconSize(QSize::QSize(16, 16));
     tbtnDelete_session->setAction(actionDelete_session, true);
     tbtnDelete_session->setText(tr("Delete"));
     tbtnDelete_session->setIconSize(QSize::QSize(16, 16));
-    actionDelete_session->setEnabled(false);
     QObject::connect(actionAdd_class, SIGNAL(triggered()), this, SLOT(addClass()));
     QObject::connect(actionDelete_class, SIGNAL(triggered()), this, SLOT(deleteClass()));
     QObject::connect(actionPrint_class_summary, SIGNAL(triggered()), this, SLOT(printClassSummary()));
@@ -119,10 +116,10 @@ void MainWindow::setCurrentClassMember(QListWidgetItem * item)
             CLSSResultsTableWidget->item(i, 1)->setData(Qt::UserRole, mem->sessionEntry(i).member_num);
             CLSSResultsTableWidget->item(i, 1)->setBackground(QBrush::QBrush(session->student(mem->sessionEntry(i).member_num)->passed() ? QColor::QColor(197, 255, 120) : QColor::QColor(204, 163, 0)));
             MTProgressBar * bar = new MTProgressBar(this);
+            CLSSResultsTableWidget->setCellWidget(i, 2, bar);
             bar->setMaximum((int)(session->student(mem->sessionEntry(i).member_num)->maximumScore() * 100.0));
             bar->setValue((int)(session->student(mem->sessionEntry(i).member_num)->score() * 100.0));
             bar->setTextVisible(true);
-            CLSSResultsTableWidget->setCellWidget(i, 2, bar);
         } else {
             CLSSResultsTableWidget->setItem(i, 0, new QTableWidgetItem(mem->sessionToString(i)));
             CLSSResultsTableWidget->item(i, 0)->setData(Qt::UserRole, mem->sessionEntry(i).session);
@@ -469,6 +466,9 @@ void MainWindow::setCLSCEnabled(bool enable)
     CLLSGroupBox->setEnabled(enable);
     CLLSSGroupBox->setEnabled(enable);
     actionDelete_class->setEnabled(enable);
+    actionAdd_session->setEnabled(enable);
+    actionDelete_session->setEnabled(enable && CLLSSListWidget->currentIndex().isValid());
+    actionAdd_student->setEnabled(enable);
     if (!enable) { setCLSSEnabled(enable); }
 }
 

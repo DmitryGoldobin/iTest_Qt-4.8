@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
-<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -168,24 +167,24 @@ but you are most probably missing a whole bunch of cool new features.</source>
         <translation>Чтобы открыть этот файл базы данных, Вам требуется более новая версия iTest.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="230"/>
+        <location filename="../database.cpp" line="231"/>
         <source>Reading database file...</source>
         <translation>Чтение файла базы данных...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Open database</source>
         <translation>Открыть базу данных</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Невозможно прочитать файл %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="266"/>
+        <location filename="../database.cpp" line="267"/>
         <source>Generating test...</source>
         <translation>Формирование вопросов теста...</translation>
     </message>
@@ -495,7 +494,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
         <translation>НЕ ПРОШЁЛ</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="202"/>
+        <location filename="../database.cpp" line="203"/>
         <source>Total</source>
         <translation>Итог</translation>
     </message>
@@ -540,7 +539,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
         <translation type="obsolete">Г</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="201"/>
+        <location filename="../database.cpp" line="202"/>
         <source>%1 of total %2</source>
         <translation>%1 из %2</translation>
     </message>
@@ -616,7 +615,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
 <context>
     <name>QuestionWidget</name>
     <message>
-        <location filename="../question_widget.cpp" line="75"/>
+        <location filename="../question_widget.cpp" line="76"/>
         <source>%1 out of %2</source>
         <translation>%1 из %2</translation>
     </message>

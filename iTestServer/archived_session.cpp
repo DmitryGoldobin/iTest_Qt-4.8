@@ -86,7 +86,7 @@ void ArchivedSession::archive()
 		}
 	}
 	archive.setValue(QString("%1/%2").arg(as_parent->current_db_name).arg(session_title), data);
-	archive.setValue(QString("%1/%2/PassMark").arg(as_parent->current_db_name).arg(session_title), s_passmark.data());
+	archive.setValue(QString("%1/%2/PassMark").arg(as_parent->current_db_name).arg(session_title), s_passmark.archiveData());
     archive.setValue(QString("%1/%2/ScoringSystem").arg(as_parent->current_db_name).arg(session_title), s_scoringsystem.data());
 	archive.setValue(QString("%1/%2/StudentsPassed").arg(as_parent->current_db_name).arg(session_title), students_passed);
 	archive.setValue(QString("%1/%2/QAFlags").arg(as_parent->current_db_name).arg(session_title), qa_flaglist.join(";"));

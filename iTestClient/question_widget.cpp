@@ -70,8 +70,9 @@ void QuestionWidget::init(QuestionItem * item, bool highlight_correct_answers)
     mainhlayout->addLayout(vlayout);
 
     if (!item) { return; }
-    if (!highlight_correct_answers) { qw_lbl_icon->setVisible(false); }
+    qw_lbl_icon->setVisible(highlight_correct_answers);
     qw_lbl_icon->setPixmap(QPixmap(QString::fromUtf8(item->score() > 0.0 ? ":/images/images/button_ok.png" : ":/images/images/button_cancel.png")));
+    qw_lbl_score->setVisible(highlight_correct_answers);
     qw_lbl_score->setText(tr("%1 out of %2").arg(item->score()).arg(item->maximumScore()));
     qw_lbl_question->setText(item->text());
     qw_lbl_explanation->setText(item->explanation());

@@ -41,11 +41,13 @@ int main(int argc, char *argv[])
                  - added Italian translation
                  - added the ability to create classes with students
                  - added an advanced scoring system
+                 - added the ability to set the (minimum) number of questions in
+                   a test for each flag separately
                  - added multiple choice questions support
                  - added support for up to 9 answers and the ability to set
                    this number for each question separately
                  - advanced test printing options, random order of questions in
-                   each printout
+                   each printout, the ability to print keys to tests
                  - improved appearance under Mac OS X
                  - new database format - older versions of iTest cannot open the
                    new itdb 1.4 files, iTest 1.4 can still open older databases

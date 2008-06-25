@@ -43,8 +43,8 @@ void MainWindow::setupServer()
     QObject::connect(TSAdvancedSetupGroupBox, SIGNAL(toggled(bool)), this, SLOT(reloadAvailableItems()));
     QObject::connect(TSSearchAvailableLineEdit, SIGNAL(textChanged(QLineEdit *, const QString &)), TSExcludeListWidget, SLOT(filterItems(QLineEdit *, const QString &)));
     QObject::connect(TSSearchUsedLineEdit, SIGNAL(textChanged(QLineEdit *, const QString &)), TSIncludeTableWidget, SLOT(filterItems(QLineEdit *, const QString &)));
-    QObject::connect(TSExcludeListWidget, SIGNAL(currentTextChanged(QString)), this, SLOT(toggleAddRemoveEnabled()));
-    QObject::connect(TSIncludeTableWidget, SIGNAL(currentItemChanged(QTableWidgetItem *, QTableWidgetItem *)), this, SLOT(toggleAddRemoveEnabled()));
+    QObject::connect(TSExcludeListWidget, SIGNAL(currentIndexAvailabilityChanged(bool)), btnAddToList, SLOT(setEnabled(bool)));
+    QObject::connect(TSIncludeTableWidget, SIGNAL(currentIndexAvailabilityChanged(bool)), btnRemoveFromList, SLOT(setEnabled(bool)));
     QObject::connect(btnAddToList, SIGNAL(released()), this, SLOT(addToList()));
     QObject::connect(btnRemoveFromList, SIGNAL(released()), this, SLOT(removeFromList()));
     QObject::connect(TSExcludeListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem *)), this, SLOT(addToList()));
@@ -54,6 +54,8 @@ void MainWindow::setupServer()
     TSIncludeTableWidget->verticalHeader()->hide();
     TSIncludeTableWidget->horizontalHeader()->hide();
     TSIncludeTableWidget->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
+    TSIncludeTableWidget->horizontalHeader()->setResizeMode(1, QHeaderView::ResizeToContents);
+    TSIncludeTableWidget->horizontalHeader()->setResizeMode(2, QHeaderView::ResizeToContents);
     QObject::connect(TSMaxQnumCheckBox, SIGNAL(toggled(bool)), TSQnumSpinBox, SLOT(setMaximumValue()));
     QObject::connect(TSGroupsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateTestQnum()));
     QObject::connect(TSQnumSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateTestTime()));
@@ -81,12 +83,6 @@ void MainWindow::resetScoringSystemValues(bool)
     TSDifficultMissingAnswerSpinBox->setValue(0.0);
 }
 
-void MainWindow::toggleAddRemoveEnabled()
-{
-    btnAddToList->setEnabled(TSExcludeListWidget->currentIndex().isValid());
-    btnRemoveFromList->setEnabled(TSIncludeTableWidget->currentRow() >= 0);
-}
-
 void MainWindow::toggleStartServerEnabled()
 {
     btnStartServer->setEnabled(TSQnumSpinBox->value() > 0);
@@ -103,9 +99,11 @@ void MainWindow::reloadAvailableItems()
     } else {
         if (rbtnSelectFlags->isChecked()) {
             // FLAGS -----------------------------------------------------------
-            TSIncludeTableWidget->setColumnCount(2);
+            TSIncludeTableWidget->setColumnCount(3);
+            TSIncludeTableWidget->setHorizontalHeaderLabels(QStringList() << tr("Flag name") << tr("Number of questions") << tr("Pass mark"));
+            TSIncludeTableWidget->horizontalHeader()->setResizeMode(1, QHeaderView::ResizeToContents);
+            TSIncludeTableWidget->horizontalHeader()->setResizeMode(2, QHeaderView::ResizeToContents);
             TSIncludeTableWidget->horizontalHeader()->show();
-            TSIncludeTableWidget->setHorizontalHeaderLabels(QStringList() << tr("Flag name") << tr("Pass mark"));
             QListWidgetItem * item;
             for (int i = 0; i < 20; ++i) {
                 if (current_db_fe[i]) {
@@ -114,7 +112,6 @@ void MainWindow::reloadAvailableItems()
                     setQuestionItemColour(item, i);
                 }
             }
-            toggleAddRemoveEnabled();
             // -----------------------------------------------------------------
         } else if (rbtnSelectQuestions->isChecked()) {
             // QUESTIONS -------------------------------------------------------
@@ -128,7 +125,6 @@ void MainWindow::reloadAvailableItems()
                 item->setData(Qt::UserRole, i);
                 TSExcludeListWidget->addItem(item);
             }
-            toggleAddRemoveEnabled();
             // -----------------------------------------------------------------
         }
     }
@@ -140,19 +136,20 @@ void MainWindow::updateTestQnum()
     updateTestQnum(TSAdvancedSetupGroupBox->isChecked(),
                     TSGroupsCheckBox->isChecked(),
                     rbtnSelectFlags->isChecked(),
-                    TSQnumSpinBox);
+                    TSQnumSpinBox,
+                    TSIncludeTableWidget);
 }
 
-void MainWindow::updateTestQnum(bool advanced, bool use_groups, bool flags_selected, QSpinBox * spb_qnum, QListWidget * lw_include)
+void MainWindow::updateTestQnum(bool advanced, bool use_groups, bool flags_selected, QSpinBox * spb_qnum, QTableWidget * tw_include)
 {
-    int db_qnum = 0; int min_qnum = 0; QuestionItem * item;
+    int db_qnum = 0; int min_qnum = 0; int total_passmark = 0; QuestionItem * item; bool server_mode = tw_include == TSIncludeTableWidget;
     if (!advanced) {
     	if (use_groups) {
     		QSet<QString> groups;
     		for (int q = 0; q < LQListWidget->count(); ++q) {
     			item = NULL; item = current_db_questions.value(LQListWidget->item(q));
     			if (item == NULL) { continue; }
-    			if (item->isHidden()) { if (lw_include == NULL || !actionShow_hidden->isChecked()) continue; }
+    			if (item->isHidden()) { if (server_mode || !actionShow_hidden->isChecked()) continue; }
     			if (item->group().isEmpty()) { db_qnum++; }
     			else { groups << item->group(); }
     		}
@@ -161,23 +158,22 @@ void MainWindow::updateTestQnum(bool advanced, bool use_groups, bool flags_selec
     		for (int q = 0; q < LQListWidget->count(); ++q) {
     			item = NULL; item = current_db_questions.value(LQListWidget->item(q));
     			if (item == NULL) { continue; }
-    		    if (item->isHidden()) { if (lw_include == NULL || !actionShow_hidden->isChecked()) continue; }
+    		    if (item->isHidden()) { if (server_mode || !actionShow_hidden->isChecked()) continue; }
     		    db_qnum++;
     		}
     	}
     } else if (flags_selected) {
     	QSet<QString> groups; QList<int> used_items;
-        int include_count = lw_include == NULL ? TSIncludeTableWidget->rowCount() : lw_include->count();
+        int include_count = tw_include->rowCount();
     	int max[include_count]; QSet<QString> groups_i[include_count];
         for (int i = 0; i < include_count; ++i) {
-            if (lw_include == NULL) { used_items << TSIncludeTableWidget->item(i, 0)->data(Qt::UserRole).toInt(); }
-            else { used_items << lw_include->item(i)->data(Qt::UserRole).toInt(); }
+            used_items << tw_include->item(i, 0)->data(Qt::UserRole).toInt();
             max[i] = 0;
         }
         for (int i = 0; i < LQListWidget->count(); ++i) {
         	item = NULL; item = current_db_questions.value(LQListWidget->item(i));
         	if (item == NULL) { continue; }
-            if (item->isHidden()) { if (lw_include == NULL || !actionShow_hidden->isChecked()) continue; }
+            if (item->isHidden()) { if (server_mode || !actionShow_hidden->isChecked()) continue; }
             if (used_items.contains(item->flag())) {
             	if (use_groups) {
             		if (item->group().isEmpty()) { db_qnum++; max[used_items.indexOf(item->flag())]++; }
@@ -186,20 +182,21 @@ void MainWindow::updateTestQnum(bool advanced, bool use_groups, bool flags_selec
             }
         }
         db_qnum += groups.count();
-        if (lw_include == NULL) {
-            for (int i = 0; i < include_count; ++i) {
-                max[i] += groups_i[i].count();
-                ((QSpinBox *)TSIncludeTableWidget->cellWidget(i, 1))->setMaximum(max[i]);
-                min_qnum += ((QSpinBox *)TSIncludeTableWidget->cellWidget(i, 1))->value();
+        for (int i = 0; i < include_count; ++i) {
+            max[i] += groups_i[i].count();
+            ((QSpinBox *)tw_include->cellWidget(i, 1))->setMaximum(max[i]);
+            if (server_mode) {
+                ((QSpinBox *)tw_include->cellWidget(i, 2))->setMaximum(max[i]);
+                total_passmark += ((QSpinBox *)tw_include->cellWidget(i, 2))->value();
             }
+            min_qnum += ((QSpinBox *)tw_include->cellWidget(i, 1))->value();
         }
     } else {
     	if (use_groups) {
     		QSet<QString> groups; int x = 0;
-            int include_count = lw_include == NULL ? TSIncludeTableWidget->rowCount() : lw_include->count();
+            int include_count = tw_include->rowCount();
     		for (int q = 0; q < include_count; ++q) {
-                if (lw_include == NULL) { x = TSIncludeTableWidget->item(q, 0)->data(Qt::UserRole).toInt(); }
-                else { x = lw_include->item(q)->data(Qt::UserRole).toInt(); }
+                x = tw_include->item(q, 0)->data(Qt::UserRole).toInt();
     			item = NULL; item = current_db_questions.value(LQListWidget->item(x));
     			if (item == NULL) { continue; }
     			if (item->group().isEmpty()) { db_qnum++; }
@@ -207,33 +204,19 @@ void MainWindow::updateTestQnum(bool advanced, bool use_groups, bool flags_selec
     		}
     	    db_qnum += groups.count();
     	} else {
-    		db_qnum = lw_include == NULL ? TSIncludeTableWidget->rowCount() : lw_include->count();
+    		db_qnum = tw_include->rowCount();
     	}
     }
-    if (lw_include == NULL) {
-        if (min_qnum <= db_qnum) {
-            spb_qnum->setMinimum(min_qnum);
-            TSPassMarkSpinBox->setMinimum(min_qnum);
-        } else {
-            spb_qnum->setMinimum(0);
-            TSPassMarkSpinBox->setMinimum(0);
+    spb_qnum->setMinimum(min_qnum);
+    spb_qnum->setMaximum(db_qnum);
+    if (server_mode) {
+        TSPassMarkSpinBox->setMinimum(total_passmark);
+        TSMaxQnumCheckBox->setText(tr("maximum (%1)").arg(db_qnum));
+        if (TSMaxQnumCheckBox->isChecked()) {
+            TSQnumSpinBox->setValue(db_qnum);
         }
-    }
-    if (db_qnum < 1) {
-        spb_qnum->setMaximum(0);
-        if (lw_include == NULL) {
-            TSMaxQnumCheckBox->setText(tr("maximum (%1)").arg(db_qnum));
-        }
-    } else {
-        spb_qnum->setMaximum(db_qnum);
-        if (lw_include == NULL) {
-            TSMaxQnumCheckBox->setText(tr("maximum (%1)").arg(db_qnum));
-            if (TSMaxQnumCheckBox->isChecked()) {
-                TSQnumSpinBox->setValue(db_qnum);
-            }
-        } else {
-            spb_qnum->setValue(db_qnum);
-        }
+    } else if (!flags_selected) {
+        spb_qnum->setValue(db_qnum);
     }
 }
 
@@ -258,55 +241,58 @@ void MainWindow::updateTestTime()
 	}
 }
 
+QTableWidgetItem * MainWindow::toTableItem(QListWidgetItem * lw_item, bool delete_lw_item)
+{
+    QTableWidgetItem * item = new QTableWidgetItem(lw_item->icon(), lw_item->text());
+    item->setBackground(lw_item->background());
+    item->setForeground(lw_item->foreground());
+    item->setData(Qt::UserRole, lw_item->data(Qt::UserRole));
+    if (delete_lw_item) { delete lw_item; }
+    return item;
+}
+
+QListWidgetItem * MainWindow::toListItem(QTableWidgetItem * tw_item)
+{
+    QListWidgetItem * item = new QListWidgetItem(tw_item->icon(), tw_item->text());
+    item->setBackground(tw_item->background());
+    item->setForeground(tw_item->foreground());
+    item->setData(Qt::UserRole, tw_item->data(Qt::UserRole));
+    return item;
+}
+
 void MainWindow::addToList()
 {
     if (TSExcludeListWidget->currentIndex().isValid()) {
     	TSIncludeTableWidget->setRowCount(TSIncludeTableWidget->rowCount() + 1);
-    	QListWidgetItem * lw_item = TSExcludeListWidget->takeItem(TSExcludeListWidget->currentRow());
-    	QTableWidgetItem * item = new QTableWidgetItem(lw_item->icon(), lw_item->text());
-    	item->setBackground(lw_item->background());
-    	item->setForeground(lw_item->foreground());
-    	item->setData(Qt::UserRole, lw_item->data(Qt::UserRole));
+    	QTableWidgetItem * item = toTableItem(TSExcludeListWidget->takeItem(TSExcludeListWidget->currentRow()), true);
     	TSIncludeTableWidget->setItem(TSIncludeTableWidget->rowCount() - 1, 0, item);
     	if (rbtnSelectFlags->isChecked()) {
-    		QSpinBox * spinbox = new QSpinBox(this);
-    		QuestionItem * qi; int max = 0; QSet<QString> groups;
-    		for (int i = 0; i < LQListWidget->count(); ++i) {
-    			qi = current_db_questions.value(LQListWidget->item(i));
-    			if (item->data(Qt::UserRole).toInt() == qi->flag()) {
-    				if (TSGroupsCheckBox->isChecked()) {
-    					if (qi->group().isEmpty()) { max++; }
-    					else { groups << qi->group(); }
-    				} else { max++; }
-    			}
-    		}
-    		max += groups.count();
-    		spinbox->setMaximum(max);
-    		spinbox->setFixedHeight(20);
-    		QObject::connect(spinbox, SIGNAL(valueChanged(int)), this, SLOT(updateTestQnum()));
-    		TSIncludeTableWidget->setCellWidget(TSIncludeTableWidget->rowCount() - 1, 1, spinbox);
+    		int max = qnumForFlag(item->data(Qt::UserRole).toInt(), TSGroupsCheckBox->isChecked());
+            MTSpinBox * spb_qnum = new MTSpinBox(this);
+            TSIncludeTableWidget->setCellWidget(TSIncludeTableWidget->rowCount() - 1, 1, spb_qnum);
+            spb_qnum->setMaximum(max);
+            spb_qnum->setFixedHeight(20);
+            QObject::connect(spb_qnum, SIGNAL(valueChanged(int)), this, SLOT(updateTestQnum()));
+            QSpinBox * spb_passmark = new QSpinBox(this);
+            TSIncludeTableWidget->setCellWidget(TSIncludeTableWidget->rowCount() - 1, 2, spb_passmark);
+    		spb_passmark->setMaximum(max);
+    		spb_passmark->setFixedHeight(20);
+            QObject::connect(spb_passmark, SIGNAL(valueChanged(int)), this, SLOT(updateTestQnum()));
+            QObject::connect(spb_passmark, SIGNAL(valueChanged(int)), spb_qnum, SLOT(setMinimum(int)));
     		TSIncludeTableWidget->setRowHeight(TSIncludeTableWidget->rowCount() - 1, 20);
     	} else {
     		TSIncludeTableWidget->setRowHeight(TSIncludeTableWidget->rowCount() - 1, 16);
     	}
-    	delete lw_item;
         updateTestQnum();
-        toggleAddRemoveEnabled();
     }
 }
 
 void MainWindow::removeFromList()
 {
     if (TSIncludeTableWidget->currentRow() >= 0) {
-    	QTableWidgetItem * item = TSIncludeTableWidget->takeItem(TSIncludeTableWidget->currentRow(), 0);
-    	QListWidgetItem * lw_item = new QListWidgetItem(item->icon(), item->text());
-    	lw_item->setBackground(item->background());
-    	lw_item->setForeground(item->foreground());
-    	lw_item->setData(Qt::UserRole, item->data(Qt::UserRole));
-        TSExcludeListWidget->addItem(lw_item);
+        TSExcludeListWidget->addItem(toListItem(TSIncludeTableWidget->item(TSIncludeTableWidget->currentRow(), 0)));
         TSIncludeTableWidget->removeRow(TSIncludeTableWidget->currentRow());
         updateTestQnum();
-        toggleAddRemoveEnabled();
     }
 }
 
@@ -320,23 +306,23 @@ void MainWindow::startServer()
                 return; break;
         }
     }
-    
+
 	if (TSCustomTestNameCheckBox->isChecked() && TSTestNameLineEdit->text().isEmpty())
 		{ QMessageBox::critical(this, tr("iTestServer"), tr("Invalid test name.")); return; }
     QTime time = TSTestTimeEdit->time(); if (!time.isValid())
 		{ QMessageBox::critical(this, tr("iTestServer"), tr("Invalid exam time.")); return; }
     if ((time.hour() == 0) && (time.minute() == 0) && (time.second() == 0))
 		{ QMessageBox::critical(this, tr("iTestServer"), tr("Students will need at least one minute for the exam,\nalthough it is recommended to give them an hour.")); return; }
-    
+
     if (!tcpServer->listen(QHostAddress::Any, TSCustomServerPortCheckBox->isChecked() ? TSCustomServerPortSpinBox->value() : 0) && !tcpServer->isListening()) {
         QMessageBox::critical(this, tr("iTestServer"), tr("Unable to start the server: %1.")
                          .arg(tcpServer->errorString()));
         tcpServer->close();
         return;
     }
-    
+
     setProgress(2); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    
+
     if (!loadPrinterSettings()) {
         switch (QMessageBox::information(this, tr("iTestServer"), tr("You have not configured the printer yet. Would you like to configure it now?"), tr("Con&figure"), tr("Cancel"), 0, 0)) {
             case 0: // Configure
@@ -357,9 +343,9 @@ void MainWindow::startServer()
             QMessageBox::critical(this, tr("iTestServer"), tr("Unable to start the server: Invalid printer configuration.")); setProgress(-1); return;
         }
     }
-    
+
     setProgress(4); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    
+
     // TEST_QNUM
     int test_qnum = TSQnumSpinBox->value();
     // CUSTOM TEST NAME
@@ -373,8 +359,8 @@ void MainWindow::startServer()
 	current_db_passmark.setPassMark(TSPassMarkSpinBox->value());
 	if (TSAdvancedSetupGroupBox->isChecked() && rbtnSelectFlags->isChecked()) {
 		for (int i = 0; i < TSIncludeTableWidget->rowCount(); ++i) {
-			if (((QSpinBox *)TSIncludeTableWidget->cellWidget(i, 1))->value() > 0) {
-				current_db_passmark.addCondition(TSIncludeTableWidget->item(i, 0)->data(Qt::UserRole).toInt(), ((QSpinBox *)TSIncludeTableWidget->cellWidget(i, 1))->value());
+			if (((QSpinBox *)TSIncludeTableWidget->cellWidget(i, 1))->value() > 0 || ((QSpinBox *)TSIncludeTableWidget->cellWidget(i, 2))->value() > 0) {
+				current_db_passmark.addCondition(TSIncludeTableWidget->item(i, 0)->data(Qt::UserRole).toInt(), ((QSpinBox *)TSIncludeTableWidget->cellWidget(i, 2))->value(), ((QSpinBox *)TSIncludeTableWidget->cellWidget(i, 1))->value());
 			}
 		}
 	}
@@ -515,7 +501,11 @@ void MainWindow::stopServer()
 		Session * session = new Session;
 		session->setName(current_db_testname);
 		session->setDateTimeFromString(current_db_testdate);
-		session->setPassMark(current_db_passmark);
+        PassMark passmark(current_db_passmark.passMark());
+        for (int i = 0; i < current_db_passmark.count(); ++i) {
+            if (current_db_passmark.value(i) > 0) { passmark.addCondition(current_db_passmark.condition(i), current_db_passmark.value(i), current_db_passmark.value(i)); }
+        }
+		session->setPassMark(passmark);
 		current_db_passmark.clear();
 		for (int i = 0; i < SMSLListWidget->count(); ++i) {
 			session->addLogEntry(SMSLListWidget->item(i)->background().color().red(),
@@ -714,7 +704,7 @@ void MainWindow::loadClientResults(QMap<QString, QuestionAnswer> * results, QTab
         tw->setItem(row, 3, item);
         row++;
     }
-    tw->resizeRowsToContents();
+    tw->resizeColumnsToContents(); tw->resizeRowsToContents();
 }
 
 void MainWindow::sendCorrectAnswers(Client * client)
@@ -999,4 +989,5 @@ void MainWindow::clearSM()
 	rbtnTestTime->setChecked(true);
 	TSTestTimeEdit->setTime(QTime::QTime(0, 0));
 	TSQuestionTimeEdit->setTime(QTime::QTime(0, 0));
+    TSScoringSystemGroupBox->setChecked(false);
 }

@@ -162,7 +162,7 @@ QString Session::sessionData()
 	// S_DATETIME
 	out.append(dateTimeToString());
 	// S_PASSMARK
-	out.append(QString("\n%1").arg(s_passmark.data()));
+	out.append(QString("\n%1").arg(s_passmark.archiveData()));
     // S_SCORINGSYSTEM
     out.append(QString("\n%1").arg(s_scoringsystem.data()));
 	// S_SNUM

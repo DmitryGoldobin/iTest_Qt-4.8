@@ -22,10 +22,12 @@
 
 #include "session_wizard.h"
 #include "mtlistwidget.h"
+#include "mttablewidget.h"
 #include "mtspinbox.h"
 
 #include <QCheckBox>
 #include <QSpinBox>
+#include <QHeaderView>
 
 class PrintQuestionsDialogue : public QWidget
 {
@@ -34,7 +36,7 @@ class PrintQuestionsDialogue : public QWidget
 public:
     PrintQuestionsDialogue(MainWindow *);
 
-    MTListWidget * includeListWidget() { return printq_includelist; };
+    MTTableWidget * includeTableWidget() { return printq_includelist; };
     bool flagsSelected() { return rbtngrpPrintqSelect->checkedButton()->text() == tr("Flags"); };
     bool questionsSelected() { return rbtngrpPrintqSelect->checkedButton()->text() == tr("Questions"); };
     bool printStatistics() { return printTest() ? false : printq_advanced_statistics->isChecked(); };
@@ -58,8 +60,10 @@ private slots:
     void printQuestions();
 
 private:
+    void addQuestionToPrint(int);
+
     MTListWidget * printq_excludelist;
-	MTListWidget * printq_includelist;
+	MTTableWidget * printq_includelist;
 	QPushButton * printq_btn_print;
 	QButtonGroup * rbtngrpPrintqSelect;
 	QCheckBox * printq_advanced_statistics;

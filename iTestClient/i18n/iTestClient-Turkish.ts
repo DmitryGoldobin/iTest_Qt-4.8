@@ -168,24 +168,24 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
         <translation>Bu veritabanını açmak için iTest uygulamasının daha yeni bir sürümüne ihtiyacınız var.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="230"/>
+        <location filename="../database.cpp" line="231"/>
         <source>Reading database file...</source>
         <translation>Veritabanı dosyası okunuyor...</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Open database</source>
         <translation>Veritabanı aç</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="244"/>
+        <location filename="../database.cpp" line="245"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>%1 dosyası okunamadı:
 %2.</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="266"/>
+        <location filename="../database.cpp" line="267"/>
         <source>Generating test...</source>
         <translation>Test oluşturuluyor...</translation>
     </message>
@@ -495,7 +495,7 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
         <translation>BAŞARISIZ</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="202"/>
+        <location filename="../database.cpp" line="203"/>
         <source>Total</source>
         <translation>Toplam</translation>
     </message>
@@ -540,7 +540,7 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
         <translation type="obsolete">D</translation>
     </message>
     <message>
-        <location filename="../database.cpp" line="201"/>
+        <location filename="../database.cpp" line="202"/>
         <source>%1 of total %2</source>
         <translation>%2 toplam sorunun %1 tanesi</translation>
     </message>
@@ -616,7 +616,7 @@ fakat siz muhtemelen birçok yeni özelliği kaçırıyorsunuz.</translation>
 <context>
     <name>QuestionWidget</name>
     <message>
-        <location filename="../question_widget.cpp" line="75"/>
+        <location filename="../question_widget.cpp" line="76"/>
         <source>%1 out of %2</source>
         <translation>%2 yanıtın %1 tanesi</translation>
     </message>

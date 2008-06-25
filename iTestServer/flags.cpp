@@ -167,6 +167,22 @@ void MainWindow::checkForUnflaggedQuestions()
     }
 }
 
+int MainWindow::qnumForFlag(int flag, bool use_groups)
+{
+    QuestionItem * qi; int qnum = 0; QSet<QString> groups;
+    for (int i = 0; i < LQListWidget->count(); ++i) {
+        qi = current_db_questions.value(LQListWidget->item(i));
+    	if (qi->flag() == flag) {
+    		if (use_groups) {
+    			if (qi->group().isEmpty()) { qnum++; }
+    			else { groups << qi->group(); }
+    		} else { qnum++; }
+    	}
+    }
+    qnum += groups.count();
+    return qnum;
+}
+
 void MainWindow::setFlagLineEditPalettes()
 {
     for (int i = 0; i < 20; ++i) {
