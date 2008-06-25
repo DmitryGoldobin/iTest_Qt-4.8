@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="ru_RU">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -248,7 +249,7 @@
     <message>
         <location filename="../database.cpp" line="58"/>
         <source>untitled.itdb</source>
-        <translation>Без_имени.itdb</translation>
+        <translation>без_имени.itdb</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="919"/>
@@ -3490,12 +3491,12 @@ Please choose a different group.</source>
     <message>
         <location filename="../print_engine.cpp" line="981"/>
         <source>Key</source>
-        <translation>Параметр</translation>
+        <translation>Ключ</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="978"/>
         <source>key</source>
-        <translation>параметр</translation>
+        <translation>ключ</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5074"/>
