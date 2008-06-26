@@ -3406,7 +3406,7 @@ Please choose a different group.</source>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5370"/>
         <source>Scoring system</source>
-        <translation>Система ведения счёта</translation>
+        <translation>Система оценивания</translation>
     </message>
     <message>
         <location filename="../ui_main_window_v2.cpp" line="5079"/>
