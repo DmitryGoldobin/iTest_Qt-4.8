@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="es_AR">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -3304,7 +3305,7 @@ aunque es recomendable de otorgarles una hora.</translation>
     <message>
         <location filename="../print_engine.cpp" line="1119"/>
         <source>Test sessions attended:</source>
-        <translation type="unfinished"></translation>
+        <translation>Asistencia de las sesiones de exámenes:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="1120"/>
@@ -3414,12 +3415,12 @@ aunque es recomendable de otorgarles una hora.</translation>
     <message>
         <location filename="../print_engine.cpp" line="981"/>
         <source>Key</source>
-        <translation type="unfinished"></translation>
+        <translation>Modelo</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="978"/>
         <source>key</source>
-        <translation type="unfinished"></translation>
+        <translation>modelo</translation>
     </message>
 </context>
 <context>
@@ -3507,12 +3508,12 @@ aunque es recomendable de otorgarles una hora.</translation>
     <message>
         <location filename="../print_engine.cpp" line="157"/>
         <source>Randomise question order in each printout</source>
-        <translation type="unfinished"></translation>
+        <translation>Hacer aleatorio el orden de las preguntas en cada impresión</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="162"/>
         <source>Number of different printouts:</source>
-        <translation type="unfinished"></translation>
+        <translation>Número de las distintas impresiones</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="176"/>
@@ -3532,22 +3533,22 @@ aunque es recomendable de otorgarles una hora.</translation>
     <message>
         <location filename="../print_engine.cpp" line="146"/>
         <source>Print a key to the test (a separate printout with correct answers)</source>
-        <translation type="unfinished"></translation>
+        <translation>Imprimir un modelo del exámen (una impresión separada con las respuestas correctas)</translation>
     </message>
     <message numerus="yes">
         <location filename="../print_engine.cpp" line="199"/>
         <source>%n hidden question(s) listed</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n pregunta oculta mostrada</numerusform>
+            <numerusform>%n preguntas ocultas mostradas</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../print_engine.cpp" line="199"/>
         <source>%n hidden question(s) not listed</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n pregunta oculta no mostrada</numerusform>
+            <numerusform>%n preguntas ocultas no mostradas</numerusform>
         </translation>
     </message>
     <message>
