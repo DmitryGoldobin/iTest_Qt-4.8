@@ -82,6 +82,7 @@ void MainWindow::clearSQNoFlags()
     }
     SQAnswersEdit->clear();
     SQStatisticsLabel->setVisible(false);
+    SQExplanationLineEdit->clear();
 }
 
 void MainWindow::clearDBI()

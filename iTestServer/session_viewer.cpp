@@ -143,7 +143,10 @@ void MainWindow::openArchive()
 		if (!buffer.isEmpty()) {
             ScoringSystem sys(buffer);
 			archived_session->setScoringSystem(sys);
-		} else { rearchive = true; }
+		} else {
+            archived_session->setScoringSystem(ScoringSystem());
+            rearchive = true;
+        }
 		if (rearchive) { archived_session->archive(); }
 	}
 	hideArchive();
@@ -179,8 +182,8 @@ void MainWindow::setCurrentSession(QListWidgetItem * item)
 	SVNameLabel->setText(session->name());
 	SVDateTimeLabel->setText(session->dateTimeToString());
 	SVPassMarkLabel->setText(QString("%1").arg(session->passMark().passMark()));
-	SVOverallResultsProgressBar->setMaximum(session->maximumScore());
-	SVOverallResultsProgressBar->setValue(session->score() > 0 ? session->score() : 0);
+	SVOverallResultsProgressBar->setMaximum((int)session->maximumScore());
+	SVOverallResultsProgressBar->setValue(session->score() > 0 ? (int)session->score() : 0);
     SVOverallResultsLabel->setText(QString("%1%").arg(session->average()));
 	current_db_students.clear();
 	SVLCListWidget->clear(); SVLogListWidget->clear();

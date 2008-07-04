@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="it_IT">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutWidget</name>
     <message>
@@ -20,7 +21,7 @@
     <message>
         <location filename="../../shared/about_widget.cpp" line="38"/>
         <source>The programme is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</source>
-        <translation>Il Programma è rilasciato &quot;Cosi&apos; Com&apos;è&quot; SENZA ALCUN TIMPO DI GARANZIA, INCLUSO IL DESIGN, COMMERCIALIZZAZIONE E OGNI TIPO DI USO.</translation>
+        <translation>Traduzione: &lt;span style=&quot;font-style:italic;&quot;&gt;Francesco Atzeni&lt;/span&gt;&lt;br&gt;&lt;br&gt;Il Programma è rilasciato &quot;Cosi&apos; Com&apos;è&quot; SENZA ALCUN TIMPO DI GARANZIA, INCLUSO IL DESIGN, COMMERCIALIZZAZIONE E OGNI TIPO DI USO.</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget_v2.ui" line="153"/>
