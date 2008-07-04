@@ -1,4 +1,4 @@
-To compile the iTest source code, you will need Qt 4.3 or
+To compile the iTest source code, you will need Qt 4.4 or
 a newer, binary compatible version.
 
 You now have two options:
@@ -9,7 +9,7 @@ You now have two options:
 	-----------------------------------
 	Download and install Squirrel Shell:
 		http://sourceforge.net/projects/squirrelsh/
-	Under WINDOWS, open the "Qt 4.3.x Command Prompt"
+	Under WINDOWS, open the "Qt 4.4.x Command Prompt"
 	from the Start menu, change directory to that of
 	the iTest source code and type:
 		build.nut
