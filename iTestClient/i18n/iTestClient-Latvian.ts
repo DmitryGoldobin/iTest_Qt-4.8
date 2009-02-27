@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="1.1" language="ru_RU">
+<!DOCTYPE TS><TS version="1.1" language="lv_LV">
 <context>
     <name>AboutWidget</name>
     <message>
         <location filename="../../shared/about_widget_v2.ui" line="128"/>
         <source>About iTest</source>
-        <translation>О iTest</translation>
+        <translation>Par iTest</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget_v2.ui" line="153"/>
         <source>About Qt</source>
-        <translation>О Qt</translation>
+        <translation>Par Qt</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget_v2.ui" line="211"/>
         <source>Close</source>
-        <translation>Закрыть</translation>
+        <translation>Aizvērt</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="28"/>
         <source>Version</source>
-        <translation>Версия</translation>
+        <translation>Versija</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="51"/>
         <source>Qt is a C++ toolkit for cross-platform application development.</source>
-        <translation>Qt является инструментом для разработки кросс-платформенных приложений на C++.</translation>
+        <translation>Qt ir krosplatformu instruments krosplatformu aplikāciju izstrādei  C++ valodā.</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="53"/>
         <source>Qt provides single-source portability across MS Windows, Mac OS X, Linux and all major commercial Unix variants. Qt is also available for embedded devices as Qtopia Core.</source>
-        <translation>Qt обеспечивает переносимость кода между MS Windows, Max OS X, Linux и всеми основными коммерческими вариантами Unix. Также библиотека Qt доступна для портативных устройств в виде Qtopia Core.</translation>
+        <translation>Qt nodrošina koda savietojamību starp MS Windows, Max OS X, Linux un visiem Unix komerciālajiem pamata variantiem. Bibliotēka Qt pieejama arī portatīvajām Qtopia Core tipa ierīcēm.</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="55"/>
         <source>Qt is a Trolltech product. See &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt; for more information.</source>
-        <translation>Qt является продуктом компании Trolltech. Для дополнительной информации обращайтесь на &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt;.</translation>
+        <translation>Qt ir kompānijas Trolltech produkts. Papildus informācijai &lt;span style=&quot;font-style:italic;&quot;&gt;http://www.trolltech.com/qt/&lt;/span&gt;.</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="31"/>
         <source>iTest is a Qt application consisting of a Server and a Client designed for easy computerised examination.</source>
-        <translation>iTest является приложением, использующим библиотеку Qt, состоящим из редактора баз данных(с функциями Сервера) и программы для написания тестов(Клиента), и разработанным для упрощения проведения компьютеризованных экзаменов.</translation>
+        <translation>iTest ir aplikācija, kas izmanto Qt bibliotēku, kura sastāv no datu bāzu redaktora (ar servera funkcijām) un programmas testu rakstišanai (klienta), tā ir izstrādāta datorizēto eksāmenu veikšanai.</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="34"/>
         <source>This program is distributed under the terms of the GPL v2.</source>
-        <translation>Данная программа распространяется под лицензией GPL v2.</translation>
+        <translation>Šī programma tiek izplatīta ar GPL v2 licenci.</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="38"/>
         <source>The program is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</source>
-        <translation>перевод: &lt;span style=&quot;font-style:italic;&quot;&gt;Константин Макшин, Евгений Бурмистров&lt;/span&gt;&lt;br&gt;&lt;br&gt;Данная программа предоставляется &quot;как есть&quot; без каких-либо гарантий.</translation>
+        <translation>Tulkojums: &lt;span style=&quot;font-style:italic;&quot;&gt;Valdis Orols&lt;/span&gt;&lt;br&gt;&lt;br&gt;Šī programma tiek izplatīta &quot;kā ir&quot;, bez jebkādām garantijām.</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="49"/>
         <source>This program uses Qt Open Source Edition version %1.</source>
-        <translation>Данная программа использует библиотеку Qt Open Source Edition версии %1.</translation>
+        <translation>Šī programma izmanto Qt Open Source Edition %1versijas bibliotēku.</translation>
     </message>
 </context>
 <context>
@@ -63,370 +63,370 @@
     <message>
         <location filename="../client.cpp" line="35"/>
         <source>Retrieving test data...</source>
-        <translation>Получение данных теста...</translation>
+        <translation>Testa datu iegūšana...</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="132"/>
         <source>Save answer log</source>
-        <translation>Сохранить журнал ответов</translation>
+        <translation>Saglabāt atbilžu žurnālu</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="132"/>
         <source>Cannot write file %1:
 %2.</source>
-        <translation>Невозможно записать файл %1:
+        <translation>Nevar ierakstīt datni %1:
 %2.</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="202"/>
         <source>The host was not found. Please check the host name and port settings.</source>
-        <translation>Удалённый узел не найден. Пожалуйста, проверьте имя узла и настройки соединения.</translation>
+        <translation>Attālinātais mezgls nav atrasts. Lūdzu, pārbaudiet mezgla nosaukumu un savienojuma uzstādījumus.</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="209"/>
         <source>The connection was refused by the peer. Make sure the iTest server is running, and check that the host name and port settings are correct.</source>
-        <translation>Соединение прервано. Убедитесь, что сервер iTest запущен, и проверьте правильность настроек соединения.</translation>
+        <translation>Savienojums ir pārtraukts. Pārliecinieties, ka serveris iTest ir startējis un pārbaudiet savienojuma uzstādijumu pareizību.</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="214"/>
         <source>The following error occurred: %1.</source>
-        <translation>Ошибка: %1.</translation>
+        <translation>Kļūda: %1.</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="24"/>
         <source>Open database file</source>
-        <translation>Открыть файл базы данных</translation>
+        <translation>Atvērt datu bāzes datni</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="29"/>
         <source>Output file path</source>
-        <translation>Путь к файлу</translation>
+        <translation>Ceļš pie izvades datnes</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="29"/>
         <source>answers.itcl</source>
-        <translation>ответы.itcl</translation>
+        <translation>atbildes.itcl</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="29"/>
         <source>iTest off-line client log (*.itcl)</source>
-        <translation>Журналы off-line клиентов iTest (*.itcl)</translation>
+        <translation>iTest off-line klientu žurnāli (*.itcl)</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="35"/>
         <source>Loading test data...</source>
-        <translation>Загрузка данных теста...</translation>
+        <translation>Testa datu ielāde...</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="51"/>
         <source>iTest version notice</source>
-        <translation>Информация о версии iTest</translation>
+        <translation>Informācija par iTest versiju</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="49"/>
         <source>There is a newer version of iTest available.
 Nonetheless, this version is able to open the database file you selected,
 but you are most probably missing a whole bunch of cool new features.</source>
-        <translation>Доступна более новая версия iTest.
-Выбранный файл базы данных может быть открыт данной версией программы,
-но Вы можете пропустить большое количество новых возможностей.</translation>
+        <translation>Pieejama jaunāka iTest versija.
+Izvēlētā datu bāzes datne var tikt atvērta ar citu programmas versiju,
+bet Jūs varat izlaist lielu skaitu jaunu iespēju.</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="51"/>
         <source>You need a newer version of iTest to open this database file.</source>
-        <translation>Чтобы открыть этот файл базы данных, Вам требуется более новая версия iTest.</translation>
+        <translation>Lai atvērtu šo datu bāzes datni, Jums būs nepieciešama jaunāka iTest versija.</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="246"/>
         <source>Reading database file...</source>
-        <translation>Чтение файла базы данных...</translation>
+        <translation>Datu bāzes datnes lasīšana...</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="260"/>
         <source>Open database</source>
-        <translation>Открыть базу данных</translation>
+        <translation>Atvērt datu bāzi</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="260"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Невозможно прочитать файл %1:
+        <translation>Nevar nolasīt datni %1:
 %2.</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="282"/>
         <source>Generating test...</source>
-        <translation>Формирование вопросов теста...</translation>
+        <translation>Testa jautājumu lasīšana...</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="247"/>
         <source>Finish the exam</source>
-        <translation>Закончить экзамен</translation>
+        <translation>Pabeigt eksāmenu</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="247"/>
         <source>Are you sure you want to finish? Once you click Finish there is no going back.</source>
-        <translation>Вы уверены, что хотите закончить? Данное действие нельзя отменить.</translation>
+        <translation>Esat pārliecināts, ka gribat pabeigt? Pogas Beigt nospiešanu nevar atcelt.</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="247"/>
         <source>&amp;Finish</source>
-        <translation>&amp;Закончить</translation>
+        <translation>&amp;Beigt</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="247"/>
         <source>&amp;Cancel</source>
-        <translation>&amp;Отмена</translation>
+        <translation>&amp;Atcelt</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="338"/>
         <source>Your name, please.</source>
-        <translation>Ваше имя.</translation>
+        <translation>Jūsu vārds, lūdzu.</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="338"/>
         <source>You cannot proceed unless you give us your name.</source>
-        <translation>Вы не можете продолжить, пока не укажете своё имя.</translation>
+        <translation>Jūs nevarēsiet turpināt, ja nenorādīsiet savu vārdu.</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="411"/>
         <source>Exam finished</source>
-        <translation>Экзамен завершён</translation>
+        <translation>Eksāmens pabeigts</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="411"/>
         <source>You have run out of time. Your answers are being sent.</source>
-        <translation>Вы исчерпали запас времени. Ваши ответы были отправлены.</translation>
+        <translation>Jūs iztērējāt atvēlēto laiku. Jūsu atbildes tika aizsūtitas.</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="417"/>
         <source>Invalid data received. There might be something wrong with the server.</source>
-        <translation>Получены неправильные данные. Возможны сбои в работе сервера.</translation>
+        <translation>Saņemti nepareizi dati. Iespējamas kļūdas servera darbā.</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="661"/>
         <source>Connect to an iTest server</source>
-        <translation>Подключиться к серверу iTest</translation>
+        <translation>Pieslēgties iTest serverim</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="662"/>
         <source>&lt;b&gt;Server name&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Имя сервера&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Servera nosaukums&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="663"/>
         <source>&lt;b&gt;Server port&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Порт сервера&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Servera ports&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="664"/>
         <source>Connect</source>
-        <translation>Подключиться</translation>
+        <translation>Pieslēgties</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="665"/>
         <source>Use an iTest database file</source>
-        <translation>Использовать файл базы данных iTest</translation>
+        <translation>Izmantot iTest datu bāzes datni</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="666"/>
         <source>&lt;b&gt;Database file path&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Путь к файлу базы данных&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Ceļš līdz datu bāzes datnei&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="677"/>
         <source>Browse</source>
-        <translation>Просмотр</translation>
+        <translation>Pārlūkošana</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="668"/>
         <source>Load</source>
-        <translation>Загрузить</translation>
+        <translation>Ielādēt</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="669"/>
         <source>&lt;b&gt;Save answers to&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Сохранить ответы в&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Saglabāt atbildes iekš&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="670"/>
         <source>If connected to an iTest server, results will be sent automatically. You only need this file if there is no network available or in case of connection breakdown.</source>
-        <translation>При наличии подключения к серверу iTest результаты будут отправлены автоматически. Данный файл необходим в случаях отсутствия сети либо при неполадках в её работе.</translation>
+        <translation>Ja ir pieslēgums pie iTest servera, rezultāti tiks nosūtīti automātiski. Šī datne nepieciešama gadījumam, ja nav tīkla vai ir kļūmes tā darbā.</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="673"/>
         <source>$HOME/TestName-Date-SurnameName.itcl, where $HOME is the directory of the current user&apos;s profile on Windows and the home directory on Unix/Linux/Mac OS</source>
-        <translation>$HOME/TestName-Date-SurnameName.itcl, где $HOME - путь к директории текущего пользователя</translation>
+        <translation>$HOME/TestName-Date-SurnameName.itcl, kur $HOME -  ceļš līdz šī lietotāja profila direktorijai uz Windows un home direktorijai uz Unix/Linux/Mac OS</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="676"/>
         <source>Use default</source>
-        <translation>По умолчанию</translation>
+        <translation>Pēc noklusēšanas</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="678"/>
         <source>&lt;b&gt;Other settings&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Прочие настройки&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Pārējie uzstādījumi&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="679"/>
         <source>Hide question names, show numbers instead</source>
-        <translation>Показывать номера вопросов вместо названий</translation>
+        <translation>Noslēpt jautājumus, parādīt tikai jautājumu numurus</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="681"/>
         <source>&lt;b&gt;Test information&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Информация о тесте&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Informācija par testu&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="683"/>
         <source>Test name</source>
-        <translation>Название теста</translation>
+        <translation>Testa nosaukums</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="684"/>
         <source>Database date</source>
-        <translation>Дата базы данных</translation>
+        <translation>Datu bāzes datums</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="685"/>
         <source>Test date</source>
-        <translation>Дата теста</translation>
+        <translation>Testa datums</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="686"/>
         <source>Test time</source>
-        <translation>Время теста</translation>
+        <translation>Testa laiks</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="687"/>
         <source>Number of questions</source>
-        <translation>Количество вопросов</translation>
+        <translation>Jautājumu skaits</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="688"/>
         <source>Number of flags</source>
-        <translation>Количество категорий</translation>
+        <translation>Kategoriju skaits</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="689"/>
         <source>Flag names</source>
-        <translation>Названия категорий</translation>
+        <translation>Kategoriju nosaukumi</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="691"/>
         <source>Comments</source>
-        <translation>Комментарии</translation>
+        <translation>Komentāri</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="682"/>
         <source>Data</source>
-        <translation>Данные</translation>
+        <translation>Dati</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="709"/>
         <source>Quit</source>
-        <translation>Выход</translation>
+        <translation>Iziet</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="693"/>
         <source>About</source>
-        <translation>О программе</translation>
+        <translation>Par programmu</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="694"/>
         <source>Ready</source>
-        <translation>Готов</translation>
+        <translation>Gatavs</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="696"/>
         <source>Your name:</source>
-        <translation>Ваше имя:</translation>
+        <translation>Jūsu vārds:</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="697"/>
         <source>When you are ready to begin the examination, click the Start button below.</source>
-        <translation>Нажмите кнопку &quot;Начать&quot;, когда будете готовы.</translation>
+        <translation>Nospiediet pogu &quot;Sākt&quot;, kad būsiet gatavs(-a).</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="698"/>
         <source>Start</source>
-        <translation>Начать</translation>
+        <translation>Sākt</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="699"/>
         <source>Show remaining time</source>
-        <translation>Показать оставшееся время</translation>
+        <translation>Parādīt atlikušo laiku</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="700"/>
         <source>minute(s)</source>
-        <translation>минут(а)</translation>
+        <translation>minūtes(-e)</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="701"/>
         <source>Last question</source>
-        <translation>Последний вопрос</translation>
+        <translation>Pēdējais jautājums</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="702"/>
         <source>Next question</source>
-        <translation>Следующий вопрос</translation>
+        <translation>Nākamais jautājums</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="703"/>
         <source>Finish</source>
-        <translation>Завершить</translation>
+        <translation>Beigt</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="707"/>
         <source>&lt;b&gt;Results:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Результаты:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Rezultāti:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="706"/>
         <source>&lt;b&gt;Score:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Счёт:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Balles:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="704"/>
         <source>&lt;b&gt;Name:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Имя:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Vārds:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="24"/>
         <source>iTest off-line test sessions (*.itos);;All files (*.*)</source>
-        <translation>Off-line сессии тестов iTest (*.itos);;Все файлы (*.*)</translation>
+        <translation>iTest off-line testu sesijas (*.itos);;Visas datnes (*.*)</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="179"/>
         <source>%1 out of %2 (%3)</source>
-        <translation>%1 из %2 (%3)</translation>
+        <translation>%1 no %2 (%3)</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="179"/>
         <source>PASSED</source>
-        <translation>ПРОШЁЛ</translation>
+        <translation>NOKĀRTOTS</translation>
     </message>
     <message>
         <location filename="../client.cpp" line="179"/>
         <source>FAILED</source>
-        <translation>НЕ ПРОШЁЛ</translation>
+        <translation>NAV NOKĀRTOTS</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="218"/>
         <source>Total</source>
-        <translation>Итог</translation>
+        <translation>Kopā</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="690"/>
         <source>Pass mark</source>
-        <translation>Оценка прохождения</translation>
+        <translation>Vērtējums</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="708"/>
         <source>New test</source>
-        <translation>Новый тест</translation>
+        <translation>Jauns tests</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="660"/>
@@ -436,17 +436,17 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../main_window.cpp" line="417"/>
         <source>iTestClient - Load test data</source>
-        <translation>iTestClient - Загрузка данных теста</translation>
+        <translation>iTestClient - Testa datu ielāde</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="217"/>
         <source>%1 of total %2</source>
-        <translation>%1 из %2</translation>
+        <translation>%1 no %2</translation>
     </message>
     <message>
         <location filename="../ui_main_window.cpp" line="680"/>
         <source>Do not show correct answers at the end of the test</source>
-        <translation>Не показывать правильные ответы в конце тестирования</translation>
+        <translation>Nerādīt pareizās atbildes testa beigās</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="27"/>
@@ -456,7 +456,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../ui_main_window.cpp" line="695"/>
         <source>Welcome!</source>
-        <translation>Добро пожаловать!</translation>
+        <translation>Laipni lūdzam!</translation>
     </message>
 </context>
 <context>
@@ -464,52 +464,52 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../../shared/question.cpp" line="176"/>
         <source>a)</source>
-        <translation>а)</translation>
+        <translation>a)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="177"/>
         <source>b)</source>
-        <translation>б)</translation>
+        <translation>b)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="178"/>
         <source>c)</source>
-        <translation>в)</translation>
+        <translation>c)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="179"/>
         <source>d)</source>
-        <translation>г)</translation>
+        <translation>d)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="180"/>
         <source>e)</source>
-        <translation>д)</translation>
+        <translation>e)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="181"/>
         <source>f)</source>
-        <translation>е)</translation>
+        <translation>f)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="182"/>
         <source>g)</source>
-        <translation>ж)</translation>
+        <translation>g)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="183"/>
         <source>h)</source>
-        <translation>з)</translation>
+        <translation>h)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="184"/>
         <source>i)</source>
-        <translation>и)</translation>
+        <translation>i)</translation>
     </message>
     <message>
         <location filename="../../shared/question.cpp" line="186"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>Nav</translation>
     </message>
 </context>
 <context>
@@ -517,7 +517,7 @@ but you are most probably missing a whole bunch of cool new features.</source>
     <message>
         <location filename="../question_widget.cpp" line="76"/>
         <source>%1 out of %2</source>
-        <translation>%1 из %2</translation>
+        <translation>%1 no %2</translation>
     </message>
 </context>
 </TS>

@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -28,7 +28,7 @@ class MTToolButton : public QToolButton
     Q_OBJECT
 
 public:
-    MTToolButton(QWidget * parent = 0, QString id = ""):
+    MTToolButton(QWidget * parent = 0, const QString & id = ""):
     QToolButton(parent) {
         tb_id = id;
         QObject::connect(this, SIGNAL(released()), this, SLOT(emitReleased()));
@@ -59,7 +59,7 @@ public:
     };
 
 signals:
-    void released(QString);
+    void released(const QString &);
 
 protected slots:
     void updateProperties() {

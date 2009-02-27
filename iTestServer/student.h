@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -27,29 +27,28 @@ class Student : public QObject
     Q_OBJECT
 
 public:
-    Student(QString = tr("Unknown"));
+    Student(const QString & = tr("Unknown"));
     Student(Client *);
     Student(Student *);
     virtual ~Student();
 
 public slots:
-    void setName(QString); QString name();
+    void setName(const QString &); QString name();
     void setNumber(int); int number();
     int numCorrectAnswers(ScoringSystem);
-    float score(); float maximumScore();
+    double score(); double maximumScore();
     void setReady(bool); bool isReady();
     void setResults(QMap<QString, QuestionAnswer> *);
     void updateScore(ScoringSystem);
     QMap<QString, QuestionAnswer> * results();
     void setPassed(bool); bool passed();
-    /*bool loadStudentData(QString);*/
     QString studentData(); QString studentArchiveData();
-    bool wasAsked(QString); uint replaceOccurrences(QString, QString);
+    bool wasAsked(const QString &); uint replaceOccurrences(const QString &, const QString &);
 
 private:
     QString s_name;
-    float s_score;
-    float s_maxscore;
+    double s_score;
+    double s_maxscore;
     bool s_ready;
     QMap<QString, QuestionAnswer> * s_results;
     int s_number;

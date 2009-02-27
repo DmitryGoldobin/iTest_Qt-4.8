@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -56,7 +56,7 @@ protected:
 public:
     MTAdvancedGroupBox(QWidget * parent = 0):
     QWidget(parent) { init(); };
-    MTAdvancedGroupBox(QString title, QWidget * parent = 0):
+    MTAdvancedGroupBox(const QString & title, QWidget * parent = 0):
     QWidget(parent) { init(); setTitle(title); };
     
     bool isChecked() { return agb_checkbox->isChecked(); };
@@ -77,11 +77,11 @@ public slots:
         agb_checkbox->setVisible(!checked);
         agb_groupbox->setVisible(checked);
     };
-    void setTitle(QString title) {
+    void setTitle(const QString & title) {
         agb_checkbox->setText(title);
         agb_groupbox->setTitle(title);
     };
-    void setStatusTip(QString statustip) {
+    void setStatusTip(const QString & statustip) {
         agb_checkbox->setStatusTip(statustip);
         agb_groupbox->setStatusTip(statustip);
     };

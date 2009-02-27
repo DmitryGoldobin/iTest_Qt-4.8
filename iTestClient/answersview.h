@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -53,7 +53,7 @@ class AnswersView : public QWidget
 public:
     AnswersView(QWidget * = 0);
 
-    void setAnswers(QStringList, Question::Answers, Question::SelectionType);
+    void setAnswers(const QStringList &, Question::Answers, Question::SelectionType, QList<int>);
     Question::Answers selectedAnswers();
 
 public slots:
@@ -67,6 +67,7 @@ protected slots:
 
 private:
     QList<AnswerView *> av_answers;
+    QList<int> av_ans_order;
     QButtonGroup * av_grp_checkboxes;
     QButtonGroup * av_grp_radiobuttons;
 };

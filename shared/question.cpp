@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -20,7 +20,7 @@
 #include <cmath>
 #include "pass_mark.h"
 
-Question::Question(QString name)
+Question::Question(const QString & name)
 {
     q_name = name;
     q_flag = -1;
@@ -32,7 +32,7 @@ Question::Question(QString name)
 
 QString Question::name() { return q_name; }
 
-void Question::setName(QString name) { q_name = name; }
+void Question::setName(const QString & name) { q_name = name; }
 
 int Question::flag() { return q_flag; }
 
@@ -40,7 +40,7 @@ void Question::setFlag(int flag) { q_flag = flag; }
 
 QString Question::group() { return q_group; }
 
-void Question::setGroup(QString group) { q_group = group; }
+void Question::setGroup(const QString & group) { q_group = group; }
 
 int Question::difficulty() { return q_difficulty; }
 
@@ -48,7 +48,7 @@ void Question::setDifficulty(int difficulty) { q_difficulty = difficulty; }
 
 QString Question::text() { return q_text; }
 
-void Question::setText(QString text)
+void Question::setText(const QString & text)
 {
 	QTextDocument doc; doc.setHtml(text); QString final = text; QString lastgood; QTextDocument testdoc;
 	QStringList before; QString after = "font-size:10pt;";
@@ -72,7 +72,7 @@ void Question::setText(QString text)
 
 QString Question::explanation() { return q_explanation; }
 
-void Question::setExplanation(QString explanation) { q_explanation = explanation; }
+void Question::setExplanation(const QString & explanation) { q_explanation = explanation; }
 
 Question::SelectionType Question::selectionType() { return q_selectiontype; }
 
@@ -80,35 +80,40 @@ void Question::setSelectionType(Question::SelectionType type) { q_selectiontype 
 
 QString Question::answer(Question::Answer i) { return q_answers.at(answerToIndex(i) - 1); }
 
-void Question::setAnswer(Question::Answer i, QString ans)
+void Question::setAnswer(Question::Answer i, const QString & ans)
 {
     setAnswerAtIndex(answerToIndex(i), ans);
 }
 
 QString Question::answerAtIndex(int i) { return q_answers.at(i - 1); }
 
-void Question::setAnswerAtIndex(int i, QString ans)
+void Question::setAnswerAtIndex(int i, const QString & ans)
 {
     i--;
     if (i >= 0 && i < q_answers.count()) { q_answers.replace(i, ans); }
     else if (i >= q_answers.count() && i < 9) { q_answers.append(ans); }
 }
 
-void Question::addAnswer(QString ans)
+void Question::addAnswer(const QString & ans)
 {
     if (q_answers.count() < 9) { q_answers.append(ans); }
 }
 
 int Question::numAnswers() { return q_answers.count(); }
 
-bool Question::isAnswerCorrect(Question::Answer ans)
+bool Question::hasCorrectAnswer()
 {
-    return q_correctanswers.testFlag(ans);
+    return q_correctanswers != Question::None;
 }
 
 bool Question::isAnswerAtIndexCorrect(int i)
 {
     return q_correctanswers.testFlag(indexToAnswer(i));
+}
+
+bool Question::isAnswerCorrect(Question::Answer ans)
+{
+    return q_correctanswers.testFlag(ans);
 }
 
 void Question::setAnswerCorrect(Question::Answers ans, bool correct)
@@ -117,14 +122,9 @@ void Question::setAnswerCorrect(Question::Answers ans, bool correct)
     else { q_correctanswers &= ~ans; }
 }
 
-bool Question::hasCorrectAnswer()
-{
-    return q_correctanswers != Question::None;
-}
-
 QStringList Question::answers() { return q_answers; }
 
-void Question::setAnswers(QStringList answers) { q_answers = answers; }
+void Question::setAnswers(const QStringList & answers) { q_answers = answers; }
 
 Question::Answer Question::correctAnswer() { return Question::Answer((int)q_correctanswers); }
 
@@ -232,7 +232,7 @@ void ScoringSystem::init()
 
 ScoringSystem::ScoringSystem() { init(); }
 
-ScoringSystem::ScoringSystem(QString str) { loadData(str); }
+ScoringSystem::ScoringSystem(const QString & str) { loadData(str); }
 
 void ScoringSystem::loadData(QString str)
 {
@@ -241,9 +241,9 @@ void ScoringSystem::loadData(QString str)
 	allowIncompleteAnswers = in.readLine() == "true";
 	QStringList bufferlist = in.readLine().split(";");
     for (int i = 0; i < 3; ++i) {
-        correctAnswer[i] = bufferlist.takeFirst().toFloat();
-        incorrectAnswer[i] = bufferlist.takeFirst().toFloat();
-        missingAnswer[i] = bufferlist.takeFirst().toFloat();
+        correctAnswer[i] = bufferlist.takeFirst().toDouble();
+        incorrectAnswer[i] = bufferlist.takeFirst().toDouble();
+        missingAnswer[i] = bufferlist.takeFirst().toDouble();
     }
 }
 
@@ -264,10 +264,10 @@ QString ScoringSystem::data()
 #endif
 
 #ifdef ITESTSERVER
-float QuestionAnswer::score(ScoringSystem q_scoringsystem)
+double QuestionAnswer::score(ScoringSystem q_scoringsystem)
 #endif
 #ifdef ITESTCLIENT
-float QuestionItem::score()
+double QuestionItem::score()
 #endif
 {
 #ifdef ITESTSERVER
@@ -278,7 +278,7 @@ float QuestionItem::score()
     int num_answers = q_answers.count();
 #endif
     if (q_scoringsystem.allowIncompleteAnswers && q_selectiontype == Question::MultiSelection) {
-        float score = 0.0;
+        double score = 0.0;
         if (q_correctanswers == Question::None && q_answer == Question::None) { score = q_scoringsystem.correctAnswer[q_difficulty]; }
         else {
             int numcorrect = 0; int max = 0;
@@ -290,7 +290,7 @@ float QuestionItem::score()
                 else if (!q_correctanswers.testFlag(Question::indexToAnswer(i)) && q_answer.testFlag(Question::indexToAnswer(i)))
                     { score += q_scoringsystem.incorrectAnswer[q_difficulty]; }
             }
-            if (max != 0) { score += q_scoringsystem.correctAnswer[q_difficulty] * (float)numcorrect / (float)max; }
+            if (max != 0) { score += q_scoringsystem.correctAnswer[q_difficulty] * (double)numcorrect / (double)max; }
         }
         return score;
     } else {
@@ -302,10 +302,10 @@ float QuestionItem::score()
 }
 
 #ifdef ITESTSERVER
-float QuestionAnswer::maximumScore(ScoringSystem q_scoringsystem)
+double QuestionAnswer::maximumScore(ScoringSystem q_scoringsystem)
 #endif
 #ifdef ITESTCLIENT
-float QuestionItem::maximumScore()
+double QuestionItem::maximumScore()
 #endif
 {
     return q_scoringsystem.correctAnswer[q_difficulty];

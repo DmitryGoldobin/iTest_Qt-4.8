@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -45,7 +45,7 @@ public slots:
         }
         int n = 0;
         for (int i = 0; i < rowCount(); ++i) {
-            if (item(i, 0)->text().contains(keyword, Qt::CaseInsensitive)) {
+            if (item(i, 0) && item(i, 0)->text().contains(keyword, Qt::CaseInsensitive)) {
                 showRow(i); n++;
             } else { hideRow(i); }
         }

@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -36,8 +36,8 @@ public:
     Q_DECLARE_FLAGS(Answers, Answer)
     enum SelectionType { SingleSelection = 0, MultiSelection = 1 };
     Q_DECLARE_FLAGS(SelectionTypeFlag, SelectionType)
-    
-    Question(QString = QString());
+
+    Question(const QString & = QString());
 
     static int answerToIndex(Answer);
     static Answer indexToAnswer(int);
@@ -50,19 +50,19 @@ public:
     static QList<int> randomise(QList<Question *>, PassMark, bool, int, quint32, QProgressDialog * = NULL, QApplication * = NULL);
 
 public slots:
-    QString name(); void setName(QString);
+    QString name(); void setName(const QString &);
     int flag(); void setFlag(int);
-    QString group(); void setGroup(QString);
+    QString group(); void setGroup(const QString &);
     int difficulty(); void setDifficulty(int);
-    QString text(); void setText(QString);
-    QString explanation(); void setExplanation(QString);
+    QString text(); void setText(const QString &);
+    QString explanation(); void setExplanation(const QString &);
     SelectionType selectionType(); void setSelectionType(SelectionType);
-    QString answer(Answer); void setAnswer(Answer, QString);
-    QString answerAtIndex(int); void setAnswerAtIndex(int, QString);
-    void addAnswer(QString); int numAnswers();
-    bool isAnswerCorrect(Answer); bool isAnswerAtIndexCorrect(int);
-    void setAnswerCorrect(Answers, bool); bool hasCorrectAnswer();
-    QStringList answers(); void setAnswers(QStringList);
+    QString answer(Answer); void setAnswer(Answer, const QString &);
+    QString answerAtIndex(int); void setAnswerAtIndex(int, const QString &);
+    void addAnswer(const QString &); int numAnswers();
+    bool hasCorrectAnswer(); bool isAnswerAtIndexCorrect(int);
+    bool isAnswerCorrect(Answer); void setAnswerCorrect(Answers, bool);
+    QStringList answers(); void setAnswers(const QStringList &);
     Answer correctAnswer();
     Answers correctAnswers(); void setCorrectAnswers(Answers);
 
@@ -89,15 +89,17 @@ protected:
     void init();
 public:
     ScoringSystem();
-    ScoringSystem(QString);
+    ScoringSystem(const QString &);
     void loadData(QString);
 #ifdef ITESTSERVER
     QString data();
 #endif
-    float correctAnswer[3];
-    float incorrectAnswer[3];
-    float missingAnswer[3];
+    double correctAnswer[3];
+    double incorrectAnswer[3];
+    double missingAnswer[3];
     bool allowIncompleteAnswers;
 };
+
+#define makeString(a) QString("%1").arg(a)
 
 #endif // QUESTION_H

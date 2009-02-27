@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -29,7 +29,7 @@ QWidget(parent) {
     ans_correct = new QCheckBox(this);
     ans_correct->setStatusTip(tr("A checked checkbox indicates a correct answer"));
     ans_correct->setMaximumSize(ans_text->sizeHint().height(), ans_text->sizeHint().height());
-    ans_remove = new MTToolButton(this, QString("%1").arg(i));
+    ans_remove = new MTToolButton(this, makeString(i));
     ans_remove->setIcon(QIcon(QString::fromUtf8(":/images/images/list-remove.png")));
     ans_remove->setStatusTip(tr("Remove this answer"));
     ans_remove->setMaximumSize(ans_text->sizeHint().height(), ans_text->sizeHint().height());
@@ -105,7 +105,7 @@ QWidget(parent) {
     ae_add_button->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 }
 
-void AnswersEdit::setAnswers(QStringList answers)
+void AnswersEdit::setAnswers(const QStringList & answers)
 {
     for (int i = 0; i < 9; ++i) {
         AnswerEdit * ans = ae_answers.at(i);
@@ -120,7 +120,7 @@ void AnswersEdit::setAnswers(QStringList answers)
     enableAddAnswerButton();
 }
 
-void AnswersEdit::setAnswers(QStringList answers, Question::Answers correct_answers, Question::SelectionType selectiontype)
+void AnswersEdit::setAnswers(const QStringList & answers, Question::Answers correct_answers, Question::SelectionType selectiontype)
 {
     for (int i = 0; i < 9; ++i) {
         AnswerEdit * ans = ae_answers.at(i);
@@ -165,7 +165,7 @@ Question::Answers AnswersEdit::correctAnswers()
     return correct_answers;
 }
 
-void AnswersEdit::replaceAnswer(int i, QString text)
+void AnswersEdit::replaceAnswer(int i, const QString & text)
 {
     if (i < 0 || i > 8) { return; }
     ae_answers.at(i)->ans_text->setText(text);
@@ -214,7 +214,7 @@ void AnswersEdit::addAnswer()
     }
 }
 
-void AnswersEdit::removeAnswer(QString id)
+void AnswersEdit::removeAnswer(const QString & id)
 {
     bool ok; int i = id.toInt(&ok);
     if (ok) { removeAnswer(i); }

@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -50,7 +50,6 @@ void MainWindow::setupServer()
     QObject::connect(TSExcludeListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem *)), this, SLOT(addToList()));
     QObject::connect(TSIncludeTableWidget, SIGNAL(itemDoubleClicked(QTableWidgetItem *)), this, SLOT(removeFromList()));
     TSExcludeListWidget->setDragDropMode(QAbstractItemView::InternalMove);
-    //TSIncludeListWidget->setDragDropMode(QAbstractItemView::InternalMove);
     TSIncludeTableWidget->verticalHeader()->hide();
     TSIncludeTableWidget->horizontalHeader()->hide();
     TSIncludeTableWidget->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
@@ -105,7 +104,7 @@ void MainWindow::reloadAvailableItems()
             TSIncludeTableWidget->horizontalHeader()->setResizeMode(2, QHeaderView::ResizeToContents);
             TSIncludeTableWidget->horizontalHeader()->show();
             QListWidgetItem * item;
-            for (int i = 0; i < 20; ++i) {
+            for (int i = 0; i < current_db_f.size(); ++i) {
                 if (current_db_fe[i]) {
                     item = new QListWidgetItem (QString("%1 - %2").arg(i+1).arg(current_db_f[i]), TSExcludeListWidget);
                     item->setData(Qt::UserRole, i);
@@ -323,24 +322,26 @@ void MainWindow::startServer()
 
     setProgress(2); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    if (!loadPrinterSettings()) {
-        switch (QMessageBox::information(this, tr("iTestServer"), tr("You have not configured the printer yet. Would you like to configure it now?"), tr("Con&figure"), tr("Cancel"), 0, 0)) {
-            case 0: // Configure
-                if (!configurePrinter(false)) { setProgress(-1); return; } break;
-            case 1: // Cancel
-                setProgress(-1); return; break;
-        }
-    } else {
-        QString printer_config;
-        if (printerConfiguration(printer_config)) {
-            switch (QMessageBox::information(this, tr("iTestServer"), tr("%1Current printer configuration:%2Would you like to review the configuration?%3").arg("<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">p, li { white-space: pre-wrap; }</style></head><body><p>").arg(printer_config).arg("</p></body></html>"), tr("&Review configuration"), tr("&Continue"), 0, 0)) {
-                case 0: // Review configuration
-                    if (!configurePrinter(true)) { setProgress(-1); return; } break;
-                case 1: // Continue
-                    if (!loadPrinterConfiguration()) { setProgress(-1); return; } break;
+    if (!TSDoNotPrintResultsCheckBox->isChecked()) {
+        if (!loadPrinterSettings()) {
+            switch (QMessageBox::information(this, tr("iTestServer"), tr("You have not configured the printer yet. Would you like to configure it now?"), tr("Con&figure"), tr("Cancel"), 0, 0)) {
+                case 0: // Configure
+                    if (!configurePrinter(false)) { setProgress(-1); return; } break;
+                case 1: // Cancel
+                    setProgress(-1); return; break;
             }
         } else {
-            QMessageBox::critical(this, tr("iTestServer"), tr("Unable to start the server: Invalid printer configuration.")); setProgress(-1); return;
+            QString printer_config;
+            if (printerConfiguration(printer_config)) {
+                switch (QMessageBox::information(this, tr("iTestServer"), tr("%1Current printer configuration:%2Would you like to review the configuration?%3").arg("<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">p, li { white-space: pre-wrap; }</style></head><body><p>").arg(printer_config).arg("</p></body></html>"), tr("&Review configuration"), tr("&Continue"), 0, 0)) {
+                    case 0: // Review configuration
+                        if (!configurePrinter(true)) { setProgress(-1); return; } break;
+                    case 1: // Continue
+                        if (!loadPrinterConfiguration()) { setProgress(-1); return; } break;
+                }
+            } else {
+                QMessageBox::critical(this, tr("iTestServer"), tr("Unable to start the server: Invalid printer configuration.")); setProgress(-1); return;
+            }
         }
     }
 
@@ -413,6 +414,9 @@ void MainWindow::startServer()
     out << QString("[DB_DATE]\n") << current_db_date << QString("\n");
     out << QString("[DB_DATE_ULSD]\n") << (actionUse_last_save_date->isChecked() ? QString("true\n") : QString("false\n"));
     out << QString("[TEST_GRPS]\n") << (TSGroupsCheckBox->isChecked() ? QString("true\n") : QString("false\n"));
+    out << QString("[TEST_SHUFFLE_ANS]\n") << (TSShuffleAnswersCheckBox->isChecked() ? QString("true\n") : QString("false\n"));
+    out << QString("[TEST_HIDE_QNAMES]\n") << (TSHideQuestionNamesCheckBox->isChecked() ? QString("true\n") : QString("false\n"));
+    out << QString("[TEST_HIDE_C_ANS]\n") << (TSHideCorrectAnswersCheckBox->isChecked() ? QString("true\n") : QString("false\n"));
     out << QString("[TEST_DATE]\n") << current_db_testdate << QString("\n");
     out << QString("[TEST_TIME]\n") << time.toString("HH:mm") << QString("\n");
     out << QString("[TEST_QNUM]\n") << QString("%1\n").arg(test_qnum);
@@ -420,11 +424,9 @@ void MainWindow::startServer()
     out << QString("\n[DB_COMMENTS]\n") << current_db_comments << QString("\n");
     out << QString("[DB_QNUM]\n") << QString("%1\n").arg(db_qnum);
     out << QString("[DB_FLAGS]\n");
-    for (int i = 0; i < 20; ++i)
-    {if (current_db_fe[i]) {out << QString("+");} else {out << QString("-");}}
+    for (int i = 0; i < current_db_f.size(); ++i) { out << QString(current_db_fe[i] ? "+" : "-"); }
     out << QString("\n");
-    for (int i = 0; i < 20; ++i)
-    {out << QString("[DB_F") << QString("%1").arg(i) << QString("]\n"); out << current_db_f[i] << QString("\n");}
+    for (int i = 0; i < current_db_f.size(); ++i) { out << QString("[DB_F%1]\n%2\n").arg(i).arg(current_db_f[i]); }
     out << QString("[DB_FLAGS_END]\n");
     out << current_db_passmark.data() << QString("\n");
     setProgress(10); // PROGRESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -472,7 +474,7 @@ void MainWindow::startServer()
         }
         setProgress(((90/current_db_questions.size())*(i+1))+10); // PROGRESS >>
     }
-    
+
     setAllEnabled(false); actionQuit->setEnabled(false);
     actionNew->setEnabled(false); actionOpen->setEnabled(false);
     actionSave_session->setChecked(true);
@@ -545,7 +547,7 @@ void MainWindow::stopServer()
 void MainWindow::addClient()
 {
     QTcpSocket * clientConnection = tcpServer->nextPendingConnection();
-    Client * client = new Client (this, clientConnection);
+    Client * client = new Client(this, clientConnection);
     /*QObject::connect(clientConnection, SIGNAL(disconnected()),
                   clientConnection, SLOT(deleteLater()));*/
     QObject::connect(clientConnection, SIGNAL(readyRead()), client, SLOT(readClientFeedback()));
@@ -560,10 +562,10 @@ void MainWindow::addClient()
     QObject::connect(client, SIGNAL(disconnected(Client *)),
                   this, SLOT(clientDisconnected(Client *)));
 
-    QListWidgetItem * item = new QListWidgetItem (QString("%1").arg(SMLCListWidget->count()+1), SMLCListWidget);
+    QListWidgetItem * item = new QListWidgetItem(makeString(SMLCListWidget->count()+1), SMLCListWidget);
     current_db_clients.insert(item, client);
     client->setNumber(item->text().toInt());
-    QListWidgetItem * log_entry = new QListWidgetItem (tr("%1 > Client #%2 connected").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(item->text()));
+    QListWidgetItem * log_entry = new QListWidgetItem(tr("%1 > Client #%2 connected").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(item->text()));
     SMSLListWidget->insertItem(0, log_entry);
     log_entry->setBackground(QBrush::QBrush(QColor::QColor(197, 255, 120)));
     log_entry->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
@@ -587,7 +589,7 @@ void MainWindow::addClient()
 
 void MainWindow::clientIdentified(Client * client)
 {
-    QListWidgetItem * log_entry = new QListWidgetItem (tr("%1 > Client #%2 identified as %3").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
+    QListWidgetItem * log_entry = new QListWidgetItem(tr("%1 > Client #%2 identified as %3").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
     SMSLListWidget->insertItem(0, log_entry);
     log_entry->setBackground(QBrush::QBrush(QColor::QColor(17, 120, 122)));
     log_entry->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255)));
@@ -598,7 +600,7 @@ void MainWindow::clientIdentified(Client * client)
 
 void MainWindow::clientFinished(Client * client)
 {
-    QListWidgetItem * log_entry = new QListWidgetItem (tr("%1 > Client #%2 (%3) finished the exam").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
+    QListWidgetItem * log_entry = new QListWidgetItem(tr("%1 > Client #%2 (%3) finished the exam").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
     SMSLListWidget->insertItem(0, log_entry);
     log_entry->setBackground(QBrush::QBrush(QColor::QColor(255, 251, 0)));
     log_entry->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
@@ -606,23 +608,25 @@ void MainWindow::clientFinished(Client * client)
 
 void MainWindow::clientResultsLoaded(Client * client)
 {
-    QListWidgetItem * log_entry = new QListWidgetItem (tr("%1 > Client #%2 (%3) submitted results").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
+    QListWidgetItem * log_entry = new QListWidgetItem(tr("%1 > Client #%2 (%3) submitted results").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
     SMSLListWidget->insertItem(0, log_entry);
     log_entry->setBackground(QBrush::QBrush(QColor::QColor(221, 255, 0)));
     log_entry->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
     if (current_db_clients.value(SMLCListWidget->currentItem()) == client)
     { setCurrentClient(); }
     updateLC(client); sendCorrectAnswers(client);
-    if (!printClientResults(client, default_printer)) {
-        QListWidgetItem * log_entry = new QListWidgetItem (tr("%1 > Client #%2 (%3) > failed to print the client's results").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
-        SMSLListWidget->insertItem(0, log_entry);
-        log_entry->setBackground(QBrush::QBrush(QColor::QColor(255, 0, 0)));
-        log_entry->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
-    } else {
-        QListWidgetItem * log_entry = new QListWidgetItem (tr("%1 > Client #%2 (%3) > results printed successfully").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
-        SMSLListWidget->insertItem(0, log_entry);
-        log_entry->setBackground(QBrush::QBrush(QColor::QColor(221, 255, 0)));
-        log_entry->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
+    if (!TSDoNotPrintResultsCheckBox->isChecked()) {
+        if (!printClientResults(client, default_printer)) {
+            QListWidgetItem * log_entry = new QListWidgetItem(tr("%1 > Client #%2 (%3) > failed to print the client's results").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
+            SMSLListWidget->insertItem(0, log_entry);
+            log_entry->setBackground(QBrush::QBrush(QColor::QColor(255, 0, 0)));
+            log_entry->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
+        } else {
+            QListWidgetItem * log_entry = new QListWidgetItem(tr("%1 > Client #%2 (%3) > results printed successfully").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
+            SMSLListWidget->insertItem(0, log_entry);
+            log_entry->setBackground(QBrush::QBrush(QColor::QColor(221, 255, 0)));
+            log_entry->setForeground(QBrush::QBrush(QColor::QColor(0, 0, 0)));
+        }
     }
 }
 
@@ -686,7 +690,7 @@ void MainWindow::loadClientResults(QMap<QString, QuestionAnswer> * results, QTab
         item->setBackground(QBrush::QBrush(backgroundColourForFlag(qans.flag())));
         item->setForeground(QBrush::QBrush(foregroundColourForFlag(qans.flag())));
         tw->setItem(row, 0, item);
-        float score = qans.score(sys);
+        double score = qans.score(sys);
         item = new QTableWidgetItem(tr("%1 out of %2").arg(score).arg(qans.maximumScore(sys)));
         if (score > 0.0) {
             item->setBackground(QBrush::QBrush(QColor::QColor(197, 255, 120)));
@@ -806,18 +810,17 @@ void MainWindow::addOfflineClient()
     }
 }
 
-bool MainWindow::addOfflineClient(QString file_name)
+bool MainWindow::addOfflineClient(const QString & file_name)
 {
     if (file_name.isEmpty()) return false;
     QFile file(file_name);
-    if (!file.open(QFile::ReadOnly | QFile::Text))
-    {
+    if (!file.open(QFile::ReadOnly | QFile::Text)) {
         QMessageBox::critical(this, tr("Add off-line client"), tr("Cannot read file %1:\n%2.").arg(file_name).arg(file.errorString()));
         return true;
     }
     QTextStream rfile(&file);
     rfile.setCodec("UTF-8");
-    
+
     if (rfile.readLine() != "[TEST_NAME]") return false;
     if (rfile.readLine() != current_db_testname) return false;
     if (rfile.readLine() != "[TEST_TIMESTAMP]") return false;
@@ -826,18 +829,17 @@ bool MainWindow::addOfflineClient(QString file_name)
     rfile.readLine();
     if (rfile.readLine() != "[CLIENT_NAME]") return false;
     Client * client = new Client (this, rfile.readLine());
-    QListWidgetItem * item = new QListWidgetItem (QString("%1").arg(SMLCListWidget->count()+1), SMLCListWidget);
+    QListWidgetItem * item = new QListWidgetItem(makeString(SMLCListWidget->count()+1), SMLCListWidget);
     current_db_clients.insert(item, client);
     client->setNumber(item->text().toInt()); item->setText(client->name());
-    QListWidgetItem * log_entry = new QListWidgetItem (tr("%1 > Client #%2 (%3) added").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
+    QListWidgetItem * log_entry = new QListWidgetItem(tr("%1 > Client #%2 (%3) added").arg(QDateTime::currentDateTime().toString("yyyy.MM.dd-hh:mm:ss")).arg(client->number()).arg(client->name()));
     SMSLListWidget->insertItem(0, log_entry);
     log_entry->setBackground(QBrush::QBrush(QColor::QColor(0, 125, 163)));
     log_entry->setForeground(QBrush::QBrush(QColor::QColor(255, 255, 255)));
     updateLC(client); toggleSaveSessionEnabled();
-    QObject::connect(client, SIGNAL(resultsLoaded(Client *)),
-                  this, SLOT(clientResultsLoaded(Client *)));
+    QObject::connect(client, SIGNAL(resultsLoaded(Client *)), this, SLOT(clientResultsLoaded(Client *)));
     client->loadResults(rfile.readAll());
-    
+
     return true;
 }
 
@@ -952,7 +954,7 @@ void MainWindow::runTestWriter()
 #else
 	itw_file_name.replace(itw_file_name.lastIndexOf("iTestServer"), 11, "iTestClient");
 #endif
-	QStringList arguments; arguments << "-port" << QString("%1").arg(tcpServer->serverPort());
+	QStringList arguments; arguments << "-port" << makeString(tcpServer->serverPort());
 	QProcess * itw = new QProcess;
 	itw->start(itw_file_name, arguments);
 }
@@ -989,5 +991,9 @@ void MainWindow::clearSM()
 	rbtnTestTime->setChecked(true);
 	TSTestTimeEdit->setTime(QTime::QTime(0, 0));
 	TSQuestionTimeEdit->setTime(QTime::QTime(0, 0));
+    TSDoNotPrintResultsCheckBox->setChecked(false);
+    TSHideQuestionNamesCheckBox->setChecked(false);
+    TSHideCorrectAnswersCheckBox->setChecked(false);
+    TSShuffleAnswersCheckBox->setChecked(false);
     TSScoringSystemGroupBox->setChecked(false);
 }

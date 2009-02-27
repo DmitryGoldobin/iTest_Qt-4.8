@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -23,11 +23,11 @@ void MainWindow::varinit()
 {
     // GLOBAL
         // iTestServer version
-        ver = "1.4.0"; f_ver = 1.4;
+        ver = "1.4.1"; f_ver = 1.41;
         // iTest ITDB file version
         itdb_ver = "1.4"; f_itdb_ver = 1.4;
         // iTest ITOS file version
-        itos_ver = "1.4"; f_itos_ver = 1.4;
+        itos_ver = "1.4.1"; f_itos_ver = 1.41;
         // URLs
         itest_url = "itest.sourceforge.net";
         docs_url = tr("http://itest.sourceforge.net/documentation/%1/en/").arg("1.4");
@@ -40,6 +40,7 @@ void MainWindow::varinit()
         itest_i18n.insert(translator.translate("LanguageNames", "Portuguese"), "Portuguese");
         itest_i18n.insert(translator.translate("LanguageNames", "Spanish"), "Spanish");
         itest_i18n.insert(translator.translate("LanguageNames", "Italian"), "Italian");
+        itest_i18n.insert(translator.translate("LanguageNames", "Latvian"), "Latvian");
     // CURRENT_DB
         current_db_open = false;
 }

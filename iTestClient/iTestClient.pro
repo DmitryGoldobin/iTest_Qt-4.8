@@ -3,6 +3,7 @@ TEMPLATE      = app
 FORMS        += main_window.ui \
                 ../shared/about_widget_v2.ui
 HEADERS      += main_window.h \
+                ../shared/main.h \
                 ../shared/about_widget.h \
                 ../shared/question.h \
                 question_item.h \
@@ -73,5 +74,6 @@ TRANSLATIONS += i18n/iTestClient-Slovak.ts \
                 i18n/iTestClient-Turkish.ts \
                 i18n/iTestClient-Portuguese.ts \
                 i18n/iTestClient-Spanish.ts \
-                i18n/iTestClient-Italian.ts
+                i18n/iTestClient-Italian.ts \
+                i18n/iTestClient-Latvian.ts
 QMAKE_RESOURCE_FLAGS += -compress 9

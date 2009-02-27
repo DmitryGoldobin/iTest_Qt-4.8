@@ -4,6 +4,7 @@ FORMS        += main_window_v2.ui \
                 ../shared/about_widget_v2.ui \
                 session_wizard.ui
 HEADERS      += main_window.h \
+                ../shared/main.h \
                 ../shared/about_widget.h \
                 ../shared/question.h \
                 question_item.h \
@@ -99,5 +100,6 @@ TRANSLATIONS += i18n/iTestServer-Slovak.ts \
                 i18n/iTestServer-Turkish.ts \
                 i18n/iTestServer-Portuguese.ts \
                 i18n/iTestServer-Spanish.ts \
-                i18n/iTestServer-Italian.ts
+                i18n/iTestServer-Italian.ts \
+                i18n/iTestServer-Latvian.ts
 QMAKE_RESOURCE_FLAGS += -compress 9

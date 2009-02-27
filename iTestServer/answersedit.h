@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -62,12 +62,12 @@ class AnswersEdit : public QWidget
 public:
     AnswersEdit(QWidget * = 0);
 
-    void setAnswers(QStringList);
-    void setAnswers(QStringList, Question::Answers, Question::SelectionType = Question::SingleSelection);
+    void setAnswers(const QStringList &);
+    void setAnswers(const QStringList &, Question::Answers, Question::SelectionType = Question::SingleSelection);
     QStringList answers();
     void setCorrectAnswers(Question::Answers);
     Question::Answers correctAnswers();
-    void replaceAnswer(int, QString);
+    void replaceAnswer(int, const QString &);
     QString answer(int);
     void setSelectionType(Question::SelectionType);
     Question::SelectionType selectionType();
@@ -75,7 +75,7 @@ public:
 
 public slots:
     void addAnswer();
-    void removeAnswer(QString);
+    void removeAnswer(const QString &);
     void removeAnswer(int);
     void clear();
 

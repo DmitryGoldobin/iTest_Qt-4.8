@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -46,10 +46,10 @@ public:
     virtual ~Client();
 
 public slots:
-    void setName(QString); QString name();
+    void setName(const QString &); QString name();
     void setNumber(int); int number();
     void setSocket(QTcpSocket *); QTcpSocket * socket();
-    float score(); float maximumScore();
+    double score(); double maximumScore();
     bool isReady();
     QMap<QString, QuestionAnswer> * results();
     void setPassed(bool); bool passed();
@@ -68,8 +68,8 @@ signals:
 private:
     QString c_name;
     QTcpSocket * c_socket;
-    float c_score;
-    float c_maxscore;
+    double c_score;
+    double c_maxscore;
     bool c_ready;
     QMap<QString, QuestionAnswer> * c_results;
     bool c_passed;

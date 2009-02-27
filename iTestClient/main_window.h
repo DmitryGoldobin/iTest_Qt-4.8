@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -16,6 +16,9 @@
  along with iTest; if not, write to the Free Software Foundation,
  Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 ********************************************************************/
+
+#ifndef MAIN_WINDOW_H
+#define MAIN_WINDOW_H
 
 #include "ui_main_window.h"
 
@@ -43,6 +46,8 @@ class MainWindow : public QMainWindow, private Ui::MainWindow
 public:
     MainWindow();
 
+    void openFile(const QString &);
+
 private slots:
     // UI-RELATED
     void varinit();
@@ -63,7 +68,7 @@ private slots:
     void readIncomingData();
     void displayError(QAbstractSocket::SocketError);
     // TEST-RELATED
-    void loadTest(QString); void loadFile(); void loadFile(QString);
+    void loadTest(QString); void loadFile(); void loadFile(const QString &);
     void randomlySelectQuestions();
     void updateTime();
     void finish(); void sendResults();
@@ -73,7 +78,7 @@ private slots:
     void setCurrentQuestion();
     void nextQuestion(); void lastQuestion();
     void setQuestionAnswered(Question::Answers);
-    void previewSvg(QString);
+    void previewSvg(const QString &);
 
 private:
     // CURRENT DB
@@ -87,15 +92,16 @@ private:
     int current_test_qnum;
     QMap<QListWidgetItem *, QuestionItem *> current_test_questions;
     int current_test_time_remaining;
-    float current_test_score;
+    double current_test_score;
     bool current_test_results_sent;
     QString current_test_date;
     QString current_test_time_finished;
     PassMark current_test_passmark;
     bool current_test_use_groups;
+    bool current_test_shuffle_answers;
     bool current_connection_local;
     // FLAGS
-    bool current_db_fe[20]; QString current_db_f[20];
+    QVector<bool> current_db_fe; QVector<QString> current_db_f;
     // UI-RELATED
     QTimer timer;
     void closeEvent(QCloseEvent*);
@@ -121,5 +127,7 @@ private:
     QTableWidgetItem * ITW_test_passmark;
     QTextBrowser * ITW_test_comments;
     // ITEST & DB VERSION
-    QString ver; float f_ver; QString itos_ver; float f_itos_ver;
+    QString ver; double f_ver; QString itos_ver; double f_itos_ver;
 };
+
+#endif // MAIN_WINDOW_H

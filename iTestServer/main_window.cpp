@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -20,9 +20,9 @@
 #include "../shared/about_widget.h"
 #include "main_window.h"
 
-void MainWindow::errorInvalidDBFile(QString parentFunction, QString fileName)
+void MainWindow::errorInvalidDBFile(const QString & title, const QString & file, int error)
 {
-    QMessageBox::critical(this, parentFunction, tr("Invalid database file %1").arg(fileName));
+    QMessageBox::critical(this, title, tr("Invalid database file: %1\nError %2.").arg(file).arg(error));
 	this->setEnabled(true);
 }
 
@@ -45,8 +45,8 @@ void MainWindow::clearCurrentValues()
     current_db_date.clear();
     current_db_comments.clear();
     current_db_question.clear();
-    for (int i = 0; i < 20; ++i) {current_db_fe[i] = false;}
-    for (int i = 0; i < 20; ++i) {current_db_f[i].clear();}
+    current_db_fe.clear(); current_db_fe.resize(20);
+    current_db_f.clear(); current_db_f.resize(20);
     QMapIterator<QListWidgetItem *, QuestionItem *> i(current_db_questions);
     while (i.hasNext()) { i.next(); delete i.value(); }
     current_db_questions.clear();
@@ -263,7 +263,7 @@ void MainWindow::togglePrintEnabled()
 {
     int i = mainStackedWidget->currentIndex();
     actionPrint_questions->setEnabled(i == EQ || i == EC || i == EF || i == ES || i == SV || i == CL);
-    actionQuickPrint->setEnabled(i == SM && SMLCListWidget->currentIndex().isValid());
+    actionQuickPrint->setEnabled(i == SM && !TSDoNotPrintResultsCheckBox->isChecked() && SMLCListWidget->currentIndex().isValid());
     actionPrint->setEnabled((i == SM && SMLCListWidget->currentIndex().isValid()) || (i == SV && SVLCListWidget->currentIndex().isValid()) || (i == CL && CLLSListWidget->highlightedRow() >= 0));
     actionPrint_session_summary->setEnabled(i == SV && SVSelectedSessionWidget->isEnabled());
     actionPrint_all->setEnabled((i == SV && SVLCListWidget->count() > 0) || (i == CL && CLLSListWidget->count() > 0));
@@ -321,6 +321,10 @@ MainWindow::MainWindow()
 	btnDiscard->setText(tr("Discard"));
 	btnDiscard->setStatusTip(tr("Discard any changes you have made to the question"));
 	btnDiscard->setIcon(QIcon(QString::fromUtf8(":/images/images/button_cancel.png")));
+    EFTreeWidget->setMouseTracking(true);
+    EFTreeWidget->header()->setResizeMode(0, QHeaderView::Fixed);
+    EFTreeWidget->header()->setResizeMode(1, QHeaderView::Stretch);
+    EFTreeWidget->header()->setResizeMode(2, QHeaderView::ResizeToContents);
 	EFButtonBox->button(QDialogButtonBox::Apply)->setText(tr("Apply"));
 	EFButtonBox->button(QDialogButtonBox::Apply)->setStatusTip(tr("Apply any changes you have made to the flags"));
 	EFButtonBox->button(QDialogButtonBox::Apply)->setIcon(QIcon(QString::fromUtf8(":/images/images/button_ok.png")));
@@ -331,6 +335,8 @@ MainWindow::MainWindow()
     varinit();
     current_db_session = NULL;
     current_db_class = NULL;
+    current_db_f.resize(20);
+    current_db_fe.resize(20);
 	// Connect slots -----------------------------------------------------------
     tbtnAddQuestion->setDefaultAction(actionAdd);
     tbtnDuplicateQuestion->setDefaultAction(actionDuplicate);
@@ -404,7 +410,7 @@ MainWindow::MainWindow()
     QObject::connect(rbtngrpFilterLQ, SIGNAL(buttonReleased(QAbstractButton *)), this, SLOT(filterLQ(QAbstractButton *)));
     QObject::connect(actgrpFilterLQ, SIGNAL(triggered(QAction *)), this, SLOT(filterLQAction(QAction *)));
     QObject::connect(LQFlagComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(filterLQFlagChanged()));
-    QObject::connect(LQSearchLineEdit, SIGNAL(textEdited(const QString &)), this, SLOT(filterLQSearch()));
+    QObject::connect(LQSearchLineEdit, SIGNAL(textChanged(const QString &)), this, SLOT(filterLQSearch()));
     QObject::connect(tbtnSearchByGroup, SIGNAL(released()), this, SLOT(searchByGroup()));
 
     actgrpPage = new QActionGroup(this);
@@ -440,9 +446,8 @@ MainWindow::MainWindow()
     loadSettings();
     // Text edit ---------------------------------------------------------------
     setupTextEdits();
-    // Flag lineEdits & checkBoxes - to arrays of pointers ---------------------
+    // Flags -------------------------------------------------------------------
     setupFlagsPage();
-    setFlagLineEditPalettes();
     // Server ------------------------------------------------------------------
     setupServer();
     // Session viewer ----------------------------------------------------------
@@ -453,11 +458,16 @@ MainWindow::MainWindow()
     statusBar()->showMessage(tr("Ready"), 10000);
     // Check app args ----------------------------------------------------------
     if (qApp->arguments().count() > 1) {
-        QFileInfo file_info(qApp->arguments().at(1));
-        if (file_info.exists()) {
-            addRecent(file_info.absoluteFilePath());
-            openDB(file_info.absoluteFilePath());
-        }
+        openFile(qApp->arguments().at(1));
+    }
+}
+
+void MainWindow::openFile(const QString & file)
+{
+    QFileInfo file_info(file);
+    if (file_info.exists() && !saveChangesBeforeProceeding(tr("Open database"), true)) {
+        addRecent(file_info.absoluteFilePath());
+        openDB(file_info.absoluteFilePath());
     }
 }
 
@@ -481,8 +491,8 @@ void MainWindow::loadSettings()
     this->resize(settings.value("editor/size", this->size()).toSize());
     onInfoDisplayChange(settings.value("editor/showDBI", false).toBool());
     actionShow_hidden->setChecked(settings.value("editor/showHidden", false).toBool());
-    SQSplitter->restoreState(settings.value("editor/SQSplitterState").toByteArray());
-    SVSplitter->restoreState(settings.value("editor/VSSSplitterState").toByteArray());
+    //SQSplitter->restoreState(settings.value("editor/SQSplitterState").toByteArray());
+    //SVSplitter->restoreState(settings.value("editor/VSSSplitterState").toByteArray());
     TSCustomServerPortSpinBox->setValue(settings.value("editor/customServerPort", 7777).toInt());
 }
 
@@ -497,12 +507,12 @@ void MainWindow::saveSettings()
     settings.setValue("editor/size", this->size());
     settings.setValue("editor/showDBI", actionShow_DBI->isChecked());
     settings.setValue("editor/showHidden", actionShow_hidden->isChecked());
-    settings.setValue("editor/SQSplitterState", SQSplitter->saveState());
-    settings.setValue("editor/VSSSplitterState", SVSplitter->saveState());
+    //settings.setValue("editor/SQSplitterState", SQSplitter->saveState());
+    //settings.setValue("editor/VSSSplitterState", SVSplitter->saveState());
     settings.setValue("editor/customServerPort", TSCustomServerPortSpinBox->value());
 }
 
-void MainWindow::addRecent(QString name)
+void MainWindow::addRecent(const QString & name)
 {
     for (int i = 0; i < recentDBsListWidget->count();) {
         if (recentDBsListWidget->item(i)->text() == name) {
@@ -582,7 +592,7 @@ void MainWindow::httpRequestFinished(bool error)
 	if (in.readLine() != "[iTest.current-version]") { error = true; goto httpRequestFinished_start; }
 	QString current_ver = in.readLine();
 	if (in.readLine() != "[iTest.current-version.float]") { error = true; goto httpRequestFinished_start; }
-	float f_current_ver = in.readLine().toFloat();
+	double f_current_ver = in.readLine().toDouble();
 	if (in.readLine() != "[iTest.release-notes]") { error = true; goto httpRequestFinished_start; }
 	QString release_notes;
 	while (!in.atEnd()) { release_notes.append(in.readLine()); }
@@ -708,10 +718,10 @@ void MainWindow::overallStatistics()
 			default: tw_item->setText(tr("Unknown")); break;
 		}
 		stats_tw->setItem(row, 2, tw_item);
-		tw_item = new QTableWidgetItem(QString("%1").arg(q_item->correctAnsCount()));
+		tw_item = new QTableWidgetItem(makeString(q_item->correctAnsCount()));
 		tw_item->setFont(font); tw_item->setForeground(QBrush::QBrush(QColor::QColor(92, 163, 0)));
 		stats_tw->setItem(row, 3, tw_item);
-		tw_item = new QTableWidgetItem(QString("%1").arg(q_item->incorrectAnsCount()));
+		tw_item = new QTableWidgetItem(makeString(q_item->incorrectAnsCount()));
 		tw_item->setFont(font); tw_item->setForeground(QBrush::QBrush(QColor::QColor(204, 109, 0)));
 		stats_tw->setItem(row, 4, tw_item);
 		tw_item = new QTableWidgetItem;
@@ -860,7 +870,7 @@ void MainWindow::previewSvg(QListWidgetItem * item)
 
 void MainWindow::about()
 {
-    AboutWidget * itest_about = new AboutWidget(ver, QString("2008"));
+    AboutWidget * itest_about = new AboutWidget(ver, QString("2009"));
 	itest_about->setParent(this);
     itest_about->setWindowFlags(Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/ | Qt::WindowStaysOnTopHint);
 	itest_about->show();

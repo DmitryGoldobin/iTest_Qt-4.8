@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -16,6 +16,9 @@
  along with iTest; if not, write to the Free Software Foundation,
  Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 ********************************************************************/
+
+#ifndef MAIN_WINDOW_H
+#define MAIN_WINDOW_H
 
 #include "ui_main_window_v2.h"
 #include "print_engine.h"
@@ -62,15 +65,17 @@ class MainWindow : public QMainWindow, private Ui::MainWindow
 
 public:
     MainWindow();
-    
+
+    void openFile(const QString &);
+
 private slots:
     // UI-RELATED
     void varinit();
-    void quit(); void about(); void addRecent(QString);
+    void quit(); void about(); void addRecent(const QString &);
     void loadSettings(); void saveSettings();
     void onInfoDisplayChange(bool); void setPage(QAction *);
     void currentPageChanged(int);
-    bool saveChangesBeforeProceeding(QString, bool);
+    bool saveChangesBeforeProceeding(const QString &, bool);
     void setProgress(int); void setNullProgress();
     void checkForUpdates(); void httpRequestFinished(bool);
     void openDocumentation();
@@ -85,9 +90,9 @@ private slots:
     void setCLSCEnabled(bool); void setCLSSEnabled(bool);
     // DATABASE-RELATED
     void newDB(); void closeDB();
-    void openDB(QString, bool = false); void open();
+    void openDB(const QString &, bool = false); void open();
     void openRecent(); void openRecent(QListWidgetItem *);
-    void saveDB(QString, bool = false, bool = false);
+    void saveDB(const QString &, bool = false, bool = false);
     void save(); void saveAs(); void saveCopy(); void saveBackup();
     void setDatabaseModified();
     // STATS
@@ -96,10 +101,11 @@ private slots:
     // PRINT QUESTIONS
     void showPrintQuestionsDialogue();
     // FLAGS-RELATED
-    void setupFlagsPage();
+    void addFlagItem(int); void removeFlagItem(int);
+    void setupFlagsPage(); void setFlagEnabled(QTreeWidgetItem *);
     void setFlags(); void loadFlags(); void applyFlags(); void discardFlags();
-    void setFlagLineEditPalettes(); void updateFlags(QAbstractButton *);
-    void updateFlagQnums(); void checkForUnflaggedQuestions();
+    void updateFlags(QAbstractButton *); void updateFlagQnums();
+    void checkForUnflaggedQuestions();
     int qnumForFlag(int, bool = false);
     static QColor backgroundColourForFlag(int);
     static QColor foregroundColourForFlag(int, bool = false);
@@ -123,7 +129,7 @@ private slots:
     void filterLQ(QAbstractButton *); void filterLQFlagChanged();
     void filterLQAction(QAction *); void filterLQSearch();
     void searchByGroup();
-    uint numOccurrences(QString); uint replaceAllOccurrences(QString, QString);
+    uint numOccurrences(const QString &); uint replaceAllOccurrences(const QString &, const QString &);
     void addSvg(); void removeSvg(); void exportSvg();
     void editSvg(); void browseForSvg(); void applySvgChanges();
     void currentSvgChanged();
@@ -141,7 +147,7 @@ private slots:
     void clientResultsLoaded(Client *); void clientDisconnected(Client *);
     void loadClientResults(QMap<QString, QuestionAnswer> *);
     void loadClientResults(QMap<QString, QuestionAnswer> *, QTableWidget *, ScoringSystem);
-    void addOfflineClient(); bool addOfflineClient(QString);
+    void addOfflineClient(); bool addOfflineClient(const QString &);
     void addOfflineClients();
     void updateLC(Client *); void sendCorrectAnswers(Client *);
     void exportTest(); void exportLog();
@@ -151,7 +157,7 @@ private slots:
     bool printerConfiguration(QString &); bool configurePrinter(bool);
     bool loadPrinterConfiguration();
     bool printClientResults(Client *, QPrinter *);
-    bool printStudentResults(Student *, QPrinter *, QString, ScoringSystem);
+    bool printStudentResults(Student *, QPrinter *, const QString &, ScoringSystem);
     void print(); void quickPrint(); void togglePrintEnabled();
     void printAll(); void printSessionSummary();
     bool printSessionSummary(Session *, QPrinter *);
@@ -180,9 +186,9 @@ private slots:
     void toggleAddSessionToMemberEnabled();
     void addSessionToMember();
     void removeSessionFromMember();
-    QDialog * createAddSessionDialogue(QString, MTListWidget * = NULL);
+    QDialog * createAddSessionDialogue(const QString &, MTListWidget * = NULL);
     // ERROR MESSAGES
-    void errorInvalidDBFile(QString, QString);
+    void errorInvalidDBFile(const QString &, const QString &, int);
     // TEXTEDIT-RELATED
     void setupTextEdits();
     void textBold(); void textUnderline(); void textItalic();
@@ -210,7 +216,7 @@ private:
     QQueue<ArchivedSession *> current_db_queued_sessions;
     PassMark current_db_passmark;
     // FLAGS
-    bool current_db_fe[20]; QString current_db_f[20];
+    QVector<bool> current_db_fe; QVector<QString> current_db_f;
     // UI-RELATED
     void closeEvent(QCloseEvent *);
 	QHttp * http; QBuffer * http_buffer;
@@ -258,22 +264,28 @@ private:
 	// LANG
 	QComboBox * langComboBox;
 	// FLAG-WIDGETS
-	QLineEdit * EFFlagLineEdit[20];
-	QCheckBox * EFFlagCheckBox[20];
-	QLabel * EFFlagQnumLabel[20];
+	QVector<QLineEdit *> EFFlagLineEdit;
 	// PALETTES
 	SearchLineEditPalettes searchLineEditPalettes;
 	// ITEST & DB VERSION & ENVIRONMENT VARIABLES
-	QString ver; float f_ver;
-	QString itdb_ver; float f_itdb_ver;
-	QString itos_ver; float f_itos_ver;
+	QString ver; double f_ver;
+	QString itdb_ver; double f_itdb_ver;
+	QString itos_ver; double f_itos_ver;
 	QString itest_url; QString docs_url;
 	QMap<QString, QString> itest_i18n;
 	// EXCEPTIONS
-	class xInvalidDBFile {};
+	class xInvalidDBFile {
+    public:
+        xInvalidDBFile(int e): x_error(e) {};
+        int error() { return x_error; };
+    private:
+        int x_error;
+    };
 	// FRIENDS
 	friend class Client;
 	friend class Session;
 	friend class ArchivedSession;
     friend class PrintQuestionsDialogue;
 };
+
+#endif // MAIN_WINDOW_H

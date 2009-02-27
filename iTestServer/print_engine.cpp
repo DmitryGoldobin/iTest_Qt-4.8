@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -213,7 +213,7 @@ void PrintQuestionsDialogue::togglePrintSelection(QAbstractButton * rbtn)
         printq_includelist->horizontalHeader()->setResizeMode(1, QHeaderView::ResizeToContents);
         printq_includelist->horizontalHeader()->show();
 		QListWidgetItem * item;
-		for (int i = 0; i < 20; ++i) {
+		for (int i = 0; i < printq_parent->current_db_f.size(); ++i) {
 			if (printq_parent->current_db_fe[i]) {
 				item = new QListWidgetItem(QString("%1 - %2").arg(i+1).arg(printq_parent->current_db_f[i]), printq_excludelist);
 				item->setData(Qt::UserRole, i);
@@ -318,7 +318,7 @@ void PrintQuestionsDialogue::printQuestions()
     printq_parent->printQuestions(this);
 }
 
-int percentageFromValues(float, float, float);
+int percentageFromValues(double, double, double);
 QString htmlForProgressBar(int, bool);
 
 bool MainWindow::loadPrinterSettings()
@@ -533,7 +533,7 @@ bool MainWindow::printClientResults(Client * client, QPrinter * printer)
 	return ok;
 }
 
-bool MainWindow::printStudentResults(Student * student, QPrinter * printer, QString session_name, ScoringSystem sys)
+bool MainWindow::printStudentResults(Student * student, QPrinter * printer, const QString & session_name, ScoringSystem sys)
 {
 	if (!student->isReady()) return false;
 	QTextDocument doc; QString html; QTextStream out(&html);
@@ -567,7 +567,7 @@ bool MainWindow::printStudentResults(Student * student, QPrinter * printer, QStr
 			if (q.value()->name() == i.key()) { item = q.value(); break; }
 		}
 		if (item != NULL) {
-			if (item->flag() >= 0 && item->flag() < 20) {
+			if (item->flag() >= 0 && item->flag() < current_db_f.size()) {
 				out << "<div class=\"bold_text\">";
 				out << Qt::escape(current_db_f[item->flag()]) << ": </div>";
 			}
@@ -912,7 +912,7 @@ void MainWindow::printQuestions(PrintQuestionsDialogue * printq_widget)
 		}
     }
     QFileInfo file_info; bool print_to_file = false; bool native_format = false;
-    int len = QString("%1").arg(numprintouts).length();
+    int len = makeString(numprintouts).length();
     if (!printer->outputFileName().isEmpty() && (numprintouts > 1 || printq_widget->printKey())) {
         file_info.setFile(printer->outputFileName());
         print_to_file = true;
@@ -990,7 +990,7 @@ QString MainWindow::htmlForQuestion(QuestionItem * item, int n, QTextDocument & 
 	QString html; QTextStream out(&html);
 	out << "<div class=\"heading\" align=\"center\">" << endl;
     if (n != 0) { out << "(" << n << ") "; }
-	if (item->flag() >= 0 && item->flag() < 20) {
+	if (item->flag() >= 0 && item->flag() < current_db_f.size()) {
 		out << Qt::escape(current_db_f[item->flag()]) << ": ";
 	}
 	if (!item->group().isEmpty()) {
@@ -1002,7 +1002,7 @@ QString MainWindow::htmlForQuestion(QuestionItem * item, int n, QTextDocument & 
 	    out << "<tr><td width=\"40%\"><div class=\"bold_text\">" << endl;
 	    out << tr("Name:") << "</div></td><td><div class=\"default_text\">" << endl;
 	    out << Qt::escape(item->name()) << "</div></td></tr>" << endl;
-	    if (item->flag() >= 0 && item->flag() < 20) {
+	    if (item->flag() >= 0 && item->flag() < current_db_f.size()) {
 	    	out << "<tr><td width=\"40%\"><div class=\"bold_text\">" << endl;
 	    	out << tr("Flag:") << "</div></td><td><div class=\"default_text\">" << endl;
 	    	out << Qt::escape(current_db_f[item->flag()]) << "</div></td></tr>" << endl;
@@ -1147,7 +1147,7 @@ QString MainWindow::htmlForClassMember(ClassMember * mem)
     return html;
 }
 
-int percentageFromValues(float minimum, float maximum, float value)
+int percentageFromValues(double minimum, double maximum, double value)
 {
     return (maximum - minimum) != 0.0 ? (int)(100 * (value - minimum) / (maximum - minimum)) : 100;
 }

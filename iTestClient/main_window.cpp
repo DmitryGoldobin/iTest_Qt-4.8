@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -62,7 +62,7 @@ MainWindow::MainWindow()
                      this, SLOT(displayError(QAbstractSocket::SocketError)));
     QObject::connect(LQListWidget, SIGNAL(currentTextChanged(QString)),
                      this, SLOT(setCurrentQuestion()));
-    QObject::connect(svgDisplayWidget, SIGNAL(titleClicked(QString)), this, SLOT(previewSvg(QString)));
+    QObject::connect(svgDisplayWidget, SIGNAL(titleClicked(const QString &)), this, SLOT(previewSvg(const QString &)));
     QObject::connect(btnNext, SIGNAL(released()), this, SLOT(nextQuestion()));
     QObject::connect(btnLast, SIGNAL(released()), this, SLOT(lastQuestion()));
     QObject::connect(btnFinish, SIGNAL(released()), this, SLOT(finish()));
@@ -103,13 +103,18 @@ MainWindow::MainWindow()
     		connectSocket();
         }
     } else if (qApp->arguments().count() > 1) {
-        QFileInfo file_info (qApp->arguments().at(1));
-        if (file_info.exists()) {
-            rbtnFromFile->setChecked(true);
-            toggleInputType(rbtnFromFile);
-            DBPathLineEdit->setText(file_info.absoluteFilePath());
-            loadFile(file_info.absoluteFilePath());
-        }
+        openFile(qApp->arguments().at(1));
+    }
+}
+
+void MainWindow::openFile(const QString & file)
+{
+    QFileInfo file_info(file);
+    if (rbtnFromFile->isEnabled() && file_info.exists()) {
+        rbtnFromFile->setChecked(true);
+        toggleInputType(rbtnFromFile);
+        DBPathLineEdit->setText(file_info.absoluteFilePath());
+        loadFile(file_info.absoluteFilePath());
     }
 }
 
@@ -159,7 +164,7 @@ void MainWindow::setCurrentQuestion()
         answersView->setEnabled(true);
         QuestionItem * item = current_test_questions.value(LQListWidget->currentItem());
         questionTextBrowser->setHtml(item->text());
-        answersView->setAnswers(item->answers(), item->answered(), item->selectionType());
+        answersView->setAnswers(item->answers(), item->answered(), item->selectionType(), item->answerOrder());
         svgDisplayWidget->clear();
         if (item->numSvgItems() > 0) {
             svgDisplayWidget->setVisible(true);
@@ -214,12 +219,13 @@ void MainWindow::lastQuestion()
     }
 }
 
-void MainWindow::previewSvg(QString link)
+void MainWindow::previewSvg(const QString & link)
 {
     if (!LQListWidget->currentIndex().isValid()) { return; }
 	QuestionItem * item = current_test_questions.value(LQListWidget->currentItem());
 	if (item == NULL) { return; }
-	if (link.toInt() < 0 || link.toInt() >= item->numSvgItems()) { return; }
+    int i_link = link.toInt();
+	if (i_link < 0 || i_link >= item->numSvgItems()) { return; }
     QSvgWidget * svg_widget = new QSvgWidget;
 	svg_widget->setAttribute(Qt::WA_DeleteOnClose);
 	svg_widget->setParent(this);
@@ -228,11 +234,11 @@ void MainWindow::previewSvg(QString link)
 #else
 	svg_widget->setWindowFlags(Qt::Dialog | Qt::WindowMaximizeButtonHint | Qt::WindowStaysOnTopHint | Qt::WindowSystemMenuHint);
 #endif
-	svg_widget->setWindowTitle(item->svgName(link.toInt()));
+	svg_widget->setWindowTitle(item->svgName(i_link));
 	QSize minimum_size = svg_widget->sizeHint();
 	minimum_size.scale(128, 128, Qt::KeepAspectRatioByExpanding);
 	svg_widget->setMinimumSize(minimum_size);
-	svg_widget->load(item->svg(link.toInt()).toUtf8());
+	svg_widget->load(item->svg(i_link).toUtf8());
 	svg_widget->show();
 }
 
@@ -296,6 +302,8 @@ void MainWindow::enableInputTypeSelection()
     rbtnNetwork->setEnabled(true);
     rbtnFromFile->setEnabled(true);
     toggleInputType(rbtnNetwork->isChecked() ? rbtnNetwork : rbtnFromFile);
+    hideQuestionNamesCheckBox->setEnabled(true);
+    hideCorrectAnswersCheckBox->setEnabled(true);
 }
 
 void MainWindow::disableInputTypeSelection()
@@ -371,7 +379,7 @@ void MainWindow::newTest()
 	progressBar->setValue(0);
 	resultsTableWidget->setRowCount(0);
 	mainStackedWidget->setCurrentIndex(0);
-	for (int i = 0; i < 20; ++i) { current_db_fe[i] = false; current_db_f[i].clear(); }
+	current_db_fe.clear(); current_db_f.clear();
 	if (rbtnNetwork->isChecked()) {
 		tcpSocket->disconnectFromHost();
 		current_connection_local = false;
@@ -412,7 +420,7 @@ void MainWindow::errorInvalidData()
 
 void MainWindow::about()
 {
-    AboutWidget * itest_about = new AboutWidget(ver, QString("2008"));
+    AboutWidget * itest_about = new AboutWidget(ver, QString("2009"));
 	itest_about->setParent(this);
     itest_about->setWindowFlags(Qt::Dialog /*| Qt::WindowMaximizeButtonHint*/ | Qt::WindowStaysOnTopHint);
 	itest_about->show();

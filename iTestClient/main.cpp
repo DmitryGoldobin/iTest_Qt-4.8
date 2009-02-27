@@ -10,13 +10,11 @@
  * iTest is distributed under the terms of the GPL v2, see details below.     *
  ******************************************************************************/
 
-#include <QApplication>
-
-#include "main_window.h"
+#include "../shared/main.h"
 
 int main(int argc, char *argv[])
 {
-	QApplication app(argc, argv);
+	MTApplication app(argc, argv);
 
 	QSettings settings("Michal Tomlein", "iTest");
 	QString lang = settings.value("lang").toString();
@@ -32,6 +30,7 @@ int main(int argc, char *argv[])
 	}
 
 	MainWindow * itest_window = new MainWindow;
+    app.setAppMainWindow(itest_window);
 	itest_window->showFullScreen();
 	return app.exec();
 }
@@ -88,7 +87,7 @@ int main(int argc, char *argv[])
 
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence

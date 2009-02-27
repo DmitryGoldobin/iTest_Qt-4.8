@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -19,7 +19,7 @@
 
 #include "question_item.h"
 
-QuestionItem::QuestionItem(QString name)
+QuestionItem::QuestionItem(const QString & name)
 {
      q_name = name;
      q_flag = -1;
@@ -28,13 +28,28 @@ QuestionItem::QuestionItem(QString name)
      q_answers << "" << "" << "" << "";
      q_correctanswers = Question::None;
      q_answer = Question::None;
+     for (int i = 0; i < 9; ++i) { q_ans_order << i; }
 }
+
+void QuestionItem::shuffleAnswers()
+{
+    q_ans_order.clear();
+    int rand;
+    for (int i = 0; i < q_answers.count(); ++i) {
+        do {
+            rand = qrand() % q_answers.count();
+        } while (q_ans_order.contains(rand));
+        q_ans_order << rand;
+    }
+}
+
+QList<int> QuestionItem::answerOrder() { return q_ans_order; }
 
 Question::Answers QuestionItem::answered() { return q_answer; }
 
 void QuestionItem::setAnswered(Question::Answers ans) { q_answer = ans; }
 
-void QuestionItem::addSvgItem(QString name, QString svg)
+void QuestionItem::addSvgItem(const QString & name, const QString & svg)
 {
     q_svglist << name;
     q_svgmap.insert(name, svg);

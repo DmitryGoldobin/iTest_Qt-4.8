@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -64,7 +64,7 @@ void MainWindow::readIncomingData()
         in >> blocksize;
     }
 
-    if (tcpSocket->bytesAvailable() < blocksize)
+    if ((quint64)tcpSocket->bytesAvailable() < blocksize)
         return;
 
     if (!test_loaded) {
@@ -153,7 +153,7 @@ void MainWindow::sendResults()
 
 void MainWindow::readResults(QString input)
 {
-    QTextStream in(&input); QString buffer; QuestionItem * item; float maxscore = 0.0;
+    QTextStream in(&input); QString buffer; QuestionItem * item; double maxscore = 0.0;
     do {
         if (in.readLine() != "[Q_NAME]") { return; }
         buffer = in.readLine(); item = NULL;

@@ -1,6 +1,6 @@
 /*******************************************************************
  This file is part of iTest
- Copyright (C) 2005-2008 Michal Tomlein (michal.tomlein@gmail.com)
+ Copyright (C) 2005-2009 Michal Tomlein (michal.tomlein@gmail.com)
 
  iTest is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public Licence
@@ -27,17 +27,19 @@
 class QuestionItem : public Question
 {
 public:
-    QuestionItem(QString = QString());
+    QuestionItem(const QString & = QString());
 
 public slots:
+    void shuffleAnswers(); QList<int> answerOrder();
     Answers answered(); void setAnswered(Answers);
-    float score(); float maximumScore();
-    void addSvgItem(QString, QString); int numSvgItems();
+    double score(); double maximumScore();
+    void addSvgItem(const QString &, const QString &); int numSvgItems();
     QString svgName(int); QString svg(int);
     static ScoringSystem scoringSystem();
     static void setScoringSystem(ScoringSystem);
 
 private:
+    QList<int> q_ans_order;
     Answers q_answer;
     QStringList q_svglist;
     QMap<QString, QString> q_svgmap;
