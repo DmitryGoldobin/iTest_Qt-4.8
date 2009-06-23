@@ -32,22 +32,6 @@
         <translation>Версия</translation>
     </message>
     <message>
-        <source>iTest is a Qt application consisting of a Database Editor and a Test Writer designed for easy computerised examination.</source>
-        <translation type="obsolete">iTest является приложением, использующим библиотеку Qt, состоящим из редактора баз данных и программы для написания тестов, и разработанным для упрощения проведения компьютеризованных экзаменов.</translation>
-    </message>
-    <message>
-        <source>This programme is distributed under the terms of the GPL v2.</source>
-        <translation type="obsolete">Данная программа распространяется под лицензией GPL v2.</translation>
-    </message>
-    <message>
-        <source>The programme is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</source>
-        <translation type="obsolete">перевод: &lt;span style=&quot;font-style:italic;&quot;&gt;Константин Макшин, Евгений Бурмистров&lt;/span&gt;&lt;br&gt;&lt;br&gt;Данная программа предоставляется &quot;как есть&quot; без каких-либо гарантий.</translation>
-    </message>
-    <message>
-        <source>This programme uses Qt Open Source Edition version %1.</source>
-        <translation type="obsolete">Данная программа использует библиотеку Qt Open Source Edition версии %1.</translation>
-    </message>
-    <message>
         <location filename="../../shared/about_widget.cpp" line="51"/>
         <source>Qt is a C++ toolkit for cross-platform application development.</source>
         <translation>Qt является инструментом для разработки кросс-платформенных приложений на C++.</translation>
@@ -142,10 +126,6 @@
 <context>
     <name>Client</name>
     <message>
-        <source>iTest - Database Editor</source>
-        <translation type="obsolete">iTestServer - Редактор баз данных и Сервер</translation>
-    </message>
-    <message>
         <location filename="../client.cpp" line="179"/>
         <source>The host was not found. Please check the host name and port settings.</source>
         <translation>Удалённый узел не найден. Пожалуйста, проверьте имя узла и настройки соединения.</translation>
@@ -209,6 +189,11 @@
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
         <translation>Латвийский</translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="44"/>
+        <source>Ukrainian</source>
+        <translation>Украинский</translation>
     </message>
 </context>
 <context>
@@ -430,10 +415,6 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Save changes before proceeding?</source>
-        <translation type="obsolete">Сохранить изменения перед продолжением?</translation>
-    </message>
-    <message>
         <location filename="../database.cpp" line="32"/>
         <location filename="../database.cpp" line="133"/>
         <location filename="../database.cpp" line="149"/>
@@ -520,14 +501,6 @@
 %2.</source>
         <translation>Невозможно записать файл %1:
 %2.</translation>
-    </message>
-    <message>
-        <source>iTest - Database Editor</source>
-        <translation type="obsolete">iTestServer - Редактор баз данных</translation>
-    </message>
-    <message>
-        <source>%1[*] - iTest - Database Editor</source>
-        <translation type="obsolete">%1[*] - iTestServer - Редактор баз данных</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="109"/>
@@ -635,14 +608,6 @@ but you are most probably missing a whole bunch of cool new features.</source>
         <translation>База данных закрыта</translation>
     </message>
     <message>
-        <source>English</source>
-        <translation type="obsolete">Английский</translation>
-    </message>
-    <message>
-        <source>Slovak</source>
-        <translation type="obsolete">Словацкий</translation>
-    </message>
-    <message>
         <location filename="../flags.cpp" line="115"/>
         <source>Flags saved</source>
         <translation>Категории сохранены</translation>
@@ -651,36 +616,6 @@ but you are most probably missing a whole bunch of cool new features.</source>
         <location filename="../flags.cpp" line="121"/>
         <source>Flags discarded</source>
         <translation>Категории отменены</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: </source>
-        <translation type="obsolete">Количество вопросов в этой категории: </translation>
-    </message>
-    <message>
-        <source>Invalid database file %1</source>
-        <translation type="obsolete">Неправильный файл базы данных %1</translation>
-    </message>
-    <message>
-        <source>Invalid format of temporary file %1</source>
-        <translation type="obsolete">Неправильный формат временного файла %1</translation>
-    </message>
-    <message>
-        <source>Cannot %1 temporary file %2:
-%3.
-Please do not use any special characters.
-If this is the case, try again omitting these.</source>
-        <translation type="obsolete">Невозможно %1 временный файл %2:
-%3.
-Пожалуйста, не используйте специальные символы.
-Если это является причиной ошибки, уберите их и повторите попытку.</translation>
-    </message>
-    <message>
-        <source>Invalid format of temporary file %1
-Please do not use any special characters.
-If this is the case, try again omitting these.</source>
-        <translation type="obsolete">Неправильный формат временного файла %1
-Пожалуйста, не используйте специальные символы.
-Если это является причиной ошибки, уберите их и повторите попытку.</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="291"/>
@@ -1139,14 +1074,6 @@ If this is the case, try again omitting these.</source>
         <translation>Название выбранного вопроса</translation>
     </message>
     <message>
-        <source>Answers:</source>
-        <translation type="obsolete">Ответы:</translation>
-    </message>
-    <message>
-        <source>Correct:</source>
-        <translation type="obsolete">Правильный:</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="667"/>
         <location filename="../print_engine.cpp" line="1009"/>
         <location filename="../ui_main_window_v2.cpp" line="3251"/>
@@ -1173,165 +1100,9 @@ If this is the case, try again omitting these.</source>
         <translation>Сложность выбранного вопроса</translation>
     </message>
     <message>
-        <source>a)</source>
-        <translation type="obsolete">а)</translation>
-    </message>
-    <message>
-        <source>b)</source>
-        <translation type="obsolete">б)</translation>
-    </message>
-    <message>
-        <source>A checked checkbox indicates a correct answer</source>
-        <translation type="obsolete">Установленный переключатель указывает правильный вопрос</translation>
-    </message>
-    <message>
-        <source>Answer a) of the selected question</source>
-        <translation type="obsolete">Первый вариант ответа на выбранный вопрос</translation>
-    </message>
-    <message>
-        <source>c)</source>
-        <translation type="obsolete">в)</translation>
-    </message>
-    <message>
-        <source>Answer b) of the selected question</source>
-        <translation type="obsolete">Второй вариант ответа на выбранный вопрос</translation>
-    </message>
-    <message>
-        <source>Answer c) of the selected question</source>
-        <translation type="obsolete">Третий вариант ответа на выбранный вопрос</translation>
-    </message>
-    <message>
-        <source>d)</source>
-        <translation type="obsolete">г)</translation>
-    </message>
-    <message>
-        <source>Answer d) of the selected question</source>
-        <translation type="obsolete">Четвёртый вариант ответа на выбранный вопрос</translation>
-    </message>
-    <message>
         <location filename="../main_window.cpp" line="297"/>
         <source>Question:</source>
         <translation>Вопрос:</translation>
-    </message>
-    <message>
-        <source>Undo</source>
-        <translation type="obsolete">Отменить</translation>
-    </message>
-    <message>
-        <source>◄</source>
-        <translation type="obsolete">◄</translation>
-    </message>
-    <message>
-        <source>Redo</source>
-        <translation type="obsolete">Повторить</translation>
-    </message>
-    <message>
-        <source>►</source>
-        <translation type="obsolete">►</translation>
-    </message>
-    <message>
-        <source>Choose a font</source>
-        <translation type="obsolete">Выбрать шрифт</translation>
-    </message>
-    <message>
-        <source>Select text size</source>
-        <translation type="obsolete">Выбрать размер шрифта</translation>
-    </message>
-    <message>
-        <source>8</source>
-        <translation type="obsolete">8</translation>
-    </message>
-    <message>
-        <source>9</source>
-        <translation type="obsolete">9</translation>
-    </message>
-    <message>
-        <source>10</source>
-        <translation type="obsolete">10</translation>
-    </message>
-    <message>
-        <source>11</source>
-        <translation type="obsolete">11</translation>
-    </message>
-    <message>
-        <source>12</source>
-        <translation type="obsolete">12</translation>
-    </message>
-    <message>
-        <source>14</source>
-        <translation type="obsolete">14</translation>
-    </message>
-    <message>
-        <source>16</source>
-        <translation type="obsolete">16</translation>
-    </message>
-    <message>
-        <source>18</source>
-        <translation type="obsolete">18</translation>
-    </message>
-    <message>
-        <source>20</source>
-        <translation type="obsolete">20</translation>
-    </message>
-    <message>
-        <source>Bold</source>
-        <translation type="obsolete">Полужирный</translation>
-    </message>
-    <message>
-        <source>B</source>
-        <translation type="obsolete">Ж</translation>
-    </message>
-    <message>
-        <source>Italic</source>
-        <translation type="obsolete">Курсив</translation>
-    </message>
-    <message>
-        <source>I</source>
-        <translation type="obsolete">К</translation>
-    </message>
-    <message>
-        <source>Underlined</source>
-        <translation type="obsolete">Подчёркнутый</translation>
-    </message>
-    <message>
-        <source>U</source>
-        <translation type="obsolete">Ч</translation>
-    </message>
-    <message>
-        <source>Text colour</source>
-        <translation type="obsolete">Цвет текста</translation>
-    </message>
-    <message>
-        <source>Align left</source>
-        <translation type="obsolete">Выравнивание по левому краю</translation>
-    </message>
-    <message>
-        <source>L</source>
-        <translation type="obsolete">Л</translation>
-    </message>
-    <message>
-        <source>Align centre</source>
-        <translation type="obsolete">Выравнивание по центру</translation>
-    </message>
-    <message>
-        <source>C</source>
-        <translation type="obsolete">Ц</translation>
-    </message>
-    <message>
-        <source>Align right</source>
-        <translation type="obsolete">Выравнивание по правому краю</translation>
-    </message>
-    <message>
-        <source>R</source>
-        <translation type="obsolete">П</translation>
-    </message>
-    <message>
-        <source>Justify</source>
-        <translation type="obsolete">Выравнивание по ширине</translation>
-    </message>
-    <message>
-        <source>J</source>
-        <translation type="obsolete">Ш</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="298"/>
@@ -1388,10 +1159,6 @@ If this is the case, try again omitting these.</source>
         <translation>Использовать дату последнего сохранения</translation>
     </message>
     <message>
-        <source>Show or hide the database information below</source>
-        <translation type="obsolete">Показывать или скрывать информацию о базе данных</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="4128"/>
         <location filename="../main_window_v2.ui" line="4131"/>
         <location filename="../ui_main_window_v2.cpp" line="2657"/>
@@ -1413,18 +1180,6 @@ If this is the case, try again omitting these.</source>
         <location filename="../main_window.cpp" line="300"/>
         <source>Use this field for your comments, notes, reminders...</source>
         <translation>Используйте это поле для комментариев, заметок, напоминаний...</translation>
-    </message>
-    <message>
-        <source>Flag name:</source>
-        <translation type="obsolete">Название категории:</translation>
-    </message>
-    <message>
-        <source>Enabled:</source>
-        <translation type="obsolete">Установлен:</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: 0</source>
-        <translation type="obsolete">Количество вопросов этой категории: 0</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1043"/>
@@ -1506,10 +1261,6 @@ If this is the case, try again omitting these.</source>
         <location filename="../ui_main_window_v2.cpp" line="3396"/>
         <source>Number of questions:</source>
         <translation>Количество вопросов:</translation>
-    </message>
-    <message>
-        <source>Specify the minimum number of correct answers to pass the exam</source>
-        <translation type="obsolete">Указать минимальное количество правильных ответов для прохождения экзамена</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1940"/>
@@ -1594,10 +1345,6 @@ If this is the case, try again omitting these.</source>
         <translation>Информация о сервере</translation>
     </message>
     <message>
-        <source>The server is running on port *****. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation type="obsolete">Сервер использует порт ******. Теперь Вы можете запустить программу написания тестов на клиентксих компьютерах. Не закрывайте редактор баз данных во время тестирования!</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="2132"/>
         <location filename="../ui_main_window_v2.cpp" line="3450"/>
         <source>List of clients</source>
@@ -1620,10 +1367,6 @@ If this is the case, try again omitting these.</source>
         <location filename="../ui_main_window_v2.cpp" line="3480"/>
         <source>The selected client&apos;s exam results</source>
         <translation>Результаты тестирования выбранного клиента</translation>
-    </message>
-    <message>
-        <source>Answered correctly</source>
-        <translation type="obsolete">Правильных ответов</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2280"/>
@@ -2543,10 +2286,6 @@ If this is the case, try again omitting these.</source>
         <translation>Просмотреть сохранённые сессии тестов</translation>
     </message>
     <message>
-        <source>Delete &amp;log</source>
-        <translation type="obsolete">&amp;Удалить журнал</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="4609"/>
         <location filename="../main_window_v2.ui" line="4612"/>
         <location filename="../main_window_v2.ui" line="4615"/>
@@ -2948,10 +2687,6 @@ number of copies each time you start the server.</source>
         <translation>Итоговый счёт:</translation>
     </message>
     <message>
-        <source>out of</source>
-        <translation type="obsolete">из</translation>
-    </message>
-    <message>
         <location filename="../print_engine.cpp" line="615"/>
         <source>%1 &gt; Client #%2 (%3) &gt; failed to print the client&apos;s results (Server QuickPrint call)</source>
         <translation>%1 &gt; Клиент №%2 (%3) &gt; невозможно вывести результаты клиента на печать (запрос сервера на быструю печать)</translation>
@@ -3263,14 +2998,6 @@ although it is recommended to give them an hour.</source>
         <translation>Невозможно запустить сервер: Неправильные настройки сервера.</translation>
     </message>
     <message>
-        <source>The server is running on port &lt;b&gt;%1&lt;/b&gt;. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation type="obsolete">Сервер использует порт &lt;b&gt;%1&lt;/b&gt;. Теперь Вы можете запустить программу написания тестов на клиентксих компьютерах. Не закрывайте редактор баз данных во время тестирования!</translation>
-    </message>
-    <message>
-        <source>iTest - Stop server</source>
-        <translation type="obsolete">iTest - Остановка сервера</translation>
-    </message>
-    <message>
         <location filename="../server.cpp" line="494"/>
         <source>Are you sure you want to stop the server?</source>
         <translation>Вы уверены, что хотите остановить сервер?</translation>
@@ -3319,18 +3046,6 @@ although it is recommended to give them an hour.</source>
         <location filename="../server.cpp" line="640"/>
         <source>%1 &gt; Client #%2 disconnected</source>
         <translation>%1 &gt; Отключён клиент №%2</translation>
-    </message>
-    <message>
-        <source>yes</source>
-        <translation type="obsolete">да</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation type="obsolete">нет</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="obsolete">Нет</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="788"/>
@@ -3433,10 +3148,6 @@ although it is recommended to give them an hour.</source>
         <translation>Вы уверены, что хотите удалить журнал сессии &quot;%1 - %2&quot;?</translation>
     </message>
     <message>
-        <source>Russian</source>
-        <translation type="obsolete">Русский</translation>
-    </message>
-    <message>
         <location filename="../flags.cpp" line="25"/>
         <source>Type a name for flag %1</source>
         <translation>Введите название категории %1</translation>
@@ -3445,10 +3156,6 @@ although it is recommended to give them an hour.</source>
         <location filename="../flags.cpp" line="36"/>
         <source>Check or uncheck this checkbox to enable or disable flag %1</source>
         <translation>Установите или снимите этот переключатель для установки или снятия категории %1</translation>
-    </message>
-    <message>
-        <source>Flag %1:</source>
-        <translation type="obsolete">Категория %1:</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="133"/>
@@ -3519,14 +3226,6 @@ although it is recommended to give them an hour.</source>
         <translation>Сохранить резервную копию базы данных со всеми архивными сессиями</translation>
     </message>
     <message>
-        <source>http://itest.sourceforge.net/documentation/1.1/en/</source>
-        <translation type="obsolete">http://itest.sourceforge.net/documentation/1.1/en/</translation>
-    </message>
-    <message>
-        <source>Turkish</source>
-        <translation type="obsolete">Турецкий</translation>
-    </message>
-    <message>
         <location filename="../database.cpp" line="654"/>
         <source>Error opening database.</source>
         <translation>Ошибка при открытии базы данных.</translation>
@@ -3555,10 +3254,6 @@ although it is recommended to give them an hour.</source>
         <location filename="../ui_main_window_v2.cpp" line="3556"/>
         <source>Pass mark</source>
         <translation>Оценка прохождения</translation>
-    </message>
-    <message>
-        <source>Details</source>
-        <translation type="obsolete">Подробнее</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2764"/>
@@ -3654,14 +3349,6 @@ Please choose a different group.</source>
 Пожалуйста, выберете другую группу.</translation>
     </message>
     <message>
-        <source>Run Test Writer</source>
-        <translation type="obsolete">Запустить программу для написания тестов</translation>
-    </message>
-    <message>
-        <source>Run Test Writer on this computer</source>
-        <translation type="obsolete">Запустить программу для написания тестов на этом компьютере</translation>
-    </message>
-    <message>
         <location filename="../class_viewer.cpp" line="326"/>
         <location filename="../class_viewer.cpp" line="352"/>
         <location filename="../database.cpp" line="75"/>
@@ -3684,18 +3371,6 @@ Please choose a different group.</source>
         <location filename="../ui_main_window_v2.cpp" line="2509"/>
         <source>iTestServer</source>
         <translation>iTestServer</translation>
-    </message>
-    <message>
-        <source>%1[*] - iTestServer</source>
-        <translation type="obsolete">%1[*] - iTestServer</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="obsolete">Португальский</translation>
-    </message>
-    <message>
-        <source>The server is running on port *****. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</source>
-        <translation type="obsolete">Сервер использует порт ******. Теперь Вы можете запустить iTestClient на клиентксих компьютерах. Не закрывайте iTestServer во время тестирования!</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4877"/>
@@ -3724,70 +3399,6 @@ Please choose a different group.</source>
         <location filename="../server.cpp" line="494"/>
         <source>iTestServer - Stop server</source>
         <translation>iTestServer - Остановка сервера</translation>
-    </message>
-    <message>
-        <source>22</source>
-        <translation type="obsolete">22</translation>
-    </message>
-    <message>
-        <source>24</source>
-        <translation type="obsolete">24</translation>
-    </message>
-    <message>
-        <source>26</source>
-        <translation type="obsolete">26</translation>
-    </message>
-    <message>
-        <source>28</source>
-        <translation type="obsolete">28</translation>
-    </message>
-    <message>
-        <source>30</source>
-        <translation type="obsolete">30</translation>
-    </message>
-    <message>
-        <source>36</source>
-        <translation type="obsolete">36</translation>
-    </message>
-    <message>
-        <source>48</source>
-        <translation type="obsolete">48</translation>
-    </message>
-    <message>
-        <source>96</source>
-        <translation type="obsolete">96</translation>
-    </message>
-    <message>
-        <source>%1 - Print questions - iTest</source>
-        <translation type="obsolete">%1 - Печать вопросов - iTest</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Do not print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;Не печатать:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;Печатать:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&amp;Add all</source>
-        <translation type="obsolete">&amp;Добавить все</translation>
-    </message>
-    <message>
-        <source>Print statistics</source>
-        <translation type="obsolete">Печать статистики</translation>
-    </message>
-    <message>
-        <source>Print formatted questions</source>
-        <translation type="obsolete">Печать сформатированных вопросов</translation>
-    </message>
-    <message>
-        <source>Print a test (do not highlight the correct answers)</source>
-        <translation type="obsolete">Печать теста (не выделять правильные ответы)</translation>
-    </message>
-    <message>
-        <source>Print graphics</source>
-        <translation type="obsolete">Печать графики</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
@@ -4041,14 +3652,6 @@ Please choose a different group.</source>
         <location filename="../ui_main_window_v2.cpp" line="3422"/>
         <source>Specify a custom server port</source>
         <translation>Установите пользовательский порт</translation>
-    </message>
-    <message>
-        <source>Show details</source>
-        <translation type="obsolete">Показать подробности</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="obsolete">Испанский</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4606"/>
@@ -4846,10 +4449,6 @@ Error %2.</source>
 </context>
 <context>
     <name>QObject</name>
-    <message>
-        <source>Unknown</source>
-        <translation type="obsolete">Неизвестно</translation>
-    </message>
     <message>
         <location filename="../../shared/question.cpp" line="175"/>
         <location filename="../../shared/question.cpp" line="186"/>

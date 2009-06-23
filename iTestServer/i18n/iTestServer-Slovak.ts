@@ -32,22 +32,6 @@
         <translation>Verzia</translation>
     </message>
     <message>
-        <source>iTest is a Qt application consisting of a Database Editor and a Test Writer designed for easy computerised examination.</source>
-        <translation type="obsolete">iTest je Qt program pozostávajúci z Editoru databáz a Testového klienta dizajnovaných pre jednoduché skúšanie pomocou počítača.</translation>
-    </message>
-    <message>
-        <source>This programme is distributed under the terms of the GPL v2.</source>
-        <translation type="obsolete">Tento program je distribuovaný pod licenciou GPL v2.</translation>
-    </message>
-    <message>
-        <source>The programme is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</source>
-        <translation type="obsolete">Tento program je poskytovaný TAK AKO JE s ABSOLÚTNE ŽIADNOU ZÁRUKOU AKÉHOKOĽVEK DRUHU.</translation>
-    </message>
-    <message>
-        <source>This programme uses Qt Open Source Edition version %1.</source>
-        <translation type="obsolete">Tento program používa Qt Open Source Edition vo verzii %1.</translation>
-    </message>
-    <message>
         <location filename="../../shared/about_widget.cpp" line="51"/>
         <source>Qt is a C++ toolkit for cross-platform application development.</source>
         <translation>Qt je sada nástrojov na multiplatformový vývoj aplikácií v jazyku C++.</translation>
@@ -142,10 +126,6 @@
 <context>
     <name>Client</name>
     <message>
-        <source>iTest - Database Editor</source>
-        <translation type="obsolete">iTest - Editor databáz</translation>
-    </message>
-    <message>
         <location filename="../client.cpp" line="179"/>
         <source>The host was not found. Please check the host name and port settings.</source>
         <translation>Hostiteľ nenájdený. Prosím skontrolujte meno hostiteľa a nastavenie portu.</translation>
@@ -209,6 +189,11 @@
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
         <translation>lotyština</translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="44"/>
+        <source>Ukrainian</source>
+        <translation>ukrajinčina</translation>
     </message>
 </context>
 <context>
@@ -430,10 +415,6 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Save changes before proceeding?</source>
-        <translation type="obsolete">Uložiť zmeny pred pokračovaním?</translation>
-    </message>
-    <message>
         <location filename="../database.cpp" line="32"/>
         <location filename="../database.cpp" line="133"/>
         <location filename="../database.cpp" line="149"/>
@@ -601,36 +582,6 @@
         <location filename="../flags.cpp" line="121"/>
         <source>Flags discarded</source>
         <translation>Kategórie zahodené</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: </source>
-        <translation type="obsolete">Počet otázok v tejto kategórii: </translation>
-    </message>
-    <message>
-        <source>Invalid database file %1</source>
-        <translation type="obsolete">Neplatný databázový súbor: %1</translation>
-    </message>
-    <message>
-        <source>Invalid format of temporary file %1</source>
-        <translation type="obsolete">Neplatný formát dočasného súboru %1</translation>
-    </message>
-    <message>
-        <source>Cannot %1 temporary file %2:
-%3.
-Please do not use any special characters.
-If this is the case, try again omitting these.</source>
-        <translation type="obsolete">Nemôžem %1 dočasný súbor %2:
-%3.
-Prosím nepoužívajte žiadne špeciálne znaky.
-Ak ste ich použili, skúste operáciu znova bez nich.</translation>
-    </message>
-    <message>
-        <source>Invalid format of temporary file %1
-Please do not use any special characters.
-If this is the case, try again omitting these.</source>
-        <translation type="obsolete">Neplatný formát dočasného súboru %1
-Prosím nepoužívajte žiadne špeciálne znaky.
-Ak ste ich použili, skúste operáciu znova bez nich.</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="291"/>
@@ -814,10 +765,6 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <location filename="../ui_main_window_v2.cpp" line="3266"/>
         <source>Difficult</source>
         <translation>Obtiažna</translation>
-    </message>
-    <message>
-        <source>iTest - Database Editor</source>
-        <translation type="obsolete">iTest - Editor databáz</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="131"/>
@@ -1078,14 +1025,6 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <translation>Meno vybranej otázky</translation>
     </message>
     <message>
-        <source>Answers:</source>
-        <translation type="obsolete">Odpovede:</translation>
-    </message>
-    <message>
-        <source>Correct:</source>
-        <translation type="obsolete">Správna:</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="667"/>
         <location filename="../print_engine.cpp" line="1009"/>
         <location filename="../ui_main_window_v2.cpp" line="3251"/>
@@ -1112,165 +1051,9 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <translation>Obtiažnosť vybranej otázky</translation>
     </message>
     <message>
-        <source>a)</source>
-        <translation type="obsolete">a)</translation>
-    </message>
-    <message>
-        <source>b)</source>
-        <translation type="obsolete">b)</translation>
-    </message>
-    <message>
-        <source>A checked checkbox indicates a correct answer</source>
-        <translation type="obsolete">Zaškrtnuté políčko značí správnu odpoveď</translation>
-    </message>
-    <message>
-        <source>Answer a) of the selected question</source>
-        <translation type="obsolete">Odpoveď a) vybranej otázky</translation>
-    </message>
-    <message>
-        <source>c)</source>
-        <translation type="obsolete">c)</translation>
-    </message>
-    <message>
-        <source>Answer b) of the selected question</source>
-        <translation type="obsolete">Odpoveď b) vybranej otázky</translation>
-    </message>
-    <message>
-        <source>Answer c) of the selected question</source>
-        <translation type="obsolete">Odpoveď c) vybranej otázky</translation>
-    </message>
-    <message>
-        <source>d)</source>
-        <translation type="obsolete">d)</translation>
-    </message>
-    <message>
-        <source>Answer d) of the selected question</source>
-        <translation type="obsolete">Odpoveď d) vybranej otázky</translation>
-    </message>
-    <message>
         <location filename="../main_window.cpp" line="297"/>
         <source>Question:</source>
         <translation>Otázka:</translation>
-    </message>
-    <message>
-        <source>Undo</source>
-        <translation type="obsolete">Späť</translation>
-    </message>
-    <message>
-        <source>◄</source>
-        <translation type="obsolete">◄</translation>
-    </message>
-    <message>
-        <source>Redo</source>
-        <translation type="obsolete">Znovu</translation>
-    </message>
-    <message>
-        <source>►</source>
-        <translation type="obsolete">►</translation>
-    </message>
-    <message>
-        <source>Choose a font</source>
-        <translation type="obsolete">Vybrať písmo</translation>
-    </message>
-    <message>
-        <source>Select text size</source>
-        <translation type="obsolete">Vybrať veľkosť písma</translation>
-    </message>
-    <message>
-        <source>8</source>
-        <translation type="obsolete">8</translation>
-    </message>
-    <message>
-        <source>9</source>
-        <translation type="obsolete">9</translation>
-    </message>
-    <message>
-        <source>10</source>
-        <translation type="obsolete">10</translation>
-    </message>
-    <message>
-        <source>11</source>
-        <translation type="obsolete">11</translation>
-    </message>
-    <message>
-        <source>12</source>
-        <translation type="obsolete">12</translation>
-    </message>
-    <message>
-        <source>14</source>
-        <translation type="obsolete">14</translation>
-    </message>
-    <message>
-        <source>16</source>
-        <translation type="obsolete">16</translation>
-    </message>
-    <message>
-        <source>18</source>
-        <translation type="obsolete">18</translation>
-    </message>
-    <message>
-        <source>20</source>
-        <translation type="obsolete">20</translation>
-    </message>
-    <message>
-        <source>Bold</source>
-        <translation type="obsolete">Tučné</translation>
-    </message>
-    <message>
-        <source>B</source>
-        <translation type="obsolete">B</translation>
-    </message>
-    <message>
-        <source>Italic</source>
-        <translation type="obsolete">Kurzíva</translation>
-    </message>
-    <message>
-        <source>I</source>
-        <translation type="obsolete">I</translation>
-    </message>
-    <message>
-        <source>Underlined</source>
-        <translation type="obsolete">Podčiarknuté</translation>
-    </message>
-    <message>
-        <source>U</source>
-        <translation type="obsolete">U</translation>
-    </message>
-    <message>
-        <source>Text colour</source>
-        <translation type="obsolete">Farba písma</translation>
-    </message>
-    <message>
-        <source>Align left</source>
-        <translation type="obsolete">Zarovnať vľavo</translation>
-    </message>
-    <message>
-        <source>L</source>
-        <translation type="obsolete">L</translation>
-    </message>
-    <message>
-        <source>Align centre</source>
-        <translation type="obsolete">Zarovnať na stred</translation>
-    </message>
-    <message>
-        <source>C</source>
-        <translation type="obsolete">C</translation>
-    </message>
-    <message>
-        <source>Align right</source>
-        <translation type="obsolete">Zarovnať vpravo</translation>
-    </message>
-    <message>
-        <source>R</source>
-        <translation type="obsolete">R</translation>
-    </message>
-    <message>
-        <source>Justify</source>
-        <translation type="obsolete">Do bloku</translation>
-    </message>
-    <message>
-        <source>J</source>
-        <translation type="obsolete">J</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="298"/>
@@ -1327,10 +1110,6 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <translation>Použiť dátum posledného uloženia</translation>
     </message>
     <message>
-        <source>Show or hide the database information below</source>
-        <translation type="obsolete">Zobraziť alebo skryť informácie o databáze</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="4128"/>
         <location filename="../main_window_v2.ui" line="4131"/>
         <location filename="../ui_main_window_v2.cpp" line="2657"/>
@@ -1352,18 +1131,6 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <location filename="../main_window.cpp" line="300"/>
         <source>Use this field for your comments, notes, reminders...</source>
         <translation>Toto pole môžete použiť na svoje komentáre, poznámky a pripomienky...</translation>
-    </message>
-    <message>
-        <source>Flag name:</source>
-        <translation type="obsolete">Meno kategórie:</translation>
-    </message>
-    <message>
-        <source>Enabled:</source>
-        <translation type="obsolete">Povolená:</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: 0</source>
-        <translation type="obsolete">Počet otázok v tejto kategórii: 0</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1043"/>
@@ -1445,10 +1212,6 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <location filename="../ui_main_window_v2.cpp" line="3396"/>
         <source>Number of questions:</source>
         <translation>Počet otázok:</translation>
-    </message>
-    <message>
-        <source>Specify the minimum number of correct answers to pass the exam</source>
-        <translation type="obsolete">Upresnite minimálny počet správnych odpovedí na urobenie skúšky</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1940"/>
@@ -1533,10 +1296,6 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <translation>Informácie o serveri</translation>
     </message>
     <message>
-        <source>The server is running on port *****. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation type="obsolete">Server beží na porte *****. Teraz môžete spustiť Testového klienta na každom klientskom PC. Nevypínajte Editor databáz počas testovania!</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="2132"/>
         <location filename="../ui_main_window_v2.cpp" line="3450"/>
         <source>List of clients</source>
@@ -1559,10 +1318,6 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <location filename="../ui_main_window_v2.cpp" line="3480"/>
         <source>The selected client&apos;s exam results</source>
         <translation>Výsledky skúšky vybraného klienta</translation>
-    </message>
-    <message>
-        <source>Answered correctly</source>
-        <translation type="obsolete">Zodpovedané správne</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2280"/>
@@ -2462,10 +2217,6 @@ Ak ste ich použili, skúste operáciu znova bez nich.</translation>
         <translation>Prezrieť si uložené testové sedenia</translation>
     </message>
     <message>
-        <source>Delete &amp;log</source>
-        <translation type="obsolete">Odstrániť &amp;záznam</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="4609"/>
         <location filename="../main_window_v2.ui" line="4612"/>
         <location filename="../main_window_v2.ui" line="4615"/>
@@ -2812,10 +2563,6 @@ a nastavte počet kópií pri každom spustení servera.</translation>
         <translation>Celkové skóre:</translation>
     </message>
     <message>
-        <source>out of</source>
-        <translation type="obsolete">z</translation>
-    </message>
-    <message>
         <location filename="../print_engine.cpp" line="615"/>
         <source>%1 &gt; Client #%2 (%3) &gt; failed to print the client&apos;s results (Server QuickPrint call)</source>
         <translation>%1 &gt; Klient #%2 (%3) &gt; nepodarilo sa vytlačiť klientove výsledky (rýchla tlač)</translation>
@@ -3103,14 +2850,6 @@ ale doporučuje sa im dať hodinu času.</translation>
         <translation>Nedá sa spustiť server: Neplatné nastavenie servera.</translation>
     </message>
     <message>
-        <source>The server is running on port &lt;b&gt;%1&lt;/b&gt;. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation type="obsolete">Server beží na porte &lt;b&gt;%1&lt;/b&gt;. Teraz môžete spustiť Testového klienta na každom klientskom PC. Nevypínajte Editor databáz počas testovania!</translation>
-    </message>
-    <message>
-        <source>iTest - Stop server</source>
-        <translation type="obsolete">iTest - Zastaviť server</translation>
-    </message>
-    <message>
         <location filename="../server.cpp" line="494"/>
         <source>Are you sure you want to stop the server?</source>
         <translation>Naozaj chcete zastaviť server?</translation>
@@ -3159,18 +2898,6 @@ ale doporučuje sa im dať hodinu času.</translation>
         <location filename="../server.cpp" line="640"/>
         <source>%1 &gt; Client #%2 disconnected</source>
         <translation>%1 &gt; Klient #%2 odpojený</translation>
-    </message>
-    <message>
-        <source>yes</source>
-        <translation type="obsolete">áno</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation type="obsolete">nie</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="obsolete">Žiadna</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="788"/>
@@ -3283,14 +3010,6 @@ ale doporučuje sa im dať hodinu času.</translation>
         <translation>Vyberte váš jazyk</translation>
     </message>
     <message>
-        <source>English</source>
-        <translation type="obsolete">angličtina</translation>
-    </message>
-    <message>
-        <source>Slovak</source>
-        <translation type="obsolete">slovenčina</translation>
-    </message>
-    <message>
         <location filename="../main_window.cpp" line="824"/>
         <source>You need to restart iTest for the changes to apply.</source>
         <translation>Aby sa zmeny prejavili, je potrebné reštartovať iTest.</translation>
@@ -3326,10 +3045,6 @@ ale pravdepodobne prichádzate o množstvo nových možností.</translation>
         <location filename="../ui_main_window_v2.cpp" line="3669"/>
         <source>&amp;View</source>
         <translation>&amp;Zobraziť</translation>
-    </message>
-    <message>
-        <source>%1[*] - iTest - Database Editor</source>
-        <translation type="obsolete">%1[*] - iTest - Editor databáz</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4624"/>
@@ -3434,10 +3149,6 @@ Nájdených %1 výskytov starého mena v uložených sedeniach.
 Všetky budú aktualizované.</translation>
     </message>
     <message>
-        <source>Russian</source>
-        <translation type="obsolete">ruština</translation>
-    </message>
-    <message>
         <location filename="../flags.cpp" line="25"/>
         <source>Type a name for flag %1</source>
         <translation>Napíšte meno pre kategóriu %1</translation>
@@ -3446,10 +3157,6 @@ Všetky budú aktualizované.</translation>
         <location filename="../flags.cpp" line="36"/>
         <source>Check or uncheck this checkbox to enable or disable flag %1</source>
         <translation>Zaškrtnite alebo odškrtnite toto políčko aby ste povolili alebo zakázali kategóriu %1</translation>
-    </message>
-    <message>
-        <source>Flag %1:</source>
-        <translation type="obsolete">Kategória %1: </translation>
     </message>
     <message>
         <location filename="../database.cpp" line="133"/>
@@ -3520,14 +3227,6 @@ Všetky budú aktualizované.</translation>
         <translation>Uložiť záložnú kópiu databázy so všetkými archivovanými sedeniami</translation>
     </message>
     <message>
-        <source>http://itest.sourceforge.net/documentation/1.1/en/</source>
-        <translation type="obsolete">http://itest.sourceforge.net/documentation/1.1/sk/</translation>
-    </message>
-    <message>
-        <source>Turkish</source>
-        <translation type="obsolete">turečtina</translation>
-    </message>
-    <message>
         <location filename="../database.cpp" line="654"/>
         <source>Error opening database.</source>
         <translation>Pri otváraní databázy sa vyskytla chyba.</translation>
@@ -3556,10 +3255,6 @@ Všetky budú aktualizované.</translation>
         <location filename="../ui_main_window_v2.cpp" line="3556"/>
         <source>Pass mark</source>
         <translation>Dostatočná</translation>
-    </message>
-    <message>
-        <source>Details</source>
-        <translation type="obsolete">Detaily</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2764"/>
@@ -3655,21 +3350,6 @@ Please choose a different group.</source>
 Prosím zvoľte inú skupinu.</translation>
     </message>
     <message>
-        <source>It is strongly advised against changing the flag of a question.
-Consider duplicating the question and hiding the original instead.
-Proceed only if you know what you are doing.</source>
-        <translation type="obsolete">Neodporúča sa meniť vlajku otázky. Zvážte duplikovanie otázky
-a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</translation>
-    </message>
-    <message>
-        <source>Run Test Writer</source>
-        <translation type="obsolete">Spustiť Testového klienta</translation>
-    </message>
-    <message>
-        <source>Run Test Writer on this computer</source>
-        <translation type="obsolete">Spustiť na tomto počítači Testového klienta</translation>
-    </message>
-    <message>
         <location filename="../class_viewer.cpp" line="326"/>
         <location filename="../class_viewer.cpp" line="352"/>
         <location filename="../database.cpp" line="75"/>
@@ -3692,18 +3372,6 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <location filename="../ui_main_window_v2.cpp" line="2509"/>
         <source>iTestServer</source>
         <translation>iTestServer</translation>
-    </message>
-    <message>
-        <source>%1[*] - iTestServer</source>
-        <translation type="obsolete">%1[*] - iTestServer</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="obsolete">portugalčina</translation>
-    </message>
-    <message>
-        <source>The server is running on port *****. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</source>
-        <translation type="obsolete">Server beží na porte *****. Teraz môžete spustiť iTestClient na každom klientskom PC. Nevypínajte iTestServer počas testovania!</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4877"/>
@@ -3732,70 +3400,6 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <location filename="../server.cpp" line="494"/>
         <source>iTestServer - Stop server</source>
         <translation>iTestServer - Zastaviť server</translation>
-    </message>
-    <message>
-        <source>22</source>
-        <translation type="obsolete">22</translation>
-    </message>
-    <message>
-        <source>24</source>
-        <translation type="obsolete">24</translation>
-    </message>
-    <message>
-        <source>26</source>
-        <translation type="obsolete">26</translation>
-    </message>
-    <message>
-        <source>28</source>
-        <translation type="obsolete">28</translation>
-    </message>
-    <message>
-        <source>30</source>
-        <translation type="obsolete">30</translation>
-    </message>
-    <message>
-        <source>36</source>
-        <translation type="obsolete">36</translation>
-    </message>
-    <message>
-        <source>48</source>
-        <translation type="obsolete">48</translation>
-    </message>
-    <message>
-        <source>96</source>
-        <translation type="obsolete">96</translation>
-    </message>
-    <message>
-        <source>%1 - Print questions - iTest</source>
-        <translation type="obsolete">%1 - Tlačiť otázky - iTest</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Do not print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;Netlačiť:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;Tlačiť:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&amp;Add all</source>
-        <translation type="obsolete">&amp;Pridať všetky</translation>
-    </message>
-    <message>
-        <source>Print statistics</source>
-        <translation type="obsolete">Tlačiť štatistiku</translation>
-    </message>
-    <message>
-        <source>Print formatted questions</source>
-        <translation type="obsolete">Tlačiť formátované otázky</translation>
-    </message>
-    <message>
-        <source>Print a test (do not highlight the correct answers)</source>
-        <translation type="obsolete">Tlačiť test (nevyznačiť správne odpovede)</translation>
-    </message>
-    <message>
-        <source>Print graphics</source>
-        <translation type="obsolete">Tlačiť grafiku</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
@@ -3941,14 +3545,6 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <translation>Vyberte otázky na vytlačenie</translation>
     </message>
     <message>
-        <source>A</source>
-        <translation type="obsolete">A</translation>
-    </message>
-    <message>
-        <source>D</source>
-        <translation type="obsolete">D</translation>
-    </message>
-    <message>
         <location filename="../print_engine.cpp" line="1005"/>
         <source>Name:</source>
         <translation>Meno:</translation>
@@ -4057,14 +3653,6 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <location filename="../ui_main_window_v2.cpp" line="3422"/>
         <source>Specify a custom server port</source>
         <translation>Nastavte vlastný port servera</translation>
-    </message>
-    <message>
-        <source>Show details</source>
-        <translation type="obsolete">Zobraziť detaily</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="obsolete">španielčina</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4606"/>
@@ -4631,10 +4219,6 @@ a skrytie originálu. Pokračujte len ak ste si istí tým, čo robíte.</transl
         <translation>Kľúč</translation>
     </message>
     <message>
-        <source>Correct answers:</source>
-        <translation type="obsolete">Správne odpovede:</translation>
-    </message>
-    <message>
         <location filename="../print_engine.cpp" line="980"/>
         <source>key</source>
         <translation>kluc</translation>
@@ -4831,14 +4415,6 @@ Chyba %2.</translation>
         <translation>Počet otázok:</translation>
     </message>
     <message>
-        <source>%1 hidden questions listed</source>
-        <translation type="obsolete">%1 skrytých otázok v zozname</translation>
-    </message>
-    <message>
-        <source>%1 hidden questions not listed</source>
-        <translation type="obsolete">%1 skrytých otázok vynechaných</translation>
-    </message>
-    <message>
         <location filename="../print_engine.cpp" line="146"/>
         <source>Print a key to the test (a separate printout with correct answers)</source>
         <translation>Vytlačiť kľúč k testu (samostatný výtlačok so správnymi odpoveďami)</translation>
@@ -4874,10 +4450,6 @@ Chyba %2.</translation>
 </context>
 <context>
     <name>QObject</name>
-    <message>
-        <source>Unknown</source>
-        <translation type="obsolete">Neznámy</translation>
-    </message>
     <message>
         <location filename="../../shared/question.cpp" line="175"/>
         <location filename="../../shared/question.cpp" line="186"/>

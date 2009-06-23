@@ -9,27 +9,11 @@
         <translation>Versão</translation>
     </message>
     <message>
-        <source>iTest is a Qt application consisting of a Database Editor and a Test Writer designed for easy computerised examination.</source>
-        <translation type="obsolete">O iTest é uma programa Qt constituido por um Editor de Bases de Dados e por um Escritor de Testes, desenvolvido para facilitar os ezames computorizados.</translation>
-    </message>
-    <message>
-        <source>This programme is distributed under the terms of the GPL v2.</source>
-        <translation type="obsolete">Este programa é distribuido sob os termos da licença GPL v2.</translation>
-    </message>
-    <message>
-        <source>The programme is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</source>
-        <translation type="obsolete">Tradução: &lt;span style=&quot;font-style:italic;&quot;&gt;Eugéne Suter&lt;/span&gt;&lt;br&gt;&lt;br&gt;Este programa é fornecido TAL COMO ESTÁ sem QUALQUER TIPO DE GARANTIA, INCLUINDO GARANTIAS DE DESIGN, VENDABILIDADE E APTIDÃO PARA UM CERTO PROPÓSITO.</translation>
-    </message>
-    <message>
         <location filename="../ui_about_widget_v2.cpp" line="114"/>
         <location filename="../../shared/about_widget.cpp" line="47"/>
         <location filename="../../shared/about_widget_v2.ui" line="153"/>
         <source>About Qt</source>
         <translation>Sobre o Qt</translation>
-    </message>
-    <message>
-        <source>This programme uses Qt Open Source Edition version %1.</source>
-        <translation type="obsolete">Este programa usa a edição Livre do Qt (Open Source Edition), versão %1.</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="51"/>
@@ -142,10 +126,6 @@
 <context>
     <name>Client</name>
     <message>
-        <source>iTest - Database Editor</source>
-        <translation type="obsolete">iTest - Editor de Bases de Dados</translation>
-    </message>
-    <message>
         <location filename="../client.cpp" line="179"/>
         <source>The host was not found. Please check the host name and port settings.</source>
         <translation>O anfitrião não foi encontrado. Port favor verifique a nome do anfitrião e as definições das portas.</translation>
@@ -209,6 +189,11 @@
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
         <translation>Letão</translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="44"/>
+        <source>Ukrainian</source>
+        <translation>Ucraniano</translation>
     </message>
 </context>
 <context>
@@ -430,10 +415,6 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Save changes before proceeding?</source>
-        <translation type="obsolete">Deseja gravar as alterações antes de proceder?</translation>
-    </message>
-    <message>
         <location filename="../database.cpp" line="32"/>
         <location filename="../database.cpp" line="133"/>
         <location filename="../database.cpp" line="149"/>
@@ -520,14 +501,6 @@
 %2.</source>
         <translation>Não foi possível criar o ficheiro %1:
 %2.</translation>
-    </message>
-    <message>
-        <source>iTest - Database Editor</source>
-        <translation type="obsolete">iTest - Editor de Bases de Dados</translation>
-    </message>
-    <message>
-        <source>%1[*] - iTest - Database Editor</source>
-        <translation type="obsolete">%1[*] - iTest - Editor de Bases de Dados</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="109"/>
@@ -658,22 +631,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation>Base de dados encerrada</translation>
     </message>
     <message>
-        <source>English</source>
-        <translation type="obsolete">Inglês</translation>
-    </message>
-    <message>
-        <source>Slovak</source>
-        <translation type="obsolete">Eslovaco</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation type="obsolete">Russo</translation>
-    </message>
-    <message>
-        <source>Turkish</source>
-        <translation type="obsolete">Turco</translation>
-    </message>
-    <message>
         <location filename="../flags.cpp" line="25"/>
         <source>Type a name for flag %1</source>
         <translation>Digite um nome para a categoria %1</translation>
@@ -684,10 +641,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation>Marque ou desmarque esta caixa para activar ou desactivar a categoria %1</translation>
     </message>
     <message>
-        <source>Flag %1:</source>
-        <translation type="obsolete">Categoria %1:</translation>
-    </message>
-    <message>
         <location filename="../flags.cpp" line="115"/>
         <source>Flags saved</source>
         <translation>Categorias gravadas</translation>
@@ -696,14 +649,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <location filename="../flags.cpp" line="121"/>
         <source>Flags discarded</source>
         <translation>Categorias descartadas</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: </source>
-        <translation type="obsolete">Número de questões pertencentes a esta categoria: </translation>
-    </message>
-    <message>
-        <source>Invalid database file %1</source>
-        <translation type="obsolete">O ficheiro de base de dados %1 é inválido</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="291"/>
@@ -1162,14 +1107,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation>Nome da questão seleccionada</translation>
     </message>
     <message>
-        <source>Answers:</source>
-        <translation type="obsolete">Respostas:</translation>
-    </message>
-    <message>
-        <source>Correct:</source>
-        <translation type="obsolete">Correcto:</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="667"/>
         <location filename="../print_engine.cpp" line="1009"/>
         <location filename="../ui_main_window_v2.cpp" line="3251"/>
@@ -1196,165 +1133,9 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation>Dificuldade da questão seleccionada</translation>
     </message>
     <message>
-        <source>a)</source>
-        <translation type="obsolete">a)</translation>
-    </message>
-    <message>
-        <source>b)</source>
-        <translation type="obsolete">b)</translation>
-    </message>
-    <message>
-        <source>A checked checkbox indicates a correct answer</source>
-        <translation type="obsolete">Uma caixa marcada indica uma reposta correcta</translation>
-    </message>
-    <message>
-        <source>Answer a) of the selected question</source>
-        <translation type="obsolete">Resposta a) da pergunta seleccionada</translation>
-    </message>
-    <message>
-        <source>c)</source>
-        <translation type="obsolete">c)</translation>
-    </message>
-    <message>
-        <source>Answer b) of the selected question</source>
-        <translation type="obsolete">Resposta b) da pergunta seleccionada</translation>
-    </message>
-    <message>
-        <source>Answer c) of the selected question</source>
-        <translation type="obsolete">Resposta c) da pergunta seleccionada</translation>
-    </message>
-    <message>
-        <source>d)</source>
-        <translation type="obsolete">d)</translation>
-    </message>
-    <message>
-        <source>Answer d) of the selected question</source>
-        <translation type="obsolete">Resposta d) da pergunta seleccionada</translation>
-    </message>
-    <message>
         <location filename="../main_window.cpp" line="297"/>
         <source>Question:</source>
         <translation>Questão:</translation>
-    </message>
-    <message>
-        <source>Undo</source>
-        <translation type="obsolete">Desfazer</translation>
-    </message>
-    <message>
-        <source>◄</source>
-        <translation type="obsolete">◄</translation>
-    </message>
-    <message>
-        <source>Redo</source>
-        <translation type="obsolete">Re-fazer</translation>
-    </message>
-    <message>
-        <source>►</source>
-        <translation type="obsolete">►</translation>
-    </message>
-    <message>
-        <source>Choose a font</source>
-        <translation type="obsolete">Seleccione um tipo de letra</translation>
-    </message>
-    <message>
-        <source>Select text size</source>
-        <translation type="obsolete">Seleccione o tamanho do texto</translation>
-    </message>
-    <message>
-        <source>8</source>
-        <translation type="obsolete">8</translation>
-    </message>
-    <message>
-        <source>9</source>
-        <translation type="obsolete">9</translation>
-    </message>
-    <message>
-        <source>10</source>
-        <translation type="obsolete">10</translation>
-    </message>
-    <message>
-        <source>11</source>
-        <translation type="obsolete">11</translation>
-    </message>
-    <message>
-        <source>12</source>
-        <translation type="obsolete">12</translation>
-    </message>
-    <message>
-        <source>14</source>
-        <translation type="obsolete">14</translation>
-    </message>
-    <message>
-        <source>16</source>
-        <translation type="obsolete">16</translation>
-    </message>
-    <message>
-        <source>18</source>
-        <translation type="obsolete">18</translation>
-    </message>
-    <message>
-        <source>20</source>
-        <translation type="obsolete">20</translation>
-    </message>
-    <message>
-        <source>Bold</source>
-        <translation type="obsolete">Negrito</translation>
-    </message>
-    <message>
-        <source>B</source>
-        <translation type="obsolete">B</translation>
-    </message>
-    <message>
-        <source>Italic</source>
-        <translation type="obsolete">Itálico</translation>
-    </message>
-    <message>
-        <source>I</source>
-        <translation type="obsolete">I</translation>
-    </message>
-    <message>
-        <source>Underlined</source>
-        <translation type="obsolete">Sublinhado</translation>
-    </message>
-    <message>
-        <source>U</source>
-        <translation type="obsolete">S</translation>
-    </message>
-    <message>
-        <source>Text colour</source>
-        <translation type="obsolete">Cor do texto</translation>
-    </message>
-    <message>
-        <source>Align left</source>
-        <translation type="obsolete">Alinhar à esquerda</translation>
-    </message>
-    <message>
-        <source>L</source>
-        <translation type="obsolete">E</translation>
-    </message>
-    <message>
-        <source>Align centre</source>
-        <translation type="obsolete">Alinhar ao centro</translation>
-    </message>
-    <message>
-        <source>C</source>
-        <translation type="obsolete">C</translation>
-    </message>
-    <message>
-        <source>Align right</source>
-        <translation type="obsolete">Alinhar à direita</translation>
-    </message>
-    <message>
-        <source>R</source>
-        <translation type="obsolete">D</translation>
-    </message>
-    <message>
-        <source>Justify</source>
-        <translation type="obsolete">Justificar</translation>
-    </message>
-    <message>
-        <source>J</source>
-        <translation type="obsolete">J</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="298"/>
@@ -1411,10 +1192,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation>Usar a última data gravada</translation>
     </message>
     <message>
-        <source>Show or hide the database information below</source>
-        <translation type="obsolete">Mostrar ou esconder as informações da base de dados abaixo</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="4128"/>
         <location filename="../main_window_v2.ui" line="4131"/>
         <location filename="../ui_main_window_v2.cpp" line="2657"/>
@@ -1436,18 +1213,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <location filename="../main_window.cpp" line="300"/>
         <source>Use this field for your comments, notes, reminders...</source>
         <translation>Use este campo para comentários, notas ou lembretes...</translation>
-    </message>
-    <message>
-        <source>Flag name:</source>
-        <translation type="obsolete">Nome da categoria:</translation>
-    </message>
-    <message>
-        <source>Enabled:</source>
-        <translation type="obsolete">Activo:</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: 0</source>
-        <translation type="obsolete">Número de questões pertencentes a esta categoria: 0</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1043"/>
@@ -1529,10 +1294,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <location filename="../ui_main_window_v2.cpp" line="3396"/>
         <source>Number of questions:</source>
         <translation>Número de questões:</translation>
-    </message>
-    <message>
-        <source>Specify the minimum number of correct answers to pass the exam</source>
-        <translation type="obsolete">Especifique o número mínimo de questões certas para que o exame seja aprovado</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1940"/>
@@ -1617,10 +1378,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation>Informações sobre o servidor</translation>
     </message>
     <message>
-        <source>The server is running on port *****. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation type="obsolete">O servidor está activo na porta *****. Pode agora executar o Escritor de Testes em cada computador cliente. Não desligue o Editor de Bases de Dados enquanto os exames estiverem a decorrer!</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="2132"/>
         <location filename="../ui_main_window_v2.cpp" line="3450"/>
         <source>List of clients</source>
@@ -1643,10 +1400,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <location filename="../ui_main_window_v2.cpp" line="3480"/>
         <source>The selected client&apos;s exam results</source>
         <translation>Resultados do exame do cliente seleccionado</translation>
-    </message>
-    <message>
-        <source>Answered correctly</source>
-        <translation type="obsolete">Respondido correctamente</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2280"/>
@@ -2566,10 +2319,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <translation>Ver as sessões de teste gravadas</translation>
     </message>
     <message>
-        <source>Delete &amp;log</source>
-        <translation type="obsolete">Apagar &amp;Registo</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="4609"/>
         <location filename="../main_window_v2.ui" line="4612"/>
         <location filename="../main_window_v2.ui" line="4615"/>
@@ -3335,14 +3084,6 @@ embore seja recomendado que o possam fazer numa hora.</translation>
         <translation>Não foi possível iniciar o servidor: As definições do servidor são inválidas.</translation>
     </message>
     <message>
-        <source>The server is running on port &lt;b&gt;%1&lt;/b&gt;. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation type="obsolete">O servidor está activo na porta &lt;b&gt;%1&lt;/b&gt;. Pode agora executar o Escritor de Testes em cada computador cliente. Não desligue o Editor de Bases de Dados enquanto os exames estiverem a decorrer!</translation>
-    </message>
-    <message>
-        <source>iTest - Stop server</source>
-        <translation type="obsolete">iTest - Parar o servidor</translation>
-    </message>
-    <message>
         <location filename="../server.cpp" line="494"/>
         <source>Are you sure you want to stop the server?</source>
         <translation>Tem a certeza que deseja parar o servidor?</translation>
@@ -3391,18 +3132,6 @@ embore seja recomendado que o possam fazer numa hora.</translation>
         <location filename="../server.cpp" line="640"/>
         <source>%1 &gt; Client #%2 disconnected</source>
         <translation>%1 &gt; Cliente #%2 desligado</translation>
-    </message>
-    <message>
-        <source>yes</source>
-        <translation type="obsolete">sim</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation type="obsolete">não</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="obsolete">Nenhum</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="788"/>
@@ -3526,10 +3255,6 @@ embore seja recomendado que o possam fazer numa hora.</translation>
         <translation>Nota de aprovação</translation>
     </message>
     <message>
-        <source>Details</source>
-        <translation type="obsolete">Detalhes</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="2764"/>
         <location filename="../ui_main_window_v2.cpp" line="3554"/>
         <source>Pass mark details</source>
@@ -3623,14 +3348,6 @@ Please choose a different group.</source>
 Por favor escolha outro grupo.</translation>
     </message>
     <message>
-        <source>Run Test Writer</source>
-        <translation type="obsolete">Executar o Escritor de Testes</translation>
-    </message>
-    <message>
-        <source>Run Test Writer on this computer</source>
-        <translation type="obsolete">Executar o escritor de tested neste computador</translation>
-    </message>
-    <message>
         <location filename="../class_viewer.cpp" line="326"/>
         <location filename="../class_viewer.cpp" line="352"/>
         <location filename="../database.cpp" line="75"/>
@@ -3653,18 +3370,6 @@ Por favor escolha outro grupo.</translation>
         <location filename="../ui_main_window_v2.cpp" line="2509"/>
         <source>iTestServer</source>
         <translation>iTestServer</translation>
-    </message>
-    <message>
-        <source>%1[*] - iTestServer</source>
-        <translation type="obsolete">%1[*] - iTestServer</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="obsolete">Português</translation>
-    </message>
-    <message>
-        <source>The server is running on port *****. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</source>
-        <translation type="obsolete">O servidor está activo na porta *****. Pode agora executar o iTestClient em cada computador cliente. Não desligue o iTestServer enquanto os exames estiverem a decorrer!</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4877"/>
@@ -3693,70 +3398,6 @@ Por favor escolha outro grupo.</translation>
         <location filename="../server.cpp" line="494"/>
         <source>iTestServer - Stop server</source>
         <translation>iTestServer - Parar o servidor</translation>
-    </message>
-    <message>
-        <source>22</source>
-        <translation type="obsolete">22</translation>
-    </message>
-    <message>
-        <source>24</source>
-        <translation type="obsolete">24</translation>
-    </message>
-    <message>
-        <source>26</source>
-        <translation type="obsolete">26</translation>
-    </message>
-    <message>
-        <source>28</source>
-        <translation type="obsolete">28</translation>
-    </message>
-    <message>
-        <source>30</source>
-        <translation type="obsolete">30</translation>
-    </message>
-    <message>
-        <source>36</source>
-        <translation type="obsolete">36</translation>
-    </message>
-    <message>
-        <source>48</source>
-        <translation type="obsolete">48</translation>
-    </message>
-    <message>
-        <source>96</source>
-        <translation type="obsolete">96</translation>
-    </message>
-    <message>
-        <source>%1 - Print questions - iTest</source>
-        <translation type="obsolete">%1 - Imprimir questões - iTest</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Do not print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;Não imprimir:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;Imprimir:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&amp;Add all</source>
-        <translation type="obsolete">&amp;Adicionar todos</translation>
-    </message>
-    <message>
-        <source>Print statistics</source>
-        <translation type="obsolete">Imprimir estatísticas</translation>
-    </message>
-    <message>
-        <source>Print formatted questions</source>
-        <translation type="obsolete">Imprimir questões formatadas</translation>
-    </message>
-    <message>
-        <source>Print a test (do not highlight the correct answers)</source>
-        <translation type="obsolete">Imprimir um teste (não realçar as questões correctas)</translation>
-    </message>
-    <message>
-        <source>Print graphics</source>
-        <translation type="obsolete">Imprimir gráficos</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
@@ -3902,14 +3543,6 @@ Por favor escolha outro grupo.</translation>
         <translation>Seleccionar as questões a imprimir</translation>
     </message>
     <message>
-        <source>A</source>
-        <translation type="obsolete">A</translation>
-    </message>
-    <message>
-        <source>D</source>
-        <translation type="obsolete">D</translation>
-    </message>
-    <message>
         <location filename="../print_engine.cpp" line="1005"/>
         <source>Name:</source>
         <translation>Nome:</translation>
@@ -4018,14 +3651,6 @@ Por favor escolha outro grupo.</translation>
         <location filename="../ui_main_window_v2.cpp" line="3422"/>
         <source>Specify a custom server port</source>
         <translation>Especificar uma porta personalizada para o servidor</translation>
-    </message>
-    <message>
-        <source>Show details</source>
-        <translation type="obsolete">Mostrar detalhes</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="obsolete">Espanhol</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4606"/>
@@ -4788,14 +4413,6 @@ Erro %2.</translation>
         <translation>Número de questões:</translation>
     </message>
     <message>
-        <source>%1 hidden questions listed</source>
-        <translation type="obsolete">%1 questões escondidas listadas</translation>
-    </message>
-    <message>
-        <source>%1 hidden questions not listed</source>
-        <translation type="obsolete">%1 questões escondidas não listadas</translation>
-    </message>
-    <message>
         <location filename="../print_engine.cpp" line="146"/>
         <source>Print a key to the test (a separate printout with correct answers)</source>
         <translation>Imprimir a chave no teste (impressão à parte com as respostas correctas)</translation>
@@ -4829,10 +4446,6 @@ Erro %2.</translation>
 </context>
 <context>
     <name>QObject</name>
-    <message>
-        <source>Unknown</source>
-        <translation type="obsolete">Desconhecido</translation>
-    </message>
     <message>
         <location filename="../../shared/question.cpp" line="175"/>
         <location filename="../../shared/question.cpp" line="186"/>

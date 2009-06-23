@@ -14,23 +14,11 @@
         <translation>iTest es una aplicación desarrollada con Qt que consiste en un Servidor y Cliente para faciliar los exámenes de manera computarizada.</translation>
     </message>
     <message>
-        <source>This programme is distributed under the terms of the GPL v2.</source>
-        <translation type="obsolete">Esta aplicación se distribuye bajo los términos de la licencia GPL v2.</translation>
-    </message>
-    <message>
-        <source>The programme is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</source>
-        <translation type="obsolete">Traducciones: &lt;span style=&quot;font-style:italic;&quot;&gt;Gustavo A. Díaz&lt;/span&gt;&lt;br&gt;&lt;br&gt;Este aplicación es proporcionado como tal con NINGUNA GARANTÍA, INCLUTENDO LA GARANTÍA DEL DISEÑO, COMERCIABILIDAD Y APTITUDE para un propósito particular.</translation>
-    </message>
-    <message>
         <location filename="../ui_about_widget_v2.cpp" line="114"/>
         <location filename="../../shared/about_widget.cpp" line="47"/>
         <location filename="../../shared/about_widget_v2.ui" line="153"/>
         <source>About Qt</source>
         <translation>Acerca de Qt</translation>
-    </message>
-    <message>
-        <source>This programme uses Qt Open Source Edition version %1.</source>
-        <translation type="obsolete">Esta aplicación utiliza la versión Open Source de Qt %1.</translation>
     </message>
     <message>
         <location filename="../../shared/about_widget.cpp" line="51"/>
@@ -201,6 +189,11 @@
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
         <translation>Letón</translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="44"/>
+        <source>Ukrainian</source>
+        <translation>Ucraniano</translation>
     </message>
 </context>
 <context>
@@ -422,10 +415,6 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Save changes before proceeding?</source>
-        <translation type="obsolete">¿Desea guardar los cambios antes de continuar?</translation>
-    </message>
-    <message>
         <location filename="../database.cpp" line="32"/>
         <location filename="../database.cpp" line="133"/>
         <location filename="../database.cpp" line="149"/>
@@ -536,10 +525,6 @@
         <location filename="../ui_main_window_v2.cpp" line="2509"/>
         <source>iTestServer</source>
         <translation>iTestServer</translation>
-    </message>
-    <message>
-        <source>%1[*] - iTestServer</source>
-        <translation type="obsolete">%1[*] - iTestServer</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="109"/>
@@ -680,26 +665,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <translation>http://itest.sourceforge.net/documentation/%1/en/</translation>
     </message>
     <message>
-        <source>English</source>
-        <translation type="obsolete">Inglés</translation>
-    </message>
-    <message>
-        <source>Slovak</source>
-        <translation type="obsolete">Eslovaco</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation type="obsolete">Ruso</translation>
-    </message>
-    <message>
-        <source>Turkish</source>
-        <translation type="obsolete">Turco</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="obsolete">Portugués</translation>
-    </message>
-    <message>
         <location filename="../flags.cpp" line="25"/>
         <source>Type a name for flag %1</source>
         <translation>Ingrese un nombre para la categoría %1</translation>
@@ -710,10 +675,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <translation>Active o desactive el casillero para activar o desactivar la categoría %1</translation>
     </message>
     <message>
-        <source>Flag %1:</source>
-        <translation type="obsolete">Categoría %1:</translation>
-    </message>
-    <message>
         <location filename="../flags.cpp" line="115"/>
         <source>Flags saved</source>
         <translation>Categorías guardadas</translation>
@@ -722,14 +683,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <location filename="../flags.cpp" line="121"/>
         <source>Flags discarded</source>
         <translation>Categorías descartadas</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: </source>
-        <translation type="obsolete">Número de preguntas en esta categoría: </translation>
-    </message>
-    <message>
-        <source>Invalid database file %1</source>
-        <translation type="obsolete">Archivo de base de datos inválido %1</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="291"/>
@@ -1188,14 +1141,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <translation>Nombre de la pregunta seleccionada</translation>
     </message>
     <message>
-        <source>Answers:</source>
-        <translation type="obsolete">Respuestas:</translation>
-    </message>
-    <message>
-        <source>Correct:</source>
-        <translation type="obsolete">Correcta:</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="667"/>
         <location filename="../print_engine.cpp" line="1009"/>
         <location filename="../ui_main_window_v2.cpp" line="3251"/>
@@ -1247,189 +1192,9 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <translation>Dificultad de la pregunta seleccionada</translation>
     </message>
     <message>
-        <source>a)</source>
-        <translation type="obsolete">a)</translation>
-    </message>
-    <message>
-        <source>b)</source>
-        <translation type="obsolete">b)</translation>
-    </message>
-    <message>
-        <source>A checked checkbox indicates a correct answer</source>
-        <translation type="obsolete">Una marca en el casillero indica una respuesta correcta</translation>
-    </message>
-    <message>
-        <source>Answer a) of the selected question</source>
-        <translation type="obsolete">Respuesta a) de la pregunta seleccionada</translation>
-    </message>
-    <message>
-        <source>c)</source>
-        <translation type="obsolete">c)</translation>
-    </message>
-    <message>
-        <source>Answer b) of the selected question</source>
-        <translation type="obsolete">Respuesta b) de la pregunta seleccionada</translation>
-    </message>
-    <message>
-        <source>Answer c) of the selected question</source>
-        <translation type="obsolete">Respuesta c) de la pregunta seleccionada</translation>
-    </message>
-    <message>
-        <source>d)</source>
-        <translation type="obsolete">d)</translation>
-    </message>
-    <message>
-        <source>Answer d) of the selected question</source>
-        <translation type="obsolete">Respuesta d) de la pregunta seleccionada</translation>
-    </message>
-    <message>
         <location filename="../main_window.cpp" line="297"/>
         <source>Question:</source>
         <translation>Pregunta:</translation>
-    </message>
-    <message>
-        <source>Undo</source>
-        <translation type="obsolete">Deshacer</translation>
-    </message>
-    <message>
-        <source>◄</source>
-        <translation type="obsolete">◄</translation>
-    </message>
-    <message>
-        <source>Redo</source>
-        <translation type="obsolete">Rehacer</translation>
-    </message>
-    <message>
-        <source>►</source>
-        <translation type="obsolete">►</translation>
-    </message>
-    <message>
-        <source>Choose a font</source>
-        <translation type="obsolete">Eligir un tipo de fuente</translation>
-    </message>
-    <message>
-        <source>Select text size</source>
-        <translation type="obsolete">Seleccionar tamaño del texto</translation>
-    </message>
-    <message>
-        <source>10</source>
-        <translation type="obsolete">10</translation>
-    </message>
-    <message>
-        <source>11</source>
-        <translation type="obsolete">11</translation>
-    </message>
-    <message>
-        <source>12</source>
-        <translation type="obsolete">12</translation>
-    </message>
-    <message>
-        <source>14</source>
-        <translation type="obsolete">14</translation>
-    </message>
-    <message>
-        <source>16</source>
-        <translation type="obsolete">16</translation>
-    </message>
-    <message>
-        <source>18</source>
-        <translation type="obsolete">18</translation>
-    </message>
-    <message>
-        <source>20</source>
-        <translation type="obsolete">20</translation>
-    </message>
-    <message>
-        <source>22</source>
-        <translation type="obsolete">22</translation>
-    </message>
-    <message>
-        <source>24</source>
-        <translation type="obsolete">24</translation>
-    </message>
-    <message>
-        <source>26</source>
-        <translation type="obsolete">26</translation>
-    </message>
-    <message>
-        <source>28</source>
-        <translation type="obsolete">28</translation>
-    </message>
-    <message>
-        <source>30</source>
-        <translation type="obsolete">30</translation>
-    </message>
-    <message>
-        <source>36</source>
-        <translation type="obsolete">36</translation>
-    </message>
-    <message>
-        <source>48</source>
-        <translation type="obsolete">48</translation>
-    </message>
-    <message>
-        <source>96</source>
-        <translation type="obsolete">96</translation>
-    </message>
-    <message>
-        <source>Bold</source>
-        <translation type="obsolete">Negrita</translation>
-    </message>
-    <message>
-        <source>B</source>
-        <translation type="obsolete">B</translation>
-    </message>
-    <message>
-        <source>Italic</source>
-        <translation type="obsolete">Cursiva</translation>
-    </message>
-    <message>
-        <source>I</source>
-        <translation type="obsolete">I</translation>
-    </message>
-    <message>
-        <source>Underlined</source>
-        <translation type="obsolete">Subrayado</translation>
-    </message>
-    <message>
-        <source>U</source>
-        <translation type="obsolete">U</translation>
-    </message>
-    <message>
-        <source>Text colour</source>
-        <translation type="obsolete">Color del texto</translation>
-    </message>
-    <message>
-        <source>Align left</source>
-        <translation type="obsolete">Alineación izquierda</translation>
-    </message>
-    <message>
-        <source>L</source>
-        <translation type="obsolete">L</translation>
-    </message>
-    <message>
-        <source>Align centre</source>
-        <translation type="obsolete">Alineación centrado</translation>
-    </message>
-    <message>
-        <source>C</source>
-        <translation type="obsolete">C</translation>
-    </message>
-    <message>
-        <source>Align right</source>
-        <translation type="obsolete">Alineación derecha</translation>
-    </message>
-    <message>
-        <source>R</source>
-        <translation type="obsolete">R</translation>
-    </message>
-    <message>
-        <source>Justify</source>
-        <translation type="obsolete">Justificado</translation>
-    </message>
-    <message>
-        <source>J</source>
-        <translation type="obsolete">J</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="298"/>
@@ -1486,10 +1251,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <translation>Usar última fecha guardada</translation>
     </message>
     <message>
-        <source>Show or hide the database information below</source>
-        <translation type="obsolete">Mostrar u ocultad la información de la base de datos de abajo</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="4128"/>
         <location filename="../main_window_v2.ui" line="4131"/>
         <location filename="../ui_main_window_v2.cpp" line="2657"/>
@@ -1511,26 +1272,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <location filename="../main_window.cpp" line="300"/>
         <source>Use this field for your comments, notes, reminders...</source>
         <translation>Use este campo para sus comentarios, notas, recordatorios...</translation>
-    </message>
-    <message>
-        <source>8</source>
-        <translation type="obsolete">8</translation>
-    </message>
-    <message>
-        <source>9</source>
-        <translation type="obsolete">9</translation>
-    </message>
-    <message>
-        <source>Flag name:</source>
-        <translation type="obsolete">Nombre de la categoría:</translation>
-    </message>
-    <message>
-        <source>Enabled:</source>
-        <translation type="obsolete">Activado:</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: 0</source>
-        <translation type="obsolete">Número de las preguntas en esta categoría: 0</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1043"/>
@@ -1634,10 +1375,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <translation>Número de preguntas:</translation>
     </message>
     <message>
-        <source>Specify the minimum number of correct answers to pass the exam</source>
-        <translation type="obsolete">Especificar el mínimo número de respuestas correctas para aprobar el exámen</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="1940"/>
         <location filename="../ui_main_window_v2.cpp" line="3411"/>
         <source>one question</source>
@@ -1738,10 +1475,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <translation>Información del servidor</translation>
     </message>
     <message>
-        <source>The server is running on port *****. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</source>
-        <translation type="obsolete">Este servidor se está ejecutando en el puerto *****. Ahora podría ejecutar iTestClient en cada PC cliente. ¡No salga de iTestServer durante un exámen!</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="2132"/>
         <location filename="../ui_main_window_v2.cpp" line="3450"/>
         <source>List of clients</source>
@@ -1764,10 +1497,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <location filename="../ui_main_window_v2.cpp" line="3480"/>
         <source>The selected client&apos;s exam results</source>
         <translation>Resultados del exámen del cliente seleccionado</translation>
-    </message>
-    <message>
-        <source>Answered correctly</source>
-        <translation type="obsolete">Respondidas correctamente</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2280"/>
@@ -1943,10 +1672,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <location filename="../ui_main_window_v2.cpp" line="3505"/>
         <source>The minimum number of correct answers to pass this exam</source>
         <translation>El número mínimo de respuestas correctas para aprobar el exámen</translation>
-    </message>
-    <message>
-        <source>Details</source>
-        <translation type="obsolete">Detalles</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2479"/>
@@ -2695,10 +2420,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <location filename="../ui_main_window_v2.cpp" line="2892"/>
         <source>View saved test sessions</source>
         <translation>Ver las sesiones guardadas del exámen</translation>
-    </message>
-    <message>
-        <source>Delete &amp;log</source>
-        <translation type="obsolete">E&amp;liminar historial</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4609"/>
@@ -3588,18 +3309,6 @@ aunque es recomendable de otorgarles una hora.</translation>
         <translation>%1 &gt; Cliente #%2 desconectado</translation>
     </message>
     <message>
-        <source>yes</source>
-        <translation type="obsolete">sí</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation type="obsolete">no</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="obsolete">Ningúno</translation>
-    </message>
-    <message>
         <location filename="../server.cpp" line="788"/>
         <source>Performing a host name lookup</source>
         <translation>Relizando la busqueda del nombre de host</translation>
@@ -3701,38 +3410,6 @@ aunque es recomendable de otorgarles una hora.</translation>
         <location filename="../main_window.cpp" line="308"/>
         <source>Discard</source>
         <translation>Descartar</translation>
-    </message>
-    <message>
-        <source>%1 - Print questions - iTest</source>
-        <translation type="obsolete">%1 - Imprimir preguntas - iTest</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Do not print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;No imprimir:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;Imprimir:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&amp;Add all</source>
-        <translation type="obsolete">&amp;Agregar todo</translation>
-    </message>
-    <message>
-        <source>Print statistics</source>
-        <translation type="obsolete">Imprimir estádisticas</translation>
-    </message>
-    <message>
-        <source>Print formatted questions</source>
-        <translation type="obsolete">Imprmir preguntas con formato</translation>
-    </message>
-    <message>
-        <source>Print a test (do not highlight the correct answers)</source>
-        <translation type="obsolete">Imprimir un exámen (no resaltar las respuestas correctas)</translation>
-    </message>
-    <message>
-        <source>Print graphics</source>
-        <translation type="obsolete">Imprimir gráficos</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
@@ -3873,10 +3550,6 @@ aunque es recomendable de otorgarles una hora.</translation>
         <translation>Especificar un puerto del servidor personalizado</translation>
     </message>
     <message>
-        <source>Show details</source>
-        <translation type="obsolete">Mostrar detalles</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="3658"/>
         <location filename="../ui_main_window_v2.cpp" line="3671"/>
         <source>Attachments</source>
@@ -3978,10 +3651,6 @@ aunque es recomendable de otorgarles una hora.</translation>
         <location filename="../questions.cpp" line="633"/>
         <source>Scalable Vector Graphics (*.svg)</source>
         <translation>Gráficos Vectoriales Escalables (*.svg)</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="obsolete">Español</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4606"/>
@@ -4743,14 +4412,6 @@ Error %2.</source>
         <translation>Número de preguntas:</translation>
     </message>
     <message>
-        <source>%1 hidden questions listed</source>
-        <translation type="obsolete">%1 preguntas ocultas listadas</translation>
-    </message>
-    <message>
-        <source>%1 hidden questions not listed</source>
-        <translation type="obsolete">%1 preguntas ocultas no listadas</translation>
-    </message>
-    <message>
         <location filename="../print_engine.cpp" line="146"/>
         <source>Print a key to the test (a separate printout with correct answers)</source>
         <translation>Imprimir un modelo del exámen (una impresión separada con las respuestas correctas)</translation>
@@ -4784,10 +4445,6 @@ Error %2.</source>
 </context>
 <context>
     <name>QObject</name>
-    <message>
-        <source>Unknown</source>
-        <translation type="obsolete">Desconocido</translation>
-    </message>
     <message>
         <location filename="../../shared/question.cpp" line="175"/>
         <location filename="../../shared/question.cpp" line="186"/>

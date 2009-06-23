@@ -32,22 +32,6 @@
         <translation>Versija</translation>
     </message>
     <message>
-        <source>iTest is a Qt application consisting of a Database Editor and a Test Writer designed for easy computerised examination.</source>
-        <translation type="obsolete">iTest ir aplikācija, kas izmanto Qt bibliotēku, sastāvošu no datu bāzu redaktora un testu rakstīšanas programmas, paredzēta datorizētu eksāmenu vadīšanai.</translation>
-    </message>
-    <message>
-        <source>This programme is distributed under the terms of the GPL v2.</source>
-        <translation type="obsolete">Šī programma tiek izplatīta ar GPL v2 licenci.</translation>
-    </message>
-    <message>
-        <source>The programme is provided AS IS with ABSOLUTELY NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</source>
-        <translation type="obsolete">tulkojums: &lt;span style=&quot;font-style:italic;&quot;&gt;Valdis Orols&lt;/span&gt;&lt;br&gt;&lt;br&gt;Šī programma tiek piedāvāta &quot;kā ir&quot;, bez jebkādām garantijām.</translation>
-    </message>
-    <message>
-        <source>This programme uses Qt Open Source Edition version %1.</source>
-        <translation type="obsolete">Šī programma izmanto bibliotēku Qt Open Source Edition, versija %1.</translation>
-    </message>
-    <message>
         <location filename="../../shared/about_widget.cpp" line="51"/>
         <source>Qt is a C++ toolkit for cross-platform application development.</source>
         <translation>Qt ir instruments kross-platformu aplikāciju izstrādei valodā C++.</translation>
@@ -142,10 +126,6 @@
 <context>
     <name>Client</name>
     <message>
-        <source>iTest - Database Editor</source>
-        <translation type="obsolete">iTestServer - Datu bāzu redaktors un Serveris</translation>
-    </message>
-    <message>
         <location filename="../client.cpp" line="179"/>
         <source>The host was not found. Please check the host name and port settings.</source>
         <translation> Attālinātais mezgls nav atrasts. Lūdzu, pārbaudiet mezgla nosaukumu un savienojuma uzstādījumus.</translation>
@@ -209,6 +189,11 @@
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
         <translation>Latviešu</translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="44"/>
+        <source>Ukrainian</source>
+        <translation>Ukraiņu</translation>
     </message>
 </context>
 <context>
@@ -430,10 +415,6 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Save changes before proceeding?</source>
-        <translation type="obsolete">Saglabāt izmaiņas pirms turpināšanas?</translation>
-    </message>
-    <message>
         <location filename="../database.cpp" line="32"/>
         <location filename="../database.cpp" line="133"/>
         <location filename="../database.cpp" line="149"/>
@@ -520,14 +501,6 @@
 %2.</source>
         <translation>Nevar ierakstīt datni %1:
 %2.</translation>
-    </message>
-    <message>
-        <source>iTest - Database Editor</source>
-        <translation type="obsolete">iTestServer - Datu bāzu redaktors</translation>
-    </message>
-    <message>
-        <source>%1[*] - iTest - Database Editor</source>
-        <translation type="obsolete">%1[*] - iTestServer - Datu bāzu redaktors</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="109"/>
@@ -635,14 +608,6 @@ bet Jūs varat palaist garām daudz jaunu iespēju.</translation>
         <translation>Datu bāze aizvērta</translation>
     </message>
     <message>
-        <source>English</source>
-        <translation type="obsolete">Angļu</translation>
-    </message>
-    <message>
-        <source>Slovak</source>
-        <translation type="obsolete">Slovāku</translation>
-    </message>
-    <message>
         <location filename="../flags.cpp" line="115"/>
         <source>Flags saved</source>
         <translation>Kategorijas ir saglabātas</translation>
@@ -651,36 +616,6 @@ bet Jūs varat palaist garām daudz jaunu iespēju.</translation>
         <location filename="../flags.cpp" line="121"/>
         <source>Flags discarded</source>
         <translation>Kategorijas ir atceltas</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: </source>
-        <translation type="obsolete">Jautājumu skaits šajā kategorijā: </translation>
-    </message>
-    <message>
-        <source>Invalid database file %1</source>
-        <translation type="obsolete">Datu bāzes nepareiza datne %1</translation>
-    </message>
-    <message>
-        <source>Invalid format of temporary file %1</source>
-        <translation type="obsolete">Pagaidu datnes nepareizs formāts %1</translation>
-    </message>
-    <message>
-        <source>Cannot %1 temporary file %2:
-%3.
-Please do not use any special characters.
-If this is the case, try again omitting these.</source>
-        <translation type="obsolete">Nav iespējams %1 pagaidu datnei %2:
-%3.
-Lūdzu, neizmantojiet speciālos simbolus.
-Ja tas ir kļūdas iemesls, nodzēsiet un atkārtojiet mēģinājumu.</translation>
-    </message>
-    <message>
-        <source>Invalid format of temporary file %1
-Please do not use any special characters.
-If this is the case, try again omitting these.</source>
-        <translation type="obsolete">Nepareizs pagaidu datnes %1 formāts
-Lūdzu, neizmantojiet speciālos simbolus.
-Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="291"/>
@@ -1139,14 +1074,6 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <translation>Izvēlētā jautājuma nosaukums</translation>
     </message>
     <message>
-        <source>Answers:</source>
-        <translation type="obsolete">Atbildes:</translation>
-    </message>
-    <message>
-        <source>Correct:</source>
-        <translation type="obsolete">Pareizs:</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="667"/>
         <location filename="../print_engine.cpp" line="1009"/>
         <location filename="../ui_main_window_v2.cpp" line="3251"/>
@@ -1173,165 +1100,9 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <translation>Izvēlētā jautājuma grūtību pakāpe</translation>
     </message>
     <message>
-        <source>a)</source>
-        <translation type="obsolete">a)</translation>
-    </message>
-    <message>
-        <source>b)</source>
-        <translation type="obsolete">b)</translation>
-    </message>
-    <message>
-        <source>A checked checkbox indicates a correct answer</source>
-        <translation type="obsolete">Atķeksētais pārslēdzējs norāda pareizo jautājumu</translation>
-    </message>
-    <message>
-        <source>Answer a) of the selected question</source>
-        <translation type="obsolete">Atbildes a) variants izvēlētajam jautājumam</translation>
-    </message>
-    <message>
-        <source>c)</source>
-        <translation type="obsolete">c)</translation>
-    </message>
-    <message>
-        <source>Answer b) of the selected question</source>
-        <translation type="obsolete">Atbildes b) variants izvēlētajam jautājumam </translation>
-    </message>
-    <message>
-        <source>Answer c) of the selected question</source>
-        <translation type="obsolete">Atbildes c) variants izvēlētajam jautājumam</translation>
-    </message>
-    <message>
-        <source>d)</source>
-        <translation type="obsolete">d)</translation>
-    </message>
-    <message>
-        <source>Answer d) of the selected question</source>
-        <translation type="obsolete">Atbildes d) variants izvēlētajam jautājumam</translation>
-    </message>
-    <message>
         <location filename="../main_window.cpp" line="297"/>
         <source>Question:</source>
         <translation>Jautājums:</translation>
-    </message>
-    <message>
-        <source>Undo</source>
-        <translation type="obsolete">Atcelt</translation>
-    </message>
-    <message>
-        <source>◄</source>
-        <translation type="obsolete">◄</translation>
-    </message>
-    <message>
-        <source>Redo</source>
-        <translation type="obsolete">Atkārtot</translation>
-    </message>
-    <message>
-        <source>►</source>
-        <translation type="obsolete">►</translation>
-    </message>
-    <message>
-        <source>Choose a font</source>
-        <translation type="obsolete">Izvēlēties fontu</translation>
-    </message>
-    <message>
-        <source>Select text size</source>
-        <translation type="obsolete">Izvēlēties fonta izmēru</translation>
-    </message>
-    <message>
-        <source>8</source>
-        <translation type="obsolete">8</translation>
-    </message>
-    <message>
-        <source>9</source>
-        <translation type="obsolete">9</translation>
-    </message>
-    <message>
-        <source>10</source>
-        <translation type="obsolete">10</translation>
-    </message>
-    <message>
-        <source>11</source>
-        <translation type="obsolete">11</translation>
-    </message>
-    <message>
-        <source>12</source>
-        <translation type="obsolete">12</translation>
-    </message>
-    <message>
-        <source>14</source>
-        <translation type="obsolete">14</translation>
-    </message>
-    <message>
-        <source>16</source>
-        <translation type="obsolete">16</translation>
-    </message>
-    <message>
-        <source>18</source>
-        <translation type="obsolete">18</translation>
-    </message>
-    <message>
-        <source>20</source>
-        <translation type="obsolete">20</translation>
-    </message>
-    <message>
-        <source>Bold</source>
-        <translation type="obsolete">Pustreknais</translation>
-    </message>
-    <message>
-        <source>B</source>
-        <translation type="obsolete">B</translation>
-    </message>
-    <message>
-        <source>Italic</source>
-        <translation type="obsolete">Kursīvs</translation>
-    </message>
-    <message>
-        <source>I</source>
-        <translation type="obsolete">K</translation>
-    </message>
-    <message>
-        <source>Underlined</source>
-        <translation type="obsolete">Pasvītrots</translation>
-    </message>
-    <message>
-        <source>U</source>
-        <translation type="obsolete">U</translation>
-    </message>
-    <message>
-        <source>Text colour</source>
-        <translation type="obsolete">Teksta krāsa</translation>
-    </message>
-    <message>
-        <source>Align left</source>
-        <translation type="obsolete">Izlīdzināšana pa kreisi</translation>
-    </message>
-    <message>
-        <source>L</source>
-        <translation type="obsolete">L</translation>
-    </message>
-    <message>
-        <source>Align centre</source>
-        <translation type="obsolete">Centrēšana</translation>
-    </message>
-    <message>
-        <source>C</source>
-        <translation type="obsolete">C</translation>
-    </message>
-    <message>
-        <source>Align right</source>
-        <translation type="obsolete">Izlīdzināšana pa labi</translation>
-    </message>
-    <message>
-        <source>R</source>
-        <translation type="obsolete">R</translation>
-    </message>
-    <message>
-        <source>Justify</source>
-        <translation type="obsolete">Izlīdzināšana abās malās</translation>
-    </message>
-    <message>
-        <source>J</source>
-        <translation type="obsolete">J</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="298"/>
@@ -1388,10 +1159,6 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <translation>Izmantot pēdējās saglabāšanas datumu</translation>
     </message>
     <message>
-        <source>Show or hide the database information below</source>
-        <translation type="obsolete">Rādīt vai slēpt informāciju par datu bāzi</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="4128"/>
         <location filename="../main_window_v2.ui" line="4131"/>
         <location filename="../ui_main_window_v2.cpp" line="2657"/>
@@ -1413,18 +1180,6 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <location filename="../main_window.cpp" line="300"/>
         <source>Use this field for your comments, notes, reminders...</source>
         <translation>Izmantot šo lauku komentāriem, piezīmēm, atgādinājumiem...</translation>
-    </message>
-    <message>
-        <source>Flag name:</source>
-        <translation type="obsolete">Kategorijas nosaukums:</translation>
-    </message>
-    <message>
-        <source>Enabled:</source>
-        <translation type="obsolete">Uzstādīts:</translation>
-    </message>
-    <message>
-        <source>Number of questions with this flag: 0</source>
-        <translation type="obsolete">Jautājumu skaits šajā kategorijā: 0</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1043"/>
@@ -1506,10 +1261,6 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <location filename="../ui_main_window_v2.cpp" line="3396"/>
         <source>Number of questions:</source>
         <translation>Jautājumu skaits:</translation>
-    </message>
-    <message>
-        <source>Specify the minimum number of correct answers to pass the exam</source>
-        <translation type="obsolete">Norādīt minimālo pareizo jautājumu skaitu eksāmena nokārtošanai</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1940"/>
@@ -1594,10 +1345,6 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <translation>Informācija par serveri</translation>
     </message>
     <message>
-        <source>The server is running on port *****. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation type="obsolete">Serveris izmanto portu ******. Tagad Jūs varat palaist testu rakstīšanas programmu uz klientu datoriem. Neaizveriet datu bāzes redaktoru testēšanas laikā!</translation>
-    </message>
-    <message>
         <location filename="../main_window_v2.ui" line="2132"/>
         <location filename="../ui_main_window_v2.cpp" line="3450"/>
         <source>List of clients</source>
@@ -1620,10 +1367,6 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <location filename="../ui_main_window_v2.cpp" line="3480"/>
         <source>The selected client&apos;s exam results</source>
         <translation>Izvēlētā klienta testēšanas rezultāti</translation>
-    </message>
-    <message>
-        <source>Answered correctly</source>
-        <translation type="obsolete">Pareizo atbilžu skaits</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2280"/>
@@ -2226,7 +1969,7 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <location filename="../main_window_v2.ui" line="5111"/>
         <location filename="../ui_main_window_v2.cpp" line="3160"/>
         <source>By flag</source>
-        <translation type="unfinished"></translation>
+        <translation>Pēc kategorijas</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5114"/>
@@ -2234,7 +1977,7 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <location filename="../ui_main_window_v2.cpp" line="3162"/>
         <location filename="../ui_main_window_v2.cpp" line="3165"/>
         <source>Sort questions by flag</source>
-        <translation type="unfinished"></translation>
+        <translation>Šķirot jautājumus pēc kategorijas</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5120"/>
@@ -2541,10 +2284,6 @@ Ja tas ir kļūdas iemesls, novāciet tos un atkārtojiet mēģinājumu.</transl
         <location filename="../ui_main_window_v2.cpp" line="2892"/>
         <source>View saved test sessions</source>
         <translation>Pārskatīt testu saglabātās sesijas</translation>
-    </message>
-    <message>
-        <source>Delete &amp;log</source>
-        <translation type="obsolete">&amp;Nodzēst žurnālu</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4609"/>
@@ -2948,10 +2687,6 @@ kopiju skaitu pie katras servera startēšanas.</translation>
         <translation>Kopējais rezultāts:</translation>
     </message>
     <message>
-        <source>out of</source>
-        <translation type="obsolete">no</translation>
-    </message>
-    <message>
         <location filename="../print_engine.cpp" line="615"/>
         <source>%1 &gt; Client #%2 (%3) &gt; failed to print the client&apos;s results (Server QuickPrint call)</source>
         <translation>%1 &gt; Klientam Nr.%2 (%3) &gt; nav iespējams izdrukāt rezultātus (servera pieprasījums ātrai drukai)</translation>
@@ -3263,14 +2998,6 @@ lai gan ieteikts dot vismaz stundu.</translation>
         <translation>Nevar startēt serveri: Nepareiza servera konfigurācija.</translation>
     </message>
     <message>
-        <source>The server is running on port &lt;b&gt;%1&lt;/b&gt;. You may now run the Test Writer on each client PC. Do not quit the Database Editor while testing!</source>
-        <translation type="obsolete">Serveris izmanto portu &lt;b&gt;%1&lt;/b&gt;. Tagad Jūs varat startēt testu rakstīšanas programmu uz klientu datoriem. Neaizveriet datu bāzes redaktoru testēšanas laikā!</translation>
-    </message>
-    <message>
-        <source>iTest - Stop server</source>
-        <translation type="obsolete">iTest - Servera apstādināšana</translation>
-    </message>
-    <message>
         <location filename="../server.cpp" line="494"/>
         <source>Are you sure you want to stop the server?</source>
         <translation>Esat pārliecināts(-a), ka gribat apstādināt serveri?</translation>
@@ -3319,18 +3046,6 @@ lai gan ieteikts dot vismaz stundu.</translation>
         <location filename="../server.cpp" line="640"/>
         <source>%1 &gt; Client #%2 disconnected</source>
         <translation>%1 &gt; Klients Nr.%2 ir atslēgts</translation>
-    </message>
-    <message>
-        <source>yes</source>
-        <translation type="obsolete">jā</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation type="obsolete">nē</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="obsolete">Nē</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="788"/>
@@ -3433,10 +3148,6 @@ lai gan ieteikts dot vismaz stundu.</translation>
         <translation>Esat pārliecināts(-a), ka gribat nodzēst sesijas žurnālu &quot;%1 - %2&quot;?</translation>
     </message>
     <message>
-        <source>Russian</source>
-        <translation type="obsolete">Krievu valoda</translation>
-    </message>
-    <message>
         <location filename="../flags.cpp" line="25"/>
         <source>Type a name for flag %1</source>
         <translation>Ievadiet kategorijas %1nosaukumu</translation>
@@ -3445,10 +3156,6 @@ lai gan ieteikts dot vismaz stundu.</translation>
         <location filename="../flags.cpp" line="36"/>
         <source>Check or uncheck this checkbox to enable or disable flag %1</source>
         <translation>Uzstādiet vai noņemiet šo pārslēdzēju kategorijas  %1 uzstādīšanai vai noņemšanai</translation>
-    </message>
-    <message>
-        <source>Flag %1:</source>
-        <translation type="obsolete">Kategorija %1:</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="133"/>
@@ -3519,14 +3226,6 @@ lai gan ieteikts dot vismaz stundu.</translation>
         <translation>Saglabāt datu bāzes rezerves kopiju ar visām arhivētajām sesijām</translation>
     </message>
     <message>
-        <source>http://itest.sourceforge.net/documentation/1.1/en/</source>
-        <translation type="obsolete">http://itest.sourceforge.net/documentation/1.1/en/</translation>
-    </message>
-    <message>
-        <source>Turkish</source>
-        <translation type="obsolete">Turku valoda</translation>
-    </message>
-    <message>
         <location filename="../database.cpp" line="654"/>
         <source>Error opening database.</source>
         <translation>Kļūda atverot datu bāzi.</translation>
@@ -3555,10 +3254,6 @@ lai gan ieteikts dot vismaz stundu.</translation>
         <location filename="../ui_main_window_v2.cpp" line="3556"/>
         <source>Pass mark</source>
         <translation>Pāriešanas vērtējums</translation>
-    </message>
-    <message>
-        <source>Details</source>
-        <translation type="obsolete">Sīkāk</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2764"/>
@@ -3654,14 +3349,6 @@ Please choose a different group.</source>
 Lūdzu, izvēlieties citu grupu.</translation>
     </message>
     <message>
-        <source>Run Test Writer</source>
-        <translation type="obsolete">Startēt testu rakstīšanas programmu</translation>
-    </message>
-    <message>
-        <source>Run Test Writer on this computer</source>
-        <translation type="obsolete">Startēt testu rakstīšanas programmu šim datoram</translation>
-    </message>
-    <message>
         <location filename="../class_viewer.cpp" line="326"/>
         <location filename="../class_viewer.cpp" line="352"/>
         <location filename="../database.cpp" line="75"/>
@@ -3684,18 +3371,6 @@ Lūdzu, izvēlieties citu grupu.</translation>
         <location filename="../ui_main_window_v2.cpp" line="2509"/>
         <source>iTestServer</source>
         <translation>iTestServer</translation>
-    </message>
-    <message>
-        <source>%1[*] - iTestServer</source>
-        <translation type="obsolete">%1[*] - iTestServer</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="obsolete">Portugāļu valoda</translation>
-    </message>
-    <message>
-        <source>The server is running on port *****. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</source>
-        <translation type="obsolete">Serveris izmanto portu ******. Tagad Jūs varat startēt iTestClient uz klientu datoriem. Neaizveriet iTestServer testēšanas laikā!</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4877"/>
@@ -3724,70 +3399,6 @@ Lūdzu, izvēlieties citu grupu.</translation>
         <location filename="../server.cpp" line="494"/>
         <source>iTestServer - Stop server</source>
         <translation>iTestServer - servera apstādināšana</translation>
-    </message>
-    <message>
-        <source>22</source>
-        <translation type="obsolete">22</translation>
-    </message>
-    <message>
-        <source>24</source>
-        <translation type="obsolete">24</translation>
-    </message>
-    <message>
-        <source>26</source>
-        <translation type="obsolete">26</translation>
-    </message>
-    <message>
-        <source>28</source>
-        <translation type="obsolete">28</translation>
-    </message>
-    <message>
-        <source>30</source>
-        <translation type="obsolete">30</translation>
-    </message>
-    <message>
-        <source>36</source>
-        <translation type="obsolete">36</translation>
-    </message>
-    <message>
-        <source>48</source>
-        <translation type="obsolete">48</translation>
-    </message>
-    <message>
-        <source>96</source>
-        <translation type="obsolete">96</translation>
-    </message>
-    <message>
-        <source>%1 - Print questions - iTest</source>
-        <translation type="obsolete">%1 - Jautājumu drukāšana - iTest</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Do not print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;Nedrukāt:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Print:&lt;/b&gt;</source>
-        <translation type="obsolete">&lt;b&gt;Drukāt:&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&amp;Add all</source>
-        <translation type="obsolete">&amp;Pievienot visu</translation>
-    </message>
-    <message>
-        <source>Print statistics</source>
-        <translation type="obsolete">Statistikas drukāšana</translation>
-    </message>
-    <message>
-        <source>Print formatted questions</source>
-        <translation type="obsolete">Formatēto jautājumu druka</translation>
-    </message>
-    <message>
-        <source>Print a test (do not highlight the correct answers)</source>
-        <translation type="obsolete">Testa druka (neizdalīt pareizās atbildes)</translation>
-    </message>
-    <message>
-        <source>Print graphics</source>
-        <translation type="obsolete">Grafikas druka</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
@@ -4041,14 +3652,6 @@ Lūdzu, izvēlieties citu grupu.</translation>
         <location filename="../ui_main_window_v2.cpp" line="3422"/>
         <source>Specify a custom server port</source>
         <translation>Uzstādiet lietotāja portu</translation>
-    </message>
-    <message>
-        <source>Show details</source>
-        <translation type="obsolete">Parādīt detaļas</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="obsolete">Spāņu valoda</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4606"/>
@@ -4846,10 +4449,6 @@ Kļūda %2.</translation>
 </context>
 <context>
     <name>QObject</name>
-    <message>
-        <source>Unknown</source>
-        <translation type="obsolete">Nav zināms</translation>
-    </message>
     <message>
         <location filename="../../shared/question.cpp" line="175"/>
         <location filename="../../shared/question.cpp" line="186"/>
