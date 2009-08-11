@@ -37,7 +37,9 @@ int main(int argc, char *argv[])
 
 // ---------------------------- version changelog: -----------------------------
 /* version 1.4.2 - a minor update with some new features
-                 - added Ukrainian translation
+                 - added Ukrainian and Arabic translations
+                 - upgraded from Qt 4.5.0 to Qt 4.5.2 (Windows and Mac OS X
+                   binary packages)
 */
 /* version 1.4.1 - a minor update with some new features
                  - added Latvian translation

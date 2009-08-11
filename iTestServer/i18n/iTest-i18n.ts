@@ -34,5 +34,9 @@
         <source>Ukrainian</source>
         <translation>Українська</translation>
     </message>
+    <message>
+        <source>Arabic</source>
+        <translation>العربية</translation>
+    </message>
 </context>
 </TS>

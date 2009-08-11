@@ -76,5 +76,6 @@ TRANSLATIONS += i18n/iTestClient-Slovak.ts \
                 i18n/iTestClient-Spanish.ts \
                 i18n/iTestClient-Italian.ts \
                 i18n/iTestClient-Latvian.ts \
-                i18n/iTestClient-Ukrainian.ts
+                i18n/iTestClient-Ukrainian.ts \
+                i18n/iTestClient-Arabic.ts
 QMAKE_RESOURCE_FLAGS += -compress 9

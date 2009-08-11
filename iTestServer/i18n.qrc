@@ -9,5 +9,6 @@
         <file>i18n/iTestServer-Italian.qm</file>
         <file>i18n/iTestServer-Latvian.qm</file>
         <file>i18n/iTestServer-Ukrainian.qm</file>
+        <file>i18n/iTestServer-Arabic.qm</file>
     </qresource>
 </RCC>
