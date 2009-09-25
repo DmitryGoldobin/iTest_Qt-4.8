@@ -158,42 +158,42 @@
     <message>
         <location filename="../env_vars.cpp" line="37"/>
         <source>Slovak</source>
-        <translation>Slovak</translation>
+        <translation>سلوفاكيا</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="38"/>
         <source>Russian</source>
-        <translation>Russian</translation>
+        <translation>روسيا</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="39"/>
         <source>Turkish</source>
-        <translation>Turkish</translation>
+        <translation>تركيا</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="40"/>
         <source>Portuguese</source>
-        <translation>Portuguese</translation>
+        <translation>البرتغال</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="41"/>
         <source>Spanish</source>
-        <translation>Spanish</translation>
+        <translation>اسبانيا</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="42"/>
         <source>Italian</source>
-        <translation>Italian</translation>
+        <translation>ايطاليا</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
-        <translation>Latvian</translation>
+        <translation>لاتيفيا</translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="44"/>
         <source>Ukrainian</source>
-        <translation>Ukrainian</translation>
+        <translation>اكرانيا</translation>
     </message>
 </context>
 <context>
@@ -546,19 +546,19 @@
         <location filename="../main_window_v2.ui" line="5066"/>
         <location filename="../ui_main_window_v2.cpp" line="3139"/>
         <source>Add session</source>
-        <translation>اضافة جلسة</translation>
+        <translation>اضافة اختبار</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="289"/>
         <location filename="../main_window_v2.ui" line="5081"/>
         <location filename="../ui_main_window_v2.cpp" line="3146"/>
         <source>Delete session</source>
-        <translation>حذف جلسة</translation>
+        <translation>حذف اختبار</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="289"/>
         <source>Are you sure you want to delete session &quot;%1&quot; from this class? The session will not be deleted from the database.</source>
-        <translation>تأكيد حذف الجلسة الخاصة بفصل &quot;%1&quot;؟ هذه الجلسة لن تحذف من قاعدة البيانات.</translation>
+        <translation>تأكيد حذف الاختبار الخاص بفصل &quot;%1&quot;؟ هذه الاختبار لن يحذف من قاعدة البيانات.</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="326"/>
@@ -588,14 +588,14 @@
         <location filename="../class_viewer.cpp" line="326"/>
         <location filename="../class_viewer.cpp" line="352"/>
         <source>Session not found. This session might have been archived on a different computer.</source>
-        <translation>الجلسة غير موجودة. ربما تم حفظها على حاسوب آخر.</translation>
+        <translation>الاختبار غير موجود. ربما تم حفظه على حاسوب آخر.</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="365"/>
         <location filename="../main_window_v2.ui" line="3450"/>
         <location filename="../ui_main_window_v2.cpp" line="3654"/>
         <source>Add selected session</source>
-        <translation>اضافة الجلسة المحددة</translation>
+        <translation>اضافة الاختبار المحدد</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="392"/>
@@ -622,12 +622,12 @@
     <message>
         <location filename="../class_viewer.cpp" line="414"/>
         <source>Remove session</source>
-        <translation>حذف جلسة</translation>
+        <translation>حذف الاختبار</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="414"/>
         <source>Are you sure you want to remove session &quot;%1&quot; from the table of results of the selected student? The session will not be deleted from the database.</source>
-        <translation>تأكيد حذف الجلسة &quot;%1&quot; من نتائج الطلاب المحددين؟ لن يتم حذف الجلسة من قاعدة البيانات.</translation>
+        <translation>تأكيد حذف الاختبار &quot;%1&quot; من نتائج الطلاب المحددين؟ لن يتم حذف الاختبار من قاعدة البيانات.</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="414"/>
@@ -697,12 +697,12 @@
         <location filename="../database.cpp" line="141"/>
         <location filename="../database.cpp" line="157"/>
         <source>iTest databases (*.itdb)</source>
-        <translation type="unfinished"></translation>
+        <translation>قاعدة بيانات آيتست (*.itdb)</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="68"/>
         <source>untitled.itdb</source>
-        <translation type="unfinished"></translation>
+        <translation>بدون عنوان.itdb</translation>
     </message>
     <message>
         <location filename="../database.cpp" line="74"/>
@@ -757,7 +757,7 @@ If you do so, any archived sessions associated to this database
 on other computers will not load, unless you change it back.
 This computer&apos;s archive will be updated.</source>
         <translation>هل ترغب بتغيير اسم قاعدة البيانات؟
-اذا قمت بذلك, فإنك لن تستطيع تحميل الجلسات المتصلة بقاعدة البيانات
+اذا قمت بذلك, فإنك لن تستطيع تحميل الاختبارات المتصلة بقاعدة البيانات
 الموجودة على الاجهزة الأخرى, مالم يتم تغييرها أيضا.
 سيتم تحديث الارشيف على هذا الحاسوب.</translation>
     </message>
@@ -994,12 +994,12 @@ Error %2.</source>
     <message>
         <location filename="../main_window.cpp" line="598"/>
         <source>%1 - Overall statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - الاحصاءات الاجمالية</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="600"/>
         <source>%1 - Overall statistics - iTest</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - الاحصاءات الاجمالية</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="619"/>
@@ -1014,7 +1014,7 @@ Error %2.</source>
     <message>
         <location filename="../main_window.cpp" line="635"/>
         <source>&lt;b&gt;%1 questions with statistics found&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;%1 سؤال مع الاحصاءات&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="639"/>
@@ -1049,7 +1049,7 @@ Error %2.</source>
         <location filename="../main_window.cpp" line="649"/>
         <location filename="../main_window.cpp" line="704"/>
         <source>Adjust difficulty</source>
-        <translation>صعوبة في التعديل</translation>
+        <translation>تعديل الصعوبة</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="663"/>
@@ -1747,7 +1747,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="3358"/>
         <location filename="../ui_main_window_v2.cpp" line="3370"/>
         <source>Missing answer:</source>
-        <translation>الاجابة المفقودة:</translation>
+        <translation>الاجابة المتروكة:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1344"/>
@@ -1757,7 +1757,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="3360"/>
         <location filename="../ui_main_window_v2.cpp" line="3372"/>
         <source>Specify the amount of points taken for each missing answer</source>
-        <translation>تحدد مقدار معين من الدرجات للاجابة المفقودة</translation>
+        <translation>تحدد مقدار معين من الدرجات للاجابة المتروكة</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1805"/>
@@ -1840,7 +1840,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="1910"/>
         <location filename="../ui_main_window_v2.cpp" line="3405"/>
         <source>Time for:</source>
-        <translation>الوقت إلى:</translation>
+        <translation>الزمن:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1920"/>
@@ -1860,19 +1860,19 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="3410"/>
         <location filename="../ui_main_window_v2.cpp" line="3415"/>
         <source>HH:mm</source>
-        <translation>HH:mm</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1940"/>
         <location filename="../ui_main_window_v2.cpp" line="3411"/>
         <source>one question</source>
-        <translation>سؤال واحد</translation>
+        <translation>السؤال الواحد</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1950"/>
         <location filename="../ui_main_window_v2.cpp" line="3413"/>
         <source>Time for one question (multiplied by the number of questions)</source>
-        <translation>زمن احد الاسئلة (مضروبا في عدد الأسئلة)</translation>
+        <translation>زمن السؤال الواحد (مضروبا في عدد الأسئلة)</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1960"/>
@@ -1902,7 +1902,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="2828"/>
         <location filename="../ui_main_window_v2.cpp" line="3425"/>
         <source>Proceed to testing mode using this computer as a server</source>
-        <translation type="unfinished"></translation>
+        <translation>البدء في اجراء الاختبار مستخدماً هذا الحاسوب كخادم</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1999"/>
@@ -2132,7 +2132,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="3486"/>
         <location filename="../ui_main_window_v2.cpp" line="3659"/>
         <source>List of sessions</source>
-        <translation>قائمة الجلسات</translation>
+        <translation>قائمة الاختبارات</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2374"/>
@@ -2142,31 +2142,31 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="3496"/>
         <location filename="../ui_main_window_v2.cpp" line="3665"/>
         <source>Double click a session to view</source>
-        <translation>نقرتين على الجلسة لعرضها</translation>
+        <translation>نقرتين على الاختبار لعرضه</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2381"/>
         <location filename="../ui_main_window_v2.cpp" line="3494"/>
         <source>&lt;b&gt;Archived sessions:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;ارشيف الجلسات:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;ارشيف الاختبارات:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2415"/>
         <location filename="../ui_main_window_v2.cpp" line="3498"/>
         <source>Selected session</source>
-        <translation>اختيار الجلسة</translation>
+        <translation>اختيار الاختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2421"/>
         <location filename="../ui_main_window_v2.cpp" line="3499"/>
         <source>&lt;b&gt;Session name:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;اسم الجلسة:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;اسم الاختبار:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2437"/>
         <location filename="../ui_main_window_v2.cpp" line="3501"/>
         <source>Name of the selected session</source>
-        <translation>اسم الجلسة المحددة</translation>
+        <translation>اسم الاختبار المحدد</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2447"/>
@@ -2210,13 +2210,13 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2537"/>
         <location filename="../ui_main_window_v2.cpp" line="3512"/>
         <source>Date and time of the selected session</source>
-        <translation>وقت وتاريخ الجلسة المحددة</translation>
+        <translation>وقت وتاريخ الاختبار المحدد</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2563"/>
         <location filename="../ui_main_window_v2.cpp" line="3516"/>
         <source>Average result of the selected session</source>
-        <translation>متوسط نتيجة الجلسة المحددة</translation>
+        <translation>متوسط نتيجة الاختبار المحددة</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2610"/>
@@ -2296,7 +2296,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="3575"/>
         <location filename="../ui_main_window_v2.cpp" line="3581"/>
         <source>Missing answer</source>
-        <translation>الاجابة المفقودة</translation>
+        <translation>الاجابة المتروكة</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2997"/>
@@ -2416,7 +2416,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3427"/>
         <location filename="../ui_main_window_v2.cpp" line="3643"/>
         <source>Session</source>
-        <translation>الجلسة</translation>
+        <translation>الاختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3437"/>
@@ -2428,13 +2428,13 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3447"/>
         <location filename="../ui_main_window_v2.cpp" line="3652"/>
         <source>Add the selected session from the list of sessions on the left to the list of results above</source>
-        <translation>اضافة الجلسة المحددة من قائمة الجلسات على اليسار إلى قائمة النتائج في الاعلى</translation>
+        <translation>اضافة الاختبار المحدد من قائمة الاختبارات على اليسار إلى قائمة النتائج في الاعلى</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3483"/>
         <location filename="../ui_main_window_v2.cpp" line="3656"/>
         <source>Remove the selected session from the list of results</source>
-        <translation>حذف الجلسة المحددة من قائمة النتائج</translation>
+        <translation>حذف الاختبار المحدد من قائمة النتائج</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3614"/>
@@ -2446,7 +2446,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3623"/>
         <location filename="../ui_main_window_v2.cpp" line="3668"/>
         <source>Sessio&amp;n</source>
-        <translation>ال&amp;جلسة</translation>
+        <translation>ال&amp;اختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3639"/>
@@ -2534,7 +2534,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3857"/>
         <location filename="../ui_main_window_v2.cpp" line="2531"/>
         <source>Ctrl+O</source>
-        <translation>Ctrl+O</translation>
+        <translation>Ctrl+ت</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3869"/>
@@ -2550,7 +2550,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3878"/>
         <location filename="../ui_main_window_v2.cpp" line="2542"/>
         <source>Ctrl+S</source>
-        <translation>Ctrl+S</translation>
+        <translation>Ctrl+ب</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3887"/>
@@ -2570,7 +2570,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3896"/>
         <location filename="../ui_main_window_v2.cpp" line="2550"/>
         <source>Ctrl+Shift+S</source>
-        <translation>Ctrl+Shift+S</translation>
+        <translation>Ctrl+Shift+غ</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3905"/>
@@ -2604,7 +2604,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3938"/>
         <location filename="../ui_main_window_v2.cpp" line="2572"/>
         <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
+        <translation>Ctrl+Shift+ن</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3953"/>
@@ -2818,7 +2818,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4259"/>
         <location filename="../ui_main_window_v2.cpp" line="2722"/>
         <source>Ctrl+Alt+A</source>
-        <translation>Ctrl+Alt+A</translation>
+        <translation>Ctrl+Alt+ض</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4268"/>
@@ -2892,7 +2892,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4364"/>
         <location filename="../ui_main_window_v2.cpp" line="2777"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Shift+A</translation>
+        <translation>Ctrl+Shift+غ</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4373"/>
@@ -2904,7 +2904,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4385"/>
         <location filename="../ui_main_window_v2.cpp" line="2788"/>
         <source>Ctrl+Shift+D</source>
-        <translation>Ctrl+Shift+D</translation>
+        <translation>Ctrl+Shift+خ</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4400"/>
@@ -2985,13 +2985,13 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4495"/>
         <location filename="../ui_main_window_v2.cpp" line="2840"/>
         <source>Save sessio&amp;n</source>
-        <translation>حف&amp;ظ الجلسة</translation>
+        <translation>حف&amp;ظ الاختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4498"/>
         <location filename="../ui_main_window_v2.cpp" line="2841"/>
         <source>Save session</source>
-        <translation>حفظ الجلسة</translation>
+        <translation>حفظ الاختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4501"/>
@@ -3001,7 +3001,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="2846"/>
         <location filename="../ui_main_window_v2.cpp" line="2849"/>
         <source>Save the current session for later viewing</source>
-        <translation>حفظ الجلسة الحالية لمشاهدتها لاحقا</translation>
+        <translation>حفظ الاختبار الحالي لمشاهدته لاحقا</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4516"/>
@@ -3021,7 +3021,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4525"/>
         <location filename="../ui_main_window_v2.cpp" line="2858"/>
         <source>Ctrl+P</source>
-        <translation>Ctrl+P</translation>
+        <translation>Ctrl+ط</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4534"/>
@@ -3041,7 +3041,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4543"/>
         <location filename="../ui_main_window_v2.cpp" line="2866"/>
         <source>Ctrl+Shift+P</source>
-        <translation>Ctrl+Shift+P</translation>
+        <translation>Ctrl+Shift+خ</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4552"/>
@@ -3080,7 +3080,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4588"/>
         <location filename="../ui_main_window_v2.cpp" line="2884"/>
         <source>Save&amp;d sessions</source>
-        <translation>ال&amp;جلسات المحفوظة</translation>
+        <translation>ال&amp;اختبارات المحفوظة</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4591"/>
@@ -3090,7 +3090,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="2889"/>
         <location filename="../ui_main_window_v2.cpp" line="2892"/>
         <source>View saved test sessions</source>
-        <translation>عرض جلسة الاختبار المحفوظة</translation>
+        <translation>عرض الاختبار المحفوظ</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4606"/>
@@ -3112,13 +3112,13 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4624"/>
         <location filename="../ui_main_window_v2.cpp" line="2904"/>
         <source>&amp;Archive session</source>
-        <translation>ار&amp;شفة الجلسة</translation>
+        <translation>ار&amp;شفة الاختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4627"/>
         <location filename="../ui_main_window_v2.cpp" line="2905"/>
         <source>Archive session</source>
-        <translation>ارشفة الجلسة</translation>
+        <translation>ارشفة الاختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4630"/>
@@ -3128,7 +3128,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="2910"/>
         <location filename="../ui_main_window_v2.cpp" line="2913"/>
         <source>Archive the selected session</source>
-        <translation>ارشفة الجلسة المحددة</translation>
+        <translation>ارشفة الاختبار المحدد</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4645"/>
@@ -3182,7 +3182,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4696"/>
         <location filename="../ui_main_window_v2.cpp" line="2942"/>
         <source>Print session &amp;summary</source>
-        <translation>طباعة مل&amp;خص الجلسة</translation>
+        <translation>طباعة مل&amp;خص الاختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4699"/>
@@ -3191,7 +3191,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="2943"/>
         <location filename="../ui_main_window_v2.cpp" line="2945"/>
         <source>Print session summary</source>
-        <translation>طباعة ملخص الجلسة</translation>
+        <translation>طباعة ملخص الاختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4705"/>
@@ -3199,7 +3199,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="2948"/>
         <location filename="../ui_main_window_v2.cpp" line="2951"/>
         <source>Print a summary and statistics for the selected session</source>
-        <translation>طباعة ملخص واحصاءات الجلسة المحددة</translation>
+        <translation>طباعة ملخص واحصاءات الاختبار المحددة</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4717"/>
@@ -3231,7 +3231,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4753"/>
         <location filename="../ui_main_window_v2.cpp" line="2973"/>
         <source>&amp;Restore session</source>
-        <translation>استعادة الجل&amp;سة</translation>
+        <translation>استعادة الا&amp;ختبار</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4756"/>
@@ -3241,7 +3241,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="2978"/>
         <location filename="../ui_main_window_v2.cpp" line="2981"/>
         <source>Restore the selected session from the archive</source>
-        <translation>استعادة الجلسة المحددة من الارشيف</translation>
+        <translation>استعادة الاختبار المحدد من الارشيف</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4771"/>
@@ -3257,7 +3257,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="2988"/>
         <location filename="../ui_main_window_v2.cpp" line="2991"/>
         <source>Copy the selected session to the archive</source>
-        <translation>نسخ الجلسة المحددة للارشيف</translation>
+        <translation>نسخ الاختبار المحدد للارشيف</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4789"/>
@@ -3273,7 +3273,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="2998"/>
         <location filename="../ui_main_window_v2.cpp" line="3001"/>
         <source>Copy the selected session from the archive</source>
-        <translation>نسخ الجلسة المحددة من الارشيف</translation>
+        <translation>نسخ الاختبار المحدد من الارشيف</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4810"/>
@@ -3293,7 +3293,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="3018"/>
         <location filename="../ui_main_window_v2.cpp" line="3021"/>
         <source>Save a backup copy of the database with all the archived sessions</source>
-        <translation>حفظ نسخة احتياطية من قاعدة البيانات مع كل الجلسات المؤرشفة</translation>
+        <translation>حفظ نسخة احتياطية من قاعدة البيانات مع كل الاختبارات المؤرشفة</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4842"/>
@@ -3325,7 +3325,7 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4868"/>
         <location filename="../ui_main_window_v2.cpp" line="3040"/>
         <source>Ctrl+Alt+H</source>
-        <translation>Ctrl+Alt+H</translation>
+        <translation>Ctrl+Alt+ف</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4877"/>
@@ -3414,7 +3414,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="3141"/>
         <location filename="../ui_main_window_v2.cpp" line="3144"/>
         <source>Add a session to the selected class</source>
-        <translation>اضافة جلسة للفصل المحدد</translation>
+        <translation>اضافة اختبار للفصل المحدد</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5084"/>
@@ -3422,7 +3422,7 @@ Error %2.</source>
         <location filename="../ui_main_window_v2.cpp" line="3148"/>
         <location filename="../ui_main_window_v2.cpp" line="3151"/>
         <source>Delete the selected session from the selected class (the session will not be deleted from the database)</source>
-        <translation>حذف الجلسة المحددة من الفصل المحدد (لن يتم حذفها من قاعدة البيانات)</translation>
+        <translation>حذف الاختبار المحدد من الفصل المحدد (لن يتم حذفها من قاعدة البيانات)</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5096"/>
@@ -3592,7 +3592,7 @@ number of copies each time you start the server.</source>
     <message>
         <location filename="../print_engine.cpp" line="448"/>
         <source>Manual</source>
-        <translation type="unfinished"></translation>
+        <translation>يدوي</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="449"/>
@@ -3642,7 +3642,7 @@ number of copies each time you start the server.</source>
     <message>
         <location filename="../print_engine.cpp" line="460"/>
         <source>Print range:</source>
-        <translation type="unfinished"></translation>
+        <translation>مدى الطباعة:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="462"/>
@@ -3657,7 +3657,7 @@ number of copies each time you start the server.</source>
     <message>
         <location filename="../print_engine.cpp" line="464"/>
         <source>Page range</source>
-        <translation type="unfinished"></translation>
+        <translation>مدى الطباعة</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="468"/>
@@ -3709,7 +3709,7 @@ number of copies each time you start the server.</source>
         <location filename="../server.cpp" line="660"/>
         <location filename="../session_viewer.cpp" line="248"/>
         <source>PASSED</source>
-        <translation type="unfinished"></translation>
+        <translation>ناجح</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="603"/>
@@ -3717,7 +3717,7 @@ number of copies each time you start the server.</source>
         <location filename="../server.cpp" line="660"/>
         <location filename="../session_viewer.cpp" line="248"/>
         <source>FAILED</source>
-        <translation>فشل</translation>
+        <translation>راسب</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="615"/>
@@ -4085,7 +4085,8 @@ All occurrences will be updated.</source>
         <location filename="../server.cpp" line="314"/>
         <source>Students will need at least one minute for the exam,
 although it is recommended to give them an hour.</source>
-        <translation type="unfinished"></translation>
+        <translation>يحتاج الطلاب إلى دقيقة واحدة على الاقل لاداء الاختبار
+مع اننا نوصي بأن يعطوا ساعة كاملة.</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="317"/>
@@ -4095,7 +4096,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="327"/>
         <source>You have not configured the printer yet. Would you like to configure it now?</source>
-        <translation type="unfinished"></translation>
+        <translation>لم تقم باعداد الطابعة. هل ترغب باعدادها الآن؟</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="327"/>
@@ -4110,7 +4111,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="336"/>
         <source>&amp;Review configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;استعراض الاعدادات</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="336"/>
@@ -4120,12 +4121,12 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="343"/>
         <source>Unable to start the server: Invalid printer configuration.</source>
-        <translation type="unfinished"></translation>
+        <translation>غير قادر على تشغيل الخادم: اعدادات الطابعة غير صحيحة.</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="402"/>
         <source>Unable to start the server: Invalid server settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>غير قادر على تشغيل الخادم: اعدادات الخادم غير صحيحة.</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="494"/>
@@ -4190,12 +4191,12 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="790"/>
         <source>Connecting</source>
-        <translation type="unfinished"></translation>
+        <translation>اتصال</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="792"/>
         <source>Connected</source>
-        <translation type="unfinished"></translation>
+        <translation>متصل</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="794"/>
@@ -4205,37 +4206,37 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="796"/>
         <source>Closing</source>
-        <translation type="unfinished"></translation>
+        <translation>اغلاق</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="798"/>
         <source>Listening</source>
-        <translation type="unfinished"></translation>
+        <translation>انتظار</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="806"/>
         <source>iTest off-line client logs (*.itcl);;All files (*.*)</source>
-        <translation type="unfinished"></translation>
+        <translation>سجلات اختبار خارجي (*.itcl);; كل الملفات (*.*)</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="809"/>
         <source>Failed to add off-line client. Either this file contains client data of a different test session or it contains invalid data.</source>
-        <translation type="unfinished"></translation>
+        <translation>فشل اضافة الاختبار الخارجي. اما لاحتوائه على عدة اختبارات أو أنه يحتوي على بيانات غير صحيحية.</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="835"/>
         <source>%1 &gt; Client #%2 (%3) added</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 &gt; العميل #%2 (%3) اضيف</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="857"/>
         <source>No iTest client logs found in the folder you selected.</source>
-        <translation type="unfinished"></translation>
+        <translation>لم يتم العثور على سجلات اختبار العميل في المجلد المحدد.</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="860"/>
         <source>%1 &gt; Failed to add off-line client</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 &gt; فشل اضافة اختبار خارجي</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="871"/>
@@ -4246,7 +4247,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="871"/>
         <source>iTest off-line test sessions (*.itos)</source>
-        <translation type="unfinished"></translation>
+        <translation>اختبار خارجي (*.itos)</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="891"/>
@@ -4256,7 +4257,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../server.cpp" line="916"/>
         <source>iTest Server logs (*.html)</source>
-        <translation type="unfinished"></translation>
+        <translation>سجل خادم آيتست (*.html)</translation>
     </message>
     <message>
         <location filename="../server.cpp" line="928"/>
@@ -4386,7 +4387,7 @@ although it is recommended to give them an hour.</source>
     <message>
         <location filename="../print_engine.cpp" line="162"/>
         <source>Number of different printouts:</source>
-        <translation type="unfinished"></translation>
+        <translation>عدد النسخ المختلفة:</translation>
     </message>
     <message>
         <location filename="../print_engine.cpp" line="176"/>
@@ -4511,7 +4512,7 @@ although it is recommended to give them an hour.</source>
         <location filename="../session_wizard.ui" line="43"/>
         <location filename="../ui_session_wizard.cpp" line="112"/>
         <source>&lt;b&gt;Session:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;الجلسة:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;الاختبار:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../session_wizard.ui" line="63"/>
@@ -4529,7 +4530,7 @@ although it is recommended to give them an hour.</source>
         <location filename="../session_wizard.ui" line="123"/>
         <location filename="../ui_session_wizard.cpp" line="116"/>
         <source>Session</source>
-        <translation>جلسة</translation>
+        <translation>اختبار</translation>
     </message>
     <message>
         <location filename="../session_wizard.ui" line="128"/>
