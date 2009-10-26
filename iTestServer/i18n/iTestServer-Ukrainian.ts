@@ -4,6 +4,9 @@
 <context>
     <name>AboutWidget</name>
     <message>
+        <location filename="../ui_about_widget_v2.cpp" line="110"/>
+        <location filename="../ui_about_widget_v2.cpp" line="112"/>
+        <location filename="../ui_about_widget_v2.cpp" line="113"/>
         <location filename="../../shared/about_widget_v2.ui" line="13"/>
         <location filename="../../shared/about_widget_v2.ui" line="82"/>
         <location filename="../../shared/about_widget_v2.ui" line="128"/>
@@ -11,12 +14,14 @@
         <translation>Про iTest</translation>
     </message>
     <message>
+        <location filename="../ui_about_widget_v2.cpp" line="114"/>
         <location filename="../../shared/about_widget.cpp" line="47"/>
         <location filename="../../shared/about_widget_v2.ui" line="153"/>
         <source>About Qt</source>
         <translation>Про Qt</translation>
     </message>
     <message>
+        <location filename="../ui_about_widget_v2.cpp" line="115"/>
         <location filename="../../shared/about_widget_v2.ui" line="211"/>
         <source>Close</source>
         <translation>Закрити</translation>
@@ -153,42 +158,52 @@
     <message>
         <location filename="../env_vars.cpp" line="37"/>
         <source>Slovak</source>
-        <translation>Словацька</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="38"/>
         <source>Russian</source>
-        <translation>Російська</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="39"/>
         <source>Turkish</source>
-        <translation>Турецька</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="40"/>
         <source>Portuguese</source>
-        <translation>Португальська</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="41"/>
         <source>Spanish</source>
-        <translation>Іспанська</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="42"/>
         <source>Italian</source>
-        <translation>Італійська</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
-        <translation>Латвійська</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="44"/>
         <source>Ukrainian</source>
-        <translation>Українська</translation>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="45"/>
+        <source>Arabic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="46"/>
+        <source>Czech</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -204,171 +219,205 @@
     <name>MTTextEdit</name>
     <message>
         <location filename="../mttextedit.ui" line="50"/>
+        <location filename="../ui_mttextedit.cpp" line="168"/>
         <source>Undo</source>
         <translation>Скасувати</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="72"/>
+        <location filename="../ui_mttextedit.cpp" line="171"/>
         <source>Redo</source>
         <translation>Повторити</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="98"/>
+        <location filename="../ui_mttextedit.cpp" line="174"/>
         <source>Choose a font</source>
         <translation>Вибрати шрифт</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="120"/>
+        <location filename="../ui_mttextedit.cpp" line="198"/>
         <source>Select text size</source>
         <translation>Вибрати розмір шрифту</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="127"/>
+        <location filename="../ui_mttextedit.cpp" line="178"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="132"/>
+        <location filename="../ui_mttextedit.cpp" line="179"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="137"/>
+        <location filename="../ui_mttextedit.cpp" line="180"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="142"/>
+        <location filename="../ui_mttextedit.cpp" line="181"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="147"/>
+        <location filename="../ui_mttextedit.cpp" line="182"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="152"/>
+        <location filename="../ui_mttextedit.cpp" line="183"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="157"/>
+        <location filename="../ui_mttextedit.cpp" line="184"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="162"/>
+        <location filename="../ui_mttextedit.cpp" line="185"/>
         <source>22</source>
         <translation>22</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="167"/>
+        <location filename="../ui_mttextedit.cpp" line="186"/>
         <source>24</source>
         <translation>24</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="172"/>
+        <location filename="../ui_mttextedit.cpp" line="187"/>
         <source>26</source>
         <translation>26</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="177"/>
+        <location filename="../ui_mttextedit.cpp" line="188"/>
         <source>28</source>
         <translation>28</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="182"/>
+        <location filename="../ui_mttextedit.cpp" line="189"/>
         <source>30</source>
         <translation>30</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="187"/>
+        <location filename="../ui_mttextedit.cpp" line="190"/>
         <source>36</source>
         <translation>36</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="192"/>
+        <location filename="../ui_mttextedit.cpp" line="191"/>
         <source>48</source>
         <translation>48</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="197"/>
+        <location filename="../ui_mttextedit.cpp" line="192"/>
         <source>96</source>
         <translation>96</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="224"/>
+        <location filename="../ui_mttextedit.cpp" line="201"/>
         <source>Bold</source>
         <translation>Напівжирний</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="227"/>
+        <location filename="../ui_mttextedit.cpp" line="203"/>
         <source>B</source>
         <translation>Ж</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="249"/>
+        <location filename="../ui_mttextedit.cpp" line="205"/>
         <source>Italic</source>
         <translation>Курсив</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="252"/>
+        <location filename="../ui_mttextedit.cpp" line="207"/>
         <source>I</source>
         <translation>К</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="274"/>
+        <location filename="../ui_mttextedit.cpp" line="209"/>
         <source>Underlined</source>
         <translation>Підкреслений</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="277"/>
+        <location filename="../ui_mttextedit.cpp" line="211"/>
         <source>U</source>
         <translation>Ч</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="299"/>
+        <location filename="../ui_mttextedit.cpp" line="213"/>
         <source>Text colour</source>
         <translation>Колір тексту</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="331"/>
+        <location filename="../ui_mttextedit.cpp" line="217"/>
         <source>Align left</source>
         <translation>Вирівнювання по лівому краю</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="334"/>
+        <location filename="../ui_mttextedit.cpp" line="219"/>
         <source>L</source>
         <translation>Л</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="359"/>
+        <location filename="../ui_mttextedit.cpp" line="221"/>
         <source>Align centre</source>
         <translation>Вирівнювання по центру</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="362"/>
+        <location filename="../ui_mttextedit.cpp" line="223"/>
         <source>C</source>
         <translation>Ц</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="387"/>
+        <location filename="../ui_mttextedit.cpp" line="225"/>
         <source>Align right</source>
         <translation>Вирівнювання по правому краю</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="390"/>
+        <location filename="../ui_mttextedit.cpp" line="227"/>
         <source>R</source>
         <translation>П</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="415"/>
+        <location filename="../ui_mttextedit.cpp" line="229"/>
         <source>Justify</source>
         <translation>Вирівнювання по ширині</translation>
     </message>
     <message>
         <location filename="../mttextedit.ui" line="418"/>
+        <location filename="../ui_mttextedit.cpp" line="231"/>
         <source>J</source>
         <translation>Ш</translation>
     </message>
@@ -381,6 +430,8 @@
         <location filename="../class_viewer.cpp" line="37"/>
         <location filename="../main_window_v2.ui" line="815"/>
         <location filename="../main_window_v2.ui" line="4247"/>
+        <location filename="../ui_main_window_v2.cpp" line="2712"/>
+        <location filename="../ui_main_window_v2.cpp" line="3278"/>
         <source>Add</source>
         <translation>Добавити</translation>
     </message>
@@ -395,6 +446,7 @@
         <location filename="../class_viewer.cpp" line="163"/>
         <location filename="../class_viewer.cpp" line="167"/>
         <location filename="../main_window_v2.ui" line="5006"/>
+        <location filename="../ui_main_window_v2.cpp" line="3111"/>
         <source>Add class</source>
         <translation>Добавити клас</translation>
     </message>
@@ -416,6 +468,7 @@
     <message>
         <location filename="../class_viewer.cpp" line="182"/>
         <location filename="../main_window_v2.ui" line="5021"/>
+        <location filename="../ui_main_window_v2.cpp" line="3118"/>
         <source>Delete class</source>
         <translation>Видалити клас</translation>
     </message>
@@ -431,6 +484,7 @@
         <location filename="../main_window_v2.ui" line="4289"/>
         <location filename="../questions.cpp" line="50"/>
         <location filename="../session_viewer.cpp" line="268"/>
+        <location filename="../ui_main_window_v2.cpp" line="2734"/>
         <source>&amp;Delete</source>
         <translation>&amp;Видалити</translation>
     </message>
@@ -456,6 +510,7 @@
         <location filename="../class_viewer.cpp" line="202"/>
         <location filename="../class_viewer.cpp" line="206"/>
         <location filename="../main_window_v2.ui" line="5036"/>
+        <location filename="../ui_main_window_v2.cpp" line="3125"/>
         <source>Add student</source>
         <translation>Додати студента</translation>
     </message>
@@ -487,6 +542,7 @@
     <message>
         <location filename="../class_viewer.cpp" line="223"/>
         <location filename="../main_window_v2.ui" line="5051"/>
+        <location filename="../ui_main_window_v2.cpp" line="3132"/>
         <source>Delete student</source>
         <translation>Видалити студента</translation>
     </message>
@@ -498,12 +554,14 @@
     <message>
         <location filename="../class_viewer.cpp" line="243"/>
         <location filename="../main_window_v2.ui" line="5066"/>
+        <location filename="../ui_main_window_v2.cpp" line="3139"/>
         <source>Add session</source>
         <translation>Додати сесію</translation>
     </message>
     <message>
         <location filename="../class_viewer.cpp" line="289"/>
         <location filename="../main_window_v2.ui" line="5081"/>
+        <location filename="../ui_main_window_v2.cpp" line="3146"/>
         <source>Delete session</source>
         <translation>Видалити сесію</translation>
     </message>
@@ -532,6 +590,7 @@
         <location filename="../server.cpp" line="336"/>
         <location filename="../server.cpp" line="343"/>
         <location filename="../server.cpp" line="402"/>
+        <location filename="../ui_main_window_v2.cpp" line="2509"/>
         <source>iTestServer</source>
         <translation>iTestServer</translation>
     </message>
@@ -544,6 +603,7 @@
     <message>
         <location filename="../class_viewer.cpp" line="365"/>
         <location filename="../main_window_v2.ui" line="3450"/>
+        <location filename="../ui_main_window_v2.cpp" line="3654"/>
         <source>Add selected session</source>
         <translation>Додати обрану сесію</translation>
     </message>
@@ -558,6 +618,14 @@
         <location filename="../main_window_v2.ui" line="3005"/>
         <location filename="../main_window_v2.ui" line="3261"/>
         <location filename="../main_window_v2.ui" line="3531"/>
+        <location filename="../ui_main_window_v2.cpp" line="3224"/>
+        <location filename="../ui_main_window_v2.cpp" line="3317"/>
+        <location filename="../ui_main_window_v2.cpp" line="3322"/>
+        <location filename="../ui_main_window_v2.cpp" line="3487"/>
+        <location filename="../ui_main_window_v2.cpp" line="3545"/>
+        <location filename="../ui_main_window_v2.cpp" line="3590"/>
+        <location filename="../ui_main_window_v2.cpp" line="3621"/>
+        <location filename="../ui_main_window_v2.cpp" line="3660"/>
         <source>Search:</source>
         <translation>Пошук:</translation>
     </message>
@@ -593,6 +661,7 @@
         <location filename="../database.cpp" line="149"/>
         <location filename="../main_window_v2.ui" line="3866"/>
         <location filename="../server.cpp" line="301"/>
+        <location filename="../ui_main_window_v2.cpp" line="2532"/>
         <source>&amp;Save</source>
         <translation>&amp;Зберегти</translation>
     </message>
@@ -610,6 +679,7 @@
     <message>
         <location filename="../database.cpp" line="62"/>
         <location filename="../main_window_v2.ui" line="260"/>
+        <location filename="../ui_main_window_v2.cpp" line="3187"/>
         <source>Database name:</source>
         <translation>Назва бази даних:</translation>
     </message>
@@ -671,6 +741,7 @@
         <location filename="../database.cpp" line="133"/>
         <location filename="../database.cpp" line="141"/>
         <location filename="../main_window_v2.ui" line="4807"/>
+        <location filename="../ui_main_window_v2.cpp" line="3003"/>
         <source>Save a copy</source>
         <translation>Зберегти копію</translation>
     </message>
@@ -685,6 +756,7 @@
         <location filename="../database.cpp" line="149"/>
         <location filename="../database.cpp" line="157"/>
         <location filename="../main_window_v2.ui" line="4825"/>
+        <location filename="../ui_main_window_v2.cpp" line="3013"/>
         <source>Save a backup</source>
         <translation>Зберегти резервну копію</translation>
     </message>
@@ -834,6 +906,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4355"/>
         <location filename="../main_window_v2.ui" line="4358"/>
         <location filename="../main_window_v2.ui" line="4361"/>
+        <location filename="../ui_main_window_v2.cpp" line="2769"/>
+        <location filename="../ui_main_window_v2.cpp" line="2772"/>
+        <location filename="../ui_main_window_v2.cpp" line="2775"/>
         <source>Apply any changes you have made to the question</source>
         <translation>Застосувати усі внесені в питання зміни</translation>
     </message>
@@ -848,6 +923,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4376"/>
         <location filename="../main_window_v2.ui" line="4379"/>
         <location filename="../main_window_v2.ui" line="4382"/>
+        <location filename="../ui_main_window_v2.cpp" line="2780"/>
+        <location filename="../ui_main_window_v2.cpp" line="2783"/>
+        <location filename="../ui_main_window_v2.cpp" line="2786"/>
         <source>Discard any changes you have made to the question</source>
         <translation>Скасувати всі занесені до питання зміни</translation>
     </message>
@@ -872,6 +950,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3929"/>
         <location filename="../main_window_v2.ui" line="3932"/>
         <location filename="../main_window_v2.ui" line="3935"/>
+        <location filename="../ui_main_window_v2.cpp" line="2564"/>
+        <location filename="../ui_main_window_v2.cpp" line="2567"/>
+        <location filename="../ui_main_window_v2.cpp" line="2570"/>
         <source>Quit iTest</source>
         <translation>Вийти із iTest</translation>
     </message>
@@ -881,6 +962,7 @@ Error %2.</source>
         <location filename="../main_window.cpp" line="582"/>
         <location filename="../main_window.cpp" line="824"/>
         <location filename="../main_window_v2.ui" line="108"/>
+        <location filename="../ui_main_window_v2.cpp" line="3169"/>
         <source>iTest</source>
         <translation>iTest</translation>
     </message>
@@ -933,6 +1015,8 @@ Error %2.</source>
         <location filename="../main_window.cpp" line="639"/>
         <location filename="../main_window_v2.ui" line="2270"/>
         <location filename="../main_window_v2.ui" line="2716"/>
+        <location filename="../ui_main_window_v2.cpp" line="3472"/>
+        <location filename="../ui_main_window_v2.cpp" line="3534"/>
         <source>Question name</source>
         <translation>Назва питання</translation>
     </message>
@@ -973,7 +1057,6 @@ Error %2.</source>
         <location filename="../print_engine.cpp" line="406"/>
         <location filename="../print_engine.cpp" line="458"/>
         <location filename="../print_engine.cpp" line="465"/>
-        <location filename="../print_engine.cpp" line="1023"/>
         <location filename="../server.cpp" line="800"/>
         <source>Unknown</source>
         <translation>Невідомо</translation>
@@ -983,8 +1066,8 @@ Error %2.</source>
         <location filename="../main_window.cpp" line="682"/>
         <location filename="../main_window.cpp" line="748"/>
         <location filename="../main_window_v2.ui" line="760"/>
-        <location filename="../print_engine.cpp" line="1020"/>
-        <location filename="../print_engine.cpp" line="1089"/>
+        <location filename="../print_engine.cpp" line="1075"/>
+        <location filename="../ui_main_window_v2.cpp" line="3264"/>
         <source>Easy</source>
         <translation>Легко</translation>
     </message>
@@ -993,8 +1076,8 @@ Error %2.</source>
         <location filename="../main_window.cpp" line="686"/>
         <location filename="../main_window.cpp" line="752"/>
         <location filename="../main_window_v2.ui" line="769"/>
-        <location filename="../print_engine.cpp" line="1021"/>
-        <location filename="../print_engine.cpp" line="1090"/>
+        <location filename="../print_engine.cpp" line="1076"/>
+        <location filename="../ui_main_window_v2.cpp" line="3265"/>
         <source>Medium</source>
         <translation>Помірно</translation>
     </message>
@@ -1003,14 +1086,15 @@ Error %2.</source>
         <location filename="../main_window.cpp" line="690"/>
         <location filename="../main_window.cpp" line="756"/>
         <location filename="../main_window_v2.ui" line="778"/>
-        <location filename="../print_engine.cpp" line="1022"/>
-        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1077"/>
+        <location filename="../ui_main_window_v2.cpp" line="3266"/>
         <source>Difficult</source>
         <translation>Складно</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="793"/>
         <location filename="../main_window_v2.ui" line="4735"/>
+        <location filename="../ui_main_window_v2.cpp" line="2963"/>
         <source>Change language</source>
         <translation>Змінити мову</translation>
     </message>
@@ -1031,11 +1115,13 @@ Error %2.</source>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="118"/>
+        <location filename="../ui_main_window_v2.cpp" line="3170"/>
         <source>Recent databases</source>
         <translation>Нещодавно використані</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="131"/>
+        <location filename="../ui_main_window_v2.cpp" line="3172"/>
         <source>Select a database you have used recently, create a new one or open another database.</source>
         <translation>Оберіть нещодавно використану базу даних, створіть нову або відкрийте іншу базу даних.</translation>
     </message>
@@ -1044,56 +1130,70 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3827"/>
         <location filename="../main_window_v2.ui" line="3830"/>
         <location filename="../main_window_v2.ui" line="3833"/>
+        <location filename="../ui_main_window_v2.cpp" line="2512"/>
+        <location filename="../ui_main_window_v2.cpp" line="2515"/>
+        <location filename="../ui_main_window_v2.cpp" line="2518"/>
+        <location filename="../ui_main_window_v2.cpp" line="3175"/>
         <source>Create a new database</source>
         <translation>Створити нову базу даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="143"/>
+        <location filename="../ui_main_window_v2.cpp" line="3177"/>
         <source>New</source>
         <translation>Нова</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="160"/>
+        <location filename="../ui_main_window_v2.cpp" line="3179"/>
         <source>Open another database</source>
         <translation>Відкрити базу даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="163"/>
+        <location filename="../ui_main_window_v2.cpp" line="3181"/>
         <source>Open other...</source>
         <translation>Відкрити іншу...</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="193"/>
+        <location filename="../ui_main_window_v2.cpp" line="3183"/>
         <source>Open the selected database from the list above</source>
         <translation>Відкрити обрану базу даних із списку вище</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="196"/>
+        <location filename="../ui_main_window_v2.cpp" line="3185"/>
         <source>Open selected</source>
         <translation>Відкрити обрану</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="251"/>
+        <location filename="../ui_main_window_v2.cpp" line="3186"/>
         <source>Database information</source>
         <translation>Інформація про базу даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="267"/>
+        <location filename="../ui_main_window_v2.cpp" line="3189"/>
         <source>Database name</source>
         <translation>Ім&apos;я бази даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="290"/>
+        <location filename="../ui_main_window_v2.cpp" line="3191"/>
         <source>Date:</source>
         <translation>Дата:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="300"/>
+        <location filename="../ui_main_window_v2.cpp" line="3193"/>
         <source>Database date</source>
         <translation>Дата бази даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="316"/>
+        <location filename="../ui_main_window_v2.cpp" line="3195"/>
         <source>yyyy.MM.dd - hh:mm</source>
         <translation>рррр.ММ.дд - гг:хх</translation>
     </message>
@@ -1102,11 +1202,16 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="333"/>
         <location filename="../main_window_v2.ui" line="4232"/>
         <location filename="../main_window_v2.ui" line="4235"/>
+        <location filename="../ui_main_window_v2.cpp" line="2706"/>
+        <location filename="../ui_main_window_v2.cpp" line="2709"/>
+        <location filename="../ui_main_window_v2.cpp" line="3197"/>
+        <location filename="../ui_main_window_v2.cpp" line="3199"/>
         <source>Use last save date</source>
         <translation>Використовувати дату останнього збереження</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="354"/>
+        <location filename="../ui_main_window_v2.cpp" line="3200"/>
         <source>List of questions</source>
         <translation>Список питань</translation>
     </message>
@@ -1116,11 +1221,17 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4057"/>
         <location filename="../main_window_v2.ui" line="4060"/>
         <location filename="../main_window_v2.ui" line="4063"/>
+        <location filename="../ui_main_window_v2.cpp" line="2622"/>
+        <location filename="../ui_main_window_v2.cpp" line="2624"/>
+        <location filename="../ui_main_window_v2.cpp" line="2627"/>
+        <location filename="../ui_main_window_v2.cpp" line="2630"/>
+        <location filename="../ui_main_window_v2.cpp" line="3202"/>
         <source>Show all questions</source>
         <translation>Відобразити всі питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="368"/>
+        <location filename="../ui_main_window_v2.cpp" line="3204"/>
         <source>All</source>
         <translation>Все</translation>
     </message>
@@ -1129,6 +1240,10 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4075"/>
         <location filename="../main_window_v2.ui" line="4078"/>
         <location filename="../main_window_v2.ui" line="4081"/>
+        <location filename="../ui_main_window_v2.cpp" line="2633"/>
+        <location filename="../ui_main_window_v2.cpp" line="2635"/>
+        <location filename="../ui_main_window_v2.cpp" line="2638"/>
+        <location filename="../ui_main_window_v2.cpp" line="3206"/>
         <source>Show easy questions only</source>
         <translation>Показувати тільки прості питання</translation>
     </message>
@@ -1136,6 +1251,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="398"/>
         <location filename="../main_window_v2.ui" line="4093"/>
         <location filename="../main_window_v2.ui" line="4096"/>
+        <location filename="../ui_main_window_v2.cpp" line="2642"/>
+        <location filename="../ui_main_window_v2.cpp" line="2645"/>
+        <location filename="../ui_main_window_v2.cpp" line="3210"/>
         <source>Show questions with medium difficulty only</source>
         <translation>Показувати тільки питання помірної складності</translation>
     </message>
@@ -1144,6 +1262,10 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4108"/>
         <location filename="../main_window_v2.ui" line="4111"/>
         <location filename="../main_window_v2.ui" line="4114"/>
+        <location filename="../ui_main_window_v2.cpp" line="2648"/>
+        <location filename="../ui_main_window_v2.cpp" line="2650"/>
+        <location filename="../ui_main_window_v2.cpp" line="2653"/>
+        <location filename="../ui_main_window_v2.cpp" line="3214"/>
         <source>Show difficult questions only</source>
         <translation>Показувати тільки складні питання</translation>
     </message>
@@ -1151,11 +1273,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="438"/>
         <location filename="../main_window_v2.ui" line="4146"/>
         <location filename="../main_window_v2.ui" line="4149"/>
+        <location filename="../ui_main_window_v2.cpp" line="2665"/>
+        <location filename="../ui_main_window_v2.cpp" line="2668"/>
+        <location filename="../ui_main_window_v2.cpp" line="3218"/>
         <source>Show questions with the selected flag only</source>
         <translation>Показувати тільки питання обраної категоріі</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="460"/>
+        <location filename="../ui_main_window_v2.cpp" line="3222"/>
         <source>Select the flag to filter the list below</source>
         <translation>Обрати категорію для фільтрації списку</translation>
     </message>
@@ -1168,11 +1294,20 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3012"/>
         <location filename="../main_window_v2.ui" line="3268"/>
         <location filename="../main_window_v2.ui" line="3538"/>
+        <location filename="../ui_main_window_v2.cpp" line="3226"/>
+        <location filename="../ui_main_window_v2.cpp" line="3319"/>
+        <location filename="../ui_main_window_v2.cpp" line="3324"/>
+        <location filename="../ui_main_window_v2.cpp" line="3489"/>
+        <location filename="../ui_main_window_v2.cpp" line="3547"/>
+        <location filename="../ui_main_window_v2.cpp" line="3592"/>
+        <location filename="../ui_main_window_v2.cpp" line="3623"/>
+        <location filename="../ui_main_window_v2.cpp" line="3662"/>
         <source>Type a keyword to filter the list below</source>
         <translation>Введіть ключове слово для фільтрації списку</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="488"/>
+        <location filename="../ui_main_window_v2.cpp" line="3229"/>
         <source>Select a question to edit</source>
         <translation>Оберіть питання для редагування</translation>
     </message>
@@ -1181,6 +1316,10 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4250"/>
         <location filename="../main_window_v2.ui" line="4253"/>
         <location filename="../main_window_v2.ui" line="4256"/>
+        <location filename="../ui_main_window_v2.cpp" line="2714"/>
+        <location filename="../ui_main_window_v2.cpp" line="2717"/>
+        <location filename="../ui_main_window_v2.cpp" line="2720"/>
+        <location filename="../ui_main_window_v2.cpp" line="3232"/>
         <source>Add a question</source>
         <translation>Додати питання</translation>
     </message>
@@ -1189,6 +1328,10 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4271"/>
         <location filename="../main_window_v2.ui" line="4274"/>
         <location filename="../main_window_v2.ui" line="4277"/>
+        <location filename="../ui_main_window_v2.cpp" line="2725"/>
+        <location filename="../ui_main_window_v2.cpp" line="2728"/>
+        <location filename="../ui_main_window_v2.cpp" line="2731"/>
+        <location filename="../ui_main_window_v2.cpp" line="3235"/>
         <source>Duplicate the selected question</source>
         <translation>Дублювати обране питання</translation>
     </message>
@@ -1197,6 +1340,10 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4292"/>
         <location filename="../main_window_v2.ui" line="4295"/>
         <location filename="../main_window_v2.ui" line="4298"/>
+        <location filename="../ui_main_window_v2.cpp" line="2736"/>
+        <location filename="../ui_main_window_v2.cpp" line="2739"/>
+        <location filename="../ui_main_window_v2.cpp" line="2742"/>
+        <location filename="../ui_main_window_v2.cpp" line="3238"/>
         <source>Delete the selected question</source>
         <translation>Видалити обране питання</translation>
     </message>
@@ -1205,6 +1352,10 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4164"/>
         <location filename="../main_window_v2.ui" line="4167"/>
         <location filename="../main_window_v2.ui" line="4170"/>
+        <location filename="../ui_main_window_v2.cpp" line="2673"/>
+        <location filename="../ui_main_window_v2.cpp" line="2676"/>
+        <location filename="../ui_main_window_v2.cpp" line="2679"/>
+        <location filename="../ui_main_window_v2.cpp" line="3241"/>
         <source>Move the selected question up</source>
         <translation>Перемістити обране питання вгору</translation>
     </message>
@@ -1213,11 +1364,16 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4185"/>
         <location filename="../main_window_v2.ui" line="4188"/>
         <location filename="../main_window_v2.ui" line="4191"/>
+        <location filename="../ui_main_window_v2.cpp" line="2684"/>
+        <location filename="../ui_main_window_v2.cpp" line="2687"/>
+        <location filename="../ui_main_window_v2.cpp" line="2690"/>
+        <location filename="../ui_main_window_v2.cpp" line="3244"/>
         <source>Move the selected question down</source>
         <translation>Перемістити обране питання вниз</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="641"/>
+        <location filename="../ui_main_window_v2.cpp" line="3246"/>
         <source>Selected question</source>
         <translation>Обране питання</translation>
     </message>
@@ -1225,54 +1381,61 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="649"/>
         <location filename="../questions.cpp" line="26"/>
         <location filename="../questions.cpp" line="84"/>
+        <location filename="../ui_main_window_v2.cpp" line="3247"/>
         <source>Question name:</source>
         <translation>Назва питання:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="656"/>
+        <location filename="../ui_main_window_v2.cpp" line="3249"/>
         <source>Name of the selected question</source>
         <translation>Назва обраного питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="667"/>
-        <location filename="../print_engine.cpp" line="1009"/>
+        <location filename="../ui_main_window_v2.cpp" line="3251"/>
         <source>Flag:</source>
         <translation>Категорія:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="680"/>
+        <location filename="../ui_main_window_v2.cpp" line="3253"/>
         <source>Flag of the selected question</source>
         <translation>Категорія обраного питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="700"/>
-        <location filename="../print_engine.cpp" line="1014"/>
+        <location filename="../ui_main_window_v2.cpp" line="3255"/>
         <source>Group:</source>
         <translation>Група:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="707"/>
+        <location filename="../ui_main_window_v2.cpp" line="3257"/>
         <source>Group of the selected question</source>
         <translation>Група обраного питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="714"/>
+        <location filename="../ui_main_window_v2.cpp" line="3260"/>
         <source>Search the database for other questions in this group</source>
         <translation>Шукати в базі даних інші питання із цієї групи</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="717"/>
+        <location filename="../ui_main_window_v2.cpp" line="3262"/>
         <source>Search</source>
         <translation>Пошук</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="737"/>
-        <location filename="../print_engine.cpp" line="1018"/>
+        <location filename="../ui_main_window_v2.cpp" line="3263"/>
         <source>Difficulty:</source>
         <translation>Складність:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="756"/>
+        <location filename="../ui_main_window_v2.cpp" line="3269"/>
         <source>Difficulty of the selected question</source>
         <translation>Складність обраного питання</translation>
     </message>
@@ -1282,157 +1445,14 @@ Error %2.</source>
         <translation>Питання:</translation>
     </message>
     <message>
-        <source>Undo</source>
-        <translation type="obsolete">Скасувати</translation>
-    </message>
-    <message>
-        <source>◄</source>
-        <translation type="obsolete">◄</translation>
-    </message>
-    <message>
-        <source>Redo</source>
-        <translation type="obsolete">Повторити</translation>
-    </message>
-    <message>
-        <source>►</source>
-        <translation type="obsolete">►</translation>
-    </message>
-    <message>
-        <source>Choose a font</source>
-        <translation type="obsolete">Вибрати шрифт</translation>
-    </message>
-    <message>
-        <source>Select text size</source>
-        <translation type="obsolete">Вибрати розмір шрифту</translation>
-    </message>
-    <message>
-        <source>10</source>
-        <translation type="obsolete">10</translation>
-    </message>
-    <message>
-        <source>11</source>
-        <translation type="obsolete">11</translation>
-    </message>
-    <message>
-        <source>12</source>
-        <translation type="obsolete">12</translation>
-    </message>
-    <message>
-        <source>14</source>
-        <translation type="obsolete">14</translation>
-    </message>
-    <message>
-        <source>16</source>
-        <translation type="obsolete">16</translation>
-    </message>
-    <message>
-        <source>18</source>
-        <translation type="obsolete">18</translation>
-    </message>
-    <message>
-        <source>20</source>
-        <translation type="obsolete">20</translation>
-    </message>
-    <message>
-        <source>22</source>
-        <translation type="obsolete">22</translation>
-    </message>
-    <message>
-        <source>24</source>
-        <translation type="obsolete">24</translation>
-    </message>
-    <message>
-        <source>26</source>
-        <translation type="obsolete">26</translation>
-    </message>
-    <message>
-        <source>28</source>
-        <translation type="obsolete">28</translation>
-    </message>
-    <message>
-        <source>30</source>
-        <translation type="obsolete">30</translation>
-    </message>
-    <message>
-        <source>36</source>
-        <translation type="obsolete">36</translation>
-    </message>
-    <message>
-        <source>48</source>
-        <translation type="obsolete">48</translation>
-    </message>
-    <message>
-        <source>96</source>
-        <translation type="obsolete">96</translation>
-    </message>
-    <message>
-        <source>Bold</source>
-        <translation type="obsolete">Напівжирний</translation>
-    </message>
-    <message>
-        <source>B</source>
-        <translation type="obsolete">Ж</translation>
-    </message>
-    <message>
-        <source>Italic</source>
-        <translation type="obsolete">Курсив</translation>
-    </message>
-    <message>
-        <source>I</source>
-        <translation type="obsolete">К</translation>
-    </message>
-    <message>
-        <source>Underlined</source>
-        <translation type="obsolete">Підкреслений</translation>
-    </message>
-    <message>
-        <source>U</source>
-        <translation type="obsolete">Ч</translation>
-    </message>
-    <message>
-        <source>Text colour</source>
-        <translation type="obsolete">Колір тексту</translation>
-    </message>
-    <message>
-        <source>Align left</source>
-        <translation type="obsolete">вирівнювання по лівому краю</translation>
-    </message>
-    <message>
-        <source>L</source>
-        <translation type="obsolete">Л</translation>
-    </message>
-    <message>
-        <source>Align centre</source>
-        <translation type="obsolete">Вирівнювання по центру</translation>
-    </message>
-    <message>
-        <source>C</source>
-        <translation type="obsolete">Ц</translation>
-    </message>
-    <message>
-        <source>Align right</source>
-        <translation type="obsolete">Вирівнювання по правому краю</translation>
-    </message>
-    <message>
-        <source>R</source>
-        <translation type="obsolete">П</translation>
-    </message>
-    <message>
-        <source>Justify</source>
-        <translation type="obsolete">Вирівнювання по ширині</translation>
-    </message>
-    <message>
-        <source>J</source>
-        <translation type="obsolete">Ш</translation>
-    </message>
-    <message>
         <location filename="../main_window.cpp" line="298"/>
         <source>Text of the selected question</source>
         <translation>Текст обраного питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
-        <location filename="../print_engine.cpp" line="1028"/>
+        <location filename="../print_engine.cpp" line="1017"/>
+        <location filename="../ui_main_window_v2.cpp" line="3271"/>
         <source>Attachments (SVG):</source>
         <translation>Додатки (SVG):</translation>
     </message>
@@ -1443,6 +1463,8 @@ Error %2.</source>
         <location filename="../questions.cpp" line="547"/>
         <location filename="../questions.cpp" line="549"/>
         <location filename="../questions.cpp" line="553"/>
+        <location filename="../ui_main_window_v2.cpp" line="3061"/>
+        <location filename="../ui_main_window_v2.cpp" line="3273"/>
         <source>Add SVG</source>
         <translation>Додати SVG</translation>
     </message>
@@ -1451,6 +1473,10 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4916"/>
         <location filename="../main_window_v2.ui" line="4919"/>
         <location filename="../main_window_v2.ui" line="4922"/>
+        <location filename="../ui_main_window_v2.cpp" line="3063"/>
+        <location filename="../ui_main_window_v2.cpp" line="3066"/>
+        <location filename="../ui_main_window_v2.cpp" line="3069"/>
+        <location filename="../ui_main_window_v2.cpp" line="3276"/>
         <source>Add an attachment</source>
         <translation>Додати додаток</translation>
     </message>
@@ -1458,6 +1484,8 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="832"/>
         <location filename="../main_window_v2.ui" line="4931"/>
         <location filename="../questions.cpp" line="562"/>
+        <location filename="../ui_main_window_v2.cpp" line="3071"/>
+        <location filename="../ui_main_window_v2.cpp" line="3280"/>
         <source>Remove SVG</source>
         <translation>Видалити SVG</translation>
     </message>
@@ -1466,18 +1494,26 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4934"/>
         <location filename="../main_window_v2.ui" line="4937"/>
         <location filename="../main_window_v2.ui" line="4940"/>
+        <location filename="../ui_main_window_v2.cpp" line="3073"/>
+        <location filename="../ui_main_window_v2.cpp" line="3076"/>
+        <location filename="../ui_main_window_v2.cpp" line="3079"/>
+        <location filename="../ui_main_window_v2.cpp" line="3283"/>
         <source>Remove the selected attachment</source>
         <translation>Видалити обраний додаток</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="838"/>
         <location filename="../main_window_v2.ui" line="3486"/>
+        <location filename="../ui_main_window_v2.cpp" line="3285"/>
+        <location filename="../ui_main_window_v2.cpp" line="3658"/>
         <source>Remove</source>
         <translation>Видалили</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="855"/>
         <location filename="../main_window_v2.ui" line="4949"/>
+        <location filename="../ui_main_window_v2.cpp" line="3081"/>
+        <location filename="../ui_main_window_v2.cpp" line="3287"/>
         <source>Edit SVG</source>
         <translation>Редагувати SVG</translation>
     </message>
@@ -1486,11 +1522,16 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4952"/>
         <location filename="../main_window_v2.ui" line="4955"/>
         <location filename="../main_window_v2.ui" line="4958"/>
+        <location filename="../ui_main_window_v2.cpp" line="3083"/>
+        <location filename="../ui_main_window_v2.cpp" line="3086"/>
+        <location filename="../ui_main_window_v2.cpp" line="3089"/>
+        <location filename="../ui_main_window_v2.cpp" line="3290"/>
         <source>Edit the selected attachment</source>
         <translation>Редагувати обраний додаток</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="861"/>
+        <location filename="../ui_main_window_v2.cpp" line="3292"/>
         <source>Edit</source>
         <translation>Редагування</translation>
     </message>
@@ -1499,6 +1540,8 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4967"/>
         <location filename="../questions.cpp" line="633"/>
         <location filename="../questions.cpp" line="637"/>
+        <location filename="../ui_main_window_v2.cpp" line="3091"/>
+        <location filename="../ui_main_window_v2.cpp" line="3294"/>
         <source>Export SVG</source>
         <translation>Експортувати SVG</translation>
     </message>
@@ -1507,42 +1550,43 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4970"/>
         <location filename="../main_window_v2.ui" line="4973"/>
         <location filename="../main_window_v2.ui" line="4976"/>
+        <location filename="../ui_main_window_v2.cpp" line="3093"/>
+        <location filename="../ui_main_window_v2.cpp" line="3096"/>
+        <location filename="../ui_main_window_v2.cpp" line="3099"/>
+        <location filename="../ui_main_window_v2.cpp" line="3297"/>
         <source>Export the selected attachment</source>
         <translation>Експотрувати обраний додаток</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="884"/>
+        <location filename="../ui_main_window_v2.cpp" line="3299"/>
         <source>Export</source>
         <translation>Експортувати</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="909"/>
+        <location filename="../ui_main_window_v2.cpp" line="3301"/>
         <source>Attachments of the selected question</source>
         <translation>Додатки обраного питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="937"/>
+        <location filename="../ui_main_window_v2.cpp" line="3303"/>
         <source>Explanation:</source>
         <translation>Пояснення:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="944"/>
+        <location filename="../ui_main_window_v2.cpp" line="3305"/>
         <source>A brief explanation of the selected question</source>
         <translation>Стисле пояснення обраного питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="959"/>
-        <location filename="../print_engine.cpp" line="1077"/>
+        <location filename="../print_engine.cpp" line="1062"/>
+        <location filename="../ui_main_window_v2.cpp" line="3307"/>
         <source>Statistics:</source>
         <translation>Статистика:</translation>
-    </message>
-    <message>
-        <source>8</source>
-        <translation type="obsolete">8</translation>
-    </message>
-    <message>
-        <source>9</source>
-        <translation type="obsolete">9</translation>
     </message>
     <message>
         <location filename="../main_window.cpp" line="300"/>
@@ -1551,33 +1595,41 @@ Error %2.</source>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1008"/>
+        <location filename="../ui_main_window_v2.cpp" line="3311"/>
         <source>Flag</source>
         <translation>Категорія</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1013"/>
         <location filename="../main_window_v2.ui" line="3432"/>
+        <location filename="../ui_main_window_v2.cpp" line="3310"/>
+        <location filename="../ui_main_window_v2.cpp" line="3645"/>
         <source>Name</source>
         <translation>Ім&apos;я</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1018"/>
+        <location filename="../ui_main_window_v2.cpp" line="3309"/>
         <source>Number of questions with this flag</source>
         <translation>Кількість питань у цій категорії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1043"/>
+        <location filename="../ui_main_window_v2.cpp" line="3312"/>
         <source>Advanced</source>
         <translation>Додатково</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1057"/>
+        <location filename="../ui_main_window_v2.cpp" line="3313"/>
         <source>Select:</source>
         <translation>Оберіть:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1064"/>
         <location filename="../main_window_v2.ui" line="3956"/>
+        <location filename="../ui_main_window_v2.cpp" line="2574"/>
+        <location filename="../ui_main_window_v2.cpp" line="3314"/>
         <source>Flags</source>
         <translation>Категорії</translation>
     </message>
@@ -1586,16 +1638,20 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4403"/>
         <location filename="../print_engine.cpp" line="929"/>
         <location filename="../print_engine.cpp" line="945"/>
+        <location filename="../ui_main_window_v2.cpp" line="2790"/>
+        <location filename="../ui_main_window_v2.cpp" line="3315"/>
         <source>Questions</source>
         <translation>Питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1100"/>
+        <location filename="../ui_main_window_v2.cpp" line="3316"/>
         <source>&lt;b&gt;Available:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Доступно:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1190"/>
+        <location filename="../ui_main_window_v2.cpp" line="3321"/>
         <source>&lt;b&gt;Used:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Використано:&lt;/b&gt;</translation>
     </message>
@@ -1603,12 +1659,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="1219"/>
         <location filename="../main_window_v2.ui" line="2771"/>
         <location filename="../server.cpp" line="102"/>
+        <location filename="../ui_main_window_v2.cpp" line="3327"/>
+        <location filename="../ui_main_window_v2.cpp" line="3550"/>
         <source>Flag name</source>
         <translation>Назва категорії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1224"/>
         <location filename="../server.cpp" line="102"/>
+        <location filename="../ui_main_window_v2.cpp" line="3329"/>
         <source>Number of questions</source>
         <translation>Кількість питань</translation>
     </message>
@@ -1617,27 +1676,35 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2740"/>
         <location filename="../main_window_v2.ui" line="2776"/>
         <location filename="../server.cpp" line="102"/>
+        <location filename="../ui_main_window_v2.cpp" line="3331"/>
+        <location filename="../ui_main_window_v2.cpp" line="3552"/>
+        <location filename="../ui_main_window_v2.cpp" line="3556"/>
         <source>Pass mark</source>
         <translation>Оцінка проходження</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1244"/>
         <location filename="../main_window_v2.ui" line="2785"/>
+        <location filename="../ui_main_window_v2.cpp" line="3332"/>
+        <location filename="../ui_main_window_v2.cpp" line="3584"/>
         <source>Scoring system</source>
         <translation>Система оцінювання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1256"/>
+        <location filename="../ui_main_window_v2.cpp" line="3334"/>
         <source>Allow giving points for partially correct answers (this affects multiple choice questions only)</source>
         <translation>Нараховувати бали за частково правильні відповіді (тільки для питань із кількома варіантами)</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1259"/>
+        <location filename="../ui_main_window_v2.cpp" line="3336"/>
         <source>Allow partially correct answers</source>
         <translation>Враховувати частково правильні відповіді</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1269"/>
+        <location filename="../ui_main_window_v2.cpp" line="3337"/>
         <source>Separate settings for each difficulty level</source>
         <translation>Різноманітні налаштування для кожного рівня складності</translation>
     </message>
@@ -1646,6 +1713,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="1363"/>
         <location filename="../main_window_v2.ui" line="1465"/>
         <location filename="../print_engine.cpp" line="595"/>
+        <location filename="../ui_main_window_v2.cpp" line="3338"/>
+        <location filename="../ui_main_window_v2.cpp" line="3350"/>
+        <location filename="../ui_main_window_v2.cpp" line="3362"/>
         <source>Correct answer:</source>
         <translation>Правильна відповідь:</translation>
     </message>
@@ -1653,6 +1723,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="1289"/>
         <location filename="../main_window_v2.ui" line="1379"/>
         <location filename="../main_window_v2.ui" line="1481"/>
+        <location filename="../ui_main_window_v2.cpp" line="3340"/>
+        <location filename="../ui_main_window_v2.cpp" line="3352"/>
+        <location filename="../ui_main_window_v2.cpp" line="3364"/>
         <source>Specify the amount of points given for a correct answer</source>
         <translation>Кількість балів, що нараховуються за частково правильну відповідь</translation>
     </message>
@@ -1660,6 +1733,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="1302"/>
         <location filename="../main_window_v2.ui" line="1395"/>
         <location filename="../main_window_v2.ui" line="1497"/>
+        <location filename="../ui_main_window_v2.cpp" line="3342"/>
+        <location filename="../ui_main_window_v2.cpp" line="3354"/>
+        <location filename="../ui_main_window_v2.cpp" line="3366"/>
         <source>Incorrect answer:</source>
         <translation>Неправильна відповідь:</translation>
     </message>
@@ -1667,6 +1743,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="1315"/>
         <location filename="../main_window_v2.ui" line="1411"/>
         <location filename="../main_window_v2.ui" line="1513"/>
+        <location filename="../ui_main_window_v2.cpp" line="3344"/>
+        <location filename="../ui_main_window_v2.cpp" line="3356"/>
+        <location filename="../ui_main_window_v2.cpp" line="3368"/>
         <source>Specify the amount of points taken for an incorrect answer</source>
         <translation>Кількість балів, що нараховуються за частково неправильну відповідь</translation>
     </message>
@@ -1674,6 +1753,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="1331"/>
         <location filename="../main_window_v2.ui" line="1430"/>
         <location filename="../main_window_v2.ui" line="1532"/>
+        <location filename="../ui_main_window_v2.cpp" line="3346"/>
+        <location filename="../ui_main_window_v2.cpp" line="3358"/>
+        <location filename="../ui_main_window_v2.cpp" line="3370"/>
         <source>Missing answer:</source>
         <translation>Пропущена відповідь:</translation>
     </message>
@@ -1681,16 +1763,21 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="1344"/>
         <location filename="../main_window_v2.ui" line="1446"/>
         <location filename="../main_window_v2.ui" line="1548"/>
+        <location filename="../ui_main_window_v2.cpp" line="3348"/>
+        <location filename="../ui_main_window_v2.cpp" line="3360"/>
+        <location filename="../ui_main_window_v2.cpp" line="3372"/>
         <source>Specify the amount of points taken for each missing answer</source>
         <translation>Кількість балів, що вираховуються за пропущену відповідь</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1805"/>
+        <location filename="../ui_main_window_v2.cpp" line="3383"/>
         <source>Test name:</source>
         <translation>Назва тесту:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1815"/>
+        <location filename="../ui_main_window_v2.cpp" line="3385"/>
         <source>Enable setting a custom test name (if unchecked, database name will be used)</source>
         <translation>Дозволити установлення користувацької назви тесту (якщо не вибрано, буде використане ім&apos;я бази даних)</translation>
     </message>
@@ -1699,98 +1786,119 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="1973"/>
         <location filename="../print_engine.cpp" line="440"/>
         <location filename="../print_engine.cpp" line="441"/>
+        <location filename="../ui_main_window_v2.cpp" line="3387"/>
+        <location filename="../ui_main_window_v2.cpp" line="3420"/>
         <source>Custom</source>
         <translation>Користувацький</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1828"/>
+        <location filename="../ui_main_window_v2.cpp" line="3389"/>
         <source>Set a custom test name</source>
         <translation>Вибрати назву тесту</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1835"/>
+        <location filename="../ui_main_window_v2.cpp" line="3391"/>
         <source>Groups:</source>
         <translation>Групи:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1845"/>
+        <location filename="../ui_main_window_v2.cpp" line="3393"/>
         <source>Allow one question per group to appear in one test only, i.e. choose one of the group randomly</source>
         <translation>Використовувати по одному питанню із групи в тестуванні, тобто обрати випадкове питання із групи</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1848"/>
+        <location filename="../ui_main_window_v2.cpp" line="3395"/>
         <source>Allow one question per group only</source>
         <translation>Дозволити лише одне питання із групи</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1855"/>
+        <location filename="../ui_main_window_v2.cpp" line="3396"/>
         <source>Number of questions:</source>
         <translation>Кількість питань:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1865"/>
+        <location filename="../ui_main_window_v2.cpp" line="3398"/>
         <source>Use the maximum number of questions possible</source>
         <translation>Використовувати максимально можливу кількість питань</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1868"/>
+        <location filename="../ui_main_window_v2.cpp" line="3400"/>
         <source>Maximum</source>
         <translation>Максимум</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1881"/>
+        <location filename="../ui_main_window_v2.cpp" line="3402"/>
         <source>Specify the number of questions</source>
         <translation>Зазначити кількість питань</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1900"/>
         <location filename="../print_engine.cpp" line="774"/>
+        <location filename="../ui_main_window_v2.cpp" line="3404"/>
         <source>Pass mark:</source>
         <translation>Оцінка проходження:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1910"/>
+        <location filename="../ui_main_window_v2.cpp" line="3405"/>
         <source>Time for:</source>
         <translation>Час:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1920"/>
+        <location filename="../ui_main_window_v2.cpp" line="3406"/>
         <source>the whole test</source>
         <translation>весь тест</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1930"/>
+        <location filename="../ui_main_window_v2.cpp" line="3408"/>
         <source>Time for the whole test</source>
         <translation>Час на весь тест</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1933"/>
         <location filename="../main_window_v2.ui" line="1953"/>
+        <location filename="../ui_main_window_v2.cpp" line="3410"/>
+        <location filename="../ui_main_window_v2.cpp" line="3415"/>
         <source>HH:mm</source>
         <translation>ГГ:хх</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1940"/>
+        <location filename="../ui_main_window_v2.cpp" line="3411"/>
         <source>one question</source>
         <translation>одне питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1950"/>
+        <location filename="../ui_main_window_v2.cpp" line="3413"/>
         <source>Time for one question (multiplied by the number of questions)</source>
         <translation>Часу на одне питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1960"/>
+        <location filename="../ui_main_window_v2.cpp" line="3416"/>
         <source>Server port:</source>
         <translation>Порт сервера:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1970"/>
+        <location filename="../ui_main_window_v2.cpp" line="3418"/>
         <source>Use a custom server port (if unchecked, a random port will be chosen)</source>
         <translation>Використовувати користувацькі налаштування порту (якщо не вибрано - порт обирається навмання)</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1983"/>
+        <location filename="../ui_main_window_v2.cpp" line="3422"/>
         <source>Specify a custom server port</source>
         <translation>Установіть користувацький порт</translation>
     </message>
@@ -1799,83 +1907,103 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4460"/>
         <location filename="../main_window_v2.ui" line="4463"/>
         <location filename="../main_window_v2.ui" line="4466"/>
+        <location filename="../ui_main_window_v2.cpp" line="2822"/>
+        <location filename="../ui_main_window_v2.cpp" line="2825"/>
+        <location filename="../ui_main_window_v2.cpp" line="2828"/>
+        <location filename="../ui_main_window_v2.cpp" line="3425"/>
         <source>Proceed to testing mode using this computer as a server</source>
         <translation>Перейти в режим тестування із використанням даного комп&apos;ютера в якості сервера</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="1999"/>
+        <location filename="../ui_main_window_v2.cpp" line="3427"/>
         <source>Start server</source>
         <translation>Запустити сервер</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2016"/>
+        <location filename="../ui_main_window_v2.cpp" line="3429"/>
         <source>Specify the minimum number of correct answers (with score above 0) to pass the test</source>
         <translation>Мінімальна кількість правильних відповідей (із нараховувальними балами більше нуля), необхідних для успішного складання тесту</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2026"/>
+        <location filename="../ui_main_window_v2.cpp" line="3432"/>
         <source>Use this option if the names of your questions contain clues to their answers</source>
         <translation>Використовуйте цю опцію, якщо назви питань містять ключі до відповідей</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2029"/>
+        <location filename="../ui_main_window_v2.cpp" line="3434"/>
         <source>Hide question names, show numbers instead</source>
         <translation>Показувати номери питань замість їх назв</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2036"/>
         <location filename="../main_window_v2.ui" line="2039"/>
+        <location filename="../ui_main_window_v2.cpp" line="3436"/>
+        <location filename="../ui_main_window_v2.cpp" line="3438"/>
         <source>Do not show correct answers at the end of the test</source>
         <translation>Не показувати правильні відповіді по закінченню тестування</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2052"/>
+        <location filename="../ui_main_window_v2.cpp" line="3439"/>
         <source>Other settings:</source>
         <translation>Інші налаштування:</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2062"/>
+        <location filename="../ui_main_window_v2.cpp" line="3441"/>
         <source>Reorder answers randomly</source>
         <translation>Розташувати питання в випадковому порядку</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2065"/>
+        <location filename="../ui_main_window_v2.cpp" line="3443"/>
         <source>Shuffle answers</source>
         <translation>Перемішувати питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2085"/>
+        <location filename="../ui_main_window_v2.cpp" line="3445"/>
         <source>Do not print test results automatically</source>
         <translation>Не друкувати результати тесту автоматично</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2088"/>
+        <location filename="../ui_main_window_v2.cpp" line="3447"/>
         <source>Do not print test results</source>
         <translation>Не друкувати результати тесту</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2105"/>
+        <location filename="../ui_main_window_v2.cpp" line="3448"/>
         <source>Server information</source>
         <translation>Інформація про сервер</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2111"/>
         <location filename="../server.cpp" line="483"/>
+        <location filename="../ui_main_window_v2.cpp" line="3449"/>
         <source>The server is running on port &lt;b&gt;%1&lt;/b&gt;. You may now run iTestClient on each client PC. Do not quit iTestServer while testing!</source>
         <translation>Сервер використовує порт &lt;b&gt;%1&lt;/b&gt;. Зараз Ви можете запустити iTestClient на клієнтськх комп&apos;ютерах. Не закривайте iTestServer під час тестування!</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2132"/>
+        <location filename="../ui_main_window_v2.cpp" line="3450"/>
         <source>List of clients</source>
         <translation>Список клієнтів</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2138"/>
+        <location filename="../ui_main_window_v2.cpp" line="3452"/>
         <source>Select a client to get more information</source>
         <translation>Оберіть клієнта для отримання додаткової інформації</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2151"/>
+        <location filename="../ui_main_window_v2.cpp" line="3454"/>
         <source>Selected client</source>
         <translation>Обраний клієнт</translation>
     </message>
@@ -1883,11 +2011,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2157"/>
         <location filename="../main_window_v2.ui" line="2636"/>
         <location filename="../main_window_v2.ui" line="3344"/>
+        <location filename="../ui_main_window_v2.cpp" line="3455"/>
+        <location filename="../ui_main_window_v2.cpp" line="3522"/>
+        <location filename="../ui_main_window_v2.cpp" line="3629"/>
         <source>&lt;b&gt;Name:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Ім&apos;я:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2167"/>
+        <location filename="../ui_main_window_v2.cpp" line="3457"/>
         <source>The selected client&apos;s name</source>
         <translation>Ім&apos;я обраного клієнта</translation>
     </message>
@@ -1897,16 +2029,20 @@ Error %2.</source>
         <location filename="../server.cpp" line="657"/>
         <location filename="../server.cpp" line="974"/>
         <location filename="../session_viewer.cpp" line="452"/>
+        <location filename="../ui_main_window_v2.cpp" line="3459"/>
+        <location filename="../ui_main_window_v2.cpp" line="3526"/>
         <source>Not identified yet</source>
         <translation>Не визначено</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2190"/>
+        <location filename="../ui_main_window_v2.cpp" line="3460"/>
         <source>&lt;b&gt;Status:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Стан:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2200"/>
+        <location filename="../ui_main_window_v2.cpp" line="3462"/>
         <source>The selected client&apos;s status</source>
         <translation>Стан обраного клієнта</translation>
     </message>
@@ -1914,17 +2050,21 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2203"/>
         <location filename="../server.cpp" line="786"/>
         <location filename="../server.cpp" line="975"/>
+        <location filename="../ui_main_window_v2.cpp" line="3464"/>
         <source>Disconnected</source>
         <translation>Від&apos;єднаний</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2223"/>
         <location filename="../main_window_v2.ui" line="2669"/>
+        <location filename="../ui_main_window_v2.cpp" line="3465"/>
+        <location filename="../ui_main_window_v2.cpp" line="3527"/>
         <source>&lt;b&gt;Total score:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Загальний результат:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2233"/>
+        <location filename="../ui_main_window_v2.cpp" line="3467"/>
         <source>The selected client&apos;s total score</source>
         <translation>Загальний результат обраного клієнта</translation>
     </message>
@@ -1933,6 +2073,8 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2682"/>
         <location filename="../server.cpp" line="976"/>
         <location filename="../session_viewer.cpp" line="453"/>
+        <location filename="../ui_main_window_v2.cpp" line="3469"/>
+        <location filename="../ui_main_window_v2.cpp" line="3531"/>
         <source>Not ready yet</source>
         <translation>Не готовий</translation>
     </message>
@@ -1940,23 +2082,31 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2256"/>
         <location filename="../main_window_v2.ui" line="2702"/>
         <location filename="../main_window_v2.ui" line="3413"/>
+        <location filename="../ui_main_window_v2.cpp" line="3470"/>
+        <location filename="../ui_main_window_v2.cpp" line="3532"/>
+        <location filename="../ui_main_window_v2.cpp" line="3641"/>
         <source>&lt;b&gt;Results:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Результати:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2266"/>
+        <location filename="../ui_main_window_v2.cpp" line="3480"/>
         <source>The selected client&apos;s exam results</source>
         <translation>Результати екзамену обраного клієнта</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2275"/>
         <location filename="../main_window_v2.ui" line="2721"/>
+        <location filename="../ui_main_window_v2.cpp" line="3474"/>
+        <location filename="../ui_main_window_v2.cpp" line="3536"/>
         <source>Score</source>
         <translation>Бали</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2280"/>
         <location filename="../main_window_v2.ui" line="2726"/>
+        <location filename="../ui_main_window_v2.cpp" line="3476"/>
+        <location filename="../ui_main_window_v2.cpp" line="3538"/>
         <source>Answer</source>
         <translation>Відповідь</translation>
     </message>
@@ -1966,6 +2116,11 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2893"/>
         <location filename="../main_window_v2.ui" line="2908"/>
         <location filename="../main_window_v2.ui" line="2923"/>
+        <location filename="../ui_main_window_v2.cpp" line="3478"/>
+        <location filename="../ui_main_window_v2.cpp" line="3540"/>
+        <location filename="../ui_main_window_v2.cpp" line="3565"/>
+        <location filename="../ui_main_window_v2.cpp" line="3571"/>
+        <location filename="../ui_main_window_v2.cpp" line="3577"/>
         <source>Correct answer</source>
         <translation>Правильна відповідь</translation>
     </message>
@@ -1974,12 +2129,18 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2316"/>
         <location filename="../main_window_v2.ui" line="2958"/>
         <location filename="../main_window_v2.ui" line="2964"/>
+        <location filename="../ui_main_window_v2.cpp" line="3482"/>
+        <location filename="../ui_main_window_v2.cpp" line="3484"/>
+        <location filename="../ui_main_window_v2.cpp" line="3585"/>
+        <location filename="../ui_main_window_v2.cpp" line="3587"/>
         <source>Server log</source>
         <translation>Журнал сервера</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2350"/>
         <location filename="../main_window_v2.ui" line="3523"/>
+        <location filename="../ui_main_window_v2.cpp" line="3486"/>
+        <location filename="../ui_main_window_v2.cpp" line="3659"/>
         <source>List of sessions</source>
         <translation>Список сесій</translation>
     </message>
@@ -1987,115 +2148,143 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2374"/>
         <location filename="../main_window_v2.ui" line="2388"/>
         <location filename="../main_window_v2.ui" line="3547"/>
+        <location filename="../ui_main_window_v2.cpp" line="3492"/>
+        <location filename="../ui_main_window_v2.cpp" line="3496"/>
+        <location filename="../ui_main_window_v2.cpp" line="3665"/>
         <source>Double click a session to view</source>
         <translation>Натисніть двічі на сесії для перегляду</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2381"/>
+        <location filename="../ui_main_window_v2.cpp" line="3494"/>
         <source>&lt;b&gt;Archived sessions:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Архівні сессии:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2415"/>
+        <location filename="../ui_main_window_v2.cpp" line="3498"/>
         <source>Selected session</source>
         <translation>Обрана сесія</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2421"/>
+        <location filename="../ui_main_window_v2.cpp" line="3499"/>
         <source>&lt;b&gt;Session name:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Назва сесії:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2437"/>
+        <location filename="../ui_main_window_v2.cpp" line="3501"/>
         <source>Name of the selected session</source>
         <translation>Назва обраної сесії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2447"/>
+        <location filename="../ui_main_window_v2.cpp" line="3503"/>
         <source>&lt;b&gt;Pass mark:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Оцінка проходження:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2463"/>
+        <location filename="../ui_main_window_v2.cpp" line="3505"/>
         <source>The minimum number of correct answers to pass this exam</source>
         <translation>Мінімальна кількість правильних відповідей для проходження екзамену</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2479"/>
         <location filename="../main_window_v2.ui" line="3391"/>
+        <location filename="../ui_main_window_v2.cpp" line="3507"/>
+        <location filename="../ui_main_window_v2.cpp" line="3636"/>
         <source>&lt;b&gt;Average:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Середній результат:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2495"/>
+        <location filename="../ui_main_window_v2.cpp" line="3508"/>
         <source>Bad</source>
         <translation>Погано</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2511"/>
+        <location filename="../ui_main_window_v2.cpp" line="3509"/>
         <source>Good</source>
         <translation>Добре</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2521"/>
+        <location filename="../ui_main_window_v2.cpp" line="3510"/>
         <source>&lt;b&gt;Date and time:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Дата та час:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2537"/>
+        <location filename="../ui_main_window_v2.cpp" line="3512"/>
         <source>Date and time of the selected session</source>
         <translation>Дата та час обраної сесії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2563"/>
+        <location filename="../ui_main_window_v2.cpp" line="3516"/>
         <source>Average result of the selected session</source>
         <translation>Середній результат обраної сесії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2610"/>
         <location filename="../main_window_v2.ui" line="3253"/>
+        <location filename="../ui_main_window_v2.cpp" line="3518"/>
+        <location filename="../ui_main_window_v2.cpp" line="3620"/>
         <source>List of students</source>
         <translation>Список студентів</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2616"/>
         <location filename="../main_window_v2.ui" line="3277"/>
+        <location filename="../ui_main_window_v2.cpp" line="3520"/>
+        <location filename="../ui_main_window_v2.cpp" line="3626"/>
         <source>Select a student to get more information</source>
         <translation>Оберіть студента для отримання додаткової інформації</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2630"/>
         <location filename="../main_window_v2.ui" line="3336"/>
+        <location filename="../ui_main_window_v2.cpp" line="3544"/>
+        <location filename="../ui_main_window_v2.cpp" line="3628"/>
         <source>Selected student</source>
         <translation>Обраний студент</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2646"/>
+        <location filename="../ui_main_window_v2.cpp" line="3524"/>
         <source>The selected student&apos;s name</source>
         <translation>Ім&apos;я обраного студента</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2679"/>
+        <location filename="../ui_main_window_v2.cpp" line="3529"/>
         <source>The selected student&apos;s total score</source>
         <translation>Підсумкові результати обраного студента</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2712"/>
+        <location filename="../ui_main_window_v2.cpp" line="3542"/>
         <source>The selected student&apos;s exam results</source>
         <translation>Результати екзамену обраного студента</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2764"/>
+        <location filename="../ui_main_window_v2.cpp" line="3554"/>
         <source>Pass mark details</source>
         <translation>Докладна інформація про оцінку проходження</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2883"/>
+        <location filename="../ui_main_window_v2.cpp" line="3558"/>
         <source>Value</source>
         <translation>Значення</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2888"/>
+        <location filename="../ui_main_window_v2.cpp" line="3563"/>
         <source>Partially correct answers</source>
         <translation>Частково правильні відповіді</translation>
     </message>
@@ -2103,6 +2292,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2898"/>
         <location filename="../main_window_v2.ui" line="2913"/>
         <location filename="../main_window_v2.ui" line="2928"/>
+        <location filename="../ui_main_window_v2.cpp" line="3567"/>
+        <location filename="../ui_main_window_v2.cpp" line="3573"/>
+        <location filename="../ui_main_window_v2.cpp" line="3579"/>
         <source>Incorrect answer</source>
         <translation>Неправильна відповідь</translation>
     </message>
@@ -2110,77 +2302,95 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="2903"/>
         <location filename="../main_window_v2.ui" line="2918"/>
         <location filename="../main_window_v2.ui" line="2933"/>
+        <location filename="../ui_main_window_v2.cpp" line="3569"/>
+        <location filename="../ui_main_window_v2.cpp" line="3575"/>
+        <location filename="../ui_main_window_v2.cpp" line="3581"/>
         <source>Missing answer</source>
         <translation>Пропущена відповідь</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="2997"/>
+        <location filename="../ui_main_window_v2.cpp" line="3589"/>
         <source>List of classes</source>
         <translation>Список класів</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3021"/>
+        <location filename="../ui_main_window_v2.cpp" line="3595"/>
         <source>Double click a class to view</source>
         <translation>Натисніть двічі на класі для перегляду</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3080"/>
+        <location filename="../ui_main_window_v2.cpp" line="3597"/>
         <source>Selected class</source>
         <translation>Обраний клас</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3086"/>
+        <location filename="../ui_main_window_v2.cpp" line="3598"/>
         <source>&lt;b&gt;Class name:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Назва класу:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3096"/>
+        <location filename="../ui_main_window_v2.cpp" line="3600"/>
         <source>Name of the selected class (if you change this name, do not forget to click the Apply button on the right)</source>
         <translation>Назва обраного класу (після зміни не забудьте натиснути кнопку &quot;Застосувати&quot; праворуч)</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3103"/>
+        <location filename="../ui_main_window_v2.cpp" line="3602"/>
         <source>&lt;b&gt;First year:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Перший рік:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3113"/>
+        <location filename="../ui_main_window_v2.cpp" line="3604"/>
         <source>The first year of the selected class (if you change this year, do not forget to click the Apply button on the right)</source>
         <translation>Перший рік обраного класу (після зміни не забудьте натиснути кнопку &quot;Застосувати&quot; праворуч)</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3129"/>
+        <location filename="../ui_main_window_v2.cpp" line="3606"/>
         <source>&lt;b&gt;Last year:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Останній рік:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3139"/>
+        <location filename="../ui_main_window_v2.cpp" line="3608"/>
         <source>The last year of the selected class (if you change this year, do not forget to click the Apply button on the right)</source>
         <translation>Останній рік обраного класу (після зміни не забудьте натиснути кнопку &quot;Застосувати&quot; праворуч)</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3184"/>
+        <location filename="../ui_main_window_v2.cpp" line="3610"/>
         <source>&lt;b&gt;Number of students:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Кількість студентів:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3194"/>
+        <location filename="../ui_main_window_v2.cpp" line="3612"/>
         <source>Number of students in the selected class</source>
         <translation>Кількість студентів в обраному класі</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3197"/>
+        <location filename="../ui_main_window_v2.cpp" line="3614"/>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3204"/>
+        <location filename="../ui_main_window_v2.cpp" line="3615"/>
         <source>&lt;b&gt;Class average:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Середній бал:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3214"/>
         <location filename="../main_window_v2.ui" line="3404"/>
+        <location filename="../ui_main_window_v2.cpp" line="3616"/>
+        <location filename="../ui_main_window_v2.cpp" line="3640"/>
         <source>0%</source>
         <translation>0%</translation>
     </message>
@@ -2189,111 +2399,134 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3361"/>
         <location filename="../questions.cpp" line="170"/>
         <location filename="../questions.cpp" line="195"/>
+        <location filename="../ui_main_window_v2.cpp" line="3618"/>
+        <location filename="../ui_main_window_v2.cpp" line="3634"/>
         <source>Apply changes</source>
         <translation>Застосувати зміни</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3354"/>
+        <location filename="../ui_main_window_v2.cpp" line="3631"/>
         <source>Name of the selected student (if you change this name, do not forget to click the Apply button on the right)</source>
         <translation>Ім&apos;я обраного студента (після зміни не забудьте натиснути кнопку &quot;Застосувати&quot; праворуч)</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3401"/>
+        <location filename="../ui_main_window_v2.cpp" line="3638"/>
         <source>The selected student&apos;s average</source>
         <translation>Середній бал обраного студента</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3423"/>
+        <location filename="../ui_main_window_v2.cpp" line="3649"/>
         <source>List of results of the selected student</source>
         <translation>Список результатів обраного студента</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3427"/>
+        <location filename="../ui_main_window_v2.cpp" line="3643"/>
         <source>Session</source>
         <translation>Сесія</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3437"/>
+        <location filename="../ui_main_window_v2.cpp" line="3647"/>
         <source>Results</source>
         <translation>Результати</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3447"/>
+        <location filename="../ui_main_window_v2.cpp" line="3652"/>
         <source>Add the selected session from the list of sessions on the left to the list of results above</source>
         <translation>Додати обрану сесію із списку сесій зліва в список результатів вгорі</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3483"/>
+        <location filename="../ui_main_window_v2.cpp" line="3656"/>
         <source>Remove the selected session from the list of results</source>
         <translation>Видалити обрану сесію із списку результатів</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3614"/>
+        <location filename="../ui_main_window_v2.cpp" line="3667"/>
         <source>&amp;Help</source>
         <translation>&amp;Допомога</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3623"/>
+        <location filename="../ui_main_window_v2.cpp" line="3668"/>
         <source>Sessio&amp;n</source>
         <translation>Сесі&amp;я</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3639"/>
+        <location filename="../ui_main_window_v2.cpp" line="3669"/>
         <source>&amp;View</source>
         <translation>В&amp;ид</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3654"/>
+        <location filename="../ui_main_window_v2.cpp" line="3670"/>
         <source>&amp;Question</source>
         <translation>&amp;Питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3658"/>
+        <location filename="../ui_main_window_v2.cpp" line="3671"/>
         <source>Attachments</source>
         <translation>Додатки</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3686"/>
+        <location filename="../ui_main_window_v2.cpp" line="3672"/>
         <source>&amp;Server</source>
         <translation>&amp;Сервер</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3705"/>
+        <location filename="../ui_main_window_v2.cpp" line="3673"/>
         <source>&amp;Database</source>
         <translation>&amp;База даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3709"/>
+        <location filename="../ui_main_window_v2.cpp" line="3674"/>
         <source>&amp;Sort questions</source>
         <translation>&amp;Відсортувати питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3717"/>
+        <location filename="../ui_main_window_v2.cpp" line="3675"/>
         <source>&amp;Filter the list of questions</source>
         <translation>&amp;Відфільтрувати список питань</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3740"/>
+        <location filename="../ui_main_window_v2.cpp" line="3676"/>
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3754"/>
+        <location filename="../ui_main_window_v2.cpp" line="3677"/>
         <source>&amp;Class</source>
         <translation>&amp;Клас</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3824"/>
+        <location filename="../ui_main_window_v2.cpp" line="2510"/>
         <source>&amp;New</source>
         <translation>&amp;Новий</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3836"/>
+        <location filename="../ui_main_window_v2.cpp" line="2520"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3845"/>
+        <location filename="../ui_main_window_v2.cpp" line="2521"/>
         <source>&amp;Open</source>
         <translation>&amp;Відкрити</translation>
     </message>
@@ -2301,11 +2534,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3848"/>
         <location filename="../main_window_v2.ui" line="3851"/>
         <location filename="../main_window_v2.ui" line="3854"/>
+        <location filename="../ui_main_window_v2.cpp" line="2523"/>
+        <location filename="../ui_main_window_v2.cpp" line="2526"/>
+        <location filename="../ui_main_window_v2.cpp" line="2529"/>
         <source>Open a database</source>
         <translation>Відкрити базу даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3857"/>
+        <location filename="../ui_main_window_v2.cpp" line="2531"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
@@ -2313,32 +2550,41 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3869"/>
         <location filename="../main_window_v2.ui" line="3872"/>
         <location filename="../main_window_v2.ui" line="3875"/>
+        <location filename="../ui_main_window_v2.cpp" line="2534"/>
+        <location filename="../ui_main_window_v2.cpp" line="2537"/>
+        <location filename="../ui_main_window_v2.cpp" line="2540"/>
         <source>Save the open database</source>
         <translation>Зберегти відкриту базу даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3878"/>
+        <location filename="../ui_main_window_v2.cpp" line="2542"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3887"/>
+        <location filename="../ui_main_window_v2.cpp" line="2543"/>
         <source>Save &amp;as</source>
         <translation>Зберегти &amp;як</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3890"/>
         <location filename="../main_window_v2.ui" line="3893"/>
+        <location filename="../ui_main_window_v2.cpp" line="2545"/>
+        <location filename="../ui_main_window_v2.cpp" line="2548"/>
         <source>Save as</source>
         <translation>Зберегти базу даних під новою назвою</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3896"/>
+        <location filename="../ui_main_window_v2.cpp" line="2550"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3905"/>
+        <location filename="../ui_main_window_v2.cpp" line="2551"/>
         <source>&amp;Close</source>
         <translation>&amp;Закрити</translation>
     </message>
@@ -2346,26 +2592,33 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3908"/>
         <location filename="../main_window_v2.ui" line="3911"/>
         <location filename="../main_window_v2.ui" line="3914"/>
+        <location filename="../ui_main_window_v2.cpp" line="2553"/>
+        <location filename="../ui_main_window_v2.cpp" line="2556"/>
+        <location filename="../ui_main_window_v2.cpp" line="2559"/>
         <source>Close the open database</source>
         <translation>Закрити відкриту базу даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3917"/>
+        <location filename="../ui_main_window_v2.cpp" line="2561"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3926"/>
+        <location filename="../ui_main_window_v2.cpp" line="2562"/>
         <source>&amp;Quit</source>
         <translation>&amp;Вийти</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3938"/>
+        <location filename="../ui_main_window_v2.cpp" line="2572"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3953"/>
+        <location filename="../ui_main_window_v2.cpp" line="2573"/>
         <source>&amp;Flags</source>
         <translation>&amp;Категорії</translation>
     </message>
@@ -2373,16 +2626,21 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3959"/>
         <location filename="../main_window_v2.ui" line="3962"/>
         <location filename="../main_window_v2.ui" line="3965"/>
+        <location filename="../ui_main_window_v2.cpp" line="2576"/>
+        <location filename="../ui_main_window_v2.cpp" line="2579"/>
+        <location filename="../ui_main_window_v2.cpp" line="2582"/>
         <source>Edit flags</source>
         <translation>Редагувати категорії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3977"/>
+        <location filename="../ui_main_window_v2.cpp" line="2584"/>
         <source>&amp;Server mode</source>
         <translation>Режим &amp;сервера</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3980"/>
+        <location filename="../ui_main_window_v2.cpp" line="2585"/>
         <source>Server mode</source>
         <translation>Режим сервера</translation>
     </message>
@@ -2390,11 +2648,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="3983"/>
         <location filename="../main_window_v2.ui" line="3986"/>
         <location filename="../main_window_v2.ui" line="3989"/>
+        <location filename="../ui_main_window_v2.cpp" line="2587"/>
+        <location filename="../ui_main_window_v2.cpp" line="2590"/>
+        <location filename="../ui_main_window_v2.cpp" line="2593"/>
         <source>Edit test settings and start the server</source>
         <translation>Редагувати налаштування тесту та запустити сервер</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="3998"/>
+        <location filename="../ui_main_window_v2.cpp" line="2595"/>
         <source>&amp;About</source>
         <translation>&amp;Про програму</translation>
     </message>
@@ -2402,114 +2664,141 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4001"/>
         <location filename="../main_window_v2.ui" line="4004"/>
         <location filename="../main_window_v2.ui" line="4007"/>
+        <location filename="../ui_main_window_v2.cpp" line="2597"/>
+        <location filename="../ui_main_window_v2.cpp" line="2600"/>
+        <location filename="../ui_main_window_v2.cpp" line="2603"/>
         <source>About iTest</source>
         <translation>Про iTest</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4019"/>
+        <location filename="../ui_main_window_v2.cpp" line="2605"/>
         <source>From &amp;A to Z</source>
         <translation>Від &amp;А до Я</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4022"/>
         <location filename="../main_window_v2.ui" line="4025"/>
+        <location filename="../ui_main_window_v2.cpp" line="2607"/>
+        <location filename="../ui_main_window_v2.cpp" line="2610"/>
         <source>Sort questions from A to Z</source>
         <translation>Сортувати питання від А до Я</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4028"/>
+        <location filename="../ui_main_window_v2.cpp" line="2612"/>
         <source>Ctrl+Alt+Up</source>
         <translation>Ctrl+Alt+Up</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4037"/>
+        <location filename="../ui_main_window_v2.cpp" line="2613"/>
         <source>From &amp;Z to A</source>
         <translation>Від &amp;Я до А</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4040"/>
         <location filename="../main_window_v2.ui" line="4043"/>
+        <location filename="../ui_main_window_v2.cpp" line="2615"/>
+        <location filename="../ui_main_window_v2.cpp" line="2618"/>
         <source>Sort questions from Z to A</source>
         <translation>Сортувати питання від Я до А</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4046"/>
+        <location filename="../ui_main_window_v2.cpp" line="2620"/>
         <source>Ctrl+Alt+Down</source>
         <translation>Ctrl+Alt+Down</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4051"/>
+        <location filename="../ui_main_window_v2.cpp" line="2621"/>
         <source>Show &amp;all questions</source>
         <translation>Показати &amp;всі питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4072"/>
+        <location filename="../ui_main_window_v2.cpp" line="2632"/>
         <source>Show &amp;easy questions only</source>
         <translation>Показати тільки &amp;легкіі питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4090"/>
+        <location filename="../ui_main_window_v2.cpp" line="2640"/>
         <source>Show questions with &amp;medium difficulty only</source>
         <translation>Показати тільки питання помі&amp;рної складності</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4105"/>
+        <location filename="../ui_main_window_v2.cpp" line="2647"/>
         <source>Show &amp;difficult questions only</source>
         <translation>Показати тільки &amp;складні питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4125"/>
+        <location filename="../ui_main_window_v2.cpp" line="2655"/>
         <source>Show database &amp;information</source>
         <translation>Показати &amp;інформацію про базу даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4128"/>
         <location filename="../main_window_v2.ui" line="4131"/>
+        <location filename="../ui_main_window_v2.cpp" line="2657"/>
+        <location filename="../ui_main_window_v2.cpp" line="2660"/>
         <source>Show database information</source>
         <translation>Відображати інформацію про базу даних</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4134"/>
+        <location filename="../ui_main_window_v2.cpp" line="2662"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4143"/>
+        <location filename="../ui_main_window_v2.cpp" line="2663"/>
         <source>Show questions with the selected &amp;flag only</source>
         <translation>Відображати тільки питання обраної &amp;категорії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4158"/>
+        <location filename="../ui_main_window_v2.cpp" line="2670"/>
         <source>Move &amp;up</source>
         <translation>Перемістити в&amp;гору</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4161"/>
+        <location filename="../ui_main_window_v2.cpp" line="2671"/>
         <source>Move up</source>
         <translation>Перемістити вгору</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4173"/>
+        <location filename="../ui_main_window_v2.cpp" line="2681"/>
         <source>Ctrl+Up</source>
         <translation>Ctrl+Up</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4182"/>
+        <location filename="../ui_main_window_v2.cpp" line="2682"/>
         <source>Move do&amp;wn</source>
         <translation>Перемістити в&amp;низ</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4194"/>
+        <location filename="../ui_main_window_v2.cpp" line="2692"/>
         <source>Ctrl+Down</source>
         <translation>Ctrl+Down</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4206"/>
+        <location filename="../ui_main_window_v2.cpp" line="2693"/>
         <source>Co&amp;mments</source>
         <translation>Ко&amp;ментарі</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4209"/>
+        <location filename="../ui_main_window_v2.cpp" line="2694"/>
         <source>Comments</source>
         <translation>Коментарі</translation>
     </message>
@@ -2517,41 +2806,51 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4212"/>
         <location filename="../main_window_v2.ui" line="4215"/>
         <location filename="../main_window_v2.ui" line="4218"/>
+        <location filename="../ui_main_window_v2.cpp" line="2696"/>
+        <location filename="../ui_main_window_v2.cpp" line="2699"/>
+        <location filename="../ui_main_window_v2.cpp" line="2702"/>
         <source>Edit comments</source>
         <translation>Редагувати коментарі</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4229"/>
+        <location filename="../ui_main_window_v2.cpp" line="2704"/>
         <source>&amp;Use last save date</source>
         <translation>Використовувати &amp;дату останнього збереження</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4244"/>
+        <location filename="../ui_main_window_v2.cpp" line="2711"/>
         <source>&amp;Add</source>
         <translation>&amp;Добавити</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4259"/>
+        <location filename="../ui_main_window_v2.cpp" line="2722"/>
         <source>Ctrl+Alt+A</source>
         <translation>Ctrl+Alt+A</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4268"/>
+        <location filename="../ui_main_window_v2.cpp" line="2723"/>
         <source>Dupli&amp;cate</source>
         <translation>Ду&amp;блювати</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4280"/>
+        <location filename="../ui_main_window_v2.cpp" line="2733"/>
         <source>Ctrl+Alt+C</source>
         <translation>Ctrl+Alt+C</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4301"/>
+        <location filename="../ui_main_window_v2.cpp" line="2744"/>
         <source>Ctrl+Alt+D</source>
         <translation>Ctrl+Alt+D</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4310"/>
+        <location filename="../ui_main_window_v2.cpp" line="2745"/>
         <source>Move to &amp;top</source>
         <translation>Зробити пер&amp;шим</translation>
     </message>
@@ -2559,16 +2858,21 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4313"/>
         <location filename="../main_window_v2.ui" line="4316"/>
         <location filename="../main_window_v2.ui" line="4319"/>
+        <location filename="../ui_main_window_v2.cpp" line="2747"/>
+        <location filename="../ui_main_window_v2.cpp" line="2750"/>
+        <location filename="../ui_main_window_v2.cpp" line="2753"/>
         <source>Move the selected question to the top</source>
         <translation>Зробити обране питання першим</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4322"/>
+        <location filename="../ui_main_window_v2.cpp" line="2755"/>
         <source>Ctrl+Shift+Up</source>
         <translation>Ctrl+Shift+Up</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4331"/>
+        <location filename="../ui_main_window_v2.cpp" line="2756"/>
         <source>Move to &amp;bottom</source>
         <translation>Зробити ос&amp;таннім</translation>
     </message>
@@ -2576,36 +2880,45 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4334"/>
         <location filename="../main_window_v2.ui" line="4337"/>
         <location filename="../main_window_v2.ui" line="4340"/>
+        <location filename="../ui_main_window_v2.cpp" line="2758"/>
+        <location filename="../ui_main_window_v2.cpp" line="2761"/>
+        <location filename="../ui_main_window_v2.cpp" line="2764"/>
         <source>Move the selected question to the bottom</source>
         <translation>Зробити обране питання останнім</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4343"/>
+        <location filename="../ui_main_window_v2.cpp" line="2766"/>
         <source>Ctrl+Shift+Down</source>
         <translation>Ctrl+Shift+Down</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4352"/>
+        <location filename="../ui_main_window_v2.cpp" line="2767"/>
         <source>Appl&amp;y changes</source>
         <translation>&amp;Застосувати зміни</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4364"/>
+        <location filename="../ui_main_window_v2.cpp" line="2777"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4373"/>
+        <location filename="../ui_main_window_v2.cpp" line="2778"/>
         <source>Di&amp;scard changes</source>
         <translation>&amp;Скасувати зміни</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4385"/>
+        <location filename="../ui_main_window_v2.cpp" line="2788"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4400"/>
+        <location filename="../ui_main_window_v2.cpp" line="2789"/>
         <source>&amp;Questions</source>
         <translation>&amp;Питання</translation>
     </message>
@@ -2613,11 +2926,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4406"/>
         <location filename="../main_window_v2.ui" line="4409"/>
         <location filename="../main_window_v2.ui" line="4412"/>
+        <location filename="../ui_main_window_v2.cpp" line="2792"/>
+        <location filename="../ui_main_window_v2.cpp" line="2795"/>
+        <location filename="../ui_main_window_v2.cpp" line="2798"/>
         <source>Edit questions</source>
         <translation>Редагувати питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4421"/>
+        <location filename="../ui_main_window_v2.cpp" line="2800"/>
         <source>&amp;Add off-line client</source>
         <translation>Додати off-line &amp;клієнта</translation>
     </message>
@@ -2628,11 +2945,15 @@ Error %2.</source>
         <location filename="../server.cpp" line="806"/>
         <location filename="../server.cpp" line="809"/>
         <location filename="../server.cpp" line="818"/>
+        <location filename="../ui_main_window_v2.cpp" line="2802"/>
+        <location filename="../ui_main_window_v2.cpp" line="2805"/>
+        <location filename="../ui_main_window_v2.cpp" line="2808"/>
         <source>Add off-line client</source>
         <translation>Додати off-line клієнта</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4439"/>
+        <location filename="../ui_main_window_v2.cpp" line="2810"/>
         <source>Stop se&amp;rver</source>
         <translation>&amp;Зупинити сервер</translation>
     </message>
@@ -2640,16 +2961,21 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4442"/>
         <location filename="../main_window_v2.ui" line="4445"/>
         <location filename="../main_window_v2.ui" line="4448"/>
+        <location filename="../ui_main_window_v2.cpp" line="2812"/>
+        <location filename="../ui_main_window_v2.cpp" line="2815"/>
+        <location filename="../ui_main_window_v2.cpp" line="2818"/>
         <source>Stop the server and return to test settings</source>
         <translation>Зупинити сервер та повернутися до налаштувань тесту</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4457"/>
+        <location filename="../ui_main_window_v2.cpp" line="2820"/>
         <source>S&amp;tart server</source>
         <translation>&amp;Запустити сервер</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4475"/>
+        <location filename="../ui_main_window_v2.cpp" line="2830"/>
         <source>Export &amp;log</source>
         <translation>Експортувати &amp;журнал</translation>
     </message>
@@ -2659,16 +2985,21 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4484"/>
         <location filename="../server.cpp" line="916"/>
         <location filename="../server.cpp" line="921"/>
+        <location filename="../ui_main_window_v2.cpp" line="2832"/>
+        <location filename="../ui_main_window_v2.cpp" line="2835"/>
+        <location filename="../ui_main_window_v2.cpp" line="2838"/>
         <source>Export server log</source>
         <translation>Експортувати журнал сервера</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4495"/>
+        <location filename="../ui_main_window_v2.cpp" line="2840"/>
         <source>Save sessio&amp;n</source>
         <translation>Зберегти &amp;сесію</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4498"/>
+        <location filename="../ui_main_window_v2.cpp" line="2841"/>
         <source>Save session</source>
         <translation>Зберегти сесію</translation>
     </message>
@@ -2676,43 +3007,55 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4501"/>
         <location filename="../main_window_v2.ui" line="4504"/>
         <location filename="../main_window_v2.ui" line="4507"/>
+        <location filename="../ui_main_window_v2.cpp" line="2843"/>
+        <location filename="../ui_main_window_v2.cpp" line="2846"/>
+        <location filename="../ui_main_window_v2.cpp" line="2849"/>
         <source>Save the current session for later viewing</source>
         <translation>Зберегти поточну сесію для подальшого перегляду</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4516"/>
+        <location filename="../ui_main_window_v2.cpp" line="2851"/>
         <source>&amp;QuickPrint</source>
         <translation>&amp;Швидкий друк</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4519"/>
         <location filename="../main_window_v2.ui" line="4522"/>
+        <location filename="../ui_main_window_v2.cpp" line="2853"/>
+        <location filename="../ui_main_window_v2.cpp" line="2856"/>
         <source>Print the selected client&apos;s results using the current printer settings</source>
         <translation>Вивести на друк результати обраного клієнта із використанням поточних налаштувань принтера</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4525"/>
+        <location filename="../ui_main_window_v2.cpp" line="2858"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4534"/>
+        <location filename="../ui_main_window_v2.cpp" line="2859"/>
         <source>&amp;Print</source>
         <translation>&amp;Друк</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4537"/>
         <location filename="../main_window_v2.ui" line="4540"/>
+        <location filename="../ui_main_window_v2.cpp" line="2861"/>
+        <location filename="../ui_main_window_v2.cpp" line="2864"/>
         <source>Print the selected client&apos;s results</source>
         <translation>Вивести на друк результати обраного клієнта</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4543"/>
+        <location filename="../ui_main_window_v2.cpp" line="2866"/>
         <source>Ctrl+Shift+P</source>
         <translation>Ctrl+Shift+P</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4552"/>
+        <location filename="../ui_main_window_v2.cpp" line="2867"/>
         <source>&amp;Export test</source>
         <translation>&amp;Експортувати тест</translation>
     </message>
@@ -2720,11 +3063,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4555"/>
         <location filename="../main_window_v2.ui" line="4558"/>
         <location filename="../main_window_v2.ui" line="4561"/>
+        <location filename="../ui_main_window_v2.cpp" line="2869"/>
+        <location filename="../ui_main_window_v2.cpp" line="2872"/>
+        <location filename="../ui_main_window_v2.cpp" line="2875"/>
         <source>Export off-line test session</source>
         <translation>Експортувати off-line сесію тесту</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4570"/>
+        <location filename="../ui_main_window_v2.cpp" line="2877"/>
         <source>Add off-line client&amp;s</source>
         <translation>Додати результати off-line клієнт&amp;а</translation>
     </message>
@@ -2734,11 +3081,14 @@ Error %2.</source>
         <location filename="../server.cpp" line="849"/>
         <location filename="../server.cpp" line="851"/>
         <location filename="../server.cpp" line="857"/>
+        <location filename="../ui_main_window_v2.cpp" line="2879"/>
+        <location filename="../ui_main_window_v2.cpp" line="2882"/>
         <source>Add off-line clients</source>
         <translation>Додати результати off-line клієнтів</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4588"/>
+        <location filename="../ui_main_window_v2.cpp" line="2884"/>
         <source>Save&amp;d sessions</source>
         <translation>Збережен&amp;і сесії</translation>
     </message>
@@ -2746,11 +3096,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4591"/>
         <location filename="../main_window_v2.ui" line="4594"/>
         <location filename="../main_window_v2.ui" line="4597"/>
+        <location filename="../ui_main_window_v2.cpp" line="2886"/>
+        <location filename="../ui_main_window_v2.cpp" line="2889"/>
+        <location filename="../ui_main_window_v2.cpp" line="2892"/>
         <source>View saved test sessions</source>
         <translation>Переглянути збережені сесії тестів</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4606"/>
+        <location filename="../ui_main_window_v2.cpp" line="2894"/>
         <source>&amp;Delete log</source>
         <translation>&amp;Видалити журнал</translation>
     </message>
@@ -2758,16 +3112,21 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4609"/>
         <location filename="../main_window_v2.ui" line="4612"/>
         <location filename="../main_window_v2.ui" line="4615"/>
+        <location filename="../ui_main_window_v2.cpp" line="2896"/>
+        <location filename="../ui_main_window_v2.cpp" line="2899"/>
+        <location filename="../ui_main_window_v2.cpp" line="2902"/>
         <source>Delete the log for the selected session</source>
         <translation>Видалити журнал обраної сесії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4624"/>
+        <location filename="../ui_main_window_v2.cpp" line="2904"/>
         <source>&amp;Archive session</source>
         <translation>&amp;Архівувати сесію</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4627"/>
+        <location filename="../ui_main_window_v2.cpp" line="2905"/>
         <source>Archive session</source>
         <translation>Архівувати сесію</translation>
     </message>
@@ -2775,11 +3134,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4630"/>
         <location filename="../main_window_v2.ui" line="4633"/>
         <location filename="../main_window_v2.ui" line="4636"/>
+        <location filename="../ui_main_window_v2.cpp" line="2907"/>
+        <location filename="../ui_main_window_v2.cpp" line="2910"/>
+        <location filename="../ui_main_window_v2.cpp" line="2913"/>
         <source>Archive the selected session</source>
         <translation>Архівувати обрану сесію</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4645"/>
+        <location filename="../ui_main_window_v2.cpp" line="2915"/>
         <source>Documentation</source>
         <translation>Документація</translation>
     </message>
@@ -2787,11 +3150,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4648"/>
         <location filename="../main_window_v2.ui" line="4651"/>
         <location filename="../main_window_v2.ui" line="4654"/>
+        <location filename="../ui_main_window_v2.cpp" line="2917"/>
+        <location filename="../ui_main_window_v2.cpp" line="2920"/>
+        <location filename="../ui_main_window_v2.cpp" line="2923"/>
         <source>View online documentation</source>
         <translation>Переглянути документацію через Інтернет</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4663"/>
+        <location filename="../ui_main_window_v2.cpp" line="2925"/>
         <source>Check for updates</source>
         <translation>Перевірити наявність оновлень</translation>
     </message>
@@ -2799,11 +3166,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4666"/>
         <location filename="../main_window_v2.ui" line="4669"/>
         <location filename="../main_window_v2.ui" line="4672"/>
+        <location filename="../ui_main_window_v2.cpp" line="2927"/>
+        <location filename="../ui_main_window_v2.cpp" line="2930"/>
+        <location filename="../ui_main_window_v2.cpp" line="2933"/>
         <source>Check if there is a new version available online</source>
         <translation>Перевірити наявність нової версії програми</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4681"/>
+        <location filename="../ui_main_window_v2.cpp" line="2935"/>
         <source>Print &amp;all</source>
         <translation>&amp;Роздрукувати все</translation>
     </message>
@@ -2812,11 +3183,14 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4687"/>
         <location filename="../print_engine.cpp" line="701"/>
         <location filename="../print_engine.cpp" line="722"/>
+        <location filename="../ui_main_window_v2.cpp" line="2937"/>
+        <location filename="../ui_main_window_v2.cpp" line="2940"/>
         <source>Print the results of all students</source>
         <translation>Роздрукувати результати всіх студентів</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4696"/>
+        <location filename="../ui_main_window_v2.cpp" line="2942"/>
         <source>Print session &amp;summary</source>
         <translation>Друк &amp;звіту</translation>
     </message>
@@ -2824,17 +3198,22 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4699"/>
         <location filename="../main_window_v2.ui" line="4702"/>
         <location filename="../print_engine.cpp" line="746"/>
+        <location filename="../ui_main_window_v2.cpp" line="2943"/>
+        <location filename="../ui_main_window_v2.cpp" line="2945"/>
         <source>Print session summary</source>
         <translation>Роздрукувати результати сесії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4705"/>
         <location filename="../main_window_v2.ui" line="4708"/>
+        <location filename="../ui_main_window_v2.cpp" line="2948"/>
+        <location filename="../ui_main_window_v2.cpp" line="2951"/>
         <source>Print a summary and statistics for the selected session</source>
         <translation>Вивести на друк звіт та статистику по обраній сесії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4717"/>
+        <location filename="../ui_main_window_v2.cpp" line="2953"/>
         <source>Overall statistics</source>
         <translation>Загальна статистика</translation>
     </message>
@@ -2842,6 +3221,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4720"/>
         <location filename="../main_window_v2.ui" line="4723"/>
         <location filename="../main_window_v2.ui" line="4726"/>
+        <location filename="../ui_main_window_v2.cpp" line="2955"/>
+        <location filename="../ui_main_window_v2.cpp" line="2958"/>
+        <location filename="../ui_main_window_v2.cpp" line="2961"/>
         <source>Show overall statistics about the difficulty of questions</source>
         <translation>Показати загальну статистику по складності питань</translation>
     </message>
@@ -2849,11 +3231,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4738"/>
         <location filename="../main_window_v2.ui" line="4741"/>
         <location filename="../main_window_v2.ui" line="4744"/>
+        <location filename="../ui_main_window_v2.cpp" line="2965"/>
+        <location filename="../ui_main_window_v2.cpp" line="2968"/>
+        <location filename="../ui_main_window_v2.cpp" line="2971"/>
         <source>Change the language of the iTest interface</source>
         <translation>Змінити мову інтерфейсу iTest</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4753"/>
+        <location filename="../ui_main_window_v2.cpp" line="2973"/>
         <source>&amp;Restore session</source>
         <translation>&amp;Відновити сесію</translation>
     </message>
@@ -2861,11 +3247,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4756"/>
         <location filename="../main_window_v2.ui" line="4759"/>
         <location filename="../main_window_v2.ui" line="4762"/>
+        <location filename="../ui_main_window_v2.cpp" line="2975"/>
+        <location filename="../ui_main_window_v2.cpp" line="2978"/>
+        <location filename="../ui_main_window_v2.cpp" line="2981"/>
         <source>Restore the selected session from the archive</source>
         <translation>Відновити обрану сесію із архіву</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4771"/>
+        <location filename="../ui_main_window_v2.cpp" line="2983"/>
         <source>Copy to archive</source>
         <translation>Копіювати в архів</translation>
     </message>
@@ -2873,11 +3263,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4774"/>
         <location filename="../main_window_v2.ui" line="4777"/>
         <location filename="../main_window_v2.ui" line="4780"/>
+        <location filename="../ui_main_window_v2.cpp" line="2985"/>
+        <location filename="../ui_main_window_v2.cpp" line="2988"/>
+        <location filename="../ui_main_window_v2.cpp" line="2991"/>
         <source>Copy the selected session to the archive</source>
         <translation>Копіювати обрану сесію в архів</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4789"/>
+        <location filename="../ui_main_window_v2.cpp" line="2993"/>
         <source>Copy from archive</source>
         <translation>Копіювати із архіву</translation>
     </message>
@@ -2885,6 +3279,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4792"/>
         <location filename="../main_window_v2.ui" line="4795"/>
         <location filename="../main_window_v2.ui" line="4798"/>
+        <location filename="../ui_main_window_v2.cpp" line="2995"/>
+        <location filename="../ui_main_window_v2.cpp" line="2998"/>
+        <location filename="../ui_main_window_v2.cpp" line="3001"/>
         <source>Copy the selected session from the archive</source>
         <translation>Копіювати обрану сесію із архіву</translation>
     </message>
@@ -2892,6 +3289,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4810"/>
         <location filename="../main_window_v2.ui" line="4813"/>
         <location filename="../main_window_v2.ui" line="4816"/>
+        <location filename="../ui_main_window_v2.cpp" line="3005"/>
+        <location filename="../ui_main_window_v2.cpp" line="3008"/>
+        <location filename="../ui_main_window_v2.cpp" line="3011"/>
         <source>Save a copy of the database</source>
         <translation>Зберегти копію бази даних</translation>
     </message>
@@ -2899,6 +3299,9 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4828"/>
         <location filename="../main_window_v2.ui" line="4831"/>
         <location filename="../main_window_v2.ui" line="4834"/>
+        <location filename="../ui_main_window_v2.cpp" line="3015"/>
+        <location filename="../ui_main_window_v2.cpp" line="3018"/>
+        <location filename="../ui_main_window_v2.cpp" line="3021"/>
         <source>Save a backup copy of the database with all the archived sessions</source>
         <translation>Зберегти резервну копію бази даних зі всіма архівними сесіями</translation>
     </message>
@@ -2906,11 +3309,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4842"/>
         <location filename="../main_window_v2.ui" line="4845"/>
         <location filename="../main_window_v2.ui" line="4848"/>
+        <location filename="../ui_main_window_v2.cpp" line="3023"/>
+        <location filename="../ui_main_window_v2.cpp" line="3025"/>
+        <location filename="../ui_main_window_v2.cpp" line="3028"/>
         <source>Show hidden questions</source>
         <translation>Показати сховані питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4856"/>
+        <location filename="../ui_main_window_v2.cpp" line="3030"/>
         <source>&amp;Hide</source>
         <translation>&amp;Заховати</translation>
     </message>
@@ -2918,16 +3325,21 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4859"/>
         <location filename="../main_window_v2.ui" line="4862"/>
         <location filename="../main_window_v2.ui" line="4865"/>
+        <location filename="../ui_main_window_v2.cpp" line="3032"/>
+        <location filename="../ui_main_window_v2.cpp" line="3035"/>
+        <location filename="../ui_main_window_v2.cpp" line="3038"/>
         <source>Hide the selected question</source>
         <translation>Заховати обране питання</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4868"/>
+        <location filename="../ui_main_window_v2.cpp" line="3040"/>
         <source>Ctrl+Alt+H</source>
         <translation>Ctrl+Alt+H</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4877"/>
+        <location filename="../ui_main_window_v2.cpp" line="3041"/>
         <source>Run iTestClient</source>
         <translation>Запустити iTestClient</translation>
     </message>
@@ -2935,12 +3347,16 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4880"/>
         <location filename="../main_window_v2.ui" line="4883"/>
         <location filename="../main_window_v2.ui" line="4886"/>
+        <location filename="../ui_main_window_v2.cpp" line="3043"/>
+        <location filename="../ui_main_window_v2.cpp" line="3046"/>
+        <location filename="../ui_main_window_v2.cpp" line="3049"/>
         <source>Run iTestClient on this computer</source>
         <translation>Запустити iTestClient на цьому комп&apos;ютері</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4895"/>
         <location filename="../print_engine.cpp" line="880"/>
+        <location filename="../ui_main_window_v2.cpp" line="3051"/>
         <source>Print questions</source>
         <translation>Роздрукувати питання</translation>
     </message>
@@ -2948,11 +3364,15 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4898"/>
         <location filename="../main_window_v2.ui" line="4901"/>
         <location filename="../main_window_v2.ui" line="4904"/>
+        <location filename="../ui_main_window_v2.cpp" line="3053"/>
+        <location filename="../ui_main_window_v2.cpp" line="3056"/>
+        <location filename="../ui_main_window_v2.cpp" line="3059"/>
         <source>Select questions to print</source>
         <translation>Оберіть питання для роздруківки</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="4988"/>
+        <location filename="../ui_main_window_v2.cpp" line="3101"/>
         <source>&amp;Classes</source>
         <translation>&amp;Класи</translation>
     </message>
@@ -2960,70 +3380,92 @@ Error %2.</source>
         <location filename="../main_window_v2.ui" line="4991"/>
         <location filename="../main_window_v2.ui" line="4994"/>
         <location filename="../main_window_v2.ui" line="4997"/>
+        <location filename="../ui_main_window_v2.cpp" line="3103"/>
+        <location filename="../ui_main_window_v2.cpp" line="3106"/>
+        <location filename="../ui_main_window_v2.cpp" line="3109"/>
         <source>Edit classes</source>
         <translation>Редагувати класи</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5009"/>
         <location filename="../main_window_v2.ui" line="5012"/>
+        <location filename="../ui_main_window_v2.cpp" line="3113"/>
+        <location filename="../ui_main_window_v2.cpp" line="3116"/>
         <source>Create a new class</source>
         <translation>Створити новий клас</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5024"/>
         <location filename="../main_window_v2.ui" line="5027"/>
+        <location filename="../ui_main_window_v2.cpp" line="3120"/>
+        <location filename="../ui_main_window_v2.cpp" line="3123"/>
         <source>Delete the selected class</source>
         <translation>Видалити обраний клас</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5039"/>
         <location filename="../main_window_v2.ui" line="5042"/>
+        <location filename="../ui_main_window_v2.cpp" line="3127"/>
+        <location filename="../ui_main_window_v2.cpp" line="3130"/>
         <source>Add a new student to the selected class</source>
         <translation>Додати нового учня до обраного класу</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5054"/>
         <location filename="../main_window_v2.ui" line="5057"/>
+        <location filename="../ui_main_window_v2.cpp" line="3134"/>
+        <location filename="../ui_main_window_v2.cpp" line="3137"/>
         <source>Delete the selected student from the selected class</source>
         <translation>Видалити обраного учня із обраного класу</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5069"/>
         <location filename="../main_window_v2.ui" line="5072"/>
+        <location filename="../ui_main_window_v2.cpp" line="3141"/>
+        <location filename="../ui_main_window_v2.cpp" line="3144"/>
         <source>Add a session to the selected class</source>
         <translation>Додати сесію до обраного класу</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5084"/>
         <location filename="../main_window_v2.ui" line="5087"/>
+        <location filename="../ui_main_window_v2.cpp" line="3148"/>
+        <location filename="../ui_main_window_v2.cpp" line="3151"/>
         <source>Delete the selected session from the selected class (the session will not be deleted from the database)</source>
         <translation>Видалити обрану сесію із обраного класу (сесія не буде видалена із бази даних)</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5096"/>
         <location filename="../print_engine.cpp" line="824"/>
+        <location filename="../ui_main_window_v2.cpp" line="3153"/>
         <source>Print class summary</source>
         <translation>Роздрукувати підсумки класу</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5099"/>
         <location filename="../main_window_v2.ui" line="5102"/>
+        <location filename="../ui_main_window_v2.cpp" line="3155"/>
+        <location filename="../ui_main_window_v2.cpp" line="3158"/>
         <source>Print a summary for the selected class</source>
         <translation>Вивести на друк підсумки обраного класу</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5111"/>
+        <location filename="../ui_main_window_v2.cpp" line="3160"/>
         <source>By flag</source>
         <translation>По категорії</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5114"/>
         <location filename="../main_window_v2.ui" line="5117"/>
+        <location filename="../ui_main_window_v2.cpp" line="3162"/>
+        <location filename="../ui_main_window_v2.cpp" line="3165"/>
         <source>Sort questions by flag</source>
         <translation>Сортувати питання по категоріям</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="5120"/>
+        <location filename="../ui_main_window_v2.cpp" line="3167"/>
         <source>Ctrl+Alt+Right</source>
         <translation>Ctrl+Alt+Right</translation>
     </message>
@@ -3339,8 +3781,8 @@ number of copies each time you start the server.</source>
     <message>
         <location filename="../print_engine.cpp" line="687"/>
         <location filename="../print_engine.cpp" line="732"/>
-        <location filename="../print_engine.cpp" line="1105"/>
-        <location filename="../print_engine.cpp" line="1113"/>
+        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1099"/>
         <source>Statistics for %1</source>
         <translation>Статистика - %1</translation>
     </message>
@@ -3383,7 +3825,7 @@ number of copies each time you start the server.</source>
     <message>
         <location filename="../print_engine.cpp" line="786"/>
         <location filename="../print_engine.cpp" line="862"/>
-        <location filename="../print_engine.cpp" line="1116"/>
+        <location filename="../print_engine.cpp" line="1102"/>
         <source>Average:</source>
         <translation>Середній результат:</translation>
     </message>
@@ -3432,43 +3874,38 @@ number of copies each time you start the server.</source>
         <translation>ключ</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1005"/>
-        <source>Name:</source>
-        <translation>Ім&apos;я:</translation>
-    </message>
-    <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1065"/>
         <source>Number of correct answers:</source>
         <translation>Кількість правильних відповідей:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1083"/>
+        <location filename="../print_engine.cpp" line="1067"/>
         <source>Number of incorrect answers:</source>
         <translation>Кількість неправильних відповідей:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1086"/>
+        <location filename="../print_engine.cpp" line="1069"/>
         <source>Calculated difficulty:</source>
         <translation>Обчислена складність:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1088"/>
-        <location filename="../print_engine.cpp" line="1092"/>
+        <location filename="../print_engine.cpp" line="1074"/>
+        <location filename="../print_engine.cpp" line="1078"/>
         <source>Unavailable</source>
         <translation>Недоступно</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1121"/>
+        <location filename="../print_engine.cpp" line="1107"/>
         <source>Test sessions attended:</source>
         <translation>Відвідано тестових сесій:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1122"/>
+        <location filename="../print_engine.cpp" line="1108"/>
         <source>Under the name:</source>
         <translation>Під ім&apos;ям:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1123"/>
+        <location filename="../print_engine.cpp" line="1109"/>
         <source>With a score of:</source>
         <translation>Із результатом:</translation>
     </message>
@@ -4083,36 +4520,43 @@ although it is recommended to give them an hour.</source>
     <name>SessionWizard</name>
     <message>
         <location filename="../session_wizard.ui" line="14"/>
+        <location filename="../ui_session_wizard.cpp" line="111"/>
         <source>Add session - iTestServer</source>
         <translation>Добавлення сесії - iTestServer</translation>
     </message>
     <message>
         <location filename="../session_wizard.ui" line="43"/>
+        <location filename="../ui_session_wizard.cpp" line="112"/>
         <source>&lt;b&gt;Session:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Сесія:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../session_wizard.ui" line="63"/>
+        <location filename="../ui_session_wizard.cpp" line="113"/>
         <source>&lt;b&gt;Class:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Клас:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../session_wizard.ui" line="102"/>
+        <location filename="../ui_session_wizard.cpp" line="114"/>
         <source>Match</source>
         <translation>Зіставити</translation>
     </message>
     <message>
         <location filename="../session_wizard.ui" line="123"/>
+        <location filename="../ui_session_wizard.cpp" line="116"/>
         <source>Session</source>
         <translation>Сесія</translation>
     </message>
     <message>
         <location filename="../session_wizard.ui" line="128"/>
+        <location filename="../ui_session_wizard.cpp" line="118"/>
         <source>Class</source>
         <translation>Клас</translation>
     </message>
     <message>
         <location filename="../session_wizard.ui" line="136"/>
+        <location filename="../ui_session_wizard.cpp" line="119"/>
         <source>Split</source>
         <translation>Скасувати зіставлення</translation>
     </message>

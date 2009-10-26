@@ -158,42 +158,52 @@
     <message>
         <location filename="../env_vars.cpp" line="37"/>
         <source>Slovak</source>
-        <translation>Slovakça</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="38"/>
         <source>Russian</source>
-        <translation>Rusça</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="39"/>
         <source>Turkish</source>
-        <translation>Türkçe</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="40"/>
         <source>Portuguese</source>
-        <translation>Portekizce</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="41"/>
         <source>Spanish</source>
-        <translation>İspanyolca</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="42"/>
         <source>Italian</source>
-        <translation>İtalyanca</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
-        <translation>Letonca</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="44"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="45"/>
+        <source>Arabic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="46"/>
+        <source>Czech</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -764,7 +774,6 @@ büyük olasılıkla bir çok yeni özelliği kaçırmış olacaksınız.</trans
         <location filename="../print_engine.cpp" line="406"/>
         <location filename="../print_engine.cpp" line="458"/>
         <location filename="../print_engine.cpp" line="465"/>
-        <location filename="../print_engine.cpp" line="1023"/>
         <location filename="../server.cpp" line="800"/>
         <source>Unknown</source>
         <translation>Bilinmeyen</translation>
@@ -774,8 +783,7 @@ büyük olasılıkla bir çok yeni özelliği kaçırmış olacaksınız.</trans
         <location filename="../main_window.cpp" line="682"/>
         <location filename="../main_window.cpp" line="748"/>
         <location filename="../main_window_v2.ui" line="760"/>
-        <location filename="../print_engine.cpp" line="1020"/>
-        <location filename="../print_engine.cpp" line="1089"/>
+        <location filename="../print_engine.cpp" line="1075"/>
         <location filename="../ui_main_window_v2.cpp" line="3264"/>
         <source>Easy</source>
         <translation>Kolay</translation>
@@ -785,8 +793,7 @@ büyük olasılıkla bir çok yeni özelliği kaçırmış olacaksınız.</trans
         <location filename="../main_window.cpp" line="686"/>
         <location filename="../main_window.cpp" line="752"/>
         <location filename="../main_window_v2.ui" line="769"/>
-        <location filename="../print_engine.cpp" line="1021"/>
-        <location filename="../print_engine.cpp" line="1090"/>
+        <location filename="../print_engine.cpp" line="1076"/>
         <location filename="../ui_main_window_v2.cpp" line="3265"/>
         <source>Medium</source>
         <translation>Orta Düzey</translation>
@@ -796,8 +803,7 @@ büyük olasılıkla bir çok yeni özelliği kaçırmış olacaksınız.</trans
         <location filename="../main_window.cpp" line="690"/>
         <location filename="../main_window.cpp" line="756"/>
         <location filename="../main_window_v2.ui" line="778"/>
-        <location filename="../print_engine.cpp" line="1022"/>
-        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1077"/>
         <location filename="../ui_main_window_v2.cpp" line="3266"/>
         <source>Difficult</source>
         <translation>Zor</translation>
@@ -1077,7 +1083,6 @@ büyük olasılıkla bir çok yeni özelliği kaçırmış olacaksınız.</trans
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="667"/>
-        <location filename="../print_engine.cpp" line="1009"/>
         <location filename="../ui_main_window_v2.cpp" line="3251"/>
         <source>Flag:</source>
         <translation>Bayrak:</translation>
@@ -1090,7 +1095,6 @@ büyük olasılıkla bir çok yeni özelliği kaçırmış olacaksınız.</trans
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="737"/>
-        <location filename="../print_engine.cpp" line="1018"/>
         <location filename="../ui_main_window_v2.cpp" line="3263"/>
         <source>Difficulty:</source>
         <translation>Zorluk derecesi:</translation>
@@ -1113,7 +1117,7 @@ büyük olasılıkla bir çok yeni özelliği kaçırmış olacaksınız.</trans
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="959"/>
-        <location filename="../print_engine.cpp" line="1077"/>
+        <location filename="../print_engine.cpp" line="1062"/>
         <location filename="../ui_main_window_v2.cpp" line="3307"/>
         <source>Statistics:</source>
         <translation>İstatistikler:</translation>
@@ -2758,7 +2762,7 @@ sunucuyu her başlattığınızda kopya sayısını ayarlayın.</translation>
     <message>
         <location filename="../print_engine.cpp" line="786"/>
         <location filename="../print_engine.cpp" line="862"/>
-        <location filename="../print_engine.cpp" line="1116"/>
+        <location filename="../print_engine.cpp" line="1102"/>
         <source>Average:</source>
         <translation>Ortalama:</translation>
     </message>
@@ -3307,7 +3311,6 @@ aslında sınav için bir saat tavsiye edilir.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="700"/>
-        <location filename="../print_engine.cpp" line="1014"/>
         <location filename="../ui_main_window_v2.cpp" line="3255"/>
         <source>Group:</source>
         <translation>Grup:</translation>
@@ -3403,7 +3406,7 @@ Lütfen başka bir grup seçin.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
-        <location filename="../print_engine.cpp" line="1028"/>
+        <location filename="../print_engine.cpp" line="1017"/>
         <location filename="../ui_main_window_v2.cpp" line="3271"/>
         <source>Attachments (SVG):</source>
         <translation>Eklentiler (SVG):</translation>
@@ -3545,28 +3548,23 @@ Lütfen başka bir grup seçin.</translation>
         <translation>Yazdırmak için soruları seçin</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1005"/>
-        <source>Name:</source>
-        <translation>İsim:</translation>
-    </message>
-    <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1065"/>
         <source>Number of correct answers:</source>
         <translation>Doğru yanıtların sayısı:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1083"/>
+        <location filename="../print_engine.cpp" line="1067"/>
         <source>Number of incorrect answers:</source>
         <translation>Yanlış yanıtların sayısı:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1086"/>
+        <location filename="../print_engine.cpp" line="1069"/>
         <source>Calculated difficulty:</source>
         <translation>Planlanan zorluk derecesi:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1088"/>
-        <location filename="../print_engine.cpp" line="1092"/>
+        <location filename="../print_engine.cpp" line="1074"/>
+        <location filename="../print_engine.cpp" line="1078"/>
         <source>Unavailable</source>
         <translation>Kullanılamaz</translation>
     </message>
@@ -4039,8 +4037,8 @@ Lütfen başka bir grup seçin.</translation>
     <message>
         <location filename="../print_engine.cpp" line="687"/>
         <location filename="../print_engine.cpp" line="732"/>
-        <location filename="../print_engine.cpp" line="1105"/>
-        <location filename="../print_engine.cpp" line="1113"/>
+        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1099"/>
         <source>Statistics for %1</source>
         <translation>%1 için istatistikler</translation>
     </message>
@@ -4060,17 +4058,17 @@ Lütfen başka bir grup seçin.</translation>
         <translation>Sınıf ortalaması:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1121"/>
+        <location filename="../print_engine.cpp" line="1107"/>
         <source>Test sessions attended:</source>
         <translation>Katıldığı test oturumları:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1122"/>
+        <location filename="../print_engine.cpp" line="1108"/>
         <source>Under the name:</source>
         <translation>Bu isimle:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1123"/>
+        <location filename="../print_engine.cpp" line="1109"/>
         <source>With a score of:</source>
         <translation>Bu puanla:</translation>
     </message>
@@ -4424,14 +4422,12 @@ Hata: %2.</translation>
         <source>%n hidden question(s) listed</source>
         <translation>
             <numerusform>%n gizli soru listelendi</numerusform>
-            <numerusform>%n gizli soru listelendi</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../print_engine.cpp" line="199"/>
         <source>%n hidden question(s) not listed</source>
         <translation>
-            <numerusform>%n gizli soru listelenmedi</numerusform>
             <numerusform>%n gizli soru listelenmedi</numerusform>
         </translation>
     </message>

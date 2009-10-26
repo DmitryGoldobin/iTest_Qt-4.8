@@ -158,42 +158,52 @@
     <message>
         <location filename="../env_vars.cpp" line="37"/>
         <source>Slovak</source>
-        <translation>Slovāku</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="38"/>
         <source>Russian</source>
-        <translation>Krievu</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="39"/>
         <source>Turkish</source>
-        <translation>Turku</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="40"/>
         <source>Portuguese</source>
-        <translation>Portugāļu</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="41"/>
         <source>Spanish</source>
-        <translation>Spāņu</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="42"/>
         <source>Italian</source>
-        <translation>Itāļu</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
-        <translation>Latviešu</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="44"/>
         <source>Ukrainian</source>
-        <translation>Ukraiņu</translation>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="45"/>
+        <source>Arabic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="46"/>
+        <source>Czech</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -762,7 +772,6 @@ bet Jūs varat palaist garām daudz jaunu iespēju.</translation>
         <location filename="../print_engine.cpp" line="406"/>
         <location filename="../print_engine.cpp" line="458"/>
         <location filename="../print_engine.cpp" line="465"/>
-        <location filename="../print_engine.cpp" line="1023"/>
         <location filename="../server.cpp" line="800"/>
         <source>Unknown</source>
         <translation>Nav zināms</translation>
@@ -772,8 +781,7 @@ bet Jūs varat palaist garām daudz jaunu iespēju.</translation>
         <location filename="../main_window.cpp" line="682"/>
         <location filename="../main_window.cpp" line="748"/>
         <location filename="../main_window_v2.ui" line="760"/>
-        <location filename="../print_engine.cpp" line="1020"/>
-        <location filename="../print_engine.cpp" line="1089"/>
+        <location filename="../print_engine.cpp" line="1075"/>
         <location filename="../ui_main_window_v2.cpp" line="3264"/>
         <source>Easy</source>
         <translation>Viegli</translation>
@@ -783,8 +791,7 @@ bet Jūs varat palaist garām daudz jaunu iespēju.</translation>
         <location filename="../main_window.cpp" line="686"/>
         <location filename="../main_window.cpp" line="752"/>
         <location filename="../main_window_v2.ui" line="769"/>
-        <location filename="../print_engine.cpp" line="1021"/>
-        <location filename="../print_engine.cpp" line="1090"/>
+        <location filename="../print_engine.cpp" line="1076"/>
         <location filename="../ui_main_window_v2.cpp" line="3265"/>
         <source>Medium</source>
         <translation>Viduvēji</translation>
@@ -794,8 +801,7 @@ bet Jūs varat palaist garām daudz jaunu iespēju.</translation>
         <location filename="../main_window.cpp" line="690"/>
         <location filename="../main_window.cpp" line="756"/>
         <location filename="../main_window_v2.ui" line="778"/>
-        <location filename="../print_engine.cpp" line="1022"/>
-        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1077"/>
         <location filename="../ui_main_window_v2.cpp" line="3266"/>
         <source>Difficult</source>
         <translation>Sarežģīti</translation>
@@ -1075,7 +1081,6 @@ bet Jūs varat palaist garām daudz jaunu iespēju.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="667"/>
-        <location filename="../print_engine.cpp" line="1009"/>
         <location filename="../ui_main_window_v2.cpp" line="3251"/>
         <source>Flag:</source>
         <translation>Kategorija:</translation>
@@ -1088,7 +1093,6 @@ bet Jūs varat palaist garām daudz jaunu iespēju.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="737"/>
-        <location filename="../print_engine.cpp" line="1018"/>
         <location filename="../ui_main_window_v2.cpp" line="3263"/>
         <source>Difficulty:</source>
         <translation>Sarežģītība:</translation>
@@ -1111,7 +1115,7 @@ bet Jūs varat palaist garām daudz jaunu iespēju.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="959"/>
-        <location filename="../print_engine.cpp" line="1077"/>
+        <location filename="../print_engine.cpp" line="1062"/>
         <location filename="../ui_main_window_v2.cpp" line="3307"/>
         <source>Statistics:</source>
         <translation>Statistika:</translation>
@@ -2756,7 +2760,7 @@ kopiju skaitu pie katras servera startēšanas.</translation>
     <message>
         <location filename="../print_engine.cpp" line="786"/>
         <location filename="../print_engine.cpp" line="862"/>
-        <location filename="../print_engine.cpp" line="1116"/>
+        <location filename="../print_engine.cpp" line="1102"/>
         <source>Average:</source>
         <translation>Vidējais rezultāts:</translation>
     </message>
@@ -3306,7 +3310,6 @@ lai gan ieteikts dot vismaz stundu.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="700"/>
-        <location filename="../print_engine.cpp" line="1014"/>
         <location filename="../ui_main_window_v2.cpp" line="3255"/>
         <source>Group:</source>
         <translation>Grupa:</translation>
@@ -3402,7 +3405,7 @@ Lūdzu, izvēlieties citu grupu.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
-        <location filename="../print_engine.cpp" line="1028"/>
+        <location filename="../print_engine.cpp" line="1017"/>
         <location filename="../ui_main_window_v2.cpp" line="3271"/>
         <source>Attachments (SVG):</source>
         <translation>Pielikumi (SVG):</translation>
@@ -3544,28 +3547,23 @@ Lūdzu, izvēlieties citu grupu.</translation>
         <translation>Izvēlēties jautājumus izdrukai</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1005"/>
-        <source>Name:</source>
-        <translation>Vārds:</translation>
-    </message>
-    <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1065"/>
         <source>Number of correct answers:</source>
         <translation>Pareizo atbilžu skaits:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1083"/>
+        <location filename="../print_engine.cpp" line="1067"/>
         <source>Number of incorrect answers:</source>
         <translation>Nepareizo atbilžu skaits:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1086"/>
+        <location filename="../print_engine.cpp" line="1069"/>
         <source>Calculated difficulty:</source>
         <translation>Izskaitļotā grūtību pakāpe:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1088"/>
-        <location filename="../print_engine.cpp" line="1092"/>
+        <location filename="../print_engine.cpp" line="1074"/>
+        <location filename="../print_engine.cpp" line="1078"/>
         <source>Unavailable</source>
         <translation>Nav pieejams</translation>
     </message>
@@ -4038,8 +4036,8 @@ Lūdzu, izvēlieties citu grupu.</translation>
     <message>
         <location filename="../print_engine.cpp" line="687"/>
         <location filename="../print_engine.cpp" line="732"/>
-        <location filename="../print_engine.cpp" line="1105"/>
-        <location filename="../print_engine.cpp" line="1113"/>
+        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1099"/>
         <source>Statistics for %1</source>
         <translation>Statistika - %1</translation>
     </message>
@@ -4059,17 +4057,17 @@ Lūdzu, izvēlieties citu grupu.</translation>
         <translation>Klases vidējā atzīme:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1121"/>
+        <location filename="../print_engine.cpp" line="1107"/>
         <source>Test sessions attended:</source>
         <translation>Apmeklēto testa sesiju skaits:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1122"/>
+        <location filename="../print_engine.cpp" line="1108"/>
         <source>Under the name:</source>
         <translation>Ar vārdu:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1123"/>
+        <location filename="../print_engine.cpp" line="1109"/>
         <source>With a score of:</source>
         <translation>Ar rezultātu:</translation>
     </message>

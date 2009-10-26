@@ -4,6 +4,9 @@
 <context>
     <name>AboutWidget</name>
     <message>
+        <location filename="../ui_about_widget_v2.cpp" line="110"/>
+        <location filename="../ui_about_widget_v2.cpp" line="112"/>
+        <location filename="../ui_about_widget_v2.cpp" line="113"/>
         <location filename="../../shared/about_widget_v2.ui" line="13"/>
         <location filename="../../shared/about_widget_v2.ui" line="82"/>
         <location filename="../../shared/about_widget_v2.ui" line="128"/>
@@ -11,12 +14,14 @@
         <translation>Про iTest</translation>
     </message>
     <message>
+        <location filename="../ui_about_widget_v2.cpp" line="114"/>
         <location filename="../../shared/about_widget.cpp" line="47"/>
         <location filename="../../shared/about_widget_v2.ui" line="153"/>
         <source>About Qt</source>
         <translation>Про Qt</translation>
     </message>
     <message>
+        <location filename="../ui_about_widget_v2.cpp" line="115"/>
         <location filename="../../shared/about_widget_v2.ui" line="211"/>
         <source>Close</source>
         <translation>Закрити</translation>
@@ -101,6 +106,7 @@
         <location filename="../client.cpp" line="205"/>
         <location filename="../client.cpp" line="212"/>
         <location filename="../main_window.ui" line="14"/>
+        <location filename="../ui_main_window.cpp" line="660"/>
         <source>iTestClient</source>
         <translation>iTestClient</translation>
     </message>
@@ -258,213 +264,257 @@ but you are most probably missing a whole bunch of cool new features.</source>
     </message>
     <message>
         <location filename="../main_window.ui" line="43"/>
+        <location filename="../ui_main_window.cpp" line="661"/>
         <source>Connect to an iTest server</source>
         <translation>Під&apos;єднатися до сервера iTest</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="70"/>
+        <location filename="../ui_main_window.cpp" line="662"/>
         <source>&lt;b&gt;Server name&lt;/b&gt;</source>
         <translation>&lt;b&gt;Ім&apos;я сервера&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="109"/>
+        <location filename="../ui_main_window.cpp" line="663"/>
         <source>&lt;b&gt;Server port&lt;/b&gt;</source>
         <translation>&lt;b&gt;Порт сервера&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="135"/>
+        <location filename="../ui_main_window.cpp" line="664"/>
         <source>Connect</source>
         <translation>Під&apos;єднатися</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="156"/>
+        <location filename="../ui_main_window.cpp" line="665"/>
         <source>Use an iTest database file</source>
         <translation>Використовувати файл бази даних iTest</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="163"/>
+        <location filename="../ui_main_window.cpp" line="666"/>
         <source>&lt;b&gt;Database file path&lt;/b&gt;</source>
         <translation>&lt;b&gt;Шлях до файлу бази даних&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="209"/>
         <location filename="../main_window.ui" line="328"/>
+        <location filename="../ui_main_window.cpp" line="667"/>
+        <location filename="../ui_main_window.cpp" line="675"/>
         <source>Browse</source>
         <translation>Перегляд</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="231"/>
+        <location filename="../ui_main_window.cpp" line="668"/>
         <source>Load</source>
         <translation>Завантажити</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="259"/>
+        <location filename="../ui_main_window.cpp" line="669"/>
         <source>&lt;b&gt;Save answers to&lt;/b&gt;</source>
         <translation>&lt;b&gt;Зберегти відповіді до&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="266"/>
+        <location filename="../ui_main_window.cpp" line="670"/>
         <source>If connected to an iTest server, results will be sent automatically. You only need this file if there is no network available or in case of connection breakdown.</source>
         <translation>При наявності підключення до сервера iTest результати будуть відправлені автоматично. Даний файл потрібен у випадках відсутності мережі або при некоректній її роботі.</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="276"/>
+        <location filename="../ui_main_window.cpp" line="672"/>
         <source>$HOME/TestName-Date-SurnameName.itcl, where $HOME is the directory of the current user&apos;s profile on Windows and the home directory on Unix/Linux/Mac OS</source>
         <translation>$HOME/НазваТесту-Дата-ФаміліяІм&apos;я.itcl, де $HOME - директорія профілю користувача у Windows і домашньої директорії в Unix/Linux/Mac OS</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="279"/>
+        <location filename="../ui_main_window.cpp" line="674"/>
         <source>Use default</source>
         <translation>Використовувати дефолтні налаштування</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="356"/>
+        <location filename="../ui_main_window.cpp" line="676"/>
         <source>&lt;b&gt;Other settings&lt;/b&gt;</source>
         <translation>&lt;b&gt;Інші налаштування&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="363"/>
+        <location filename="../ui_main_window.cpp" line="677"/>
         <source>Hide question names, show numbers instead</source>
         <translation>Показувати номери питань замість їх назв</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="370"/>
+        <location filename="../ui_main_window.cpp" line="678"/>
         <source>Do not show correct answers at the end of the test</source>
         <translation>Не показувати правильні відповіді по закінченню тестування</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="384"/>
+        <location filename="../ui_main_window.cpp" line="679"/>
         <source>&lt;b&gt;Test information&lt;/b&gt;</source>
         <translation>&lt;b&gt;Інформація про тест&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="395"/>
+        <location filename="../ui_main_window.cpp" line="683"/>
         <source>Test name</source>
         <translation>Назва тесту</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="400"/>
+        <location filename="../ui_main_window.cpp" line="685"/>
         <source>Database date</source>
         <translation>Дата бази даних</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="405"/>
+        <location filename="../ui_main_window.cpp" line="687"/>
         <source>Test date</source>
         <translation>Дата тесту</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="410"/>
+        <location filename="../ui_main_window.cpp" line="689"/>
         <source>Test time</source>
         <translation>Час тесту</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="415"/>
+        <location filename="../ui_main_window.cpp" line="691"/>
         <source>Number of questions</source>
         <translation>Кількість питань</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="420"/>
+        <location filename="../ui_main_window.cpp" line="693"/>
         <source>Number of flags</source>
         <translation>Кількість категорій</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="425"/>
+        <location filename="../ui_main_window.cpp" line="695"/>
         <source>Flag names</source>
         <translation>Назви категорій</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="430"/>
+        <location filename="../ui_main_window.cpp" line="697"/>
         <source>Pass mark</source>
         <translation>Оцінка проходження</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="435"/>
+        <location filename="../ui_main_window.cpp" line="699"/>
         <source>Comments</source>
         <translation>Коментарі</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="440"/>
+        <location filename="../ui_main_window.cpp" line="681"/>
         <source>Data</source>
         <translation>Дані</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="472"/>
         <location filename="../main_window.ui" line="1314"/>
+        <location filename="../ui_main_window.cpp" line="700"/>
+        <location filename="../ui_main_window.cpp" line="717"/>
         <source>Quit</source>
         <translation>Вийти</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="491"/>
+        <location filename="../ui_main_window.cpp" line="701"/>
         <source>About</source>
         <translation>Про програму</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="526"/>
+        <location filename="../ui_main_window.cpp" line="702"/>
         <source>Ready</source>
         <translation>Готовий</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="647"/>
+        <location filename="../ui_main_window.cpp" line="703"/>
         <source>Welcome!</source>
         <translation>Ласкаво просимо!</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="715"/>
+        <location filename="../ui_main_window.cpp" line="704"/>
         <source>Your name:</source>
         <translation>Ваше ім&apos;я:</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="792"/>
+        <location filename="../ui_main_window.cpp" line="705"/>
         <source>When you are ready to begin the examination, click the Start button below.</source>
         <translation>Натисніть кнопку &quot;Розпочати&quot;, коли приготуєтеся.</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="854"/>
+        <location filename="../ui_main_window.cpp" line="706"/>
         <source>Start</source>
         <translation>Розпочати</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="1111"/>
+        <location filename="../ui_main_window.cpp" line="707"/>
         <source>Show remaining time</source>
         <translation>Показати час, що залишився</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="1131"/>
+        <location filename="../ui_main_window.cpp" line="708"/>
         <source>minute(s)</source>
         <translation>хвилин(и)</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="1170"/>
+        <location filename="../ui_main_window.cpp" line="709"/>
         <source>Last question</source>
         <translation>Останнє питання</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="1192"/>
+        <location filename="../ui_main_window.cpp" line="710"/>
         <source>Next question</source>
         <translation>Наступне питання</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="1214"/>
+        <location filename="../ui_main_window.cpp" line="711"/>
         <source>Finish</source>
         <translation>Завершити</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="1246"/>
+        <location filename="../ui_main_window.cpp" line="712"/>
         <source>&lt;b&gt;Name:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Ім&apos;я:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="1260"/>
+        <location filename="../ui_main_window.cpp" line="714"/>
         <source>&lt;b&gt;Score:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Рахунок:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="1270"/>
+        <location filename="../ui_main_window.cpp" line="715"/>
         <source>&lt;b&gt;Results:&lt;/b&gt;</source>
         <translation>&lt;b&gt;Результати:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main_window.ui" line="1285"/>
+        <location filename="../ui_main_window.cpp" line="716"/>
         <source>New test</source>
         <translation>Новий тест</translation>
     </message>

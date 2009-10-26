@@ -158,42 +158,52 @@
     <message>
         <location filename="../env_vars.cpp" line="37"/>
         <source>Slovak</source>
-        <translation>Eslovaco</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="38"/>
         <source>Russian</source>
-        <translation>Russo</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="39"/>
         <source>Turkish</source>
-        <translation>Turco</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="40"/>
         <source>Portuguese</source>
-        <translation>Português</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="41"/>
         <source>Spanish</source>
-        <translation>Espanhol</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="42"/>
         <source>Italian</source>
-        <translation>Italiano</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
-        <translation>Letão</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="44"/>
         <source>Ukrainian</source>
-        <translation>Ucraniano</translation>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="45"/>
+        <source>Arabic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="46"/>
+        <source>Czech</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -795,7 +805,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <location filename="../print_engine.cpp" line="406"/>
         <location filename="../print_engine.cpp" line="458"/>
         <location filename="../print_engine.cpp" line="465"/>
-        <location filename="../print_engine.cpp" line="1023"/>
         <location filename="../server.cpp" line="800"/>
         <source>Unknown</source>
         <translation>Desconhecido</translation>
@@ -805,8 +814,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <location filename="../main_window.cpp" line="682"/>
         <location filename="../main_window.cpp" line="748"/>
         <location filename="../main_window_v2.ui" line="760"/>
-        <location filename="../print_engine.cpp" line="1020"/>
-        <location filename="../print_engine.cpp" line="1089"/>
+        <location filename="../print_engine.cpp" line="1075"/>
         <location filename="../ui_main_window_v2.cpp" line="3264"/>
         <source>Easy</source>
         <translation>Fácil</translation>
@@ -816,8 +824,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <location filename="../main_window.cpp" line="686"/>
         <location filename="../main_window.cpp" line="752"/>
         <location filename="../main_window_v2.ui" line="769"/>
-        <location filename="../print_engine.cpp" line="1021"/>
-        <location filename="../print_engine.cpp" line="1090"/>
+        <location filename="../print_engine.cpp" line="1076"/>
         <location filename="../ui_main_window_v2.cpp" line="3265"/>
         <source>Medium</source>
         <translation>Médio</translation>
@@ -827,8 +834,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
         <location filename="../main_window.cpp" line="690"/>
         <location filename="../main_window.cpp" line="756"/>
         <location filename="../main_window_v2.ui" line="778"/>
-        <location filename="../print_engine.cpp" line="1022"/>
-        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1077"/>
         <location filename="../ui_main_window_v2.cpp" line="3266"/>
         <source>Difficult</source>
         <translation>Difícil</translation>
@@ -1108,7 +1114,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="667"/>
-        <location filename="../print_engine.cpp" line="1009"/>
         <location filename="../ui_main_window_v2.cpp" line="3251"/>
         <source>Flag:</source>
         <translation>Categoria:</translation>
@@ -1121,7 +1126,6 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="737"/>
-        <location filename="../print_engine.cpp" line="1018"/>
         <location filename="../ui_main_window_v2.cpp" line="3263"/>
         <source>Difficulty:</source>
         <translation>Dificuldade:</translation>
@@ -1144,7 +1148,7 @@ Embora esta versão consiga abrir a base de dados que seleccionou,
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="959"/>
-        <location filename="../print_engine.cpp" line="1077"/>
+        <location filename="../print_engine.cpp" line="1062"/>
         <location filename="../ui_main_window_v2.cpp" line="3307"/>
         <source>Statistics:</source>
         <translation>Estatísticas:</translation>
@@ -2850,7 +2854,7 @@ número de cópias cada vez que iniciar o servidor.</translation>
     <message>
         <location filename="../print_engine.cpp" line="786"/>
         <location filename="../print_engine.cpp" line="862"/>
-        <location filename="../print_engine.cpp" line="1116"/>
+        <location filename="../print_engine.cpp" line="1102"/>
         <source>Average:</source>
         <translation>Média:</translation>
     </message>
@@ -3305,7 +3309,6 @@ embore seja recomendado que o possam fazer numa hora.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="700"/>
-        <location filename="../print_engine.cpp" line="1014"/>
         <location filename="../ui_main_window_v2.cpp" line="3255"/>
         <source>Group:</source>
         <translation>Grupo:</translation>
@@ -3401,7 +3404,7 @@ Por favor escolha outro grupo.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
-        <location filename="../print_engine.cpp" line="1028"/>
+        <location filename="../print_engine.cpp" line="1017"/>
         <location filename="../ui_main_window_v2.cpp" line="3271"/>
         <source>Attachments (SVG):</source>
         <translation>Anexos (SVG):</translation>
@@ -3543,28 +3546,23 @@ Por favor escolha outro grupo.</translation>
         <translation>Seleccionar as questões a imprimir</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1005"/>
-        <source>Name:</source>
-        <translation>Nome:</translation>
-    </message>
-    <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1065"/>
         <source>Number of correct answers:</source>
         <translation>Número de respostas correcta:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1083"/>
+        <location filename="../print_engine.cpp" line="1067"/>
         <source>Number of incorrect answers:</source>
         <translation>Número de respostas incorrectas:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1086"/>
+        <location filename="../print_engine.cpp" line="1069"/>
         <source>Calculated difficulty:</source>
         <translation>Dificuldade calculada:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1088"/>
-        <location filename="../print_engine.cpp" line="1092"/>
+        <location filename="../print_engine.cpp" line="1074"/>
+        <location filename="../print_engine.cpp" line="1078"/>
         <source>Unavailable</source>
         <translation>Indisponível</translation>
     </message>
@@ -4037,8 +4035,8 @@ Por favor escolha outro grupo.</translation>
     <message>
         <location filename="../print_engine.cpp" line="687"/>
         <location filename="../print_engine.cpp" line="732"/>
-        <location filename="../print_engine.cpp" line="1105"/>
-        <location filename="../print_engine.cpp" line="1113"/>
+        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1099"/>
         <source>Statistics for %1</source>
         <translation>Estatísticas de %1</translation>
     </message>
@@ -4058,17 +4056,17 @@ Por favor escolha outro grupo.</translation>
         <translation>Média da turma:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1121"/>
+        <location filename="../print_engine.cpp" line="1107"/>
         <source>Test sessions attended:</source>
         <translation>Sessões de teste onde compareceu:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1122"/>
+        <location filename="../print_engine.cpp" line="1108"/>
         <source>Under the name:</source>
         <translation>Sob o seguinte nome:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1123"/>
+        <location filename="../print_engine.cpp" line="1109"/>
         <source>With a score of:</source>
         <translation>Nota recebida:</translation>
     </message>

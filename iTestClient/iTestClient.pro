@@ -48,7 +48,7 @@ icons.files   = ../itos.icns
 QMAKE_BUNDLE_DATA += icons
 CONFIG       += x86 ppc
 QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.4
-QMAKE_MAC_SDK = /Developer/SDKs/MacOSX10.4u.sdk
+QMAKE_MAC_SDK = /Developer/SDKs/MacOSX10.5.sdk
 }
 unix {
 OBJECTS_DIR   = .build.unix
@@ -77,5 +77,6 @@ TRANSLATIONS += i18n/iTestClient-Slovak.ts \
                 i18n/iTestClient-Italian.ts \
                 i18n/iTestClient-Latvian.ts \
                 i18n/iTestClient-Ukrainian.ts \
-                i18n/iTestClient-Arabic.ts
+                i18n/iTestClient-Arabic.ts \
+                i18n/iTestClient-Czech.ts
 QMAKE_RESOURCE_FLAGS += -compress 9

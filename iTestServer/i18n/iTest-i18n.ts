@@ -38,5 +38,9 @@
         <source>Arabic</source>
         <translation>العربية</translation>
     </message>
+    <message>
+        <source>Czech</source>
+        <translation>čeština</translation>
+    </message>
 </context>
 </TS>

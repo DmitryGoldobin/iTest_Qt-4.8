@@ -43,6 +43,7 @@ void MainWindow::varinit()
         itest_i18n.insert(translator.translate("LanguageNames", "Latvian"), "Latvian");
         itest_i18n.insert(translator.translate("LanguageNames", "Ukrainian"), "Ukrainian");
         itest_i18n.insert(translator.translate("LanguageNames", "Arabic"), "Arabic");
+        itest_i18n.insert(translator.translate("LanguageNames", "Czech"), "Czech");
     // CURRENT_DB
         current_db_open = false;
 }

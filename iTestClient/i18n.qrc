@@ -9,5 +9,6 @@
         <file>i18n/iTestClient-Latvian.qm</file>
         <file>i18n/iTestClient-Ukrainian.qm</file>
         <file>i18n/iTestClient-Arabic.qm</file>
+        <file>i18n/iTestClient-Czech.qm</file>
     </qresource>
 </RCC>

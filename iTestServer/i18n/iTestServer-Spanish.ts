@@ -158,42 +158,52 @@
     <message>
         <location filename="../env_vars.cpp" line="37"/>
         <source>Slovak</source>
-        <translation>Eslovaco</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="38"/>
         <source>Russian</source>
-        <translation>Ruso</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="39"/>
         <source>Turkish</source>
-        <translation>Turco</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="40"/>
         <source>Portuguese</source>
-        <translation>Portugués</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="41"/>
         <source>Spanish</source>
-        <translation>Español</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="42"/>
         <source>Italian</source>
-        <translation>Italiano</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="43"/>
         <source>Latvian</source>
-        <translation>Letón</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../env_vars.cpp" line="44"/>
         <source>Ukrainian</source>
-        <translation>Ucraniano</translation>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="45"/>
+        <source>Arabic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../env_vars.cpp" line="46"/>
+        <source>Czech</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -829,7 +839,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <location filename="../print_engine.cpp" line="406"/>
         <location filename="../print_engine.cpp" line="458"/>
         <location filename="../print_engine.cpp" line="465"/>
-        <location filename="../print_engine.cpp" line="1023"/>
         <location filename="../server.cpp" line="800"/>
         <source>Unknown</source>
         <translation>Desconocido</translation>
@@ -839,8 +848,7 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <location filename="../main_window.cpp" line="682"/>
         <location filename="../main_window.cpp" line="748"/>
         <location filename="../main_window_v2.ui" line="760"/>
-        <location filename="../print_engine.cpp" line="1020"/>
-        <location filename="../print_engine.cpp" line="1089"/>
+        <location filename="../print_engine.cpp" line="1075"/>
         <location filename="../ui_main_window_v2.cpp" line="3264"/>
         <source>Easy</source>
         <translation>Fácil</translation>
@@ -850,8 +858,7 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <location filename="../main_window.cpp" line="686"/>
         <location filename="../main_window.cpp" line="752"/>
         <location filename="../main_window_v2.ui" line="769"/>
-        <location filename="../print_engine.cpp" line="1021"/>
-        <location filename="../print_engine.cpp" line="1090"/>
+        <location filename="../print_engine.cpp" line="1076"/>
         <location filename="../ui_main_window_v2.cpp" line="3265"/>
         <source>Medium</source>
         <translation>Medio</translation>
@@ -861,8 +868,7 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
         <location filename="../main_window.cpp" line="690"/>
         <location filename="../main_window.cpp" line="756"/>
         <location filename="../main_window_v2.ui" line="778"/>
-        <location filename="../print_engine.cpp" line="1022"/>
-        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1077"/>
         <location filename="../ui_main_window_v2.cpp" line="3266"/>
         <source>Difficult</source>
         <translation>Difícil</translation>
@@ -1142,7 +1148,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="667"/>
-        <location filename="../print_engine.cpp" line="1009"/>
         <location filename="../ui_main_window_v2.cpp" line="3251"/>
         <source>Flag:</source>
         <translation>Categoría:</translation>
@@ -1155,7 +1160,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="700"/>
-        <location filename="../print_engine.cpp" line="1014"/>
         <location filename="../ui_main_window_v2.cpp" line="3255"/>
         <source>Group:</source>
         <translation>Grupo:</translation>
@@ -1180,7 +1184,6 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="737"/>
-        <location filename="../print_engine.cpp" line="1018"/>
         <location filename="../ui_main_window_v2.cpp" line="3263"/>
         <source>Difficulty:</source>
         <translation>Dificultad:</translation>
@@ -1203,7 +1206,7 @@ pero probablemente se esté perdiendo una gran cantidad de nuevas funciones.</tr
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="959"/>
-        <location filename="../print_engine.cpp" line="1077"/>
+        <location filename="../print_engine.cpp" line="1062"/>
         <location filename="../ui_main_window_v2.cpp" line="3307"/>
         <source>Statistics:</source>
         <translation>Estadísticas:</translation>
@@ -3022,7 +3025,7 @@ el número de copias cada vez que inicie el servidor.</translation>
     <message>
         <location filename="../print_engine.cpp" line="786"/>
         <location filename="../print_engine.cpp" line="862"/>
-        <location filename="../print_engine.cpp" line="1116"/>
+        <location filename="../print_engine.cpp" line="1102"/>
         <source>Average:</source>
         <translation>Promedio:</translation>
     </message>
@@ -3413,7 +3416,7 @@ aunque es recomendable de otorgarles una hora.</translation>
     </message>
     <message>
         <location filename="../main_window_v2.ui" line="802"/>
-        <location filename="../print_engine.cpp" line="1028"/>
+        <location filename="../print_engine.cpp" line="1017"/>
         <location filename="../ui_main_window_v2.cpp" line="3271"/>
         <source>Attachments (SVG):</source>
         <translation>Adjuntos (SVG):</translation>
@@ -3573,28 +3576,23 @@ aunque es recomendable de otorgarles una hora.</translation>
         <translation>Seleccionar preguntas a imprimir</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1005"/>
-        <source>Name:</source>
-        <translation>Nombre:</translation>
-    </message>
-    <message>
-        <location filename="../print_engine.cpp" line="1080"/>
+        <location filename="../print_engine.cpp" line="1065"/>
         <source>Number of correct answers:</source>
         <translation>Número de respuestas correctas:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1083"/>
+        <location filename="../print_engine.cpp" line="1067"/>
         <source>Number of incorrect answers:</source>
         <translation>Número de respuestas incorrectas:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1086"/>
+        <location filename="../print_engine.cpp" line="1069"/>
         <source>Calculated difficulty:</source>
         <translation>Dificultad calculada:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1088"/>
-        <location filename="../print_engine.cpp" line="1092"/>
+        <location filename="../print_engine.cpp" line="1074"/>
+        <location filename="../print_engine.cpp" line="1078"/>
         <source>Unavailable</source>
         <translation>No disponible</translation>
     </message>
@@ -4037,8 +4035,8 @@ aunque es recomendable de otorgarles una hora.</translation>
     <message>
         <location filename="../print_engine.cpp" line="687"/>
         <location filename="../print_engine.cpp" line="732"/>
-        <location filename="../print_engine.cpp" line="1105"/>
-        <location filename="../print_engine.cpp" line="1113"/>
+        <location filename="../print_engine.cpp" line="1091"/>
+        <location filename="../print_engine.cpp" line="1099"/>
         <source>Statistics for %1</source>
         <translation>Estadísticas para %1</translation>
     </message>
@@ -4058,17 +4056,17 @@ aunque es recomendable de otorgarles una hora.</translation>
         <translation>Promedio de la clase:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1121"/>
+        <location filename="../print_engine.cpp" line="1107"/>
         <source>Test sessions attended:</source>
         <translation>Asistencia de las sesiones de exámenes:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1122"/>
+        <location filename="../print_engine.cpp" line="1108"/>
         <source>Under the name:</source>
         <translation>Bajo el nombre:</translation>
     </message>
     <message>
-        <location filename="../print_engine.cpp" line="1123"/>
+        <location filename="../print_engine.cpp" line="1109"/>
         <source>With a score of:</source>
         <translation>Con un puntaje de:</translation>
     </message>
